@@ -448,9 +448,14 @@ img{
 
 /* Classes modified for large screen size */
 @media (min-width: 320px) {
+  
+  .carousel .item {
+    height: 300px;
+  }
   /* show 3 items */
   .carousel-inner .active,
-  .carousel-inner .active + .carousel-item {
+  .carousel-inner .active + .carousel-item 
+  .carousel-inner .active + .carousel-item + .carousel-item{
     display: block;
   }
 
