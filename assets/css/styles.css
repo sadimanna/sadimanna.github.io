@@ -132,7 +132,7 @@ img{
 }
 /*========== NAV ==========*/
 
-.nav{
+/* .nav{
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -190,16 +190,16 @@ img{
     font-size: 1.2rem;
     margin-bottom: var(--mb-1);
   }
-}
+} */
 /* Show menu */
 
-.show-menu{
+/* .show-menu{
   bottom: var(--header-height);
-}
+} */
 /* Active menu link */
-.active-link{
+/* .active-link{
   color: var(--title-color);
-}
+} */
 
 /*========== HOME ==========*/
 .home{
