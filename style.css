@@ -1,0 +1,103 @@
+/* body {
+  background: black;
+} */
+.button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 4px 7px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 3000ms infinite;
+  -moz-animation: glowing 3000ms infinite;
+  -o-animation: glowing 3000ms infinite;
+  animation: glowing 3000ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #14ee2a; -webkit-box-shadow: 0 0 3px #14ee2a; }
+  50% { background-color: #1418ee; -webkit-box-shadow: 0 0 10px #1418ee; }
+  100% { background-color: #14ee2a; -webkit-box-shadow: 0 0 3px #14ee2a; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #14ee2a; -moz-box-shadow: 0 0 3px #14ee2a; }
+  50% { background-color: #1418ee; -moz-box-shadow: 0 0 10px #1418ee; }
+  100% { background-color: #14ee2a; -moz-box-shadow: 0 0 3px #14ee2a; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #14ee2a; box-shadow: 0 0 3px #14ee2a; }
+  50% { background-color: #1418ee; box-shadow: 0 0 10px #1418ee; }
+  100% { background-color: #14ee2a; box-shadow: 0 0 3px #14ee2a; }
+}
+
+@keyframes glowing {
+        0% {
+          background-color: #14ee2a;
+          box-shadow: 0 0 5px #14ee2a;
+        }
+        50% {
+          background-color: #1418ee;
+          box-shadow: 0 0 20px #1418ee;
+        }
+        100% {
+          background-color: #14ee2a;
+          box-shadow: 0 0 5px #14ee2a;
+        }
+}
+
+.wrapper {
+  padding: 0px;
+  padding-top: 0px;
+}
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}
+
+div.demo {
+    display:table;
+    width:100%;
+}
+div.demo span {
+    display:table-cell;
+    text-align:center;
+}
+span.collab {
+  font-size:16px;
+  font-weight:bold;
+  color:#328fa8;
+}
+
+
+.hoverZoomLink {
+  /* position: relative; */
+  margin: auto;
+  overflow: hidden;
+  /* width: 540px; */
+}
+.hoverZoomLink img {
+  /* max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto; */
+  transform: scale(1);
+}
+
+.hoverZoomLink:hover img {
+  transform: scale(1.1);
+}
