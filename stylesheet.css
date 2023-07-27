@@ -129,7 +129,7 @@ name {
 .icon {
     height: 30px;
     width: 30px;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   margin-right: 2px;
 /*     display: inline; */
 }
