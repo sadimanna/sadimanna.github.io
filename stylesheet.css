@@ -126,6 +126,17 @@ name {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
+.theowl {
+    background: url('assets/theowl.png');
+    height: 20px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
 span.highlight {
   background-color: #ffffd0;
 }
