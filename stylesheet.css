@@ -127,9 +127,8 @@ name {
 }
 
 .theowl {
-    background: url('assets/theowl.png');
-    height: 92px;
-    width: 92px;
+    height: 50px;
+    width: 50px;
     display: inline;
     /* Other styles here */
   transition: opacity .2s ease-in-out;
