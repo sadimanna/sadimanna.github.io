@@ -147,17 +147,11 @@
         <a href="https://arxiv.org/abs/2308.01140"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
         <p></p>
         <p>
-       In contemporary self-supervised contrastive algorithms like SimCLR, MoCo, etc., the task of balancing attraction between 
-		two semantically similar samples and repulsion between two samples from different classes is primarily affected by 
-		the presence of hard negative samples. While the InfoNCE loss has been shown to impose penalties based on hardness, 
-		the temperature hyper-parameter is the key to regulating the penalties and the trade-off between uniformity and tolerance. 
-		In this work, we focus our attention to improve the performance of InfoNCE loss in SSL by studying the effect of temperature 
+       We focus our attention to improve the performance of InfoNCE loss in SSL by studying the effect of temperature 
 		hyper-parameter values. We propose a cosine similarity-dependent temperature scaling function to effectively optimize the 
 		distribution of the samples in the feature space. We further analyze the uniformity and tolerance metrics to investigate 
 		the optimal regions in the cosine similarity space for better optimization. Additionally, we offer a comprehensive examination 
 		of the behavior of local and global structures in the feature space throughout the pre-training phase, as the temperature varies.
-		Experimental evidence shows that the proposed framework outperforms or is at par with the contrastive loss-based SSL algorithms. 
-		We believe our work (DySTreSS) on temperature scaling in SSL provides a foundation for future research in contrastive learning.
         </p>
       </td>
     </tr>
