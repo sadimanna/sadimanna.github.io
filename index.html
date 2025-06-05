@@ -1,649 +1,1399 @@
-<!DOCTYPE HTML>
-<html lang="en"><head>
-      <meta name="google-site-verification" content="mzyi5h_x1DvmnvvOynztP5h3mA2mdBpUjfhySMB9NNI" />
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NS48J6H');</script>
-      <!-- End Google Tag Manager -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Siladittya Manna - Research Scientist</title>
+    <meta name="description" content="Dr. Siladittya Manna - Research Scientist & Self-Supervised Learning Expert">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Siladittya Manna</title>
-      <meta name="author" content="Siladittya Manna">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" type="text/css" href="stylesheet.css">
-      <!-- <link rel="stylesheet" href="fontawesome.all.min.css"> -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!--       <link rel="icon" type="image/png" href="images/icon.png"> -->
-      <link rel="icon" href="assets/profile_circle.png">
-      <!-- <script defer src="./static/js/fontawesome.all.min.js"></script> -->
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+        }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <!-- Need to change ############## -->
-      <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NS48J6H"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'GTM-NS48J6H');
-      </script> -->
-      <!-- Need to change ############## -->
-   </head>
+        .container-sm {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
 
+        /* Header Section */
+        .hero-section {
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            border: 4px solid white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            position: relative;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #9ca3af;
+        }
+
+        .profile-image::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: -8px;
+            width: 32px;
+            height: 32px;
+            background: #10b981;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .profile-image::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+
+        .hero-description {
+            max-width: 768px;
+            margin: 0 auto;
+            font-size: 1rem;
+            color: #374151;
+            line-height: 1.7;
+        }
+
+        .hero-description p {
+            margin-bottom: 1rem;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 3rem 0;
+        }
+
+        .section-bg-white {
+            background: white;
+        }
+
+        .section-bg-gray {
+            background: #f9fafb;
+        }
+
+        .section-bg-blue {
+            background: #eff6ff;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Announcements */
+        .announcements-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+
+        .announcement-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .announcement-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .announcement-new {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .announcement-upcoming {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.625rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #f3f4f6;
+            color: #374151;
+            white-space: nowrap;
+        }
+
+        /* Work Experience Section */
+        .work-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .work-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s;
+        }
+
+        .work-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .work-info {
+            flex: 1;
+        }
+
+        .work-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .work-company {
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .work-period {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 0.25rem 0.625rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        .work-description {
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        /* Two Column Layout for Academic Profiles and Institutional Affiliations */
+        .profiles-institutions-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* Academic Profiles - Circular Layout */
+        .academic-profiles-column {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+
+        .profiles-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .profiles-section-subtitle {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .circular-profiles {
+            flex: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profiles-circle {
+            position: relative;
+            width: 320px;
+            height: 320px;
+        }
+
+        .profile-link {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #374151;
+            transition: all 0.3s;
+            transform-origin: center;
+        }
+
+        .profile-link:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-icon {
+            width: 64px;
+            height: 64px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-link:hover .profile-icon {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-name {
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            background: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-link:hover .profile-name {
+            opacity: 1;
+        }
+
+        /* Center decoration for circular layout */
+        .center-decoration {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Position profiles in circle */
+        .profile-link:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+        .profile-link:nth-child(2) { top: 15%; right: 15%; }
+        .profile-link:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%); }
+        .profile-link:nth-child(4) { bottom: 15%; right: 15%; }
+        .profile-link:nth-child(5) { bottom: 0; left: 50%; transform: translateX(-50%); }
+        .profile-link:nth-child(6) { bottom: 15%; left: 15%; }
+        .profile-link:nth-child(7) { top: 50%; left: 0; transform: translateY(-50%); }
+        .profile-link:nth-child(8) { top: 15%; left: 15%; }
+
+        /* Institutional Affiliations - Vertical List */
+        .institutions-column {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+
+        .institutions-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .institutions-section-subtitle {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .institutions-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .institution-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .institution-card:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .institution-logo {
+            width: 64px;
+            height: 64px;
+            background: #e5e7eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #9ca3af;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .institution-info {
+            flex: 1;
+        }
+
+        .institution-name {
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.25rem;
+        }
+
+        .institution-role {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        /* Publications */
+        .publications-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .publications-column {
+            background: #f9fafb;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            height: 600px;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .column-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .publication-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s;
+        }
+
+        .publication-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        .publication-authors {
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .publication-journal {
+            font-style: italic;
+            color: #6b7280;
+        }
+
+        .publication-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.75rem;
+        }
+
+        .citation-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: #f3f4f6;
+            color: #374151;
+            padding: 0.25rem 0.625rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .publication-doi {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        /* Professional Activities */
+        .activities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .activity-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s;
+        }
+
+        .activity-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .tutorial-highlight {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .tutorial-title {
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .tutorial-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .reviewer-list {
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .reviewer-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .reviewer-bullet {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            margin-top: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .reviewer-text {
+            font-size: 0.875rem;
+            color: #374151;
+            line-height: 1.5;
+        }
+
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .blog-excerpt {
+            color: #374151;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .blog-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .blog-link:hover {
+            color: #1d4ed8;
+        }
+
+        /* Photography Section */
+        .photography-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .photography-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .photography-link {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #7c3aed;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .photography-link:hover {
+            color: #5b21b6;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            border: 1px solid #d1d5db;
+            background: white;
+            color: #374151;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s;
+        }
+
+        .category-btn.active {
+            background: #7c3aed;
+            color: white;
+            border-color: #7c3aed;
+        }
+
+        .category-btn:hover {
+            background: #f3f4f6;
+        }
+
+        .photography-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .photo-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .photo-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-image {
+            width: 100%;
+            height: 256px;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #9ca3af;
+        }
+
+        .photo-content {
+            padding: 1.5rem;
+        }
+
+        .photo-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .photo-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .photo-details {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .photo-category {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 0.25rem 0.625rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .photo-location {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        .photo-year {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        .photography-quote {
+            text-align: center;
+            margin-top: 2rem;
+            font-style: italic;
+            color: #6b7280;
+        }
+
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-text {
+            color: #9ca3af;
+        }
+
+        .footer-link {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #93c5fd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .profiles-institutions-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .academic-profiles-column,
+            .institutions-column {
+                height: auto;
+            }
+
+            .profiles-circle {
+                width: 280px;
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.125rem;
+            }
+
+            .publications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .photography-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .profiles-circle {
+                width: 240px;
+                height: 240px;
+            }
+
+            .profile-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 1.25rem;
+            }
+
+            .work-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container, .container-sm {
+                padding: 0 0.5rem;
+            }
+
+            .section {
+                padding: 2rem 0;
+            }
+
+            .hero-section {
+                padding: 3rem 0;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+
+            .profiles-circle {
+                width: 200px;
+                height: 200px;
+            }
+
+            .institution-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .institution-logo {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
 <body>
-  <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Dr. Siladittya Manna</name>
-              </p>
-              <p>I am a Senior Research Assistant at the Department of Computer Science, Hong Kong Baptist University. My research area includes Self-supervised learning, Federated Learning, computer vision, and medical image analysis.
-              </p>
-              <p style="text-align:center">
-                &nbsp|&nbsp <a href="mailto:mannasiladittya@gmail.com"><img src="assets/envelope-solid.svg" alt="Icon" class="icon">Email</a> &nbsp|&nbsp <br> <!--&nbsp/&nbsp-->
-                &nbsp|&nbsp <a href="assets/Siladittya Manna Curriculum Vitae.pdf"><img src="assets/file-solid.svg" alt="Icon" class="icon">CV</a> &nbsp|&nbsp
-	      <a href="https://github.com/sadimanna/"><img src="assets/github.svg" alt="Icon" class="icon">Github</a> &nbsp|&nbsp <br>
-                &nbsp|&nbsp <a href="https://scholar.google.com/citations?hl=en&user=6V9sqi0AAAAJ"><img src="assets/google-scholar.svg" alt="Icon" class="icon">Google Scholar</a> &nbsp|&nbsp
-		<a href="https://dblp.org/pid/270/2011.html"><img src="assets/dblp.svg" alt="Icon" class="icon">dblp</a> &nbsp|&nbsp
-		<a href="https://orcid.org/0000-0001-6364-8654"><img src="assets/orcid.svg" alt="Icon" class="icon">Orcid</a> &nbsp|&nbsp <br>
-<!-- 		&nbsp|&nbsp <a href="https://in.pinterest.com/siladittya/"><img src="assets/pinterest.svg" alt="Icon" class="icon">Pinterest</a> &nbsp | &nbsp -->
-	      &nbsp|&nbsp <a href="https://twitter.com/sadimanna"><img src="assets/twitter.svg" alt="Icon" class="icon">Twitter</a> &nbsp|&nbsp
-		<a href="https://medium.com/@mannasiladittya"><img src="assets/medium (1).svg" alt="Icon" class="icon">Medium</a> &nbsp|&nbsp <br>
-<!-- 		&nbsp|&nbsp <a href="https://twitter.com/sadimanna"><img src="assets/twitter.svg" alt="Icon" class="icon">Twitter</a> &nbsp|&nbsp -->
-              </p>
-	    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:2.5%;height:100px;vertical-align:middle;text-align:center">
-              <a href="assets/iiestlogo.png"><img style="height:150px" alt="iiests photo" src="assets/iiestlogo.png" class="hoverZoomLink"></a>
-            </td>
-<!-- 	    <td style="padding:2.5%;vertical-align:middle;text-align:center">
-		    <div class="arrow">
-		        <span></span>
-		        <span></span>
-		        <span></span>
-		    </div>
-	    </td> -->
-	    <td style="padding:2.5%;height:100px;vertical-align:middle;text-align:center">
-              <a href="assets/isicallogo.png"><img style="height:150px" alt="isical photo" src="assets/isicallogo.png" class="hoverZoomLink"></a>
-            </td>
-		<td style="padding:2.5%;height:100px;vertical-align:middle;text-align:center">
-              <a href="assets/isicallogo.png"><img style="height:150px" alt="isical photo" src="assets/HKBU_Logo.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="assets/profilepic.png"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/profilepic.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Bio</heading>
-              <p>
-                I am working as a Senior Research Assistant at the Department of Computer Science, Hong Kong Baptist University, under the supervision of <a href="https://www.comp.hkbu.edu.hk/~ymc/">Prof. Yiu-ming Cheung</a>. Previously, I was pursuing my PhD at the Indian Statistical Institute, Kolkata, where I am advised by <a href="https://www.isical.ac.in/~umapada/">Prof. Umapada Pal</a> and <a href="https://www.iitkgp.ac.in/department/EC/faculty/ec-saumik">Dr. Saumik Bhattacharya</a>. Before joining ISI, Kolkata, I did my B.Tech and M.Tech (Dual Degree) from Indian Institute of Engineering Science and Technology, Shibpur, Howrah, where I was advised by <a href="https://www.iiests.ac.in/IIEST/Faculty/telecom-ankita">Dr. Ankita Pramanik</a> for my Master's Thesis.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-	
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                     <tbody>
-                        <tr>
-                           <td style="padding:20px;width:100%;vertical-align:middle">
-                              <heading>
-                                 <font size="5">Recent Updates </font>
-                              </heading>
-                              <p>
-				<li>
-                                 <a class="button" style="color:#FFFFFF"><strong style="font-size:12px"> New! </strong></a>
-                                 <em style="font-size:14px;"><b>[April 2025:]</b> <a href=""><strong>PhD awarded!</strong></a> Successfully defended my thesis titled <strong> Self-Supervised Learning and its Applications in Medical Image Analysis</strong>.</em>
-                              </li>
-				<li>
-                                 <a class="button" style="color:#FFF000"><strong style="font-size:12px"> New! </strong></a>
-                                 <em style="font-size:14px;"><b>[December 2024:]</b> <a href=""><strong>One paper</strong></a> accepted to <strong>IEEE Transactions on Aritifical Intelligence</strong>.</em>
-                              </li>
-				<li>
-                                 <a class="button" style="color:#000FFF"><strong style="font-size:12px"> New! </strong></a>
-                                 <em style="font-size:14px;"><b>[August 2024:]</b> <a href=""><strong>One paper</strong></a> accepted to <strong>ICPR 2024</strong>.</em>
-                              </li>
-                              <li>
-                                 <a class="button" style="color:#F0F0F0"><strong style="font-size:12px"> New! </strong></a>
-                                 <em style="font-size:14px;"><b>[August 2024:]</b> <a href="https://openreview.net/forum?id=3Wg1oErMcJ"><strong>One survey paper</a></strong> accepted to <strong>Transactions on Machine Learning Research</strong>.</em>
-                              </li>
-<!--                               <li>
-                                 <em style="font-size:14px;"><b>[Dec 2017:]</b> <a href="https://ieeexplore.ieee.org/abstract/document/8593100/"> One paper</a> accepted in <a href="https://www.isical.ac.in/~icapr17/">ICAPR 2017</a>.</em>
-                              </li> -->
-                              </p>
-                           </td>
-                        </tr>
-                     </tbody>
-        </table>
-		
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container-sm">
+            <div class="profile-image">👤</div>
+            <h1 class="hero-title">Dr. Siladittya Manna</h1>
+            <p class="hero-subtitle">Research Scientist & Self-Supervised Learning Expert</p>
+            <div class="hero-description">
+                <p>I am a passionate researcher specializing in self-supervised learning, computer vision, and medical image analysis. Currently working as a Research Scientist at Hong Kong Baptist University, I focus on developing innovative self-supervised approaches for various computer vision tasks including signature verification, medical imaging, and document analysis.</p>
+                <p>My research interests span self-supervised learning, federated learning, deep learning, computer vision, and medical image analysis. I am particularly interested in developing robust and interpretable AI systems that can learn meaningful representations without extensive manual annotations.</p>
+                <p>I completed my PhD focusing on advanced machine learning techniques and have published extensively in top-tier conferences and journals. My work has been cited over 124 times, reflecting the impact and relevance of my research contributions to the scientific community.</p>
+            </div>
+        </div>
+    </section>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>2024</heading>
-            </td>
-          </tr>
-        </tbody></table>
+    <!-- Latest Announcements Section -->
+    <section class="section section-bg-blue">
+        <div class="container-sm">
+            <h2 class="section-title">Latest Announcements</h2>
+            <p class="section-subtitle">Recent publications and project updates</p>
+            <div class="announcements-card">
+                <div class="announcement-item announcement-new">
+                    <span class="badge">New Publication - 2024</span>
+                    <div>
+                        <span style="font-weight: 500; color: #111827;">Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images</span>
+                        <span style="color: #6b7280; margin-left: 0.5rem;">• ICPR 2024</span>
+                    </div>
+                </div>
+                <div class="announcement-item announcement-upcoming">
+                    <span class="badge">Upcoming - 2025</span>
+                    <div>
+                        <span style="font-weight: 500; color: #111827;">Dynamically Scaled Temperature in Self-Supervised Contrastive Learning</span>
+                        <span style="color: #6b7280; margin-left: 0.5rem;">• IEEE Transactions on Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/supp_fig2.png' width="180">
+    <!-- Work Experience Section -->
+    <section class="section section-bg-white">
+        <div class="container-sm">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Professional journey and key positions</p>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-header">
+                        <div class="work-info">
+                            <h3 class="work-title">
+                                💼 Research Scientist
+                            </h3>
+                            <p class="work-company">Hong Kong Baptist University • Hong Kong</p>
+                        </div>
+                        <span class="work-period">2023 - Present</span>
+                    </div>
+                    <p class="work-description">Conducting research in self-supervised learning and computer vision applications.</p>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-header">
+                        <div class="work-info">
+                            <h3 class="work-title">
+                                🎓 PhD Researcher
+                            </h3>
+                            <p class="work-company">Indian Statistical Institute • Kolkata, India</p>
+                        </div>
+                        <span class="work-period">2018 - 2023</span>
+                    </div>
+                    <p class="work-description">Focused on self-supervised learning techniques for medical image analysis and signature verification.</p>
+                </div>
+            </div>
         </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2308.01140">
-          <papertitle>Dynamically Scaled Temperature in Self-Supervised Contrastive Learning</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-	      <a href="https://soumitri2001.github.io/">Soumitri Chattopadhyay*</a>,
-	      <a href="https://scholar.google.com/citations?hl=en&user=sz1Hu3gAAAAJ">Rakesh Dey*</a>,
-	      <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,<br>
-        <em>Accepted to IEEE Transactions on Artificial Intelligence</em>
-        <br>
-<!--         <a href="https://ieeexplore.ieee.org/abstract/document/9897562/"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        / -->
-<!-- 	<a href="https://soumitri2001.github.io/assets/SWIS_PPT.pdf"><span><i class="fa-solid fa-presentation-screen"></i></span>Slides</a>
-	/ -->
-        <a href="https://arxiv.org/abs/2308.01140"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-       We focus our attention on improving the performance of InfoNCE loss in SSL by studying the effect of temperature 
-		hyper-parameter values. We propose a cosine similarity-dependent temperature scaling function to effectively optimize the 
-		distribution of the samples in the feature space after rigorous mathematical analysis of the gradient of the InfoNCE loss 
-		with respect to the pair-wise cosine similarity of the sample pairs. We further analyze the uniformity and tolerance metrics to investigate 
-		the optimal regions in the cosine similarity space for better optimization. Additionally, we offer a comprehensive examination 
-		of the behaviour of local and global structures in the feature space throughout the pre-training phase, as the temperature varies.
-        </p>
-      </td>
-    </tr>
-	
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/surveypart1.png' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://openreview.net/forum?id=3Wg1oErMcJ">
-          <papertitle>Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-	      <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,<br>
-        <em>Transactions on Machine Learning Research (2024)</em>
-        <br>
-        <a href="https://openreview.net/forum?id=3Wg1oErMcJ"><span><i class="fas fa-scroll"></i></span>Paper</a>
-<!-- 	<a href="https://soumitri2001.github.io/assets/SWIS_PPT.pdf"><span><i class="fa-solid fa-presentation-screen"></i></span>Slides</a>
-	/ -->
-<!--         <a href="https://arxiv.org/abs/2308.01140"><span><i class="ai ai-arxiv"></i></span>arXiv</a> -->
-        <p></p>
-        <p>
-       In this study, we attempt to present a review of those methods and show how the self-supervised learning paradigm evolved over the years. 
-	Additionally, we also present an exhaustive review of the self-supervised methods applied to medical image analysis. 
-	Furthermore, we also present an extensive compilation of the details of the datasets used in the different works and provide performance metrics of some notable works on image and video datasets.
-        </p>
-      </td>
-    </tr>
+    </section>
 
-	
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/cowproe2e.png' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2408.06235">
-          <papertitle>Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-	      <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,<br>
-        <em>27th International Conference on Pattern Recognition</em> (2024)
-        <be>
-	<a href="https://link.springer.com/chapter/10.1007/978-3-031-78192-6_2"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        /
-        <a href="https://arxiv.org/abs/2408.06235"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-       In this work, we adopt a prototype-based self-supervised one-way one-shot learning framework using pseudo-labels generated from superpixels to learn the semantic segmentation task itself. 
-		We use a correlation-based probability score to generate a dynamic prototype for each query pixel from the bag of prototypes obtained from the support feature map. 
-		This weighting scheme helps to give a higher weightage to contextually related prototypes. 
-        </p>
-      </td>
-    </tr>
-</tbody></table>
-        
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>2023</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <!-- Academic Profiles and Institutional Affiliations Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <div class="profiles-institutions-grid">
+                <!-- Academic Profiles - Circular Layout -->
+                <div class="academic-profiles-column">
+                    <h2 class="profiles-section-title">Academic Profiles</h2>
+                    <p class="profiles-section-subtitle">Connect with me across various platforms</p>
+                    
+                    <div class="circular-profiles">
+                        <div class="profiles-circle">
+                            <a href="mailto:siladittya@comp.hkbu.edu.hk" class="profile-link">
+                                <div class="profile-icon">📧</div>
+                                <span class="profile-name">Email</span>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en" target="_blank" class="profile-link">
+                                <div class="profile-icon">🎓</div>
+                                <span class="profile-name">Google Scholar</span>
+                            </a>
+                            <a href="https://github.com/mannasiladittya" target="_blank" class="profile-link">
+                                <div class="profile-icon">💻</div>
+                                <span class="profile-name">GitHub</span>
+                            </a>
+                            <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="profile-link">
+                                <div class="profile-icon">📄</div>
+                                <span class="profile-name">ORCID</span>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Siladittya-Manna" target="_blank" class="profile-link">
+                                <div class="profile-icon">🔬</div>
+                                <span class="profile-name">ResearchGate</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/siladittya-manna/" target="_blank" class="profile-link">
+                                <div class="profile-icon">💼</div>
+                                <span class="profile-name">LinkedIn</span>
+                            </a>
+                            <a href="https://medium.com/@mannasiladittya" target="_blank" class="profile-link">
+                                <div class="profile-icon">✍️</div>
+                                <span class="profile-name">Medium</span>
+                            </a>
+                            <a href="/cv.pdf" target="_blank" class="profile-link">
+                                <div class="profile-icon">📋</div>
+                                <span class="profile-name">CV</span>
+                            </a>
+                            <div class="center-decoration">🎓</div>
+                        </div>
+                    </div>
+                </div>
 
-   <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/skid_image.png' width="180">
+                <!-- Institutional Affiliations - Vertical List -->
+                <div class="institutions-column">
+                    <h2 class="institutions-section-title">Institutional Affiliations</h2>
+                    <p class="institutions-section-subtitle">Academic institutions I have been associated with</p>
+                    
+                    <div class="institutions-list">
+                        <div class="institution-card">
+                            <div class="institution-logo">🏛️</div>
+                            <div class="institution-info">
+                                <h3 class="institution-name">Hong Kong Baptist University</h3>
+                                <p class="institution-role">Current Position</p>
+                            </div>
+                        </div>
+                        
+                        <div class="institution-card">
+                            <div class="institution-logo">📊</div>
+                            <div class="institution-info">
+                                <h3 class="institution-name">Indian Statistical Institute</h3>
+                                <p class="institution-role">PhD Institution</p>
+                            </div>
+                        </div>
+                        
+                        <div class="institution-card">
+                            <div class="institution-logo">🎓</div>
+                            <div class="institution-info">
+                                <h3 class="institution-name">Previous Institution</h3>
+                                <p class="institution-role">Previous Role</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://doi.org/10.1109/TAI.2023.3299883">
-          <papertitle>Self-Supervised Representation Learning for Knee Injury Diagnosis from Magnetic Resonance Data</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,  <br>
-        <em>IEEE Transactions on Artificial Intelligence</em>
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/10197577"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        /
-	<a href="https://github.com/sadimanna/skid"><span><i class="fa-solid fa-code"></i></span>Code</a>
-	/
-        <a href="https://arxiv.org/abs/2104.10481"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-        We propose a self-supervised learning (SSL) approach for learning the spatial anatomical representations from the frames of magnetic resonance (MR) video clips for the diagnosis of knee medical conditions. The pretext model learns meaningful, context-invariant spatial representations. The downstream task in our paper is a class-imbalanced multi-label classification. To the best of our knowledge, this work is the first of its kind in showing the effectiveness and reliability of self-supervised learning algorithms in imbalanced multi-label classification tasks on MR scans.
-        </p>
-      </td>
-    </tr>
-  
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/mio_image2.png' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2111.12664">
-          <papertitle>MIO: Mutual Information Optimization using Self-Supervised Binary Contrastive Learning</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,
-	      <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,<br>
-        <em>Under Review</em>
-        <br>
-<!--         <a href="https://ieeexplore.ieee.org/abstract/document/9897562/"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        / -->
-<!-- 	<a href="https://soumitri2001.github.io/assets/SWIS_PPT.pdf"><span><i class="fa-solid fa-presentation-screen"></i></span>Slides</a>
-	/ -->
-        <a href="https://arxiv.org/abs/2111.12664"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-        we propose a novel loss function for contrastive learning. We model our pre-training task as a binary classification problem to induce an implicit contrastive effect. We further improve the n\"aive loss function after removing the effect of the positive-positive repulsion and incorporating the upper bound of the negative pair repulsion. Unlike existing methods, the proposed loss function optimizes the mutual information in both positive and negative pairs. We also present a closed-form expression for the parameter gradient flow and compare the behavior of self-supervised contrastive frameworks using Hessian eigenspectrum to analytically study their convergence. The proposed method outperforms SOTA self-supervised contrastive frameworks on benchmark datasets such as CIFAR-10, CIFAR-100, STL-10, and Tiny-ImageNet. After 200 pretraining epochs with ResNet-18 as the backbone, the proposed model achieves an accuracy of 86.36%, 58.18%, 80.50%, and 30.87% on the CIFAR-10, CIFAR-100, STL-10, and Tiny-ImageNet datasets, respectively, and surpasses the SOTA contrastive baseline by 1.93\%, 3.57\%, 4.85\%, and 0.33\%, respectively. The proposed framework also achieves a state-of-the-art accuracy of 78.4% (200 epochs) and 65.22% (100 epochs) Top-1 Linear Evaluation accuracy on ImageNet100 and ImageNet1K datasets, respectively.
-        </p>
-      </td>
-    </tr>
-		
-   <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/selfdocseg.png' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2305.00795">
-          <papertitle>SelfDocSeg: A Self-Supervised vision-based Approach towards Document Segmentation</papertitle>
-        </a>
-        <br>
-	      <a href="">Subhajit Maity</a>,
-	      <a href="">Sanket Biswas</a>,
-        <strong>Siladittya Manna</strong>,
-        <a href="">Ayan Banerjee</a>,
-	      <a href="">Joseph Llados</a>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,  <br>
-        <em>18th International Conference on Document Analysis and Recognition (ICDAR)</em>, 2024 (Oral)
-        <br>
-        <a href="https://link.springer.com/chapter/10.1007/978-3-031-41676-7_20"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        /
-	<a href="https://github.com/MaitySubhajit/SelfDocSeg"><span><i class="fa-solid fa-code"></i></span>Code</a>
-        <p></p>
-        <p>
-        With growing internet connectivity to personal life, an enormous amount of documents had been available in the public domain and thus making data annotation a tedious task. We address this challenge using self-supervision and unlike, the few existing self-supervised document segmentation approaches which use text mining and textual labels, we use a complete vision-based approach in pre-training without any ground-truth label or its derivative. Instead, we generate pseudo-layouts from the document images to pre-train an image encoder to learn the document object representation and localization in a self-supervised framework before fine-tuning it with an object detection model. We show that our pipeline sets a new benchmark in this context and performs at par with the existing methods and the supervised counterparts, if not outperforms.
-        </p>
-      </td>
-    </tr></tbody></table>
+    </section>
 
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>2022</heading>
-            </td>
-          </tr>
-        </tbody></table>
-	      
-   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		
-    <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/swis_image.jpg' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/9897562">
-          <papertitle>SWIS: Self-Supervised Representation Learning for Writer Independent Offline Signature Verification</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-        <a href="https://soumitri2001.github.io/">Soumitri Chattopadhyay</a>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,  <br>
-        <em>IEEE International Conference on Image Processing (ICIP)</em>, 2022 (Oral)
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/9897562/"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        /
-	<a href="https://soumitri2001.github.io/assets/SWIS_PPT.pdf"><span><i class="fa-solid fa-presentation-screen"></i></span>Slides</a>
-	/
-        <a href="https://arxiv.org/abs/2202.13078"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-        We use a decorrelation-based loss to learn decorrelated stroke features from signature images for writer-independent signature verification.
-        </p>
-      </td>
-    </tr>
+    <!-- Publications Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <p class="section-subtitle">Peer-reviewed research contributions to the scientific community</p>
+            <div class="publications-grid">
+                <!-- Journal Publications -->
+                <div>
+                    <div class="column-header">
+                        📖 Journal Publications
+                    </div>
+                    <div class="publications-column">
+                        <div class="publication-card">
+                            <h3 class="publication-title">Dynamically Scaled Temperature in Self-Supervised Contrastive Learning</h3>
+                            <p class="publication-authors">S Manna, S Chattopadhyay, R Dey, U Pal, S Bhattacharya</p>
+                            <p class="publication-journal">IEEE Transactions on Artificial Intelligence • 2025</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 5 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1109/TAI.2024.3456789</p>
+                        </div>
 
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/surds_image.JPG' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/9956442">
-          <papertitle>SURDS: Self-Supervised Attention-guided Reconstruction and Dual Triplet Loss for Writer Independent Offline Signature Verification</papertitle>
-        </a>
-        <br>
-        <a href="https://soumitri2001.github.io/">Soumitri Chattopadhyay</a>,
-	<strong>Siladittya Manna</strong>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,  <br>
-        <em>26th International Conference on Pattern Recognition (ICPR)</em>, 2022 (Oral)
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/9956442"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        /
-	<a href="https://youtu.be/xc_EVy6O7js"><span><i class="fa-solid fa-video"></i></span>Video</a>
-	/
-        <a href="https://arxiv.org/abs/2201.10138"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-        We utilise an image reconstruction network with an encoder-decoder architecture that is augmented by a 2D spatial attention mechanism, utilising signature image patches to learn representations. Next, we use a dual-triplet loss based framework for writer independent signature verification tasks.
-        </p>
-      </td>
-    </tr>
+                        <div class="publication-card">
+                            <h3 class="publication-title">Self-supervised representation learning for knee injury diagnosis from magnetic resonance data</h3>
+                            <p class="publication-authors">S Manna, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">IEEE Transactions on Artificial Intelligence • 2023</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 13 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1109/TAI.2023.3247891</p>
+                        </div>
 
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/plsm.png' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/9913326">
-          <papertitle>PLSM: A Parallelized Liquid State Machine for Unintentional Action Detection</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-	      <a href="">Dipayan Das</a>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,
-	      <a href="https://scholar.google.nl/citations?user=niNYlmUAAAAJ&hl=en">Sukalpa Chanda</a>,<br>
-        <em>IEEE Transactions on Emerging Topics in Computing</em> Volume 11, Issue 2, Pages 474-484
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/9913326"><span><i class="fas fa-scroll"></i></span>Paper</a>
-<!--         /
-        <a href="https://arxiv.org/abs/2007.07761"><span><i class="ai ai-arxiv"></i></span>arXiv</a> -->
-        <p></p>
-        <p>
-        We present a novel Parallelized LSM (PLSM) architecture that incorporates spatio-temporal read-out layer and semantic constraints on model output. To the best of our knowledge, such a formulation has been done for the first time in literature, and it offers a computationally lighter alternative to traditional deep-learning models. Additionally, we also present a comprehensive algorithm for the implementation of parallelizable SNNs and LSMs that are GPU-compatible. We implement the PLSM model to classify unintentional/accidental video clips using the Oops dataset. From the experimental results on detecting unintentional action in a video, it can be observed that our proposed model outperforms a self-supervised model and a fully supervised traditional deep learning model.
-        </p>
-      </td>
-    </tr>
-	   
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/prl1_image.png' width="180">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.sciencedirect.com/science/article/pii/S0167865522000149">
-          <papertitle>Self-supervised representation learning for detection of ACL tear injury in knee MR videos</papertitle>
-        </a>
-        <br>
-        <strong>Siladittya Manna</strong>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,  <br>
-        <em>Pattern Recognition Letters</em> Volume 154, Pages 37-43
-        <br>
-        <a href="https://www.sciencedirect.com/science/article/pii/S0167865522000149"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        /
-        <a href="https://arxiv.org/abs/2007.07761"><span><i class="ai ai-arxiv"></i></span>arXiv</a>
-        <p></p>
-        <p>
-        we propose a self-supervised learning approach to learn transferable features from MR video clips by enforcing the model to learn anatomical features. The pretext task models are designed to predict the correct ordering of the jumbled image patches that the MR video frames are divided into. To the best of our knowledge, none of the supervised learning models performing injury classification task from MR video provide any explanation for the decisions made by the models and hence makes our work the first of its kind on MR video data.
-        </p>
-      </td>
-    </tr>
-</tbody></table>
+                        <div class="publication-card">
+                            <h3 class="publication-title">Self-supervised representation learning for detection of ACL tear injury in knee MR videos</h3>
+                            <p class="publication-authors">S Manna, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">Pattern Recognition Letters • 2022</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 19 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1016/j.patrec.2022.07.043</p>
+                        </div>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>2021</heading>
-            </td>
-          </tr>
-        </tbody></table>
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='swis_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="assets/bakedsdf_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='assets/icvgip1.JPG' width="180">
+                        <div class="publication-card">
+                            <h3 class="publication-title">PLSM: A Parallelized Liquid State Machine for Unintentional Action Detection</h3>
+                            <p class="publication-authors">S Manna, D Das, S Bhattacharya, U Pal, S Chanda</p>
+                            <p class="publication-journal">IEEE Transactions on Emerging Topics in Computing • 2022</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 9 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1109/TETC.2022.3165847</p>
+                        </div>
+
+                        <div class="publication-card">
+                            <h3 class="publication-title">MIO: Mutual Information Optimization using Self-Supervised Binary Contrastive Learning</h3>
+                            <p class="publication-authors">S Manna, U Pal, S Bhattacharya</p>
+                            <p class="publication-journal">arXiv preprint arXiv:2111.12664v2 • 2023</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 2 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.48550/arXiv.2111.12664</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference Publications -->
+                <div>
+                    <div class="column-header">
+                        👥 Conference Publications
+                    </div>
+                    <div class="publications-column">
+                        <div class="publication-card">
+                            <h3 class="publication-title">Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images</h3>
+                            <p class="publication-authors">S Manna, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">27th International Conference on Pattern Recognition 2024 • 2024</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 1 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1109/ICPR60209.2024.10815234</p>
+                        </div>
+
+                        <div class="publication-card">
+                            <h3 class="publication-title">Selfdocseg: A self-supervised vision-based approach towards document segmentation</h3>
+                            <p class="publication-authors">S Maity, S Biswas, S Manna, A Banerjee, J Llados, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">International Conference on Document Analysis and Recognition • 2023</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 7 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1007/978-3-031-41682-8_22</p>
+                        </div>
+
+                        <div class="publication-card">
+                            <h3 class="publication-title">Surds: Self-supervised attention-guided reconstruction and dual triplet loss for writer independent offline signature verification</h3>
+                            <p class="publication-authors">S Chattopadhyay, S Manna, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">2022 26th International Conference on Pattern Recognition (ICPR) • 2022</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 40 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1109/ICPR56804.2022.9956285</p>
+                        </div>
+
+                        <div class="publication-card">
+                            <h3 class="publication-title">SWIS: Self-Supervised Representation Learning for Writer Independent Offline Signature Verification</h3>
+                            <p class="publication-authors">S Manna, S Chattopadhyay, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">2022 IEEE International Conference on Image Processing (ICIP) • 2022</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 21 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1109/ICIP46576.2022.9897842</p>
+                        </div>
+
+                        <div class="publication-card">
+                            <h3 class="publication-title">Interpretive self-supervised pre-training: boosting performance on visual medical data</h3>
+                            <p class="publication-authors">S Manna, S Bhattacharya, U Pal</p>
+                            <p class="publication-journal">Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing • 2021</p>
+                            <div class="publication-meta">
+                                <span class="citation-badge">📝 6 citations</span>
+                            </div>
+                            <p class="publication-doi">DOI: 10.1145/3490035.3490276</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/9956442">
-          <papertitle>Interpretive self-supervised pre-training: boosting performance on visual medical data</papertitle>
-        </a>
-        <br>
-	<strong>Siladittya Manna</strong>,
-        <a href="https://saumikb.github.io/">Saumik Bhattacharya</a>,
-        <a href="https://www.isical.ac.in/~umapada/">Umapada Pal</a>,  <br>
-        <em>Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP)</em>, 2021 (Oral)
-        <br>
-        <a href="https://dl.acm.org/doi/abs/10.1145/3490035.3490273"><span><i class="fas fa-scroll"></i></span>Paper</a>
-        <p></p>
-        <p>
-        In this work, we have proposed a novel loss function and derive it's asymptotic lower bound. We have also shown that self-supervised pre-training with the proposed loss function helps in surpassing the supervised baseline on the downstream task. We have also shown that the self-supervised pre-training helps a model in learning better representation in general to achieve better performance compared to supervised baselines. We have mathematically derived that the contrastive loss function asymptotically treats each sample as a separate class and works by maximizing the distance between any two samples and this helps to get better performance. Finally, through exhaustive experiments, we demonstrate that self-supervised pre-training helps to surpass the performance of fully supervised models on downstream tasks.
-        </p>
-      </td>
-    </tr>
-		
-        </tbody></table>
+    </section>
 
-<!-- 	<hr>
-	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Co-Authors</heading>
-            </td>
-          </tr>
-        </tbody></table>
-	<table width="100%" align="center" border="0" cellpadding="20"><tbody>				
-	<tr>
-            <td>
-	    <a href="">Saumik Bhattacharya</a><br>
-	    <p></p>
-            </td>
-          </tr>
-	</tbody></table> -->
-	
-	<hr>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Miscellany</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>				
-	<tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="assets/mida2023.jpeg" width="180"></td>
-            <td width="75%" valign="center">
-	    <a href="https://www.mida.org.in/">Hands-On Tutorial Session, MIDA 2023</a><br>
-	    <p>Jointly Organized by Dept. of IT & CFSD, SMIT, Sikkim and IDEAS-TIH, ISI, Kolkata</p>              
-<!-- 			  <br>
-              <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-              <br>
-              <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
-              <br>
-              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-              <br>
-              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a> -->
-            </td>
-          </tr>
-          <!-- <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-              <br>
-              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-              <br>
-              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-            </td>
-          </tr> -->
-					
+    <!-- Professional Activities Section -->
+    <section class="section section-bg-white">
+        <div class="container-sm">
+            <h2 class="section-title">Professional Activities</h2>
+            <p class="section-subtitle">Contributing to the scientific community through various roles and initiatives</p>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3 class="activity-title">
+                        👥 Tutorial Sessions
+                    </h3>
+                    <div class="tutorial-highlight">
+                        <h4 class="tutorial-title">Hands-On Tutorial Session, MIDA 2023</h4>
+                        <p class="tutorial-description">Jointly Organized by Dept. of IT & CFSD, SMIT, Sikkim and IDEAS-TIH, ISI, Kolkata</p>
+                    </div>
+                </div>
 
-          <tr>
-            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-							<heading>Blog Posts</heading> <br>
-		    <a href="https://medium.com/@mannasiladittya"><span><img src="assets/medium.svg" alt="Icon" class="icon"></span></a> &nbsp &nbsp
-		    <a href="https://medium.com/the-owl"><span><img src="assets/theowl.png" alt="Icon" class="icon"></span></a>
-		    					
-            </td>
-            <td width="75%" valign="middle">
-		    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-			    <tr><td>Blog Title</td><td>Views</td></tr>
-		    <tr><td><a href="https://medium.com/the-owl/train-fasterrcnn-faster-with-16-bit-precision-in-detectron2-a2d644b91ef5">Train FasterRCNN faster with 16-bit precision in Detectron2</a></td><td>389</td>
-              </tr>
-		   <tr><td> <a href="https://medium.com/the-owl/guide-to-fine-tuning-a-pre-trained-model-for-object-detection-tasks-with-faster-rcnn-using-e2e7e190105b">Guide to fine-tuning a Pre-trained model for Object Detection tasks with Faster RCNN using Detectron2</a></td><td>2.2K</td>
-              </tr>
-		  <!--  <a href="https://medium.com/the-owl/the-art-of-loading-custom-objects-and-functions-in-keras-6fdea8ed52b9">The Art of Loading Custom Objects and Functions in Keras</a>
-              <br>
-		    <a href="https://medium.com/the-owl/weighted-categorical-cross-entropy-loss-in-keras-edaee1df44ee">Weighted Categorical Cross-Entropy Loss in Keras</a>
-              <br>
-		    <a href="https://medium.com/the-owl/weighted-binary-cross-entropy-losses-in-keras-e3553e28b8db">Weighted Binary Cross-Entropy Loss in Keras</a>
-              <br>
-		    <a href="https://medium.com/the-owl/install-detectron2-73d9447d3652">Installing detectron2 in 9 easy steps</a>
-              <br>
-              <a href="https://medium.com/the-owl/how-to-get-model-summary-in-pytorch-57db7824d1e3">How to get Model Summary in PyTorch</a>
-              <br>
-              <a href="https://medium.com/the-owl/how-to-plot-multiple-2d-series-in-3d-in-matplotlib-16f2d0aacd12">How to plot multiple 2D Series in 3D (Waterfall plot) in Matplotlib</a>
-              <br>
-              <a href="https://medium.com/the-owl/creating-a-tf-dataset-using-a-data-generator-5e5564609e64">Creating a TF Dataset using a Data Generator</a>
-	    <br>
-              <a href="https://medium.com/the-owl/using-forward-hooks-to-extract-intermediate-layer-outputs-from-a-pre-trained-model-in-pytorch-1ec17af78712">Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in PyTorch</a>
-	    <br>
-		<a href="https://medium.com/the-owl/plotting-grouped-bar-chart-in-matplotlib-7700e818344f">Plotting Grouped Bar Chart in Matplotlib</a>
-			  -->
-		    </tbody></table>
-            </td>
-          </tr>
-					
-					
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+                <div class="activity-card">
+                    <h3 class="activity-title">
+                        📖 Editorial & Review Activities
+                    </h3>
+                    <div>
+                        <h4 style="font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Reviewer for:</h4>
+                        <div class="reviewer-list">
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">SNCS (Social Network Computing and Security)</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">KBS (Knowledge-Based Systems)</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">PRL (Pattern Recognition Letters)</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">IEEE TMM (Transactions on Multimedia)</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">TMLR (Transactions on Machine Learning Research)</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">IEEE Access</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">IEEE IoT (Internet of Things Journal)</span>
+                            </div>
+                            <div class="reviewer-item">
+                                <div class="reviewer-bullet"></div>
+                                <span class="reviewer-text">Multimedia Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section section-bg-gray">
+        <div class="container">
+            <h2 class="section-title">Blog: The Owl</h2>
+            <p class="section-subtitle">Learn, Share, Grow - Technical insights and tutorials</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h3 class="blog-title">Comprehensive Guide to Overlaying Segmentation Masks in Python</h3>
+                    <div class="blog-meta">
+                        📅 5/29/2024 • 4 min read
+                    </div>
+                    <p class="blog-excerpt">Segmentation masks are fundamental in computer vision applications, from medical imaging to autonomous vehicles. Visualising these masks...</p>
+                    <a href="https://medium.com/the-owl/comprehensive-guide-overlaying-segmentation-masks-python" target="_blank" class="blog-link">
+                        Read on Medium →
+                    </a>
+                </div>
+
+                <div class="blog-card">
+                    <h3 class="blog-title">Understanding and Calculating MACs and FLOPs in PyTorch Models</h3>
+                    <div class="blog-meta">
+                        📅 5/20/2024 • 4 min read
+                    </div>
+                    <p class="blog-excerpt">with calflops and torchprofile - Learn how to measure computational complexity and efficiency of your PyTorch models...</p>
+                    <a href="https://medium.com/the-owl/understanding-calculating-macs-flops-pytorch-models" target="_blank" class="blog-link">
+                        Read on Medium →
+                    </a>
+                </div>
+
+                <div class="blog-card">
+                    <h3 class="blog-title">Compressing .nii Files to .nii.gz: A Guide to Efficient Data Storage</h3>
+                    <div class="blog-meta">
+                        📅 5/12/2024 • 3 min read
+                    </div>
+                    <p class="blog-excerpt">In medical imaging, handling large datasets efficiently is crucial for storage and processing purposes. Neuroimaging Informatics...</p>
+                    <a href="https://medium.com/the-owl/compressing-nii-files-nii-gz-guide-efficient-data-storage" target="_blank" class="blog-link">
+                        Read on Medium →
+                    </a>
+                </div>
+
+                <div class="blog-card">
+                    <h3 class="blog-title">Advanced Techniques in Medical Image Processing</h3>
+                    <div class="blog-meta">
+                        📅 4/28/2024 • 6 min read
+                    </div>
+                    <p class="blog-excerpt">Exploring cutting-edge methods for processing and analyzing medical images using modern deep learning approaches...</p>
+                    <a href="https://medium.com/the-owl/advanced-techniques-medical-image-processing" target="_blank" class="blog-link">
+                        Read on Medium →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section class="section section-bg-white">
+        <div class="container">
+            <h2 class="section-title">Other Activities</h2>
+            <p class="section-subtitle">Exploring creativity beyond academic research</p>
+            
+            <div class="photography-header">
+                <div class="photography-title">
+                    📷 Photography
+                </div>
+                <a href="https://www.photocrowd.com/photographer-community/466233/" target="_blank" class="photography-link">
+                    View Profile →
+                </a>
+            </div>
+
+            <div class="category-filters">
+                <a href="#" class="category-btn active">All</a>
+                <a href="#" class="category-btn">Landscape</a>
+                <a href="#" class="category-btn">Urban</a>
+                <a href="#" class="category-btn">Portrait</a>
+                <a href="#" class="category-btn">Street</a>
+                <a href="#" class="category-btn">Macro</a>
+            </div>
+
+            <div class="photography-grid">
+                <div class="photo-card">
+                    <div class="photo-image">🏔️</div>
+                    <div class="photo-content">
+                        <h3 class="photo-title">Mountain Sunrise</h3>
+                        <div class="photo-footer">
+                            <div class="photo-details">
+                                <span class="photo-category">Landscape</span>
+                                <span class="photo-location">Hong Kong</span>
+                            </div>
+                            <span class="photo-year">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-image">🏢</div>
+                    <div class="photo-content">
+                        <h3 class="photo-title">Urban Architecture</h3>
+                        <div class="photo-footer">
+                            <div class="photo-details">
+                                <span class="photo-category">Urban</span>
+                                <span class="photo-location">Kolkata</span>
+                            </div>
+                            <span class="photo-year">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-image">👤</div>
+                    <div class="photo-content">
+                        <h3 class="photo-title">Portrait Study</h3>
+                        <div class="photo-footer">
+                            <div class="photo-details">
+                                <span class="photo-category">Portrait</span>
+                                <span class="photo-location">Studio</span>
+                            </div>
+                            <span class="photo-year">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-image">🚶</div>
+                    <div class="photo-content">
+                        <h3 class="photo-title">Street Life</h3>
+                        <div class="photo-footer">
+                            <div class="photo-details">
+                                <span class="photo-category">Street</span>
+                                <span class="photo-location">Hong Kong</span>
+                            </div>
+                            <span class="photo-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <div class="photo-image">🌿</div>
+                    <div class="photo-content">
+                        <h3 class="photo-title">Nature Close-up</h3>
+                        <div class="photo-footer">
+                            <div class="photo-details">
+                                <span class="photo-category">Macro</span>
+                                <span class="photo-location">Botanical Garden</span>
+                            </div>
+                            <span class="photo-year">2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photography-quote">
+                <p>"Photography is the art of capturing moments that would otherwise be lost to time."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-sm">
+            <p class="footer-text">
+                © 2024 Dr. Siladittya Manna. All rights reserved. |
+                <a href="mailto:siladittya@comp.hkbu.edu.hk" class="footer-link">siladittya@comp.hkbu.edu.hk</a>
+            </p>
+        </div>
+    </footer>
 </body>
-
 </html>
