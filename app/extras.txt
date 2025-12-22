@@ -1,0 +1,25 @@
+{/* <Link
+href="https://www.researchgate.net/profile/Siladittya-Manna"
+target="_blank"
+className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-gray-700 transition-transform hover:scale-110 group"
+>
+<div className="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl shadow-md transition-shadow group-hover:shadow-lg overflow-hidden">
+    <img width="100" height="100" src="https://img.icons8.com/windows/100/researchgate.png" alt="researchgate"/>
+</div>
+<span className="rounded bg-white px-2 py-1 text-xs font-medium opacity-0 shadow-sm transition-opacity group-hover:opacity-100">
+    ResearchGate
+</span>
+</Link> */}
+
+{/* <Link
+href="https://medium.com/@mannasiladittya"
+target="_blank"
+className="absolute top-1/2 left-0 -translate-y-1/2 flex flex-col items-center text-gray-700 transition-transform hover:scale-110 group"
+>
+<div className="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl shadow-md transition-shadow group-hover:shadow-lg overflow-hidden">
+    <img width="100" height="100" src="https://img.icons8.com/bubbles/100/medium-new.png" alt="medium-new"/>
+</div>
+<span className="rounded bg-white px-2 py-1 text-xs font-medium opacity-0 shadow-sm transition-opacity group-hover:opacity-100">
+    Medium
+</span>
+</Link> */}
