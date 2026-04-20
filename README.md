@@ -6,6 +6,7 @@ A static Next.js site configured for GitHub Pages deployment.
 
 - Node.js and npm installed
 - A GitHub repository for this project
+- Node.js 18+ is required (this repo uses Next.js 15). Preferred: Node 20 via `nvm use`.
 
 ## Create the Project
 
@@ -172,4 +173,13 @@ If you use a custom domain, add a `CNAME` file to `out/` before deployment or co
 - Images not showing: confirm the correct path prefix and that images are exported statically.
 - 404 after refresh: ensure the page exists in `out/` and the app is fully static.
 - Intermittent deploy failure on `/_not-found` (for example, `TypeError: e[o] is not a function`): run a clean build by deleting `.next` and `out` before export. This is handled by the `clean` script in `predeploy`.
+- Dev server returns `500` for `/_next/static/chunks/*` (for example `react-refresh.js`, `main.js`, `pages/_app.js`): use Node 20 and restart from a clean state:
+
+```bash
+export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh"
+nvm use
+npm run dev
+```
+
+If needed, run `npm run clean` once before `npm run dev`.
 - Build or lint issues: check the Next.js config and package scripts.

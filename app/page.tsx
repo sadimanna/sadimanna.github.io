@@ -50,7 +50,7 @@ const academicProfiles = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/dr-siladittya-manna-063939a0/",
+    url: "https://www.linkedin.com/in/siladittya-manna-ph-d-063939a0/",
     imageIcon: "/linkedin.png?height=64&width=64",
     color: "text-blue-700",
   },

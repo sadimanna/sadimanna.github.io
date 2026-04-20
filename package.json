@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "check-node": "node -e \"const major=parseInt(process.versions.node.split('.')[0],10); if(major<18){console.error('Node.js 18+ is required for Next.js 15. Run: export NVM_DIR=\\\"$HOME/.nvm\\\" && . \\\"$NVM_DIR/nvm.sh\\\" && nvm use 20'); process.exit(1)}\"",
     "dev": "next dev",
     "build": "next build",
     "clean": "rm -rf .next out",
     "start": "next start",
     "lint": "next lint",
+    "predev": "npm run check-node && npm run clean",
+    "prebuild": "npm run check-node",
     "predeploy": "npm run clean && npm run build",
     "deploy": "touch ./out/.nojekyll && gh-pages -d out"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
