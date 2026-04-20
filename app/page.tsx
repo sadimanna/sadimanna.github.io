@@ -71,11 +71,12 @@ const academicProfiles = [
 // Work experience data
 const workExperience = [
   {
-    position: "Research Associate",
+    position: "Post-Doctoral Research Associate",
     company: "Indian Institute of Science",
     location: "Bangalore, India",
     period: "November 2024 - Present",
     description: "Conducting research in Federated learning for Vision-Language Models.",
+    supervisor: "Prof. Anirban Chakraborty",
   },
   {
     position: "Senior Research Assistant",
@@ -83,6 +84,56 @@ const workExperience = [
     location: "Hong Kong",
     period: "October 2024 - October 2025",
     description: "Conducted research in Federated learning with applications in medical image segmentation, augmented with Self-Supervised learning principles.",
+    supervisor: "Prof. Yiu-Ming Cheung",
+  },
+]
+
+const automatedPaperTopics = [
+  { name: "Federated Machine Learning", url: "/awesome-topics/federated-m-l" },
+  { name: "Inversion Attacks", url: "/awesome-topics/inversion-attacks" },
+  { name: "Prompt Injection Attacks", url: "/awesome-topics/prompt-injection-attack" },
+  { name: "Machine Unlearning", url: "/awesome-topics/machine-unlearning" },
+  { name: "Federated Unlearning", url: "/awesome-topics/federated-unlearning" },
+  { name: "Unlearning in LLMs/VLMs", url: "/awesome-topics/l-l-m-unlearning" },
+  { name: "Prompt Poisoning Attacks", url: "/awesome-topics/prompt-poisoning-attack" },
+  { name: "Vulnerability in Distributed Optimization", url: "/awesome-topics/vulnerability-distributed-optimization" },
+]
+
+const currentResearchTopics = [
+  "Vision-Language Models",
+  "Prompt Tuning in LLMs/VLMs",
+  "Vulnerability Analysis of FL Frameworks",
+  "Domain Heterogeneity in FL",
+  "Adaptive Client Aggregation in FL",
+  "Knowledge Distillation based Aggregation in FL",
+  "Personalized Federated Learning",
+  "Bridging the Gap between generalization and personaliztion in FL",
+  "Self-Supervised Learning",
+  "Self-Supervised Few-Shot Segmentation",
+  "Contrastive Representation Learning",
+  "Medical Image Segmentation",
+]
+
+const latestAnnouncements = [
+  {
+    label: "Accepted - 2026",
+    title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
+    venue: "The First Workshop on AI in Fertility Science 2026",
+  },
+  {
+    label: "New Publication - 2025",
+    title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
+    venue: "Springer Nature Computer Science, December 2025",
+  },
+  {
+    label: "New Publication - 2025",
+    title: "Decorrelation-based Self-Supervised Visual Representation Learning for Writer Identification",
+    venue: "ACM Transactions on Asian and Low-Resource Language Information processing, June 2025",
+  },
+  {
+    label: "New Publication - 2025",
+    title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
+    venue: "IEEE Transactions on Artificial Intelligence, June 2025",
   },
 ]
 
@@ -249,7 +300,7 @@ const publications = [
     authors: "S Chattopadhyay, S Manna, S Bhattacharya, U Pal",
     journal: "2022 26th International Conference on Pattern Recognition (ICPR)",
     year: 2022,
-    citations: 42,
+    citations: 61,
     doi: "10.1109/ICPR56804.2022.9956285",
     abstract:
       "This paper presents a novel self-supervised approach for writer independent offline signature verification using attention-guided reconstruction and dual triplet loss...",
@@ -262,7 +313,7 @@ const publications = [
     authors: "S Manna, S Chattopadhyay, S Bhattacharya, U Pal",
     journal: "2022 IEEE International Conference on Image Processing (ICIP)",
     year: 2022,
-    citations: 22,
+    citations: 28,
     doi: "10.1109/ICIP46576.2022.9897842",
     abstract:
       "We propose SWIS, a self-supervised representation learning framework for writer independent offline signature verification...",
@@ -275,7 +326,7 @@ const publications = [
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "Pattern Recognition Letters",
     year: 2022,
-    citations: 19,
+    citations: 24,
     doi: "10.1016/j.patrec.2022.07.043",
     abstract:
       "This work presents a self-supervised representation learning approach for detecting ACL tear injuries in knee MR videos...",
@@ -288,7 +339,7 @@ const publications = [
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "IEEE Transactions on Artificial Intelligence",
     year: 2023,
-    citations: 16,
+    citations: 24,
     doi: "10.1109/TAI.2023.3247891",
     abstract:
       "We present a comprehensive self-supervised learning framework for knee injury diagnosis using magnetic resonance imaging data...",
@@ -301,7 +352,7 @@ const publications = [
     authors: "S Manna, D Das, S Bhattacharya, U Pal, S Chanda",
     journal: "IEEE Transactions on Emerging Topics in Computing",
     year: 2022,
-    citations: 9,
+    citations: 11,
     doi: "10.1109/TETC.2022.3165847",
     abstract:
       "This paper introduces PLSM, a parallelized liquid state machine architecture for detecting unintentional actions...",
@@ -314,7 +365,7 @@ const publications = [
     authors: "S Maity, S Biswas, S Manna, A Banerjee, J Llados, S Bhattacharya, U Pal",
     journal: "International Conference on Document Analysis and Recognition",
     year: 2023,
-    citations: 11,
+    citations: 15,
     doi: "10.1007/978-3-031-41682-8_22",
     abstract:
       "We propose Selfdocseg, a self-supervised vision-based approach for document segmentation without requiring manual annotations...",
@@ -327,7 +378,7 @@ const publications = [
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing",
     year: 2021,
-    citations: 6,
+    citations: 7,
     doi: "10.1145/3490035.3490276",
     abstract:
       "This work explores interpretive self-supervised pre-training techniques to enhance performance on visual medical data analysis...",
@@ -340,7 +391,7 @@ const publications = [
     authors: "S Manna, S Chattopadhyay, R Dey, U Pal, S Bhattacharya",
     journal: "IEEE Transactions on Artificial Intelligence",
     year: 2025,
-    citations: 5,
+    citations: 19,
     doi: "10.1109/TAI.2024.3456789",
     abstract:
       "We introduce a dynamic temperature scaling mechanism for self-supervised contrastive learning to improve representation quality...",
@@ -353,7 +404,7 @@ const publications = [
     authors: "S Manna, U Pal, S Bhattacharya",
     journal: "arXiv preprint arXiv:2111.12664v2",
     year: 2023,
-    citations: 2,
+    citations: 3,
     doi: "10.48550/arXiv.2111.12664",
     abstract:
       "This paper presents MIO, a novel approach for mutual information optimization using self-supervised binary contrastive learning...",
@@ -366,7 +417,7 @@ const publications = [
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "27th International Conference on Pattern Recognition 2024",
     year: 2024,
-    citations: 1,
+    citations: 2,
     doi: "10.1109/ICPR60209.2024.10815234",
     abstract:
       "We propose a correlation weighted prototype-based approach for self-supervised one-shot segmentation of medical images...",
@@ -379,7 +430,7 @@ const publications = [
     authors: "A Maitra, S Mitra, S Manna, S Bhattacharya, U Pal",
     journal: "ACM Transactions on Asian and Low-Resource Language Information Processing",
     year: 2025,
-    citations: 0,
+    citations: 1,
     doi: "10.1145/3746062",
     abstract:
       "We propose a modified formulation of the decorrelation-based framework named SWIS which was proposed for signature verification by standardizing the features along each dimension on top of the existing framework.",
@@ -392,7 +443,7 @@ const publications = [
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "Transactions on Machine Learning Research",
     year: 2024,
-    citations: 2,
+    citations: 7,
     doi: "",
     abstract:
       "In this study, we attempt to present a review of those methods and show how the self-supervised learning paradigm evolved over the years. Additionally, we also present an exhaustive review of the self-supervised methods applied to medical image analysis. Furthermore, we also present an extensive compilation of the details of the datasets used in the different works and provide performance metrics of some notable works on image and video datasets.",
@@ -410,12 +461,78 @@ const publications = [
     abstract: "Self-supervised learning (SSL) enables learning robust representations from unlabeled data and it consists of two stages: pretext and downstream. The representations learnt in the pretext task are transferred to the downstream task. Self-supervised learning has appli- cations in various domains, such as computer vision tasks, natural language processing, speech and audio processing, etc....",
     type: "thesis",
     link: "https://digitalcommons.isical.ac.in/doctoral-theses/619/",
+  },
+  {
+    id: 14,
+    title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
+    authors: "Suresh Das, Prasun Sanki, Siladittya Manna, Subhayan Mondal, Saumik Bhattacharya, Sayantari Ghosh",
+    journal: "Springer Nature Computer Science",
+    year: 2025,
+    citations: 1,
+    doi: "10.1007/s42979-025-04641-7",
+    abstract: "Brachytherapy is a vital medical intervention for treating gynaecological malignancies in females. During brachytherapy, the precise detection of a radioactive probe’s location through imaging is crucial to safeguard critical organs. Unfortunately, datasets containing...",
+    type: "journal",
+    link: "https://link.springer.com/article/10.1007/s42979-025-04641-7",
   }
 ]
 
 const mediumArticles = [
   {
     id: 1,
+    title: "Updating your Local Branch from a Specific Remote Branch in Git",
+    excerpt:
+      "Whether you’re collaborating on a feature or just keeping your work in sync, pulling changes to a non-main branch is a daily task for most developers. Here is how to do it cleanly.",
+    url: "https://medium.com/the-owl/updating-a-specific-local-branch-from-remote-in-git-7fbff63f0ea5",
+    publishDate: "2024-05-29",
+    readTime: "4 min read",
+  },
+  {
+    id: 2,
+    title: "Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests",
+    excerpt:
+      "When you start serving large language models locally — like MedGemma-4B running behind a FastAPI server — you quickly encounter something that most ML engineers haven’t had to think about before...",
+    url: "https://medium.com/the-owl/understanding-multipart-form-data-how-to-send-text-binary-data-in-http-requests-14e7eef8e947",
+    publishDate: "2024-05-29",
+    readTime: "4 min read",
+  },
+  {
+    id: 3,
+    title: "Hosting Your Own LLM Server",
+    excerpt:
+      "Large language models are easy to run locally now. But running a model is not the same as serving it...",
+    url: "https://medium.com/the-owl/hosting-your-own-llm-server-31e171576215",
+    publishDate: "2024-05-29",
+    readTime: "4 min read",
+  },
+  {
+    id: 4,
+    title: " How to Start Using llama-server",
+    excerpt:
+      "Unlike the Python package llama-cpp-python, the llama-server executable is not pre-installed anywhere. It is part of the C++ repository and must be compiled....",
+    url: "https://medium.com/the-owl/%EF%B8%8F-how-to-start-using-llama-server-92aa6f81edc8",
+    publishDate: "2024-05-29",
+    readTime: "4 min read",
+  },
+  {
+    id: 5,
+    title: "Running MedGemma-4B on CPU or Using GGUF + llama-cpp",
+    excerpt:
+      "GGUF is a fully packaged, quantized model format designed specifically for inference....",
+    url: "https://medium.com/the-owl/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp-b67e9ac4cf29",
+    publishDate: "2024-05-29",
+    readTime: "4 min read",
+  },
+  {
+    id: 6,
+    title: "Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes",
+    excerpt:
+      "Large multimodal models usually demand serious hardware. A 4B parameter model in full precision occupies roughly 8GB just for weights — and that’s before accounting for activations and KV cache during generation....",
+    url: "https://medium.com/the-owl/running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes-c1bb8ce5a026",
+    publishDate: "2024-05-29",
+    readTime: "4 min read",
+  },
+  {
+    id: 7,
     title: "Comprehensive Guide to Overlaying Segmentation Masks in Python",
     excerpt:
       "Segmentation masks are fundamental in computer vision applications, from medical imaging to autonomous vehicles. Visualising these masks...",
@@ -424,7 +541,7 @@ const mediumArticles = [
     readTime: "4 min read",
   },
   {
-    id: 2,
+    id: 8,
     title: "Understanding and Calculating MACs and FLOPs in PyTorch Models",
     excerpt:
       "with calflops and torchprofile - Learn how to measure computational complexity and efficiency of your PyTorch models...",
@@ -433,7 +550,7 @@ const mediumArticles = [
     readTime: "4 min read",
   },
   {
-    id: 3,
+    id: 9,
     title: "Compressing .nii Files to .nii.gz: A Guide to Efficient Data Storage",
     excerpt:
       "In medical imaging, handling large datasets efficiently is crucial for storage and processing purposes. Neuroimaging Informatics...",
@@ -442,7 +559,7 @@ const mediumArticles = [
     readTime: "3 min read",
   },
   {
-    id: 4,
+    id: 10,
     title: "The Practical Guide to Distributed Training using PyTorch — Part 4: On Multiple Nodes using SLURM",
     excerpt:
       "On Multiple Nodes using SLURM",
@@ -459,20 +576,36 @@ function BioCarousel() {
     {
       id: 1,
       title: "Research Focus",
-      content:
-        "I am a passionate researcher specializing in federated learning, self-supervised learning, computer vision, and medical image analysis. I focus on developing innovative federated learning framework for vision-language models and computer vision applications in medical image analysis. My current interest lies in developing self-supervised federated learning frameworks for domain heterogeneous data. I am also interested in developing solutions for bridging the gap between generalization and personalization in federated learning.",
+      points: [
+        "Federated learning for vision-language models and medical AI.",
+        "Vulnerability analysis of federated learning frameworks.",
+        "Self-supervised learning for robust representation learning.",
+        "Domain heterogeneity handling in federated settings.",
+        "Personalization and generalization trade-off in FL.",
+        "Computer vision applications in medical image analysis.",
+      ],
     },
     {
       id: 2,
       title: "Current Experience",
-      content:
-        "I am currently working as Research Associate at the Visual Computing Lab, Dept. of Computational and Data Science, Indian Institute of Science, Bangalore, India under the supervision of Prof. Anirban Chakraborty. My research primarily focuses on developing federated learning frameworks for vision-language models. I am also involved in projects related to self-supervised learning and its applications in computer vision and medical image analysis.",
+      points: [
+        "Post-Doctoral Research Associate, Visual Computing Lab, IISc Bangalore.",
+        "Working under Prof. Anirban Chakraborty.",
+        "Building federated learning frameworks for VLMs.",
+        "Extending self-supervised learning for practical CV tasks.",
+        "Applying methods to medical imaging pipelines.",
+      ],
     },
     {
       id: 3,
       title: "Past Experience",
-      content:
-        "I worked as a Senior Research Assistant at Hong Kong Baptist University under the supervision of Prof. Yiu-Ming Cheung. My research primarily focused on developing federated learning frameworks for domain heterogeneous data and generalization in federated learning. Before that, I completed my PhD under the supervision of Prof. Umapada Pal from Indian Statistical Institute, Kolkata, where my research focused on self-supervised learning and its applications in medical image analysis. I have also worked on signature verification, writer identification, other document analysis tasks. During my Ph.D. I also worked closely with Dr. Saumik Bhattacharya from Indian Institute of Technology, Kharagpur.",
+      points: [
+        "Senior Research Assistant at Hong Kong Baptist University.",
+        "Worked under Prof. Yiu-Ming Cheung on federated learning.",
+        "Ph.D. at Indian Statistical Institute under Prof. Umapada Pal.",
+        "Research in self-supervised learning for medical imaging.",
+        "Additional work in signature verification and writer identification.",
+      ],
     },
   ]
 
@@ -480,7 +613,7 @@ function BioCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % bioSlides.length)
-    }, 5000)
+    }, 7000)
 
     return () => clearInterval(interval)
   }, [bioSlides.length])
@@ -503,14 +636,26 @@ function BioCarousel() {
         {/* Carousel Content */}
         <div className="relative overflow-hidden">
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-[2500ms] ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {bioSlides.map((slide) => (
               <div key={slide.id} className="w-full flex-shrink-0">
                 <div className="text-center">
                   <h3 className="text-xl font-semibold text-blue-600 mb-4">{slide.title}</h3>
-                  <p className="text-base text-gray-700 leading-relaxed">{slide.content}</p>
+                  <div className="bio-points-scroll-wrapper mx-auto max-w-3xl rounded-lg border border-blue-100 bg-blue-50/40 p-3">
+                    <div className="bio-points-scroll-track">
+                      {[0, 1].map((copyIndex) => (
+                        <ul key={copyIndex} className="bio-points-list" aria-hidden={copyIndex === 1}>
+                          {slide.points.map((point, idx) => (
+                            <li key={`${slide.id}-${idx}-${copyIndex}`} className="bio-points-item">
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -614,32 +759,26 @@ export default function Portfolio() {
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Dr. Siladittya Manna</h1>
-            <p className="text-xl text-gray-600 mb-6">Research Associate, IISc</p>
+            <p className="text-xl text-gray-600 mb-6">Post-Doctoral Research Associate, IISc</p>
             <BioCarousel />
             {/* Current Research Topics Section */}
             <div className="mt-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Current Research Topics</h2>
-              <div className="relative">
-                <div className="flex overflow-x-auto no-scrollbar gap-4 py-2 min-h-[56px] px-2">
-                  {[
-                    "Vision-Language Models",
-                    "Prompt Tuning in LLMs/VLMs",
-                    "Vulnerability Analysis of FL Frameworks",
-                    "Domain Heterogeneity in FL",
-                    "Adaptive Client Aggregation in FL",
-                    "Knowledge Distillation based Aggregation in FL",
-                    "Personalized Federated Learning",
-                    "Bridging the Gap between generalization and personaliztion in FL",
-                    "Self-Supervised Learning",
-                    "Self-Supervised Few-Shot Segmentation",
-                    "Contrastive Representation Learning",
-                    "Medical Image Segmentation",                    
-                  ].map((topic, idx) => (
-                    <div
-                      key={idx}
-                      className="flex-shrink-0 bg-green-100 text-green-800 rounded-full px-4 py-2 text-sm font-medium border border-green-200 shadow-sm whitespace-nowrap"
-                    >
-                      {topic}
+              <div className="paper-topics-marquee-wrapper relative overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-r from-blue-50 via-emerald-50 to-blue-50 py-3">
+                <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-blue-50 to-transparent" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-blue-50 to-transparent" />
+
+                <div className="paper-topics-marquee-track">
+                  {[0, 1].map((copyIndex) => (
+                    <div key={copyIndex} className="paper-topics-marquee-content" aria-hidden={copyIndex === 1}>
+                      {currentResearchTopics.map((topic, idx) => (
+                        <div
+                          key={`${topic}-${idx}-${copyIndex}`}
+                          className="flex-shrink-0 rounded-full border border-emerald-300 bg-white/90 px-4 py-2 text-sm font-medium text-emerald-800 shadow-sm whitespace-nowrap"
+                        >
+                          {topic}
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </div>
@@ -654,77 +793,50 @@ export default function Portfolio() {
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">Latest Announcements</h2>
           <p className="mb-4 text-center text-gray-600">Recent publications and project updates</p>
-          <div className="rounded-lg bg-white p-4 shadow-sm">
-            <div className="max-h-64 overflow-y-auto space-y-3 pr-2">
-            <div className="flex items-center gap-4 rounded-lg bg-green-50 p-3 border-l-4 border-emerald-500">
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
-                  New Publication - 2025
-                </span>
-                <div>
-                  <span className="font-medium text-gray-900">
-                    Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation
-                  </span>
-                  <span className="ml-2 text-gray-600">• Springer Nature Computer Science, December 2025</span>
+          <div className="latest-announcements-scroll-wrapper rounded-lg bg-white p-4 shadow-sm">
+            <div className="latest-announcements-scroll-track">
+              {[0, 1].map((copyIndex) => (
+                <div key={copyIndex} className="space-y-3" aria-hidden={copyIndex === 1}>
+                  {latestAnnouncements.map((announcement, idx) => (
+                    <div
+                      key={`${announcement.title}-${copyIndex}`}
+                      className={`flex items-center gap-4 rounded-lg bg-green-50 p-3 border-l-4 border-emerald-500 ${idx === 0 ? "announcement-blink" : ""}`}
+                    >
+                      <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
+                        {announcement.label}
+                      </span>
+                      <div>
+                        <span className="font-medium text-gray-900">{announcement.title}</span>
+                        <span className="ml-2 text-gray-600">• {announcement.venue}</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className="flex items-center gap-4 rounded-lg bg-green-50 p-3 border-l-4 border-emerald-500">
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
-                  New Publication - 2025
-                </span>
-                <div>
-                  <span className="font-medium text-gray-900">
-                    Decorrelation-based Self-Supervised Visual Representation Learning for Writer Identification
-                  </span>
-                  <span className="ml-2 text-gray-600">• ACM Transactions on Asian and Low-Resource Language Information processing, June 2025</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 rounded-lg bg-green-50 p-3 border-l-4 border-emerald-500">
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
-                  New Publication - 2025
-                </span>
-                <div>
-                  <span className="font-medium text-gray-900">
-                    Dynamically Scaled Temperature in Self-Supervised Contrastive Learning
-                  </span>
-                  <span className="ml-2 text-gray-600">• IEEE Transactions on Artificial Intelligence, June 2025</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 rounded-lg bg-blue-50 p-3 border-l-4 border-blue-500">
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
-                  New Publication - 2024
-                </span>
-                <div>
-                  <span className="font-medium text-gray-900">
-                    Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images
-                  </span>
-                  <span className="ml-2 text-gray-600">• ICPR 2024</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
         {/* Current Research Topics Section */}
-        <div className="mt-8">
+        <div className="mt-8 mx-auto w-full max-w-[84rem] px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Automated List of Papers for Several Research Topics</h2>
-          <div className="relative">
-            <div className="flex overflow-x-auto no-scrollbar gap-4 py-2 min-h-[56px] px-2">
-              {[
-                { name: "Federated Machine Learning", url: "/awesome-topics/federated-m-l" },
-                { name: "Inversion Attacks", url: "/awesome-topics/inversion-attacks" },
-                { name: "Prompt Injection Attacks", url: "/awesome-topics/prompt-injection-attack" },
-                { name: "Machine Unlearning", url: "/awesome-topics/machine-unlearning" },
-                { name: "Federated Unlearning", url: "/awesome-topics/federated-unlearning" },
-                { name: "Unlearning in LLMs/VLMs", url: "/awesome-topics/l-l-m-unlearning" },
-                { name: "Prompt Poisoning Attacks", url: "/awesome-topics/prompt-poisoning-attack" },
-                { name: "Vulnerability in Distributed Optimization", url: "/awesome-topics/vulnerability-distributed-optimization" }
-              ].map((topic, idx) => (
-                <a
-                  key={idx}
-                  href={topic.url}
-                  className="flex-shrink-0 bg-green-100 text-green-800 rounded-full px-4 py-2 text-sm font-medium border border-green-200 shadow-sm whitespace-nowrap hover:bg-green-200 transition-colors cursor-pointer"
-                >
-                  {topic.name}
-                </a>
+          <p className="text-sm text-center text-gray-600 mb-3">Auto-scrolling list. Hover to pause and click any topic.</p>
+          <div className="paper-topics-marquee-wrapper relative overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-r from-blue-50 via-emerald-50 to-blue-50 py-3">
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-blue-50 to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-blue-50 to-transparent" />
+
+            <div className="paper-topics-marquee-track">
+              {[0, 1].map((copyIndex) => (
+                <div key={copyIndex} className="paper-topics-marquee-content" aria-hidden={copyIndex === 1}>
+                  {automatedPaperTopics.map((topic) => (
+                    <Link
+                      key={`${topic.url}-${copyIndex}`}
+                      href={topic.url}
+                      className="flex-shrink-0 rounded-full border border-emerald-300 bg-white/90 px-4 py-2 text-sm font-medium text-emerald-800 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-emerald-100 hover:shadow"
+                    >
+                      {topic.name}
+                    </Link>
+                  ))}
+                </div>
               ))}
             </div>
           </div>
@@ -1217,6 +1329,28 @@ export default function Portfolio() {
                     <div className="flex flex-col items-center text-center space-y-2">
                       {/* Logo placeholder */}
                       {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">IIT</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-900">LUT University, Sweden</h3>
+                        <p className="text-sm text-gray-600">Collaboration with Dr. Rajkumar Saini</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                            Active
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
                         <div className="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center">
                           <span className="text-white font-bold text-lg">ISI</span>
                         </div>
@@ -1302,6 +1436,9 @@ export default function Portfolio() {
                           </Badge>
                         </div>
                         <p className="text-gray-700 leading-relaxed">{work.description}</p>
+                        {work.supervisor && (
+                          <p className="text-sm text-gray-600 mt-2 italic">Under supervision of {work.supervisor}</p>
+                        )}
                       </div>
                     </div>
                   ))}
