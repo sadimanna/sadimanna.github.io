@@ -74,9 +74,10 @@ The current scripts in [package.json](package.json) are:
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "clean": "rm -rf .next out",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
+    "predeploy": "npm run clean && npm run build",
     "deploy": "touch ./out/.nojekyll && gh-pages -d out"
   }
 }
@@ -170,4 +171,5 @@ If you use a custom domain, add a `CNAME` file to `out/` before deployment or co
 - White page or broken CSS: verify `basePath` and `assetPrefix`.
 - Images not showing: confirm the correct path prefix and that images are exported statically.
 - 404 after refresh: ensure the page exists in `out/` and the app is fully static.
+- Intermittent deploy failure on `/_not-found` (for example, `TypeError: e[o] is not a function`): run a clean build by deleting `.next` and `out` before export. This is handled by the `clean` script in `predeploy`.
 - Build or lint issues: check the Next.js config and package scripts.

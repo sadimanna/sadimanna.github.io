@@ -636,8 +636,8 @@ function BioCarousel() {
         {/* Carousel Content */}
         <div className="relative overflow-hidden">
           <div
-            className="flex transition-transform duration-[2500ms] ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            className="flex transition-transform ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)`, transitionDuration: "2500ms" }}
           >
             {bioSlides.map((slide) => (
               <div key={slide.id} className="w-full flex-shrink-0">
