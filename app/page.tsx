@@ -2236,9 +2236,9 @@ export default function Portfolio() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 Dr. Siladittya Manna. All rights reserved. |
-            <Link href="mailto:siladittya@comp.hkbu.edu.hk" className="text-blue-400 hover:text-blue-300 ml-1">
-              siladittya@comp.hkbu.edu.hk
+            © 2026 Dr. Siladittya Manna. All rights reserved. |
+            <Link href="mailto:siladittyam@iisc.ac.in" className="text-blue-400 hover:text-blue-300 ml-1">
+              siladittyam@iisc.ac.in
             </Link>
           </p>
         </div>
