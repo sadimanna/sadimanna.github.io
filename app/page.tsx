@@ -119,21 +119,25 @@ const latestAnnouncements = [
     label: "Accepted - 2026",
     title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
     venue: "The First Workshop on AI in Fertility Science 2026",
+    message: "Congratulations to Suyash Kumar, Ankur Singh (IIT BHU) and Dr. Rajkumar Saini (LUT, Sweden) for this achievement!"
   },
   {
     label: "New Publication - 2025",
     title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
     venue: "Springer Nature Computer Science, December 2025",
+    message: "Kudos to my co-authors Suresh Das, Subhayan Mondal (Narayana Superspeciality Hospital), Prasun Sanki (Netaji Subhash Engineering College, Kolkata), Dr. Saumik Bhattacharya (IIT KGP), Dr. Sayantari Ghosh (NIT DGP) for their hard work and dedication!"
   },
   {
     label: "New Publication - 2025",
     title: "Decorrelation-based Self-Supervised Visual Representation Learning for Writer Identification",
     venue: "ACM Transactions on Asian and Low-Resource Language Information processing, June 2025",
+    message: "Proud to share this milestone with my wonderful co-authors Shree Mitra, Arkadip Maitra (RKMVERI, Belur, India)!"
   },
   {
     label: "New Publication - 2025",
     title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
     venue: "IEEE Transactions on Artificial Intelligence, June 2025",
+    message: "Congratulations to all co-authors Soumitri Chattopadhyay (Jadavpur University, UNC Chapel Hill), Rakesh Dey (ISI Kolkata) for this successful publication!"
   },
 ]
 
@@ -808,6 +812,11 @@ export default function Portfolio() {
                       <div>
                         <span className="font-medium text-gray-900">{announcement.title}</span>
                         <span className="ml-2 text-gray-600">• {announcement.venue}</span>
+                        {announcement.message && (
+                          <div className="text-emerald-700 text-xs mt-1 font-semibold">
+                            {announcement.message}
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}

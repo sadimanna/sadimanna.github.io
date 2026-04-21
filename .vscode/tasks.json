@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install react-calendar and remove react-day-picker",
+			"type": "shell",
+			"command": "npm install react-calendar && npm uninstall react-day-picker"
+		}
+	]
+}
