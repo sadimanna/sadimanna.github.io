@@ -782,18 +782,18 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Profile Section */}
-      <section id="profile" className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section id="profile" className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="absolute inset-x-0 top-0 h-32 bg-blue-50/60" aria-hidden="true" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:min-h-[74vh] lg:grid-cols-[1fr_340px]">
           <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
             <p className="mb-4 text-base font-semibold tracking-wide text-blue-600">
-              Post-Doctoral Research Associate, Indian Institute of Science
+              Post-Doctoral Fellow, Indian Institute of Science
             </p>
             <h1 className="mb-6 text-5xl font-bold leading-tight text-gray-900 sm:text-6xl lg:text-7xl">
               Dr. Siladittya Manna
             </h1>
             <p className="mb-8 max-w-3xl text-lg leading-8 text-gray-700 sm:text-xl">
-              I design self-supervised and federated learning methods for vision-language models, medical AI, and trustworthy visual intelligence.
+              I investigate vulnerabilities in PEFT-based federated learning frameworks, and also develop efficient solutions for distributed machine learning.
             </p>
             <div className="mb-9 flex flex-wrap gap-3">
               {primaryResearchAreas.map((area) => (
