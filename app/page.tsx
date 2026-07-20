@@ -29,7 +29,18 @@ const primaryResearchAreas = [
   "Self-Supervised Learning",
   "Vision-Language Models",
   "Medical AI",
-  "Trustworthy AI",
+  // "Trustworthy AI",
+]
+
+const publicationTypeFilters = ["All", "Journal", "Conference", "Survey", "Preprint"]
+
+const publicationTopicFilters = [
+  "All",
+  "Federated Learning",
+  "Self-Supervised Learning",
+  "Medical AI",
+  "Security",
+  "Representation Learning",
 ]
 
 // Academic profiles data with image icons
@@ -475,6 +486,33 @@ const publications = [
   }
 ]
 
+const publicationMetadata: Record<
+  number,
+  {
+    category?: string
+    topics: string[]
+    featured?: boolean
+    code?: string
+    bibtex?: string
+    project?: string
+  }
+> = {
+  1: { topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
+  2: { topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
+  3: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
+  4: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
+  5: { topics: ["Representation Learning"] },
+  6: { topics: ["Self-Supervised Learning", "Representation Learning"] },
+  7: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
+  8: { topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
+  9: { category: "Preprint", topics: ["Self-Supervised Learning", "Representation Learning"] },
+  10: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
+  11: { topics: ["Self-Supervised Learning", "Representation Learning"] },
+  12: { category: "Survey", topics: ["Self-Supervised Learning", "Medical AI"], featured: true },
+  13: { category: "Survey", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
+  14: { topics: ["Medical AI"] },
+}
+
 const mediumArticles = [
   {
     id: 1,
@@ -707,28 +745,30 @@ function BioCarousel() {
 }
 
 export default function Portfolio() {
-  const [expandedAbstracts, setExpandedAbstracts] = useState<number[]>([])
   const [selectedCategory, setSelectedCategory] = useState("All")
+  const [selectedPublicationType, setSelectedPublicationType] = useState("All")
+  const [selectedPublicationTopic, setSelectedPublicationTopic] = useState("All")
 
-  const toggleAbstract = (id: number) => {
-    setExpandedAbstracts((prev) => (prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]))
-  }
+  const publicationCards = publications
+    .map((pub) => {
+      const metadata = publicationMetadata[pub.id] || { topics: [] }
+      const category =
+        metadata.category ||
+        (pub.type === "journal" ? "Journal" : pub.type === "conference" ? "Conference" : "Preprint")
 
-  // Filter and sort journal publications
-  const journalPublications = publications
-    .filter((pub) => pub.type === "journal")
+      return {
+        ...pub,
+        category,
+        topics: metadata.topics,
+        featured: metadata.featured || false,
+        code: metadata.code,
+        bibtex: metadata.bibtex,
+        project: metadata.project,
+      }
+    })
+    .filter((pub) => selectedPublicationType === "All" || pub.category === selectedPublicationType)
+    .filter((pub) => selectedPublicationTopic === "All" || pub.topics.includes(selectedPublicationTopic))
     .sort((a, b) => b.year - a.year)
-    // .slice(0, 5)
-
-  // Filter and sort conference publications
-  const conferencePublications = publications
-    .filter((pub) => pub.type === "conference")
-    .sort((a, b) => b.year - a.year)
-    // .slice(0, 5)
-
-  //Filter Thesis
-  const thesisPublications = publications
-    .filter((pub) => pub.type === "thesis")
 
   // Filter photography images by category
   const filteredImages =
@@ -897,220 +937,131 @@ export default function Portfolio() {
       {/* Publications Section */}
       <section id="publications" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-4">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Publications</h2>
             <p className="text-lg text-gray-600">Peer-reviewed research contributions to the scientific community</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Journal Publications Column */}
+          <div className="mb-8 space-y-5 rounded-lg border border-blue-100 bg-blue-50/50 p-4">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="w-5 h-5 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-800">Journal Publications</h3>
-              </div>
-              <div className="border rounded-lg bg-gray-50 h-[600px] overflow-y-auto p-4">
-                <div className="space-y-6">
-                  {journalPublications.map((pub) => (
-                    <Card key={pub.id} className="hover:shadow-lg transition-shadow">
-                      <CardHeader>
-                        <div className="flex justify-between items-start gap-4">
-                          <div className="flex-1">
-                            <CardTitle className="text-lg mb-2 leading-tight">{pub.title}</CardTitle>
-                            <CardDescription className="text-sm">
-                              <span className="font-medium">{pub.authors}</span>
-                              <br />
-                              <span className="italic">{pub.journal}</span> • {pub.year}
-                            </CardDescription>
-                          </div>
-                          <div className="flex flex-col items-end gap-2">
-                            <Badge variant="secondary" className="flex items-center gap-1">
-                              <Quote className="w-3 h-3" />
-                              {pub.citations} citations
-                            </Badge>
-                          </div>
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-3">
-                          <div>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => toggleAbstract(pub.id)}
-                              className="p-0 h-auto font-medium text-blue-600 hover:text-blue-800"
-                            >
-                              {expandedAbstracts.includes(pub.id) ? (
-                                <>
-                                  Hide Abstract <ChevronUp className="w-4 h-4 ml-1" />
-                                </>
-                              ) : (
-                                <>
-                                  Show Abstract <ChevronDown className="w-4 h-4 ml-1" />
-                                </>
-                              )}
-                            </Button>
-                            {expandedAbstracts.includes(pub.id) && (
-                              <p className="mt-2 text-gray-700 leading-relaxed text-sm">{pub.abstract}</p>
-                            )}
-                          </div>
-                          <div className="flex items-center gap-2 text-xs text-gray-500">
-                            <span>DOI: {pub.doi}</span>
-                            <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                            <Button variant="ghost" size="sm" className="p-0 h-auto text-blue-600 hover:text-blue-800">                               
-                              <ExternalLink className="w-3 h-3 mr-1" />
-                              View Paper
-                            </Button>
-                            </Link>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+              <div className="mb-3 text-sm font-semibold text-gray-700">Filter by type</div>
+              <div className="flex flex-wrap gap-2">
+                {publicationTypeFilters.map((filter) => (
+                  <Button
+                    key={filter}
+                    type="button"
+                    variant={selectedPublicationType === filter ? "default" : "outline"}
+                    size="sm"
+                    className={selectedPublicationType === filter ? "" : "bg-white"}
+                    onClick={() => setSelectedPublicationType(filter)}
+                  >
+                    {filter}
+                  </Button>
+                ))}
               </div>
             </div>
 
-            {/* Conference Publications Column */}
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Users className="w-5 h-5 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-800">Conference Publications</h3>
-              </div>
-              <div className="border rounded-lg bg-gray-50 h-[600px] overflow-y-auto p-4">
-                <div className="space-y-6">
-                  {conferencePublications.map((pub) => (
-                    <Card key={pub.id} className="hover:shadow-lg transition-shadow">
-                      <CardHeader>
-                        <div className="flex justify-between items-start gap-4">
-                          <div className="flex-1">
-                            <CardTitle className="text-lg mb-2 leading-tight">{pub.title}</CardTitle>
-                            <CardDescription className="text-sm">
-                              <span className="font-medium">{pub.authors}</span>
-                              <br />
-                              <span className="italic">{pub.journal}</span> • {pub.year}
-                            </CardDescription>
-                          </div>
-                          <div className="flex flex-col items-end gap-2">
-                            <Badge variant="secondary" className="flex items-center gap-1">
-                              <Quote className="w-3 h-3" />
-                              {pub.citations} citations
-                            </Badge>
-                          </div>
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-3">
-                          <div>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => toggleAbstract(pub.id)}
-                              className="p-0 h-auto font-medium text-blue-600 hover:text-blue-800"
-                            >
-                              {expandedAbstracts.includes(pub.id) ? (
-                                <>
-                                  Hide Abstract <ChevronUp className="w-4 h-4 ml-1" />
-                                </>
-                              ) : (
-                                <>
-                                  Show Abstract <ChevronDown className="w-4 h-4 ml-1" />
-                                </>
-                              )}
-                            </Button>
-                            {expandedAbstracts.includes(pub.id) && (
-                              <p className="mt-2 text-gray-700 leading-relaxed text-sm">{pub.abstract}</p>
-                            )}
-                          </div>
-                          <div className="flex items-center gap-2 text-xs text-gray-500">
-                            <span>DOI: {pub.doi}</span>
-                            <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                            <Button variant="ghost" size="sm" className="p-0 h-auto text-blue-600 hover:text-blue-800">                               
-                              <ExternalLink className="w-3 h-3 mr-1" />
-                              View Paper                              
-                            </Button>
-                            </Link>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </div> 
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
-            {/* Thesis Column */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <GraduationCap className="w-5 h-5 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-800">Ph.D. Thesis</h3>
-              </div>
-              <div className="border rounded-lg bg-gray-50 h-[200px] overflow-y-auto p-4">
-                <div className="space-y-6">
-                  {thesisPublications.map((pub) => (
-                    <Card key={pub.id} className="hover:shadow-lg transition-shadow">
-                      <CardHeader>
-                        <div className="flex justify-between items-start gap-4">
-                          <div className="flex-1">
-                            <CardTitle className="text-lg mb-2 leading-tight">{pub.title}</CardTitle>
-                            <CardDescription className="text-sm">
-                              <span className="font-medium">{pub.authors}</span>
-                              <br />
-                              <span className="italic">{pub.journal}</span> • {pub.year}
-                            </CardDescription>
-                          </div>
-                          <div className="flex flex-col items-end gap-2">
-                            <Badge variant="secondary" className="flex items-center gap-1">
-                              <Quote className="w-3 h-3" />
-                              {pub.citations} citations
-                            </Badge>
-                          </div>
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-3">
-                          <div>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => toggleAbstract(pub.id)}
-                              className="p-0 h-auto font-medium text-blue-600 hover:text-blue-800"
-                            >
-                              {expandedAbstracts.includes(pub.id) ? (
-                                <>
-                                  Hide Abstract <ChevronUp className="w-4 h-4 ml-1" />
-                                </>
-                              ) : (
-                                <>
-                                  Show Abstract <ChevronDown className="w-4 h-4 ml-1" />
-                                </>
-                              )}
-                            </Button>
-                            {expandedAbstracts.includes(pub.id) && (
-                              <p className="mt-2 text-gray-700 leading-relaxed text-sm">{pub.abstract}</p>
-                            )}
-                          </div>
-                          <div className="flex items-center gap-2 text-xs text-gray-500">
-                            <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                            <Button variant="ghost" size="sm" className="p-0 h-auto text-blue-600 hover:text-blue-800">                               
-                              <ExternalLink className="w-3 h-3 mr-1" />
-                              View Thesis
-                            </Button>
-                            </Link>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+              <div className="mb-3 text-sm font-semibold text-gray-700">Filter by topic</div>
+              <div className="flex flex-wrap gap-2">
+                {publicationTopicFilters.map((filter) => (
+                  <Button
+                    key={filter}
+                    type="button"
+                    variant={selectedPublicationTopic === filter ? "default" : "outline"}
+                    size="sm"
+                    className={selectedPublicationTopic === filter ? "" : "bg-white"}
+                    onClick={() => setSelectedPublicationTopic(filter)}
+                  >
+                    {filter}
+                  </Button>
+                ))}
               </div>
             </div>
           </div>
 
+          <div className="mb-4 text-sm text-gray-600">
+            Showing {publicationCards.length} publication{publicationCards.length === 1 ? "" : "s"}
+          </div>
+
+          <div className="grid grid-cols-1 gap-5">
+            {publicationCards.map((pub) => (
+              <Card
+                key={pub.id}
+                className="border-gray-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <CardHeader>
+                  <div className="mb-3 flex flex-wrap gap-2">
+                    {pub.featured && <Badge className="bg-blue-600 text-white">Featured</Badge>}
+                    <Badge variant="secondary">{pub.category}</Badge>
+                    {pub.topics.map((topic) => (
+                      <Badge key={topic} variant="outline" className="bg-white">
+                        {topic}
+                      </Badge>
+                    ))}
+                  </div>
+                  <CardTitle className="text-xl leading-snug text-gray-900">{pub.title}</CardTitle>
+                  <CardDescription className="mt-3 text-sm leading-6">
+                    <span className="font-medium text-gray-800">{pub.authors}</span>
+                    <br />
+                    <span className="italic">{pub.journal}</span> • {pub.year}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Button asChild size="sm" variant="outline" className="bg-white">
+                      <Link href={pub.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Paper
+                      </Link>
+                    </Button>
+                    {pub.code ? (
+                      <Button asChild size="sm" variant="outline" className="bg-white">
+                        <Link href={pub.code} target="_blank" rel="noopener noreferrer">
+                          Code
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="outline" disabled>
+                        Code
+                      </Button>
+                    )}
+                    {pub.bibtex ? (
+                      <Button asChild size="sm" variant="outline" className="bg-white">
+                        <Link href={pub.bibtex} target="_blank" rel="noopener noreferrer">
+                          BibTeX
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="outline" disabled>
+                        BibTeX
+                      </Button>
+                    )}
+                    {pub.project ? (
+                      <Button asChild size="sm" variant="outline" className="bg-white">
+                        <Link href={pub.project} target="_blank" rel="noopener noreferrer">
+                          Project
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="outline" disabled>
+                        Project
+                      </Button>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+
+            {publicationCards.length === 0 && (
+              <Card className="border-dashed bg-gray-50">
+                <CardContent className="p-8 text-center text-gray-600">
+                  No publications match the selected filters.
+                </CardContent>
+              </Card>
+            )}
+          </div>
         </div>
-
       </section>
 
       {/* Academic Profiles and Affiliations Section */}

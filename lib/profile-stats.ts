@@ -1,26 +1,26 @@
 export const profileStats = [
   {
     label: "Publications",
-    value: "00",
+    value: "13",
   },
   {
     label: "Journal Papers",
-    value: "00",
+    value: "07",
   },
   {
     label: "Conference Papers",
-    value: "00",
+    value: "06",
   },
   {
     label: "Citations",
-    value: "000",
+    value: "226",
   },
   {
     label: "h-index",
-    value: "00",
+    value: "8",
   },
   {
     label: "Collaborators",
-    value: "00",
+    value: "7+",
   },
 ]
