@@ -802,16 +802,6 @@ export default function Portfolio() {
             <p className="mb-8 max-w-3xl text-lg leading-8 text-gray-700 sm:text-xl">
               I investigate vulnerabilities in PEFT-based federated learning frameworks, and also develop efficient solutions for distributed machine learning.
             </p>
-            <div className="mb-9 flex flex-wrap gap-3">
-              {primaryResearchAreas.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full border border-green-200 bg-green-100 px-4 py-2 text-sm font-medium text-green-800 shadow-sm transition-transform duration-200 hover:-translate-y-0.5"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link href="#publications">
@@ -860,6 +850,118 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="bg-blue-50/50 rounded-2xl p-8 border border-blue-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </div>
+                Who I Am
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                I am a Post-Doctoral Research Associate at the Indian Institute of Science (IISc), Bangalore. 
+                My work bridges theoretical machine learning and practical healthcare applications, 
+                with a focus on building robust, scalable, and secure AI systems.
+              </p>
+            </div>
+
+            <div className="bg-emerald-50/50 rounded-2xl p-8 border border-emerald-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                </div>
+                Research Vision
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                I envision an AI ecosystem where collaborative learning preserves data privacy without compromising 
+                on performance. My goal is to develop foundation models that are highly adaptive to real-world 
+                domain heterogeneity and inherently secure against malicious attacks.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Current Interests</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-blue-300">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Federated Learning</h4>
+                <ul className="space-y-2">
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>Adaptive aggregation</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>Personalization</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>Privacy</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-purple-300">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Representation Learning</h4>
+                <ul className="space-y-2">
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>SSL</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>Contrastive Learning</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>Foundation Models</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-emerald-300">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Medical AI</h4>
+                <ul className="space-y-2">
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>Segmentation</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>Diagnosis</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>Image Analysis</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-rose-300">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">AI Security</h4>
+                <ul className="space-y-2">
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-rose-400"></div>Gradient inversion</li>
+                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-rose-400"></div>Prompt attacks</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-amber-50/50 rounded-2xl p-8 border border-amber-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                Long-Term Goals
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                I aim to establish universally accessible, trustworthy frameworks for medical imaging and multimodal tasks. 
+                My ambition is to deploy scalable AI solutions in global healthcare systems, bridging the gap between 
+                advanced machine learning research and practical clinical adoption.
+              </p>
+            </div>
+
+            <div className="bg-indigo-50/50 rounded-2xl p-8 border border-indigo-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                Collaboration Interests
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                I am actively seeking partnerships with both academic researchers and industry professionals. 
+                Particularly interested in interdisciplinary projects involving cross-institution federated learning, 
+                privacy-preserving algorithms, and large-scale clinical trials leveraging vision-language models.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
