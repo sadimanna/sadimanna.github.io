@@ -20,13 +20,15 @@ import {
   GraduationCap,
   Camera,
   Briefcase,
+  Github,
 } from "lucide-react"
 
 const primaryResearchAreas = [
   "Federated Learning",
-  "Vision-Language Models",
   "Self-Supervised Learning",
-  "Medical Image Analysis",
+  "Vision-Language Models",
+  "Medical AI",
+  "Trustworthy AI",
 ]
 
 // const currentResearchTopics = [
@@ -769,51 +771,71 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Profile Section */}
-      <section id="profile" className="relative px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:min-h-[72vh] lg:grid-cols-[1fr_320px]">
-          <div className="max-w-3xl">
-            <p className="mb-3 text-base font-medium text-blue-600">Research Associate, Indian Institute of Science</p>
-            <h1 className="mb-5 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
+      <section id="profile" className="relative overflow-hidden px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="absolute inset-x-0 top-0 h-32 bg-blue-50/60" aria-hidden="true" />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:min-h-[74vh] lg:grid-cols-[1fr_340px]">
+          <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <p className="mb-4 text-base font-semibold tracking-wide text-blue-600">
+              Post-Doctoral Research Associate, Indian Institute of Science
+            </p>
+            <h1 className="mb-6 text-5xl font-bold leading-tight text-gray-900 sm:text-6xl lg:text-7xl">
               Dr. Siladittya Manna
             </h1>
-            <div className="mb-6 flex flex-wrap gap-3">
+            <p className="mb-8 max-w-3xl text-lg leading-8 text-gray-700 sm:text-xl">
+              I design self-supervised and federated learning methods for vision-language models, medical AI, and trustworthy visual intelligence.
+            </p>
+            <div className="mb-9 flex flex-wrap gap-3">
               {primaryResearchAreas.map((area) => (
                 <span
                   key={area}
-                  className="rounded-full border border-green-200 bg-green-100 px-4 py-2 text-sm font-medium text-green-800"
+                  className="rounded-full border border-green-200 bg-green-100 px-4 py-2 text-sm font-medium text-green-800 shadow-sm transition-transform duration-200 hover:-translate-y-0.5"
                 >
                   {area}
                 </span>
               ))}
             </div>
-            <p className="mb-8 max-w-2xl text-lg leading-8 text-gray-700 sm:text-xl">
-              I develop self-supervised and federated learning methods that make vision-language and medical image analysis systems more generalizable, personalized, and reliable.
-            </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link href="#publications">
                   <BookOpen className="mr-2 h-5 w-5" />
-                  Publications
+                  View Publications
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
                 <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-5 w-5" />
-                  CV
+                  Download CV
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
+                <Link href="https://github.com/sadimanna" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-5 w-5" />
+                  GitHub
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
+                <Link
+                  href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GraduationCap className="mr-2 h-5 w-5" />
+                  Google Scholar
                 </Link>
               </Button>
             </div>
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+            <div className="relative animate-in fade-in zoom-in-95 duration-700">
+              <div className="absolute -inset-4 rounded-full bg-blue-50 shadow-sm" aria-hidden="true" />
               <Image
                 src="/profilepic2.jpg?height=280&width=280"
                 alt="Dr. Siladittya Manna"
                 width={280}
                 height={280}
                 priority
-                className="rounded-full border-4 border-white shadow-xl"
+                className="relative rounded-full border-4 border-white shadow-xl transition-transform duration-300 hover:scale-[1.02]"
               />
               <div className="absolute -bottom-2 -right-2 rounded-full bg-green-500 p-2">
                 <div className="h-4 w-4 rounded-full bg-white"></div>
