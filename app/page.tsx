@@ -22,6 +22,28 @@ import {
   Briefcase,
 } from "lucide-react"
 
+const primaryResearchAreas = [
+  "Federated Learning",
+  "Vision-Language Models",
+  "Self-Supervised Learning",
+  "Medical Image Analysis",
+]
+
+const currentResearchTopics = [
+  "Vision-Language Models",
+  "Prompt Tuning in LLMs/VLMs",
+  "Vulnerability Analysis of FL Frameworks",
+  "Domain Heterogeneity in FL",
+  "Adaptive Client Aggregation in FL",
+  "Knowledge Distillation based Aggregation in FL",
+  "Personalized Federated Learning",
+  "Bridging the Gap between generalization and personaliztion in FL",
+  "Self-Supervised Learning",
+  "Self-Supervised Few-Shot Segmentation",
+  "Contrastive Representation Learning",
+  "Medical Image Segmentation",
+]
+
 // Academic profiles data with image icons
 const academicProfiles = [
   {
@@ -747,19 +769,54 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Profile Section */}
-      <section id="profile" className="relative py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="relative inline-block mb-8">
+      <section id="profile" className="relative px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:min-h-[72vh] lg:grid-cols-[1fr_320px]">
+          <div className="max-w-3xl">
+            <p className="mb-3 text-base font-medium text-blue-600">Research Associate, Indian Institute of Science</p>
+            <h1 className="mb-5 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
+              Dr. Siladittya Manna
+            </h1>
+            <div className="mb-6 flex flex-wrap gap-3">
+              {primaryResearchAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full border border-green-200 bg-green-100 px-4 py-2 text-sm font-medium text-green-800"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+            <p className="mb-8 max-w-2xl text-lg leading-8 text-gray-700 sm:text-xl">
+              I develop self-supervised and federated learning methods that make vision-language and medical image analysis systems more generalizable, personalized, and reliable.
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="lg" className="w-full sm:w-auto">
+                <Link href="#publications">
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  Publications
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
+                <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  CV
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
               <Image
-                src="/profilepic2.jpg?height=200&width=200"
-                alt="Profile Picture"
-                width={200}
-                height={200}
-                className="rounded-full mx-auto border-4 border-white shadow-xl"
+                src="/profilepic2.jpg?height=280&width=280"
+                alt="Dr. Siladittya Manna"
+                width={280}
+                height={280}
+                priority
+                className="rounded-full border-4 border-white shadow-xl"
               />
-              <div className="absolute -bottom-2 -right-2 bg-green-500 rounded-full p-2">
-                <div className="w-4 h-4 bg-white rounded-full"></div>
+              <div className="absolute -bottom-2 -right-2 rounded-full bg-green-500 p-2">
+                <div className="h-4 w-4 rounded-full bg-white"></div>
               </div>
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Dr. Siladittya Manna</h1>
