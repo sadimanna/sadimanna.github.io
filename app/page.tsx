@@ -29,20 +29,20 @@ const primaryResearchAreas = [
   "Medical Image Analysis",
 ]
 
-const currentResearchTopics = [
-  "Vision-Language Models",
-  "Prompt Tuning in LLMs/VLMs",
-  "Vulnerability Analysis of FL Frameworks",
-  "Domain Heterogeneity in FL",
-  "Adaptive Client Aggregation in FL",
-  "Knowledge Distillation based Aggregation in FL",
-  "Personalized Federated Learning",
-  "Bridging the Gap between generalization and personaliztion in FL",
-  "Self-Supervised Learning",
-  "Self-Supervised Few-Shot Segmentation",
-  "Contrastive Representation Learning",
-  "Medical Image Segmentation",
-]
+// const currentResearchTopics = [
+//   "Vision-Language Models",
+//   "Prompt Tuning in LLMs/VLMs",
+//   "Vulnerability Analysis of FL Frameworks",
+//   "Domain Heterogeneity in FL",
+//   "Adaptive Client Aggregation in FL",
+//   "Knowledge Distillation based Aggregation in FL",
+//   "Personalized Federated Learning",
+//   "Bridging the Gap between generalization and personaliztion in FL",
+//   "Self-Supervised Learning",
+//   "Self-Supervised Few-Shot Segmentation",
+//   "Contrastive Representation Learning",
+//   "Medical Image Segmentation",
+// ]
 
 // Academic profiles data with image icons
 const academicProfiles = [
