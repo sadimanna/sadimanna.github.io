@@ -878,6 +878,25 @@ export default function Portfolio() {
               </Card>
             ))}
           </div>
+
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 max-w-4xl mx-auto">
+            <div className="flex flex-col items-center justify-center rounded-xl border border-indigo-100 bg-indigo-50/50 p-4 shadow-sm transition-colors hover:bg-indigo-50">
+              <span className="text-2xl font-bold text-indigo-700">0</span>
+              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-indigo-600">Q1 Journals</span>
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-xl border border-indigo-100 bg-indigo-50/50 p-4 shadow-sm transition-colors hover:bg-indigo-50">
+              <span className="text-2xl font-bold text-indigo-700">0</span>
+              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-indigo-600">Q2 Journals</span>
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 shadow-sm transition-colors hover:bg-emerald-50">
+              <span className="text-2xl font-bold text-emerald-700">0</span>
+              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-emerald-600">A* Conferences</span>
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 shadow-sm transition-colors hover:bg-emerald-50">
+              <span className="text-2xl font-bold text-emerald-700">0</span>
+              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-emerald-600">A Conferences</span>
+            </div>
+          </div>
         </div>
       </section>
 
