@@ -122,28 +122,36 @@ const automatedPaperTopics = [
 
 const latestAnnouncements = [
   {
-    label: "Accepted - 2026",
+    date: "2026",
+    category: "Accepted",
     title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
-    venue: "The First Workshop on AI in Fertility Science 2026",
-    message: "Congratulations to Suyash Kumar, Ankur Singh (IIT BHU) and Dr. Rajkumar Saini (LUT, Sweden) for this achievement!"
+    description: "Congratulations to Suyash Kumar, Ankur Singh (IIT BHU) and Dr. Rajkumar Saini (LUT, Sweden) for this achievement! To be presented at The First Workshop on AI in Fertility Science 2026.",
+    image: undefined,
+    link: "#"
   },
   {
-    label: "New Publication - 2025",
+    date: "Dec 2025",
+    category: "New Publication",
     title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
-    venue: "Springer Nature Computer Science, December 2025",
-    message: "Kudos to my co-authors Suresh Das, Subhayan Mondal (Narayana Superspeciality Hospital), Prasun Sanki (Netaji Subhash Engineering College, Kolkata), Dr. Saumik Bhattacharya (IIT KGP), Dr. Sayantari Ghosh (NIT DGP) for their hard work and dedication!"
+    description: "Kudos to my co-authors Suresh Das, Subhayan Mondal, Prasun Sanki, Dr. Saumik Bhattacharya, and Dr. Sayantari Ghosh for their hard work and dedication! Published in Springer Nature Computer Science.",
+    image: undefined,
+    link: "https://link.springer.com/article/10.1007/s42979-025-04641-7"
   },
   {
-    label: "New Publication - 2025",
+    date: "Jun 2025",
+    category: "New Publication",
     title: "Decorrelation-based Self-Supervised Visual Representation Learning for Writer Identification",
-    venue: "ACM Transactions on Asian and Low-Resource Language Information processing, June 2025",
-    message: "Proud to share this milestone with my wonderful co-authors Shree Mitra, Arkadip Maitra (RKMVERI, Belur, India)!"
+    description: "Proud to share this milestone with my wonderful co-authors Shree Mitra and Arkadip Maitra! Published in ACM Transactions on Asian and Low-Resource Language Information processing.",
+    image: undefined,
+    link: "https://dl.acm.org/doi/10.1145/3746062"
   },
   {
-    label: "New Publication - 2025",
+    date: "Jun 2025",
+    category: "New Publication",
     title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
-    venue: "IEEE Transactions on Artificial Intelligence, June 2025",
-    message: "Congratulations to all co-authors Soumitri Chattopadhyay (Jadavpur University, UNC Chapel Hill), Rakesh Dey (ISI Kolkata) for this successful publication!"
+    description: "Congratulations to all co-authors Soumitri Chattopadhyay and Rakesh Dey for this successful publication! Published in IEEE Transactions on Artificial Intelligence.",
+    image: undefined,
+    link: "https://ieeexplore.ieee.org/document/10820841"
   },
 ]
 
@@ -722,9 +730,8 @@ function BioCarousel() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                index === currentSlide ? "bg-blue-600" : "bg-gray-300 hover:bg-gray-400"
-              }`}
+              className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentSlide ? "bg-blue-600" : "bg-gray-300 hover:bg-gray-400"
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -782,7 +789,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Profile Section */}
-      <section id="profile" className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <section id="profile" className="relative overflow-hidden px-4 py-8 sm:px-6 sm:py-16 lg:px-8">
         <div className="absolute inset-x-0 top-0 h-32 bg-blue-50/60" aria-hidden="true" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:min-h-[74vh] lg:grid-cols-[1fr_340px]">
           <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -876,35 +883,45 @@ export default function Portfolio() {
 
       {/* Latest Announcements Section */}
       <section id="announcements" className="bg-blue-50 py-12">
-        <div className="container mx-auto max-w-4xl px-4">
-          <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">Latest Announcements</h2>
-          <p className="mb-4 text-center text-gray-600">Recent publications and project updates</p>
-          <div className="latest-announcements-scroll-wrapper rounded-lg bg-white p-4 shadow-sm">
-            <div className="latest-announcements-scroll-track">
-              {[0, 1].map((copyIndex) => (
-                <div key={copyIndex} className="space-y-3" aria-hidden={copyIndex === 1}>
-                  {latestAnnouncements.map((announcement, idx) => (
-                    <div
-                      key={`${announcement.title}-${copyIndex}`}
-                      className={`flex items-center gap-4 rounded-lg bg-green-50 p-3 border-l-4 border-emerald-500 ${idx === 0 ? "announcement-blink" : ""}`}
-                    >
-                      <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
-                        {announcement.label}
-                      </span>
-                      <div>
-                        <span className="font-medium text-gray-900">{announcement.title}</span>
-                        <span className="ml-2 text-gray-600">• {announcement.venue}</span>
-                        {announcement.message && (
-                          <div className="text-emerald-700 text-xs mt-1 font-semibold">
-                            {announcement.message}
-                          </div>
-                        )}
+        <div className="container mx-auto max-w-3xl px-4">
+          <div className="text-center mb-10">
+            <h2 className="mb-3 text-3xl font-bold text-gray-900">Latest Announcements</h2>
+            <p className="text-gray-600">Recent publications and project updates</p>
+          </div>
+          <div className="relative border-l-2 border-blue-200 ml-3 md:ml-6 pl-6 md:pl-8 space-y-6">
+            {latestAnnouncements.map((announcement, idx) => (
+              <div key={idx} className="relative">
+                {/* Timeline dot */}
+                <div className="absolute -left-[33px] md:-left-[41px] top-4 h-4 w-4 rounded-full bg-blue-600 border-4 border-blue-50 shadow" />
+
+                <Card className="border-gray-200 hover:shadow-md transition-shadow">
+                  <div className="flex flex-col sm:flex-row gap-4 p-4">
+                    {announcement.image && (
+                      <div className="flex-shrink-0 w-full sm:w-28 h-28 relative rounded-md overflow-hidden bg-gray-100">
+                        <Image src={announcement.image} alt={announcement.title} fill className="object-cover" />
                       </div>
+                    )}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-wrap items-center gap-2 mb-2">
+                        <Badge variant="secondary" className="bg-blue-100/50 text-blue-700 hover:bg-blue-100 border-blue-200">{announcement.category}</Badge>
+                        <span className="text-xs font-medium text-gray-500 flex items-center">
+                          <Calendar className="w-3 h-3 mr-1" />
+                          {announcement.date}
+                        </span>
+                      </div>
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1.5 leading-snug">{announcement.title}</h3>
+                      <p className="text-sm text-gray-600 mb-3 line-clamp-2">{announcement.description}</p>
+
+                      <Button asChild variant="outline" size="sm" className="h-8 text-xs font-medium">
+                        <Link href={announcement.link || "#"} target={announcement.link && announcement.link !== "#" ? "_blank" : "_self"} rel="noopener noreferrer">
+                          Read More <ChevronRight className="w-3 h-3 ml-1" />
+                        </Link>
+                      </Button>
                     </div>
-                  ))}
-                </div>
-              ))}
-            </div>
+                  </div>
+                </Card>
+              </div>
+            ))}
           </div>
         </div>
         {/* Automated Paper Topics Section */}
@@ -1616,16 +1633,16 @@ export default function Portfolio() {
                       </CardHeader>
                       <CardContent className="pt-2">
                         <p className="text-sm text-gray-600">
-                        • Mentored 1 intern student on projects related to self-supervised learning and signature verification with successful publications in ICPR, ICIP.
+                          • Mentored 1 intern student on projects related to self-supervised learning and signature verification with successful publications in ICPR, ICIP.
                         </p>
                         <p className="text-sm text-gray-600">
-                        • JU, Kolkata: 1
+                          • JU, Kolkata: 1
                         </p>
                         <p className="text-sm text-gray-600">
-                        • Currently, mentoring 4 intern students on projects related to self-supervised medical image analysis.
+                          • Currently, mentoring 4 intern students on projects related to self-supervised medical image analysis.
                         </p>
                         <p className="text-sm text-gray-600">
-                        • IIT Delhi: 1 • IIT BHU: 1 • IIT Kharagpur: 1 • MU, Jaipur: 1
+                          • IIT Delhi: 1 • IIT BHU: 1 • IIT Kharagpur: 1 • MU, Jaipur: 1
                         </p>
                       </CardContent>
                     </Card>
@@ -1637,10 +1654,10 @@ export default function Portfolio() {
                       </CardHeader>
                       <CardContent className="pt-2">
                         <p className="text-sm text-gray-600">
-                        • Mentored several under-graduate students on computer vision and machine learning for their final year projects.
+                          • Mentored several under-graduate students on computer vision and machine learning for their final year projects.
                         </p>
                         <p className="text-sm text-gray-600">
-                        • IIT Kharagpur: 4
+                          • IIT Kharagpur: 4
                         </p>
                       </CardContent>
                     </Card>
@@ -1652,10 +1669,10 @@ export default function Portfolio() {
                       </CardHeader>
                       <CardContent className="pt-2">
                         <p className="text-sm text-gray-600">
-                        • Mentored several post-graduate students on computer vision and machine learning for their M.Tech. thesis.
+                          • Mentored several post-graduate students on computer vision and machine learning for their M.Tech. thesis.
                         </p>
                         <p className="text-sm text-gray-600">
-                        • IIT Kharagpur: 3 • ISI Kolkata: 1 • RKM, Belur: 2
+                          • IIT Kharagpur: 3 • ISI Kolkata: 1 • RKM, Belur: 2
                         </p>
                       </CardContent>
                     </Card>
@@ -1904,7 +1921,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-      
+
       {/* AI Applications Section */}
       <section id="ai-applications" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -2014,10 +2031,10 @@ export default function Portfolio() {
                             <div className="flex items-center gap-1 text-xs text-gray-500">
                               <Calendar className="w-3 h-3" />
                               {new Date(article.publishDate).toLocaleDateString('en-US', {
-                                                                                            year: 'numeric',
-                                                                                            month: 'short',
-                                                                                            day: 'numeric'
-                                                                                          })}
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric'
+                              })}
                             </div>
                           </div>
                           <CardTitle className="text-lg leading-tight line-clamp-2 text-gray-900">
@@ -2121,11 +2138,10 @@ export default function Portfolio() {
                     variant={selectedCategory === category ? "default" : "outline"}
                     size="sm"
                     onClick={() => setSelectedCategory(category)}
-                    className={`transition-all duration-200 ${
-                      selectedCategory === category
+                    className={`transition-all duration-200 ${selectedCategory === category
                         ? "bg-purple-600 hover:bg-purple-700 shadow-md scale-105"
                         : "bg-white/80 backdrop-blur-sm border-purple-200 hover:bg-purple-50 hover:border-purple-300"
-                    }`}
+                      }`}
                   >
                     {category}
                   </Button>
@@ -2206,9 +2222,8 @@ export default function Portfolio() {
                     <button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                        selectedCategory === category ? "bg-purple-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
-                      }`}
+                      className={`w-3 h-3 rounded-full transition-all duration-200 ${selectedCategory === category ? "bg-purple-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
+                        }`}
                       aria-label={`Filter by ${category}`}
                     />
                   ))}
