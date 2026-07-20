@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { profileStats } from "@/lib/profile-stats"
 import {
   ExternalLink,
   Quote,
@@ -30,21 +31,6 @@ const primaryResearchAreas = [
   "Medical AI",
   "Trustworthy AI",
 ]
-
-// const currentResearchTopics = [
-//   "Vision-Language Models",
-//   "Prompt Tuning in LLMs/VLMs",
-//   "Vulnerability Analysis of FL Frameworks",
-//   "Domain Heterogeneity in FL",
-//   "Adaptive Client Aggregation in FL",
-//   "Knowledge Distillation based Aggregation in FL",
-//   "Personalized Federated Learning",
-//   "Bridging the Gap between generalization and personaliztion in FL",
-//   "Self-Supervised Learning",
-//   "Self-Supervised Few-Shot Segmentation",
-//   "Contrastive Representation Learning",
-//   "Medical Image Segmentation",
-// ]
 
 // Academic profiles data with image icons
 const academicProfiles = [
@@ -121,21 +107,6 @@ const automatedPaperTopics = [
   { name: "Unlearning in LLMs/VLMs", url: "/awesome-topics/l-l-m-unlearning" },
   { name: "Prompt Poisoning Attacks", url: "/awesome-topics/prompt-poisoning-attack" },
   { name: "Vulnerability in Distributed Optimization", url: "/awesome-topics/vulnerability-distributed-optimization" },
-]
-
-const currentResearchTopics = [
-  "Vision-Language Models",
-  "Prompt Tuning in LLMs/VLMs",
-  "Vulnerability Analysis of FL Frameworks",
-  "Domain Heterogeneity in FL",
-  "Adaptive Client Aggregation in FL",
-  "Knowledge Distillation based Aggregation in FL",
-  "Personalized Federated Learning",
-  "Bridging the Gap between generalization and personaliztion in FL",
-  "Self-Supervised Learning",
-  "Self-Supervised Few-Shot Segmentation",
-  "Contrastive Representation Learning",
-  "Medical Image Segmentation",
 ]
 
 const latestAnnouncements = [
@@ -841,32 +812,24 @@ export default function Portfolio() {
                 <div className="h-4 w-4 rounded-full bg-white"></div>
               </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Dr. Siladittya Manna</h1>
-            <p className="text-xl text-gray-600 mb-6">Post-Doctoral Research Associate, IISc</p>
-            <BioCarousel />
-            {/* Current Research Topics Section */}
-            <div className="mt-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Current Research Topics</h2>
-              <div className="paper-topics-marquee-wrapper relative overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-r from-blue-50 via-emerald-50 to-blue-50 py-3">
-                <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-blue-50 to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-blue-50 to-transparent" />
+          </div>
+        </div>
+      </section>
 
-                <div className="paper-topics-marquee-track">
-                  {[0, 1].map((copyIndex) => (
-                    <div key={copyIndex} className="paper-topics-marquee-content" aria-hidden={copyIndex === 1}>
-                      {currentResearchTopics.map((topic, idx) => (
-                        <div
-                          key={`${topic}-${idx}-${copyIndex}`}
-                          className="flex-shrink-0 rounded-full border border-emerald-300 bg-white/90 px-4 py-2 text-sm font-medium text-emerald-800 shadow-sm whitespace-nowrap"
-                        >
-                          {topic}
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+      <section id="statistics" className="px-4 pb-14 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {profileStats.map((stat) => (
+              <Card
+                key={stat.label}
+                className="border-blue-100 bg-white/90 text-center shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+              >
+                <CardContent className="p-5">
+                  <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
+                  <div className="mt-2 text-sm font-medium text-gray-600">{stat.label}</div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -904,7 +867,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        {/* Current Research Topics Section */}
+        {/* Automated Paper Topics Section */}
         <div className="mt-8 mx-auto w-full max-w-[84rem] px-4">
           <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Automated List of Papers for Several Research Topics</h2>
           <p className="text-sm text-center text-gray-600 mb-3">Auto-scrolling list. Hover to pause and click any topic.</p>
