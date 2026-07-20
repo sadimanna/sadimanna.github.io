@@ -900,6 +900,164 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Research Collaborations Section */}
+      <section id="research-collaborations" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">Research Collaborations</h2>
+            <p className="text-lg text-gray-600">Building partnerships and advancing research together</p>
+          </div>
+
+          <div className="relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: false,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4 md:-ml-6">
+                {/* Placeholder for future collaborations */}
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow border-dashed">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">+</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-500">University of Lille 1 S&T</h3>
+                        <p className="text-sm text-gray-500">Collaboration with Dr. Tanmoy Mondal</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-gray-50 text-gray-500 border-gray-200">
+                            Current
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">IIT</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-900">LUT University, Sweden</h3>
+                        <p className="text-sm text-gray-600">Collaboration with Dr. Rajkumar Saini</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                            Active
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">IIT</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-900">IIT Kharagpur</h3>
+                        <p className="text-sm text-gray-600">Collaboration with Dr. Saumik Bhattacharya</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                            Active
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">+</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-900">NIT Durgapur</h3>
+                        <p className="text-sm text-gray-600">Collaboration with Dr. Sayantari Ghosh</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-red-50 text-red-500 border-red-200">
+                            Active
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">ISI</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-900">ISI Kolkata</h3>
+                        <p className="text-sm text-gray-600">Active member and contributor</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                            Member
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Placeholder for future collaborations */}
+                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow border-dashed">
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      {/* Logo placeholder */}
+                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">+</span>
+                        </div>
+                      </div> */}
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-semibold text-gray-500">Future Collaborations</h3>
+                        <p className="text-sm text-gray-500">More research partnerships coming soon</p>
+                        <div className="flex items-center justify-center">
+                          <Badge variant="outline" className="bg-gray-50 text-gray-500 border-gray-200">
+                            Planning
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
+              <CarouselNext className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
       {/* Latest Announcements Section */}
       <section id="announcements" className="bg-blue-50 py-12">
         <div className="container mx-auto max-w-3xl px-4">
@@ -1297,141 +1455,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Collaborations Section */}
-      <section id="research-collaborations" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Research Collaborations</h2>
-            <p className="text-lg text-gray-600">Building partnerships and advancing research together</p>
-          </div>
-
-          <div className="relative">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: false,
-              }}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-4 md:-ml-6">
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">IIT</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">IIT Kharagpur</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Saumik Bhattacharya</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">+</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">NIT Durgapur</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Sayantari Ghosh</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-red-50 text-red-500 border-red-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">IIT</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">LUT University, Sweden</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Rajkumar Saini</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">ISI</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">ISI Kolkata</h3>
-                        <p className="text-sm text-gray-600">Active member and contributor</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
-                            Member
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
-                {/* Placeholder for future collaborations */}
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow border-dashed">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">+</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-500">Future Collaborations</h3>
-                        <p className="text-sm text-gray-500">More research partnerships coming soon</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-gray-50 text-gray-500 border-gray-200">
-                            Planning
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-              <CarouselNext className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-            </Carousel>
           </div>
         </div>
       </section>
@@ -2158,8 +2181,8 @@ export default function Portfolio() {
                     size="sm"
                     onClick={() => setSelectedCategory(category)}
                     className={`transition-all duration-200 ${selectedCategory === category
-                        ? "bg-purple-600 hover:bg-purple-700 shadow-md scale-105"
-                        : "bg-white/80 backdrop-blur-sm border-purple-200 hover:bg-purple-50 hover:border-purple-300"
+                      ? "bg-purple-600 hover:bg-purple-700 shadow-md scale-105"
+                      : "bg-white/80 backdrop-blur-sm border-purple-200 hover:bg-purple-50 hover:border-purple-300"
                       }`}
                   >
                     {category}
