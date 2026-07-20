@@ -1167,7 +1167,8 @@ export default function Portfolio() {
             <h2 className="mb-3 text-3xl font-bold text-gray-900">Latest Announcements</h2>
             <p className="text-gray-600">Recent publications and project updates</p>
           </div>
-          <div className="relative border-l-2 border-blue-200 ml-3 md:ml-6 pl-6 md:pl-8 space-y-6">
+          <div className="max-h-[380px] overflow-y-auto pr-2 md:pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="relative border-l-2 border-blue-200 ml-3 md:ml-6 pl-6 md:pl-8 space-y-6">
             {latestAnnouncements.map((announcement, idx) => (
               <div key={idx} className="relative">
                 {/* Timeline dot */}
@@ -1201,6 +1202,7 @@ export default function Portfolio() {
                 </Card>
               </div>
             ))}
+            </div>
           </div>
         </div>
         {/* Automated Paper Topics Section */}
@@ -1280,7 +1282,8 @@ export default function Portfolio() {
             Showing {publicationCards.length} publication{publicationCards.length === 1 ? "" : "s"}
           </div>
 
-          <div className="grid grid-cols-1 gap-5">
+          <div className="max-h-[460px] overflow-y-auto pr-2 md:pr-4 py-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="grid grid-cols-1 gap-5">
             {publicationCards.map((pub) => (
               <Card
                 key={pub.id}
@@ -1356,6 +1359,7 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
             )}
+            </div>
           </div>
         </div>
       </section>
