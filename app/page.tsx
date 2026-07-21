@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { profileStats } from "@/lib/profile-stats"
+import { profileStats, publicationMetrics } from "@/lib/profile-stats"
 import {
   ExternalLink,
   Quote,
@@ -982,22 +982,31 @@ export default function Portfolio() {
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center justify-center rounded-xl border border-indigo-100 bg-indigo-50/50 p-4 shadow-sm transition-colors hover:bg-indigo-50">
-              <span className="text-2xl font-bold text-indigo-700">3</span>
-              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-indigo-600">Q1 Journals</span>
-            </div>
-            <div className="flex flex-col items-center justify-center rounded-xl border border-indigo-100 bg-indigo-50/50 p-4 shadow-sm transition-colors hover:bg-indigo-50">
-              <span className="text-2xl font-bold text-indigo-700">2</span>
-              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-indigo-600">Q2 Journals</span>
-            </div>
-            <div className="flex flex-col items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 shadow-sm transition-colors hover:bg-emerald-50">
-              <span className="text-2xl font-bold text-emerald-700">0</span>
-              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-emerald-600">A* Conferences</span>
-            </div>
-            <div className="flex flex-col items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 shadow-sm transition-colors hover:bg-emerald-50">
-              <span className="text-2xl font-bold text-emerald-700">1</span>
-              <span className="mt-1 text-xs font-semibold uppercase tracking-wider text-emerald-600">A Conferences</span>
-            </div>
+            {publicationMetrics.map((metric) => (
+              <div
+                key={metric.label}
+                className={`flex flex-col items-center justify-center rounded-xl border p-4 shadow-sm transition-colors ${
+                  metric.theme === "indigo"
+                    ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
+                    : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
+                }`}
+              >
+                <span
+                  className={`text-2xl font-bold ${
+                    metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"
+                  }`}
+                >
+                  {metric.value}
+                </span>
+                <span
+                  className={`mt-1 text-xs font-semibold uppercase tracking-wider ${
+                    metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"
+                  }`}
+                >
+                  {metric.label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
