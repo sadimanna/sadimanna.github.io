@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://sadimanna.github.io</id>
+    <title>Dr. Siladittya Manna — Technical Blog</title>
+    <updated>2026-07-15T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Dr. Siladittya Manna</name>
+        <uri>https://sadimanna.github.io/</uri>
+    </author>
+    <link rel="alternate" href="https://sadimanna.github.io/blog/"/>
+    <link rel="self" href="https://sadimanna.github.io/atom.xml"/>
+    <subtitle>Technical blog on federated learning, self-supervised learning, medical AI, and trustworthy machine learning.</subtitle>
+    <rights>© 2026 Dr. Siladittya Manna</rights>
+    <entry>
+        <title type="html"><![CDATA[Understanding Federated Learning: Privacy-Preserving Distributed Training]]></title>
+        <id>https://sadimanna.github.io/blog/understanding-federated-learning/</id>
+        <link href="https://sadimanna.github.io/blog/understanding-federated-learning/"/>
+        <updated>2026-07-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A comprehensive guide to Federated Learning — how it enables collaborative model training without sharing raw data, its mathematical foundations, and practical implementation with PyTorch.]]></summary>
+        <author>
+            <name>Dr. Siladittya Manna</name>
+            <uri>https://sadimanna.github.io/</uri>
+        </author>
+        <category label="Machine Learning"/>
+        <category label="Federated Learning"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Self-Supervised Learning in Medical Imaging: From Pretext Tasks to Foundation Models]]></title>
+        <id>https://sadimanna.github.io/blog/self-supervised-learning-medical-imaging/</id>
+        <link href="https://sadimanna.github.io/blog/self-supervised-learning-medical-imaging/"/>
+        <updated>2026-07-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Exploring how self-supervised learning techniques are revolutionizing medical image analysis — from contrastive pretraining to vision-language foundation models for radiology and pathology.]]></summary>
+        <author>
+            <name>Dr. Siladittya Manna</name>
+            <uri>https://sadimanna.github.io/</uri>
+        </author>
+        <category label="Medical AI"/>
+        <category label="Self-Supervised Learning"/>
+    </entry>
+</feed>

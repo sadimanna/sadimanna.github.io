@@ -22,6 +22,7 @@ import {
   Camera,
   Briefcase,
   Github,
+  PenTool,
 } from "lucide-react"
 
 const primaryResearchAreas = [
@@ -114,6 +115,14 @@ const automatedPaperTopics = [
 
 const latestAnnouncements = [
   {
+    date: "July 2026",
+    category: "Awarded",
+    title: "ANRF National Post-Doctoral Fellowship",
+    description: "Awarded the ANRF National Post-Doctoral Fellowship for the year 2026-2028 with Dr. Anirban Chakraborty (Dept. of CDS, IISc), as Mentor",
+    image: undefined,
+    link: "#"
+  },
+  {
     date: "2026",
     category: "Accepted",
     title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
@@ -123,7 +132,7 @@ const latestAnnouncements = [
   },
   {
     date: "2026",
-    category: "Accepted",
+    category: "New Publication",
     title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
     description: "Congratulations to Suyash Kumar, Ankur Singh (IIT BHU) and Dr. Rajkumar Saini (LUT, Sweden) for this achievement! To be presented at The First Workshop on AI in Fertility Science 2026.",
     image: undefined,
@@ -161,7 +170,7 @@ const photographyImages = [
     id: 1,
     title: "Sunset",
     url: "/photos/sunset.jpg?height=400&width=400",
-    category: "Sky",
+    category: "Nature",
     location: "WB, India",
     year: 2023,
   },
@@ -244,6 +253,38 @@ const photographyImages = [
     category: "Festival",
     location: "Hong Kong",
     year: 2025,
+  },
+  {
+    id: 12,
+    title: "Kovalam Beach Sunset",
+    url: "/photos/kovalam_sunset.jpg?height=400&width=400",
+    category: "Nature",
+    location: "Kerala, India",
+    year: 2026,
+  },
+  {
+    id: 13,
+    title: "Kingfisher",
+    url: "/photos/kingfisher_poovar.png?height=400&width=400",
+    category: "Bird",
+    location: "Kerala, India",
+    year: 2026,
+  },
+  {
+    id: 14,
+    title: "Backwaters",
+    url: "/photos/poovar_boatride.png?height=400&width=400",
+    category: "Nature",
+    location: "Kerala, India",
+    year: 2026,
+  },
+  {
+    id: 15,
+    title: "Boat Ride",
+    url: "/photos/poovar_boat.png?height=400&width=400",
+    category: "Nature",
+    location: "Kerala, India",
+    year: 2026,
   },
 ]
 
@@ -798,6 +839,12 @@ export default function Portfolio() {
                 >
                   <GraduationCap className="mr-2 h-5 w-5" />
                   Google Scholar
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto text-blue-600 border-blue-200 hover:bg-blue-50">
+                <Link href="/blog">
+                  <PenTool className="mr-2 h-5 w-5" />
+                  Technical Blog
                 </Link>
               </Button>
             </div>
