@@ -70,11 +70,15 @@ export function BlogListingClient({ posts, categories, tags }: BlogListingClient
         <div className="blog-hero-glow" />
         <div className="blog-hero-content">
           <div className="blog-hero-icon">
-            <BookOpen className="w-8 h-8" />
+            <img
+              src="/theowl.png"
+              alt="Blog"
+              className="w-12 h-12 object-contain"
+            />
           </div>
-          <h1 className="blog-hero-title">Technical Blog</h1>
+          <h1 className="blog-hero-title">The Owl</h1>
           <p className="blog-hero-subtitle">
-            Exploring federated learning, self-supervised methods, medical AI, and the frontiers of trustworthy machine learning.
+            A collection of my thoughts and insights on machine learning.
           </p>
           <div className="blog-hero-stats">
             <span>{posts.length} articles</span>

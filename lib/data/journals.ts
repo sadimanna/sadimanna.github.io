@@ -1,0 +1,17 @@
+export const journals = [
+  "IEEE Transactions on Artificial Intelligence (TAI)",
+  "IEEE Transactions on Multimedia (TMM)",
+  "IEEE Access",
+  "IEEE Internet of Things Journal (IoT)",
+  "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+  "Elsevier Knowledge-Based Systems (KBS)",
+  "Elsevier Pattern Recognition Letters (PRL)",
+  "Elsevier Computer Vision and Image Understanding (CVIU)",
+  "Springer Scientific Reports",
+  "Springer Pattern Analysis and Applications",
+  "Springer Multimedia Systems",
+  "Springer International Journal of Machine Learning and Cybernetics",
+  "Springer Neural Processing Letters",
+  "Springer Nature Computer Science (SNCS)",
+  "Transactions on Machine Learning Research (TMLR)",
+];
