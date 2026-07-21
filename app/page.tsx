@@ -116,10 +116,18 @@ const latestAnnouncements = [
   {
     date: "2026",
     category: "Accepted",
+    title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
+    description: "Congratulations to Arpan Bairagi, Rakesh Dey and Prof. Umapada Pal (ISI, Kolkata) for this publication! To be presented at ICIP 2026.",
+    image: undefined,
+    link: "#"
+  },
+  {
+    date: "2026",
+    category: "Accepted",
     title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
     description: "Congratulations to Suyash Kumar, Ankur Singh (IIT BHU) and Dr. Rajkumar Saini (LUT, Sweden) for this achievement! To be presented at The First Workshop on AI in Fertility Science 2026.",
     image: undefined,
-    link: "#"
+    link: "https://www.bioailab.org/ai4fertility"
   },
   {
     date: "Dec 2025",
