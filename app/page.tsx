@@ -43,71 +43,54 @@ const publicationTopicFilters = [
   "Representation Learning",
 ]
 
-// Academic profiles data with image icons
-const academicProfiles = [
+// Experience & Education Timeline Data
+const timelineData = [
   {
-    name: "Email",
-    url: "mailto:siladittya@comp.hkbu.edu.hk",
-    imageIcon: "/new-post.png?height=64&width=64",
-    color: "text-red-600",
-  },
-  {
-    name: "Google Scholar",
-    url: "https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en",
-    imageIcon: "/google-scholar.png?height=64&width=64",
-    color: "text-blue-600",
-  },
-  {
-    name: "GitHub",
-    url: "https://github.com/sadimanna",
-    imageIcon: "/github.png?height=64&width=64",
-    color: "text-gray-800",
-  },
-  {
-    name: "ORCID",
-    url: "https://orcid.org/0000-0001-6364-8654",
-    imageIcon: "/orcid.svg?height=64&width=64",
-    color: "text-green-600",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/siladittya-manna-ph-d-063939a0/",
-    imageIcon: "/linkedin.png?height=64&width=64",
-    color: "text-blue-700",
-  },
-  {
-    name: "DBLP",
-    url: "https://dblp.uni-trier.de/pid/270/2011.html",
-    imageIcon: "/dblp.png?height=64&width=64",
-    color: "text-gray-700",
-  },
-  {
-    name: "CV",
-    url: "/cv.pdf",
-    imageIcon: "/resume.png?height=64&width=64",
-    color: "text-purple-600",
-  },
-]
-
-// Work experience data
-const workExperience = [
-  {
-    position: "Post-Doctoral Research Associate",
-    company: "Indian Institute of Science",
+    title: "Post-Doctoral Research Associate",
+    organization: "Indian Institute of Science",
     location: "Bangalore, India",
     period: "November 2024 - Present",
     description: "Conducting research in Federated learning for Vision-Language Models.",
     supervisor: "Prof. Anirban Chakraborty",
+    type: "work",
   },
   {
-    position: "Senior Research Assistant",
-    company: "Hong Kong Baptist University",
+    title: "Senior Research Assistant",
+    organization: "Hong Kong Baptist University",
     location: "Hong Kong",
     period: "October 2024 - October 2025",
     description: "Conducted research in Federated learning with applications in medical image segmentation, augmented with Self-Supervised learning principles.",
     supervisor: "Prof. Yiu-Ming Cheung",
+    type: "work",
+  },
+  {
+    title: "Ph.D. in Computer Science",
+    organization: "Indian Statistical Institute",
+    location: "Kolkata, India",
+    period: "2019 - 2025",
+    description: "Thesis: Self-Supervised Learning and its Applications in Medical Image Analysis",
+    supervisor: "Prof. Umapada Pal",
+    type: "education",
+  },
+  {
+    title: "M.Tech (Under Dual Degree)",
+    organization: "Indian Institute of Engineering Science and Technology",
+    location: "Shibpur, Howrah, India",
+    period: "2018 - 2019",
+    description: "VLSI and Microelectronics",
+    supervisor: "Dr. Ankita Pramanik",
+    type: "education",
+  },
+  {
+    title: "B.Tech (Under Dual Degree)",
+    organization: "Indian Institute of Engineering Science and Technology",
+    location: "Shibpur, Howrah, India",
+    period: "2014 - 2018",
+    description: "Electronics and Telecommincation Engineering",
+    type: "education",
   },
 ]
+
 
 const automatedPaperTopics = [
   { name: "Federated Machine Learning", url: "/awesome-topics/federated-m-l" },
@@ -152,37 +135,6 @@ const latestAnnouncements = [
     description: "Congratulations to all co-authors Soumitri Chattopadhyay and Rakesh Dey for this successful publication! Published in IEEE Transactions on Artificial Intelligence.",
     image: undefined,
     link: "https://ieeexplore.ieee.org/document/10820841"
-  },
-]
-
-// Educational qualifications data
-const educationalQualifications = [
-  {
-    degree: "Ph.D. in Computer Science",
-    institution: "Indian Statistical Institute",
-    location: "Kolkata, India",
-    period: "2019 - 2025",
-    description: "Thesis: Self-Supervised Learning and its Applications in Medical Image Analysis",
-    supervisor: "Prof. Umapada Pal",
-    grade: undefined,
-  },
-  {
-    degree: "M.Tech (Under Dual Degree)",
-    institution: "Indian Institute of Engineering Science and Technology",
-    location: "Shibpur, Howrah, India",
-    period: "2018 - 2019",
-    description: "VLSI and Microelectronics",
-    supervisor: "Dr. Ankita Pramanik",
-    grade: undefined,
-  },
-  {
-    degree: "B.Tech (Under Dual Degree)",
-    institution: "Indian Institute of Engineering Science and Technology",
-    location: "Shibpur, Howrah, India",
-    period: "2014 - 2018",
-    description: "Electronics and Telecommincation Engineering",
-    supervisor: undefined,
-    grade: undefined,
   },
 ]
 
@@ -869,9 +821,8 @@ export default function Portfolio() {
                 Who I Am
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I am a Post-Doctoral Research Associate at the Indian Institute of Science (IISc), Bangalore.
-                My work bridges theoretical machine learning and practical healthcare applications,
-                with a focus on building robust, scalable, and secure AI systems.
+                I am a Post-Doctoral Fellow at the Department of Computational and Data Sciences, Indian Institute of Science (IISc).
+                My work involves exploring the vulnerabilities in federated learning, and also designing efficient frameworks for distributed machine learning.
               </p>
             </div>
 
@@ -883,9 +834,9 @@ export default function Portfolio() {
                 Research Vision
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I envision an AI ecosystem where collaborative learning preserves data privacy without compromising
-                on performance. My goal is to develop foundation models that are highly adaptive to real-world
-                domain heterogeneity and inherently secure against malicious attacks.
+                I envision a future of machine learning where collaboration does not come at the cost of privacy.
+                My research aims to build robust, efficient, and secure AI systems that can be deployed
+                in sensitive domains such as healthcare and finance without compromising on performance.
               </p>
             </div>
           </div>
@@ -941,9 +892,7 @@ export default function Portfolio() {
                 Long-Term Goals
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I aim to establish universally accessible, trustworthy frameworks for medical imaging and multimodal tasks.
-                My ambition is to deploy scalable AI solutions in global healthcare systems, bridging the gap between
-                advanced machine learning research and practical clinical adoption.
+                I aim to establish universally accessible, trustworthy frameworks. My ambition is to deploy scalable AI solutions, bridging the gap between advanced machine learning research and practical real world problems.
               </p>
             </div>
 
@@ -956,8 +905,7 @@ export default function Portfolio() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 I am actively seeking partnerships with both academic researchers and industry professionals.
-                Particularly interested in interdisciplinary projects involving cross-institution federated learning,
-                privacy-preserving algorithms, and large-scale clinical trials leveraging vision-language models.
+                Particularly interested in projects involving federated learning algorithms, and self-supervised learning, and medical AI too.
               </p>
             </div>
           </div>
@@ -1027,7 +975,7 @@ export default function Portfolio() {
               <CarouselContent className="-ml-4 md:-ml-6">
                 {/* Placeholder for future collaborations */}
                 <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow border-dashed">
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
                     <div className="flex flex-col items-center text-center space-y-2">
                       {/* Logo placeholder */}
                       {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
@@ -1370,304 +1318,57 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Academic Profiles and Affiliations Section */}
-      <section id="academic-profiles" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-2">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Academic Profiles & Affiliations</h2>
-            <p className="text-lg text-gray-600">Connect with me across various academic and professional platforms</p>
+      {/* Experience & Education Timeline Section */}
+      <section id="experience-education" className="py-16 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Journey</h2>
+            <p className="text-lg text-gray-600">My academic and professional timeline</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Academic Profiles Column - Circular Layout */}
-            <div className="lg:col-span-1">
-              <div className="flex items-center justify-center gap-2 mb-6">
-                <Users className="w-6 h-6 text-blue-600" />
-                <h3 className="text-2xl font-bold text-gray-800">Academic Profiles</h3>
-              </div>
-              <div className="bg-blue-50 rounded-lg shadow-sm p-8 flex items-center justify-center">
-                <div className="relative w-80 h-80">
-                  {/* Center Profile Image */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                    <div className="w-20 h-20 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                      <Image
-                        src="/graduation-cap.png?height=60&width=60"
-                        alt="Profile"
-                        width={60}
-                        height={60}
-                        className="rounded-full"
-                      />
-                    </div>
-                  </div>
+          <div className="relative md:py-8">
+            {/* Central horizontal line for md+ screens */}
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-blue-100 -translate-y-1/2 hidden md:block" />
 
-                  {/* Circular Profile Links */}
-                  {academicProfiles.map((profile, index) => {
-                    const angle = (index * 360) / academicProfiles.length
-                    const radius = 120
-                    const x = Math.cos((angle - 90) * (Math.PI / 180)) * radius
-                    const y = Math.sin((angle - 90) * (Math.PI / 180)) * radius
+            <div className="flex flex-col md:flex-row md:overflow-x-auto pb-8 md:pt-4 md:pb-4 gap-8 md:gap-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
+              {timelineData.map((item, index) => (
+                <div key={index} className="flex-none w-full md:w-80 relative snap-center flex flex-col md:h-[480px] md:justify-between items-center">
+                  {/* Connecting line for mobile */}
+                  <div className="absolute left-6 top-0 bottom-0 w-1 bg-blue-100 md:hidden" />
 
-                    return (
-                      <Link
-                        key={index}
-                        href={profile.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="absolute group"
-                        style={{
-                          left: `calc(50% + ${x}px - 30px)`,
-                          top: `calc(50% + ${y}px - 30px)`,
-                        }}
-                      >
-                        <div className="w-16 h-16 bg-white rounded-full shadow-lg border-2 border-blue-200 hover:border-blue-400 transition-all duration-300 hover:scale-110 flex items-center justify-center group-hover:shadow-xl">
-                          <Image
-                            src={profile.imageIcon || "/placeholder.svg"}
-                            alt={`${profile.name} icon`}
-                            width={32}
-                            height={32}
-                            className="rounded"
-                          />
-                        </div>
+                  {/* Dot on the timeline */}
+                  <div className="absolute left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-sm z-10 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"></div>
 
-                        {/* Tooltip */}
-                        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                          <div className="bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
-                            {profile.name}
-                          </div>
-                          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-gray-900"></div>
-                        </div>
-                      </Link>
-                    )
-                  })}
-
-                  {/* Connecting Lines */}
-                  <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
-                    {academicProfiles.map((_, index) => {
-                      const angle = (index * 360) / academicProfiles.length
-                      const radius = 120
-                      const x1 = 160 // center
-                      const y1 = 160 // center
-                      const x2 = x1 + Math.cos((angle - 90) * (Math.PI / 180)) * (radius - 40)
-                      const y2 = y1 + Math.sin((angle - 90) * (Math.PI / 180)) * (radius - 40)
-
-                      return (
-                        <line
-                          key={index}
-                          x1={x1}
-                          y1={y1}
-                          x2={x2}
-                          y2={y2}
-                          stroke="#e5e7eb"
-                          strokeWidth="1"
-                          strokeDasharray="4,4"
-                          opacity="0.5"
-                        />
-                      )
-                    })}
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Academic Affiliations Column */}
-            <div className="lg:col-span-2">
-              <div className="flex items-center justify-center gap-2 mb-6">
-                <GraduationCap className="w-6 h-6 text-green-600" />
-                <h3 className="text-2xl font-bold text-gray-800">Academic Affiliations</h3>
-              </div>
-              <div className="bg-green-50 rounded-lg shadow-sm p-6">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  {/* Current Affiliation */}
-                  <div className="lg:col-span-1">
-                    <h4 className="text-lg font-semibold text-green-700 mb-3 flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                      Current Affiliation
-                    </h4>
-                    <div className="bg-white rounded-lg border border-green-200 p-4 hover:shadow-md transition-shadow w-40">
-                      <div className="flex flex-col items-center text-center space-y-2">
-                        {/* Logo placeholder */}
-                        <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                          <div className="w-24 h-24 bg-gray-400 rounded-full"><Image src="/iisclogo.jpg" alt="IISc" width={96} height={96} /></div>
-                        </div>
-                        <div className="flex-1">
-                          <h5 className="text-base font-semibold text-gray-900">Indian Institute of Science</h5>
-                          {/* <p className="text-sm text-gray-600">Department of Computer Science</p>
-                          <p className="text-xs text-gray-500 mt-1">October 2024 - Present</p> */}
-                        </div>
+                  <div className={`ml-16 md:ml-0 bg-white border border-gray-100 shadow-sm rounded-xl p-6 hover:shadow-md transition-shadow relative z-0 w-full md:w-[280px] ${
+                    index % 2 === 0 ? "md:mb-auto md:mt-0" : "md:mt-auto md:mb-0"
+                  }`}>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`p-2.5 rounded-lg ${item.type === "work" ? "bg-blue-50 text-blue-600" : "bg-emerald-50 text-emerald-600"}`}>
+                        {item.type === "work" ? <Briefcase className="w-5 h-5" /> : <GraduationCap className="w-5 h-5" />}
                       </div>
+                      <Badge variant="secondary" className={`${item.type === "work" ? "bg-blue-100 text-blue-800" : "bg-emerald-100 text-emerald-800"} border-none`}>
+                        {item.period}
+                      </Badge>
                     </div>
-                  </div>
-
-                  {/* Previous Affiliations */}
-                  <div className="lg:col-span-2">
-                    <h4 className="text-lg font-semibold text-green-700 mb-3 flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                      Previous Affiliations
-                    </h4>
-                    <div className="relative">
-                      <Carousel
-                        opts={{
-                          align: "start",
-                          loop: false,
-                        }}
-                        className="w-full"
-                      >
-                        <CarouselContent className="-ml-4 md:-ml-6">
-                          <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/2">
-                            <div className="bg-white rounded-lg border border-green-200 p-4 hover:shadow-md transition-shadow w-40">
-                              <div className="flex flex-col items-center text-center space-y-2">
-                                {/* Logo placeholder */}
-                                <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                                  <div className="w-24 h-24 bg-gray-400 rounded-full"><Image src="/HKBU_Logo.png" alt="HKBU" width={96} height={96} /></div>
-                                </div>
-                                <div className="flex-1">
-                                  <h5 className="text-base font-semibold text-gray-900">Hong Kong Baptist University</h5>
-                                  {/* <p className="text-sm text-gray-600">Department of Computer Science</p>
-                                  <p className="text-xs text-gray-500 mt-1">October 2024 - Present</p> */}
-                                </div>
-                              </div>
-                            </div>
-                          </CarouselItem>
-                          <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/2">
-                            <div className="bg-white rounded-lg border border-green-200 p-4 hover:shadow-md transition-shadow w-48">
-                              <div className="flex flex-col items-center text-center space-y-4">
-                                {/* Logo placeholder */}
-                                <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                                  <div className="w-24 h-24 bg-gray-400 rounded-full"><Image src="/isicallogo.png" alt="isical" width={96} height={96} /></div>
-                                </div>
-                                <div className="space-y-2">
-                                  <h5 className="text-lg font-semibold text-gray-900 leading-tight">Indian Statistical Institute</h5>
-                                  {/* <p className="text-sm text-gray-600">Computer Vision and Pattern Recognition Unit</p>
-                                  <p className="text-xs text-gray-500">2019 - 2025</p> */}
-                                </div>
-                              </div>
-                            </div>
-                          </CarouselItem>
-                          <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/2">
-                            <div className="bg-white rounded-lg border border-green-200 p-4 hover:shadow-md transition-shadow w-48">
-                              <div className="flex flex-col items-center text-center space-y-4">
-                                {/* Logo placeholder */}
-                                <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                                  <div className="w-24 h-24 bg-gray-400 rounded-full"><Image src="/iiestlogo.png" alt="iiest" width={96} height={96} /></div>
-                                </div>
-                                <div className="space-y-2">
-                                  <h5 className="text-lg font-semibold text-gray-900 leading-tight">Indian Institute of Engineering Science and Technology</h5>
-                                  {/* <p className="text-sm text-gray-600">Electronics and Telecommunication Engineering</p> */}
-                                  {/* <p className="text-xs text-gray-500">2014 - 2019</p> */}
-                                </div>
-                              </div>
-                            </div>
-                          </CarouselItem>
-                        </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-                        <CarouselNext className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-                      </Carousel>
-                    </div>
+                    <h4 className="text-lg font-bold text-gray-900 mb-2 leading-tight">{item.title}</h4>
+                    <p className="text-sm text-gray-700 font-medium mb-3">
+                      {item.organization}
+                      {item.location && <span className="text-gray-500 font-normal"> • {item.location}</span>}
+                    </p>
+                    {item.description && (
+                      <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                    )}
+                    {item.supervisor && (
+                      <p className="text-xs text-gray-500 mt-3 italic">Under supervision of {item.supervisor}</p>
+                    )}
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Professional Background Section */}
-      <section id="professional-background" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Professional Background</h2>
-            <p className="text-lg text-gray-600">Academic journey and professional experience</p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Work Experience Column */}
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <Briefcase className="w-6 h-6 text-blue-600" />
-                <h3 className="text-2xl font-bold text-gray-800">Work Experience</h3>
-              </div>
-              <div className="bg-blue-50 rounded-lg shadow-sm p-6">
-                <div className="space-y-4">
-                  {workExperience.map((work, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start gap-4 p-4 rounded-lg bg-blue-100 border-l-4 border-blue-500 hover:bg-blue-200 transition-colors duration-200"
-                    >
-                      <div className="flex-shrink-0 mt-1">
-                        <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-start justify-between mb-2">
-                          <div className="flex-1">
-                            <h4 className="text-lg font-semibold text-gray-900">{work.position}</h4>
-                            <p className="text-base text-gray-700 font-medium">
-                              {work.company} • {work.location}
-                            </p>
-                          </div>
-                          <Badge variant="secondary" className="ml-2 bg-blue-200 text-blue-800 border-blue-300">
-                            {work.period}
-                          </Badge>
-                        </div>
-                        <p className="text-gray-700 leading-relaxed">{work.description}</p>
-                        {work.supervisor && (
-                          <p className="text-sm text-gray-600 mt-2 italic">Under supervision of {work.supervisor}</p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Educational Qualifications Column */}
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <GraduationCap className="w-6 h-6 text-green-600" />
-                <h3 className="text-2xl font-bold text-gray-800">Educational Qualifications</h3>
-              </div>
-              <div className="bg-green-50 rounded-lg shadow-sm p-6">
-                <div className="space-y-4">
-                  {educationalQualifications.map((edu, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start gap-4 p-4 rounded-lg bg-green-100 border-l-4 border-green-500 hover:bg-green-200 transition-colors duration-200">
-                      <div className="flex-shrink-0 mt-1">
-                        <div className="w-3 h-3 bg-green-600 rounded-full"></div>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-start justify-between mb-2">
-                          <div className="flex-1">
-                            <h4 className="text-lg font-semibold text-gray-900">{edu.degree}</h4>
-                            <p className="text-base text-gray-700 font-medium">
-                              {edu.institution} • {edu.location}
-                            </p>
-                          </div>
-                          <Badge variant="secondary" className="ml-2 bg-green-200 text-green-800 border-green-300">
-                            {edu.period}
-                          </Badge>
-                        </div>
-                        <p className="text-gray-700 leading-relaxed mb-2">{edu.description}</p>
-                        <div className="space-y-1">
-                          {edu.supervisor && (
-                            <p className="text-sm text-gray-600">
-                              <span className="font-medium text-gray-700">Supervisor:</span> {edu.supervisor}
-                            </p>
-                          )}
-                          {edu.grade && (
-                            <p className="text-sm text-gray-600">
-                              <span className="font-medium text-gray-700">Grade:</span> {edu.grade}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Professional Activities Section */}
       <section id="professional-activities" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
