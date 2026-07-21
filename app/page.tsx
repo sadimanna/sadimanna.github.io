@@ -46,11 +46,20 @@ const publicationTopicFilters = [
 // Experience & Education Timeline Data
 const timelineData = [
   {
+    title: "Post-Doctoral Fellow",
+    organization: "Indian Institute of Science",
+    location: "Bangalore, India",
+    period: "August 2026 - Present",
+    description: "Exploring the vulnerabilities in FL Frameworks in both Unimodal and Multimodal Settings.",
+    supervisor: "Prof. Anirban Chakraborty",
+    type: "work",
+  },
+  {
     title: "Post-Doctoral Research Associate",
     organization: "Indian Institute of Science",
     location: "Bangalore, India",
-    period: "November 2024 - Present",
-    description: "Conducting research in Federated learning for Vision-Language Models.",
+    period: "November 2025 - July 2026",
+    description: "Research on exploring vulnerabilities in Transformer-based FL Frameworks.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
   },
@@ -1326,22 +1335,11 @@ export default function Portfolio() {
             <p className="text-lg text-gray-600">My academic and professional timeline</p>
           </div>
 
-          <div className="relative md:py-8">
-            {/* Central horizontal line for md+ screens */}
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-blue-100 -translate-y-1/2 hidden md:block" />
-
-            <div className="flex flex-col md:flex-row md:overflow-x-auto pb-8 md:pt-4 md:pb-4 gap-8 md:gap-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
+          <div className="relative">
+            <div className="flex flex-col md:flex-row md:overflow-x-auto pb-8 gap-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
               {timelineData.map((item, index) => (
-                <div key={index} className="flex-none w-full md:w-80 relative snap-center flex flex-col md:h-[480px] md:justify-between items-center">
-                  {/* Connecting line for mobile */}
-                  <div className="absolute left-6 top-0 bottom-0 w-1 bg-blue-100 md:hidden" />
-
-                  {/* Dot on the timeline */}
-                  <div className="absolute left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-sm z-10 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"></div>
-
-                  <div className={`ml-16 md:ml-0 bg-white border border-gray-100 shadow-sm rounded-xl p-6 hover:shadow-md transition-shadow relative z-0 w-full md:w-[280px] ${
-                    index % 2 === 0 ? "md:mb-auto md:mt-0" : "md:mt-auto md:mb-0"
-                  }`}>
+                <div key={index} className="flex-none w-full md:w-80 snap-center">
+                  <div className="bg-white border border-gray-100 shadow-sm rounded-xl p-6 hover:shadow-md transition-all duration-200 w-full">
                     <div className="flex items-center gap-3 mb-4">
                       <div className={`p-2.5 rounded-lg ${item.type === "work" ? "bg-blue-50 text-blue-600" : "bg-emerald-50 text-emerald-600"}`}>
                         {item.type === "work" ? <Briefcase className="w-5 h-5" /> : <GraduationCap className="w-5 h-5" />}
