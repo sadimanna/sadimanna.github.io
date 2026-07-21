@@ -869,8 +869,8 @@ export default function Portfolio() {
                 Who I Am
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I am a Post-Doctoral Research Associate at the Indian Institute of Science (IISc), Bangalore. 
-                My work bridges theoretical machine learning and practical healthcare applications, 
+                I am a Post-Doctoral Research Associate at the Indian Institute of Science (IISc), Bangalore.
+                My work bridges theoretical machine learning and practical healthcare applications,
                 with a focus on building robust, scalable, and secure AI systems.
               </p>
             </div>
@@ -883,8 +883,8 @@ export default function Portfolio() {
                 Research Vision
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I envision an AI ecosystem where collaborative learning preserves data privacy without compromising 
-                on performance. My goal is to develop foundation models that are highly adaptive to real-world 
+                I envision an AI ecosystem where collaborative learning preserves data privacy without compromising
+                on performance. My goal is to develop foundation models that are highly adaptive to real-world
                 domain heterogeneity and inherently secure against malicious attacks.
               </p>
             </div>
@@ -893,7 +893,7 @@ export default function Portfolio() {
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Current Interests</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              
+
               <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-blue-300">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Federated Learning</h4>
                 <ul className="space-y-2">
@@ -941,8 +941,8 @@ export default function Portfolio() {
                 Long-Term Goals
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I aim to establish universally accessible, trustworthy frameworks for medical imaging and multimodal tasks. 
-                My ambition is to deploy scalable AI solutions in global healthcare systems, bridging the gap between 
+                I aim to establish universally accessible, trustworthy frameworks for medical imaging and multimodal tasks.
+                My ambition is to deploy scalable AI solutions in global healthcare systems, bridging the gap between
                 advanced machine learning research and practical clinical adoption.
               </p>
             </div>
@@ -955,8 +955,8 @@ export default function Portfolio() {
                 Collaboration Interests
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                I am actively seeking partnerships with both academic researchers and industry professionals. 
-                Particularly interested in interdisciplinary projects involving cross-institution federated learning, 
+                I am actively seeking partnerships with both academic researchers and industry professionals.
+                Particularly interested in interdisciplinary projects involving cross-institution federated learning,
                 privacy-preserving algorithms, and large-scale clinical trials leveraging vision-language models.
               </p>
             </div>
@@ -967,7 +967,7 @@ export default function Portfolio() {
 
       <section id="statistics" className="px-4 pb-14 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-4 gap-4 sm:grid-cols-4 lg:grid-cols-8">
             {profileStats.map((stat) => (
               <Card
                 key={stat.label}
@@ -981,27 +981,24 @@ export default function Portfolio() {
             ))}
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 max-w-4xl mx-auto">
+          <div className="mt-6 grid grid-cols-5 gap-4 sm:grid-cols-5 max-w-4xl mx-auto">
             {publicationMetrics.map((metric) => (
               <div
                 key={metric.label}
-                className={`flex flex-col items-center justify-center rounded-xl border p-4 shadow-sm transition-colors ${
-                  metric.theme === "indigo"
-                    ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
-                    : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
-                }`}
+                className={`flex flex-col items-center justify-center rounded-xl border p-4 shadow-sm transition-colors ${metric.theme === "indigo"
+                  ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
+                  : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
+                  }`}
               >
                 <span
-                  className={`text-2xl font-bold ${
-                    metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"
-                  }`}
+                  className={`text-2xl font-bold ${metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"
+                    }`}
                 >
                   {metric.value}
                 </span>
                 <span
-                  className={`mt-1 text-xs font-semibold uppercase tracking-wider ${
-                    metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"
-                  }`}
+                  className={`mt-1 text-xs font-semibold uppercase tracking-wider ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"
+                    }`}
                 >
                   {metric.label}
                 </span>
@@ -1178,39 +1175,39 @@ export default function Portfolio() {
           </div>
           <div className="max-h-[380px] overflow-y-auto pr-2 md:pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
             <div className="relative border-l-2 border-blue-200 ml-3 md:ml-6 pl-6 md:pl-8 space-y-6">
-            {latestAnnouncements.map((announcement, idx) => (
-              <div key={idx} className="relative">
-                {/* Timeline dot */}
-                <div className="absolute -left-[33px] md:-left-[41px] top-4 h-4 w-4 rounded-full bg-blue-600 border-4 border-blue-50 shadow" />
+              {latestAnnouncements.map((announcement, idx) => (
+                <div key={idx} className="relative">
+                  {/* Timeline dot */}
+                  <div className="absolute -left-[33px] md:-left-[41px] top-4 h-4 w-4 rounded-full bg-blue-600 border-4 border-blue-50 shadow" />
 
-                <Card className="border-gray-200 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col sm:flex-row gap-4 p-4">
-                    {announcement.image && (
-                      <div className="flex-shrink-0 w-full sm:w-28 h-28 relative rounded-md overflow-hidden bg-gray-100">
-                        <Image src={announcement.image} alt={announcement.title} fill className="object-cover" />
-                      </div>
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex flex-wrap items-center gap-2 mb-2">
-                        <Badge variant="secondary" className="bg-blue-100/50 text-blue-700 hover:bg-blue-100 border-blue-200">{announcement.category}</Badge>
-                        <span className="text-xs font-medium text-gray-500 flex items-center">
-                          <Calendar className="w-3 h-3 mr-1" />
-                          {announcement.date}
-                        </span>
-                      </div>
-                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1.5 leading-snug">{announcement.title}</h3>
-                      <p className="text-sm text-gray-600 mb-3 line-clamp-2">{announcement.description}</p>
+                  <Card className="border-gray-200 hover:shadow-md transition-shadow">
+                    <div className="flex flex-col sm:flex-row gap-4 p-4">
+                      {announcement.image && (
+                        <div className="flex-shrink-0 w-full sm:w-28 h-28 relative rounded-md overflow-hidden bg-gray-100">
+                          <Image src={announcement.image} alt={announcement.title} fill className="object-cover" />
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-wrap items-center gap-2 mb-2">
+                          <Badge variant="secondary" className="bg-blue-100/50 text-blue-700 hover:bg-blue-100 border-blue-200">{announcement.category}</Badge>
+                          <span className="text-xs font-medium text-gray-500 flex items-center">
+                            <Calendar className="w-3 h-3 mr-1" />
+                            {announcement.date}
+                          </span>
+                        </div>
+                        <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1.5 leading-snug">{announcement.title}</h3>
+                        <p className="text-sm text-gray-600 mb-3 line-clamp-2">{announcement.description}</p>
 
-                      <Button asChild variant="outline" size="sm" className="h-8 text-xs font-medium">
-                        <Link href={announcement.link || "#"} target={announcement.link && announcement.link !== "#" ? "_blank" : "_self"} rel="noopener noreferrer">
-                          Read More <ChevronRight className="w-3 h-3 ml-1" />
-                        </Link>
-                      </Button>
+                        <Button asChild variant="outline" size="sm" className="h-8 text-xs font-medium">
+                          <Link href={announcement.link || "#"} target={announcement.link && announcement.link !== "#" ? "_blank" : "_self"} rel="noopener noreferrer">
+                            Read More <ChevronRight className="w-3 h-3 ml-1" />
+                          </Link>
+                        </Button>
+                      </div>
                     </div>
-                  </div>
-                </Card>
-              </div>
-            ))}
+                  </Card>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -1293,81 +1290,81 @@ export default function Portfolio() {
 
           <div className="max-h-[460px] overflow-y-auto pr-2 md:pr-4 py-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
             <div className="grid grid-cols-1 gap-5">
-            {publicationCards.map((pub) => (
-              <Card
-                key={pub.id}
-                className="border-gray-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
-              >
-                <CardHeader>
-                  <div className="mb-3 flex flex-wrap gap-2">
-                    {pub.featured && <Badge className="bg-blue-600 text-white">Featured</Badge>}
-                    <Badge variant="secondary">{pub.category}</Badge>
-                    {pub.topics.map((topic) => (
-                      <Badge key={topic} variant="outline" className="bg-white">
-                        {topic}
-                      </Badge>
-                    ))}
-                  </div>
-                  <CardTitle className="text-xl leading-snug text-gray-900">{pub.title}</CardTitle>
-                  <CardDescription className="mt-3 text-sm leading-6">
-                    <span className="font-medium text-gray-800">{pub.authors}</span>
-                    <br />
-                    <span className="italic">{pub.journal}</span> • {pub.year}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Button asChild size="sm" variant="outline" className="bg-white">
-                      <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Paper
-                      </Link>
-                    </Button>
-                    {pub.code ? (
+              {publicationCards.map((pub) => (
+                <Card
+                  key={pub.id}
+                  className="border-gray-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <CardHeader>
+                    <div className="mb-3 flex flex-wrap gap-2">
+                      {pub.featured && <Badge className="bg-blue-600 text-white">Featured</Badge>}
+                      <Badge variant="secondary">{pub.category}</Badge>
+                      {pub.topics.map((topic) => (
+                        <Badge key={topic} variant="outline" className="bg-white">
+                          {topic}
+                        </Badge>
+                      ))}
+                    </div>
+                    <CardTitle className="text-xl leading-snug text-gray-900">{pub.title}</CardTitle>
+                    <CardDescription className="mt-3 text-sm leading-6">
+                      <span className="font-medium text-gray-800">{pub.authors}</span>
+                      <br />
+                      <span className="italic">{pub.journal}</span> • {pub.year}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
                       <Button asChild size="sm" variant="outline" className="bg-white">
-                        <Link href={pub.code} target="_blank" rel="noopener noreferrer">
+                        <Link href={pub.link} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Paper
+                        </Link>
+                      </Button>
+                      {pub.code ? (
+                        <Button asChild size="sm" variant="outline" className="bg-white">
+                          <Link href={pub.code} target="_blank" rel="noopener noreferrer">
+                            Code
+                          </Link>
+                        </Button>
+                      ) : (
+                        <Button size="sm" variant="outline" disabled>
                           Code
-                        </Link>
-                      </Button>
-                    ) : (
-                      <Button size="sm" variant="outline" disabled>
-                        Code
-                      </Button>
-                    )}
-                    {pub.bibtex ? (
-                      <Button asChild size="sm" variant="outline" className="bg-white">
-                        <Link href={pub.bibtex} target="_blank" rel="noopener noreferrer">
+                        </Button>
+                      )}
+                      {pub.bibtex ? (
+                        <Button asChild size="sm" variant="outline" className="bg-white">
+                          <Link href={pub.bibtex} target="_blank" rel="noopener noreferrer">
+                            BibTeX
+                          </Link>
+                        </Button>
+                      ) : (
+                        <Button size="sm" variant="outline" disabled>
                           BibTeX
-                        </Link>
-                      </Button>
-                    ) : (
-                      <Button size="sm" variant="outline" disabled>
-                        BibTeX
-                      </Button>
-                    )}
-                    {pub.project ? (
-                      <Button asChild size="sm" variant="outline" className="bg-white">
-                        <Link href={pub.project} target="_blank" rel="noopener noreferrer">
+                        </Button>
+                      )}
+                      {pub.project ? (
+                        <Button asChild size="sm" variant="outline" className="bg-white">
+                          <Link href={pub.project} target="_blank" rel="noopener noreferrer">
+                            Project
+                          </Link>
+                        </Button>
+                      ) : (
+                        <Button size="sm" variant="outline" disabled>
                           Project
-                        </Link>
-                      </Button>
-                    ) : (
-                      <Button size="sm" variant="outline" disabled>
-                        Project
-                      </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                        </Button>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
 
-            {publicationCards.length === 0 && (
-              <Card className="border-dashed bg-gray-50">
-                <CardContent className="p-8 text-center text-gray-600">
-                  No publications match the selected filters.
-                </CardContent>
-              </Card>
-            )}
+              {publicationCards.length === 0 && (
+                <Card className="border-dashed bg-gray-50">
+                  <CardContent className="p-8 text-center text-gray-600">
+                    No publications match the selected filters.
+                  </CardContent>
+                </Card>
+              )}
             </div>
           </div>
         </div>
