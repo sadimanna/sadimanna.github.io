@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: 'Dr. Siladittya Manna',
@@ -14,6 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "bcc4c417df7b43349f96566c9ea98f39"}'
+          strategy="afterInteractive"
+        />
+      </head>
       <body>{children}</body>
     </html>
   )
