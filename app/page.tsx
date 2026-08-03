@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle /* , CardFooter */ } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
@@ -19,10 +19,21 @@ import {
   BookOpen,
   Users,
   GraduationCap,
-  Camera,
+  // Camera,
   Briefcase,
   Github,
   PenTool,
+  UsersRound,
+  Compass,
+  Network,
+  Layers,
+  Stethoscope,
+  ShieldCheck,
+  Lightbulb,
+  Target,
+  Handshake,
+  Globe,
+  Rocket,
 } from "lucide-react"
 import { AcademicServiceSection } from "@/components/academic-service/AcademicServiceSection"
 
@@ -55,6 +66,7 @@ const timelineData = [
     description: "Exploring the vulnerabilities in FL Frameworks in both Unimodal and Multimodal Settings.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
+    logo: "/iisclogo.jpg",
   },
   {
     title: "Post-Doctoral Research Associate",
@@ -64,6 +76,7 @@ const timelineData = [
     description: "Research on exploring vulnerabilities in Transformer-based FL Frameworks.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
+    logo: "/iisclogo.jpg",
   },
   {
     title: "Senior Research Assistant",
@@ -73,6 +86,7 @@ const timelineData = [
     description: "Conducted research in Federated learning with applications in medical image segmentation, augmented with Self-Supervised learning principles.",
     supervisor: "Prof. Yiu-Ming Cheung",
     type: "work",
+    logo: "/HKBU_Logo.png",
   },
   {
     title: "Ph.D. in Computer Science",
@@ -82,6 +96,7 @@ const timelineData = [
     description: "Thesis: Self-Supervised Learning and its Applications in Medical Image Analysis",
     supervisor: "Prof. Umapada Pal",
     type: "education",
+    logo: "/isicallogo.png",
   },
   {
     title: "M.Tech (Under Dual Degree)",
@@ -91,6 +106,7 @@ const timelineData = [
     description: "VLSI and Microelectronics",
     supervisor: "Dr. Ankita Pramanik",
     type: "education",
+    logo: "/iiestlogo.png",
   },
   {
     title: "B.Tech (Under Dual Degree)",
@@ -99,6 +115,7 @@ const timelineData = [
     period: "2014 - 2018",
     description: "Electronics and Telecommincation Engineering",
     type: "education",
+    logo: "/iiestlogo.png",
   },
 ]
 
@@ -166,6 +183,7 @@ const latestAnnouncements = [
 ]
 
 // Sample photography data
+/*
 const photographyImages = [
   {
     id: 1,
@@ -288,6 +306,7 @@ const photographyImages = [
     year: 2026,
   },
 ]
+*/
 
 // AI Applications data
 const aiApplications = [
@@ -762,8 +781,123 @@ function BioCarousel() {
   )
 }
 
+const researchAreas = [
+  {
+    icon: Network,
+    title: "Federated Learning",
+    description:
+      "Designing robust distributed learning algorithms that train collaboratively across decentralized data with adaptive aggregation, personalization, and privacy guarantees.",
+    tags: ["Federated Optimization", "Personalization", "Robust Aggregation"],
+    card: "border-blue-100 bg-gradient-to-br from-blue-50/70 to-white hover:border-blue-300",
+    iconBox: "bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white",
+    glow: "bg-blue-200/50",
+    chip: "border-blue-200 bg-blue-50 text-blue-700",
+  },
+  {
+    icon: Layers,
+    title: "Representation Learning",
+    description:
+      "Advancing self-supervised and contrastive methods that learn transferable, task-agnostic features from unlabeled and heterogeneous data across domains and modalities.",
+    tags: ["Self-Supervised Learning", "Contrastive Learning", "Foundation Models"],
+    card: "border-violet-100 bg-gradient-to-br from-violet-50/70 to-white hover:border-violet-300",
+    iconBox: "bg-violet-100 text-violet-600 group-hover:bg-violet-600 group-hover:text-white",
+    glow: "bg-violet-200/50",
+    chip: "border-violet-200 bg-violet-50 text-violet-700",
+  },
+  {
+    icon: Stethoscope,
+    title: "Medical AI",
+    description:
+      "Building annotation-efficient, robust models for medical imaging and clinical decision support, where data scarcity, reliability, and patient safety demand extra care.",
+    tags: ["Medical Imaging", "Segmentation", "Clinical AI"],
+    card: "border-emerald-100 bg-gradient-to-br from-emerald-50/70 to-white hover:border-emerald-300",
+    iconBox: "bg-emerald-100 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white",
+    glow: "bg-emerald-200/50",
+    chip: "border-emerald-200 bg-emerald-50 text-emerald-700",
+  },
+  {
+    icon: ShieldCheck,
+    title: "AI Security & Privacy",
+    description:
+      "Analyzing and defending learning systems against gradient inversion, prompt poisoning, and other attacks that threaten data privacy and model integrity.",
+    tags: ["Gradient Inversion", "Prompt Attacks", "Machine Unlearning"],
+    card: "border-rose-100 bg-gradient-to-br from-rose-50/70 to-white hover:border-rose-300",
+    iconBox: "bg-rose-100 text-rose-600 group-hover:bg-rose-600 group-hover:text-white",
+    glow: "bg-rose-200/50",
+    chip: "border-rose-200 bg-rose-50 text-rose-700",
+  },
+]
+
+const researchQuestions = [
+  "How can federated learning frameworks be made robust against adversarial attacks in both unimodal and multimodal settings?",
+  "How do parameter-efficient fine-tuning (PEFT) and foundation models interact with privacy and security guarantees in distributed training?",
+  "How can self-supervised representation learning deliver label-efficient medical AI without degrading under domain and data heterogeneity?",
+  "Can distributed optimization be made simultaneously private, communication-efficient, and robust to malicious participants?",
+  "How do we reconcile personalization and generalization in federated learning under realistic non-IID data distributions?",
+]
+
+const longTermGoals = [
+  {
+    icon: ShieldCheck,
+    title: "Trustworthy distributed AI",
+    text: "establish frameworks whose privacy and robustness guarantees match the performance of centralized training.",
+  },
+  {
+    icon: Layers,
+    title: "Sample-efficient representation learning",
+    text: "develop self-supervised methods that transfer across domains and modalities with minimal supervision.",
+  },
+  {
+    icon: Globe,
+    title: "Secure collaboration at scale",
+    text: "enable institutions to build shared models without exposing data or weakening security.",
+  },
+  {
+    icon: Rocket,
+    title: "Research to real-world deployment",
+    text: "bridge advanced machine learning research and dependable systems in healthcare and other sensitive domains.",
+  },
+]
+
+const collaborationAreas = [
+  "Federated Learning",
+  "Self-Supervised Learning",
+  "Medical AI",
+  "AI Security & Privacy",
+  "Representation Learning",
+  "Distributed Systems",
+  "Healthcare AI",
+  "Trustworthy ML",
+]
+
+const collabBadgeColors = [
+  "border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100",
+  "border-violet-200 bg-violet-50 text-violet-700 hover:bg-violet-100",
+  "border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100",
+  "border-rose-200 bg-rose-50 text-rose-700 hover:bg-rose-100",
+  "border-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100",
+  "border-teal-200 bg-teal-50 text-teal-700 hover:bg-teal-100",
+  "border-indigo-200 bg-indigo-50 text-indigo-700 hover:bg-indigo-100",
+  "border-sky-200 bg-sky-50 text-sky-700 hover:bg-sky-100",
+]
+
+const methodologiesAndTools = [
+  "Federated Optimization",
+  "Self-Supervised Learning",
+  "Contrastive Learning",
+  "Foundation Models",
+  "Vision Transformers",
+  "Optimal Transport",
+  "Privacy-Preserving AI",
+  "Distributed Systems",
+  "PEFT & Parameter-Efficient Tuning",
+  "Multimodal Learning",
+  "Medical Imaging",
+  "Machine Unlearning",
+]
+
 export default function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState("All")
+  const [selectedCategory, setSelectedCategory] = useState("All") // Only used by the commented-out Photography section
   const [selectedPublicationType, setSelectedPublicationType] = useState("All")
   const [selectedPublicationTopic, setSelectedPublicationTopic] = useState("All")
 
@@ -789,13 +923,13 @@ export default function Portfolio() {
     .sort((a, b) => b.year - a.year)
 
   // Filter photography images by category
-  const filteredImages =
-    selectedCategory === "All"
-      ? photographyImages
-      : photographyImages.filter((img) => img.category === selectedCategory)
+  // const filteredImages =
+  //   selectedCategory === "All"
+  //     ? photographyImages
+  //     : photographyImages.filter((img) => img.category === selectedCategory)
 
-  // Get unique categories
-  const categories = ["All", ...Array.from(new Set(photographyImages.map((img) => img.category)))]
+  // // Get unique categories
+  // const categories = ["All", ...Array.from(new Set(photographyImages.map((img) => img.category)))]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
@@ -849,6 +983,41 @@ export default function Portfolio() {
                 </Link>
               </Button>
             </div>
+
+            <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+              {profileStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-xl border border-gray-100 bg-white/80 px-4 py-3 text-center shadow-sm backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+                >
+                  <div className="text-2xl font-bold text-gray-900 sm:text-3xl">{stat.value}</div>
+                  <div className="mt-1 text-[0.7rem] font-medium uppercase tracking-wide text-gray-500">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-4 grid max-w-2xl grid-cols-3 gap-3 sm:grid-cols-5 sm:gap-4">
+              {publicationMetrics.map((metric) => (
+                <div
+                  key={metric.label}
+                  className={`flex flex-col items-center justify-center rounded-xl border px-3 py-3 shadow-sm transition-colors ${metric.theme === "indigo"
+                    ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
+                    : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
+                    }`}
+                >
+                  <span className={`text-xl font-bold ${metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"}`}>
+                    {metric.value}
+                  </span>
+                  <span
+                    className={`mt-0.5 text-center text-[0.65rem] font-semibold uppercase tracking-wider ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"}`}
+                  >
+                    {metric.label}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="flex justify-center lg:justify-end">
@@ -871,152 +1040,196 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
+      <section id="about" className="relative overflow-hidden bg-white px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-blue-50/70 to-transparent" aria-hidden="true" />
+
+        <div className="relative mx-auto max-w-6xl">
+          {/* Section Header */}
+          <div className="mb-16 text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">Research Profile</p>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
+            <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-gradient-to-r from-blue-500 to-violet-500" aria-hidden="true" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-blue-50/50 rounded-2xl p-8 border border-blue-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                </div>
-                Who I Am
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                I am a Post-Doctoral Fellow at the Department of Computational and Data Sciences, Indian Institute of Science (IISc).
-                My work involves exploring the vulnerabilities in federated learning, and also designing efficient frameworks for distributed machine learning.
+          {/* Research Statement */}
+          <div className="relative mb-20 overflow-hidden rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 via-indigo-50/50 to-violet-50 px-6 py-12 text-center shadow-sm sm:px-12 sm:py-14">
+            <div className="pointer-events-none absolute -left-10 -top-12 h-40 w-40 rounded-full bg-blue-100/70 blur-2xl" aria-hidden="true" />
+            <div className="pointer-events-none absolute -bottom-12 -right-10 h-44 w-44 rounded-full bg-violet-100/70 blur-2xl" aria-hidden="true" />
+            <Quote className="relative mx-auto mb-5 h-9 w-9 text-blue-500/70" aria-hidden="true" />
+            <p className="relative mx-auto max-w-3xl text-xl font-medium leading-relaxed text-slate-800 sm:text-2xl sm:leading-relaxed">
+              Building trustworthy machine learning systems that learn collaboratively while preserving{" "}
+              <span className="font-semibold text-blue-700">privacy</span>,{" "}
+              <span className="font-semibold text-violet-700">security</span>, and{" "}
+              <span className="font-semibold text-emerald-700">efficiency</span>.
+            </p>
+          </div>
+
+          {/* Who I Am | Research Vision */}
+          <div className="mb-20 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="group rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50/70 to-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-100/60">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-blue-600 shadow-sm transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white">
+                <UsersRound className="h-6 w-6" />
+              </div>
+              <h3 className="mb-3 text-xl font-bold text-gray-900">Who I Am</h3>
+              <p className="leading-relaxed text-gray-700">
+                I am a Postdoctoral Fellow at the Indian Institute of Science (IISc), working at the intersection of
+                federated learning, representation learning, and AI security. I investigate how distributed learning
+                systems can be made robust against adversarial attacks — particularly in federated and
+                parameter-efficient frameworks — and design algorithms that learn effectively from decentralized,
+                heterogeneous data.
               </p>
             </div>
 
-            <div className="bg-emerald-50/50 rounded-2xl p-8 border border-emerald-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                </div>
-                Research Vision
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                I envision a future of machine learning where collaboration does not come at the cost of privacy.
-                My research aims to build robust, efficient, and secure AI systems that can be deployed
-                in sensitive domains such as healthcare and finance without compromising on performance.
-              </p>
-            </div>
-          </div>
-
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Current Interests</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-blue-300">
-                <h4 className="text-lg font-bold text-gray-900 mb-3">Federated Learning</h4>
-                <ul className="space-y-2">
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>Adaptive aggregation</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>Personalization</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>Privacy</li>
-                </ul>
+            <div className="group rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50/70 to-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-100/60">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 text-violet-600 shadow-sm transition-all duration-300 group-hover:bg-violet-600 group-hover:text-white">
+                <Compass className="h-6 w-6" />
               </div>
-
-              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-purple-300">
-                <h4 className="text-lg font-bold text-gray-900 mb-3">Representation Learning</h4>
-                <ul className="space-y-2">
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>SSL</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>Contrastive Learning</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-purple-400"></div>Foundation Models</li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-emerald-300">
-                <h4 className="text-lg font-bold text-gray-900 mb-3">Medical AI</h4>
-                <ul className="space-y-2">
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>Segmentation</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>Diagnosis</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-emerald-400"></div>Image Analysis</li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 hover:border-rose-300">
-                <h4 className="text-lg font-bold text-gray-900 mb-3">AI Security</h4>
-                <ul className="space-y-2">
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-rose-400"></div>Gradient inversion</li>
-                  <li className="text-gray-600 text-sm flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-rose-400"></div>Prompt attacks</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-amber-50/50 rounded-2xl p-8 border border-amber-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                </div>
-                Long-Term Goals
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                I aim to establish universally accessible, trustworthy frameworks. My ambition is to deploy scalable AI solutions, bridging the gap between advanced machine learning research and practical real world problems.
-              </p>
-            </div>
-
-            <div className="bg-indigo-50/50 rounded-2xl p-8 border border-indigo-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                </div>
-                Collaboration Interests
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                I am actively seeking partnerships with both academic researchers and industry professionals.
-                Particularly interested in projects involving federated learning algorithms, and self-supervised learning, and medical AI too.
+              <h3 className="mb-3 text-xl font-bold text-gray-900">Research Vision</h3>
+              <p className="leading-relaxed text-gray-700">
+                My goal is to build privacy-preserving, robust, and trustworthy distributed AI systems. I envision a
+                future in which institutions and devices collaborate on shared models without exposing sensitive data —
+                pursuing federated and self-supervised methods that scale gracefully while upholding rigorous standards
+                of privacy, security, and reliability in high-stakes domains such as healthcare.
               </p>
             </div>
           </div>
 
-        </div>
-      </section>
+          {/* Research Areas */}
+          <div className="mb-20">
+            <div className="mb-8 flex items-center gap-3">
+              <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-blue-500 to-violet-500" aria-hidden="true" />
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Focus</p>
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Research Areas</h3>
+              </div>
+            </div>
 
-      <section id="statistics" className="px-4 pb-14 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-4 gap-4 sm:grid-cols-4 lg:grid-cols-8">
-            {profileStats.map((stat) => (
-              <Card
-                key={stat.label}
-                className="border-blue-100 bg-white/90 text-center shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
-              >
-                <CardContent className="p-5">
-                  <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
-                  <div className="mt-2 text-sm font-medium text-gray-600">{stat.label}</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="mt-6 grid grid-cols-5 gap-4 sm:grid-cols-5 max-w-4xl mx-auto">
-            {publicationMetrics.map((metric) => (
-              <div
-                key={metric.label}
-                className={`flex flex-col items-center justify-center rounded-xl border p-4 shadow-sm transition-colors ${metric.theme === "indigo"
-                  ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
-                  : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
-                  }`}
-              >
-                <span
-                  className={`text-2xl font-bold ${metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"
-                    }`}
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {researchAreas.map((area) => (
+                <div
+                  key={area.title}
+                  className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl ${area.card}`}
                 >
-                  {metric.value}
-                </span>
-                <span
-                  className={`mt-1 text-xs font-semibold uppercase tracking-wider ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"
-                    }`}
-                >
-                  {metric.label}
-                </span>
+                  <div className={`pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full blur-2xl ${area.glow}`} aria-hidden="true" />
+                  <div className={`relative mb-5 flex h-12 w-12 items-center justify-center rounded-xl shadow-sm transition-all duration-300 ${area.iconBox}`}>
+                    <area.icon className="h-6 w-6" />
+                  </div>
+                  <h4 className="relative mb-3 text-lg font-bold text-gray-900">{area.title}</h4>
+                  <p className="relative mb-5 text-sm leading-relaxed text-gray-600">{area.description}</p>
+                  <div className="relative mt-auto flex flex-wrap gap-1.5">
+                    {area.tags.map((tag) => (
+                      <span key={tag} className={`rounded-full border px-2.5 py-0.5 text-[0.7rem] font-medium ${area.chip}`}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Current Research Questions | Long-Term Goals */}
+          <div className="mb-20 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="flex flex-col rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
+                  <Lightbulb className="h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Current Research Questions</h3>
               </div>
-            ))}
+              <ol className="space-y-3">
+                {researchQuestions.map((question, index) => (
+                  <li
+                    key={question}
+                    className="flex gap-3 rounded-xl border border-gray-100 bg-gray-50/60 p-4 transition-colors duration-200 hover:border-indigo-200 hover:bg-indigo-50/40"
+                  >
+                    <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-700">
+                      {index + 1}
+                    </span>
+                    <p className="text-sm leading-relaxed text-gray-700">{question}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            <div className="flex flex-col rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                  <Target className="h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Long-Term Goals</h3>
+              </div>
+              <ul className="space-y-3">
+                {longTermGoals.map((goal) => (
+                  <li
+                    key={goal.title}
+                    className="flex gap-3 rounded-xl border border-gray-100 bg-gray-50/60 p-4 transition-colors duration-200 hover:border-emerald-200 hover:bg-emerald-50/40"
+                  >
+                    <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600">
+                      <goal.icon className="h-4 w-4" />
+                    </div>
+                    <p className="text-sm leading-relaxed text-gray-700">
+                      <span className="font-semibold text-gray-900">{goal.title}</span> — {goal.text}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Collaboration */}
+          <div className="mb-20">
+            <div className="relative overflow-hidden rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-blue-50/50 to-emerald-50 p-8 shadow-sm sm:p-10">
+              <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-indigo-100/60 blur-2xl" aria-hidden="true" />
+              <div className="pointer-events-none absolute -bottom-12 -left-12 h-40 w-40 rounded-full bg-emerald-100/60 blur-2xl" aria-hidden="true" />
+
+              <div className="relative">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600 shadow-sm">
+                  <Handshake className="h-6 w-6" />
+                </div>
+                <h3 className="mb-3 text-2xl font-bold tracking-tight text-gray-900">Collaboration</h3>
+                <p className="mb-6 max-w-3xl leading-relaxed text-gray-700">
+                  Great research happens at the boundaries between disciplines and institutions. I actively seek
+                  partnerships with academic researchers and industry practitioners in federated learning,
+                  self-supervised learning, medical AI, and AI security — collaborations that move trustworthy
+                  distributed AI from theory to practice through joint publications, shared infrastructure, and
+                  applied deployments in privacy-sensitive domains. If your work intersects these areas, I would be
+                  glad to explore how we can build together.
+                </p>
+                <div className="flex flex-wrap gap-2.5">
+                  {collaborationAreas.map((area, index) => (
+                    <span
+                      key={area}
+                      className={`inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm ${collabBadgeColors[index % collabBadgeColors.length]}`}
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Methodologies & Tools */}
+          <div>
+            <div className="mb-8 flex items-center gap-3">
+              <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-blue-500 to-violet-500" aria-hidden="true" />
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Toolkit</p>
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Methodologies & Tools</h3>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3">
+              {methodologiesAndTools.map((tool) => (
+                <span
+                  key={tool}
+                  className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-sm font-medium text-gray-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 hover:shadow-sm"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -1378,40 +1591,106 @@ export default function Portfolio() {
       </section>
 
       {/* Experience & Education Timeline Section */}
-      <section id="experience-education" className="py-16 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+      <section id="experience-education" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-50/60 to-white overflow-hidden">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Journey</h2>
-            <p className="text-lg text-gray-600">My academic and professional timeline</p>
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-gradient-to-r from-blue-50 to-emerald-50 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-5">
+              <Compass className="h-4 w-4" />
+              My Path
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Journey</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              A timeline of my academic and professional milestones
+            </p>
           </div>
 
           <div className="relative">
-            <div className="flex flex-col md:flex-row md:overflow-x-auto pb-8 gap-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
-              {timelineData.map((item, index) => (
-                <div key={index} className="flex-none w-full md:w-80 snap-center">
-                  <div className="bg-white border border-gray-100 shadow-sm rounded-xl p-6 hover:shadow-md transition-all duration-200 w-full">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className={`p-2.5 rounded-lg ${item.type === "work" ? "bg-blue-50 text-blue-600" : "bg-emerald-50 text-emerald-600"}`}>
-                        {item.type === "work" ? <Briefcase className="w-5 h-5" /> : <GraduationCap className="w-5 h-5" />}
-                      </div>
-                      <Badge variant="secondary" className={`${item.type === "work" ? "bg-blue-100 text-blue-800" : "bg-emerald-100 text-emerald-800"} border-none`}>
-                        {item.period}
-                      </Badge>
+            {/* Vertical timeline line */}
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-300 via-emerald-300 to-blue-300 rounded-full md:left-1/2 md:-translate-x-1/2" />
+
+            <div className="space-y-6 md:space-y-0">
+              {timelineData.map((item, index) => {
+                const isLeft = index % 2 === 0
+                const isWork = item.type === "work"
+                const accent = isWork
+                  ? { iconColor: "text-blue-600", badge: "bg-blue-100 text-blue-800", ring: "ring-blue-100" }
+                  : { iconColor: "text-emerald-600", badge: "bg-emerald-100 text-emerald-800", ring: "ring-emerald-100" }
+                const isCurrent = item.period.includes("Present")
+
+                return (
+                  <div
+                    key={index}
+                    className={`relative pl-16 md:pl-0 md:grid md:grid-cols-[1fr_4rem_1fr] md:items-center md:py-2`}
+                  >
+                    {/* Node on the timeline */}
+                    <div
+                      className={`absolute left-6 top-5 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md ring-4 ${accent.ring}`}
+                    >
+                      {isWork ? (
+                        <Briefcase className={`h-5 w-5 ${accent.iconColor}`} />
+                      ) : (
+                        <GraduationCap className={`h-5 w-5 ${accent.iconColor}`} />
+                      )}
+                      {isCurrent && (
+                        <span className="absolute -right-0.5 -top-0.5 flex h-3 w-3">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                        </span>
+                      )}
                     </div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-2 leading-tight">{item.title}</h4>
-                    <p className="text-sm text-gray-700 font-medium mb-3">
-                      {item.organization}
-                      {item.location && <span className="text-gray-500 font-normal"> • {item.location}</span>}
-                    </p>
-                    {item.description && (
-                      <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
-                    )}
-                    {item.supervisor && (
-                      <p className="text-xs text-gray-500 mt-3 italic">Under supervision of {item.supervisor}</p>
-                    )}
+
+                    {/* Card */}
+                    <div className={isLeft ? "md:col-start-1 md:pr-10" : "md:col-start-3 md:pl-10"}>
+                      <div className="group relative rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-100 hover:shadow-xl">
+                        <div className={`absolute inset-x-0 top-0 h-1 rounded-t-2xl ${isWork ? "bg-gradient-to-r from-blue-400 to-blue-200" : "bg-gradient-to-r from-emerald-400 to-emerald-200"}`} />
+                        <div className="flex items-start gap-4">
+                          {item.logo && (
+                            <div className="flex-none">
+                              <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border border-gray-100 bg-white p-1.5 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                                <Image
+                                  src={item.logo}
+                                  alt={item.organization}
+                                  width={56}
+                                  height={56}
+                                  className="h-full w-full object-contain"
+                                />
+                              </div>
+                            </div>
+                          )}
+                          <div className="min-w-0 flex-1">
+                            <div className="mb-2 flex flex-wrap items-center gap-2">
+                              <Badge variant="secondary" className={`${accent.badge} border-none`}>
+                                {item.period}
+                              </Badge>
+                              {isCurrent && (
+                                <Badge variant="secondary" className="bg-emerald-100 text-emerald-800 border-none">
+                                  Current
+                                </Badge>
+                              )}
+                            </div>
+                            <h4 className="text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-blue-700">
+                              {item.title}
+                            </h4>
+                            <p className="mt-0.5 text-sm font-medium text-gray-700">
+                              {item.organization}
+                              {item.location && <span className="font-normal text-gray-400"> • {item.location}</span>}
+                            </p>
+                          </div>
+                        </div>
+                        {item.description && (
+                          <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.description}</p>
+                        )}
+                        {item.supervisor && (
+                          <p className="mt-3 flex items-center gap-1.5 text-xs italic text-gray-500">
+                            <Users className="h-3.5 w-3.5" />
+                            Under supervision of {item.supervisor}
+                          </p>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </div>
         </div>
@@ -1593,22 +1872,18 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Other Activities - Photography Section */}
-      <section id="photography" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* Other Activities - Photography Section (temporarily commented out for faster page load) */}
+      {/* <section id="photography" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Other Activities</h2>
             <p className="text-lg text-gray-600">Exploring creativity beyond academic research</p>
           </div>
 
-          {/* Rounded Rectangle Frame for Photography */}
           <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200 p-8 mx-auto">
-            {/* Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-pink-50 rounded-2xl"></div>
 
-            {/* Content Container */}
             <div className="relative z-10">
-              {/* Photography Header */}
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-3">
                   <div className="p-3 bg-purple-100 rounded-full">
@@ -1630,7 +1905,6 @@ export default function Portfolio() {
                 </Link>
               </div>
 
-              {/* Category Filter */}
               <div className="flex flex-wrap gap-2 mb-8 justify-center">
                 {categories.map((category) => (
                   <Button
@@ -1648,7 +1922,6 @@ export default function Portfolio() {
                 ))}
               </div>
 
-              {/* Photography Gallery */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {filteredImages.map((image) => (
                   <Card
@@ -1662,13 +1935,11 @@ export default function Portfolio() {
                         fill
                         className="object-cover transition-transform duration-300"
                       />
-                      {/* Overlay on hover */}
                       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 transform scale-0 group-hover:scale-100 transition-transform duration-300">
                           <Camera className="w-5 h-5 text-purple-600" />
                         </div>
                       </div>
-                      {/* Category Badge */}
                       <div className="absolute top-3 left-3">
                         <Badge
                           variant="secondary"
@@ -1696,9 +1967,7 @@ export default function Portfolio() {
                 ))}
               </div>
 
-              {/* Gallery Stats and Navigation */}
               <div className="flex flex-col items-center space-y-4">
-                {/* Gallery Statistics */}
                 <div className="flex flex-wrap justify-center gap-4">
                   <div className="text-center p-3 bg-purple-50 rounded-lg border border-purple-200">
                     <div className="text-xl font-bold text-purple-600">{filteredImages.length}</div>
@@ -1710,13 +1979,8 @@ export default function Portfolio() {
                     <div className="text-xl font-bold text-pink-600">{categories.length - 1}</div>
                     <div className="text-xs text-gray-600">Categories</div>
                   </div>
-                  {/* <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <div className="text-xl font-bold text-blue-600">2022-2025</div>
-                    <div className="text-xs text-gray-600">Years Active</div>
-                  </div> */}
                 </div>
 
-                {/* Category Navigation Dots */}
                 <div className="flex justify-center space-x-2">
                   {categories.map((category, index) => (
                     <button
@@ -1729,7 +1993,6 @@ export default function Portfolio() {
                   ))}
                 </div>
 
-                {/* Inspirational Quote */}
                 <div className="text-center mt-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-100">
                   <p className="text-gray-700 italic text-lg font-medium">
                     "Photography is the art of capturing moments that would otherwise be lost to time."
@@ -1741,13 +2004,13 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Decorative Elements */}
             <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full opacity-20"></div>
             <div className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-20"></div>
             <div className="absolute top-1/2 left-8 w-8 h-8 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full opacity-15"></div>
           </div>
         </div>
       </section>
+      */}
 
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">

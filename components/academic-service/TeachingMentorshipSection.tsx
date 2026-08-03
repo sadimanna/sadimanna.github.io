@@ -19,6 +19,17 @@ export function TeachingMentorshipSection() {
           </h4>
           <div className="space-y-6 flex-1 max-h-[300px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
             <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <h5 className="font-bold text-gray-900 mb-1">Introduction to Data Science (M. Tech. (CDS) 1st Year)</h5>
+              <div className="text-sm font-medium text-gray-600 mb-1">Indian Institute of Science, Bangalore</div>
+              <div className="text-xs text-gray-500 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2026-27</div>
+              <ul className="text-sm text-gray-700 space-y-1.5 pl-4 list-disc marker:text-purple-400">
+                <li>Probability</li>
+                <li>Statistics</li>
+                <li>Machine Learning</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h5 className="font-bold text-gray-900 mb-1">Artifical Intelligence and Machine Learning (M.Tech (CS))</h5>
               <div className="text-sm font-medium text-gray-600 mb-1">Indian Statistical Institute, Kolkata</div>
               <div className="text-xs text-gray-500 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2018-19</div>
