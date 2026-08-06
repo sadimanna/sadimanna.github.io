@@ -955,7 +955,7 @@ export default function Portfolio() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
-                <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-5 w-5" />
                   Download CV
                 </Link>
