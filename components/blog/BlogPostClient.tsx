@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { TableOfContents } from '@/components/blog/TableOfContents'
+import { GiscusComments } from '@/components/blog/GiscusComments'
 import {
   ArrowLeft,
   ArrowRight,
@@ -183,6 +184,11 @@ export function BlogPostClient({
             <div />
           )}
         </nav>
+
+        {/* Comments */}
+        <div className="blog-post-comments">
+          <GiscusComments />
+        </div>
       </div>
     </>
   )

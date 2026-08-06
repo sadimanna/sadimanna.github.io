@@ -1020,6 +1020,13 @@ body {
   gap: 1rem;
 }
 
+/* --- Comments --- */
+.blog-post-comments {
+  max-width: 48rem;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+}
+
 .blog-post-nav-link {
   display: flex;
   align-items: center;
