@@ -11,8 +11,9 @@ excerpt: "Sending Text and Files to a Local Model Using FastAPI and llama-server
 role="presentation" />
 </figure>
 
-Large language models are easy to run locally now. But running a model
-is not the same as **serving** it.
+Running a Large Language Model locally on your laptop is great for testing, but it’s a long way from building a usable product. To turn an LLM into an actual service—whether for a mobile app, web platform, or internal workflow—you need to serve it over HTTP. That means properly handling incoming requests, parsing JSON and multipart/form-data, managing binary uploads like images, and returning clean structured responses.
+
+In this article, we’ll step through building production-style server setups for both text-only and multimodal LLMs. We'll explore three distinct backend strategies—FastAPI with Hugging Face Transformers, FastAPI with llama-cpp-python (GGUF), and native llama-server—so you can pick the exact right stack for your deployment requirements.
 
 If you want to build real applications, you must learn how to:
 
@@ -110,20 +111,6 @@ curl -X POST http://localhost:8000/chat \
 ## Part 2 — FastAPI + Transformers (Multimodal LLM)
 
 Now, let’s serve a multimodal model like MedGemma.
-
-## Get Siladittya Manna’s stories in your inbox
-
-Join Medium for free to get updates from this writer.
-
-Subscribe
-
-Subscribe
-
-<img
-src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdib3g9IjAgMCAxMSAxMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iYWJmIj48cGF0aCBkPSJNMCA2LjMxM0wzLjcwNCAxMC4wMThMNC42MDggMTAuOTIyTDUuMjY4IDkuODI3TDEwLjU2NCAxLjAzMkw4Ljg1IDBMMy41NTQgOC43OTVMNS4xMTcgOC42MDRMMS40MTMgNC44OTlMMCA2LjMxM1oiIC8+PC9zdmc+"
-class="abf" />
-
-Remember me for faster sign in
 
 We must use `multipart/form-data` because we are sending binary images.
 
@@ -356,8 +343,6 @@ rel="noopener follow" target="_blank" data-discover="true"></a>
 ## ⚙️ How to Start Using llama-server
 
 ### You Must Build llama.cpp first
-
-medium.com
 
 ## Run Text Model
 
