@@ -1,6 +1,6 @@
 ---
 title: "Self-Supervised Learning in Medical Imaging: From Pretext Tasks to Foundation Models"
-date: "2026-07-10"
+date: "2020-07-10"
 categories: ["Medical AI", "Self-Supervised Learning"]
 tags: ["contrastive-learning", "vision-transformers", "medical-imaging", "representation-learning", "deep-learning"]
 excerpt: "Exploring how self-supervised learning techniques are revolutionizing medical image analysis — from contrastive pretraining to vision-language foundation models for radiology and pathology."

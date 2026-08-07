@@ -1,6 +1,6 @@
 ---
 title: "Understanding Federated Learning: Privacy-Preserving Distributed Training"
-date: "2026-07-15"
+date: "2024-10-15"
 categories: ["Machine Learning", "Federated Learning"]
 tags: ["privacy", "distributed-systems", "pytorch", "transformers", "deep-learning"]
 excerpt: "A comprehensive guide to Federated Learning — how it enables collaborative model training without sharing raw data, its mathematical foundations, and practical implementation with PyTorch."
