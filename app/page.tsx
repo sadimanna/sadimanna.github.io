@@ -312,6 +312,15 @@ const photographyImages = [
 const aiApplications = [
   {
     id: 1,
+    title: "Research Paper Summarizer",
+    subtitle: "AI-powered research paper summarizer",
+    description: "Developing an AI-based application for summarizing research papers using a combination of native PDF processing and VLM based OCR for errorless Document understanding. Finally, it uses a Gemma model for summarizing the research paper.",
+    status: "In Progress",
+    tags: ["LLM", "VLM", "OCR", "Document Understanding", "Summarization"],
+    link: "#",
+  },
+  {
+    id: 2,
     title: "Smart Medical Assistant",
     subtitle: "AI-powered diagnostic support system",
     description: "Developing an LLM-based application for medical document analysis and diagnostic assistance using computer vision and natural language processing.",
@@ -320,19 +329,19 @@ const aiApplications = [
     link: "#",
   },
   {
-    id: 2,
+    id: 3,
     title: "Scholarly Articles Discovery Interface",
     subtitle: "Automated academic paper analysis and summarization",
-    description: "Building an intelligent system that searches for research papers and summarizes them. Creates a new github repository containing the papers in the user's profile.",
+    description: "Building an intelligent system that searches for research papers, filters the relevant papers and sorts them according to relevance. Finally, it summarizes them and also creates a new github repository containing the papers in the user's profile.",
     status: "In Progress",
     tags: ["NLP", "Academic", "Research"],
     link: "https://deep-researcher-frontend.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Medical Image Viewer",
     subtitle: "AI-powered medical image viewer",
-    description: "Creating an LLM-based tool that helps developers with medical image analysis.",
+    description: "Creating an LLM-based tool that helps developers with medical image analysis. The tool can currently only read multiple medial file formats and display them in the browser itself. However, we intend to add foundational models to the backend to help with medical image analysis.",
     status: "In Progress",
     tags: ["Medical Image", "AI", "Development"],
     link: "https://medical-image-viewer-nine.vercel.app/",
@@ -1705,7 +1714,7 @@ export default function Portfolio() {
       <section id="ai-applications" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">LLM Based Applications in Progress</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">AI Based Projects in Progress</h2>
             <p className="text-lg text-gray-600">
               Exploring and building innovative AI-powered solutions
             </p>
