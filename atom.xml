@@ -38,4 +38,18 @@
         <category label="Medical AI"/>
         <category label="Self-Supervised Learning"/>
     </entry>
+    <entry>
+        <title type="html"><![CDATA[Hosting Your Own LLM Server]]></title>
+        <id>https://sadimanna.github.io/blog/hostllmserver/</id>
+        <link href="https://sadimanna.github.io/blog/hostllmserver/"/>
+        <updated>2026-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sending Text and Files to a Local Model Using FastAPI and llama-server]]></summary>
+        <author>
+            <name>Dr. Siladittya Manna</name>
+            <uri>https://sadimanna.github.io/</uri>
+        </author>
+        <category label="LLM"/>
+        <category label="GGUF"/>
+        <category label="LLama Cpp"/>
+    </entry>
 </feed>
