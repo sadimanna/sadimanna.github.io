@@ -45,7 +45,7 @@ const primaryResearchAreas = [
   // "Trustworthy AI",
 ]
 
-const publicationTypeFilters = ["All", "Journal", "Conference", "Survey", "Preprint"]
+const publicationTypeFilters = ["All", "Journal", "Conference", "Survey", "Preprint", "Thesis"]
 
 const publicationTopicFilters = [
   "All",
@@ -113,7 +113,7 @@ const timelineData = [
     organization: "Indian Institute of Engineering Science and Technology",
     location: "Shibpur, Howrah, India",
     period: "2014 - 2018",
-    description: "Electronics and Telecommincation Engineering",
+    description: "Electronics and Telecommunication Engineering",
     type: "education",
     logo: "/iiestlogo.png",
   },
@@ -341,7 +341,7 @@ const aiApplications = [
     id: 4,
     title: "Medical Image Viewer",
     subtitle: "AI-powered medical image viewer",
-    description: "Creating an LLM-based tool that helps developers with medical image analysis. The tool can currently only read multiple medial file formats and display them in the browser itself. However, we intend to add foundational models to the backend to help with medical image analysis.",
+    description: "Creating an LLM-based tool that helps developers with medical image analysis. The tool can currently only read multiple medical file formats and display them in the browser itself. However, we intend to add foundational models to the backend to help with medical image analysis.",
     status: "In Progress",
     tags: ["Medical Image", "AI", "Development"],
     link: "https://medical-image-viewer-nine.vercel.app/",
@@ -556,7 +556,7 @@ const publicationMetadata: Record<
   10: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
   11: { topics: ["Self-Supervised Learning", "Representation Learning"] },
   12: { category: "Survey", topics: ["Self-Supervised Learning", "Medical AI"], featured: true },
-  13: { category: "Survey", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
+  13: { category: "Thesis", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
   14: { topics: ["Medical AI"] },
 }
 
@@ -1007,7 +1007,7 @@ export default function Portfolio() {
               ))}
             </div>
 
-            <div className="mt-4 grid max-w-2xl grid-cols-3 gap-3 sm:grid-cols-5 sm:gap-4">
+            <div className="mt-4 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
               {publicationMetrics.map((metric) => (
                 <div
                   key={metric.label}
@@ -1433,11 +1433,13 @@ export default function Portfolio() {
                         <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1.5 leading-snug">{announcement.title}</h3>
                         <p className="text-sm text-gray-600 mb-3 line-clamp-2">{announcement.description}</p>
 
-                        <Button asChild variant="outline" size="sm" className="h-8 text-xs font-medium">
-                          <Link href={announcement.link || "#"} target={announcement.link && announcement.link !== "#" ? "_blank" : "_self"} rel="noopener noreferrer">
-                            Read More <ChevronRight className="w-3 h-3 ml-1" />
-                          </Link>
-                        </Button>
+                        {announcement.link && announcement.link !== "#" && (
+                          <Button asChild variant="outline" size="sm" className="h-8 text-xs font-medium">
+                            <Link href={announcement.link} target="_blank" rel="noopener noreferrer">
+                              Read More <ChevronRight className="w-3 h-3 ml-1" />
+                            </Link>
+                          </Button>
+                        )}
                       </div>
                     </div>
                   </Card>
@@ -1555,26 +1557,18 @@ export default function Portfolio() {
                           Paper
                         </Link>
                       </Button>
-                      {pub.code ? (
+                      {pub.code && (
                         <Button asChild size="sm" variant="outline" className="bg-white">
                           <Link href={pub.code} target="_blank" rel="noopener noreferrer">
                             Code
                           </Link>
                         </Button>
-                      ) : (
-                        <Button size="sm" variant="outline" disabled>
-                          Code
-                        </Button>
                       )}
-                      {pub.bibtex ? (
+                      {pub.bibtex && (
                         <Button asChild size="sm" variant="outline" className="bg-white">
                           <Link href={pub.bibtex} target="_blank" rel="noopener noreferrer">
                             BibTeX
                           </Link>
-                        </Button>
-                      ) : (
-                        <Button size="sm" variant="outline" disabled>
-                          BibTeX
                         </Button>
                       )}
                       <Button asChild size="sm" variant="default" className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -1760,7 +1754,7 @@ export default function Portfolio() {
                         <p className="text-gray-700 mb-2 leading-relaxed text-sm line-clamp-3">
                           {app.description}
                         </p>
-                        {app.link && (
+                        {app.link && app.link !== "#" && (
                           <div className="mt-2">
                             <Link
                               href={app.link}

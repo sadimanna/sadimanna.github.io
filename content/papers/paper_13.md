@@ -7,7 +7,7 @@ citations: 0
 doi: ""
 type: "thesis"
 link: "https://digitalcommons.isical.ac.in/doctoral-theses/619/"
-category: "Survey"
+category: "Thesis"
 topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"]
 featured: false
 code: ""

@@ -30,7 +30,7 @@ export function TeachingMentorshipSection() {
             </div>
 
             <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-              <h5 className="font-bold text-gray-900 mb-1">Artifical Intelligence and Machine Learning (M.Tech (CS))</h5>
+              <h5 className="font-bold text-gray-900 mb-1">Artificial Intelligence and Machine Learning (M.Tech (CS))</h5>
               <div className="text-sm font-medium text-gray-600 mb-1">Indian Statistical Institute, Kolkata</div>
               <div className="text-xs text-gray-500 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2018-19</div>
               <ul className="text-sm text-gray-700 space-y-1.5 pl-4 list-disc marker:text-purple-400">

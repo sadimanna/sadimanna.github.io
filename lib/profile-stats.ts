@@ -45,11 +45,6 @@ export const publicationMetrics = [
     theme: "indigo",
   },
   {
-    value: "0",
-    label: "A* Conferences",
-    theme: "emerald",
-  },
-  {
     value: "1",
     label: "A Conferences",
     theme: "emerald",
