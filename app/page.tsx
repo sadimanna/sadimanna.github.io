@@ -6,7 +6,6 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { profileStats, publicationMetrics } from "@/lib/profile-stats"
 import {
   ExternalLink,
@@ -32,8 +31,9 @@ import {
   CheckCircle2,
   Library,
   ArrowRight,
-  Terminal,
-  PenTool,
+  FlaskConical,
+  Clock,
+  User,
 } from "lucide-react"
 import { AcademicServiceSection } from "@/components/academic-service/AcademicServiceSection"
 import { CitationsChart } from "@/components/CitationsChart"
@@ -53,7 +53,6 @@ const primaryResearchKeywords = [
 
 const publicationTypeFilters = [
   "All",
-  "Under Review",
   "Journal",
   "Conference",
   "Survey",
@@ -68,6 +67,125 @@ const publicationTopicFilters = [
   "Self-Supervised Learning",
   "Medical AI",
   "Representation Learning",
+]
+
+// Ongoing Projects (Active research investigations, manuscripts under review & in preparation)
+const ongoingProjects = [
+  {
+    id: "peft-inversion",
+    title: "Gradient Inversion Attacks on Parameter-Efficient Federated Learning",
+    status: "Under Review",
+    affiliation: "Indian Institute of Science, Bangalore",
+    collaborators: "Ritik Kumar Badiya, Ashmit Sinha, Prof. Anirban Chakraborty",
+    description:
+      "Investigating client data leakage in parameter-efficient fine-tuning (PEFT) adapters during federated learning. We formulate optimization-based gradient inversion attacks that reconstruct private client data from adapter parameter updates.",
+    topics: ["Federated Learning", "AI Security", "Gradient Inversion", "PEFT Adapters"],
+    badgeStyle: "border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300",
+  },
+  {
+    id: "fl-vulnerabilities",
+    title: "Vulnerability Assessment in Federated Learning",
+    status: "Ongoing",
+    affiliation: "Indian Institute of Science, Bangalore",
+    collaborators: "Ritik Badiya, Ashmit Sinha, Rushikesh Gaikar, Aditi Prabakaran, Yashwanth Mandula, Prof. Anirban Chakraborty",
+    description:
+      "Evaluating attack surfaces in federated learning.",
+    topics: ["Federated Learning", "AI Security", "Gradient Inversion", "PEFT Adapters"],
+    badgeStyle: "border-blue-200 bg-blue-50 text-blue-800 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300",
+  },
+  {
+    id: "domain-adaptive-seg",
+    title: "On the Role of Projector in Self-Supervised Contrastive Learning",
+    status: "Under Review",
+    affiliation: "IIT Kharagpur & ISI Kolkata",
+    collaborators: "Priyangshu Mandal, Dr. Saumik Bhattacharya, Prof. Umapada Pal",
+    description:
+      "Investigating the role of projector in self-supervised contrastive learning and finding the critical reasons behind dimensional collapse.",
+    topics: ["Self-Supervised Learning", "Contrastive Learning", "Representation Learning", "Dimensional Collapse"],
+    badgeStyle: "border-purple-200 bg-purple-50 text-purple-800 dark:border-purple-900/60 dark:bg-purple-950/40 dark:text-purple-300",
+  },
+  {
+    id: "fertility-ai",
+    title: "Semi-Supervised Sperm Motility Classification on VISEM-Tracking",
+    status: "Under Review",
+    affiliation: "IIT BHU, INRIA Sophia-Antipolic, LUT University, Sweden",
+    collaborators: "Suyash Kumar, Dr. Rajkumar Saini",
+    description:
+      "A semi-supervised kinematic classification framework adhering to WHO guidelines for fertility diagnostics and domain-adapted sperm motility tracking.",
+    topics: ["Medical AI", "Kinematics", "Fertility Science"],
+    badgeStyle: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-900/60 dark:bg-teal-950/40 dark:text-teal-300",
+  },
+  {
+    id: "daod",
+    title: "Domain-Adaptive Object Detection",
+    status: "Ongoing",
+    affiliation: "University of Lille, France; Universitat Autònoma de Barcelona, Spain",
+    collaborators: "Dr. Tanmoy Mondal, Tristan Groussard, Dr. Sanket Biswas",
+    description:
+      "Developing domain-adaptive object detection methods for visually similar objects by exploiting domain-invariant features and cross-domain alignment strategies.",
+    topics: ["Domain Adaptation", "Object Detection", "Cross-Domain Generalization", "Visually Similar Objects"],
+    badgeStyle: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-900/60 dark:bg-teal-950/40 dark:text-teal-300",
+  },
+  {
+    id: "llm-lowres",
+    title: "LLM Training on Low-Resource Language",
+    status: "Ongoing",
+    affiliation: "University of Hildesheim, Germany; Bennett University, India",
+    collaborators: "Dr. Koyel Ghosh, Dr. Supriya Chandra",
+    description:
+      "Adapting Large Language Models for low-resource Indian languages through data-centric approaches and parameter-efficient fine-tuning strategies.",
+    topics: ["LLM", "Low-Resource Language", "Parameter-Efficient Fine-Tuning"],
+    badgeStyle: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-900/60 dark:bg-teal-950/40 dark:text-teal-300",
+  },
+]
+
+// Team members at current affiliation (IISc Bangalore)
+const teamMembers = [
+  {
+    id: "1",
+    name: "Ritik Kumar Badiya",
+    role: "Graduate Researcher (M.Tech)",
+    affiliation: "Visual Computing Lab, CDS, IISc",
+    focus: "Gradient Inversion Attacks on PEFT",
+    image: "",
+    profileUrl: "https://www.linkedin.com/in/ritik-kumar-badiya-6428661b4/",
+  },
+  {
+    id: "2",
+    name: "Ashmit Sinha",
+    role: "Research Intern",
+    affiliation: "Visual Computing Lab, CDS, IISc",
+    focus: "Gradient Inversion in Federated Learning",
+    image: "",
+    profileUrl: "https://www.linkedin.com/in/ashmit-sinha-623a20225/",
+  },
+  {
+    id: "3",
+    name: "Aditi Prabakaran",
+    role: "Research Intern",
+    affiliation: "Visual Computing Lab, CDS, IISc",
+    focus: "Gradient Inversion Attacks",
+    image: "",
+    profileUrl: "https://www.linkedin.com/in/aditi-prabakaran/",
+  },
+  {
+    id: "4",
+    name: "Rushikesh Gaikar",
+    role: "Research Intern",
+    affiliation: "Department of CDS, IISc Bangalore",
+    focus: "Gradient Inversion Attacks on PEFT",
+    image: "",
+    profileUrl: "https://www.linkedin.com/in/rushikeshgaikar444/",
+  },
+  {
+    id: "5",
+    name: "Yashwanth Mandula",
+    role: "Ph.D. Scholar",
+    affiliation: "Visual Computing Lab, CDS, IISc",
+    focus: "Federated Learning",
+    image: "",
+    profileUrl: "https://www.linkedin.com/in/yashwanth-mandula-aba700a5/",
+  },
 ]
 
 // Experience & Education Timeline Data
@@ -193,7 +311,7 @@ const latestAnnouncements = [
     title: "Reliability-Aware Spatio-Temporal Maps for Heart Rate Monitoring (ICIP 2026)",
     description:
       "Co-authored with Arpan Bairagi, Rakesh Dey, and Prof. Umapada Pal (ISI Kolkata). Accepted and to be presented at IEEE International Conference on Image Processing (ICIP 2026).",
-    link: "#publications",
+    link: "#ongoing-projects",
   },
   {
     date: "2026",
@@ -221,34 +339,8 @@ const latestAnnouncements = [
   },
 ]
 
-// Publications Dataset (including work in progress / under review to align story with evidence)
+// Peer-reviewed and accepted publications
 const publications = [
-  {
-    id: 101,
-    title: "Gradient Inversion Attacks on Parameter-Efficient Federated Learning Frameworks",
-    authors: "S Manna, R K Badiya, A Sinha, A Chakraborty",
-    journal: "Manuscript Under Review",
-    year: 2026,
-    citations: 0,
-    doi: "",
-    abstract:
-      "Investigating client privacy leakage in parameter-efficient fine-tuning (PEFT) adapters during federated learning. We formulate optimization-based gradient inversion attacks that reconstruct private client data from adapter parameter updates.",
-    type: "under_review",
-    link: "#",
-  },
-  {
-    id: 102,
-    title: "Vulnerability Assessment in Distributed Multimodal Foundation Models",
-    authors: "S Manna, A Chakraborty",
-    journal: "Manuscript In Preparation",
-    year: 2026,
-    citations: 0,
-    doi: "",
-    abstract:
-      "Analyzing the attack surface of decentralized vision-language models under parameter-efficient adaptation, examining vulnerability to prompt poisoning and privacy leakage.",
-    type: "under_review",
-    link: "#",
-  },
   {
     id: 103,
     title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
@@ -469,8 +561,6 @@ const publicationMetadata: Record<
     bibtex?: string
   }
 > = {
-  101: { category: "Under Review", topics: ["Federated Learning", "Security", "Representation Learning"], featured: true },
-  102: { category: "Under Review", topics: ["Federated Learning", "Security"], featured: true },
   103: { category: "Conference", topics: ["Medical AI", "Representation Learning"], featured: true },
   104: { category: "Conference", topics: ["Medical AI", "Self-Supervised Learning"] },
   1: { category: "Conference", topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
@@ -489,7 +579,7 @@ const publicationMetadata: Record<
   14: { category: "Journal", topics: ["Medical AI"] },
 }
 
-// Consolidated Core Research Pillars (folding in methodologies and eliminating repeated lists)
+// Consolidated Core Research Pillars
 const researchPillars = [
   {
     icon: Network,
@@ -627,9 +717,6 @@ export default function Portfolio() {
     })
     .filter((pub) => {
       if (selectedPublicationType === "All") return true
-      if (selectedPublicationType === "Under Review") {
-        return pub.category === "Under Review" || pub.type === "under_review"
-      }
       return pub.category === selectedPublicationType
     })
     .filter((pub) => selectedPublicationTopic === "All" || pub.topics.includes(selectedPublicationTopic))
@@ -667,6 +754,18 @@ export default function Portfolio() {
               className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
             >
               Publications
+            </Link>
+            <Link
+              href="#ongoing-projects"
+              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+            >
+              Projects
+            </Link>
+            <Link
+              href="#team"
+              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+            >
+              Team
             </Link>
             <Link
               href="#research"
@@ -730,7 +829,7 @@ export default function Portfolio() {
                 I investigate vulnerabilities in PEFT-based federated learning frameworks and develop trustworthy distributed AI systems.
               </p>
 
-              {/* Restrained 4-5 buttons: Primary + Outline */}
+              {/* Restrained 5 action buttons */}
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild size="default" className="bg-blue-600 hover:bg-blue-700 text-white shadow-sm">
                   <Link href="#publications">
@@ -951,7 +1050,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 4. SELECTED PUBLICATIONS (with Under Review / In Preparation) */}
+      {/* 4. SELECTED PUBLICATIONS (Scrollable list, peer-reviewed/accepted only) */}
       <section id="publications" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
@@ -959,12 +1058,12 @@ export default function Portfolio() {
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Selected Publications</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Peer-reviewed articles, conference proceedings, and active manuscripts under review in Federated Learning, Security, and Self-Supervised Medical AI.
+              Peer-reviewed journal articles, conference proceedings, survey papers, and doctoral research in Self-Supervised Learning and Medical AI.
             </p>
           </div>
 
           {/* Filter Controls */}
-          <div className="mb-8 rounded-xl border border-slate-200/80 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-850/60">
+          <div className="mb-6 rounded-xl border border-slate-200/80 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-850/60">
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
               <div>
                 <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
@@ -977,11 +1076,10 @@ export default function Portfolio() {
                       type="button"
                       variant={selectedPublicationType === filter ? "default" : "outline"}
                       size="sm"
-                      className={`h-7 text-xs ${
-                        selectedPublicationType === filter
-                          ? "bg-blue-600 hover:bg-blue-700 text-white"
-                          : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
-                      }`}
+                      className={`h-7 text-xs ${selectedPublicationType === filter
+                        ? "bg-blue-600 hover:bg-blue-700 text-white"
+                        : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
+                        }`}
                       onClick={() => setSelectedPublicationType(filter)}
                     >
                       {filter}
@@ -1001,11 +1099,10 @@ export default function Portfolio() {
                       type="button"
                       variant={selectedPublicationTopic === filter ? "default" : "outline"}
                       size="sm"
-                      className={`h-7 text-xs ${
-                        selectedPublicationTopic === filter
-                          ? "bg-blue-600 hover:bg-blue-700 text-white"
-                          : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
-                      }`}
+                      className={`h-7 text-xs ${selectedPublicationTopic === filter
+                        ? "bg-blue-600 hover:bg-blue-700 text-white"
+                        : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
+                        }`}
                       onClick={() => setSelectedPublicationTopic(filter)}
                     >
                       {filter}
@@ -1016,93 +1113,80 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="mb-4 text-xs font-medium text-slate-500 dark:text-slate-400">
-            Showing {publicationCards.length} matching publication{publicationCards.length === 1 ? "" : "s"}
+          <div className="mb-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+            <span>Showing {publicationCards.length} publication{publicationCards.length === 1 ? "" : "s"}</span>
+            <span className="hidden sm:inline">Scroll within box to view all publications ↓</span>
           </div>
 
-          {/* Publications List */}
-          <div className="space-y-4">
-            {publicationCards.map((pub) => {
-              const isUnderReview = pub.category === "Under Review" || pub.type === "under_review"
+          {/* Scrollable Publications Container */}
+          <div className="max-h-[580px] overflow-y-auto pr-2 sm:pr-3 space-y-4 scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-750 scrollbar-track-transparent">
+            {publicationCards.map((pub) => (
+              <Card
+                key={pub.id}
+                className="border border-slate-200/80 bg-white transition-all duration-200 hover:shadow-xs dark:border-slate-800 dark:bg-slate-900/80"
+              >
+                <CardHeader className="pb-3">
+                  <div className="mb-2 flex flex-wrap items-center gap-2">
+                    <Badge variant="secondary" className="text-xs">
+                      {pub.category}
+                    </Badge>
 
-              return (
-                <Card
-                  key={pub.id}
-                  className={`border transition-all duration-200 hover:shadow-xs ${
-                    isUnderReview
-                      ? "border-amber-200/80 bg-amber-50/20 dark:border-amber-900/40 dark:bg-amber-950/10"
-                      : "border-slate-200/80 bg-white dark:border-slate-800 dark:bg-slate-900/80"
-                  }`}
-                >
-                  <CardHeader className="pb-3">
-                    <div className="mb-2 flex flex-wrap items-center gap-2">
-                      {isUnderReview ? (
-                        <Badge className="bg-amber-600 text-white text-xs">
-                          Under Review / In Preparation
-                        </Badge>
-                      ) : (
-                        <Badge variant="secondary" className="text-xs">
-                          {pub.category}
-                        </Badge>
-                      )}
+                    {pub.featured && (
+                      <Badge className="bg-blue-600 text-white text-xs">Featured</Badge>
+                    )}
 
-                      {pub.featured && !isUnderReview && (
-                        <Badge className="bg-blue-600 text-white text-xs">Featured</Badge>
-                      )}
+                    {pub.topics.map((topic) => (
+                      <Badge
+                        key={topic}
+                        variant="outline"
+                        className="bg-white/80 dark:bg-slate-800 text-xs border-slate-200 dark:border-slate-700"
+                      >
+                        {topic}
+                      </Badge>
+                    ))}
+                  </div>
 
-                      {pub.topics.map((topic) => (
-                        <Badge
-                          key={topic}
-                          variant="outline"
-                          className="bg-white/80 dark:bg-slate-800 text-xs border-slate-200 dark:border-slate-700"
-                        >
-                          {topic}
-                        </Badge>
-                      ))}
-                    </div>
+                  <CardTitle className="text-lg font-bold leading-snug text-slate-900 dark:text-white">
+                    {pub.title}
+                  </CardTitle>
 
-                    <CardTitle className="text-lg font-bold leading-snug text-slate-900 dark:text-white">
-                      {pub.title}
-                    </CardTitle>
+                  <CardDescription className="mt-1.5 text-xs text-slate-600 dark:text-slate-400">
+                    <span className="font-medium text-slate-800 dark:text-slate-200">{pub.authors}</span>
+                    <br />
+                    <span className="italic">{pub.journal}</span> • {pub.year}
+                  </CardDescription>
+                </CardHeader>
 
-                    <CardDescription className="mt-1.5 text-xs text-slate-600 dark:text-slate-400">
-                      <span className="font-medium text-slate-800 dark:text-slate-200">{pub.authors}</span>
-                      <br />
-                      <span className="italic">{pub.journal}</span> • {pub.year}
-                    </CardDescription>
-                  </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-2 mb-3">
+                    {pub.abstract}
+                  </p>
 
-                  <CardContent className="pt-0">
-                    <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-2 mb-3">
-                      {pub.abstract}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {pub.link && pub.link !== "#" && (
-                        <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
-                          <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-1 h-3.5 w-3.5" />
-                            Paper
-                          </Link>
-                        </Button>
-                      )}
-                      {pub.code && (
-                        <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
-                          <Link href={pub.code} target="_blank" rel="noopener noreferrer">
-                            Code
-                          </Link>
-                        </Button>
-                      )}
-                      <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
-                        <Link href={`/papers/paper_${pub.id}`}>
-                          Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
+                  <div className="flex flex-wrap gap-2">
+                    {pub.link && pub.link !== "#" && (
+                      <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
+                        <Link href={pub.link} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-1 h-3.5 w-3.5" />
+                          Paper
                         </Link>
                       </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              )
-            })}
+                    )}
+                    {pub.code && (
+                      <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
+                        <Link href={pub.code} target="_blank" rel="noopener noreferrer">
+                          Code
+                        </Link>
+                      </Button>
+                    )}
+                    <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
+                      <Link href={`/papers/paper_${pub.id}`}>
+                        Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
 
             {publicationCards.length === 0 && (
               <div className="rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700">
@@ -1113,7 +1197,164 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 5. RESEARCH AREAS (Consolidated pillars, folded methodologies, unified tags) */}
+      {/* 5. ONGOING PROJECTS (Scrollable list of active projects) */}
+      <section id="ongoing-projects" className="border-t border-slate-200/80 bg-slate-50/60 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
+              <FlaskConical className="h-3.5 w-3.5" />
+              Active Research & Pre-Prints
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Ongoing Projects
+            </h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Active research investigations, manuscripts under review, and ongoing collaborative studies across Federated Learning security and medical AI.
+            </p>
+          </div>
+
+          <div className="mb-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+            <span>Showing {ongoingProjects.length} active investigations</span>
+            <span className="hidden sm:inline">Scroll within box to view all projects ↓</span>
+          </div>
+
+          {/* Scrollable Ongoing Projects Container */}
+          <div className="max-h-[580px] overflow-y-auto pr-2 sm:pr-3 space-y-4 scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-750 scrollbar-track-transparent">
+            {ongoingProjects.map((proj) => (
+              <div
+                key={proj.id}
+                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
+              >
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                    <span className={`inline-flex items-center gap-1 rounded-md px-2.5 py-0.5 text-xs font-bold border ${proj.badgeStyle}`}>
+                      <Clock className="h-3 w-3" />
+                      {proj.status}
+                    </span>
+                    <span className="text-[0.7rem] text-slate-500 dark:text-slate-400 font-medium">
+                      {proj.affiliation}
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-white leading-snug">
+                    {proj.title}
+                  </h3>
+
+                  <div className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+                    <span className="font-semibold text-slate-700 dark:text-slate-300">Collaborators: </span>
+                    {proj.collaborators}
+                  </div>
+
+                  <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    {proj.description}
+                  </p>
+                </div>
+
+                <div className="mt-5 border-t border-slate-100 pt-3 dark:border-slate-800">
+                  <div className="flex flex-wrap gap-1.5">
+                    {proj.topics.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[0.65rem] font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. TEAM (Horizontal scrollable list for people at current affiliation IISc) */}
+      <section id="team" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
+              <Users className="h-3.5 w-3.5" />
+              IISc Research Group & Collaborators
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Team
+            </h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Colleagues, researchers, and students I am currently collaborating with at the Indian Institute of Science (IISc), Bangalore.
+            </p>
+          </div>
+
+          {/* Horizontal scrollable team container */}
+          <div className="relative">
+            <div className="flex gap-4 overflow-x-auto pb-4 pt-1 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-750 scrollbar-track-transparent">
+              {teamMembers.map((member) => (
+                <div
+                  key={member.id}
+                  className="w-72 shrink-0 snap-start flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-slate-50/50 p-5 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-white hover:shadow-sm dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-700 dark:hover:bg-slate-900"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    {/* Profile Picture Placeholder */}
+                    <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800 flex items-center justify-center text-slate-400 dark:text-slate-500 shadow-inner mb-4">
+                      {member.image ? (
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          fill
+                          className="object-cover"
+                        />
+                      ) : (
+                        <User className="h-9 w-9 text-slate-400 dark:text-slate-500" />
+                      )}
+                    </div>
+
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white leading-tight">
+                      {member.name}
+                    </h3>
+
+                    <p className="mt-1 text-xs font-semibold text-blue-600 dark:text-blue-400">
+                      {member.role}
+                    </p>
+
+                    <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+                      {member.affiliation}
+                    </p>
+
+                    <div className="mt-3 rounded-lg border border-slate-200/60 bg-white px-2.5 py-1.5 text-[0.7rem] text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 w-full line-clamp-2">
+                      <span className="font-semibold text-slate-700 dark:text-slate-200">Focus: </span>
+                      {member.focus}
+                    </div>
+                  </div>
+
+                  <div className="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-800 flex justify-center">
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="h-7 text-xs bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700"
+                    >
+                      <Link
+                        href={member.profileUrl}
+                        target={member.profileUrl.startsWith("http") ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                      >
+                        Profile Link <ExternalLink className="ml-1 h-3 w-3" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-3 flex items-center justify-center gap-1 text-xs text-slate-400">
+              <span>← Scroll horizontally to explore team members →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. RESEARCH AREAS (Consolidated pillars, folded methodologies, unified tags) */}
       <section id="research" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
@@ -1129,7 +1370,7 @@ export default function Portfolio() {
             {researchPillars.map((area) => (
               <div
                 key={area.title}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-850"
               >
                 <div>
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
@@ -1159,7 +1400,7 @@ export default function Portfolio() {
 
           {/* Research Questions & Long-Term Goals */}
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-6 shadow-xs dark:border-slate-800 dark:bg-slate-850/60">
               <div className="mb-4 flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
                   <Lightbulb className="h-5 w-5" />
@@ -1176,7 +1417,7 @@ export default function Portfolio() {
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-6 shadow-xs dark:border-slate-800 dark:bg-slate-850/60">
               <div className="mb-4 flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400">
                   <Target className="h-5 w-5" />
@@ -1199,7 +1440,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 6. AWARDS & FUNDING (ANRF Fellowship has its own dedicated section) */}
+      {/* 8. AWARDS & FUNDING (ANRF Fellowship has its own dedicated section) */}
       <section id="awards" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
@@ -1254,7 +1495,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 7. EXPERIENCE & EDUCATION (Visual Timeline with Logos) */}
+      {/* 9. EXPERIENCE & EDUCATION (Visual Timeline with Logos) */}
       <section id="journey" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
@@ -1269,11 +1510,10 @@ export default function Portfolio() {
               return (
                 <div key={idx} className="relative group">
                   {/* Timeline Node */}
-                  <div className={`absolute -left-[31px] sm:-left-[39px] top-1.5 flex h-7 w-7 items-center justify-center rounded-full border-2 bg-white shadow-xs dark:bg-slate-900 ${
-                    isCurrent
-                      ? "border-blue-600 ring-4 ring-blue-100 dark:ring-blue-950"
-                      : "border-slate-300 dark:border-slate-700"
-                  }`}>
+                  <div className={`absolute -left-[31px] sm:-left-[39px] top-1.5 flex h-7 w-7 items-center justify-center rounded-full border-2 bg-white shadow-xs dark:bg-slate-900 ${isCurrent
+                    ? "border-blue-600 ring-4 ring-blue-100 dark:ring-blue-950"
+                    : "border-slate-300 dark:border-slate-700"
+                    }`}>
                     {item.type === "work" ? (
                       <Briefcase className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
                     ) : (
@@ -1282,7 +1522,7 @@ export default function Portfolio() {
                   </div>
 
                   {/* Card */}
-                  <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-xs transition-all duration-200 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900">
+                  <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-xs transition-all duration-200 hover:shadow-sm dark:border-slate-800 dark:bg-slate-850">
                     <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                       <div className="flex items-start gap-3.5">
                         {item.logo && (
@@ -1312,11 +1552,10 @@ export default function Portfolio() {
 
                       <Badge
                         variant="secondary"
-                        className={`self-start text-[0.7rem] ${
-                          isCurrent
-                            ? "bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 font-bold"
-                            : ""
-                        }`}
+                        className={`self-start text-[0.7rem] ${isCurrent
+                          ? "bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 font-bold"
+                          : ""
+                          }`}
                       >
                         {item.period}
                       </Badge>
@@ -1333,7 +1572,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 8. CITATIONS & GLOBAL COLLABORATIONS */}
+      {/* 10. CITATIONS & GLOBAL COLLABORATIONS */}
       <section id="impact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
@@ -1341,7 +1580,7 @@ export default function Portfolio() {
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Impact & Global Network</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Automated citation metrics synced with Google Scholar, coupled with an active collaborative network across France, Sweden, Hong Kong, and India.
+              Automated citation metrics synced with Google Scholar, coupled with an active collaborative network across France, Germany, Sweden, Hong Kong, and India.
             </p>
           </div>
 
@@ -1352,13 +1591,13 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 9. ACADEMIC SERVICE & LEADERSHIP */}
+      {/* 11. ACADEMIC SERVICE & LEADERSHIP */}
       <div id="academic-service">
         <AcademicServiceSection />
       </div>
 
-      {/* 10. CURATED RESEARCH TOPICS (Static display with curated reading lists explainer) */}
-      <section id="reading-lists" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+      {/* 12. CURATED RESEARCH TOPICS */}
+      <section id="reading-lists" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 text-center">
             <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
@@ -1400,7 +1639,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 11. AI PROJECTS & TECHNICAL BLOG (Moved lower) */}
+      {/* 13. AI PROJECTS & TECHNICAL BLOG */}
       <section id="projects-blog" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -1505,7 +1744,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 12. CONTACT SECTION */}
+      {/* 14. CONTACT SECTION */}
       <section id="contact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="mb-10 text-center">
@@ -1559,7 +1798,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* 13. FOOTER (with Dark Mode toggle and Last Updated date) */}
+      {/* 15. FOOTER (with Dark Mode toggle and Last Updated date) */}
       <footer className="border-t border-slate-200 bg-slate-900 text-white py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>

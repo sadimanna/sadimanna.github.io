@@ -14,7 +14,7 @@ interface Partner {
   // Approximate SVG coordinates for map view (viewBox 0 0 1000 500)
   x: number
   y: number
-  region: "International" | "India"
+  region: "International" | "National"
 }
 
 const partners: Partner[] = [
@@ -28,6 +28,18 @@ const partners: Partner[] = [
     role: "International Research Collaborator",
     x: 488,
     y: 160,
+    region: "International",
+  },
+  {
+    id: "hildesheim",
+    country: "Germany",
+    institution: "University of Hildesheim",
+    location: "Hildesheim, Germany",
+    collaborator: "Dr. Koyel Ghosh",
+    focus: "LLM Adaptation for Low-Resource Languages",
+    role: "International Research Collaborator",
+    x: 512,
+    y: 150,
     region: "International",
   },
   {
@@ -64,7 +76,7 @@ const partners: Partner[] = [
     role: "Current Postdoctoral Host",
     x: 680,
     y: 298,
-    region: "India",
+    region: "National",
   },
   {
     id: "isi",
@@ -76,7 +88,7 @@ const partners: Partner[] = [
     role: "Ph.D. Alma Mater & Ongoing Collaboration",
     x: 720,
     y: 265,
-    region: "India",
+    region: "National",
   },
   {
     id: "iitkgp",
@@ -88,7 +100,7 @@ const partners: Partner[] = [
     role: "Academic Research Partner",
     x: 712,
     y: 272,
-    region: "India",
+    region: "National",
   },
   {
     id: "nitdgp",
@@ -100,7 +112,7 @@ const partners: Partner[] = [
     role: "Academic Research Partner",
     x: 716,
     y: 260,
-    region: "India",
+    region: "National",
   },
 ]
 
@@ -120,7 +132,7 @@ export function CollaborationMap() {
           </h3>
         </div>
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Partners in France, Sweden, Hong Kong, and leading Indian institutes
+          Partners in France, Germany, Sweden, Hong Kong, and leading Indian institutes
         </p>
       </div>
 
@@ -190,6 +202,14 @@ export function CollaborationMap() {
             strokeWidth="1.75"
             strokeDasharray="4 4"
             className="animate-pulse"
+          />
+          {/* To Germany */}
+          <path
+            d="M 680 298 Q 585 165 512 150"
+            fill="none"
+            stroke="url(#arcGrad)"
+            strokeWidth="1.75"
+            strokeDasharray="4 4"
           />
           {/* To Sweden */}
           <path
@@ -291,22 +311,30 @@ export function CollaborationMap() {
               key={p.id}
               onClick={() => setActivePartner(p)}
               type="button"
-              className={`rounded-xl border p-3 text-left transition-all duration-200 ${
+              className={`rounded-xl border p-3 text-left transition-all duration-200 overflow-hidden min-w-0 ${
                 isSelected
                   ? "border-blue-500 bg-blue-50/60 shadow-sm dark:border-blue-500 dark:bg-blue-950/40"
-                  : "border-slate-100 bg-slate-50/50 hover:border-slate-200 hover:bg-white dark:border-slate-800 dark:bg-slate-800/30 dark:hover:bg-slate-800/60"
+                  : "border-slate-100 bg-slate-50/50 hover:border-slate-200 hover:bg-white dark:border-slate-800 dark:bg-slate-850/40 dark:hover:bg-slate-800/60"
               }`}
             >
-              <div className="flex items-center justify-between">
-                <span className="text-[0.7rem] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+              <div className="flex items-center justify-between gap-1.5 min-w-0">
+                <span className="truncate text-[0.7rem] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
                   {p.country}
                 </span>
-                <span className="text-[0.65rem] text-slate-400">{p.region}</span>
+                <span
+                  className={`shrink-0 rounded px-1.5 py-0.5 text-[0.6rem] font-semibold tracking-wide border leading-none ${
+                    p.region === "International"
+                      ? "border-sky-200 bg-sky-50 text-sky-700 dark:border-sky-900/60 dark:bg-sky-950/80 dark:text-sky-300"
+                      : "border-slate-200 bg-slate-100 text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                  }`}
+                >
+                  {p.region}
+                </span>
               </div>
-              <div className="mt-1 font-semibold text-xs text-slate-900 dark:text-slate-100 line-clamp-1">
+              <div className="mt-1.5 font-semibold text-xs text-slate-900 dark:text-slate-100 truncate">
                 {p.institution}
               </div>
-              <div className="mt-1 text-[0.7rem] text-slate-500 dark:text-slate-400 line-clamp-1">
+              <div className="mt-0.5 text-[0.7rem] text-slate-500 dark:text-slate-400 truncate">
                 {p.collaborator}
               </div>
             </button>
