@@ -1,69 +1,83 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle /* , CardFooter */ } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { profileStats, publicationMetrics } from "@/lib/profile-stats"
 import {
   ExternalLink,
-  Quote,
   Calendar,
-  ChevronDown,
-  ChevronUp,
-  ChevronLeft,
   ChevronRight,
   BookOpen,
   Users,
   GraduationCap,
-  // Camera,
   Briefcase,
   Github,
-  PenTool,
-  UsersRound,
-  Compass,
+  Mail,
   Network,
   Layers,
   Stethoscope,
   ShieldCheck,
   Lightbulb,
   Target,
-  Handshake,
   Globe,
   Rocket,
+  Award,
+  Sparkles,
+  MapPin,
+  CheckCircle2,
+  Library,
+  ArrowRight,
+  Terminal,
+  PenTool,
 } from "lucide-react"
 import { AcademicServiceSection } from "@/components/academic-service/AcademicServiceSection"
+import { CitationsChart } from "@/components/CitationsChart"
+import { CollaborationMap } from "@/components/CollaborationMap"
+import { ThemeToggle } from "@/components/theme-toggle"
 
-const primaryResearchAreas = [
+// Unified Primary Research Areas
+const primaryResearchKeywords = [
   "Federated Learning",
+  "PEFT Security",
+  "Gradient Inversion",
   "Self-Supervised Learning",
-  "Vision-Language Models",
+  "Representation Learning",
   "Medical AI",
-  // "Trustworthy AI",
+  "Privacy-Preserving AI",
 ]
 
-const publicationTypeFilters = ["All", "Journal", "Conference", "Survey", "Preprint", "Thesis"]
+const publicationTypeFilters = [
+  "All",
+  "Under Review",
+  "Journal",
+  "Conference",
+  "Survey",
+  "Preprint",
+  "Thesis",
+]
 
 const publicationTopicFilters = [
   "All",
   "Federated Learning",
+  "Security",
   "Self-Supervised Learning",
   "Medical AI",
-  "Security",
   "Representation Learning",
 ]
 
 // Experience & Education Timeline Data
 const timelineData = [
   {
-    title: "Post-Doctoral Fellow",
+    title: "Post-Doctoral Fellow (ANRF Fellow)",
     organization: "Indian Institute of Science",
     location: "Bangalore, India",
     period: "August 2026 - Present",
-    description: "Exploring the vulnerabilities in FL Frameworks in both Unimodal and Multimodal Settings.",
+    description: "Investigating privacy vulnerabilities in parameter-efficient fine-tuning (PEFT) adapters and distributed multimodal architectures.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
     logo: "/iisclogo.jpg",
@@ -73,7 +87,7 @@ const timelineData = [
     organization: "Indian Institute of Science",
     location: "Bangalore, India",
     period: "November 2025 - July 2026",
-    description: "Research on exploring vulnerabilities in Transformer-based FL Frameworks.",
+    description: "Research on vulnerabilities in Transformer-based federated learning and distributed optimization frameworks.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
     logo: "/iisclogo.jpg",
@@ -81,9 +95,9 @@ const timelineData = [
   {
     title: "Senior Research Assistant",
     organization: "Hong Kong Baptist University",
-    location: "Hong Kong",
+    location: "Kowloon, Hong Kong",
     period: "October 2024 - October 2025",
-    description: "Conducted research in Federated learning with applications in medical image segmentation, augmented with Self-Supervised learning principles.",
+    description: "Conducted research on federated learning algorithms applied to medical image segmentation, augmented by self-supervised learning principles.",
     supervisor: "Prof. Yiu-Ming Cheung",
     type: "work",
     logo: "/HKBU_Logo.png",
@@ -93,274 +107,275 @@ const timelineData = [
     organization: "Indian Statistical Institute",
     location: "Kolkata, India",
     period: "2019 - 2025",
-    description: "Thesis: Self-Supervised Learning and its Applications in Medical Image Analysis",
+    description: "Thesis: Self-Supervised Learning and its Applications in Medical Image Analysis. Awarded doctoral degree with distinction.",
     supervisor: "Prof. Umapada Pal",
     type: "education",
     logo: "/isicallogo.png",
   },
   {
-    title: "M.Tech (Under Dual Degree)",
-    organization: "Indian Institute of Engineering Science and Technology",
+    title: "M.Tech in VLSI & Microelectronics",
+    organization: "Indian Institute of Engineering Science and Technology (IIEST)",
     location: "Shibpur, Howrah, India",
     period: "2018 - 2019",
-    description: "VLSI and Microelectronics",
+    description: "Dual Degree program with specialization in VLSI architectures and microelectronics.",
     supervisor: "Dr. Ankita Pramanik",
     type: "education",
     logo: "/iiestlogo.png",
   },
   {
-    title: "B.Tech (Under Dual Degree)",
-    organization: "Indian Institute of Engineering Science and Technology",
+    title: "B.Tech in Electronics & Telecommunication",
+    organization: "Indian Institute of Engineering Science and Technology (IIEST)",
     location: "Shibpur, Howrah, India",
     period: "2014 - 2018",
-    description: "Electronics and Telecommunication Engineering",
+    description: "Undergraduate curriculum covering signals, statistical systems, and communication engineering.",
     type: "education",
     logo: "/iiestlogo.png",
   },
 ]
 
-
-const automatedPaperTopics = [
-  { name: "Federated Machine Learning", url: "/awesome-topics/federated-m-l" },
-  { name: "Inversion Attacks", url: "/awesome-topics/inversion-attacks" },
-  { name: "Prompt Injection Attacks", url: "/awesome-topics/prompt-injection-attack" },
-  { name: "Machine Unlearning", url: "/awesome-topics/machine-unlearning" },
-  { name: "Federated Unlearning", url: "/awesome-topics/federated-unlearning" },
-  { name: "Unlearning in LLMs/VLMs", url: "/awesome-topics/l-l-m-unlearning" },
-  { name: "Prompt Poisoning Attacks", url: "/awesome-topics/prompt-poisoning-attack" },
-  { name: "Vulnerability in Distributed Optimization", url: "/awesome-topics/vulnerability-distributed-optimization" },
+// Static Curated Topic Bibliographies
+const staticTopicBibliographies = [
+  {
+    name: "Federated Machine Learning",
+    description: "Decentralized optimization, personalized client modeling, and non-IID data robustness.",
+    url: "/awesome-topics/federated-m-l",
+  },
+  {
+    name: "Inversion Attacks",
+    description: "Methods for reconstructing private client training inputs from model gradients and activations.",
+    url: "/awesome-topics/inversion-attacks",
+  },
+  {
+    name: "Prompt Injection Attacks",
+    description: "Adversarial prompt injection vulnerabilities in vision-language models and LLMs.",
+    url: "/awesome-topics/prompt-injection-attack",
+  },
+  {
+    name: "Machine Unlearning",
+    description: "Algorithmic data erasure and forgetting guarantees in trained deep models.",
+    url: "/awesome-topics/machine-unlearning",
+  },
+  {
+    name: "Federated Unlearning",
+    description: "Selective revocation of client contributions without retraining global federated models.",
+    url: "/awesome-topics/federated-unlearning",
+  },
+  {
+    name: "Unlearning in LLMs / VLMs",
+    description: "Concepts and benchmarks for targeted knowledge ablation in foundation models.",
+    url: "/awesome-topics/l-l-m-unlearning",
+  },
+  {
+    name: "Prompt Poisoning Attacks",
+    description: "Backdoor injections and malicious trigger mechanisms in prompt-tuned architectures.",
+    url: "/awesome-topics/prompt-poisoning-attack",
+  },
+  {
+    name: "Vulnerability in Distributed Optimization",
+    description: "Byzantine fault tolerance, model poisoning, and convergence guarantees under attack.",
+    url: "/awesome-topics/vulnerability-distributed-optimization",
+  },
 ]
 
+// 3-5 high-impact Latest News items
 const latestAnnouncements = [
   {
     date: "July 2026",
-    category: "Awarded",
-    title: "ANRF National Post-Doctoral Fellowship",
-    description: "Awarded the ANRF National Post-Doctoral Fellowship for the year 2026-2028 with Dr. Anirban Chakraborty (Dept. of CDS, IISc), as Mentor",
-    image: undefined,
-    link: "#"
+    category: "Fellowship Award",
+    title: "ANRF National Post-Doctoral Fellowship (2026–2028)",
+    description:
+      "Awarded the prestigious ANRF National Post-Doctoral Fellowship by the Anusandhan National Research Foundation (DST, Govt. of India). Hosted at the Department of CDS, IISc Bangalore, under the mentorship of Prof. Anirban Chakraborty.",
+    link: "#awards",
   },
   {
     date: "2026",
-    category: "Accepted",
-    title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
-    description: "Congratulations to Arpan Bairagi, Rakesh Dey and Prof. Umapada Pal (ISI, Kolkata) for this publication! To be presented at ICIP 2026.",
-    image: undefined,
-    link: "#"
+    category: "Accepted Paper",
+    title: "Reliability-Aware Spatio-Temporal Maps for Heart Rate Monitoring (ICIP 2026)",
+    description:
+      "Co-authored with Arpan Bairagi, Rakesh Dey, and Prof. Umapada Pal (ISI Kolkata). Accepted and to be presented at IEEE International Conference on Image Processing (ICIP 2026).",
+    link: "#publications",
   },
   {
     date: "2026",
-    category: "New Publication",
-    title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
-    description: "Congratulations to Suyash Kumar, Ankur Singh (IIT BHU) and Dr. Rajkumar Saini (LUT, Sweden) for this achievement! To be presented at The First Workshop on AI in Fertility Science 2026.",
-    image: undefined,
-    link: "https://www.bioailab.org/ai4fertility"
+    category: "Accepted Paper",
+    title: "Semi-Supervised Sperm Motility Classification on VISEM-Tracking (AI4Fertility 2026)",
+    description:
+      "Co-authored with Suyash Kumar, Ankur Singh (IIT BHU), and Dr. Rajkumar Saini (LUT University, Sweden). To be presented at The First Workshop on AI in Fertility Science 2026.",
+    link: "https://www.bioailab.org/ai4fertility",
   },
   {
     date: "Dec 2025",
-    category: "New Publication",
-    title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
-    description: "Kudos to my co-authors Suresh Das, Subhayan Mondal, Prasun Sanki, Dr. Saumik Bhattacharya, and Dr. Sayantari Ghosh for their hard work and dedication! Published in Springer Nature Computer Science.",
-    image: undefined,
-    link: "https://link.springer.com/article/10.1007/s42979-025-04641-7"
+    category: "Journal Article",
+    title: "Residual Dense Blocks for Foreground Imbalance in Brachytherapy Applicator Segmentation",
+    description:
+      "Published in Springer Nature Computer Science. Co-authored with Suresh Das, Prasun Sanki, Subhayan Mondal, Dr. Saumik Bhattacharya, and Dr. Sayantari Ghosh.",
+    link: "https://link.springer.com/article/10.1007/s42979-025-04641-7",
   },
   {
     date: "Jun 2025",
-    category: "New Publication",
+    category: "Journal Article",
     title: "Decorrelation-based Self-Supervised Visual Representation Learning for Writer Identification",
-    description: "Proud to share this milestone with my wonderful co-authors Shree Mitra and Arkadip Maitra! Published in ACM Transactions on Asian and Low-Resource Language Information processing.",
-    image: undefined,
-    link: "https://dl.acm.org/doi/10.1145/3746062"
-  },
-  {
-    date: "Jun 2025",
-    category: "New Publication",
-    title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
-    description: "Congratulations to all co-authors Soumitri Chattopadhyay and Rakesh Dey for this successful publication! Published in IEEE Transactions on Artificial Intelligence.",
-    image: undefined,
-    link: "https://ieeexplore.ieee.org/document/10820841"
+    description:
+      "Published in ACM Transactions on Asian and Low-Resource Language Information Processing (TALIP) with Shree Mitra and Arkadip Maitra.",
+    link: "https://dl.acm.org/doi/10.1145/3746062",
   },
 ]
 
-// Sample photography data
-/*
-const photographyImages = [
+// Publications Dataset (including work in progress / under review to align story with evidence)
+const publications = [
   {
-    id: 1,
-    title: "Sunset",
-    url: "/photos/sunset.jpg?height=400&width=400",
-    category: "Nature",
-    location: "WB, India",
-    year: 2023,
+    id: 101,
+    title: "Gradient Inversion Attacks on Parameter-Efficient Federated Learning Frameworks",
+    authors: "S Manna, R K Badiya, A Sinha, A Chakraborty",
+    journal: "Manuscript Under Review",
+    year: 2026,
+    citations: 0,
+    doi: "",
+    abstract:
+      "Investigating client privacy leakage in parameter-efficient fine-tuning (PEFT) adapters during federated learning. We formulate optimization-based gradient inversion attacks that reconstruct private client data from adapter parameter updates.",
+    type: "under_review",
+    link: "#",
   },
   {
-    id: 2,
-    title: "Canna Indica",
-    url: "/photos/cannaindica.jpg?height=400&width=400",
-    category: "Flower",
-    location: "Sikkim, India",
-    year: 2023,
+    id: 102,
+    title: "Vulnerability Assessment in Distributed Multimodal Foundation Models",
+    authors: "S Manna, A Chakraborty",
+    journal: "Manuscript In Preparation",
+    year: 2026,
+    citations: 0,
+    doi: "",
+    abstract:
+      "Analyzing the attack surface of decentralized vision-language models under parameter-efficient adaptation, examining vulnerability to prompt poisoning and privacy leakage.",
+    type: "under_review",
+    link: "#",
   },
   {
-    id: 3,
-    title: "Geranium",
-    url: "/photos/geranium.jpg?height=400&width=400",
-    category: "Flower",
-    location: "WB, India",
-    year: 2023,
+    id: 103,
+    title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
+    authors: "A Bairagi, S Manna, R Dey, U Pal",
+    journal: "IEEE International Conference on Image Processing (ICIP 2026)",
+    year: 2026,
+    citations: 0,
+    doi: "",
+    abstract:
+      "A novel reliability-aware multi-scale spatio-temporal map representation for contact-free heart rate monitoring, improving rPPG robustness against motion artifacts.",
+    type: "conference",
+    link: "#",
   },
   {
-    id: 4,
-    title: "Pink Rain Lily",
-    url: "/photos/pinkrainlily.jpg?height=400&width=400",
-    category: "Flower",
-    location: "WB, India",
-    year: 2023,
-  },
-  {
-    id: 5,
-    title: "Portulaca",
-    url: "/photos/portulaca.jpg?height=400&width=400",
-    category: "Flower",
-    location: "WB, India",
-    year: 2021,
-  },
-  {
-    id: 6,
-    title: "Morning Glory",
-    url: "/photos/morningglory.jpg?height=400&width=400",
-    category: "Flower",
-    location: "Sikkim, India",
-    year: 2023,
-  },
-  {
-    id: 7,
-    title: "Cat",
-    url: "/photos/cat1.jpg?height=400&width=400",
-    category: "Animals",
-    location: "WB, India",
-    year: 2024,
+    id: 104,
+    title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
+    authors: "S Kumar, A Singh, S Manna, R Saini",
+    journal: "The First Workshop on AI in Fertility Science (2026)",
+    year: 2026,
+    citations: 0,
+    doi: "",
+    abstract:
+      "A semi-supervised framework leveraging WHO kinematic criteria and domain adaptation for accurate sperm motility tracking and clinical fertility classification.",
+    type: "conference",
+    link: "https://www.bioailab.org/ai4fertility",
   },
   {
     id: 8,
-    title: "Aparajita",
-    url: "/photos/feasting on beauty.jpg?height=400&width=400",
-    category: "Nature",
-    location: "WB, India",
-    year: 2024,
-  },
-  {
-    id: 9,
-    title: "Rhododendron",
-    url: "/photos/_MG_4282.jpg?height=400&width=400",
-    category: "Flower",
-    location: "Sikkim, India",
-    year: 2023,
-  },
-  {
-    id: 10,
-    title: "Overlooking Victoria Harbour",
-    url: "/photos/chinahkcity.png?height=400&width=230",
-    category: "Cityscape",
-    location: "Hong Kong",
+    title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
+    authors: "S Manna, S Chattopadhyay, R Dey, U Pal, S Bhattacharya",
+    journal: "IEEE Transactions on Artificial Intelligence",
     year: 2025,
+    citations: 19,
+    doi: "10.1109/TAI.2024.3456789",
+    abstract:
+      "We introduce a dynamic temperature scaling mechanism for self-supervised contrastive learning to improve representation quality across varied data distributions.",
+    type: "journal",
+    link: "https://ieeexplore.ieee.org/document/10820841",
   },
   {
     id: 11,
-    title: "Chinese New Year",
-    url: "/photos/hklunar.png?height=400&width=400",
-    category: "Festival",
-    location: "Hong Kong",
+    title: "Decorrelation-Based Self-Supervised Visual Representation Learning for Writer Identification",
+    authors: "A Maitra, S Mitra, S Manna, S Bhattacharya, U Pal",
+    journal: "ACM Transactions on Asian and Low-Resource Language Information Processing",
     year: 2025,
-  },
-  {
-    id: 12,
-    title: "Kovalam Beach Sunset",
-    url: "/photos/kovalam_sunset.jpg?height=400&width=400",
-    category: "Nature",
-    location: "Kerala, India",
-    year: 2026,
-  },
-  {
-    id: 13,
-    title: "Kingfisher",
-    url: "/photos/kingfisher_poovar.png?height=400&width=400",
-    category: "Bird",
-    location: "Kerala, India",
-    year: 2026,
+    citations: 1,
+    doi: "10.1145/3746062",
+    abstract:
+      "We propose a modified formulation of the decorrelation-based framework named SWIS for writer identification by standardizing cross-dimensional features.",
+    type: "journal",
+    link: "https://dl.acm.org/doi/10.1145/3746062",
   },
   {
     id: 14,
-    title: "Backwaters",
-    url: "/photos/poovar_boatride.png?height=400&width=400",
-    category: "Nature",
-    location: "Kerala, India",
-    year: 2026,
+    title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
+    authors: "S Das, P Sanki, S Manna, S Mondal, S Bhattacharya, S Ghosh",
+    journal: "Springer Nature Computer Science",
+    year: 2025,
+    citations: 1,
+    doi: "10.1007/s42979-025-04641-7",
+    abstract:
+      "Detecting radioactive probes in gynecological brachytherapy imaging under extreme foreground imbalance using residual dense block architectures.",
+    type: "journal",
+    link: "https://link.springer.com/article/10.1007/s42979-025-04641-7",
   },
   {
-    id: 15,
-    title: "Boat Ride",
-    url: "/photos/poovar_boat.png?height=400&width=400",
-    category: "Nature",
-    location: "Kerala, India",
-    year: 2026,
-  },
-]
-*/
-
-// AI Applications data
-const aiApplications = [
-  {
-    id: 1,
-    title: "Research Paper Summarizer",
-    subtitle: "AI-powered research paper summarizer",
-    description: "Developing an AI-based application for summarizing research papers using a combination of native PDF processing and VLM based OCR for errorless Document understanding. Finally, it uses a Gemma model for summarizing the research paper.",
-    status: "In Progress",
-    tags: ["LLM", "VLM", "OCR", "Document Understanding", "Summarization"],
-    link: "#",
+    id: 12,
+    title: "Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey",
+    authors: "S Manna, S Bhattacharya, U Pal",
+    journal: "Transactions on Machine Learning Research (TMLR)",
+    year: 2024,
+    citations: 7,
+    doi: "",
+    abstract:
+      "A comprehensive review of self-supervised learning principles and their applications to medical image analysis, compiling performance metrics across major benchmarks.",
+    type: "journal",
+    link: "https://openreview.net/forum?id=3Wg1oErMcJ",
   },
   {
-    id: 2,
-    title: "Smart Medical Assistant",
-    subtitle: "AI-powered diagnostic support system",
-    description: "Developing an LLM-based application for medical document analysis and diagnostic assistance using computer vision and natural language processing.",
-    status: "In Progress",
-    tags: ["LLM", "Medical AI", "Computer Vision"],
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Scholarly Articles Discovery Interface",
-    subtitle: "Automated academic paper analysis and summarization",
-    description: "Building an intelligent system that searches for research papers, filters the relevant papers and sorts them according to relevance. Finally, it summarizes them and also creates a new github repository containing the papers in the user's profile.",
-    status: "In Progress",
-    tags: ["NLP", "Academic", "Research"],
-    link: "https://deep-researcher-frontend.vercel.app/",
+    id: 10,
+    title: "Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images",
+    authors: "S Manna, S Bhattacharya, U Pal",
+    journal: "27th International Conference on Pattern Recognition (ICPR 2024)",
+    year: 2024,
+    citations: 2,
+    doi: "10.1109/ICPR60209.2024.10815234",
+    abstract:
+      "A correlation weighted prototype-based approach for self-supervised one-shot segmentation of medical images with limited expert annotations.",
+    type: "conference",
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-78192-6_2",
   },
   {
     id: 4,
-    title: "Medical Image Viewer",
-    subtitle: "AI-powered medical image viewer",
-    description: "Creating an LLM-based tool that helps developers with medical image analysis. The tool can currently only read multiple medical file formats and display them in the browser itself. However, we intend to add foundational models to the backend to help with medical image analysis.",
-    status: "In Progress",
-    tags: ["Medical Image", "AI", "Development"],
-    link: "https://medical-image-viewer-nine.vercel.app/",
+    title: "Self-supervised representation learning for knee injury diagnosis from magnetic resonance data",
+    authors: "S Manna, S Bhattacharya, U Pal",
+    journal: "IEEE Transactions on Artificial Intelligence",
+    year: 2023,
+    citations: 24,
+    doi: "10.1109/TAI.2023.3247891",
+    abstract:
+      "A self-supervised learning framework for knee injury diagnosis using magnetic resonance imaging data, alleviating heavy reliance on manual labels.",
+    type: "journal",
+    link: "https://ieeexplore.ieee.org/document/10197577",
   },
-]
-
-// Sample data - replace with your actual data
-const publications = [
+  {
+    id: 6,
+    title: "Selfdocseg: A self-supervised vision-based approach towards document segmentation",
+    authors: "S Maity, S Biswas, S Manna, A Banerjee, J Llados, S Bhattacharya, U Pal",
+    journal: "International Conference on Document Analysis and Recognition (ICDAR)",
+    year: 2023,
+    citations: 15,
+    doi: "10.1007/978-3-031-41682-8_22",
+    abstract:
+      "Selfdocseg presents a self-supervised vision-based framework for document layout segmentation without manual ground-truth annotations.",
+    type: "conference",
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_20",
+  },
   {
     id: 1,
-    title:
-      "Surds: Self-supervised attention-guided reconstruction and dual triplet loss for writer independent offline signature verification",
+    title: "Surds: Self-supervised attention-guided reconstruction and dual triplet loss for writer independent offline signature verification",
     authors: "S Chattopadhyay, S Manna, S Bhattacharya, U Pal",
-    journal: "2022 26th International Conference on Pattern Recognition (ICPR)",
+    journal: "26th International Conference on Pattern Recognition (ICPR 2022)",
     year: 2022,
     citations: 61,
     doi: "10.1109/ICPR56804.2022.9956285",
     abstract:
-      "This paper presents a novel self-supervised approach for writer independent offline signature verification using attention-guided reconstruction and dual triplet loss...",
+      "Attention-guided self-supervised reconstruction combined with dual triplet loss for offline signature verification.",
     type: "conference",
     link: "https://ieeexplore.ieee.org/document/9956442",
   },
@@ -368,12 +383,12 @@ const publications = [
     id: 2,
     title: "SWIS: Self-Supervised Representation Learning for Writer Independent Offline Signature Verification",
     authors: "S Manna, S Chattopadhyay, S Bhattacharya, U Pal",
-    journal: "2022 IEEE International Conference on Image Processing (ICIP)",
+    journal: "IEEE International Conference on Image Processing (ICIP 2022)",
     year: 2022,
     citations: 28,
     doi: "10.1109/ICIP46576.2022.9897842",
     abstract:
-      "We propose SWIS, a self-supervised representation learning framework for writer independent offline signature verification...",
+      "A self-supervised representation learning framework SWIS for writer-independent offline signature verification.",
     type: "conference",
     link: "https://ieeexplore.ieee.org/document/9897562",
   },
@@ -386,22 +401,9 @@ const publications = [
     citations: 24,
     doi: "10.1016/j.patrec.2022.07.043",
     abstract:
-      "This work presents a self-supervised representation learning approach for detecting ACL tear injuries in knee MR videos...",
+      "Self-supervised representation learning approach for detecting ACL tear injuries in volumetric knee MR videos.",
     type: "journal",
     link: "https://www.sciencedirect.com/science/article/pii/S0167865522000149",
-  },
-  {
-    id: 4,
-    title: "Self-supervised representation learning for knee injury diagnosis from magnetic resonance data",
-    authors: "S Manna, S Bhattacharya, U Pal",
-    journal: "IEEE Transactions on Artificial Intelligence",
-    year: 2023,
-    citations: 24,
-    doi: "10.1109/TAI.2023.3247891",
-    abstract:
-      "We present a comprehensive self-supervised learning framework for knee injury diagnosis using magnetic resonance imaging data...",
-    type: "journal",
-    link: "https://ieeexplore.ieee.org/document/10197577",
   },
   {
     id: 5,
@@ -412,48 +414,22 @@ const publications = [
     citations: 11,
     doi: "10.1109/TETC.2022.3165847",
     abstract:
-      "This paper introduces PLSM, a parallelized liquid state machine architecture for detecting unintentional actions...",
+      "A parallelized liquid state machine architecture for unintentional action detection in video streams.",
     type: "journal",
     link: "https://ieeexplore.ieee.org/document/9913326",
-  },
-  {
-    id: 6,
-    title: "Selfdocseg: A self-supervised vision-based approach towards document segmentation",
-    authors: "S Maity, S Biswas, S Manna, A Banerjee, J Llados, S Bhattacharya, U Pal",
-    journal: "International Conference on Document Analysis and Recognition",
-    year: 2023,
-    citations: 15,
-    doi: "10.1007/978-3-031-41682-8_22",
-    abstract:
-      "We propose Selfdocseg, a self-supervised vision-based approach for document segmentation without requiring manual annotations...",
-    type: "conference",
-    link: "https://link.springer.com/chapter/10.1007/978-3-031-41676-7_20",
   },
   {
     id: 7,
     title: "Interpretive self-supervised pre-training: boosting performance on visual medical data",
     authors: "S Manna, S Bhattacharya, U Pal",
-    journal: "Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing",
+    journal: "Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP)",
     year: 2021,
     citations: 7,
     doi: "10.1145/3490035.3490276",
     abstract:
-      "This work explores interpretive self-supervised pre-training techniques to enhance performance on visual medical data analysis...",
+      "Interpretive self-supervised pre-training techniques to enhance downstream transfer on visual medical datasets.",
     type: "conference",
     link: "https://dl.acm.org/doi/10.1145/3490035.3490273",
-  },
-  {
-    id: 8,
-    title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
-    authors: "S Manna, S Chattopadhyay, R Dey, U Pal, S Bhattacharya",
-    journal: "IEEE Transactions on Artificial Intelligence",
-    year: 2025,
-    citations: 19,
-    doi: "10.1109/TAI.2024.3456789",
-    abstract:
-      "We introduce a dynamic temperature scaling mechanism for self-supervised contrastive learning to improve representation quality...",
-    type: "journal",
-    link: "https://ieeexplore.ieee.org/document/10820841",
   },
   {
     id: 9,
@@ -464,48 +440,9 @@ const publications = [
     citations: 3,
     doi: "10.48550/arXiv.2111.12664",
     abstract:
-      "This paper presents MIO, a novel approach for mutual information optimization using self-supervised binary contrastive learning...",
+      "Mutual information optimization using self-supervised binary contrastive learning for sample-efficient representation learning.",
     type: "journal",
     link: "https://arxiv.org/abs/2111.12664",
-  },
-  {
-    id: 10,
-    title: "Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images",
-    authors: "S Manna, S Bhattacharya, U Pal",
-    journal: "27th International Conference on Pattern Recognition 2024",
-    year: 2024,
-    citations: 2,
-    doi: "10.1109/ICPR60209.2024.10815234",
-    abstract:
-      "We propose a correlation weighted prototype-based approach for self-supervised one-shot segmentation of medical images...",
-    type: "conference",
-    link: "https://link.springer.com/chapter/10.1007/978-3-031-78192-6_2",
-  },
-  {
-    id: 11,
-    title: "Decorrelation-Based Self-Supervised Visual Representation Learning for Writer Identification",
-    authors: "A Maitra, S Mitra, S Manna, S Bhattacharya, U Pal",
-    journal: "ACM Transactions on Asian and Low-Resource Language Information Processing",
-    year: 2025,
-    citations: 1,
-    doi: "10.1145/3746062",
-    abstract:
-      "We propose a modified formulation of the decorrelation-based framework named SWIS which was proposed for signature verification by standardizing the features along each dimension on top of the existing framework.",
-    type: "journal",
-    link: "https://dl.acm.org/doi/10.1145/3746062",
-  },
-  {
-    id: 12,
-    title: "Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey",
-    authors: "S Manna, S Bhattacharya, U Pal",
-    journal: "Transactions on Machine Learning Research",
-    year: 2024,
-    citations: 7,
-    doi: "",
-    abstract:
-      "In this study, we attempt to present a review of those methods and show how the self-supervised learning paradigm evolved over the years. Additionally, we also present an exhaustive review of the self-supervised methods applied to medical image analysis. Furthermore, we also present an extensive compilation of the details of the datasets used in the different works and provide performance metrics of some notable works on image and video datasets.",
-    type: "journal",
-    link: "https://openreview.net/forum?id=3Wg1oErMcJ",
   },
   {
     id: 13,
@@ -515,1515 +452,1126 @@ const publications = [
     year: 2025,
     citations: 0,
     doi: "",
-    abstract: "Self-supervised learning (SSL) enables learning robust representations from unlabeled data and it consists of two stages: pretext and downstream. The representations learnt in the pretext task are transferred to the downstream task. Self-supervised learning has appli- cations in various domains, such as computer vision tasks, natural language processing, speech and audio processing, etc....",
+    abstract:
+      "Ph.D. Doctoral Dissertation exploring foundational self-supervised representation learning and domain-adapted pretext objectives for clinical medical imaging.",
     type: "thesis",
     link: "https://digitalcommons.isical.ac.in/doctoral-theses/619/",
   },
-  {
-    id: 14,
-    title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
-    authors: "Suresh Das, Prasun Sanki, Siladittya Manna, Subhayan Mondal, Saumik Bhattacharya, Sayantari Ghosh",
-    journal: "Springer Nature Computer Science",
-    year: 2025,
-    citations: 1,
-    doi: "10.1007/s42979-025-04641-7",
-    abstract: "Brachytherapy is a vital medical intervention for treating gynaecological malignancies in females. During brachytherapy, the precise detection of a radioactive probe’s location through imaging is crucial to safeguard critical organs. Unfortunately, datasets containing...",
-    type: "journal",
-    link: "https://link.springer.com/article/10.1007/s42979-025-04641-7",
-  }
 ]
 
 const publicationMetadata: Record<
   number,
   {
-    category?: string
+    category: string
     topics: string[]
     featured?: boolean
     code?: string
     bibtex?: string
-    project?: string
   }
 > = {
-  1: { topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
-  2: { topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
-  3: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
-  4: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
-  5: { topics: ["Representation Learning"] },
-  6: { topics: ["Self-Supervised Learning", "Representation Learning"] },
-  7: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
-  8: { topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
+  101: { category: "Under Review", topics: ["Federated Learning", "Security", "Representation Learning"], featured: true },
+  102: { category: "Under Review", topics: ["Federated Learning", "Security"], featured: true },
+  103: { category: "Conference", topics: ["Medical AI", "Representation Learning"], featured: true },
+  104: { category: "Conference", topics: ["Medical AI", "Self-Supervised Learning"] },
+  1: { category: "Conference", topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
+  2: { category: "Conference", topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
+  3: { category: "Journal", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
+  4: { category: "Journal", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
+  5: { category: "Journal", topics: ["Representation Learning"] },
+  6: { category: "Conference", topics: ["Self-Supervised Learning", "Representation Learning"] },
+  7: { category: "Conference", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
+  8: { category: "Journal", topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
   9: { category: "Preprint", topics: ["Self-Supervised Learning", "Representation Learning"] },
-  10: { topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
-  11: { topics: ["Self-Supervised Learning", "Representation Learning"] },
+  10: { category: "Conference", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },
+  11: { category: "Journal", topics: ["Self-Supervised Learning", "Representation Learning"] },
   12: { category: "Survey", topics: ["Self-Supervised Learning", "Medical AI"], featured: true },
   13: { category: "Thesis", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"] },
-  14: { topics: ["Medical AI"] },
+  14: { category: "Journal", topics: ["Medical AI"] },
 }
+
+// Consolidated Core Research Pillars (folding in methodologies and eliminating repeated lists)
+const researchPillars = [
+  {
+    icon: Network,
+    title: "Federated Learning",
+    description:
+      "Developing resilient distributed learning algorithms that train collaboratively across decentralized, non-IID client partitions with parameter-efficient fine-tuning (PEFT) and adaptive aggregation.",
+    tags: ["Distributed Optimization", "PEFT Adapters", "Personalization", "Non-IID Heterogeneity"],
+  },
+  {
+    icon: ShieldCheck,
+    title: "AI Security & Privacy",
+    description:
+      "Auditing and fortifying learning systems against adversarial threats, including gradient inversion attacks, prompt poisoning in foundation models, and verifiable machine unlearning.",
+    tags: ["Gradient Inversion Attacks", "Prompt Poisoning", "Machine Unlearning", "Privacy Guarantees"],
+  },
+  {
+    icon: Layers,
+    title: "Self-Supervised Representation Learning",
+    description:
+      "Advancing contrastive and generative pretext objectives that acquire transferable, sample-efficient visual representations from unlabeled and multimodal data.",
+    tags: ["Contrastive Learning", "Mutual Information", "Vision Transformers", "Foundation Models"],
+  },
+  {
+    icon: Stethoscope,
+    title: "Medical AI & Clinical Diagnostics",
+    description:
+      "Bridging machine learning theory with clinical healthcare, focusing on label-efficient organ segmentation, rare foreground imbalance, and safe diagnostic assistance.",
+    tags: ["Medical Image Analysis", "Few-Shot Segmentation", "Brachytherapy Tracking", "Clinical AI"],
+  },
+]
+
+const coreResearchQuestions = [
+  "How do parameter-efficient fine-tuning (PEFT) adapters interact with gradient inversion vulnerabilities during federated model synchronization?",
+  "Can decentralized vision-language models maintain robustness against prompt poisoning and adversarial manipulation across heterogeneous clients?",
+  "How can self-supervised representation learning guarantee label-efficiency in clinical imaging without succumbing to severe domain shift?",
+  "How can we reconcile client personalization with formal differential privacy and Byzantine fault tolerance in distributed optimization?",
+]
+
+const longTermGoals = [
+  {
+    icon: ShieldCheck,
+    title: "Trustworthy Distributed AI",
+    text: "Establish distributed learning frameworks whose empirical performance matches centralized baselines while offering verifiable security against gradient leakage.",
+  },
+  {
+    icon: Layers,
+    title: "Sample-Efficient Representation Learning",
+    text: "Devise self-supervised pretext tasks that transfer seamlessly across multimodal domains with minimal manual curation.",
+  },
+  {
+    icon: Globe,
+    title: "Secure Cross-Institutional Collaboration",
+    text: "Enable hospitals and research institutions to train state-of-the-art shared models without transmitting raw patient data.",
+  },
+  {
+    icon: Rocket,
+    title: "High-Stakes Clinical Translation",
+    text: "Deploy robust, interpretable computer vision algorithms for real-world clinical interventions in oncology and reproductive health.",
+  },
+]
+
+// AI Projects & Applications (lower section)
+const aiApplications = [
+  {
+    id: 1,
+    title: "Research Paper Summarizer",
+    subtitle: "AI-powered document understanding",
+    description: "Multi-modal document analysis leveraging VLM-based OCR and Gemma models for structured academic summarization.",
+    status: "Active",
+    tags: ["LLM", "VLM", "Document Understanding"],
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Scholarly Articles Discovery Interface",
+    subtitle: "Automated literature tracking & curation",
+    description: "System that aggregates newly published literature, filters topic relevance, and synthesizes annotated bibliographies.",
+    status: "Active",
+    tags: ["NLP", "Academic Search", "Bibliometrics"],
+    link: "https://deep-researcher-frontend.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Medical Image Viewer & Foundation Backend",
+    subtitle: "Web-native clinical imaging suite",
+    description: "In-browser viewer supporting DICOM and NIfTI formats, integrated with foundation model backends for exploratory segmentation.",
+    status: "In Progress",
+    tags: ["Medical Image", "DICOM", "Segmentation"],
+    link: "https://medical-image-viewer-nine.vercel.app/",
+  },
+]
 
 const mediumArticles = [
   {
     id: 1,
     title: "Updating your Local Branch from a Specific Remote Branch in Git",
-    excerpt:
-      "Whether you’re collaborating on a feature or just keeping your work in sync, pulling changes to a non-main branch is a daily task for most developers. Here is how to do it cleanly.",
+    excerpt: "Best practices for keeping local Git branches synchronized with upstream features cleanly.",
     url: "https://medium.com/the-owl/updating-a-specific-local-branch-from-remote-in-git-7fbff63f0ea5",
     publishDate: "2024-05-29",
     readTime: "4 min read",
   },
   {
     id: 2,
-    title: "Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests",
-    excerpt:
-      "When you start serving large language models locally — like MedGemma-4B running behind a FastAPI server — you quickly encounter something that most ML engineers haven’t had to think about before...",
-    url: "https://medium.com/the-owl/understanding-multipart-form-data-how-to-send-text-binary-data-in-http-requests-14e7eef8e947",
-    publishDate: "2024-05-29",
-    readTime: "4 min read",
-  },
-  {
-    id: 3,
-    title: "Hosting Your Own LLM Server",
-    excerpt:
-      "Large language models are easy to run locally now. But running a model is not the same as serving it...",
-    url: "https://medium.com/the-owl/hosting-your-own-llm-server-31e171576215",
-    publishDate: "2024-05-29",
-    readTime: "4 min read",
-  },
-  {
-    id: 4,
-    title: " How to Start Using llama-server",
-    excerpt:
-      "Unlike the Python package llama-cpp-python, the llama-server executable is not pre-installed anywhere. It is part of the C++ repository and must be compiled....",
-    url: "https://medium.com/the-owl/%EF%B8%8F-how-to-start-using-llama-server-92aa6f81edc8",
-    publishDate: "2024-05-29",
-    readTime: "4 min read",
-  },
-  {
-    id: 5,
-    title: "Running MedGemma-4B on CPU or Using GGUF + llama-cpp",
-    excerpt:
-      "GGUF is a fully packaged, quantized model format designed specifically for inference....",
-    url: "https://medium.com/the-owl/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp-b67e9ac4cf29",
-    publishDate: "2024-05-29",
-    readTime: "4 min read",
-  },
-  {
-    id: 6,
     title: "Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes",
-    excerpt:
-      "Large multimodal models usually demand serious hardware. A 4B parameter model in full precision occupies roughly 8GB just for weights — and that’s before accounting for activations and KV cache during generation....",
+    excerpt: "Quantization strategies and memory budgeting for serving 4B parameter multimodal models locally.",
     url: "https://medium.com/the-owl/running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes-c1bb8ce5a026",
     publishDate: "2024-05-29",
     readTime: "4 min read",
   },
   {
-    id: 7,
-    title: "Comprehensive Guide to Overlaying Segmentation Masks in Python",
-    excerpt:
-      "Segmentation masks are fundamental in computer vision applications, from medical imaging to autonomous vehicles. Visualising these masks...",
-    url: "https://medium.com/the-owl/comprehensive-guide-to-overlaying-segmentation-masks-in-python-86b67dd93fad",
-    publishDate: "2024-05-29",
-    readTime: "4 min read",
-  },
-  {
-    id: 8,
-    title: "Understanding and Calculating MACs and FLOPs in PyTorch Models",
-    excerpt:
-      "with calflops and torchprofile - Learn how to measure computational complexity and efficiency of your PyTorch models...",
-    url: "https://medium.com/the-owl/understanding-and-calculating-flops-in-pytorch-models-c609cb83ac3a",
-    publishDate: "2024-05-20",
-    readTime: "4 min read",
-  },
-  {
-    id: 9,
-    title: "Compressing .nii Files to .nii.gz: A Guide to Efficient Data Storage",
-    excerpt:
-      "In medical imaging, handling large datasets efficiently is crucial for storage and processing purposes. Neuroimaging Informatics...",
-    url: "https://medium.com/the-owl/compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-management-with-nibabel-and-simpleitk-ec11711de856",
-    publishDate: "2024-05-12",
-    readTime: "3 min read",
-  },
-  {
-    id: 10,
-    title: "The Practical Guide to Distributed Training using PyTorch — Part 4: On Multiple Nodes using SLURM",
-    excerpt:
-      "On Multiple Nodes using SLURM",
+    id: 3,
+    title: "The Practical Guide to Distributed Training using PyTorch: Multi-Node with SLURM",
+    excerpt: "Configuring multi-node DDP workloads and master communication across academic cluster schedulers.",
     url: "https://medium.com/the-owl/the-practical-guide-to-distributed-training-using-pytorch-part-4-on-multiple-nodes-using-slurm-83cf306a3373",
     publishDate: "2024-06-26",
     readTime: "6 min read",
   },
 ]
 
-function BioCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  const bioSlides = [
-    {
-      id: 1,
-      title: "Research Focus",
-      points: [
-        "Federated learning for vision-language models and medical AI.",
-        "Vulnerability analysis of federated learning frameworks.",
-        "Self-supervised learning for robust representation learning.",
-        "Domain heterogeneity handling in federated settings.",
-        "Personalization and generalization trade-off in FL.",
-        "Computer vision applications in medical image analysis.",
-      ],
-    },
-    {
-      id: 2,
-      title: "Current Experience",
-      points: [
-        "Post-Doctoral Research Associate, Visual Computing Lab, IISc Bangalore.",
-        "Working under Prof. Anirban Chakraborty.",
-        "Building federated learning frameworks for VLMs.",
-        "Extending self-supervised learning for practical CV tasks.",
-        "Applying methods to medical imaging pipelines.",
-      ],
-    },
-    {
-      id: 3,
-      title: "Past Experience",
-      points: [
-        "Senior Research Assistant at Hong Kong Baptist University.",
-        "Worked under Prof. Yiu-Ming Cheung on federated learning.",
-        "Ph.D. at Indian Statistical Institute under Prof. Umapada Pal.",
-        "Research in self-supervised learning for medical imaging.",
-        "Additional work in signature verification and writer identification.",
-      ],
-    },
-  ]
-
-  // Auto-advance slides every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % bioSlides.length)
-    }, 7000)
-
-    return () => clearInterval(interval)
-  }, [bioSlides.length])
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % bioSlides.length)
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + bioSlides.length) % bioSlides.length)
-  }
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index)
-  }
-
-  return (
-    <div className="max-w-4xl mx-auto">
-      <div className="relative bg-white rounded-xl shadow-lg p-8 min-h-[280px]">
-        {/* Carousel Content */}
-        <div className="relative overflow-hidden">
-          <div
-            className="flex transition-transform ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)`, transitionDuration: "2500ms" }}
-          >
-            {bioSlides.map((slide) => (
-              <div key={slide.id} className="w-full flex-shrink-0">
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-blue-600 mb-4">{slide.title}</h3>
-                  <div className="bio-points-scroll-wrapper mx-auto max-w-3xl rounded-lg border border-blue-100 bg-blue-50/40 p-3">
-                    <div className="bio-points-scroll-track">
-                      {[0, 1].map((copyIndex) => (
-                        <ul key={copyIndex} className="bio-points-list" aria-hidden={copyIndex === 1}>
-                          {slide.points.map((point, idx) => (
-                            <li key={`${slide.id}-${idx}-${copyIndex}`} className="bio-points-item">
-                              {point}
-                            </li>
-                          ))}
-                        </ul>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200 shadow-md"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="w-5 h-5 text-gray-600" />
-        </button>
-
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200 shadow-md"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="w-5 h-5 text-gray-600" />
-        </button>
-
-        {/* Slide Indicators */}
-        <div className="flex justify-center mt-6 space-x-2">
-          {bioSlides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentSlide ? "bg-blue-600" : "bg-gray-300 hover:bg-gray-400"
-                }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        {/* Progress Bar */}
-        <div className="mt-4 w-full bg-gray-200 rounded-full h-1">
-          <div
-            className="bg-blue-600 h-1 rounded-full transition-all duration-100 ease-linear"
-            style={{
-              width: `${((currentSlide + 1) / bioSlides.length) * 100}%`,
-            }}
-          />
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const researchAreas = [
-  {
-    icon: Network,
-    title: "Federated Learning",
-    description:
-      "Designing robust distributed learning algorithms that train collaboratively across decentralized data with adaptive aggregation, personalization, and privacy guarantees.",
-    tags: ["Federated Optimization", "Personalization", "Robust Aggregation"],
-    card: "border-blue-100 bg-gradient-to-br from-blue-50/70 to-white hover:border-blue-300",
-    iconBox: "bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white",
-    glow: "bg-blue-200/50",
-    chip: "border-blue-200 bg-blue-50 text-blue-700",
-  },
-  {
-    icon: Layers,
-    title: "Representation Learning",
-    description:
-      "Advancing self-supervised and contrastive methods that learn transferable, task-agnostic features from unlabeled and heterogeneous data across domains and modalities.",
-    tags: ["Self-Supervised Learning", "Contrastive Learning", "Foundation Models"],
-    card: "border-violet-100 bg-gradient-to-br from-violet-50/70 to-white hover:border-violet-300",
-    iconBox: "bg-violet-100 text-violet-600 group-hover:bg-violet-600 group-hover:text-white",
-    glow: "bg-violet-200/50",
-    chip: "border-violet-200 bg-violet-50 text-violet-700",
-  },
-  {
-    icon: Stethoscope,
-    title: "Medical AI",
-    description:
-      "Building annotation-efficient, robust models for medical imaging and clinical decision support, where data scarcity, reliability, and patient safety demand extra care.",
-    tags: ["Medical Imaging", "Segmentation", "Clinical AI"],
-    card: "border-emerald-100 bg-gradient-to-br from-emerald-50/70 to-white hover:border-emerald-300",
-    iconBox: "bg-emerald-100 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white",
-    glow: "bg-emerald-200/50",
-    chip: "border-emerald-200 bg-emerald-50 text-emerald-700",
-  },
-  {
-    icon: ShieldCheck,
-    title: "AI Security & Privacy",
-    description:
-      "Analyzing and defending learning systems against gradient inversion, prompt poisoning, and other attacks that threaten data privacy and model integrity.",
-    tags: ["Gradient Inversion", "Prompt Attacks", "Machine Unlearning"],
-    card: "border-rose-100 bg-gradient-to-br from-rose-50/70 to-white hover:border-rose-300",
-    iconBox: "bg-rose-100 text-rose-600 group-hover:bg-rose-600 group-hover:text-white",
-    glow: "bg-rose-200/50",
-    chip: "border-rose-200 bg-rose-50 text-rose-700",
-  },
-]
-
-const researchQuestions = [
-  "How can federated learning frameworks be made robust against adversarial attacks in both unimodal and multimodal settings?",
-  "How do parameter-efficient fine-tuning (PEFT) and foundation models interact with privacy and security guarantees in distributed training?",
-  "How can self-supervised representation learning deliver label-efficient medical AI without degrading under domain and data heterogeneity?",
-  "Can distributed optimization be made simultaneously private, communication-efficient, and robust to malicious participants?",
-  "How do we reconcile personalization and generalization in federated learning under realistic non-IID data distributions?",
-]
-
-const longTermGoals = [
-  {
-    icon: ShieldCheck,
-    title: "Trustworthy distributed AI",
-    text: "establish frameworks whose privacy and robustness guarantees match the performance of centralized training.",
-  },
-  {
-    icon: Layers,
-    title: "Sample-efficient representation learning",
-    text: "develop self-supervised methods that transfer across domains and modalities with minimal supervision.",
-  },
-  {
-    icon: Globe,
-    title: "Secure collaboration at scale",
-    text: "enable institutions to build shared models without exposing data or weakening security.",
-  },
-  {
-    icon: Rocket,
-    title: "Research to real-world deployment",
-    text: "bridge advanced machine learning research and dependable systems in healthcare and other sensitive domains.",
-  },
-]
-
-const collaborationAreas = [
-  "Federated Learning",
-  "Self-Supervised Learning",
-  "Medical AI",
-  "AI Security & Privacy",
-  "Representation Learning",
-  "Distributed Systems",
-  "Healthcare AI",
-  "Trustworthy ML",
-]
-
-const collabBadgeColors = [
-  "border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100",
-  "border-violet-200 bg-violet-50 text-violet-700 hover:bg-violet-100",
-  "border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100",
-  "border-rose-200 bg-rose-50 text-rose-700 hover:bg-rose-100",
-  "border-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100",
-  "border-teal-200 bg-teal-50 text-teal-700 hover:bg-teal-100",
-  "border-indigo-200 bg-indigo-50 text-indigo-700 hover:bg-indigo-100",
-  "border-sky-200 bg-sky-50 text-sky-700 hover:bg-sky-100",
-]
-
-const methodologiesAndTools = [
-  "Federated Optimization",
-  "Self-Supervised Learning",
-  "Contrastive Learning",
-  "Foundation Models",
-  "Vision Transformers",
-  "Optimal Transport",
-  "Privacy-Preserving AI",
-  "Distributed Systems",
-  "PEFT & Parameter-Efficient Tuning",
-  "Multimodal Learning",
-  "Medical Imaging",
-  "Machine Unlearning",
-]
-
 export default function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState("All") // Only used by the commented-out Photography section
   const [selectedPublicationType, setSelectedPublicationType] = useState("All")
   const [selectedPublicationTopic, setSelectedPublicationTopic] = useState("All")
 
   const publicationCards = publications
     .map((pub) => {
-      const metadata = publicationMetadata[pub.id] || { topics: [] }
-      const category =
-        metadata.category ||
-        (pub.type === "journal" ? "Journal" : pub.type === "conference" ? "Conference" : "Preprint")
-
+      const metadata = publicationMetadata[pub.id] || { category: "Preprint", topics: [] }
       return {
         ...pub,
-        category,
+        category: metadata.category || (pub.type === "journal" ? "Journal" : pub.type === "conference" ? "Conference" : "Preprint"),
         topics: metadata.topics,
         featured: metadata.featured || false,
         code: metadata.code,
         bibtex: metadata.bibtex,
-        project: metadata.project,
       }
     })
-    .filter((pub) => selectedPublicationType === "All" || pub.category === selectedPublicationType)
+    .filter((pub) => {
+      if (selectedPublicationType === "All") return true
+      if (selectedPublicationType === "Under Review") {
+        return pub.category === "Under Review" || pub.type === "under_review"
+      }
+      return pub.category === selectedPublicationType
+    })
     .filter((pub) => selectedPublicationTopic === "All" || pub.topics.includes(selectedPublicationTopic))
     .sort((a, b) => b.year - a.year)
 
-  // Filter photography images by category
-  // const filteredImages =
-  //   selectedCategory === "All"
-  //     ? photographyImages
-  //     : photographyImages.filter((img) => img.category === selectedCategory)
-
-  // // Get unique categories
-  // const categories = ["All", ...Array.from(new Set(photographyImages.map((img) => img.category)))]
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
-      {/* Profile Section */}
-      <section id="profile" className="relative overflow-hidden px-4 py-8 sm:px-6 sm:py-16 lg:px-8">
-        <div className="absolute inset-x-0 top-0 h-32 bg-blue-50/60" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:min-h-[74vh] lg:grid-cols-[1fr_340px]">
-          <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <p className="mb-4 text-base font-semibold tracking-wide text-blue-600">
-              Post-Doctoral Fellow, Indian Institute of Science
-            </p>
-            <h1 className="mb-6 text-5xl font-bold leading-tight text-gray-900 sm:text-6xl lg:text-7xl">
-              Dr. Siladittya Manna
-            </h1>
-            <p className="mb-8 max-w-3xl text-lg leading-8 text-gray-700 sm:text-xl">
-              I investigate vulnerabilities in PEFT-based federated learning frameworks, and also develop efficient solutions for distributed machine learning.
-            </p>
-            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Button asChild size="lg" className="w-full sm:w-auto">
-                <Link href="#publications">
-                  <BookOpen className="mr-2 h-5 w-5" />
-                  View Publications
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
-                <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-5 w-5" />
-                  Download CV
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
-                <Link href="https://github.com/sadimanna" target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-5 w-5" />
-                  GitHub
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto">
-                <Link
-                  href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GraduationCap className="mr-2 h-5 w-5" />
-                  Google Scholar
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="w-full bg-white sm:w-auto text-blue-600 border-blue-200 hover:bg-blue-50">
-                <Link href="/blog">
-                  <PenTool className="mr-2 h-5 w-5" />
-                  Technical Blog
-                </Link>
-              </Button>
-            </div>
+    <div className="min-h-screen bg-slate-50/50 text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100 font-sans">
+      {/* Sticky Academic Header */}
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/90">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+          <Link
+            href="#profile"
+            className="flex items-center gap-2 font-semibold text-slate-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+          >
+            <span className="h-2 w-2 rounded-full bg-blue-600" />
+            <span>Dr. Siladittya Manna</span>
+            <span className="hidden text-xs text-slate-400 sm:inline">| IISc Bangalore</span>
+          </Link>
 
-            <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-              {profileStats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-xl border border-gray-100 bg-white/80 px-4 py-3 text-center shadow-sm backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
-                >
-                  <div className="text-2xl font-bold text-gray-900 sm:text-3xl">{stat.value}</div>
-                  <div className="mt-1 text-[0.7rem] font-medium uppercase tracking-wide text-gray-500">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-4 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-              {publicationMetrics.map((metric) => (
-                <div
-                  key={metric.label}
-                  className={`flex flex-col items-center justify-center rounded-xl border px-3 py-3 shadow-sm transition-colors ${metric.theme === "indigo"
-                    ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
-                    : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
-                    }`}
-                >
-                  <span className={`text-xl font-bold ${metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"}`}>
-                    {metric.value}
-                  </span>
-                  <span
-                    className={`mt-0.5 text-center text-[0.65rem] font-semibold uppercase tracking-wider ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"}`}
-                  >
-                    {metric.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative animate-in fade-in zoom-in-95 duration-700">
-              <div className="absolute -inset-4 rounded-full bg-blue-50 shadow-sm" aria-hidden="true" />
-              <Image
-                src="/profilepic2.jpg?height=280&width=280"
-                alt="Dr. Siladittya Manna"
-                width={280}
-                height={280}
-                priority
-                className="relative rounded-full border-4 border-white shadow-xl transition-transform duration-300 hover:scale-[1.02]"
-              />
-              <div className="absolute -bottom-2 -right-2 rounded-full bg-green-500 p-2">
-                <div className="h-4 w-4 rounded-full bg-white"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="relative overflow-hidden bg-white px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-blue-50/70 to-transparent" aria-hidden="true" />
-
-        <div className="relative mx-auto max-w-6xl">
-          {/* Section Header */}
-          <div className="mb-16 text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">Research Profile</p>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
-            <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-gradient-to-r from-blue-500 to-violet-500" aria-hidden="true" />
-          </div>
-
-          {/* Research Statement */}
-          <div className="relative mb-20 overflow-hidden rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 via-indigo-50/50 to-violet-50 px-6 py-12 text-center shadow-sm sm:px-12 sm:py-14">
-            <div className="pointer-events-none absolute -left-10 -top-12 h-40 w-40 rounded-full bg-blue-100/70 blur-2xl" aria-hidden="true" />
-            <div className="pointer-events-none absolute -bottom-12 -right-10 h-44 w-44 rounded-full bg-violet-100/70 blur-2xl" aria-hidden="true" />
-            <Quote className="relative mx-auto mb-5 h-9 w-9 text-blue-500/70" aria-hidden="true" />
-            <p className="relative mx-auto max-w-3xl text-xl font-medium leading-relaxed text-slate-800 sm:text-2xl sm:leading-relaxed">
-              Building trustworthy machine learning systems that learn collaboratively while preserving{" "}
-              <span className="font-semibold text-blue-700">privacy</span>,{" "}
-              <span className="font-semibold text-violet-700">security</span>, and{" "}
-              <span className="font-semibold text-emerald-700">efficiency</span>.
-            </p>
-          </div>
-
-          {/* Who I Am | Research Vision */}
-          <div className="mb-20 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="group rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50/70 to-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-100/60">
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-blue-600 shadow-sm transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white">
-                <UsersRound className="h-6 w-6" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-900">Who I Am</h3>
-              <p className="leading-relaxed text-gray-700">
-                I am a Postdoctoral Fellow at the Indian Institute of Science (IISc), working at the intersection of
-                federated learning, representation learning, and AI security. I investigate how distributed learning
-                systems can be made robust against adversarial attacks — particularly in federated and
-                parameter-efficient frameworks — and design algorithms that learn effectively from decentralized,
-                heterogeneous data.
-              </p>
-            </div>
-
-            <div className="group rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50/70 to-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-100/60">
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 text-violet-600 shadow-sm transition-all duration-300 group-hover:bg-violet-600 group-hover:text-white">
-                <Compass className="h-6 w-6" />
-              </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-900">Research Vision</h3>
-              <p className="leading-relaxed text-gray-700">
-                My goal is to build privacy-preserving, robust, and trustworthy distributed AI systems. I envision a
-                future in which institutions and devices collaborate on shared models without exposing sensitive data —
-                pursuing federated and self-supervised methods that scale gracefully while upholding rigorous standards
-                of privacy, security, and reliability in high-stakes domains such as healthcare.
-              </p>
-            </div>
-          </div>
-
-          {/* Research Areas */}
-          <div className="mb-20">
-            <div className="mb-8 flex items-center gap-3">
-              <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-blue-500 to-violet-500" aria-hidden="true" />
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Focus</p>
-                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Research Areas</h3>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {researchAreas.map((area) => (
-                <div
-                  key={area.title}
-                  className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl ${area.card}`}
-                >
-                  <div className={`pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full blur-2xl ${area.glow}`} aria-hidden="true" />
-                  <div className={`relative mb-5 flex h-12 w-12 items-center justify-center rounded-xl shadow-sm transition-all duration-300 ${area.iconBox}`}>
-                    <area.icon className="h-6 w-6" />
-                  </div>
-                  <h4 className="relative mb-3 text-lg font-bold text-gray-900">{area.title}</h4>
-                  <p className="relative mb-5 text-sm leading-relaxed text-gray-600">{area.description}</p>
-                  <div className="relative mt-auto flex flex-wrap gap-1.5">
-                    {area.tags.map((tag) => (
-                      <span key={tag} className={`rounded-full border px-2.5 py-0.5 text-[0.7rem] font-medium ${area.chip}`}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Current Research Questions | Long-Term Goals */}
-          <div className="mb-20 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="flex flex-col rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
-                  <Lightbulb className="h-5 w-5" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Current Research Questions</h3>
-              </div>
-              <ol className="space-y-3">
-                {researchQuestions.map((question, index) => (
-                  <li
-                    key={question}
-                    className="flex gap-3 rounded-xl border border-gray-100 bg-gray-50/60 p-4 transition-colors duration-200 hover:border-indigo-200 hover:bg-indigo-50/40"
-                  >
-                    <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-700">
-                      {index + 1}
-                    </span>
-                    <p className="text-sm leading-relaxed text-gray-700">{question}</p>
-                  </li>
-                ))}
-              </ol>
-            </div>
-
-            <div className="flex flex-col rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-                  <Target className="h-5 w-5" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Long-Term Goals</h3>
-              </div>
-              <ul className="space-y-3">
-                {longTermGoals.map((goal) => (
-                  <li
-                    key={goal.title}
-                    className="flex gap-3 rounded-xl border border-gray-100 bg-gray-50/60 p-4 transition-colors duration-200 hover:border-emerald-200 hover:bg-emerald-50/40"
-                  >
-                    <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600">
-                      <goal.icon className="h-4 w-4" />
-                    </div>
-                    <p className="text-sm leading-relaxed text-gray-700">
-                      <span className="font-semibold text-gray-900">{goal.title}</span> — {goal.text}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Collaboration */}
-          <div className="mb-20">
-            <div className="relative overflow-hidden rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-blue-50/50 to-emerald-50 p-8 shadow-sm sm:p-10">
-              <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-indigo-100/60 blur-2xl" aria-hidden="true" />
-              <div className="pointer-events-none absolute -bottom-12 -left-12 h-40 w-40 rounded-full bg-emerald-100/60 blur-2xl" aria-hidden="true" />
-
-              <div className="relative">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600 shadow-sm">
-                  <Handshake className="h-6 w-6" />
-                </div>
-                <h3 className="mb-3 text-2xl font-bold tracking-tight text-gray-900">Collaboration</h3>
-                <p className="mb-6 max-w-3xl leading-relaxed text-gray-700">
-                  Great research happens at the boundaries between disciplines and institutions. I actively seek
-                  partnerships with academic researchers and industry practitioners in federated learning,
-                  self-supervised learning, medical AI, and AI security — collaborations that move trustworthy
-                  distributed AI from theory to practice through joint publications, shared infrastructure, and
-                  applied deployments in privacy-sensitive domains. If your work intersects these areas, I would be
-                  glad to explore how we can build together.
-                </p>
-                <div className="flex flex-wrap gap-2.5">
-                  {collaborationAreas.map((area, index) => (
-                    <span
-                      key={area}
-                      className={`inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm ${collabBadgeColors[index % collabBadgeColors.length]}`}
-                    >
-                      {area}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Methodologies & Tools */}
-          <div>
-            <div className="mb-8 flex items-center gap-3">
-              <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-blue-500 to-violet-500" aria-hidden="true" />
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">Toolkit</p>
-                <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Methodologies & Tools</h3>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3">
-              {methodologiesAndTools.map((tool) => (
-                <span
-                  key={tool}
-                  className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-sm font-medium text-gray-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 hover:shadow-sm"
-                >
-                  {tool}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Collaborations Section */}
-      <section id="research-collaborations" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Research Collaborations</h2>
-            <p className="text-lg text-gray-600">Building partnerships and advancing research together</p>
-          </div>
-
-          <div className="relative">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: false,
-              }}
-              className="w-full"
+          <nav className="flex items-center gap-1 sm:gap-2">
+            <Link
+              href="#about"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 md:inline-block"
             >
-              <CarouselContent className="-ml-4 md:-ml-6">
-                {/* Placeholder for future collaborations */}
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">+</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">University of Lille 1 S&T</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Tanmoy Mondal</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
+              About
+            </Link>
+            <Link
+              href="#news"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
+            >
+              News
+            </Link>
+            <Link
+              href="#publications"
+              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+            >
+              Publications
+            </Link>
+            <Link
+              href="#research"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 md:inline-block"
+            >
+              Research
+            </Link>
+            <Link
+              href="#awards"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 lg:inline-block"
+            >
+              Awards
+            </Link>
+            <Link
+              href="#journey"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 lg:inline-block"
+            >
+              Journey
+            </Link>
+            <Link
+              href="#academic-service"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
+            >
+              Service
+            </Link>
+            <Link
+              href="#contact"
+              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/blog"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 sm:inline-block"
+            >
+              Blog
+            </Link>
+            <div className="ml-2 pl-2 border-l border-slate-200 dark:border-slate-800">
+              <ThemeToggle />
+            </div>
+          </nav>
+        </div>
+      </header>
 
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">IIT</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">LUT University, Sweden</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Rajkumar Saini</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
+      {/* 1. HERO SECTION */}
+      <section id="profile" className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_320px]">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/60 dark:text-blue-300 mb-5">
+                <span className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
+                Post-Doctoral Fellow (ANRF Fellow) • Indian Institute of Science
+              </div>
 
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">IIT</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">IIT Kharagpur</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Saumik Bhattacharya</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
+              <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+                Dr. Siladittya Manna
+              </h1>
 
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">+</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">NIT Durgapur</h3>
-                        <p className="text-sm text-gray-600">Collaboration with Dr. Sayantari Ghosh</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-red-50 text-red-500 border-red-200">
-                            Active
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
+              {/* Single sentence headline */}
+              <p className="mt-5 text-lg leading-relaxed text-slate-700 dark:text-slate-300 sm:text-xl max-w-3xl">
+                I investigate vulnerabilities in PEFT-based federated learning frameworks and develop trustworthy distributed AI systems.
+              </p>
 
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">ISI</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-900">ISI Kolkata</h3>
-                        <p className="text-sm text-gray-600">Active member and contributor</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
-                            Member
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
+              {/* Restrained 4-5 buttons: Primary + Outline */}
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button asChild size="default" className="bg-blue-600 hover:bg-blue-700 text-white shadow-sm">
+                  <Link href="#publications">
+                    <BookOpen className="mr-2 h-4 w-4" />
+                    View Publications
+                  </Link>
+                </Button>
+                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
+                  <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Download CV
+                  </Link>
+                </Button>
+                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
+                  <Link href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                    <GraduationCap className="mr-2 h-4 w-4" />
+                    Google Scholar
+                  </Link>
+                </Button>
+                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
+                  <Link href="https://github.com/sadimanna" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    GitHub
+                  </Link>
+                </Button>
+                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
+                  <Link href="#contact">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Contact
+                  </Link>
+                </Button>
+              </div>
 
-                {/* Placeholder for future collaborations */}
-                <CarouselItem className="pl-4 md:pl-6 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow border-dashed">
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      {/* Logo placeholder */}
-                      {/* <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <div className="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">+</span>
-                        </div>
-                      </div> */}
-                      <div className="space-y-1">
-                        <h3 className="text-lg font-semibold text-gray-500">Future Collaborations</h3>
-                        <p className="text-sm text-gray-500">More research partnerships coming soon</p>
-                        <div className="flex items-center justify-center">
-                          <Badge variant="outline" className="bg-gray-50 text-gray-500 border-gray-200">
-                            Planning
-                          </Badge>
-                        </div>
-                      </div>
+              {/* Profile stats */}
+              <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+                {profileStats.map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 text-center shadow-xs dark:border-slate-800 dark:bg-slate-900/60"
+                  >
+                    <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">{stat.value}</div>
+                    <div className="mt-1 text-[0.7rem] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                      {stat.label}
                     </div>
                   </div>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-              <CarouselNext className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-            </Carousel>
+                ))}
+              </div>
+
+              {/* Venue counters (temporarily commented out per request)
+              <div className="mt-4 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+                {publicationMetrics.map((metric) => (
+                  <div
+                    key={metric.label}
+                    className={`flex flex-col items-center justify-center rounded-xl border px-3 py-3 shadow-sm transition-colors ${metric.theme === "indigo"
+                      ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
+                      : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
+                      }`}
+                  >
+                    <span className={`text-xl font-bold ${metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"}`}>
+                      {metric.value}
+                    </span>
+                    <span
+                      className={`mt-0.5 text-center text-[0.65rem] font-semibold uppercase tracking-wider ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"}`}
+                    >
+                      {metric.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              */}
+            </div>
+
+            {/* Profile Avatar */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="relative h-64 w-64 sm:h-72 sm:w-72 overflow-hidden rounded-2xl border-2 border-slate-200 shadow-md dark:border-slate-800">
+                  <Image
+                    src="/profilepic2.jpg"
+                    alt="Dr. Siladittya Manna"
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-3 -right-3 rounded-xl border border-slate-200 bg-white p-2.5 shadow-md dark:border-slate-800 dark:bg-slate-900">
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                    IISc Bangalore
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Latest Announcements Section */}
-      <section id="announcements" className="bg-blue-50 py-12">
-        <div className="container mx-auto max-w-3xl px-4">
-          <div className="text-center mb-10">
-            <h2 className="mb-3 text-3xl font-bold text-gray-900">Latest Announcements</h2>
-            <p className="text-gray-600">Recent publications and project updates</p>
+      {/* 2. SHORT BIO & RESEARCH TRAJECTORY */}
+      <section id="about" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Academic Background</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">About Me</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
           </div>
-          <div className="max-h-[380px] overflow-y-auto pr-2 md:pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-            <div className="relative border-l-2 border-blue-200 ml-3 md:ml-6 pl-6 md:pl-8 space-y-6">
-              {latestAnnouncements.map((announcement, idx) => (
-                <div key={idx} className="relative">
-                  {/* Timeline dot */}
-                  <div className="absolute -left-[33px] md:-left-[41px] top-4 h-4 w-4 rounded-full bg-blue-600 border-4 border-blue-50 shadow" />
 
-                  <Card className="border-gray-200 hover:shadow-md transition-shadow">
-                    <div className="flex flex-col sm:flex-row gap-4 p-4">
-                      {announcement.image && (
-                        <div className="flex-shrink-0 w-full sm:w-28 h-28 relative rounded-md overflow-hidden bg-gray-100">
-                          <Image src={announcement.image} alt={announcement.title} fill className="object-cover" />
-                        </div>
-                      )}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex flex-wrap items-center gap-2 mb-2">
-                          <Badge variant="secondary" className="bg-blue-100/50 text-blue-700 hover:bg-blue-100 border-blue-200">{announcement.category}</Badge>
-                          <span className="text-xs font-medium text-gray-500 flex items-center">
-                            <Calendar className="w-3 h-3 mr-1" />
-                            {announcement.date}
-                          </span>
-                        </div>
-                        <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1.5 leading-snug">{announcement.title}</h3>
-                        <p className="text-sm text-gray-600 mb-3 line-clamp-2">{announcement.description}</p>
-
-                        {announcement.link && announcement.link !== "#" && (
-                          <Button asChild variant="outline" size="sm" className="h-8 text-xs font-medium">
-                            <Link href={announcement.link} target="_blank" rel="noopener noreferrer">
-                              Read More <ChevronRight className="w-3 h-3 ml-1" />
-                            </Link>
-                          </Button>
-                        )}
-                      </div>
-                    </div>
-                  </Card>
+          {/* Research Trajectory Banner: Connecting SSL/Medical AI -> FL -> Security */}
+          <div className="mb-10 rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-50/90 via-indigo-50/60 to-blue-50/90 p-6 dark:border-blue-900/60 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-blue-950/40">
+            <div className="flex items-start gap-4">
+              <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white shadow-xs">
+                <Sparkles className="h-5 w-5" />
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                    Research Trajectory
+                  </span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">
+                    (How the pieces connect)
+                  </span>
                 </div>
-              ))}
+                <p className="mt-2 text-sm leading-relaxed text-slate-800 dark:text-slate-200 sm:text-base">
+                  <span className="font-semibold text-blue-700 dark:text-blue-400">Foundation (Ph.D. at ISI Kolkata):</span> Self-supervised representation learning and label-efficient medical image analysis ➔{" "}
+                  <span className="font-semibold text-indigo-700 dark:text-indigo-400">Distributed Expansion (HKBU & IISc):</span> Federated learning across decentralized medical data with non-IID heterogeneity ➔{" "}
+                  <span className="font-semibold text-purple-700 dark:text-purple-400">Current Frontier (Postdoc at IISc):</span> AI security, gradient inversion attacks, and privacy vulnerabilities in parameter-efficient fine-tuning (PEFT) adapters.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-7 dark:border-slate-800 dark:bg-slate-800/40">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Who I Am</h3>
+              <p className="leading-relaxed text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                I am an ANRF Postdoctoral Fellow at the Indian Institute of Science (IISc), Bangalore, working in the Department of Computational and Data Sciences with Prof. Anirban Chakraborty. Prior to IISc, I was a Senior Research Assistant at Hong Kong Baptist University with Prof. Yiu-Ming Cheung, and completed my Ph.D. in Computer Science at the Indian Statistical Institute (ISI), Kolkata, under the supervision of Prof. Umapada Pal.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {primaryResearchKeywords.map((kw) => (
+                  <Badge key={kw} variant="secondary" className="bg-white text-slate-700 border border-slate-200 dark:bg-slate-850 dark:text-slate-300 dark:border-slate-700">
+                    {kw}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-7 dark:border-slate-800 dark:bg-slate-800/40">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Research Vision</h3>
+              <p className="leading-relaxed text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                My overarching goal is to build privacy-preserving, adversarial-resilient distributed AI systems. When healthcare providers or autonomous agents collaborate across institutions, sharing parameters must not compromise proprietary data. I investigate how parameter-efficient adapters (PEFT) and foundation models can be secured against inversion attacks, poisoning, and information leakage without sacrificing convergence speed.
+              </p>
+              <p className="mt-3 text-xs italic text-slate-500 dark:text-slate-400">
+                “Building trustworthy machine learning systems that learn collaboratively while preserving privacy, security, and sample efficiency.”
+              </p>
+            </div>
+          </div>
+
+          {/* Prospective Students Note */}
+          <div className="mt-8 rounded-xl border border-slate-200 bg-white p-5 shadow-xs dark:border-slate-800 dark:bg-slate-900/90">
+            <div className="flex items-start gap-3">
+              <Users className="mt-0.5 h-5 w-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+              <div>
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+                  Prospective Students & Research Collaborations
+                </h4>
+                <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  I actively mentor undergraduate and graduate students in federated learning, gradient inversion attacks, and self-supervised medical computer vision. If you have strong programming skills in PyTorch, solid mathematical grounding, and a keen interest in trustworthy AI, feel free to reach out with your CV and research statement.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        {/* Automated Paper Topics Section */}
-        <div className="mt-8 mx-auto w-full max-w-[84rem] px-4">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Automated List of Papers for Several Research Topics</h2>
-          <p className="text-sm text-center text-gray-600 mb-3">Auto-scrolling list. Hover to pause and click any topic.</p>
-          <div className="paper-topics-marquee-wrapper relative overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-r from-blue-50 via-emerald-50 to-blue-50 py-3">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-blue-50 to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-blue-50 to-transparent" />
+      </section>
 
-            <div className="paper-topics-marquee-track">
-              {[0, 1].map((copyIndex) => (
-                <div key={copyIndex} className="paper-topics-marquee-content" aria-hidden={copyIndex === 1}>
-                  {automatedPaperTopics.map((topic) => (
+      {/* 3. NEWS (3-5 items) */}
+      <section id="news" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-10 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Recent Updates</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Latest News</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+          </div>
+
+          <div className="space-y-4">
+            {latestAnnouncements.map((news, idx) => (
+              <div
+                key={idx}
+                className="group relative rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs transition-all duration-200 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-700"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
+                  <div className="flex items-center gap-2">
+                    <Badge variant="outline" className="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900 dark:bg-blue-950 dark:text-blue-300 text-xs">
+                      {news.category}
+                    </Badge>
+                    <span className="text-xs text-slate-500 dark:text-slate-400 flex items-center">
+                      <Calendar className="mr-1 h-3 w-3" />
+                      {news.date}
+                    </span>
+                  </div>
+                  {news.link && news.link !== "#" && (
                     <Link
-                      key={`${topic.url}-${copyIndex}`}
-                      href={topic.url}
-                      className="flex-shrink-0 rounded-full border border-emerald-300 bg-white/90 px-4 py-2 text-sm font-medium text-emerald-800 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-emerald-100 hover:shadow"
+                      href={news.link}
+                      target={news.link.startsWith("http") ? "_blank" : undefined}
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
                     >
-                      {topic.name}
+                      Read more <ChevronRight className="ml-0.5 h-3 w-3" />
                     </Link>
+                  )}
+                </div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
+                  {news.title}
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                  {news.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. SELECTED PUBLICATIONS (with Under Review / In Preparation) */}
+      <section id="publications" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Scholarly Output</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Selected Publications</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Peer-reviewed articles, conference proceedings, and active manuscripts under review in Federated Learning, Security, and Self-Supervised Medical AI.
+            </p>
+          </div>
+
+          {/* Filter Controls */}
+          <div className="mb-8 rounded-xl border border-slate-200/80 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-850/60">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <div>
+                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Filter by Type
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {publicationTypeFilters.map((filter) => (
+                    <Button
+                      key={filter}
+                      type="button"
+                      variant={selectedPublicationType === filter ? "default" : "outline"}
+                      size="sm"
+                      className={`h-7 text-xs ${
+                        selectedPublicationType === filter
+                          ? "bg-blue-600 hover:bg-blue-700 text-white"
+                          : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
+                      }`}
+                      onClick={() => setSelectedPublicationType(filter)}
+                    >
+                      {filter}
+                    </Button>
                   ))}
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Section */}
-      <section id="publications" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Publications</h2>
-            <p className="text-lg text-gray-600">Peer-reviewed research contributions to the scientific community</p>
-          </div>
-
-          <div className="mb-8 space-y-5 rounded-lg border border-blue-100 bg-blue-50/50 p-4">
-            <div>
-              <div className="mb-3 text-sm font-semibold text-gray-700">Filter by type</div>
-              <div className="flex flex-wrap gap-2">
-                {publicationTypeFilters.map((filter) => (
-                  <Button
-                    key={filter}
-                    type="button"
-                    variant={selectedPublicationType === filter ? "default" : "outline"}
-                    size="sm"
-                    className={selectedPublicationType === filter ? "" : "bg-white"}
-                    onClick={() => setSelectedPublicationType(filter)}
-                  >
-                    {filter}
-                  </Button>
-                ))}
               </div>
-            </div>
 
-            <div>
-              <div className="mb-3 text-sm font-semibold text-gray-700">Filter by topic</div>
-              <div className="flex flex-wrap gap-2">
-                {publicationTopicFilters.map((filter) => (
-                  <Button
-                    key={filter}
-                    type="button"
-                    variant={selectedPublicationTopic === filter ? "default" : "outline"}
-                    size="sm"
-                    className={selectedPublicationTopic === filter ? "" : "bg-white"}
-                    onClick={() => setSelectedPublicationTopic(filter)}
-                  >
-                    {filter}
-                  </Button>
-                ))}
+              <div>
+                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Filter by Research Area
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {publicationTopicFilters.map((filter) => (
+                    <Button
+                      key={filter}
+                      type="button"
+                      variant={selectedPublicationTopic === filter ? "default" : "outline"}
+                      size="sm"
+                      className={`h-7 text-xs ${
+                        selectedPublicationTopic === filter
+                          ? "bg-blue-600 hover:bg-blue-700 text-white"
+                          : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
+                      }`}
+                      onClick={() => setSelectedPublicationTopic(filter)}
+                    >
+                      {filter}
+                    </Button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="mb-4 text-sm text-gray-600">
-            Showing {publicationCards.length} publication{publicationCards.length === 1 ? "" : "s"}
+          <div className="mb-4 text-xs font-medium text-slate-500 dark:text-slate-400">
+            Showing {publicationCards.length} matching publication{publicationCards.length === 1 ? "" : "s"}
           </div>
 
-          <div className="max-h-[460px] overflow-y-auto pr-2 md:pr-4 py-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-            <div className="grid grid-cols-1 gap-5">
-              {publicationCards.map((pub) => (
+          {/* Publications List */}
+          <div className="space-y-4">
+            {publicationCards.map((pub) => {
+              const isUnderReview = pub.category === "Under Review" || pub.type === "under_review"
+
+              return (
                 <Card
                   key={pub.id}
-                  className="border-gray-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                  className={`border transition-all duration-200 hover:shadow-xs ${
+                    isUnderReview
+                      ? "border-amber-200/80 bg-amber-50/20 dark:border-amber-900/40 dark:bg-amber-950/10"
+                      : "border-slate-200/80 bg-white dark:border-slate-800 dark:bg-slate-900/80"
+                  }`}
                 >
-                  <CardHeader>
-                    <div className="mb-3 flex flex-wrap gap-2">
-                      {pub.featured && <Badge className="bg-blue-600 text-white">Featured</Badge>}
-                      <Badge variant="secondary">{pub.category}</Badge>
+                  <CardHeader className="pb-3">
+                    <div className="mb-2 flex flex-wrap items-center gap-2">
+                      {isUnderReview ? (
+                        <Badge className="bg-amber-600 text-white text-xs">
+                          Under Review / In Preparation
+                        </Badge>
+                      ) : (
+                        <Badge variant="secondary" className="text-xs">
+                          {pub.category}
+                        </Badge>
+                      )}
+
+                      {pub.featured && !isUnderReview && (
+                        <Badge className="bg-blue-600 text-white text-xs">Featured</Badge>
+                      )}
+
                       {pub.topics.map((topic) => (
-                        <Badge key={topic} variant="outline" className="bg-white">
+                        <Badge
+                          key={topic}
+                          variant="outline"
+                          className="bg-white/80 dark:bg-slate-800 text-xs border-slate-200 dark:border-slate-700"
+                        >
                           {topic}
                         </Badge>
                       ))}
                     </div>
-                    <CardTitle className="text-xl leading-snug text-gray-900">{pub.title}</CardTitle>
-                    <CardDescription className="mt-3 text-sm leading-6">
-                      <span className="font-medium text-gray-800">{pub.authors}</span>
+
+                    <CardTitle className="text-lg font-bold leading-snug text-slate-900 dark:text-white">
+                      {pub.title}
+                    </CardTitle>
+
+                    <CardDescription className="mt-1.5 text-xs text-slate-600 dark:text-slate-400">
+                      <span className="font-medium text-slate-800 dark:text-slate-200">{pub.authors}</span>
                       <br />
                       <span className="italic">{pub.journal}</span> • {pub.year}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+
+                  <CardContent className="pt-0">
+                    <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-2 mb-3">
+                      {pub.abstract}
+                    </p>
+
                     <div className="flex flex-wrap gap-2">
-                      <Button asChild size="sm" variant="outline" className="bg-white">
-                        <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Paper
-                        </Link>
-                      </Button>
+                      {pub.link && pub.link !== "#" && (
+                        <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
+                          <Link href={pub.link} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="mr-1 h-3.5 w-3.5" />
+                            Paper
+                          </Link>
+                        </Button>
+                      )}
                       {pub.code && (
-                        <Button asChild size="sm" variant="outline" className="bg-white">
+                        <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
                           <Link href={pub.code} target="_blank" rel="noopener noreferrer">
                             Code
                           </Link>
                         </Button>
                       )}
-                      {pub.bibtex && (
-                        <Button asChild size="sm" variant="outline" className="bg-white">
-                          <Link href={pub.bibtex} target="_blank" rel="noopener noreferrer">
-                            BibTeX
-                          </Link>
-                        </Button>
-                      )}
-                      <Button asChild size="sm" variant="default" className="bg-blue-600 hover:bg-blue-700 text-white">
+                      <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
                         <Link href={`/papers/paper_${pub.id}`}>
-                          Project Page
+                          Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
                         </Link>
                       </Button>
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+              )
+            })}
 
-              {publicationCards.length === 0 && (
-                <Card className="border-dashed bg-gray-50">
-                  <CardContent className="p-8 text-center text-gray-600">
-                    No publications match the selected filters.
-                  </CardContent>
-                </Card>
-              )}
-            </div>
+            {publicationCards.length === 0 && (
+              <div className="rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700">
+                No publications found for the selected type and research area filters.
+              </div>
+            )}
           </div>
         </div>
       </section>
 
-      {/* Experience & Education Timeline Section */}
-      <section id="experience-education" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-50/60 to-white overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-gradient-to-r from-blue-50 to-emerald-50 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-5">
-              <Compass className="h-4 w-4" />
-              My Path
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Journey</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A timeline of my academic and professional milestones
+      {/* 5. RESEARCH AREAS (Consolidated pillars, folded methodologies, unified tags) */}
+      <section id="research" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Core Pillars</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Research Areas</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Integrated research domains bridging distributed optimization, threat analysis, representation learning, and medical AI.
             </p>
           </div>
 
-          <div className="relative">
-            {/* Vertical timeline line */}
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-300 via-emerald-300 to-blue-300 rounded-full md:left-1/2 md:-translate-x-1/2" />
-
-            <div className="space-y-6 md:space-y-0">
-              {timelineData.map((item, index) => {
-                const isLeft = index % 2 === 0
-                const isWork = item.type === "work"
-                const accent = isWork
-                  ? { iconColor: "text-blue-600", badge: "bg-blue-100 text-blue-800", ring: "ring-blue-100" }
-                  : { iconColor: "text-emerald-600", badge: "bg-emerald-100 text-emerald-800", ring: "ring-emerald-100" }
-                const isCurrent = item.period.includes("Present")
-
-                return (
-                  <div
-                    key={index}
-                    className={`relative pl-16 md:pl-0 md:grid md:grid-cols-[1fr_4rem_1fr] md:items-center md:py-2`}
-                  >
-                    {/* Node on the timeline */}
-                    <div
-                      className={`absolute left-6 top-5 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-md ring-4 ${accent.ring}`}
-                    >
-                      {isWork ? (
-                        <Briefcase className={`h-5 w-5 ${accent.iconColor}`} />
-                      ) : (
-                        <GraduationCap className={`h-5 w-5 ${accent.iconColor}`} />
-                      )}
-                      {isCurrent && (
-                        <span className="absolute -right-0.5 -top-0.5 flex h-3 w-3">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Card */}
-                    <div className={isLeft ? "md:col-start-1 md:pr-10" : "md:col-start-3 md:pl-10"}>
-                      <div className="group relative rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-100 hover:shadow-xl">
-                        <div className={`absolute inset-x-0 top-0 h-1 rounded-t-2xl ${isWork ? "bg-gradient-to-r from-blue-400 to-blue-200" : "bg-gradient-to-r from-emerald-400 to-emerald-200"}`} />
-                        <div className="flex items-start gap-4">
-                          {item.logo && (
-                            <div className="flex-none">
-                              <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border border-gray-100 bg-white p-1.5 shadow-sm transition-transform duration-300 group-hover:scale-105">
-                                <Image
-                                  src={item.logo}
-                                  alt={item.organization}
-                                  width={56}
-                                  height={56}
-                                  className="h-full w-full object-contain"
-                                />
-                              </div>
-                            </div>
-                          )}
-                          <div className="min-w-0 flex-1">
-                            <div className="mb-2 flex flex-wrap items-center gap-2">
-                              <Badge variant="secondary" className={`${accent.badge} border-none`}>
-                                {item.period}
-                              </Badge>
-                              {isCurrent && (
-                                <Badge variant="secondary" className="bg-emerald-100 text-emerald-800 border-none">
-                                  Current
-                                </Badge>
-                              )}
-                            </div>
-                            <h4 className="text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-blue-700">
-                              {item.title}
-                            </h4>
-                            <p className="mt-0.5 text-sm font-medium text-gray-700">
-                              {item.organization}
-                              {item.location && <span className="font-normal text-gray-400"> • {item.location}</span>}
-                            </p>
-                          </div>
-                        </div>
-                        {item.description && (
-                          <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.description}</p>
-                        )}
-                        {item.supervisor && (
-                          <p className="mt-3 flex items-center gap-1.5 text-xs italic text-gray-500">
-                            <Users className="h-3.5 w-3.5" />
-                            Under supervision of {item.supervisor}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Academic Service & Leadership Section */}
-      <AcademicServiceSection />
-
-
-      {/* AI Applications Section */}
-      <section id="ai-applications" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">AI Based Projects in Progress</h2>
-            <p className="text-lg text-gray-600">
-              Exploring and building innovative AI-powered solutions
-            </p>
-          </div>
-          <div className="relative">
-            <Carousel
-              className="w-full"
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-            >
-              <CarouselContent className="-ml-4">
-                {aiApplications.map((app, idx) => (
-                  <CarouselItem key={app.id || idx} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <Card className="h-full hover:shadow-lg transition-all duration-300 hover:scale-105 bg-white/80 backdrop-blur-sm border-gray-200">
-                      <CardHeader className="pb-3">
-                        <div className="flex items-center gap-2 mb-2">
-                          <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
-                            {app.status || "In Progress"}
-                          </Badge>
-                          {app.tags && app.tags.length > 0 && (
-                            <div className="flex flex-wrap gap-1">
-                              {app.tags.map((tag, i) => (
-                                <span
-                                  key={i}
-                                  className="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded"
-                                >
-                                  {tag}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                        <CardTitle className="text-lg leading-tight line-clamp-2 text-gray-900">
-                          {app.title}
-                        </CardTitle>
-                        {app.subtitle && (
-                          <div className="text-sm text-gray-500">{app.subtitle}</div>
-                        )}
-                      </CardHeader>
-                      <CardContent className="flex-1 pb-4">
-                        <p className="text-gray-700 mb-2 leading-relaxed text-sm line-clamp-3">
-                          {app.description}
-                        </p>
-                        {app.link && app.link !== "#" && (
-                          <div className="mt-2">
-                            <Link
-                              href={app.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                            >
-                              <ExternalLink className="w-4 h-4 mr-1" />
-                              View Project
-                            </Link>
-                          </div>
-                        )}
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-              <CarouselNext className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-            </Carousel>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog: The Owl Section */}
-      <section id="blog" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Blog: The Owl</h2>
-            <p className="text-lg text-gray-600">Learn, Share, Grow - Technical insights and tutorials</p>
-          </div>
-
-          {/* Rounded Rectangle Frame with Carousel */}
-          <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200 p-8 mx-auto max-w-5xl">
-            {/* Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-2xl"></div>
-
-            {/* Content Container */}
-            <div className="relative z-10">
-              <Carousel
-                className="w-full"
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {researchPillars.map((area) => (
+              <div
+                key={area.title}
+                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
               >
-                <CarouselContent className="-ml-4">
-                  {mediumArticles.map((article) => (
-                    <CarouselItem key={article.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                      <Card className="h-full hover:shadow-lg transition-all duration-300 hover:scale-105 bg-white/80 backdrop-blur-sm border-gray-200">
-                        <CardHeader className="pb-3">
-                          <div className="flex items-start justify-between mb-2">
-                            <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                              Article
-                            </Badge>
-                            <div className="flex items-center gap-1 text-xs text-gray-500">
-                              <Calendar className="w-3 h-3" />
-                              {new Date(article.publishDate).toLocaleDateString('en-US', {
-                                year: 'numeric',
-                                month: 'short',
-                                day: 'numeric'
-                              })}
-                            </div>
-                          </div>
-                          <CardTitle className="text-lg leading-tight line-clamp-2 text-gray-900">
-                            {article.title}
-                          </CardTitle>
-                          <div className="flex items-center gap-2 text-sm text-gray-500">
-                            <span>{article.readTime}</span>
-                          </div>
-                        </CardHeader>
-                        <CardContent className="flex-1 pb-4">
-                          <p className="text-gray-700 mb-4 leading-relaxed line-clamp-3 text-sm">{article.excerpt}</p>
-                          <Link
-                            href={article.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors text-sm group"
-                          >
-                            Read on Medium
-                            <ExternalLink className="w-3 h-3 ml-1 group-hover:translate-x-0.5 transition-transform" />
-                          </Link>
-                        </CardContent>
-                      </Card>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                {/* Custom Navigation Arrows Inside Frame */}
-                <CarouselPrevious className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-                <CarouselNext className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 shadow-lg h-12 w-12 transition-all duration-200 hover:scale-110" />
-              </Carousel>
-
-              {/* Article Count and Navigation Dots */}
-              <div className="flex flex-col items-center mt-8 space-y-4">
-                {/* Navigation Dots */}
-                <div className="flex justify-center space-x-2">
-                  {Array.from({ length: Math.ceil(mediumArticles.length / 3) }).map((_, index) => (
-                    <div
-                      key={index}
-                      className="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors cursor-pointer"
-                    />
-                  ))}
-                </div>
-
-                {/* Article Count */}
-                <div className="text-center">
-                  <p className="text-sm text-gray-600 bg-gray-100 px-4 py-2 rounded-full">
-                    {mediumArticles.length} article{mediumArticles.length !== 1 ? "s" : ""} available
+                <div>
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
+                    <area.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">{area.title}</h3>
+                  <p className="mt-2.5 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                    {area.description}
                   </p>
                 </div>
+
+                <div className="mt-5 border-t border-slate-100 pt-3 dark:border-slate-800">
+                  <div className="flex flex-wrap gap-1.5">
+                    {area.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[0.65rem] font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
+            ))}
+          </div>
+
+          {/* Research Questions & Long-Term Goals */}
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+              <div className="mb-4 flex items-center gap-2.5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
+                  <Lightbulb className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white">Current Research Questions</h3>
+              </div>
+              <ul className="space-y-3">
+                {coreResearchQuestions.map((q, idx) => (
+                  <li key={idx} className="flex gap-2.5 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <span className="font-bold text-blue-600 dark:text-blue-400 mt-0.5">{idx + 1}.</span>
+                    <span>{q}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            {/* Decorative Elements */}
-            <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-20"></div>
-            <div className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full opacity-20"></div>
+            <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+              <div className="mb-4 flex items-center gap-2.5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400">
+                  <Target className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white">Long-Term Research Goals</h3>
+              </div>
+              <ul className="space-y-3">
+                {longTermGoals.map((goal, idx) => (
+                  <li key={idx} className="flex gap-2.5 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-slate-900 dark:text-white">{goal.title}: </span>
+                      {goal.text}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Other Activities - Photography Section (temporarily commented out for faster page load) */}
-      {/* <section id="photography" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Other Activities</h2>
-            <p className="text-lg text-gray-600">Exploring creativity beyond academic research</p>
+      {/* 6. AWARDS & FUNDING (ANRF Fellowship has its own dedicated section) */}
+      <section id="awards" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Honors & Grants</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Awards & Funding</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
           </div>
 
-          <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200 p-8 mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-pink-50 rounded-2xl"></div>
-
-            <div className="relative z-10">
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-3">
-                  <div className="p-3 bg-purple-100 rounded-full">
-                    <Camera className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-800">Photography</h3>
-                    <p className="text-sm text-gray-600">Capturing moments through the lens</p>
-                  </div>
+          <div className="rounded-2xl border-2 border-blue-500/30 bg-gradient-to-br from-blue-50/80 via-white to-indigo-50/60 p-8 shadow-sm dark:border-blue-900/60 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950/40">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-md">
+                  <Award className="h-7 w-7" />
                 </div>
-                <Link
-                  href="https://www.photocrowd.com/photographer-community/466233/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 font-medium transition-all duration-200 hover:scale-105 shadow-md group"
-                >
-                  View Profile
-                  <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-0.5 transition-transform" />
-                </Link>
+                <div>
+                  <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-800 dark:bg-blue-950 dark:text-blue-300 mb-2">
+                    Premier National Fellowship • 2026 – 2028
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+                    ANRF National Post-Doctoral Fellowship (N-PDF)
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-slate-600 dark:text-slate-300">
+                    Anusandhan National Research Foundation (ANRF), Department of Science & Technology, Government of India
+                  </p>
+                </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 mb-8 justify-center">
-                {categories.map((category) => (
-                  <Button
-                    key={category}
-                    variant={selectedCategory === category ? "default" : "outline"}
-                    size="sm"
-                    onClick={() => setSelectedCategory(category)}
-                    className={`transition-all duration-200 ${selectedCategory === category
-                      ? "bg-purple-600 hover:bg-purple-700 shadow-md scale-105"
-                      : "bg-white/80 backdrop-blur-sm border-purple-200 hover:bg-purple-50 hover:border-purple-300"
-                      }`}
-                  >
-                    {category}
-                  </Button>
-                ))}
-              </div>
+              <Badge variant="outline" className="self-start border-blue-300 bg-white px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-800 dark:bg-slate-800 dark:text-blue-300">
+                Active Award
+              </Badge>
+            </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                {filteredImages.map((image) => (
-                  <Card
-                    key={image.id}
-                    className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white/80 backdrop-blur-sm border-gray-200 group"
-                  >
-                    <div className="relative h-64 w-full overflow-hidden">
-                      <Image
-                        src={image.url || "/placeholder.svg"}
-                        alt={image.title}
-                        fill
-                        className="object-cover transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 transform scale-0 group-hover:scale-100 transition-transform duration-300">
-                          <Camera className="w-5 h-5 text-purple-600" />
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3 border-t border-slate-200/80 pt-6 dark:border-slate-800">
+              <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
+                <div className="text-[0.7rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Host Institute</div>
+                <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Indian Institute of Science (IISc), Bangalore</div>
+              </div>
+              <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
+                <div className="text-[0.7rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Faculty Mentor</div>
+                <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Prof. Anirban Chakraborty (Dept. of CDS)</div>
+              </div>
+              <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
+                <div className="text-[0.7rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Research Focus</div>
+                <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Security & Privacy in PEFT-based Federated Learning</div>
+              </div>
+            </div>
+
+            <p className="mt-4 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+              The ANRF National Post-Doctoral Fellowship is one of the highest individual postdoctoral honors in India, awarded through rigorous national peer-review to support independent, early-career researchers conducting high-impact scientific inquiry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. EXPERIENCE & EDUCATION (Visual Timeline with Logos) */}
+      <section id="journey" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-12 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Academic Milestones</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Journey & Experience</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+          </div>
+
+          <div className="relative border-l-2 border-blue-200 dark:border-blue-900 ml-4 sm:ml-6 pl-6 sm:pl-8 space-y-8">
+            {timelineData.map((item, idx) => {
+              const isCurrent = item.period.includes("Present")
+              return (
+                <div key={idx} className="relative group">
+                  {/* Timeline Node */}
+                  <div className={`absolute -left-[31px] sm:-left-[39px] top-1.5 flex h-7 w-7 items-center justify-center rounded-full border-2 bg-white shadow-xs dark:bg-slate-900 ${
+                    isCurrent
+                      ? "border-blue-600 ring-4 ring-blue-100 dark:ring-blue-950"
+                      : "border-slate-300 dark:border-slate-700"
+                  }`}>
+                    {item.type === "work" ? (
+                      <Briefcase className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+                    ) : (
+                      <GraduationCap className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                    )}
+                  </div>
+
+                  {/* Card */}
+                  <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-xs transition-all duration-200 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900">
+                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+                      <div className="flex items-start gap-3.5">
+                        {item.logo && (
+                          <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-white p-1 shadow-xs dark:border-slate-800 dark:bg-slate-800">
+                            <Image
+                              src={item.logo}
+                              alt={item.organization}
+                              fill
+                              className="object-contain p-1"
+                            />
+                          </div>
+                        )}
+                        <div>
+                          <h3 className="text-base font-bold text-slate-900 dark:text-white leading-tight">
+                            {item.title}
+                          </h3>
+                          <div className="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-300">
+                            {item.organization} • {item.location}
+                          </div>
+                          {item.supervisor && (
+                            <div className="mt-1 text-xs italic text-slate-500 dark:text-slate-400">
+                              Advisor: {item.supervisor}
+                            </div>
+                          )}
                         </div>
                       </div>
-                      <div className="absolute top-3 left-3">
-                        <Badge
-                          variant="secondary"
-                          className="bg-white/90 backdrop-blur-sm text-purple-700 border-purple-200"
-                        >
-                          {image.category}
-                        </Badge>
-                      </div>
-                    </div>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg text-gray-900 group-hover:text-purple-700 transition-colors">
-                        {image.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardFooter className="pt-0 flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm text-gray-600 flex items-center gap-1">
-                          <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                          {image.location}
-                        </span>
-                      </div>
-                      <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-full">{image.year}</span>
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div>
 
-              <div className="flex flex-col items-center space-y-4">
-                <div className="flex flex-wrap justify-center gap-4">
-                  <div className="text-center p-3 bg-purple-50 rounded-lg border border-purple-200">
-                    <div className="text-xl font-bold text-purple-600">{filteredImages.length}</div>
-                    <div className="text-xs text-gray-600">
-                      {selectedCategory === "All" ? "Total Photos" : `${selectedCategory} Photos`}
-                    </div>
-                  </div>
-                  <div className="text-center p-3 bg-pink-50 rounded-lg border border-pink-200">
-                    <div className="text-xl font-bold text-pink-600">{categories.length - 1}</div>
-                    <div className="text-xs text-gray-600">Categories</div>
-                  </div>
-                </div>
-
-                <div className="flex justify-center space-x-2">
-                  {categories.map((category, index) => (
-                    <button
-                      key={category}
-                      onClick={() => setSelectedCategory(category)}
-                      className={`w-3 h-3 rounded-full transition-all duration-200 ${selectedCategory === category ? "bg-purple-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
+                      <Badge
+                        variant="secondary"
+                        className={`self-start text-[0.7rem] ${
+                          isCurrent
+                            ? "bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 font-bold"
+                            : ""
                         }`}
-                      aria-label={`Filter by ${category}`}
-                    />
-                  ))}
-                </div>
+                      >
+                        {item.period}
+                      </Badge>
+                    </div>
 
-                <div className="text-center mt-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-100">
-                  <p className="text-gray-700 italic text-lg font-medium">
-                    "Photography is the art of capturing moments that would otherwise be lost to time."
-                  </p>
-                  <div className="mt-2 flex justify-center">
-                    <div className="w-12 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
+                    <p className="mt-3 text-xs leading-relaxed text-slate-600 dark:text-slate-300 border-t border-slate-100 pt-2.5 dark:border-slate-800">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full opacity-20"></div>
-            <div className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-20"></div>
-            <div className="absolute top-1/2 left-8 w-8 h-8 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full opacity-15"></div>
+              )
+            })}
           </div>
         </div>
       </section>
-      */}
 
-      {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gray-400">
-            © 2026 Dr. Siladittya Manna. All rights reserved. |
-            <Link href="mailto:siladittyam@iisc.ac.in" className="text-blue-400 hover:text-blue-300 ml-1">
-              siladittyam@iisc.ac.in
-            </Link>
-          </p>
+      {/* 8. CITATIONS & GLOBAL COLLABORATIONS */}
+      <section id="impact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Scholarly Reach</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Impact & Global Network</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Automated citation metrics synced with Google Scholar, coupled with an active collaborative network across France, Sweden, Hong Kong, and India.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <CitationsChart />
+            <CollaborationMap />
+          </div>
+        </div>
+      </section>
+
+      {/* 9. ACADEMIC SERVICE & LEADERSHIP */}
+      <div id="academic-service">
+        <AcademicServiceSection />
+      </div>
+
+      {/* 10. CURATED RESEARCH TOPICS (Static display with curated reading lists explainer) */}
+      <section id="reading-lists" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 text-center">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
+              <Library className="h-3.5 w-3.5" />
+              Open Research Bibliographies
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Curated Research Reading Lists
+            </h2>
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+              Carefully curated, active reading lists and literature repositories tracking the latest advances across key subfields. These static bibliographies serve as comprehensive entry points for researchers and students.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {staticTopicBibliographies.map((topic) => (
+              <Link
+                key={topic.name}
+                href={topic.url}
+                className="group flex flex-col justify-between rounded-xl border border-slate-200/80 bg-slate-50/50 p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-white hover:shadow-xs dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-600 dark:hover:bg-slate-800"
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-xs text-blue-600 dark:text-blue-400 group-hover:underline">
+                      {topic.name}
+                    </span>
+                    <ArrowRight className="h-3.5 w-3.5 text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-blue-600" />
+                  </div>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                    {topic.description}
+                  </p>
+                </div>
+                <div className="mt-3 text-[0.65rem] font-medium text-slate-400">
+                  Explore Reading List →
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 11. AI PROJECTS & TECHNICAL BLOG (Moved lower) */}
+      <section id="projects-blog" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+            {/* AI Projects */}
+            <div>
+              <div className="mb-6 flex items-center justify-between">
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">Software & Prototypes</span>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">AI Projects</h3>
+                </div>
+                <Button asChild variant="outline" size="sm" className="text-xs">
+                  <Link href="/papers">
+                    All Projects <ChevronRight className="ml-1 h-3.5 w-3.5" />
+                  </Link>
+                </Button>
+              </div>
+
+              <div className="space-y-4">
+                {aiApplications.map((app) => (
+                  <div
+                    key={app.id}
+                    className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-xs dark:border-slate-800 dark:bg-slate-900"
+                  >
+                    <div className="flex items-center justify-between">
+                      <h4 className="font-bold text-sm text-slate-900 dark:text-white">{app.title}</h4>
+                      <Badge variant="outline" className="text-[0.65rem] border-emerald-300 bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                        {app.status}
+                      </Badge>
+                    </div>
+                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                      {app.description}
+                    </p>
+                    <div className="mt-3 flex items-center justify-between">
+                      <div className="flex flex-wrap gap-1">
+                        {app.tags.map((t) => (
+                          <span key={t} className="rounded bg-slate-100 px-1.5 py-0.5 text-[0.65rem] text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      {app.link && app.link !== "#" && (
+                        <Link
+                          href={app.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center"
+                        >
+                          View <ExternalLink className="ml-1 h-3 w-3" />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Technical Blog */}
+            <div>
+              <div className="mb-6 flex items-center justify-between">
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">Technical Writing</span>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Blog: The Owl</h3>
+                </div>
+                <Button asChild variant="outline" size="sm" className="text-xs">
+                  <Link href="/blog">
+                    Read Blog <ChevronRight className="ml-1 h-3.5 w-3.5" />
+                  </Link>
+                </Button>
+              </div>
+
+              <div className="space-y-4">
+                {mediumArticles.map((art) => (
+                  <div
+                    key={art.id}
+                    className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-xs dark:border-slate-800 dark:bg-slate-900"
+                  >
+                    <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
+                      <span>{art.publishDate}</span>
+                      <span>{art.readTime}</span>
+                    </div>
+                    <h4 className="font-bold text-sm text-slate-900 dark:text-white leading-snug">
+                      {art.title}
+                    </h4>
+                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-300 line-clamp-2">
+                      {art.excerpt}
+                    </p>
+                    <div className="mt-2.5">
+                      <Link
+                        href={art.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 inline-flex items-center"
+                      >
+                        Read on Medium <ExternalLink className="ml-1 h-3 w-3" />
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. CONTACT SECTION */}
+      <section id="contact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-10 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Get in Touch</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Contact</h2>
+            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
+              I am open to academic discussions, guest talks, and joint research collaborations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 dark:border-slate-800 dark:bg-slate-850">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3">
+                <MapPin className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                Affiliation & Office
+              </h3>
+              <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                <strong className="text-slate-900 dark:text-white">Visual Computing Lab</strong><br />
+                Department of Computational and Data Sciences (CDS)<br />
+                Indian Institute of Science (IISc)<br />
+                CV Raman Rd, Bengaluru, Karnataka 560012, India
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 dark:border-slate-800 dark:bg-slate-850">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3">
+                <Mail className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                Email Correspondence
+              </h3>
+              <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                Primary:{" "}
+                <Link href="mailto:siladittyam@iisc.ac.in" className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
+                  siladittyam@iisc.ac.in
+                </Link>
+                <br />
+                Alternate:{" "}
+                <Link href="mailto:siladittya.manna@gmail.com" className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
+                  siladittya.manna@gmail.com
+                </Link>
+              </p>
+              <div className="mt-4">
+                <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white text-xs">
+                  <Link href="mailto:siladittyam@iisc.ac.in">
+                    <Mail className="mr-1.5 h-3.5 w-3.5" /> Send an Email
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 13. FOOTER (with Dark Mode toggle and Last Updated date) */}
+      <footer className="border-t border-slate-200 bg-slate-900 text-white py-10 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <div>
+            © 2026 Dr. Siladittya Manna • Visual Computing Lab, IISc Bangalore
+          </div>
+
+          <div className="flex items-center gap-4">
+            <span className="font-medium text-slate-300">Last updated: October 2026</span>
+            <div className="border-l border-slate-700 pl-4">
+              <ThemeToggle />
+            </div>
+          </div>
         </div>
       </footer>
     </div>
