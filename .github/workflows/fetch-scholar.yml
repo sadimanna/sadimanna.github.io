@@ -11,26 +11,67 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Fetch Scholar data
         run: node scripts/fetch-scholar-data.mjs
 
-      - name: Commit and push if changed
+      - name: Check for citation changes
+        id: check_changes
+        run: |
+          if git diff --quiet lib/data/citations.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No citation changes detected."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Citation changes detected."
+          fi
+
+      - name: Build static site
+        if: steps.check_changes.outputs.changed == 'true'
+        run: npm run predeploy
+
+      - name: Deploy to GitHub Pages
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+
+      - name: Sync citations data to repository
+        if: steps.check_changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add lib/data/citations.json
-          if git diff --staged --quiet; then
-            echo "No citation changes detected."
+          git commit -m "chore: automated update of Google Scholar citations data [skip ci]"
+
+          # Attempt direct push to main first (succeeds if branch protection bypass is configured)
+          if git push origin main; then
+            echo "Successfully pushed citation update directly to main."
           else
-            git commit -m "chore: automated update of Google Scholar citations data [skip ci]"
-            git push
+            echo "Direct push to main was declined by branch protection rule. Creating / updating Pull Request..."
+            git checkout -b update-citations-data
+            git push -f origin update-citations-data
+            gh pr create \
+              --title "chore: automated update of Google Scholar citations data" \
+              --body "Automated update of Google Scholar citations data. The live site has already been rebuilt and published to GitHub Pages." \
+              --head update-citations-data \
+              --base main || echo "Pull Request is already open or was updated."
           fi

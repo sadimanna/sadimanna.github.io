@@ -85,7 +85,7 @@ async function fetchScholarData() {
       yearly
     };
 
-    await fs.writeFile(OUTPUT_PATH, JSON.stringify(data, null, 2), 'utf-8');
+    await fs.writeFile(OUTPUT_PATH, JSON.stringify(data, null, 2) + '\n', 'utf-8');
     console.log('Successfully updated citations.json with Scholar data:', data);
   } catch (error) {
     console.error('Error fetching Scholar data:', error.message);

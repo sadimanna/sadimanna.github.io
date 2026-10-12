@@ -1,15 +1,33 @@
 {
-  "totalCitations": 227,
+  "totalCitations": 246,
   "hIndex": 8,
-  "i10Index": 6,
+  "i10Index": 8,
   "lastUpdated": "October 2026",
   "source": "Google Scholar (ID: 6V9sqi0AAAAJ)",
   "yearly": [
-    { "year": "2021", "citations": 8 },
-    { "year": "2022", "citations": 35 },
-    { "year": "2023", "citations": 58 },
-    { "year": "2024", "citations": 64 },
-    { "year": "2025", "citations": 46 },
-    { "year": "2026", "citations": 16 }
+    {
+      "year": "2021",
+      "citations": 1
+    },
+    {
+      "year": "2022",
+      "citations": 9
+    },
+    {
+      "year": "2023",
+      "citations": 40
+    },
+    {
+      "year": "2024",
+      "citations": 49
+    },
+    {
+      "year": "2025",
+      "citations": 79
+    },
+    {
+      "year": "2026",
+      "citations": 66
+    }
   ]
 }
