@@ -1,3 +1,5 @@
+import citationData from "@/lib/data/citations.json"
+
 export const profileStats = [
   {
     label: "Publications",
@@ -21,11 +23,11 @@ export const profileStats = [
   },
   {
     label: "Citations",
-    value: "227",
+    value: String(citationData.totalCitations || 246),
   },
   {
     label: "h-index",
-    value: "8",
+    value: String(citationData.hIndex || 8),
   },
   {
     label: "Collaborators",

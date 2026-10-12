@@ -24,7 +24,7 @@ const partners: Partner[] = [
     institution: "University of Lille 1 S&T",
     location: "Lille, France",
     collaborator: "Dr. Tanmoy Mondal",
-    focus: "Document Analysis & Pattern Recognition",
+    focus: "Domain Adaptive Object Detection",
     role: "International Research Collaborator",
     x: 488,
     y: 160,
@@ -311,22 +311,20 @@ export function CollaborationMap() {
               key={p.id}
               onClick={() => setActivePartner(p)}
               type="button"
-              className={`rounded-xl border p-3 text-left transition-all duration-200 overflow-hidden min-w-0 ${
-                isSelected
+              className={`rounded-xl border p-3 text-left transition-all duration-200 overflow-hidden min-w-0 ${isSelected
                   ? "border-blue-500 bg-blue-50/60 shadow-sm dark:border-blue-500 dark:bg-blue-950/40"
                   : "border-slate-100 bg-slate-50/50 hover:border-slate-200 hover:bg-white dark:border-slate-800 dark:bg-slate-850/40 dark:hover:bg-slate-800/60"
-              }`}
+                }`}
             >
               <div className="flex items-center justify-between gap-1.5 min-w-0">
                 <span className="truncate text-[0.7rem] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
                   {p.country}
                 </span>
                 <span
-                  className={`shrink-0 rounded px-1.5 py-0.5 text-[0.6rem] font-semibold tracking-wide border leading-none ${
-                    p.region === "International"
+                  className={`shrink-0 rounded px-1.5 py-0.5 text-[0.6rem] font-semibold tracking-wide border leading-none ${p.region === "International"
                       ? "border-sky-200 bg-sky-50 text-sky-700 dark:border-sky-900/60 dark:bg-sky-950/80 dark:text-sky-300"
                       : "border-slate-200 bg-slate-100 text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
-                  }`}
+                    }`}
                 >
                   {p.region}
                 </span>

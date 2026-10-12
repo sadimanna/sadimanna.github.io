@@ -27,9 +27,9 @@ export function CitationsChart() {
   }, [])
 
   const yearly: YearlyData[] = citationData.yearly || []
-  const totalCitations = citationData.totalCitations || 227
+  const totalCitations = citationData.totalCitations || 246
   const hIndex = citationData.hIndex || 8
-  const i10Index = citationData.i10Index || 6
+  const i10Index = citationData.i10Index || 8
   const lastUpdated = citationData.lastUpdated || "October 2026"
 
   return (

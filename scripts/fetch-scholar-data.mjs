@@ -38,9 +38,9 @@ async function fetchScholarData() {
     // Parse citation table
     // Format: All / Since 2019: Citations, h-index, i10-index
     const citationMatches = [...html.matchAll(/<td class="gsc_rsb_std">(\d+)<\/td>/g)];
-    const totalCitations = citationMatches[0] ? parseInt(citationMatches[0][1], 10) : 227;
+    const totalCitations = citationMatches[0] ? parseInt(citationMatches[0][1], 10) : 246;
     const hIndex = citationMatches[2] ? parseInt(citationMatches[2][1], 10) : 8;
-    const i10Index = citationMatches[4] ? parseInt(citationMatches[4][1], 10) : 6;
+    const i10Index = citationMatches[4] ? parseInt(citationMatches[4][1], 10) : 8;
 
     // Parse years and citation counts from chart:
     // <span class="gsc_g_t">2021</span>
