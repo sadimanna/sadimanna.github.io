@@ -1,6 +1,7 @@
 ---
 title: "Solving Integer Partitioning Problem using Python"
 date: 2020-09-08
+categories: ["Algorithms", "Python"]
 permalink: /blog/solving-integer-partitioning-problem-using-python/
 canonical_url: https://medium.com/@mannasiladittya/integer-partition-problem-3b231a9ba8e1
 tags: [python, algorithms, mathematics, combinatorics]

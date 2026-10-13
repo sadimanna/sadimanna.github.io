@@ -1,6 +1,7 @@
 ---
 title: "How to get Model Summary in PyTorch"
 date: 2022-08-25
+categories: ["Deep Learning", "PyTorch"]
 permalink: /blog/how-to-get-model-summary-in-pytorch/
 canonical_url: https://medium.com/@mannasiladittya/how-to-get-model-summary-in-pytorch-57db7824d1e3
 tags: [deep-learning, pytorch, model-summary, torchinfo]

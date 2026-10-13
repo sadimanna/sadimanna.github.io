@@ -1,6 +1,7 @@
 ---
 title: "How Slurm Assigns GPUs to Your Jobs"
 date: 2025-07-23
+categories: ["High Performance Computing", "GPU"]
 permalink: /blog/how-slurm-assigns-gpus-to-your-jobs/
 canonical_url: https://medium.com/@mannasiladittya/how-slurm-assigns-gpus-to-your-jobs-and-what-cuda-visible-devices-means-40037ef2356c
 tags: [slurm, hpc, gpu, cluster-computing]

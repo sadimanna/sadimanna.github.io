@@ -1,6 +1,7 @@
 ---
 title: "Quick Tips #2: Try Plotting an All 1s 2D Array in Matplotlib"
 date: 2022-10-21
+categories: ["Data Visualization", "Python"]
 permalink: /blog/quick-tips-2-try-plotting-an-all-1s-2d-array-in-matplotlib/
 canonical_url: https://medium.com/@mannasiladittya/quick-tips-2-try-plotting-an-all-ones-2d-array-in-matplotlib-83ae6d1a8a23
 tags: [python, matplotlib, data-visualization, numpy]

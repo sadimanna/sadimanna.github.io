@@ -1,6 +1,7 @@
 ---
 title: "Research Roundtable [Day 1][Paper 1]— BERT: Bidirectional Encoder Representations from Transformers"
 date: 2024-08-28
+categories: ["Natural Language Processing", "Deep Learning"]
 permalink: /blog/research-roundtable-day-1-paper-1-bert-bidirectional-encoder/
 canonical_url: https://medium.com/@mannasiladittya/paper-reading-club-day-1-paper-1-bert-bidirectional-encoder-representations-from-transformers-b4c0d9a3a5ef
 tags: [nlp, bert, transformers, paper-review, deep-learning]

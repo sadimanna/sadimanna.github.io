@@ -1,6 +1,7 @@
 ---
 title: "Keeping Your Mac Lean: A Guide to Upgrading and Cleaning Python (2026 Edition)"
 date: 2026-01-06
+categories: ["Python", "Developer Tools"]
 permalink: /blog/keeping-your-mac-lean-a-guide-to-upgrading-and-cleaning-pyth/
 canonical_url: https://medium.com/@mannasiladittya/keeping-your-mac-lean-a-guide-to-upgrading-and-cleaning-python-2026-edition-b03c9e81a182
 tags: [macos, python, pyenv, package-management, developer-tools]

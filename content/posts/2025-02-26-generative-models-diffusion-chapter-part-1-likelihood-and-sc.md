@@ -1,6 +1,7 @@
 ---
 title: "Generative Models — Diffusion Chapter — Part 1—Likelihood and Score"
 date: 2025-02-26
+categories: ["Generative AI", "Diffusion Models"]
 permalink: /blog/generative-models-diffusion-chapter-part-1-likelihood-and-sc/
 canonical_url: https://medium.com/@mannasiladittya/generative-models-diffusion-chapter-part-1-likelihood-and-score-49bdfdedcd15
 tags: [generative-ai, diffusion-models, deep-learning, mathematics]

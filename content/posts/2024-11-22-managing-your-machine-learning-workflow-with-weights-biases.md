@@ -1,6 +1,7 @@
 ---
 title: "Managing Your Machine Learning Workflow with Weights & Biases Artifacts"
 date: 2024-11-22
+categories: ["MLOps", "Machine Learning"]
 permalink: /blog/managing-your-machine-learning-workflow-with-weights-biases/
 canonical_url: https://medium.com/@mannasiladittya/managing-your-machine-learning-workflow-with-weights-biases-artifacts-1577b6a58319
 tags: [wandb, mlops, artifacts, machine-learning, experiment-tracking]

@@ -1,6 +1,7 @@
 ---
 title: "Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes"
 date: 2026-02-27
+categories: ["Medical AI", "Large Language Models"]
 permalink: /blog/running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes/
 canonical_url: https://medium.com/the-owl/running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes-c1bb8ce5a026
 tags: [gemma, llm, genai, transformers, multimodal]

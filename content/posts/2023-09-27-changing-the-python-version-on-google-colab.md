@@ -1,6 +1,7 @@
 ---
 title: "Changing the Python version on Google Colab"
 date: 2023-09-27
+categories: ["Developer Tools", "Python"]
 permalink: /blog/changing-the-python-version-on-google-colab/
 canonical_url: https://medium.com/@mannasiladittya/changing-the-python-version-on-google-colab-245fd510d3ae
 tags: [python, colab, linux, troubleshooting]

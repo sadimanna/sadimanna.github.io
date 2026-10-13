@@ -1,6 +1,7 @@
 ---
 title: "QR Factorization: Gram-Schmidt Algorithm"
 date: 2022-11-25
+categories: ["Mathematics", "Linear Algebra"]
 permalink: /blog/qr-factorization-gram-schmidt-algorithm/
 canonical_url: https://medium.com/@mannasiladittya/qr-factorization-gram-schmidt-algorithm-84b5fc16e98c
 tags: [linear-algebra, mathematics, python, algorithms]

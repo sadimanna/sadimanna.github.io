@@ -1,6 +1,7 @@
 ---
 title: "Extracting Features from an Intermediate Layer of a Pretrained ResNet Model in PyTorch (Hard Way)"
 date: 2020-12-20
+categories: ["Deep Learning", "PyTorch"]
 permalink: /blog/extracting-features-from-an-intermediate-layer-of-a-pretrain/
 canonical_url: https://medium.com/@mannasiladittya/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-c00589bda32b
 tags: [deep-learning, pytorch, computer-vision, resnet, feature-extraction]

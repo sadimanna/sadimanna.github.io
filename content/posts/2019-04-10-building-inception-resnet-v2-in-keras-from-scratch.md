@@ -1,6 +1,7 @@
 ---
 title: "Building Inception-Resnet-V2 in Keras from scratch"
 date: 2019-04-10
+categories: ["Deep Learning", "Computer Vision"]
 permalink: /blog/building-inception-resnet-v2-in-keras-from-scratch/
 canonical_url: https://medium.com/@mannasiladittya/building-inception-resnet-v2-in-keras-from-scratch-a3546c4d93f0
 tags: [deep-learning, keras, computer-vision, cnn]

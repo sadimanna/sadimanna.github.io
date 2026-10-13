@@ -1,6 +1,7 @@
 ---
 title: "Deploying a Next.js Static Site to GitHub Pages"
 date: 2025-12-22
+categories: ["Web Development", "Deployment"]
 permalink: /blog/deploying-a-next-js-static-site-to-github-pages/
 canonical_url: https://medium.com/@mannasiladittya/deploying-a-next-js-static-site-to-github-pages-b2a9f912452d
 tags: [nextjs, github-pages, web-development, deployment, static-site]

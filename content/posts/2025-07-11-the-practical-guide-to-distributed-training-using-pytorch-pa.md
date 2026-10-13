@@ -1,6 +1,7 @@
 ---
 title: "The Practical Guide to Distributed Training using PyTorch — Part 5: Distributing Everything using…"
 date: 2025-07-11
+categories: ["Distributed Training", "Deep Learning"]
 permalink: /blog/the-practical-guide-to-distributed-training-using-pytorch-pa/
 canonical_url: https://medium.com/@mannasiladittya/the-practical-guide-to-distributed-training-using-pytorch-part-5-distributing-everything-using-a6a0b8e83bb9
 tags: [deep-learning, pytorch, distributed-training, fsdp, deepspeed]

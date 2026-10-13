@@ -1,6 +1,7 @@
 ---
 title: "How to plot multiple 2D Series in 3D (Waterfall plot) in Matplotlib"
 date: 2022-03-21
+categories: ["Data Visualization", "Python"]
 permalink: /blog/how-to-plot-multiple-2d-series-in-3d-waterfall-plot-in-matpl/
 canonical_url: https://medium.com/@mannasiladittya/how-to-plot-multiple-2d-series-in-3d-in-matplotlib-16f2d0aacd12
 tags: [python, matplotlib, data-visualization, 3d-plots]

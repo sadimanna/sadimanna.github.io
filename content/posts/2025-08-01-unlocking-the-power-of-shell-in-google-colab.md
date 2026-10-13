@@ -1,6 +1,7 @@
 ---
 title: "Unlocking the Power of `%%shell` in Google Colab"
 date: 2025-08-01
+categories: ["Developer Tools", "Shell"]
 permalink: /blog/unlocking-the-power-of-shell-in-google-colab/
 canonical_url: https://medium.com/@mannasiladittya/unlocking-the-power-of-shell-in-google-colab-a-hands-on-guide-87d6e2b6d65a
 tags: [colab, shell, bash, jupyter, tips]

@@ -1,6 +1,7 @@
 ---
 title: "Guide to fine-tuning a Pre-trained model for Object Detection tasks with Faster RCNN using…"
 date: 2023-09-01
+categories: ["Computer Vision", "Deep Learning"]
 permalink: /blog/guide-to-fine-tuning-a-pre-trained-model-for-object-detectio/
 canonical_url: https://medium.com/@mannasiladittya/guide-to-fine-tuning-a-pre-trained-model-for-object-detection-tasks-with-faster-rcnn-using-e2e7e190105b
 tags: [deep-learning, detectron2, object-detection, faster-rcnn, computer-vision]

@@ -1,6 +1,7 @@
 ---
 title: "Automating Ablation Studies of Deep Learning Models using Batch Script"
 date: 2023-10-09
+categories: ["Deep Learning", "Developer Tools"]
 permalink: /blog/automating-ablation-studies-of-deep-learning-models-using-ba/
 canonical_url: https://medium.com/@mannasiladittya/automating-ablation-studies-of-deep-learning-models-using-batch-script-968981870329
 tags: [deep-learning, ablation-study, automation, batch-script]

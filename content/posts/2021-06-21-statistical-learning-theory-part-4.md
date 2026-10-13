@@ -1,6 +1,7 @@
 ---
 title: "Statistical Learning Theory Part 4"
 date: 2021-06-21
+categories: ["Machine Learning", "Mathematics"]
 permalink: /blog/statistical-learning-theory-part-4/
 canonical_url: https://medium.com/@mannasiladittya/statistical-learning-theory-part-4-f79408cdbf44
 tags: [machine-learning, statistical-learning, mathematics, vapnik]

@@ -1,6 +1,7 @@
 ---
 title: "Plotting Continuously Updating Gradient Vectors on Loss Landscape in Matplotlib — Part 1"
 date: 2024-12-19
+categories: ["Data Visualization", "Optimization"]
 permalink: /blog/plotting-continuously-updating-gradient-vectors-on-loss-land/
 canonical_url: https://medium.com/@mannasiladittya/plotting-continuously-updating-gradient-vectors-on-loss-landscape-in-matplotlib-part-1-32cf86d8b141
 tags: [python, matplotlib, optimization, deep-learning, data-visualization]

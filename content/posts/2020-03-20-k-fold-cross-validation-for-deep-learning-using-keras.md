@@ -1,6 +1,7 @@
 ---
 title: "K-Fold Cross Validation for Deep Learning using Keras"
 date: 2020-03-20
+categories: ["Deep Learning", "Machine Learning"]
 permalink: /blog/k-fold-cross-validation-for-deep-learning-using-keras/
 canonical_url: https://medium.com/@mannasiladittya/k-fold-cross-validation-in-keras-3ec4a3a00538
 tags: [deep-learning, keras, machine-learning, cross-validation]

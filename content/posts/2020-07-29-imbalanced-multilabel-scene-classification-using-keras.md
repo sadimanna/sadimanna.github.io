@@ -1,6 +1,7 @@
 ---
 title: "Imbalanced Multilabel Scene Classification using Keras"
 date: 2020-07-29
+categories: ["Deep Learning", "Computer Vision"]
 permalink: /blog/imbalanced-multilabel-scene-classification-using-keras/
 canonical_url: https://medium.com/@mannasiladittya/imbalanced-multilabel-image-classification-using-keras-fbd8c60d7a4b
 tags: [deep-learning, keras, computer-vision, classification]

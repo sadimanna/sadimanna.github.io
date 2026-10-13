@@ -1,6 +1,7 @@
 ---
 title: "Quick Tips #1: How to obtain environment information using PyTorch"
 date: 2022-01-25
+categories: ["PyTorch", "Developer Tools"]
 permalink: /blog/quick-tips-1-how-to-obtain-environment-information-using-pyt/
 canonical_url: https://medium.com/@mannasiladittya/quick-tips-1-how-to-obtain-environment-information-using-pytorch-a6a8e03f4422
 tags: [python, pytorch, cuda, troubleshooting]

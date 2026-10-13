@@ -1,6 +1,7 @@
 ---
 title: "Pushing Changes to a New Private Repository: A Step-by-Step Guide"
 date: 2025-07-28
+categories: ["Git", "Version Control"]
 permalink: /blog/pushing-changes-to-a-new-private-repository-a-step-by-step-g/
 canonical_url: https://medium.com/@mannasiladittya/pushing-changes-to-a-new-private-repository-a-step-by-step-guide-cb07ffa872cb
 tags: [git, github, version-control]

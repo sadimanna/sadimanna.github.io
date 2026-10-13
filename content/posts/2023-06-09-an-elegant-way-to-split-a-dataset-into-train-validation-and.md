@@ -1,6 +1,7 @@
 ---
 title: "An elegant way to split a Dataset into Train, Validation, and Test splits in Batch Script"
 date: 2023-06-09
+categories: ["Data Science", "Developer Tools"]
 permalink: /blog/an-elegant-way-to-split-a-dataset-into-train-validation-and/
 canonical_url: https://medium.com/@mannasiladittya/an-elegant-way-to-split-a-dataset-into-train-val-and-test-splits-in-batch-script-db61c108ea35
 tags: [batch-script, data-science, dataset-split, windows]

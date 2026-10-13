@@ -1,6 +1,7 @@
 ---
 title: "awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 1"
 date: 2025-12-27
+categories: ["Automation", "Research"]
 permalink: /blog/awesome-topics-fully-automated-research-paper-curation-on-gi/
 canonical_url: https://medium.com/@mannasiladittya/awesome-topics-fully-automated-research-paper-curation-on-github-pages-part-1-4098f4222d66
 tags: [github-actions, automation, research, awesome-topics]

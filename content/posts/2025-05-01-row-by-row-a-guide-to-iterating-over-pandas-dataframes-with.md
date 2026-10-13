@@ -1,6 +1,7 @@
 ---
 title: "Row by Row: A Guide to Iterating Over Pandas DataFrames with iterrows() and loc[]"
 date: 2025-05-01
+categories: ["Data Science", "Python"]
 permalink: /blog/row-by-row-a-guide-to-iterating-over-pandas-dataframes-with/
 canonical_url: https://medium.com/@mannasiladittya/row-by-row-a-guide-to-iterating-over-pandas-dataframes-with-iterrows-and-loc-7541d16213cf
 tags: [python, pandas, data-science, data-manipulation]

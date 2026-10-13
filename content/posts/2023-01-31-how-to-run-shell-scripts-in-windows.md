@@ -1,6 +1,7 @@
 ---
 title: "How to run Shell scripts in Windows"
 date: 2023-01-31
+categories: ["Developer Tools", "Shell"]
 permalink: /blog/how-to-run-shell-scripts-in-windows/
 canonical_url: https://medium.com/@mannasiladittya/how-to-run-shell-scripts-in-windows-87371211028e
 tags: [windows, shell-script, bash, command-line]

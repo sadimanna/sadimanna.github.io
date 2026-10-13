@@ -1,6 +1,7 @@
 ---
 title: "Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests"
 date: 2026-03-02
+categories: ["Web Development", "Developer Tools"]
 permalink: /blog/understanding-multipart-form-data-how-to-send-text-binary-da/
 canonical_url: https://medium.com/the-owl/understanding-multipart-form-data-how-to-send-text-binary-data-in-http-requests-14e7eef8e947
 tags: [llm, https, fastapi, llama-cpp, multipart-form-data]

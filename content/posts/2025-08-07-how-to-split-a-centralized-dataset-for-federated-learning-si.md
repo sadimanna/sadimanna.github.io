@@ -1,6 +1,7 @@
 ---
 title: "How to Split a Centralized Dataset for Federated Learning Simulation"
 date: 2025-08-07
+categories: ["Federated Learning", "Data Science"]
 permalink: /blog/how-to-split-a-centralized-dataset-for-federated-learning-si/
 canonical_url: https://medium.com/@mannasiladittya/how-to-split-a-centralized-dataset-for-federated-learning-simulation-0d8d97dcafb5
 tags: [federated-learning, machine-learning, data-science, privacy]
@@ -128,8 +129,8 @@ echo "--- All operations complete. ---"
 
 #### How It Works
 
-* *‘***move\_file\_range()***’: We encapsulate the entire logic for moving one batch of ﬁles into a reusable function.*
-* ***Parameters (‘$1’,* ‘$*2’, ‘*$3’, ‘$4’)**: The function accepts the start number, end number, destination index, and padding width as arguments. if the file names do not have leading zeros, the fourth argument can be removed.
+* **`move_file_range()`**: We encapsulate the entire logic for moving one batch of files into a reusable function.
+* **Parameters (`$1`, `$2`, `$3`, `$4`)**: The function accepts the start number, end number, destination index, and padding width as arguments. If the file names do not have leading zeros, the fourth argument can be removed.
 * Clear Calls: The main part of the script is now a simple, readable list of function calls that clearly state the intent for each data split.
 
 ---

@@ -1,6 +1,7 @@
 ---
 title: "The Practical Guide to Distributed Training using PyTorch — Part 3: On Multiple Nodes using…"
 date: 2025-06-19
+categories: ["Distributed Training", "PyTorch"]
 permalink: /blog/the-practical-guide-to-distributed-training-using-pytorch-pa/
 canonical_url: https://medium.com/@mannasiladittya/the-practical-guide-to-distributed-training-using-pytorch-part-3-on-multiple-nodes-using-c07b6dcf4001
 tags: [deep-learning, pytorch, distributed-training, multi-node]

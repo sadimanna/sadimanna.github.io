@@ -1,6 +1,7 @@
 ---
 title: "How to Pull Changes from a Remote Git Repository"
 date: 2026-02-09
+categories: ["Git", "Version Control"]
 permalink: /blog/how-to-pull-changes-from-a-remote-git-repository/
 canonical_url: https://medium.com/the-owl/how-to-pull-changes-from-a-remote-git-repository-201cd9712bf3
 tags: [machine-learning, git, github, version-control, git-pull]

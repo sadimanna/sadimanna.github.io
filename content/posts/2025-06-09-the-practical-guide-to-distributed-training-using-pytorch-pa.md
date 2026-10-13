@@ -1,6 +1,7 @@
 ---
 title: "The Practical Guide to Distributed Training using PyTorch — Part 2: On a Single Node using Torchrun"
 date: 2025-06-09
+categories: ["Distributed Training", "PyTorch"]
 permalink: /blog/the-practical-guide-to-distributed-training-using-pytorch-pa/
 canonical_url: https://medium.com/@mannasiladittya/the-practical-guide-to-distributed-training-using-pytorch-part-2-on-a-single-node-using-torchrun-9e794baa0410
 tags: [deep-learning, pytorch, distributed-training, torchrun, gpu]

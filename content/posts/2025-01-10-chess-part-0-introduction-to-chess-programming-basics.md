@@ -1,6 +1,7 @@
 ---
 title: "Chess — Part 0: Introduction to Chess Programming Basics"
 date: 2025-01-10
+categories: ["Algorithms", "Game AI"]
 permalink: /blog/chess-part-0-introduction-to-chess-programming-basics/
 canonical_url: https://medium.com/@mannasiladittya/chess-part-0-introduction-to-chess-programming-basics-b70541d93f0f
 tags: [chess, python, ai, game-dev, python-chess]

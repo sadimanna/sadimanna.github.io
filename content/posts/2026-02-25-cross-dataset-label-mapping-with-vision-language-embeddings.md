@@ -1,6 +1,7 @@
 ---
 title: "Cross-Dataset Label Mapping with Vision–Language Embeddings"
 date: 2026-02-25
+categories: ["Computer Vision", "Vision-Language Models"]
 permalink: /blog/cross-dataset-label-mapping-with-vision-language-embeddings/
 canonical_url: https://medium.com/the-owl/cross-dataset-label-mapping-with-vision-language-embeddings-0616d1177f0f
 tags: [deep-learning, vision-language-model, transformers, ai, computer-vision]

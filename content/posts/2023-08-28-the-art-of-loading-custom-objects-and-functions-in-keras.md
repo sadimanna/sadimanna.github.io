@@ -1,6 +1,7 @@
 ---
 title: "The Art of Loading Custom Objects and Functions in Keras"
 date: 2023-08-28
+categories: ["Deep Learning", "Frameworks"]
 permalink: /blog/the-art-of-loading-custom-objects-and-functions-in-keras/
 canonical_url: https://medium.com/@mannasiladittya/the-art-of-loading-custom-objects-and-functions-in-keras-6fdea8ed52b9
 tags: [deep-learning, keras, tensorflow, model-saving]

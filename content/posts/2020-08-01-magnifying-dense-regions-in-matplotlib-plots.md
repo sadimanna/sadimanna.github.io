@@ -1,6 +1,7 @@
 ---
 title: "Magnifying Dense regions in Matplotlib plots"
 date: 2020-08-01
+categories: ["Data Visualization", "Python"]
 permalink: /blog/magnifying-dense-regions-in-matplotlib-plots/
 canonical_url: https://medium.com/@mannasiladittya/magnifying-dense-regions-in-matplotlib-plots-c765db7ba431
 tags: [python, matplotlib, data-visualization, data-science]

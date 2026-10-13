@@ -1,6 +1,7 @@
 ---
 title: "The Importance of Branching in Git"
 date: 2025-07-28
+categories: ["Git", "Version Control"]
 permalink: /blog/the-importance-of-branching-in-git/
 canonical_url: https://medium.com/@mannasiladittya/the-importance-of-branching-in-git-6d7fc84c88a3
 tags: [git, version-control, github, best-practices]

@@ -1,6 +1,7 @@
 ---
 title: "Generating a Gantt Chart in LaTeX"
 date: 2025-08-29
+categories: ["LaTeX", "Productivity"]
 permalink: /blog/generating-a-gantt-chart-in-latex/
 canonical_url: https://medium.com/@mannasiladittya/generating-a-gantt-chart-in-latex-857021bb7198
 tags: [latex, gantt-chart, project-management, visualization]

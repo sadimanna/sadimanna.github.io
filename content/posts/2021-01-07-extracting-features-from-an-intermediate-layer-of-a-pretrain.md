@@ -1,6 +1,7 @@
 ---
 title: "Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch"
 date: 2021-01-07
+categories: ["Deep Learning", "PyTorch"]
 permalink: /blog/extracting-features-from-an-intermediate-layer-of-a-pretrain/
 canonical_url: https://medium.com/@mannasiladittya/extracting-features-from-an-intermediate-layer-of-a-pretrained-vgg-net-in-pytorch-43f801866a2e
 tags: [deep-learning, pytorch, computer-vision, vgg, feature-extraction]

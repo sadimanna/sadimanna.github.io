@@ -1,6 +1,7 @@
 ---
 title: "The Smart Way to Copy: How to Use rsync to Exclude Folders, Ignore or Update Existing Files"
 date: 2025-10-03
+categories: ["Linux", "Developer Tools"]
 permalink: /blog/the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig/
 canonical_url: https://medium.com/@mannasiladittya/the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ignore-or-update-existing-files-132730f78881
 tags: [linux, rsync, bash, file-management]

@@ -1,6 +1,7 @@
 ---
 title: "Plotting Grouped Bar Chart in Matplotlib"
 date: 2021-07-30
+categories: ["Data Visualization", "Python"]
 permalink: /blog/plotting-grouped-bar-chart-in-matplotlib/
 canonical_url: https://medium.com/@mannasiladittya/plotting-grouped-bar-chart-in-matplotlib-7700e818344f
 tags: [python, matplotlib, data-visualization, data-science]

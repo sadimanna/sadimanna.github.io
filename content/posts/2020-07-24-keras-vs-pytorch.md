@@ -1,6 +1,7 @@
 ---
 title: "Keras vs PyTorch"
 date: 2020-07-24
+categories: ["Deep Learning", "Frameworks"]
 permalink: /blog/keras-vs-pytorch/
 canonical_url: https://medium.com/@mannasiladittya/keras-vs-pytorch-27332ca13d22
 tags: [deep-learning, pytorch, keras, python]

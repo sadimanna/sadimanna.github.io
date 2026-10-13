@@ -1,6 +1,7 @@
 ---
 title: "Prove that 2^n + 1 is divisible by 3 for all odd integers n >= 1"
 date: 2026-04-07
+categories: ["Mathematics", "Algorithms"]
 permalink: /blog/prove-that-2-n-1-is-divisible-by-3-for-all-odd-integers-n-1/
 canonical_url: https://medium.com/i-am-bad-at-math/prove-that-2-n-1-is-divisible-by-3-for-all-odd-integers-n-1-cc11e73acea5
 tags: [integer, mathematics, proof, math-induction]

@@ -21,6 +21,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Mathematics"/>
+        <category label="Algorithms"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Updating your Local Branch from a Specific Remote Branch in Git]]></title>
@@ -31,6 +33,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests]]></title>
@@ -41,6 +45,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Web Development"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hosting Your Own LLM Server]]></title>
@@ -51,6 +57,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Large Language Models"/>
+        <category label="Deployment"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes]]></title>
@@ -61,6 +69,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Medical AI"/>
+        <category label="Large Language Models"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Running MedGemma-4B on CPU or Using GGUF + llama-cpp]]></title>
@@ -71,6 +81,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Medical AI"/>
+        <category label="Large Language Models"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Cross-Dataset Label Mapping with Vision–Language Embeddings]]></title>
@@ -81,6 +93,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Computer Vision"/>
+        <category label="Vision-Language Models"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch]]></title>
@@ -91,6 +105,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="PyTorch"/>
+        <category label="Deep Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to Pull Changes from a Remote Git Repository]]></title>
@@ -101,6 +117,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to Remove Large Files from Git History]]></title>
@@ -111,6 +129,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Why .gitignore Didn’t Work]]></title>
@@ -121,6 +141,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Mastering Logistic Regression: Tackling Non-Linear Data with Feature Transformation]]></title>
@@ -131,6 +153,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Machine Learning"/>
+        <category label="Data Science"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Keeping Your Mac Lean: A Guide to Upgrading and Cleaning Python (2026 Edition)]]></title>
@@ -141,6 +165,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Python"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[🚀 Introducing the awesome-topics Blog Series]]></title>
@@ -151,6 +177,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Automation"/>
+        <category label="Research"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Git Basics Explained — Part 1]]></title>
@@ -161,6 +189,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Writing Multi-Line Commands Across Operating Systems]]></title>
@@ -171,6 +201,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Developer Tools"/>
+        <category label="Shell"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 5]]></title>
@@ -181,6 +213,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Automation"/>
+        <category label="Research"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 4]]></title>
@@ -191,6 +225,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Automation"/>
+        <category label="Research"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 1]]></title>
@@ -201,6 +237,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Automation"/>
+        <category label="Research"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Deploying a Next.js Static Site to GitHub Pages]]></title>
@@ -211,6 +249,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Web Development"/>
+        <category label="Deployment"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Smart Way to Copy: How to Use rsync to Exclude Folders, Ignore or Update Existing Files]]></title>
@@ -221,6 +261,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Linux"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Generating a Gantt Chart in LaTeX]]></title>
@@ -231,6 +273,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="LaTeX"/>
+        <category label="Productivity"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Low-Bit Precision Training in PyTorch: Techniques and Code Examples]]></title>
@@ -241,6 +285,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Model Efficiency"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to Split a Centralized Dataset for Federated Learning Simulation]]></title>
@@ -251,6 +297,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Federated Learning"/>
+        <category label="Data Science"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Instantly Supercharge Your IDE with GitHub MCP & GitMCP: Real-Time Docs & Code for Your AI…]]></title>
@@ -261,6 +309,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Developer Tools"/>
+        <category label="AI Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Unlocking the Power of `%%shell` in Google Colab]]></title>
@@ -271,6 +321,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Developer Tools"/>
+        <category label="Shell"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Pushing Changes to a New Private Repository: A Step-by-Step Guide]]></title>
@@ -281,6 +333,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Importance of Branching in Git]]></title>
@@ -291,6 +345,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Git"/>
+        <category label="Version Control"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How Slurm Assigns GPUs to Your Jobs]]></title>
@@ -301,6 +357,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="High Performance Computing"/>
+        <category label="GPU"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 5: Distributing Everything using…]]></title>
@@ -311,6 +369,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Distributed Training"/>
+        <category label="Deep Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 4: On Multiple Nodes using SLURM]]></title>
@@ -321,6 +381,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Distributed Training"/>
+        <category label="High Performance Computing"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 3: On Multiple Nodes using…]]></title>
@@ -331,6 +393,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Distributed Training"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 2: On a Single Node using Torchrun]]></title>
@@ -341,6 +405,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Distributed Training"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 1: On a Single Node using torch.mul]]></title>
@@ -351,6 +417,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Distributed Training"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Comprehensive Guide to Overlaying Segmentation Masks in Python]]></title>
@@ -361,6 +429,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Computer Vision"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Understanding and Calculating MACs and FLOPs in PyTorch Models]]></title>
@@ -371,6 +441,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Model Efficiency"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK]]></title>
@@ -381,6 +453,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Medical AI"/>
+        <category label="Medical Imaging"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Row by Row: A Guide to Iterating Over Pandas DataFrames with iterrows() and loc[]]]></title>
@@ -391,6 +465,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Science"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Generative Models — Diffusion Chapter — Part 1—Likelihood and Score]]></title>
@@ -401,6 +477,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Generative AI"/>
+        <category label="Diffusion Models"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Neural Networks — Part 0: A Journey Through Neural Network Architecture]]></title>
@@ -411,6 +489,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Neural Networks"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Chess — Part 1: Establishing Communication Between Chess Engine and GUI]]></title>
@@ -421,6 +501,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Algorithms"/>
+        <category label="Game AI"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Chess — Part 0: Introduction to Chess Programming Basics]]></title>
@@ -431,6 +513,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Algorithms"/>
+        <category label="Game AI"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Profiling different algorithms using the built-in timeit module in Python]]></title>
@@ -441,6 +525,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Python"/>
+        <category label="Performance"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Plotting Continuously Updating Gradient Vectors on Loss Landscape in Matplotlib — Part 1]]></title>
@@ -451,6 +537,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Visualization"/>
+        <category label="Optimization"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to log metrics and data at different lines in the code but at the same time-step using Wandb]]></title>
@@ -461,6 +549,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="MLOps"/>
+        <category label="Machine Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Managing Your Machine Learning Workflow with Weights & Biases Artifacts]]></title>
@@ -471,6 +561,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="MLOps"/>
+        <category label="Machine Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Sending Weights & Biases Alerts to WhatsApp Using Twilio]]></title>
@@ -481,6 +573,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="MLOps"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Understanding Federated Learning: Privacy-Preserving Distributed Training]]></title>
@@ -503,6 +597,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Natural Language Processing"/>
+        <category label="Deep Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Research Roundtable [Day 1][Paper 2] — Big Self-Supervised Models are Strong Semi-Supervised…]]></title>
@@ -513,6 +609,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Self-Supervised Learning"/>
+        <category label="Deep Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to save both ‘logs’ and ‘print’ statement outputs in the same file using Python?]]></title>
@@ -523,6 +621,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Python"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The most PyTorch way to extract output from any intermediate layer in a pre-trained model]]></title>
@@ -533,6 +633,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Automating Ablation Studies of Deep Learning Models using Batch Script]]></title>
@@ -543,6 +645,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Does this occur even if you pull the nvidia docker image?]]></title>
@@ -553,6 +657,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Docker"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Changing the Python version on Google Colab]]></title>
@@ -563,6 +669,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Developer Tools"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hosting Machine Learning Model Demos with Hugging Face Spaces and Streamlit]]></title>
@@ -573,6 +681,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Machine Learning"/>
+        <category label="Deployment"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Guide to fine-tuning a Pre-trained model for Object Detection tasks with Faster RCNN using…]]></title>
@@ -583,6 +693,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Computer Vision"/>
+        <category label="Deep Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Art of Loading Custom Objects and Functions in Keras]]></title>
@@ -593,6 +705,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Frameworks"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Installing detectron2 in 9 easy steps]]></title>
@@ -603,6 +717,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Computer Vision"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[An elegant way to split a Dataset into Train, Validation, and Test splits in Batch Script]]></title>
@@ -613,6 +729,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Science"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to run Shell scripts in Windows]]></title>
@@ -623,6 +741,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Developer Tools"/>
+        <category label="Shell"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[QR Factorization: Gram-Schmidt Algorithm]]></title>
@@ -633,6 +753,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Mathematics"/>
+        <category label="Linear Algebra"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Quick Tips #2: Try Plotting an All 1s 2D Array in Matplotlib]]></title>
@@ -643,6 +765,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Visualization"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to get Model Summary in PyTorch]]></title>
@@ -653,6 +777,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to plot multiple 2D Series in 3D (Waterfall plot) in Matplotlib]]></title>
@@ -663,6 +789,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Visualization"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Quick Tips #1: How to obtain environment information using PyTorch]]></title>
@@ -673,6 +801,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="PyTorch"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Installing PyTorch XLA in Google Colab without errors!!]]></title>
@@ -683,6 +813,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="PyTorch"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Creating a TF Dataset using a Data Generator]]></title>
@@ -693,6 +825,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="TensorFlow"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Plotting Stacked Bar Chart in Python using Matplotlib]]></title>
@@ -703,6 +837,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Visualization"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[GradCAM in PyTorch]]></title>
@@ -713,6 +849,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Explainable AI"/>
+        <category label="Computer Vision"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Plotting Grouped Bar Chart in Matplotlib]]></title>
@@ -723,6 +861,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Visualization"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[SimCLR in PyTorch]]></title>
@@ -733,6 +873,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Self-Supervised Learning"/>
+        <category label="Deep Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Statistical Learning Theory Part 4]]></title>
@@ -743,6 +885,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Machine Learning"/>
+        <category label="Mathematics"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in…]]></title>
@@ -753,6 +897,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch]]></title>
@@ -763,6 +909,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Extracting Features from an Intermediate Layer of a Pretrained ResNet Model in PyTorch (Hard Way)]]></title>
@@ -773,6 +921,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="PyTorch"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Solving Integer Partitioning Problem using Python]]></title>
@@ -783,6 +933,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Algorithms"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Magnifying Dense regions in Matplotlib plots]]></title>
@@ -793,6 +945,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Data Visualization"/>
+        <category label="Python"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Imbalanced Multilabel Scene Classification using Keras]]></title>
@@ -803,6 +957,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Computer Vision"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Keras vs PyTorch]]></title>
@@ -813,6 +969,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Frameworks"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Self-Supervised Learning in Medical Imaging: From Pretext Tasks to Foundation Models]]></title>
@@ -835,6 +993,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Machine Learning"/>
+        <category label="Mathematics"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Evaluation Metrics Part 1]]></title>
@@ -845,6 +1005,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Machine Learning"/>
+        <category label="Data Science"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome to The Owl Newsletters]]></title>
@@ -855,6 +1017,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Artificial Intelligence"/>
+        <category label="Research"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Using Telegram bot to receive Deep Learning model training updates on your mobile device]]></title>
@@ -865,6 +1029,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Developer Tools"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[K-Fold Cross Validation for Deep Learning using Keras]]></title>
@@ -875,6 +1041,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Machine Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Building Inception-Resnet-V2 in Keras from scratch]]></title>
@@ -885,6 +1053,8 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Deep Learning"/>
+        <category label="Computer Vision"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Converting MNIST dataset for Handwritten digit recognition in IDX Format to Python Numpy Array]]></title>
@@ -895,5 +1065,7 @@
             <name>Dr. Siladittya Manna</name>
             <uri>https://sadimanna.github.io/</uri>
         </author>
+        <category label="Computer Vision"/>
+        <category label="Python"/>
     </entry>
 </feed>

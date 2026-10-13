@@ -1,6 +1,7 @@
 ---
 title: "Research Roundtable [Day 1][Paper 2] — Big Self-Supervised Models are Strong Semi-Supervised…"
 date: 2024-08-28
+categories: ["Self-Supervised Learning", "Deep Learning"]
 permalink: /blog/research-roundtable-day-1-paper-2-big-self-supervised-models/
 canonical_url: https://medium.com/@mannasiladittya/research-roundtable-day-1-paper-2-big-self-supervised-models-are-strong-semi-supervised-fd5d4cdb8b2f
 tags: [deep-learning, self-supervised-learning, simclr, paper-review]

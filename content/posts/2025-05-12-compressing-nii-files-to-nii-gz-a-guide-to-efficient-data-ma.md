@@ -1,6 +1,7 @@
 ---
 title: "Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK"
 date: 2025-05-12
+categories: ["Medical AI", "Medical Imaging"]
 permalink: /blog/compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-ma/
 canonical_url: https://medium.com/@mannasiladittya/compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-management-with-nibabel-and-simpleitk-ec11711de856
 tags: [medical-imaging, nibabel, simpleitk, python, neuroimaging]

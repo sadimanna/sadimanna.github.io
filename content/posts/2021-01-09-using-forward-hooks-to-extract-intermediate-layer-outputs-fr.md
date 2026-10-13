@@ -1,6 +1,7 @@
 ---
 title: "Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in…"
 date: 2021-01-09
+categories: ["Deep Learning", "PyTorch"]
 permalink: /blog/using-forward-hooks-to-extract-intermediate-layer-outputs-fr/
 canonical_url: https://medium.com/@mannasiladittya/using-forward-hooks-to-extract-intermediate-layer-outputs-from-a-pre-trained-model-in-pytorch-1ec17af78712
 tags: [deep-learning, pytorch, feature-extraction, hooks]

@@ -1,6 +1,7 @@
 ---
 title: "Comprehensive Guide to Overlaying Segmentation Masks in Python"
 date: 2025-05-30
+categories: ["Computer Vision", "Python"]
 permalink: /blog/comprehensive-guide-to-overlaying-segmentation-masks-in-pyth/
 canonical_url: https://medium.com/@mannasiladittya/comprehensive-guide-to-overlaying-segmentation-masks-in-python-86b67dd93fad
 tags: [computer-vision, image-segmentation, python, opencv, matplotlib]

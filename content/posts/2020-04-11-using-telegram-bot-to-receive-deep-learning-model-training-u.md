@@ -1,6 +1,7 @@
 ---
 title: "Using Telegram bot to receive Deep Learning model training updates on your mobile device"
 date: 2020-04-11
+categories: ["Deep Learning", "Developer Tools"]
 permalink: /blog/using-telegram-bot-to-receive-deep-learning-model-training-u/
 canonical_url: https://medium.com/@mannasiladittya/getting-updates-on-ongoing-deep-learning-model-training-remotely-on-your-device-using-telegram-bot-7be750c055ea
 tags: [deep-learning, tensorflow, keras, telegram-bot, python]

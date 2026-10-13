@@ -1,6 +1,7 @@
 ---
 title: "Converting MNIST dataset for Handwritten digit recognition in IDX Format to Python Numpy Array"
 date: 2018-02-22
+categories: ["Computer Vision", "Python"]
 permalink: /blog/converting-mnist-dataset-for-handwritten-digit-recognition-i/
 canonical_url: https://medium.com/@mannasiladittya/converting-mnist-data-in-idx-format-to-python-numpy-array-5cb9126f99f1
 tags: [python, numpy, mnist, machine-learning]

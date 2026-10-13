@@ -69,10 +69,10 @@ async function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkGfm)
     .use(remarkMath)
     .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeKatex)
+    .use(rehypeKatex, { strict: false })
     .use(rehypeHighlight, { detect: true, ignoreMissing: true })
     .use(rehypeSlug)
-    .use(rehypeAutolinkHeadings, {
+    .use(rehypeAutolinkHeadings as any, {
       behavior: 'prepend',
       properties: { className: ['heading-anchor'], ariaHidden: true, tabIndex: -1 },
       content: {

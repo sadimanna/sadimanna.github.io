@@ -1,6 +1,7 @@
 ---
 title: "🚀 Introducing the awesome-topics Blog Series"
 date: 2026-01-03
+categories: ["Automation", "Research"]
 permalink: /blog/introducing-the-awesome-topics-blog-series/
 canonical_url: https://medium.com/@mannasiladittya/introducing-the-awesome-topics-blog-series-a7d0ac57855d
 tags: [awesome-topics, research, curation, announcement]

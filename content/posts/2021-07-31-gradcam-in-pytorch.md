@@ -1,6 +1,7 @@
 ---
 title: "GradCAM in PyTorch"
 date: 2021-07-31
+categories: ["Explainable AI", "Computer Vision"]
 permalink: /blog/gradcam-in-pytorch/
 canonical_url: https://medium.com/@mannasiladittya/gradcam-in-pytorch-7b700caa79e5
 tags: [deep-learning, pytorch, explainable-ai, gradcam, computer-vision]

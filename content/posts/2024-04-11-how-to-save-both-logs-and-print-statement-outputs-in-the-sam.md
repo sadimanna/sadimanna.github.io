@@ -1,6 +1,7 @@
 ---
 title: "How to save both ‘logs’ and ‘print’ statement outputs in the same file using Python?"
 date: 2024-04-11
+categories: ["Python", "Developer Tools"]
 permalink: /blog/how-to-save-both-logs-and-print-statement-outputs-in-the-sam/
 canonical_url: https://medium.com/@mannasiladittya/how-to-save-logs-and-print-statement-outputs-in-the-same-file-using-python-cf15d336fb9f
 tags: [python, logging, debugging, io]

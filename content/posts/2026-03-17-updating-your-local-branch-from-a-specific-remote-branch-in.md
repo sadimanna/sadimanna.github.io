@@ -1,6 +1,7 @@
 ---
 title: "Updating your Local Branch from a Specific Remote Branch in Git"
 date: 2026-03-17
+categories: ["Git", "Version Control"]
 permalink: /blog/updating-your-local-branch-from-a-specific-remote-branch-in/
 canonical_url: https://medium.com/the-owl/updating-a-specific-local-branch-from-remote-in-git-7fbff63f0ea5
 tags: [github, git]

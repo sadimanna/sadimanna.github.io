@@ -1,6 +1,7 @@
 ---
 title: "Hosting Your Own LLM Server"
 date: 2026-02-28
+categories: ["Large Language Models", "Deployment"]
 permalink: /blog/hosting-your-own-llm-server/
 canonical_url: https://medium.com/the-owl/hosting-your-own-llm-server-31e171576215
 tags: [gguf, fastapi, llama-cpp, llm, llama-server]

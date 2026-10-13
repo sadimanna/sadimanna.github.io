@@ -1,6 +1,7 @@
 ---
 title: "Hosting Machine Learning Model Demos with Hugging Face Spaces and Streamlit"
 date: 2023-09-14
+categories: ["Machine Learning", "Deployment"]
 permalink: /blog/hosting-machine-learning-model-demos-with-hugging-face-space/
 canonical_url: https://medium.com/@mannasiladittya/hosting-model-demos-with-hugging-face-spaces-and-streamlit-ea0db5f2dd54
 tags: [machine-learning, huggingface, streamlit, deployment, demo]

@@ -1,6 +1,7 @@
 ---
 title: "Neural Networks — Part 0: A Journey Through Neural Network Architecture"
 date: 2025-02-14
+categories: ["Deep Learning", "Neural Networks"]
 permalink: /blog/neural-networks-part-0-a-journey-through-neural-network-arch/
 canonical_url: https://medium.com/@mannasiladittya/a-journey-through-neural-network-architecture-15f4e5250ba5
 tags: [deep-learning, neural-networks, machine-learning, architecture]

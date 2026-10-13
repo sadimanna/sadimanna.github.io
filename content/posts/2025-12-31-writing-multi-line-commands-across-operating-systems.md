@@ -1,6 +1,7 @@
 ---
 title: "Writing Multi-Line Commands Across Operating Systems"
 date: 2025-12-31
+categories: ["Developer Tools", "Shell"]
 permalink: /blog/writing-multi-line-commands-across-operating-systems/
 canonical_url: https://medium.com/@mannasiladittya/writing-multi-line-commands-across-operating-systems-2800e41b0abd
 tags: [bash, powershell, command-line, cross-platform, shell]

@@ -1,6 +1,7 @@
 ---
 title: "Why .gitignore Didn’t Work"
 date: 2026-01-29
+categories: ["Git", "Version Control"]
 permalink: /blog/why-gitignore-didn-t-work/
 canonical_url: https://medium.com/@mannasiladittya/why-gitignore-didnt-work-0fe461f3d29d
 tags: [git, gitignore, version-control, troubleshooting]

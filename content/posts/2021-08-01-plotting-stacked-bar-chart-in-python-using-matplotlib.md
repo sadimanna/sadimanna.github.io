@@ -1,6 +1,7 @@
 ---
 title: "Plotting Stacked Bar Chart in Python using Matplotlib"
 date: 2021-08-01
+categories: ["Data Visualization", "Python"]
 permalink: /blog/plotting-stacked-bar-chart-in-python-using-matplotlib/
 canonical_url: https://medium.com/@mannasiladittya/plotting-stacked-bar-chart-in-python-using-matplotlib-12fffde10361
 tags: [python, matplotlib, data-visualization, data-science]

@@ -1,6 +1,7 @@
 ---
 title: "Git Basics Explained — Part 1"
 date: 2026-01-02
+categories: ["Git", "Version Control"]
 permalink: /blog/git-basics-explained-part-1/
 canonical_url: https://medium.com/@mannasiladittya/git-basics-explained-part-1-eea0bab9e1b4
 tags: [git, version-control, github, tutorial]

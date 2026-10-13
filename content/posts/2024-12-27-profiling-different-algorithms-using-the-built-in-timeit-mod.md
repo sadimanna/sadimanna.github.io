@@ -1,6 +1,7 @@
 ---
 title: "Profiling different algorithms using the built-in timeit module in Python"
 date: 2024-12-27
+categories: ["Python", "Performance"]
 permalink: /blog/profiling-different-algorithms-using-the-built-in-timeit-mod/
 canonical_url: https://medium.com/@mannasiladittya/profiling-different-algorithms-using-the-built-in-timeit-module-in-python-c63ae2190ba9
 tags: [python, profiling, performance, algorithms, benchmarking]

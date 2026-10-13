@@ -1,6 +1,7 @@
 ---
 title: "The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch"
 date: 2026-02-10
+categories: ["PyTorch", "Deep Learning"]
 permalink: /blog/the-ghost-in-the-machine-tracking-variable-names-and-metadat/
 canonical_url: https://medium.com/the-owl/the-ghost-in-the-machine-tracking-variable-names-and-metadata-in-pytorch-74d3231c780f
 tags: [deep-learning, pytorch, machine-learning, python-programming, python]

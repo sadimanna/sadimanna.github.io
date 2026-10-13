@@ -1,6 +1,7 @@
 ---
 title: "Evaluation Metrics Part 1"
 date: 2020-06-20
+categories: ["Machine Learning", "Data Science"]
 permalink: /blog/evaluation-metrics-part-1/
 canonical_url: https://medium.com/@mannasiladittya/evaluation-metrics-e32d66cd5588
 tags: [machine-learning, data-science, evaluation-metrics, statistics]

@@ -1,6 +1,7 @@
 ---
 title: "SimCLR in PyTorch"
 date: 2021-06-30
+categories: ["Self-Supervised Learning", "Deep Learning"]
 permalink: /blog/simclr-in-pytorch/
 canonical_url: https://medium.com/@mannasiladittya/simclr-in-pytorch-5f290cb11dd7
 tags: [deep-learning, pytorch, self-supervised-learning, simclr, computer-vision]

@@ -1,6 +1,7 @@
 ---
 title: "Sending Weights & Biases Alerts to WhatsApp Using Twilio"
 date: 2024-11-20
+categories: ["MLOps", "Developer Tools"]
 permalink: /blog/sending-weights-biases-alerts-to-whatsapp-using-twilio/
 canonical_url: https://medium.com/@mannasiladittya/monitoring-machine-learning-experiments-is-crucial-to-ensure-your-models-are-trained-correctly-and-1c062a7e8e96
 tags: [wandb, twilio, automation, monitoring, deep-learning]

@@ -1,6 +1,7 @@
 ---
 title: "Mastering Logistic Regression: Tackling Non-Linear Data with Feature Transformation"
 date: 2026-01-14
+categories: ["Machine Learning", "Data Science"]
 permalink: /blog/mastering-logistic-regression-tackling-non-linear-data-with/
 canonical_url: https://medium.com/@mannasiladittya/mastering-logistic-regression-tackling-non-linear-data-with-feature-transformation-1382d8834fc7
 tags: [machine-learning, logistic-regression, feature-engineering, data-science]

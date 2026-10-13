@@ -1,6 +1,7 @@
 ---
 title: "Chess — Part 1: Establishing Communication Between Chess Engine and GUI"
 date: 2025-01-16
+categories: ["Algorithms", "Game AI"]
 permalink: /blog/chess-part-1-establishing-communication-between-chess-engine/
 canonical_url: https://medium.com/@mannasiladittya/chess-part-1-establishing-communication-between-chess-engine-and-gui-01a77f502c52
 tags: [chess, uci, ipc, python, game-dev]

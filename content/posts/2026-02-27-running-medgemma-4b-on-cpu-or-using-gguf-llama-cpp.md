@@ -1,6 +1,7 @@
 ---
 title: "Running MedGemma-4B on CPU or Using GGUF + llama-cpp"
 date: 2026-02-27
+categories: ["Medical AI", "Large Language Models"]
 permalink: /blog/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp/
 canonical_url: https://medium.com/the-owl/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp-b67e9ac4cf29
 tags: [llama-cpp, gemma, llm, genai, gguf]

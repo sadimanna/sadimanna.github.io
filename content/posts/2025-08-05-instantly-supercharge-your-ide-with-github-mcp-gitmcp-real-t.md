@@ -1,6 +1,7 @@
 ---
 title: "Instantly Supercharge Your IDE with GitHub MCP & GitMCP: Real-Time Docs & Code for Your AI…"
 date: 2025-08-05
+categories: ["Developer Tools", "AI Tools"]
 permalink: /blog/instantly-supercharge-your-ide-with-github-mcp-gitmcp-real-t/
 canonical_url: https://medium.com/@mannasiladittya/instantly-supercharge-your-ide-with-github-mcp-gitmcp-real-time-docs-code-for-your-ai-c0837e853f18
 tags: [mcp, github, ide, developer-tools, ai]

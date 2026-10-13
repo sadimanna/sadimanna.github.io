@@ -1,6 +1,7 @@
 ---
 title: "The Practical Guide to Distributed Training using PyTorch — Part 1: On a Single Node using torch.mul"
 date: 2025-06-08
+categories: ["Distributed Training", "PyTorch"]
 permalink: /blog/the-practical-guide-to-distributed-training-using-pytorch-pa/
 canonical_url: https://medium.com/@mannasiladittya/the-complete-guide-to-distributeddataparallel-ddp-training-in-pytorch-14545cd21f9c
 tags: [deep-learning, pytorch, distributed-training, gpu]

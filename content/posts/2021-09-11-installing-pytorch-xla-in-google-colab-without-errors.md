@@ -1,6 +1,7 @@
 ---
 title: "Installing PyTorch XLA in Google Colab without errors!!"
 date: 2021-09-11
+categories: ["PyTorch", "Developer Tools"]
 permalink: /blog/installing-pytorch-xla-in-google-colab-without-errors/
 canonical_url: https://medium.com/@mannasiladittya/installing-pytorch-xla-in-google-colab-without-35d37d1d03c6
 tags: [pytorch, colab, tpu, deep-learning]

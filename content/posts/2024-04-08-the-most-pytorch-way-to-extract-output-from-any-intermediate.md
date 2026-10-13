@@ -1,6 +1,7 @@
 ---
 title: "The most PyTorch way to extract output from any intermediate layer in a pre-trained model"
 date: 2024-04-08
+categories: ["Deep Learning", "PyTorch"]
 permalink: /blog/the-most-pytorch-way-to-extract-output-from-any-intermediate/
 canonical_url: https://medium.com/@mannasiladittya/extracting-output-from-intermediate-layer-in-any-pretrained-model-the-pytorch-way-b201926a1eec
 tags: [deep-learning, pytorch, feature-extraction, torchvision]

@@ -1,6 +1,7 @@
 ---
 title: "Installing detectron2 in 9 easy steps"
 date: 2023-08-24
+categories: ["Computer Vision", "Developer Tools"]
 permalink: /blog/installing-detectron2-in-9-easy-steps/
 canonical_url: https://medium.com/@mannasiladittya/install-detectron2-73d9447d3652
 tags: [detectron2, docker, wsl2, computer-vision, pytorch]

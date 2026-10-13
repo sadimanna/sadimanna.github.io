@@ -1,6 +1,7 @@
 ---
 title: "Understanding and Calculating MACs and FLOPs in PyTorch Models"
 date: 2025-05-20
+categories: ["Deep Learning", "Model Efficiency"]
 permalink: /blog/understanding-and-calculating-macs-and-flops-in-pytorch-mode/
 canonical_url: https://medium.com/@mannasiladittya/understanding-and-calculating-flops-in-pytorch-models-c609cb83ac3a
 tags: [deep-learning, pytorch, model-profiling, flops, performance]

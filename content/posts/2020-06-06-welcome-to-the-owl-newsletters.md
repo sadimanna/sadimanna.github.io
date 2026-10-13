@@ -1,6 +1,7 @@
 ---
 title: "Welcome to The Owl Newsletters"
 date: 2020-06-06
+categories: ["Artificial Intelligence", "Research"]
 permalink: /blog/welcome-to-the-owl-newsletters/
 canonical_url: https://medium.com/@mannasiladittya/welcome-to-the-owl-newsletters-ff2d137c97b5
 tags: [newsletter, the-owl, machine-learning, deep-learning]

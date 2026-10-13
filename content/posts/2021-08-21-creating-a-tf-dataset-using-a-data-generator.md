@@ -1,6 +1,7 @@
 ---
 title: "Creating a TF Dataset using a Data Generator"
 date: 2021-08-21
+categories: ["Deep Learning", "TensorFlow"]
 permalink: /blog/creating-a-tf-dataset-using-a-data-generator/
 canonical_url: https://medium.com/@mannasiladittya/creating-a-tf-dataset-using-a-data-generator-5e5564609e64
 tags: [deep-learning, tensorflow, data-pipeline, python]

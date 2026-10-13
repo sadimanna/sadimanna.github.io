@@ -1,6 +1,7 @@
 ---
 title: "Statistical Learning Theory Part 1"
 date: 2020-06-25
+categories: ["Machine Learning", "Mathematics"]
 permalink: /blog/statistical-learning-theory-part-1/
 canonical_url: https://medium.com/@mannasiladittya/statistical-learning-theory-part-1-aa00d522557e
 tags: [machine-learning, statistical-learning, mathematics, probability]

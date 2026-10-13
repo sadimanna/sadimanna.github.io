@@ -1,6 +1,7 @@
 ---
 title: "How to Remove Large Files from Git History"
 date: 2026-01-29
+categories: ["Git", "Version Control"]
 permalink: /blog/how-to-remove-large-files-from-git-history/
 canonical_url: https://medium.com/@mannasiladittya/how-to-remove-large-files-from-git-history-05f5fa177de1
 tags: [git, git-filter-repo, github, troubleshooting]

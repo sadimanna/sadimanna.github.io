@@ -1,6 +1,7 @@
 ---
 title: "How to log metrics and data at different lines in the code but at the same time-step using Wandb"
 date: 2024-12-05
+categories: ["MLOps", "Machine Learning"]
 permalink: /blog/how-to-log-metrics-and-data-at-different-lines-in-the-code-b/
 canonical_url: https://medium.com/@mannasiladittya/how-to-log-metrics-and-data-at-different-places-in-the-code-but-at-the-same-time-step-using-wandb-bdd329062cdb
 tags: [wandb, mlops, logging, deep-learning]

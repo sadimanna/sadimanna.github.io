@@ -10,7 +10,12 @@ interface PageProps {
 
 export async function generateStaticParams() {
   const tags = await getAllTags()
-  return tags.map((tag) => ({ slug: tag.name }))
+  const slugs = new Set<string>()
+  tags.forEach((tag) => {
+    slugs.add(tag.name)
+    slugs.add(encodeURIComponent(tag.name))
+  })
+  return Array.from(slugs).map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

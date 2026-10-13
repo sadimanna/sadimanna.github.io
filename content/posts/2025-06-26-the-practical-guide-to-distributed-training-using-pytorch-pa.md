@@ -1,6 +1,7 @@
 ---
 title: "The Practical Guide to Distributed Training using PyTorch — Part 4: On Multiple Nodes using SLURM"
 date: 2025-06-26
+categories: ["Distributed Training", "High Performance Computing"]
 permalink: /blog/the-practical-guide-to-distributed-training-using-pytorch-pa/
 canonical_url: https://medium.com/@mannasiladittya/the-practical-guide-to-distributed-training-using-pytorch-part-4-on-multiple-nodes-using-slurm-83cf306a3373
 tags: [deep-learning, pytorch, distributed-training, slurm, hpc]

@@ -1,6 +1,7 @@
 ---
 title: "Low-Bit Precision Training in PyTorch: Techniques and Code Examples"
 date: 2025-08-21
+categories: ["Deep Learning", "Model Efficiency"]
 permalink: /blog/low-bit-precision-training-in-pytorch-techniques-and-code-ex/
 canonical_url: https://medium.com/@mannasiladittya/low-bit-precision-training-in-pytorch-techniques-and-code-examples-038902ceaaf9
 tags: [deep-learning, pytorch, quantization, mixed-precision, performance]
