@@ -1,0 +1,133 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-07-28-the-importance-of-branching-in-git",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-07-28-the-importance-of-branching-in-git","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-07-28-the-importance-of-branching-in-git","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","ugyAk9Ph46fD5u3RAcC73",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T1f68,<hr>
+<p><img src="/images/blog/the-importance-of-branching-in-git/img1.jpeg" alt=""></p>
+<p>Branching is one of the most powerful features of Git. It allows developers to diverge from the main line of development and continue to do work without messing with that main line. This enables multiple people to work simultaneously on different features, bug fixes, or experiments in a safe and isolated environment.</p>
+<p>Key benefits of branching in Git:</p>
+<ul>
+<li><strong>Isolation</strong>: Each branch is independent, so changes in one branch don’t affect others.</li>
+<li><strong>Parallel Development</strong>: Multiple team members can work on different branches at the same time.</li>
+<li><strong>Experimentation</strong>: You can try new ideas without affecting the main codebase.</li>
+<li><strong>Code Reviews and Collaboration</strong>: Branches make it easy to review and merge changes systematically.</li>
+<li><strong>Release Management</strong>: Separate branches can be used for development, testing, and production releases.</li>
+</ul>
+<hr>
+<h3 id="step-by-step-tutorial"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-by-step-tutorial"><span class="anchor-icon">#</span></a>Step-by-Step Tutorial</h3>
+<h3 id="1-pushing-code-to-the-main-or-masterbranch"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-pushing-code-to-the-main-or-masterbranch"><span class="anchor-icon">#</span></a>1. Pushing Code to the <code>main</code> or <code>master</code> Branch</h3>
+<h3 id="a-check-your-currentbranch"><a class="heading-anchor" aria-hidden tabindex="-1" href="#a-check-your-currentbranch"><span class="anchor-icon">#</span></a>A. Check Your Current Branch</h3>
+<pre><code class="hljs language-bash">git branch
+</code></pre>
+<p>The branch with an asterisk (*) is your current branch.</p>
+<h3 id="b-commit-yourchanges"><a class="heading-anchor" aria-hidden tabindex="-1" href="#b-commit-yourchanges"><span class="anchor-icon">#</span></a>B. Commit Your Changes</h3>
+<pre><code class="hljs language-bash">git add . 
+git commit -m <span class="hljs-string">"Your commit message"</span>
+</code></pre>
+<h3 id="c-push-to-main-ormaster"><a class="heading-anchor" aria-hidden tabindex="-1" href="#c-push-to-main-ormaster"><span class="anchor-icon">#</span></a>C. Push to <code>main</code> or <code>master</code></h3>
+<ul>
+<li>If your branch is named <em><code>main</code></em>:</li>
+</ul>
+<pre><code class="hljs language-bash">git push origin main
+</code></pre>
+<ul>
+<li>If your branch is named <code>master</code>:</li>
+</ul>
+<pre><code class="hljs language-bash">git push origin master
+</code></pre>
+<p>If this is your first push and the branch doesn’t exist remotely:</p>
+<pre><code class="hljs language-bash">git push --set-upstream origin main 
+<span class="hljs-comment"># or </span>
+git push --set-upstream origin master
+</code></pre>
+<hr>
+<h3 id="2-pushing-code-to-a-different-branch-with-a-different-name"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-pushing-code-to-a-different-branch-with-a-different-name"><span class="anchor-icon">#</span></a>2. Pushing Code to a Different Branch with a Different Name</h3>
+<p>Suppose your local branch is <em><code>feature-xyz</code></em> and you want to push it to a remote branch called <em><code>testing-branch</code></em>.</p>
+<h3 id="a-check-your-currentbranch-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#a-check-your-currentbranch-1"><span class="anchor-icon">#</span></a>A. Check Your Current Branch</h3>
+<pre><code class="hljs language-bash">git branch
+</code></pre>
+<p>Make sure you are on <em><code>feature-xyz</code></em>. If not, switch to it:</p>
+<pre><code class="hljs language-bash">git checkout feature-xyz
+</code></pre>
+<h3 id="b-commit-yourchanges-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#b-commit-yourchanges-1"><span class="anchor-icon">#</span></a>B. Commit Your Changes</h3>
+<pre><code class="hljs language-bash">git add . git commit -m <span class="hljs-string">"Work on feature xyz"</span>
+</code></pre>
+<h3 id="c-push-to-a-remote-branch-with-a-different-name"><a class="heading-anchor" aria-hidden tabindex="-1" href="#c-push-to-a-remote-branch-with-a-different-name"><span class="anchor-icon">#</span></a>C. Push to a Remote Branch with a Different Name</h3>
+<pre><code class="hljs language-bash">git push origin feature-xyz:testing-branch
+</code></pre>
+<ul>
+<li>This command pushes your local <em><code>feature-xyz</code></em> branch to the remote as <em><code>testing-branch</code></em>.</li>
+</ul>
+<p>If you want to set it to track the remote branch for future pushes:</p>
+<pre><code class="hljs language-bash">git push --set-upstream origin feature-xyz:testing-branch
+</code></pre>
+<hr>
+<h3 id="common-errors-and-their-solutions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-errors-and-their-solutions"><span class="anchor-icon">#</span></a>Common Errors and Their Solutions</h3>
+<h3 id="1-error-src-refspec-main-does-not-matchany"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-error-src-refspec-main-does-not-matchany"><span class="anchor-icon">#</span></a>1. <code>error: src refspec main does not match any</code></h3>
+<p>Cause:<br>
+You don’t have a branch named <em><code>main</code></em> locally.</p>
+<p>Solution:<br>
+Check your branches with <em><code>git branch</code></em>. Use the correct branch name in your push command.</p>
+<h3 id="2-error-failed-to-push-some-refs-to"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-error-failed-to-push-some-refs-to"><span class="anchor-icon">#</span></a>2. <code>error: failed to push some refs to …</code></h3>
+<p>Causes:</p>
+<ul>
+<li>Your local branch is behind the remote branch.</li>
+<li>There are merge conflicts.</li>
+<li>You don’t have permission.</li>
+</ul>
+<p>Solution:</p>
+<ul>
+<li>Pull the latest changes:</li>
+</ul>
+<pre><code class="hljs language-bash">git pull origin &#x3C;branch-name>
+</code></pre>
+<ul>
+<li>Resolve any conflicts, commit, then push again.</li>
+<li>Check your repository permissions.</li>
+</ul>
+<h3 id="3-fatal-the-upstream-branch-does-notexist"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-fatal-the-upstream-branch-does-notexist"><span class="anchor-icon">#</span></a>3. <code>fatal: The upstream branch does not exist</code></h3>
+<p>Cause:<br>
+You are trying to push a branch that doesn’t exist remotely.</p>
+<p>Solution:<br>
+Push and set upstream:</p>
+<pre><code class="hljs language-bash">git push --set-upstream origin &#x3C;local-branch-name>
+</code></pre>
+<p>or (for a different remote name):</p>
+<pre><code class="hljs language-bash">git push --set-upstream origin &#x3C;local-branch-name>:&#x3C;remote-branch-name>
+</code></pre>
+<h3 id="4-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-havelocally"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-havelocally"><span class="anchor-icon">#</span></a>4. <code>Updates were rejected because the remote contains work that you do not have locally</code></h3>
+<p>Cause:<br>
+Your remote branch has new commits you don’t have.</p>
+<p>Solution:</p>
+<ul>
+<li>Pull the changes first:</li>
+</ul>
+<pre><code class="hljs language-bash">git pull --rebase origin &#x3C;branch-name>
+</code></pre>
+<ul>
+<li>Resolve conflicts if any, then push.</li>
+</ul>
+<h3 id="5-authentication-errors"><a class="heading-anchor" aria-hidden tabindex="-1" href="#5-authentication-errors"><span class="anchor-icon">#</span></a>5. Authentication Errors</h3>
+<p>Cause:<br>
+You are not authenticated or your credentials are wrong.</p>
+<p>Solution:</p>
+<ul>
+<li>Make sure you have access.</li>
+<li>If using HTTPS, update your credentials.</li>
+<li>If using SSH, ensure your SSH key is added to your GitHub/GitLab account.</li>
+</ul>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/the-importance-of-branching-in-git-6d7fc84c88a3">Medium</a>.</em></p>7:["$","$L10",null,{"title":"The Importance of Branching in Git","date":"$D2025-07-28T00:00:00.000Z","readingTime":3,"categories":["Git","Version Control"],"tags":["git","version-control","github","best-practices"],"contentHtml":"$11","headings":[{"level":3,"id":"step-by-step-tutorial","text":"Step-by-Step Tutorial"},{"level":3,"id":"1-pushing-code-to-the-main-or-masterbranch","text":"1. Pushing Code to the main or master Branch"},{"level":3,"id":"a-check-your-currentbranch","text":"A. Check Your Current Branch"},{"level":3,"id":"b-commit-yourchanges","text":"B. Commit Your Changes"},{"level":3,"id":"c-push-to-main-ormaster","text":"C. Push to main or master"},{"level":3,"id":"2-pushing-code-to-a-different-branch-with-a-different-name","text":"2. Pushing Code to a Different Branch with a Different Name"},{"level":3,"id":"a-check-your-currentbranch-1","text":"A. Check Your Current Branch"},{"level":3,"id":"b-commit-yourchanges-1","text":"B. Commit Your Changes"},{"level":3,"id":"c-push-to-a-remote-branch-with-a-different-name","text":"C. Push to a Remote Branch with a Different Name"},{"level":3,"id":"common-errors-and-their-solutions","text":"Common Errors and Their Solutions"},{"level":3,"id":"1-error-src-refspec-main-does-not-matchany","text":"1. error: src refspec main does not match any"},{"level":3,"id":"2-error-failed-to-push-some-refs-to","text":"2. error: failed to push some refs to …"},{"level":3,"id":"3-fatal-the-upstream-branch-does-notexist","text":"3. fatal: The upstream branch does not exist"},{"level":3,"id":"4-updates-were-rejected-because-the-remote-contains-work-that-you-do-not-havelocally","text":"4. Updates were rejected because the remote contains work that you do not have locally"},{"level":3,"id":"5-authentication-errors","text":"5. Authentication Errors"}],"prevPost":{"slug":"2025-07-23-how-slurm-assigns-gpus-to-your-jobs","title":"How Slurm Assigns GPUs to Your Jobs"},"nextPost":{"slug":"2025-07-28-pushing-changes-to-a-new-private-repository-a-step-by-step-g","title":"Pushing Changes to a New Private Repository: A Step-by-Step Guide"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"The Importance of Branching in Git — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

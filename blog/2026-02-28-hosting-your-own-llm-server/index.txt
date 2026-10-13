@@ -1,0 +1,361 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-02-28-hosting-your-own-llm-server",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-02-28-hosting-your-own-llm-server","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-02-28-hosting-your-own-llm-server","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","IoqPWYfDIs1rLrzITZjJd",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T59ca,<h4 id="sending-text-and-files-to-a-local-model-using-fastapi-and-llama-server"><a class="heading-anchor" aria-hidden tabindex="-1" href="#sending-text-and-files-to-a-local-model-using-fastapi-and-llama-server"><span class="anchor-icon">#</span></a>Sending Text and Files to a Local Model Using FastAPI and llama-server</h4>
+<p><img src="/images/blog/hosting-your-own-llm-server/img1.png" alt=""></p>
+<p>Large language models are easy to run locally now. But running a model is not the same as <strong>serving</strong> it.</p>
+<p>If you want to build real applications, you must learn how to:</p>
+<ul>
+<li>Accept HTTP requests</li>
+<li>Parse JSON and multipart form data</li>
+<li>Handle binary file uploads</li>
+<li>Forward inputs to an LLM</li>
+<li>Return structured responses</li>
+</ul>
+<p>In this tutorial, we’ll build production-style servers for:</p>
+<ol>
+<li><strong>Text-only LLM</strong></li>
+<li><strong>Multimodal LLM (text + image)</strong></li>
+</ol>
+<p>We’ll implement this in two ways:</p>
+<ul>
+<li>✅ Using <strong>FastAPI + Transformers</strong></li>
+<li>✅ Using <strong>FastAPI + llama-cpp (GGUF)</strong></li>
+<li>✅ Using <strong>llama-server (native llama.cpp server)</strong></li>
+</ul>
+<p>All examples follow proper multipart/form-data format for file uploads.</p>
+<h3 id="architecture-overview"><a class="heading-anchor" aria-hidden tabindex="-1" href="#architecture-overview"><span class="anchor-icon">#</span></a>Architecture Overview</h3>
+<pre><code class="hljs language-text">Client (curl / browser / app)
+        ↓
+HTTP Request (JSON or multipart)
+        ↓
+FastAPI or llama-server
+        ↓
+LLM (Transformers or GGUF)
+        ↓
+Response
+</code></pre>
+<h3 id="part-1fastapi--transformers-text-only-llm"><a class="heading-anchor" aria-hidden tabindex="-1" href="#part-1fastapi--transformers-text-only-llm"><span class="anchor-icon">#</span></a>Part 1 — FastAPI + Transformers (Text-Only LLM)</h3>
+<p>We’ll start with a text-only model.</p>
+<h3 id="install"><a class="heading-anchor" aria-hidden tabindex="-1" href="#install"><span class="anchor-icon">#</span></a>Install</h3>
+<pre><code class="hljs language-bash">pip install fastapi uvicorn transformers torch
+</code></pre>
+<h3 id="server-code-text-only"><a class="heading-anchor" aria-hidden tabindex="-1" href="#server-code-text-only"><span class="anchor-icon">#</span></a>Server Code (Text-Only)</h3>
+<pre><code class="hljs language-python"><span class="hljs-comment"># server_text.py</span>
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI
+<span class="hljs-keyword">from</span> pydantic <span class="hljs-keyword">import</span> BaseModel
+<span class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> AutoTokenizer, AutoModelForCausalLM
+<span class="hljs-keyword">import</span> torch
+
+app = FastAPI()
+
+model_id = <span class="hljs-string">"openai-community/gpt2"</span>
+
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(model_id)
+model.<span class="hljs-built_in">eval</span>()
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ChatRequest</span>(<span class="hljs-title class_ inherited__">BaseModel</span>):
+    message: <span class="hljs-built_in">str</span>
+
+
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat</span>(<span class="hljs-params">req: ChatRequest</span>):
+    inputs = tokenizer(req.message, return_tensors=<span class="hljs-string">"pt"</span>)
+
+    <span class="hljs-keyword">with</span> torch.no_grad():
+        output = model.generate(**inputs, max_new_tokens=<span class="hljs-number">100</span>)
+    
+    response = tokenizer.decode(output[<span class="hljs-number">0</span>], skip_special_tokens=<span class="hljs-literal">True</span>)
+
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"response"</span>: response}
+</code></pre>
+<h3 id="run-server"><a class="heading-anchor" aria-hidden tabindex="-1" href="#run-server"><span class="anchor-icon">#</span></a>Run Server</h3>
+<pre><code class="hljs language-text">uvicorn server_text:app --host 127.0.0.1 --port 8000
+</code></pre>
+<h3 id="test"><a class="heading-anchor" aria-hidden tabindex="-1" href="#test"><span class="anchor-icon">#</span></a>Test</h3>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat \
+-H <span class="hljs-string">"Content-Type: application/json"</span> \
+-d <span class="hljs-string">'{"message":"Explain pneumonia"}'</span>
+</code></pre>
+<h3 id="part-2fastapi--transformers-multimodal-llm"><a class="heading-anchor" aria-hidden tabindex="-1" href="#part-2fastapi--transformers-multimodal-llm"><span class="anchor-icon">#</span></a>Part 2 — FastAPI + Transformers (Multimodal LLM)</h3>
+<p>Now, let’s serve a multimodal model like MedGemma.</p>
+<p>We must use multipart/form-data because we are sending binary images.</p>
+<h3 id="install-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#install-1"><span class="anchor-icon">#</span></a>Install</h3>
+<pre><code class="hljs language-bash">pip install pillow
+</code></pre>
+<h3 id="server-code-text-image"><a class="heading-anchor" aria-hidden tabindex="-1" href="#server-code-text-image"><span class="anchor-icon">#</span></a>Server Code (Text + Image)</h3>
+<pre><code class="hljs language-python"><span class="hljs-comment"># server_multimodal.py</span>
+
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI, UploadFile, File, Form
+<span class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> AutoProcessor, AutoModelForImageTextToText
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">import</span> io
+
+app = FastAPI()
+
+model_id = <span class="hljs-string">"google/medgemma-4b-it"</span>
+
+processor = AutoProcessor.from_pretrained(model_id)
+model = AutoModelForImageTextToText.from_pretrained(
+    model_id,
+    torch_dtype=torch.float16
+)
+model.<span class="hljs-built_in">eval</span>()
+
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat</span>(<span class="hljs-params">
+    message: <span class="hljs-built_in">str</span> = Form(<span class="hljs-params">...</span>),
+    image: UploadFile = File(<span class="hljs-params">...</span>)
+</span>):
+
+    <span class="hljs-comment"># Read binary image</span>
+    image_bytes = <span class="hljs-keyword">await</span> image.read()
+
+    <span class="hljs-comment"># Convert to PIL</span>
+    pil_image = Image.<span class="hljs-built_in">open</span>(io.BytesIO(image_bytes)).convert(<span class="hljs-string">"RGB"</span>)
+
+    messages = [{
+        <span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>,
+        <span class="hljs-string">"content"</span>: [
+            {<span class="hljs-string">"type"</span>: <span class="hljs-string">"text"</span>, <span class="hljs-string">"text"</span>: message},
+            {<span class="hljs-string">"type"</span>: <span class="hljs-string">"image"</span>, <span class="hljs-string">"image"</span>: pil_image}
+        ]
+    }]
+
+    inputs = processor.apply_chat_template(
+        messages,
+        add_generation_prompt=<span class="hljs-literal">True</span>,
+        tokenize=<span class="hljs-literal">True</span>,
+        return_tensors=<span class="hljs-string">"pt"</span>
+    )
+
+    <span class="hljs-keyword">with</span> torch.no_grad():
+        output = model.generate(**inputs, max_new_tokens=<span class="hljs-number">200</span>)
+    
+    response = processor.decode(
+        output[<span class="hljs-number">0</span>][inputs[<span class="hljs-string">"input_ids"</span>].shape[-<span class="hljs-number">1</span>]:],
+        skip_special_tokens=<span class="hljs-literal">True</span>
+    )
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"response"</span>: response}
+</code></pre>
+<h3 id="test-multipart"><a class="heading-anchor" aria-hidden tabindex="-1" href="#test-multipart"><span class="anchor-icon">#</span></a>Test (Multipart)</h3>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat \
+-F <span class="hljs-string">"message=Describe this X-ray"</span> \
+-F <span class="hljs-string">"image=@xray.png"</span>
+</code></pre>
+<p>Here:</p>
+<ul>
+<li>-F builds multipart</li>
+<li>Image is sent as raw binary</li>
+<li>No <em><strong>base64</strong></em> encoding</li>
+</ul>
+<h3 id="part-3fastapi--llama-cpp-gguf-textmodel"><a class="heading-anchor" aria-hidden tabindex="-1" href="#part-3fastapi--llama-cpp-gguf-textmodel"><span class="anchor-icon">#</span></a>Part 3 — FastAPI + llama-cpp (GGUF Text Model)</h3>
+<p><strong>GGUF</strong> models run through <em><strong>llama-cpp</strong></em>, which is a <em><strong>C++</strong></em> backend.</p>
+<h3 id="install-cpu"><a class="heading-anchor" aria-hidden tabindex="-1" href="#install-cpu"><span class="anchor-icon">#</span></a>Install (CPU)</h3>
+<pre><code class="hljs language-bash">pip install llama-cpp-python
+</code></pre>
+<p>For GPU (CUDA):</p>
+<pre><code class="hljs language-text">CMAKE_ARGS="-DGGML_CUBLAS=on" pip install llama-cpp-python --no-cache-dir
+</code></pre>
+<h3 id="server-code-text-only-gguf"><a class="heading-anchor" aria-hidden tabindex="-1" href="#server-code-text-only-gguf"><span class="anchor-icon">#</span></a>Server Code (Text-Only GGUF)</h3>
+<pre><code class="hljs language-python"><span class="hljs-comment"># server_gguf_text.py</span>
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI
+<span class="hljs-keyword">from</span> pydantic <span class="hljs-keyword">import</span> BaseModel
+<span class="hljs-keyword">from</span> llama_cpp <span class="hljs-keyword">import</span> Llama
+
+app = FastAPI()
+
+model = Llama.from_pretrained(
+    repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+    filename=<span class="hljs-string">"medgemma-4b-it-Q4_K_M.gguf"</span>,
+    n_gpu_layers=<span class="hljs-number">0</span>
+)
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ChatRequest</span>(<span class="hljs-title class_ inherited__">BaseModel</span>):
+    message: <span class="hljs-built_in">str</span>
+
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat</span>(<span class="hljs-params">req: ChatRequest</span>):
+    response = model.create_chat_completion(
+        messages=[
+            {<span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>, <span class="hljs-string">"content"</span>: req.message}
+        ],
+        max_tokens=<span class="hljs-number">200</span>
+    )
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">"response"</span>: response[<span class="hljs-string">"choices"</span>][<span class="hljs-number">0</span>][<span class="hljs-string">"message"</span>][<span class="hljs-string">"content"</span>]}
+</code></pre>
+<h3 id="part-4fastapi--llama-cpp-multimodal-gguf-withmmproj"><a class="heading-anchor" aria-hidden tabindex="-1" href="#part-4fastapi--llama-cpp-multimodal-gguf-withmmproj"><span class="anchor-icon">#</span></a>Part 4 — FastAPI + llama-cpp (Multimodal GGUF with mmproj)</h3>
+<p>Multimodal GGUF models require:</p>
+<ul>
+<li>Main model <strong>GGUF</strong></li>
+<li><strong>mmproj</strong> file (vision projection weights)</li>
+</ul>
+<h3 id="load-model-withmmproj"><a class="heading-anchor" aria-hidden tabindex="-1" href="#load-model-withmmproj"><span class="anchor-icon">#</span></a>Load Model with mmproj</h3>
+<pre><code class="hljs language-python"><span class="hljs-comment"># server_gguf_mm.py</span>
+
+<span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI, UploadFile, File, Form
+<span class="hljs-keyword">from</span> fastapi.responses <span class="hljs-keyword">import</span> JSONResponse
+<span class="hljs-keyword">from</span> llama_cpp <span class="hljs-keyword">import</span> Llama
+<span class="hljs-keyword">from</span> llama_cpp.llama_chat_format <span class="hljs-keyword">import</span> Llava15ChatHandler
+<span class="hljs-keyword">import</span> base64
+
+app = FastAPI()
+
+<span class="hljs-comment"># ---------------------------------------------------------</span>
+<span class="hljs-comment"># Load Multimodal GGUF Model Properly</span>
+<span class="hljs-comment"># ---------------------------------------------------------</span>
+<span class="hljs-comment"># Load vision projection (mmproj) from locally downloaded path</span>
+<span class="hljs-comment"># chat_handler = Llava15ChatHandler(</span>
+<span class="hljs-comment">#     clip_model_path="/path/to/mmproj-medgemma-4b-it.gguf"</span>
+<span class="hljs-comment"># )</span>
+
+<span class="hljs-comment"># Load vision projection (mmproj) from HF</span>
+chat_handler = Llava15ChatHandler.from_pretrained(
+    repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+    filename=<span class="hljs-string">"mmproj-BF16.gguf"</span>
+)
+
+<span class="hljs-comment"># Load model from locally downloaded path</span>
+<span class="hljs-comment"># model = Llama(</span>
+<span class="hljs-comment">#             model_path="./path/to/llava/llama-model.gguf",</span>
+<span class="hljs-comment">#             chat_handler=chat_handler,</span>
+<span class="hljs-comment">#             n_gpu_layers=0</span>
+<span class="hljs-comment"># )</span>
+
+<span class="hljs-comment"># Load model from HF</span>
+model = Llama.from_pretrained(
+    repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+    filename=<span class="hljs-string">"medgemma-4b-it-Q4_K_M.gguf"</span>,
+    chat_handler=chat_handler,
+    n_gpu_layers=<span class="hljs-number">0</span>
+)
+
+<span class="hljs-comment"># ---------------------------------------------------------</span>
+<span class="hljs-comment"># Multipart Endpoint</span>
+<span class="hljs-comment"># ---------------------------------------------------------</span>
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat</span>(<span class="hljs-params">
+    message: <span class="hljs-built_in">str</span> = Form(<span class="hljs-params">...</span>),
+    image: UploadFile = File(<span class="hljs-params">...</span>)
+</span>):
+
+    <span class="hljs-comment"># Read raw binary</span>
+    image_bytes = <span class="hljs-keyword">await</span> image.read()
+    <span class="hljs-comment"># Convert to base64</span>
+    image_base64 = base64.b64encode(image_bytes).decode(<span class="hljs-string">"utf-8"</span>)
+    <span class="hljs-comment"># Create data URL</span>
+    data_url = <span class="hljs-string">f"data:<span class="hljs-subst">{image.content_type}</span>;base64,<span class="hljs-subst">{image_base64}</span>"</span>
+
+    response = model.create_chat_completion(
+        messages=[
+            {
+                <span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>,
+                <span class="hljs-string">"content"</span>: [
+                    {<span class="hljs-string">"type"</span>: <span class="hljs-string">"text"</span>, <span class="hljs-string">"text"</span>: message},
+                    {
+                        <span class="hljs-string">"type"</span>: <span class="hljs-string">"image_url"</span>,
+                        <span class="hljs-string">"image_url"</span>: {<span class="hljs-string">"url"</span>: data_url}
+                    }
+                ]
+            }
+        ],
+        max_tokens=<span class="hljs-number">200</span>
+    )
+
+    <span class="hljs-keyword">return</span> JSONResponse({
+        <span class="hljs-string">"response"</span>: response[<span class="hljs-string">"choices"</span>][<span class="hljs-number">0</span>][<span class="hljs-string">"message"</span>][<span class="hljs-string">"content"</span>]
+    })
+</code></pre>
+<p>Since the above accepts a <em><strong>multipart/form-data</strong></em>, you can use the same command as in <strong>Part 2</strong>.</p>
+<h3 id="part-5using-llama-server-native-llamacpp-server"><a class="heading-anchor" aria-hidden tabindex="-1" href="#part-5using-llama-server-native-llamacpp-server"><span class="anchor-icon">#</span></a>Part 5 — Using llama-server (Native llama.cpp Server)</h3>
+<blockquote>
+<p>llama.cpp provides a built-in server.</p>
+</blockquote>
+<p>To use llama-server, you need to build llama.cpp from source to obtain the <em><strong>llama-server</strong></em> <strong>binary</strong>.</p>
+<p><a href="https://medium.com/the-owl/%EF%B8%8F-how-to-start-using-llama-server-92aa6f81edc8">⚙️ How to Start Using llama-server</a></p>
+<h3 id="run-textmodel"><a class="heading-anchor" aria-hidden tabindex="-1" href="#run-textmodel"><span class="anchor-icon">#</span></a>Run Text Model</h3>
+<p><em><strong>If the model is downloaded locally</strong></em></p>
+<pre><code class="hljs language-text">./llama-server \
+  -m models/medgemma-4b-it-Q4_K_M.gguf \
+  --port 8000
+</code></pre>
+<p><em><strong>If the model needs to be downloaded from HF</strong></em></p>
+<pre><code class="hljs language-text">./llama-server \
+--hf-repo unsloth/medgemma-4b-it-GGUF \
+--hf-file medgemma-4b-it-Q4_K_M.gguf \
+--port 8000
+</code></pre>
+<p>Then:</p>
+<pre><code class="hljs language-bash">curl http://localhost:8000/v1/chat/completions \
+-H <span class="hljs-string">"Content-Type: application/json"</span> \
+-d <span class="hljs-string">'{"messages":[{"role":"user","content":"Explain pneumonia"}]}'</span>
+</code></pre>
+<h3 id="run-multimodal-model"><a class="heading-anchor" aria-hidden tabindex="-1" href="#run-multimodal-model"><span class="anchor-icon">#</span></a>Run Multimodal Model</h3>
+<p><em><strong>Assuming the models are downloaded locally</strong></em></p>
+<pre><code class="hljs language-text">./llama-server \
+  -m models/medgemma-4b-it-Q4_K_M.gguf \
+  --mmproj models/mmproj-medgemma-4b-it.gguf \
+  --port 8000
+
+# Automatically Download multimodal models
+
+./llama-server \
+--hf unsloth/medgemma-4b-it-GGUF \
+--port 8000
+</code></pre>
+<p>Then:</p>
+<pre><code class="hljs language-bash">curl http://localhost:8000/v1/chat/completions \
+-d <span class="hljs-string">'{"messages": [{"role": "user","content": [{"type": "image_url","image_url": {"url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Chest_Xray_PA_3-8-2010.png"}},{"type": "text","text": "Describe this image in detail."}]}]}'</span>
+</code></pre>
+<p>If the model supports multimodal, you can input the media file via the image_url content part. <em><strong>llama-server</strong></em> supports both <strong>base64</strong> and <strong>remote URL</strong> as input.</p>
+<p>The server internally parses the multipart and routes the image into the vision encoder.</p>
+<h3 id="sample-output"><a class="heading-anchor" aria-hidden tabindex="-1" href="#sample-output"><span class="anchor-icon">#</span></a>Sample Output</h3>
+<pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
+ “id”<span class="hljs-punctuation">:</span> “chatcmpl-kfKSD8ArfZc948prcuKjICuE7YG0nVKI”<span class="hljs-punctuation">,</span>
+ “object”<span class="hljs-punctuation">:</span> “chat.completion”<span class="hljs-punctuation">,</span>
+ “created”<span class="hljs-punctuation">:</span> <span class="hljs-number">1772387732</span><span class="hljs-punctuation">,</span>
+ “model”<span class="hljs-punctuation">:</span> “unsloth/medgemma<span class="hljs-number">-4</span>b-it-GGUF”<span class="hljs-punctuation">,</span>
+ “system_fingerprint”<span class="hljs-punctuation">:</span> “b8183–<span class="hljs-number">66</span>d65ec29”<span class="hljs-punctuation">,</span>
+ “choices”<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+ <span class="hljs-punctuation">{</span>
+ “index”<span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span>
+ “message”<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+ “role”<span class="hljs-punctuation">:</span> “assistant”<span class="hljs-punctuation">,</span>
+ “content”<span class="hljs-punctuation">:</span> “Detailed chest X-ray description provided above…”
+ <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+ “finish_reason”<span class="hljs-punctuation">:</span> “stop”
+ <span class="hljs-punctuation">}</span>
+ <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+ “usage”<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+ “prompt_tokens”<span class="hljs-punctuation">:</span> <span class="hljs-number">273</span><span class="hljs-punctuation">,</span>
+ “completion_tokens”<span class="hljs-punctuation">:</span> <span class="hljs-number">299</span><span class="hljs-punctuation">,</span>
+ “total_tokens”<span class="hljs-punctuation">:</span> <span class="hljs-number">572</span>
+ <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+ “timings”<span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+ “prompt_ms”<span class="hljs-punctuation">:</span> <span class="hljs-number">276136.242</span><span class="hljs-punctuation">,</span>
+ “prompt_per_second”<span class="hljs-punctuation">:</span> <span class="hljs-number">0.988</span><span class="hljs-punctuation">,</span>
+ “predicted_ms”<span class="hljs-punctuation">:</span> <span class="hljs-number">145214.151</span><span class="hljs-punctuation">,</span>
+ “predicted_per_second”<span class="hljs-punctuation">:</span> <span class="hljs-number">2.059</span>
+ <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<hr>
+<p><a href="https://medium.com/the-owl/hosting-your-own-llm-server-31e171576215">Hosting Your Own LLM Server</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/hosting-your-own-llm-server-31e171576215">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Hosting Your Own LLM Server","date":"$D2026-02-28T00:00:00.000Z","readingTime":6,"categories":["Large Language Models","Deployment"],"tags":["gguf","fastapi","llama-cpp","llm","llama-server"],"contentHtml":"$11","headings":[{"level":4,"id":"sending-text-and-files-to-a-local-model-using-fastapi-and-llama-server","text":"Sending Text and Files to a Local Model Using FastAPI and llama-server"},{"level":3,"id":"architecture-overview","text":"Architecture Overview"},{"level":3,"id":"part-1fastapi--transformers-text-only-llm","text":"Part 1 — FastAPI + Transformers (Text-Only LLM)"},{"level":3,"id":"install","text":"Install"},{"level":3,"id":"server-code-text-only","text":"Server Code (Text-Only)"},{"level":3,"id":"run-server","text":"Run Server"},{"level":3,"id":"test","text":"Test"},{"level":3,"id":"part-2fastapi--transformers-multimodal-llm","text":"Part 2 — FastAPI + Transformers (Multimodal LLM)"},{"level":3,"id":"install-1","text":"Install"},{"level":3,"id":"server-code-text-image","text":"Server Code (Text + Image)"},{"level":3,"id":"test-multipart","text":"Test (Multipart)"},{"level":3,"id":"part-3fastapi--llama-cpp-gguf-textmodel","text":"Part 3 — FastAPI + llama-cpp (GGUF Text Model)"},{"level":3,"id":"install-cpu","text":"Install (CPU)"},{"level":3,"id":"server-code-text-only-gguf","text":"Server Code (Text-Only GGUF)"},{"level":3,"id":"part-4fastapi--llama-cpp-multimodal-gguf-withmmproj","text":"Part 4 — FastAPI + llama-cpp (Multimodal GGUF with mmproj)"},{"level":3,"id":"load-model-withmmproj","text":"Load Model with mmproj"},{"level":3,"id":"part-5using-llama-server-native-llamacpp-server","text":"Part 5 — Using llama-server (Native llama.cpp Server)"},{"level":3,"id":"run-textmodel","text":"Run Text Model"},{"level":3,"id":"run-multimodal-model","text":"Run Multimodal Model"},{"level":3,"id":"sample-output","text":"Sample Output"}],"prevPost":{"slug":"2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes","title":"Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes"},"nextPost":{"slug":"2026-03-02-understanding-multipart-form-data-how-to-send-text-binary-da","title":"Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Hosting Your Own LLM Server — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

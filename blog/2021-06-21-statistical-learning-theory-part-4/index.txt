@@ -1,0 +1,103 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2021-06-21-statistical-learning-theory-part-4",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2021-06-21-statistical-learning-theory-part-4","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2021-06-21-statistical-learning-theory-part-4","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","td8EQVG-VAECpYpld7nly",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2832,<hr>
+<p><img src="/images/blog/statistical-learning-theory-part-4/img1.jpeg" alt=""></p>
+<p>Image Credits: <a href="https://www.google.com/url?sa=i&#x26;url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fpattern&#x26;psig=AOvVaw1ghdDrLc9a2nwAKIW0PUmm&#x26;ust=1624381304173000&#x26;source=images&#x26;cd=vfe&#x26;ved=0CAoQjRxqFwoTCJDWpoeaqfECFQAAAAAdAAAAABAD">Source</a></p>
+<p>Suppose, we have data distributed according to the probability distribution function <strong>P(<em>x</em>).</strong> An element <em><strong>x</strong></em> appears randomly and independently according to the distribution <strong>P(<em>x</em>).</strong></p>
+<p>Again, suppose you are the <em>supervisor.</em> You classify and label each such element <em><strong>x</strong></em> into <em><strong>k</strong></em> classes. We denote the distribution according to which the supervisor, that is, you carry out the classification, using <strong>P(<em>ω</em>|<em>x</em>),</strong> where <strong>ω</strong> ∈ {<strong>0</strong>, <strong>1</strong>,..,<strong>k-1</strong>}.</p>
+<h2 id="pattern-recognition-problem-formulation"><a class="heading-anchor" aria-hidden tabindex="-1" href="#pattern-recognition-problem-formulation"><span class="anchor-icon">#</span></a>Pattern Recognition Problem Formulation</h2>
+<p>In a Pattern Recognition problem, neither the data distribution <strong>P(<em>x</em>)</strong>, nor the conditional probability distribution <strong>P(ω|<em>x</em>)</strong> is known. But, we do have the empirical data <em><strong>x</strong></em> and if <strong>P(<em>x</em>)</strong> and <strong>P(ω|<em>x</em>)</strong> exist, then <strong>P(ω, <em>x</em>) = P(ω|<em>x</em>).P(<em>x</em>)</strong> alsoexists.</p>
+<h2 id="the-risk-functional"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-risk-functional"><span class="anchor-icon">#</span></a>The Risk Functional</h2>
+<p>From the <a href="https://medium.com/the-owl/statistical-learning-theory-part-3-e313539fe13c">previous article</a> in this series</p>
+<p><a href="https://medium.com/the-owl/statistical-learning-theory-part-3-e313539fe13c" title="https://medium.com/the-owl/statistical-learning-theory-part-3-e313539fe13c"><strong>Statistical Learning Theory Part 3</strong><br>
+<em>Approaches to the Learning Problem Part 1</em>medium.com</a></p>
+<p>we can learn that in the problem of risk minimization from empirical data, the objective is to select a function <strong>g*(<em>z</em>)</strong> based on a criterion,from a set of functions {<strong>g</strong>(<em><strong>z</strong></em>)}such that the <strong>RISK</strong></p>
+<blockquote>
+<p><strong>R(g(<em>z</em>)) = ∫ L(<em>z</em>,g(<em>z</em>)) dF(<em>z</em>)</strong></p>
+</blockquote>
+<p>is minimized (where <strong>F(<em>z</em>)</strong> is the probability distribution function on <em><strong>Z</strong></em> ).</p>
+<p>Reformulating the risk functional in the parametric form, we get</p>
+<blockquote>
+<p><strong>R(<em>α</em>) = ∫ Q(<em>z</em>,<em>α</em>) dF(<em>z</em>), α ∈ Λ</strong></p>
+</blockquote>
+<p>where,</p>
+<blockquote>
+<p>Q(z,α) = L(z,g(z,α))</p>
+</blockquote>
+<p>is called the <strong>Loss function.</strong></p>
+<hr>
+<p>Now, for the pattern recognition problems, the set of functions <strong>g(<em>x</em>,α)</strong> will be such that they take only values from the set <strong>{0, 1, …, k-1}.</strong> Also, note that the empirical data consisting of a random independent sample of pairs</p>
+<p><img src="/images/blog/statistical-learning-theory-part-4/img2.png" alt=""></p>
+<p>is given.</p>
+<h2 id="simplest-loss-function-for-classification"><a class="heading-anchor" aria-hidden tabindex="-1" href="#simplest-loss-function-for-classification"><span class="anchor-icon">#</span></a>Simplest Loss Function for Classification</h2>
+<p>Consider the simplest loss function</p>
+<p><img src="/images/blog/statistical-learning-theory-part-4/img3.png" alt=""></p>
+<p>where, <strong>L</strong>(<em><strong>ω</strong></em>,<strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>)) = 1 if <em><strong>ω</strong></em> ≠ <strong>g</strong> and 0 otherwise. This loss function does not contribute to the total risk if the decision given by the function <strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>) is correct but adds 1 for every incorrect decision made.</p>
+<p>The problem of pattern recognition is to minimize the risk functional</p>
+<blockquote>
+<p>R(α) = ∫ L(ω, g(x,α)) dF(ω, x)</p>
+</blockquote>
+<p>over the set of functions <strong>g</strong>(<em><strong>x</strong></em>,<strong>α</strong>), <strong>α</strong> ∈ <strong>Λ</strong> and the given empirical data.</p>
+<p>The above expression for the risk functional actually denotes the probability of classification error for any decision rule <strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>).</p>
+<h3 id="derivation-and-joint-distribution"><a class="heading-anchor" aria-hidden tabindex="-1" href="#derivation-and-joint-distribution"><span class="anchor-icon">#</span></a>Derivation and Joint Distribution</h3>
+<p>Since, <strong>F</strong>(<em><strong>ω</strong></em>,<em><strong>x</strong></em>) is the cumulative joint distribution function</p>
+<p><img src="/images/blog/statistical-learning-theory-part-4/img4.png" alt=""></p>
+<p>since ω takes only discrete values from the set {0, 1, .., k-1}.</p>
+<p>So, we can write <strong>dF</strong>(<em><strong>ω</strong></em>,<em><strong>x</strong></em>) as</p>
+<p><img src="/images/blog/statistical-learning-theory-part-4/img5.png" alt=""></p>
+<p>Thus, the risk functional <strong>R</strong>(<strong>α</strong>) can be written as</p>
+<p><img src="/images/blog/statistical-learning-theory-part-4/img6.png" alt=""></p>
+<p>For a chosen <em><strong>α</strong></em>, <strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>) gives the decisions on the random independent samples of empirical data. If all the decisions of the function <strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>) are wrong, the risk functional value becomes equal to <strong>F</strong>(<em><strong>k-1</strong></em>,<strong>∞</strong>), i.e. <strong>1</strong>. Otherwise, we can say that <strong>R</strong>(<em><strong>α</strong></em>) ≤ <strong>1</strong>. This follows the rule of probability.</p>
+<hr>
+<p>For a binary classification problem and for a single sample <em><strong>x</strong></em> (let’s say this is a positive sample, i.e. <em><strong>ω</strong></em> = <strong>1</strong>), if the sample is misclassified then,</p>
+<blockquote>
+<p><strong>R</strong>(<em><strong>α</strong></em>) = <strong>L</strong>(<strong>1</strong>, <strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>)). <em><strong>f</strong></em>(1,x) + <strong>L</strong>(<strong>0</strong>, <strong>g</strong>(<em><strong>x</strong></em>,<em><strong>α</strong></em>)). <em><strong>f</strong></em>(0,x) = <em><strong>f</strong></em>(1***,x***) = 1</p>
+</blockquote>
+<p>Had the decision rule correctly classified the sample <em><strong>x</strong></em>, then</p>
+<blockquote>
+<p>R(α) = L(1, g(x,α)). f(1,x) + L(0, g(x,α)). f(0,x) = f(0,x) = 0</p>
+</blockquote>
+<hr>
+<p>However, the joint distribution are not this simple in real-life data and often have multivariate properties. The discrete values will be replaced by probability values in the above equations.</p>
+<hr>
+<p>The problem of pattern recognition can thus be reduced to a problem of risk minimization based on the empirical data even though the Cumulative Joint Distribution Function <strong>F</strong>(<em><strong>ω</strong></em>,<em><strong>x</strong></em>) is unknown.</p>
+<hr>
+<h2 id="restrictions-on-loss-functions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#restrictions-on-loss-functions"><span class="anchor-icon">#</span></a>Restrictions on Loss Functions</h2>
+<p>The set of loss functions <strong>Q</strong>(<strong>z</strong>,<strong>α</strong>) is not arbitrary and follows the following restrictions:</p>
+<ol>
+<li>The vector <em><strong>z</strong></em> consists of <strong>n+1</strong> coordinates: coordinate <strong>ω,</strong> which takes on only a finite number of values and <strong>n</strong> coordinates which form the <strong>n</strong>-dimensional vector <strong><em>x.<br>
+z</em> = [ω , <em>x</em>]</strong></li>
+<li>The set of functions <strong>Q</strong>(<strong>z</strong>,<strong>α</strong>), <strong>α</strong> ∈ <strong>Λ</strong>, is given by <strong>L</strong>(<em><strong>ω</strong></em>, <strong>g</strong>(<em><strong>z</strong></em>,<em><strong>α</strong></em>)) and takes only finite values.</li>
+</ol>
+<p>This specific feature of the risk minimization problem characterizes the pattern recognition problem.</p>
+<hr>
+<p>Next, we will look into the problem of regression estimation.</p>
+<hr>
+<h2 id="reference"><a class="heading-anchor" aria-hidden tabindex="-1" href="#reference"><span class="anchor-icon">#</span></a>Reference</h2>
+<p>Vapnik, V. N. (1998). <em>Statistical Learning Theory</em>. Wiley-Interscience.</p>
+<hr>
+<p>Please clap on this story if you like it!!</p>
+<p>For the previous articles in this series click the links below</p>
+<p><a href="https://medium.com/the-owl/statistical-learning-theory-part-1-aa00d522557e" title="https://medium.com/the-owl/statistical-learning-theory-part-1-aa00d522557e"><strong>Statistical Learning Theory Part 1</strong><br>
+<em>Introduction to Statistical Learning Theory</em>medium.com</a></p>
+<p><a href="https://medium.com/the-owl/statistical-learning-theory-part-2-b5a0df4bebf5" title="https://medium.com/the-owl/statistical-learning-theory-part-2-b5a0df4bebf5"><strong>Statistical Learning Theory Part 2</strong><br>
+<em>Approaches to the Learning Problem Part 0</em>medium.com</a></p>
+<p><a href="https://medium.com/the-owl/statistical-learning-theory-part-3-e313539fe13c" title="https://medium.com/the-owl/statistical-learning-theory-part-3-e313539fe13c"><strong>Statistical Learning Theory Part 3</strong><br>
+<em>Approaches to the Learning Problem Part 1</em>medium.com</a></p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/statistical-learning-theory-part-4-f79408cdbf44">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Statistical Learning Theory Part 4","date":"$D2021-06-21T00:00:00.000Z","readingTime":4,"categories":["Machine Learning","Mathematics"],"tags":["machine-learning","statistical-learning","mathematics","vapnik"],"contentHtml":"$11","headings":[{"level":2,"id":"pattern-recognition-problem-formulation","text":"Pattern Recognition Problem Formulation"},{"level":2,"id":"the-risk-functional","text":"The Risk Functional"},{"level":2,"id":"simplest-loss-function-for-classification","text":"Simplest Loss Function for Classification"},{"level":3,"id":"derivation-and-joint-distribution","text":"Derivation and Joint Distribution"},{"level":2,"id":"restrictions-on-loss-functions","text":"Restrictions on Loss Functions"},{"level":2,"id":"reference","text":"Reference"}],"prevPost":{"slug":"2021-01-09-using-forward-hooks-to-extract-intermediate-layer-outputs-fr","title":"Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in…"},"nextPost":{"slug":"2021-06-30-simclr-in-pytorch","title":"SimCLR in PyTorch"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Statistical Learning Theory Part 4 — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

@@ -1,0 +1,197 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-01-29-how-to-remove-large-files-from-git-history",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-01-29-how-to-remove-large-files-from-git-history","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-01-29-how-to-remove-large-files-from-git-history","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","Ppt3fO4gicwpiSFdXNlBT",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2953,<hr>
+<p><img src="/images/blog/how-to-remove-large-files-from-git-history/img1.jpeg" alt=""></p>
+<p>In a previous post, we discussed why adding a folder to <code>.gitignore</code> doesn’t retroactively stop Git from tracking it. The fix was straightforward:</p>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">rm</span> -r --cached outputs/
+git commit
+git push
+</code></pre>
+<p>After doing this, everything <em>looked</em> correct.<br>
+On another machine, a simple <code>git pull</code> showed files being deleted.</p>
+<p>So a natural question follows:</p>
+<blockquote>
+<p><em><strong>If this worked, why do we ever need</strong></em> <code>git filter-repo</code><em><strong>?</strong></em></p>
+</blockquote>
+<p>This post explains <strong>why both behaviours are correct</strong>, what problem each one solves, and how to safely clean large files from Git history <strong>without breaking your repository</strong>.</p>
+<hr>
+<h3 id="why-git-rm---cached-doeswork"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-git-rm---cached-doeswork"><span class="anchor-icon">#</span></a>Why <code>git rm --cached</code> does work</h3>
+<p>When you run:</p>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">rm</span> -r --cached outputs/
+git commit
+</code></pre>
+<p>You create a new commit that says:</p>
+<blockquote>
+<p><em>“From now on, these files no longer exist.”</em></p>
+</blockquote>
+<p>Git is <strong>state-based</strong>, not file-based.<br>
+Each commit defines the <em>desired final state</em> of the repository.</p>
+<p>So when another machine runs:</p>
+<pre><code class="hljs language-bash">git pull
+</code></pre>
+<p>Git applies that state and correctly deletes the files locally.</p>
+<p>That’s why it <em>appears</em> to solve the problem — and for the <strong>present state</strong>, it absolutely does.</p>
+<hr>
+<h3 id="the-critical-distinction-present-vshistory"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-critical-distinction-present-vshistory"><span class="anchor-icon">#</span></a>The critical distinction: present vs history</h3>
+<p>There are <strong>two separate problems</strong> people often confuse:</p>
+<pre><code class="hljs language-text">|               Question.         | `git rm — cached` | `git filter-repo` |
+| — — — — — — — — — — — — — — — — | — — — — — — — — — | — — — — — — — — — |
+</code></pre>
+<p><code>git rm --cached</code> fixes the <strong>present</strong>.<br>
+<code>git filter-repo</code> fixes the <strong>past</strong>.</p>
+<hr>
+<h3 id="why-are-deleted-files-still-bloating-therepo"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-are-deleted-files-still-bloating-therepo"><span class="anchor-icon">#</span></a>Why are deleted files still bloating the repo?</h3>
+<p>Even after removing files from the latest commit, they still exist in:</p>
+<ul>
+<li>old commits</li>
+<li>old trees</li>
+<li>old blobs</li>
+</ul>
+<p>Git never forgets history unless you explicitly rewrite it.</p>
+<p>That’s why:</p>
+<ul>
+<li><code>git clone</code> is still slow</li>
+<li>CI pipelines still download large data</li>
+<li>GitHub warns about repo size</li>
+</ul>
+<hr>
+<h3 id="when-git-rm---cached-isenough"><a class="heading-anchor" aria-hidden tabindex="-1" href="#when-git-rm---cached-isenough"><span class="anchor-icon">#</span></a>When <code>git rm --cached</code> is enough</h3>
+<p>You <strong>do not</strong> need history rewriting if:</p>
+<ul>
+<li>The files were small</li>
+<li>Repo size is acceptable</li>
+<li>You only care about future commits</li>
+<li>You’re not hitting GitHub limits</li>
+</ul>
+<p>This is the most common and perfectly valid case.</p>
+<hr>
+<h3 id="when-you-must-cleanhistory"><a class="heading-anchor" aria-hidden tabindex="-1" href="#when-you-must-cleanhistory"><span class="anchor-icon">#</span></a>When you must clean history</h3>
+<p>You need <code>git filter-repo</code> if:</p>
+<ul>
+<li>Large files were committed accidentally</li>
+<li>The repo has become bloated</li>
+<li>Cloning is slow</li>
+<li>GitHub rejects pushes</li>
+<li>You want files permanently erased</li>
+</ul>
+<p>In short:</p>
+<blockquote>
+<p><code>git rm --cached</code> <em>fixes</em> <em><strong>state</strong></em><code>git filter-repo</code> <em>fixes</em> <em><strong>history</strong></em></p>
+</blockquote>
+<hr>
+<h3 id="the-correct-tool-git-filter-repo"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-correct-tool-git-filter-repo"><span class="anchor-icon">#</span></a>The correct tool: <code>git filter-repo</code></h3>
+<p><code>git filter-repo</code> is the modern, supported way to rewrite Git history.</p>
+<h3 id="install"><a class="heading-anchor" aria-hidden tabindex="-1" href="#install"><span class="anchor-icon">#</span></a>Install</h3>
+<pre><code class="hljs language-bash">pip install git-filter-repo
+</code></pre>
+<hr>
+<h3 id="step-1-analyze-repository-bloat"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-1-analyze-repository-bloat"><span class="anchor-icon">#</span></a>Step 1: Analyze repository bloat</h3>
+<pre><code class="hljs language-bash">git filter-repo --analyze
+</code></pre>
+<p>Check:</p>
+<ul>
+<li><code>largest-blobs.txt</code></li>
+<li><code>path-deleted-sizes.txt</code></li>
+</ul>
+<p>This tells you exactly what needs removal.</p>
+<hr>
+<h3 id="step-2-remove-a-folder-from-allhistory"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-2-remove-a-folder-from-allhistory"><span class="anchor-icon">#</span></a>Step 2: Remove a folder from all history</h3>
+<p>Example: permanently removing <code>slurm_logs/</code> everywhere.</p>
+<pre><code class="hljs language-bash">git filter-repo --path slurm_logs/ --invert-paths
+</code></pre>
+<p>After this:</p>
+<ul>
+<li>The folder never existed</li>
+<li>Repo size shrinks</li>
+<li>New clones become fast</li>
+</ul>
+<hr>
+<h3 id="️-what-happens-next-this-is-where-peoplepanic"><a class="heading-anchor" aria-hidden tabindex="-1" href="#️-what-happens-next-this-is-where-peoplepanic"><span class="anchor-icon">#</span></a>⚠️ What happens next (this is where people panic)</h3>
+<p>After <code>git filter-repo</code>, you will likely see:</p>
+<pre><code class="hljs language-text">NOTICE: Removing 'origin' remote
+</code></pre>
+<p>And then:</p>
+<pre><code class="hljs language-bash">git push
+fatal: No configured push destination
+</code></pre>
+<p>This is <strong>expected behaviour</strong>, not an error.</p>
+<hr>
+<h3 id="why-origin-is-removed-important-safetyfeature"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-origin-is-removed-important-safetyfeature"><span class="anchor-icon">#</span></a>Why <code>origin</code> is removed (important safety feature)</h3>
+<p>Rewriting history changes <strong>every commit hash</strong>.</p>
+<p>To prevent accidental destruction of a remote repository, <code>git filter-repo</code>:</p>
+<ul>
+<li>Removes the <code>origin</code> remote</li>
+<li>Forces you to <strong>explicitly re-add it</strong></li>
+<li>Makes you consciously acknowledge that you are about to overwrite history</li>
+</ul>
+<p>This is deliberate and protective.</p>
+<hr>
+<h3 id="how-to-finish-the-cleanupsafely"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-to-finish-the-cleanupsafely"><span class="anchor-icon">#</span></a>How to finish the cleanup safely</h3>
+<h3 id="1️⃣-re-add-theremote"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1️⃣-re-add-theremote"><span class="anchor-icon">#</span></a>1️⃣ Re-add the remote</h3>
+<pre><code class="hljs language-bash">git remote add origin https://github.com/USERNAME/REPO.git
+</code></pre>
+<p>Verify:</p>
+<pre><code class="hljs language-bash">git remote -v
+</code></pre>
+<hr>
+<h3 id="2️⃣-force-push-the-rewritten-history-required"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2️⃣-force-push-the-rewritten-history-required"><span class="anchor-icon">#</span></a>2️⃣ Force-push the rewritten history (required)</h3>
+<pre><code class="hljs language-bash">git push --force origin main
+</code></pre>
+<p>If you have tags:</p>
+<pre><code class="hljs language-bash">git push --force --tags
+</code></pre>
+<p>This permanently replaces the remote history with the cleaned one.</p>
+<hr>
+<h3 id="what-must-collaborators-do"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-must-collaborators-do"><span class="anchor-icon">#</span></a>What must collaborators do?</h3>
+<p>Anyone else with a clone must <strong>not pull normally</strong>.</p>
+<p>They must either:</p>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/USERNAME/REPO.git
+</code></pre>
+<p>or:</p>
+<pre><code class="hljs language-bash">git fetch --all
+git reset --hard origin/main
+</code></pre>
+<p>There is no safe merge after history rewriting.</p>
+<hr>
+<h3 id="how-to-verifysuccess"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-to-verifysuccess"><span class="anchor-icon">#</span></a>How to verify success</h3>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">log</span> -- slurm_logs/
+</code></pre>
+<p>→ no output</p>
+<pre><code class="hljs language-bash">git count-objects -vH
+</code></pre>
+<p>→ significantly smaller repo size</p>
+<hr>
+<h3 id="a-mental-model-that-alwaysworks"><a class="heading-anchor" aria-hidden tabindex="-1" href="#a-mental-model-that-alwaysworks"><span class="anchor-icon">#</span></a>A mental model that always works</h3>
+<p>Think of Git history as a <strong>ledger</strong>, not a trash can.</p>
+<ul>
+<li>Deleting files → adds a new entry</li>
+<li>Rewriting history → rewrites the ledger</li>
+</ul>
+<p>Both are valid. They solve different problems.</p>
+<hr>
+<h3 id="tldr"><a class="heading-anchor" aria-hidden tabindex="-1" href="#tldr"><span class="anchor-icon">#</span></a>TL;DR</h3>
+<ul>
+<li><code>git rm --cached</code> worked exactly as designed</li>
+<li>That’s why other machines showed deletions</li>
+<li>But the data still lived in history</li>
+<li><code>git filter-repo</code> is only needed when history itself is the problem</li>
+<li>Removing <code>origin</code> after filtering is intentional and protective</li>
+</ul>
+<p>Once you separate <strong>state</strong> from <strong>history</strong>, Git stops being mysterious and starts being predictable.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/how-to-remove-large-files-from-git-history-05f5fa177de1">Medium</a>.</em></p>7:["$","$L10",null,{"title":"How to Remove Large Files from Git History","date":"$D2026-01-29T00:00:00.000Z","readingTime":5,"categories":["Git","Version Control"],"tags":["git","git-filter-repo","github","troubleshooting"],"contentHtml":"$11","headings":[{"level":3,"id":"why-git-rm---cached-doeswork","text":"Why git rm --cached does work"},{"level":3,"id":"the-critical-distinction-present-vshistory","text":"The critical distinction: present vs history"},{"level":3,"id":"why-are-deleted-files-still-bloating-therepo","text":"Why are deleted files still bloating the repo?"},{"level":3,"id":"when-git-rm---cached-isenough","text":"When git rm --cached is enough"},{"level":3,"id":"when-you-must-cleanhistory","text":"When you must clean history"},{"level":3,"id":"the-correct-tool-git-filter-repo","text":"The correct tool: git filter-repo"},{"level":3,"id":"install","text":"Install"},{"level":3,"id":"step-1-analyze-repository-bloat","text":"Step 1: Analyze repository bloat"},{"level":3,"id":"step-2-remove-a-folder-from-allhistory","text":"Step 2: Remove a folder from all history"},{"level":3,"id":"️-what-happens-next-this-is-where-peoplepanic","text":"⚠️ What happens next (this is where people panic)"},{"level":3,"id":"why-origin-is-removed-important-safetyfeature","text":"Why origin is removed (important safety feature)"},{"level":3,"id":"how-to-finish-the-cleanupsafely","text":"How to finish the cleanup safely"},{"level":3,"id":"1️⃣-re-add-theremote","text":"1️⃣ Re-add the remote"},{"level":3,"id":"2️⃣-force-push-the-rewritten-history-required","text":"2️⃣ Force-push the rewritten history (required)"},{"level":3,"id":"what-must-collaborators-do","text":"What must collaborators do?"},{"level":3,"id":"how-to-verifysuccess","text":"How to verify success"},{"level":3,"id":"a-mental-model-that-alwaysworks","text":"A mental model that always works"},{"level":3,"id":"tldr","text":"TL;DR"}],"prevPost":{"slug":"2026-01-29-why-gitignore-didn-t-work","title":"Why .gitignore Didn’t Work"},"nextPost":{"slug":"2026-02-09-how-to-pull-changes-from-a-remote-git-repository","title":"How to Pull Changes from a Remote Git Repository"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"How to Remove Large Files from Git History — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

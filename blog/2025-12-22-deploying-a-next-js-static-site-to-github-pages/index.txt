@@ -1,0 +1,160 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-12-22-deploying-a-next-js-static-site-to-github-pages",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-12-22-deploying-a-next-js-static-site-to-github-pages","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-12-22-deploying-a-next-js-static-site-to-github-pages","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","5kuouiFAgFhZZNCej0OzQ",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2476,<hr>
+<p><img src="/images/blog/deploying-a-next-js-static-site-to-github-pages/img1.jpeg" alt=""></p>
+<h3 id="prerequisites"><a class="heading-anchor" aria-hidden tabindex="-1" href="#prerequisites"><span class="anchor-icon">#</span></a>Prerequisites</h3>
+<ol>
+<li>
+<p><strong>Node.js</strong> and <em><strong>npm</strong></em> are installed</p>
+</li>
+<li>
+<p>A <strong>Next.js</strong> project</p>
+</li>
+</ol>
+<blockquote>
+<p>Create one with</p>
+</blockquote>
+<pre><code class="hljs language-text">npx create-next-app my-app
+</code></pre>
+<ol start="3">
+<li>A <strong>GitHub</strong> repository for your project</li>
+</ol>
+<h3 id="prepare-your-nextjs-app-for-staticexport"><a class="heading-anchor" aria-hidden tabindex="-1" href="#prepare-your-nextjs-app-for-staticexport"><span class="anchor-icon">#</span></a>Prepare Your Next.js App for Static Export</h3>
+<h4 id="1-ensure-your-pages-arestatic"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-ensure-your-pages-arestatic"><span class="anchor-icon">#</span></a><strong>1. Ensure Your Pages Are Static</strong></h4>
+<p>Only use <code>getStaticProps</code> and <code>getStaticPaths</code> or no data fetching at all.</p>
+<p>Do NOT use <code>getServerSideProps</code> or API routes — they are not supported for static export.</p>
+<h4 id="2-configure-nextconfigjs"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-configure-nextconfigjs"><span class="anchor-icon">#</span></a>2. Configure <code>next.config.js</code></h4>
+<p>Add or update your <code>next.config.js</code> to enable static export and set up the path for GitHub Pages:</p>
+<pre><code class="hljs language-text">/ @type {import(‘next’).NextConfig} */
+const repoName = ‘your-repo-name’; // Replace with your repo name
+const nextConfig = {
+ output: ‘export’,
+ // If your site will be served from a subpath (not root domain):
+ basePath: `/${repoName}`,
+ assetPrefix: `/${repoName}/`,
+};
+module.exports = nextConfig;
+</code></pre>
+<blockquote>
+<p>If deploying to https://<username>.github.io/<repo-name>/, you must set <code>basePath</code> and <code>assetPrefix</code>.</p>
+</blockquote>
+<blockquote>
+<p>If deploying to a root user/organization site (https://<username>.github.io/), omit <code>basePath</code> and <code>assetPrefix</code>.</p>
+</blockquote>
+<h4 id="3-update-packagejson-scripts"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-update-packagejson-scripts"><span class="anchor-icon">#</span></a>3. Update <code>package.json</code> Scripts</h4>
+<p>Add scripts for exporting and deploying:</p>
+<pre><code class="hljs language-text">“scripts”: {
+ “dev”: “next dev”,
+ “build”: “next build”,
+ “export”: “next export”,
+ “predeploy”: “npm run build &#x26;&#x26; npm run export”,
+ “deploy”: “gh-pages -d out”
+}
+</code></pre>
+<h4 id="4-install-gh-pages"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-install-gh-pages"><span class="anchor-icon">#</span></a>4. Install <code>gh-pages</code></h4>
+<pre><code class="hljs language-bash">npm install — save-dev gh-pages
+</code></pre>
+<h4 id="5-build-and-export-your-staticsite"><a class="heading-anchor" aria-hidden tabindex="-1" href="#5-build-and-export-your-staticsite"><span class="anchor-icon">#</span></a>5. Build and Export Your Static Site</h4>
+<pre><code class="hljs language-bash">npm run predeploy
+</code></pre>
+<p>This will output your static site in the <code>out</code> directory.</p>
+<h4 id="6-set-up-your-github-repository"><a class="heading-anchor" aria-hidden tabindex="-1" href="#6-set-up-your-github-repository"><span class="anchor-icon">#</span></a>6. Set Up Your GitHub Repository</h4>
+<p>Create a repository on GitHub (e.g., <code>your-repo-name</code>).</p>
+<p>Initialize git in your project if you haven’t:</p>
+<pre><code class="hljs language-bash"> git init
+ git remote add origin &#x3C;a href=”https://github.com/&#x3C;your-username>/&#x3C;your-repo-name>.git<span class="hljs-string">" class=”underline” target=”_blank”>https://github.com/&#x3C;your-username>/&#x3C;your-repo-name>.git&#x3C;/a>
+ git add .
+ git commit -m “Initial commit”
+ git push -u origin main
+</span></code></pre>
+<h4 id="7-deploy-to-githubpages"><a class="heading-anchor" aria-hidden tabindex="-1" href="#7-deploy-to-githubpages"><span class="anchor-icon">#</span></a><strong>7. Deploy to GitHub Pages</strong></h4>
+<pre><code class="hljs language-bash">npm run deploy
+</code></pre>
+<p>This will publish the contents of <code>out</code> to the <code>gh-pages</code> branch.</p>
+<h4 id="8-configure-githubpages"><a class="heading-anchor" aria-hidden tabindex="-1" href="#8-configure-githubpages"><span class="anchor-icon">#</span></a><strong>8. Configure GitHub Pages</strong></h4>
+<blockquote>
+<blockquote>
+<p>Go to your repository on GitHub.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Navigate to Settings > Pages.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Under Source, select the <code>gh-pages</code> branch and root (<code>/</code>).</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Save.</p>
+</blockquote>
+</blockquote>
+<h4 id="9-optional-set-homepage-in-packagejson"><a class="heading-anchor" aria-hidden tabindex="-1" href="#9-optional-set-homepage-in-packagejson"><span class="anchor-icon">#</span></a><strong>9. (Optional) Set <code>homepage</code> in <code>package.json</code></strong></h4>
+<p>This isn’t required for Next.js, but may help with asset resolution:</p>
+<pre><code class="hljs language-text">“homepage”: “&#x3C;a href=”https://&#x3C;your-username>.github.io/&#x3C;your-repo-name>/”” class=”underline” target=”_blank”>https://&#x3C;your-username>.github.io/&#x3C;your-repo-name>/”&#x3C;/a>
+</code></pre>
+<h4 id="10-access-yoursite"><a class="heading-anchor" aria-hidden tabindex="-1" href="#10-access-yoursite"><span class="anchor-icon">#</span></a><strong>10. Access Your Site</strong></h4>
+<p>After a few moments, visit:</p>
+<pre><code class="hljs language-text">https://&#x3C;your-username>.github.io/&#x3C;your-repo-name>/
+</code></pre>
+<h4 id="11-advanced-handle-client-side-routing"><a class="heading-anchor" aria-hidden tabindex="-1" href="#11-advanced-handle-client-side-routing"><span class="anchor-icon">#</span></a><strong>11. (Advanced) Handle Client-Side Routing</strong></h4>
+<p>GitHub Pages serves only static files. For client-side routes (e.g., <code>/about</code>), ensure you have an <code>out/about/index.html</code>.</p>
+<p>If you get 404s on client-side routes, you can:</p>
+<p>Use <a href="https://nextjs.org/docs/pages/building-your-application/deploying/static-exports">next export</a> (it generates all static pages).</p>
+<p>If you need a fallback, copy <code>out/index.html</code> to <code>out/404.html</code> after export:<br>
+ cp out/index.html out/404.html<br>
+ <br>
+This helps GitHub Pages route unknown paths back to your app’s entry point.</p>
+<h4 id="12-optional-customdomain"><a class="heading-anchor" aria-hidden tabindex="-1" href="#12-optional-customdomain"><span class="anchor-icon">#</span></a><strong>12. (Optional) Custom Domain</strong></h4>
+<ul>
+<li>Add a <code>CNAME</code> file to <code>out/</code> with your custom domain before deploying.</li>
+<li>Or, configure custom domain in GitHub Pages settings.</li>
+</ul>
+<h4 id="13-troubleshooting-tips"><a class="heading-anchor" aria-hidden tabindex="-1" href="#13-troubleshooting-tips"><span class="anchor-icon">#</span></a><strong>13. (Troubleshooting &#x26; Tips)</strong></h4>
+<ul>
+<li>White page or broken CSS?</li>
+<li>Double-check <code>basePath</code> and <code>assetPrefix</code> in <code>next.config.js</code>.</li>
+<li>Ensure all links use Next.js <code>&#x3C;Link></code> or are prefixed with <code>basePath</code>.</li>
+<li>Images not showing?</li>
+<li>Use the correct path prefix.</li>
+<li>404 on refresh?</li>
+<li>Ensure all pages are statically exported.</li>
+<li>Use the <code>404.html</code> trick above.</li>
+</ul>
+<h4 id="references"><a class="heading-anchor" aria-hidden tabindex="-1" href="#references"><span class="anchor-icon">#</span></a><strong>References</strong></h4>
+<ul>
+<li><a href="https://nextjs.org/docs/pages/building-your-application/deploying/static-exports">Next.js Static Export Docs</a></li>
+<li><a href="https://www.npmjs.com/package/gh-pages">gh-pages npm package</a></li>
+<li><a href="https://docs.github.com/en/pages">GitHub Pages Documentation</a></li>
+</ul>
+<h4 id="summary-workflow"><a class="heading-anchor" aria-hidden tabindex="-1" href="#summary-workflow"><span class="anchor-icon">#</span></a><strong>Summary Workflow</strong></h4>
+<ol>
+<li>Configure <code>next.config.js</code> for static export and subpath (if needed)</li>
+<li>Add scripts to <code>package.json</code></li>
+<li>Install <code>gh-pages</code></li>
+<li>Build and export: <code>npm run build &#x26;&#x26; npm run export</code></li>
+<li>Deploy: <code>npm run deploy</code></li>
+<li>Set Pages source to <code>gh-pages</code> branch in GitHub</li>
+<li>Visit your site!</li>
+</ol>
+<p>If you need a minimal example repo or have a specific structure, let me know!</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/deploying-a-next-js-static-site-to-github-pages-b2a9f912452d">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Deploying a Next.js Static Site to GitHub Pages","date":"$D2025-12-22T00:00:00.000Z","readingTime":4,"categories":["Web Development","Deployment"],"tags":["nextjs","github-pages","web-development","deployment","static-site"],"contentHtml":"$11","headings":[{"level":3,"id":"prerequisites","text":"Prerequisites"},{"level":3,"id":"prepare-your-nextjs-app-for-staticexport","text":"Prepare Your Next.js App for Static Export"},{"level":4,"id":"1-ensure-your-pages-arestatic","text":"1. Ensure Your Pages Are Static"},{"level":4,"id":"2-configure-nextconfigjs","text":"2. Configure next.config.js"},{"level":4,"id":"3-update-packagejson-scripts","text":"3. Update package.json Scripts"},{"level":4,"id":"4-install-gh-pages","text":"4. Install gh-pages"},{"level":4,"id":"5-build-and-export-your-staticsite","text":"5. Build and Export Your Static Site"},{"level":4,"id":"6-set-up-your-github-repository","text":"6. Set Up Your GitHub Repository"},{"level":4,"id":"7-deploy-to-githubpages","text":"7. Deploy to GitHub Pages"},{"level":4,"id":"8-configure-githubpages","text":"8. Configure GitHub Pages"},{"level":4,"id":"9-optional-set-homepage-in-packagejson","text":"9. (Optional) Set homepage in package.json"},{"level":4,"id":"10-access-yoursite","text":"10. Access Your Site"},{"level":4,"id":"11-advanced-handle-client-side-routing","text":"11. (Advanced) Handle Client-Side Routing"},{"level":4,"id":"12-optional-customdomain","text":"12. (Optional) Custom Domain"},{"level":4,"id":"13-troubleshooting-tips","text":"13. (Troubleshooting &#x26; Tips)"},{"level":4,"id":"references","text":"References"},{"level":4,"id":"summary-workflow","text":"Summary Workflow"}],"prevPost":{"slug":"2025-10-03-the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig","title":"The Smart Way to Copy: How to Use rsync to Exclude Folders, Ignore or Update Existing Files"},"nextPost":{"slug":"2025-12-27-awesome-topics-fully-automated-research-paper-curation-on-gi","title":"awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 1"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Deploying a Next.js Static Site to GitHub Pages — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

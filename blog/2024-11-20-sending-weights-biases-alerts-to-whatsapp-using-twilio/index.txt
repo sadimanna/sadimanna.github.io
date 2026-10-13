@@ -1,0 +1,113 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2024-11-20-sending-weights-biases-alerts-to-whatsapp-using-twilio",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2024-11-20-sending-weights-biases-alerts-to-whatsapp-using-twilio","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2024-11-20-sending-weights-biases-alerts-to-whatsapp-using-twilio","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","-CKGI1a5eQ_XpanQtlYBW",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T1c5b,<hr>
+<p><img src="/images/blog/sending-weights-biases-alerts-to-whatsapp-using-twilio/img1.jpeg" alt=""></p>
+<p>Monitoring machine learning experiments is crucial to ensure your models are trained correctly and catch any issues early. Weights &#x26; Biases (wandb) is a popular tool for tracking and visualizing machine learning experiments. In this blog post, we'll show you how to send <em><strong>wandb</strong></em> alerts to WhatsApp using Twilio so that you can receive real-time notifications on your phone.</p>
+<blockquote>
+<p>Step 1: Set Up a Twilio Account</p>
+</blockquote>
+<p>First, you'll need a Twilio account. Twilio is a cloud communications platform that provides APIs for sending messages to various channels, including WhatsApp.</p>
+<ul>
+<li>Sign up for a Twilio account at twilio.com <a href="https://www.twilio.com/">Click this URL</a></li>
+<li>Set up a Twilio phone number that can send WhatsApp messages by following Twilio's WhatsApp setup guide. <a href="https://www.twilio.com/docs/whatsapp.">Click this URL</a></li>
+<li>Note down your Twilio account SID, auth token, and WhatsApp-enabled phone number.</li>
+</ul>
+<blockquote>
+<p>Step 2: Install the Twilio Python SDK</p>
+</blockquote>
+<p>To interact with Twilio's API, you'll need the Twilio Python SDK. You can install it using pip:</p>
+<pre><code class="hljs language-bash">pip install twilio
+</code></pre>
+<blockquote>
+<p>Step 3: Set Up wandb Alerts</p>
+</blockquote>
+<p>Next, ensure you have <em><strong>wandb</strong></em> set up in your project. If you don't have <em><strong>wandb</strong></em> installed, you can install it using pip:</p>
+<pre><code class="hljs language-bash">pip install wandb
+</code></pre>
+<h4 id="initialize-wandb-in-yourscript"><a class="heading-anchor" aria-hidden tabindex="-1" href="#initialize-wandb-in-yourscript"><span class="anchor-icon">#</span></a>Initialize <em><strong>wandb</strong></em> in your script:</h4>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> wandb
+
+wandb.init(project=<span class="hljs-string">"your_project_name"</span>)
+</code></pre>
+<p>Replace "your_project_name" with the name of your <em><strong>wandb</strong></em> project.</p>
+<blockquote>
+<p>Step 4: Integrate Twilio with wandb Alerts</p>
+</blockquote>
+<p>Now, let's write a function to send WhatsApp messages using Twilio and integrate it with <em><strong>wandb</strong></em> alerts.</p>
+<h4 id="initialize-twilioclient"><a class="heading-anchor" aria-hidden tabindex="-1" href="#initialize-twilioclient"><span class="anchor-icon">#</span></a>Initialize Twilio Client</h4>
+<p>First, initialize the Twilio client with your account credentials:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> twilio.rest <span class="hljs-keyword">import</span> Client
+
+<span class="hljs-comment"># Twilio credentials</span>
+account_sid = <span class="hljs-string">'your_account_sid'</span>
+auth_token = <span class="hljs-string">'your_auth_token'</span>
+twilio_phone_number = <span class="hljs-string">'whatsapp:+your_twilio_phone_number'</span>
+recipient_phone_number = <span class="hljs-string">'whatsapp:+recipient_phone_number'</span>
+
+<span class="hljs-comment"># Initialize Twilio client</span>
+client = Client(account_sid, auth_token)
+</code></pre>
+<p>Replace 'your_account_sid', 'your_auth_token', 'whatsapp:+your_twilio_phone_number', and 'whatsapp:+recipient_phone_number' with your actual values.</p>
+<h4 id="create-a-function-to-send-whatsappmessages"><a class="heading-anchor" aria-hidden tabindex="-1" href="#create-a-function-to-send-whatsappmessages"><span class="anchor-icon">#</span></a>Create a Function to Send WhatsApp Messages</h4>
+<p>Next, create a function to send a WhatsApp message:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">send_whatsapp_message</span>(<span class="hljs-params">message</span>):
+    message = client.messages.create(
+        body=message,
+        from_=twilio_phone_number,
+        to=recipient_phone_number
+    )
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"Message sent: <span class="hljs-subst">{message.sid}</span>"</span>)
+</code></pre>
+<blockquote>
+<p>Step 5: Monitor Metrics and Send Alerts</p>
+</blockquote>
+<p>Create a function to monitor your metrics and send alerts when certain conditions are met:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">monitor_metrics</span>():
+    <span class="hljs-comment"># Simulate monitoring a metric (replace with your actual monitoring logic)</span>
+    metric_value = wandb.run.summary.get(<span class="hljs-string">'metric_name'</span>, <span class="hljs-number">0</span>)
+    
+    <span class="hljs-comment"># Define your alert condition</span>
+    <span class="hljs-keyword">if</span> metric_value > some_threshold:
+        alert_message = <span class="hljs-string">f"Alert: Metric value has exceeded the threshold! Current value: <span class="hljs-subst">{metric_value}</span>"</span>
+        send_whatsapp_message(alert_message)
+        <span class="hljs-comment"># Optionally, log the alert to wandb</span>
+        wandb.alert(
+            title=<span class="hljs-string">"Metric Alert"</span>,
+            text=alert_message,
+            level=wandb.AlertLevel.WARN
+        )
+</code></pre>
+<p>Replace 'metric_name' with the metric name you want to monitor and <code>some\_threshold</code> with the value that triggers the alert.</p>
+<h4 id="integrate-monitoring-into-your-trainingloop"><a class="heading-anchor" aria-hidden tabindex="-1" href="#integrate-monitoring-into-your-trainingloop"><span class="anchor-icon">#</span></a>Integrate Monitoring into Your Training Loop</h4>
+<p>Finally, integrate the <code>monitor\_metrics</code> function into your training loop or wherever appropriate in your script:</p>
+<pre><code class="hljs language-text"># Example training loop
+for epoch in range(epochs):
+    # Your training code here
+    
+    # Monitor metrics and send alerts
+    monitor_metrics()
+
+    # Log metrics to wandb
+    wandb.log({"metric_name": metric_value})
+</code></pre>
+<h3 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h3>
+<p>By following these steps, you can receive real-time alerts on WhatsApp whenever specific conditions are met in your <em><strong>wandb</strong></em> experiment. This setup allows you to stay informed about the progress and health of your machine-learning models, even when you're away from your computer.</p>
+<p>Feel free to customize the alert conditions and the message content to suit your needs. Happy monitoring!</p>
+<p>This blog post provides a comprehensive guide to setting up real-time alerts for your <em><strong>wandb</strong></em> experiments using Twilio and WhatsApp. With this setup, you can ensure that you're always in the loop with your machine learning model's performance.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/monitoring-machine-learning-experiments-is-crucial-to-ensure-your-models-are-trained-correctly-and-1c062a7e8e96">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Sending Weights & Biases Alerts to WhatsApp Using Twilio","date":"$D2024-11-20T00:00:00.000Z","readingTime":3,"categories":["MLOps","Developer Tools"],"tags":["wandb","twilio","automation","monitoring","deep-learning"],"contentHtml":"$11","headings":[{"level":4,"id":"initialize-wandb-in-yourscript","text":"Initialize wandb in your script:"},{"level":4,"id":"initialize-twilioclient","text":"Initialize Twilio Client"},{"level":4,"id":"create-a-function-to-send-whatsappmessages","text":"Create a Function to Send WhatsApp Messages"},{"level":4,"id":"integrate-monitoring-into-your-trainingloop","text":"Integrate Monitoring into Your Training Loop"},{"level":3,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2024-08-28-research-roundtable-day-1-paper-1-bert-bidirectional-encoder","title":"Research Roundtable [Day 1][Paper 1]— BERT: Bidirectional Encoder Representations from Transformers"},"nextPost":{"slug":"2024-11-22-managing-your-machine-learning-workflow-with-weights-biases","title":"Managing Your Machine Learning Workflow with Weights & Biases Artifacts"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Sending Weights & Biases Alerts to WhatsApp Using Twilio — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

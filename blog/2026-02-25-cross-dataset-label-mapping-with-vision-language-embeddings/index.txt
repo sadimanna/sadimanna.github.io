@@ -1,0 +1,121 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","dlo9jWbdUzsWQt3AAhk_f",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2a3b,<p><img src="/images/blog/cross-dataset-label-mapping-with-vision-language-embeddings/img1.jpeg" alt=""></p>
+<p>When working with multiple visual datasets (e.g., CIFAR-10 and ImageNet), a common challenge is <strong>aligning label spaces</strong> across datasets. Labels may be semantically related but not identical: for example, <em>“automobile”</em> in CIFAR-10 corresponds to multiple fine-grained categories such as <em>“sports car”</em>, <em>“pickup truck”</em>, or <em>“minivan”</em> in ImageNet.</p>
+<p>This problem can be formulated as a <strong>cross-dataset label mapping task</strong>:</p>
+<blockquote>
+<p><em>Given a set of source dataset labels and a set of target dataset labels, identify the most semantically aligned target labels for each source label.</em></p>
+</blockquote>
+<p>Such mappings are useful for:</p>
+<ul>
+<li>zero-shot transfer,</li>
+<li>dataset harmonization,</li>
+<li>label space adaptation,</li>
+<li>and analyzing semantic leakage or robustness in multimodal attacks and defences.</li>
+</ul>
+<h3 id="why-visionlanguage-models-for-labelmapping"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-visionlanguage-models-for-labelmapping"><span class="anchor-icon">#</span></a>Why Vision–Language Models for Label Mapping?</h3>
+<p>A naive solution would embed labels using a generic language model (e.g., BERT) and compare them in text embedding space. However, this approach fails to capture <strong>visual semantics</strong>: BERT is trained on text-only objectives and organizes words by linguistic co-occurrence, not by how concepts appear in images.</p>
+<p>Vision–Language Models (VLMs) such as <strong>CLIP, SigLIP, and ALIGN</strong> are trained on paired image–text data. Their text encoders therefore, produce embeddings that reflect <strong>visual similarity</strong>. This makes them particularly suitable for cross-dataset label alignment in vision-centric tasks.</p>
+<h3 id="a-practical-pipeline-for-cross-dataset-labelmapping"><a class="heading-anchor" aria-hidden tabindex="-1" href="#a-practical-pipeline-for-cross-dataset-labelmapping"><span class="anchor-icon">#</span></a>A Practical Pipeline for Cross-Dataset Label Mapping</h3>
+<p>We outline a simple three-step pipeline:</p>
+<ol>
+<li>Convert class names into natural language prompts.</li>
+<li>Embed each class using a VLM text encoder and average across prompts.</li>
+<li>Match source and target classes via cosine similarity in the embedding space.</li>
+</ol>
+<h3 id="reference-implementation-clipexample"><a class="heading-anchor" aria-hidden tabindex="-1" href="#reference-implementation-clipexample"><span class="anchor-icon">#</span></a>Reference Implementation (CLIP Example)</h3>
+<h3 id="1-text-feature-extractor"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-text-feature-extractor"><span class="anchor-icon">#</span></a>1. Text Feature Extractor</h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> CLIPTokenizer, CLIPTextModel
+<span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">import</span> torch.nn.functional <span class="hljs-keyword">as</span> F
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">VLTextProjector</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, compute_device=<span class="hljs-string">"cuda"</span></span>):
+        <span class="hljs-variable language_">self</span>.tokenizer = CLIPTokenizer.from_pretrained(<span class="hljs-string">"openai/clip-vit-base-patch32"</span>)
+        <span class="hljs-variable language_">self</span>.encoder = CLIPTextModel.from_pretrained(<span class="hljs-string">"openai/clip-vit-base-patch32"</span>).to(compute_device)
+        <span class="hljs-variable language_">self</span>.device = compute_device
+        <span class="hljs-variable language_">self</span>.encoder.<span class="hljs-built_in">eval</span>()
+<span class="hljs-meta">    @torch.no_grad()</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">project</span>(<span class="hljs-params">self, phrase_batch</span>):
+        batch = <span class="hljs-variable language_">self</span>.tokenizer(
+            phrase_batch,
+            return_tensors=<span class="hljs-string">"pt"</span>,
+            padding=<span class="hljs-literal">True</span>,
+            truncation=<span class="hljs-literal">True</span>,
+            max_length=<span class="hljs-variable language_">self</span>.tokenizer.model_max_length,
+        ).to(<span class="hljs-variable language_">self</span>.device)
+        rep = <span class="hljs-variable language_">self</span>.encoder(**batch).pooler_output
+        <span class="hljs-keyword">return</span> rep
+</code></pre>
+<h3 id="2-label-encoding-with-prompt-averaging"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-label-encoding-with-prompt-averaging"><span class="anchor-icon">#</span></a>2. Label Encoding with Prompt Averaging</h3>
+<pre><code class="hljs language-python"><span class="hljs-meta">@torch.no_grad()</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">build_label_embeddings</span>(<span class="hljs-params">label_set, prompt_bank, projector</span>):
+    vectors = []
+    <span class="hljs-keyword">for</span> lbl <span class="hljs-keyword">in</span> label_set:
+        phrasing = [p.<span class="hljs-built_in">format</span>(lbl.replace(<span class="hljs-string">"_"</span>, <span class="hljs-string">" "</span>)) <span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> prompt_bank]
+        feats = projector.project(phrasing)
+        feats = F.normalize(feats, dim=-<span class="hljs-number">1</span>)
+        proto = F.normalize(feats.mean(dim=<span class="hljs-number">0</span>), dim=-<span class="hljs-number">1</span>)
+        vectors.append(proto)
+    <span class="hljs-keyword">return</span> torch.stack(vectors, dim=<span class="hljs-number">0</span>)
+</code></pre>
+<h3 id="3-cross-dataset-matching"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-cross-dataset-matching"><span class="anchor-icon">#</span></a>3. Cross-Dataset Matching</h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">retrieve_semantic_neighbors</span>(<span class="hljs-params">src_vectors, tgt_vectors, tgt_labels, k=<span class="hljs-number">5</span></span>):
+    scores = src_vectors @ tgt_vectors.T
+    top_vals, top_ids = scores.topk(k, dim=-<span class="hljs-number">1</span>)
+    aligned = []
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(src_vectors.size(<span class="hljs-number">0</span>)):
+        candidates = []
+        <span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(k):
+            j = top_ids[i, r].item()
+            candidates.append((tgt_labels[j], top_vals[i, r].item()))
+        aligned.append(candidates)
+    <span class="hljs-keyword">return</span> aligned
+</code></pre>
+<h3 id="4-exampleusage"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-exampleusage"><span class="anchor-icon">#</span></a>4. Example Usage</h3>
+<pre><code class="hljs language-python">vlm_encoder = VLTextProjector(compute_device=<span class="hljs-string">"cuda"</span>)
+prompt_templates = [
+    <span class="hljs-string">"a photo of a {}"</span>,
+    <span class="hljs-string">"an image of a {}"</span>,
+    <span class="hljs-string">"a close-up photo of a {}"</span>,
+    <span class="hljs-string">"a picture of a {}"</span>,
+]
+source_label_vecs = build_label_embeddings(cifar10_classes, prompt_templates, vlm_encoder)
+target_label_vecs = build_label_embeddings(imagenet_classes, prompt_templates, vlm_encoder)
+label_alignment = retrieve_semantic_neighbors(
+    source_label_vecs, target_label_vecs, imagenet_classes, k=<span class="hljs-number">5</span>
+)
+<span class="hljs-keyword">for</span> src_name, matches <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(cifar10_classes, label_alignment):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"\nSource label: <span class="hljs-subst">{src_name}</span>"</span>)
+    <span class="hljs-keyword">for</span> rank, (tgt_name, sim) <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(matches, <span class="hljs-number">1</span>):
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"  <span class="hljs-subst">{rank}</span>. <span class="hljs-subst">{tgt_name}</span> (similarity=<span class="hljs-subst">{sim:<span class="hljs-number">.3</span>f}</span>)"</span>)
+</code></pre>
+<h3 id="why-vanilla-bert-is-unsuitable-for-thistask"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-vanilla-bert-is-unsuitable-for-thistask"><span class="anchor-icon">#</span></a>Why Vanilla BERT Is Unsuitable for This Task</h3>
+<p>The cross-dataset label mapping task is inherently <strong>vision-centric</strong>: we care about whether two labels refer to visually similar concepts. BERT, however:</p>
+<ul>
+<li>is trained with text-only objectives,</li>
+<li>encodes linguistic similarity rather than visual similarity,</li>
+<li>and lacks grounding in image statistics.</li>
+</ul>
+<p>As a result, BERT-based embeddings often produce misleading label alignments for visual datasets. In contrast, CLIP-like models embed labels in a space shaped by <strong>visual co-occurrence and appearance</strong>, making them far more reliable for cross-dataset label mapping.</p>
+<h3 id="takeaway"><a class="heading-anchor" aria-hidden tabindex="-1" href="#takeaway"><span class="anchor-icon">#</span></a>Takeaway</h3>
+<p>Cross-dataset label mapping can be formulated as a nearest-neighbour retrieval problem in a <strong>vision–language embedding space</strong>. By embedding class names using VLM text encoders and comparing them via cosine similarity, we obtain a principled, zero-shot mechanism to align heterogeneous label spaces across datasets such as CIFAR-10 and ImageNet.</p>
+<hr>
+<p><a href="https://medium.com/the-owl/cross-dataset-label-mapping-with-vision-language-embeddings-0616d1177f0f">Cross-Dataset Label Mapping with Vision–Language Embeddings</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/cross-dataset-label-mapping-with-vision-language-embeddings-0616d1177f0f">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Cross-Dataset Label Mapping with Vision–Language Embeddings","date":"$D2026-02-25T00:00:00.000Z","readingTime":4,"categories":["Computer Vision","Vision-Language Models"],"tags":["deep-learning","vision-language-model","transformers","ai","computer-vision"],"contentHtml":"$11","headings":[{"level":3,"id":"why-visionlanguage-models-for-labelmapping","text":"Why Vision–Language Models for Label Mapping?"},{"level":3,"id":"a-practical-pipeline-for-cross-dataset-labelmapping","text":"A Practical Pipeline for Cross-Dataset Label Mapping"},{"level":3,"id":"reference-implementation-clipexample","text":"Reference Implementation (CLIP Example)"},{"level":3,"id":"1-text-feature-extractor","text":"1. Text Feature Extractor"},{"level":3,"id":"2-label-encoding-with-prompt-averaging","text":"2. Label Encoding with Prompt Averaging"},{"level":3,"id":"3-cross-dataset-matching","text":"3. Cross-Dataset Matching"},{"level":3,"id":"4-exampleusage","text":"4. Example Usage"},{"level":3,"id":"why-vanilla-bert-is-unsuitable-for-thistask","text":"Why Vanilla BERT Is Unsuitable for This Task"},{"level":3,"id":"takeaway","text":"Takeaway"}],"prevPost":{"slug":"2026-02-10-the-ghost-in-the-machine-tracking-variable-names-and-metadat","title":"The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch"},"nextPost":{"slug":"2026-02-27-running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp","title":"Running MedGemma-4B on CPU or Using GGUF + llama-cpp"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Cross-Dataset Label Mapping with Vision–Language Embeddings — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

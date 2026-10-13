@@ -1,0 +1,227 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-01-14-mastering-logistic-regression-tackling-non-linear-data-with",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-01-14-mastering-logistic-regression-tackling-non-linear-data-with","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-01-14-mastering-logistic-regression-tackling-non-linear-data-with","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","eZt1Om_5RIGe2uY2LnFsg",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T52b0,<hr>
+<p>Logistic Regression is a fundamental machine learning algorithm used for binary classification tasks. Despite its name, it’s a linear model that uses a sigmoid function to output probabilities. It’s simple, efficient, and highly interpretable. However, its <em><strong>linear</strong></em> nature presents a significant challenge when dealing with data that isn’t linearly separable.</p>
+<p><img src="/images/blog/mastering-logistic-regression-tackling-non-linear-data-with/img1.jpeg" alt=""></p>
+<h3 id="the-challenge-of-non-linear-data"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-challenge-of-non-linear-data"><span class="anchor-icon">#</span></a>The Challenge of Non-Linear Data</h3>
+<p>To illustrate this challenge, let’s consider various 2D datasets:</p>
+<ol>
+<li>
+<p><strong>Linearly Separable Data</strong>: Here, a straight line can perfectly separate the two classes.</p>
+</li>
+<li>
+<p><strong>Circularly Separable Data</strong>: The data points form concentric circles, requiring a circular decision boundary.</p>
+</li>
+<li>
+<p><strong>XOR Separable Data</strong>: This classic problem requires a non-linear boundary to distinguish the classes.</p>
+</li>
+<li>
+<p><strong>Arbitrary (Moons) Separable Data</strong>: Two crescent-shaped clusters that are clearly non-linear.</p>
+</li>
+</ol>
+<p>When we apply standard Logistic Regression to these datasets, we observe its limitations:</p>
+<p><strong>Code to illustrate Logistic Regression on various datasets:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> LogisticRegression
+<span class="hljs-keyword">from</span> sklearn.datasets <span class="hljs-keyword">import</span> make_classification, make_circles, make_blobs, make_moons
+<span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> train_test_split
+<span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> StandardScaler
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">plot_decision_boundary</span>(<span class="hljs-params">X, y, model, title=<span class="hljs-string">"Decision Boundary"</span></span>):
+    <span class="hljs-string">"""Plots the decision boundary of a classifier."""</span>
+    x_min, x_max = X[:, <span class="hljs-number">0</span>].<span class="hljs-built_in">min</span>() - <span class="hljs-number">1</span>, X[:, <span class="hljs-number">0</span>].<span class="hljs-built_in">max</span>() + <span class="hljs-number">1</span>
+    y_min, y_max = X[:, <span class="hljs-number">1</span>].<span class="hljs-built_in">min</span>() - <span class="hljs-number">1</span>, X[:, <span class="hljs-number">1</span>].<span class="hljs-built_in">max</span>() + <span class="hljs-number">1</span>
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, <span class="hljs-number">0.02</span>),
+                         np.arange(y_min, y_max, <span class="hljs-number">0.02</span>))
+    Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
+    Z = Z.reshape(xx.shape)
+    plt.contourf(xx, yy, Z, alpha=<span class="hljs-number">0.8</span>, cmap=plt.cm.RdBu)
+    plt.scatter(X[:, <span class="hljs-number">0</span>], X[:, <span class="hljs-number">1</span>], c=y, cmap=plt.cm.RdBu, edgecolors=<span class="hljs-string">'k'</span>)
+    plt.title(title)
+    plt.xlabel(<span class="hljs-string">'Feature 1'</span>)
+    plt.ylabel(<span class="hljs-string">'Feature 2'</span>)
+    plt.show()
+
+<span class="hljs-comment"># 1. Linearly Separable Data</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">generate_linear_data</span>(<span class="hljs-params">n_samples=<span class="hljs-number">100</span></span>):
+    X, y = make_classification(n_samples=n_samples, n_features=<span class="hljs-number">2</span>, n_redundant=<span class="hljs-number">0</span>,
+                               n_informative=<span class="hljs-number">2</span>, n_clusters_per_class=<span class="hljs-number">1</span>,
+                               random_state=<span class="hljs-number">42</span>, flip_y=<span class="hljs-number">0.1</span>)
+    <span class="hljs-keyword">return</span> X, y
+
+<span class="hljs-comment"># 2. Non-linearly Separable Data (Circular decision boundary)</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">generate_circular_data</span>(<span class="hljs-params">n_samples=<span class="hljs-number">100</span></span>):
+    X, y = make_circles(n_samples=n_samples, factor=<span class="hljs-number">0.5</span>, noise=<span class="hljs-number">0.05</span>, random_state=<span class="hljs-number">42</span>)
+    <span class="hljs-keyword">return</span> X, y
+
+<span class="hljs-comment"># 3. Non-linearly Separable Data (XOR decision boundary)</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">generate_xor_data</span>(<span class="hljs-params">n_samples=<span class="hljs-number">100</span></span>):
+    X = np.random.rand(n_samples, <span class="hljs-number">2</span>) * <span class="hljs-number">4</span> - <span class="hljs-number">2</span> <span class="hljs-comment"># Center around 0, spread from -2 to 2</span>
+    y = np.where(np.logical_xor(X[:, <span class="hljs-number">0</span>] > <span class="hljs-number">0</span>, X[:, <span class="hljs-number">1</span>] > <span class="hljs-number">0</span>), <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">return</span> X, y
+
+<span class="hljs-comment"># 4. Non-linearly Separable Data (Arbitrary decision boundary - using make_moons for crescent shapes)</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">generate_arbitrary_data</span>(<span class="hljs-params">n_samples=<span class="hljs-number">100</span></span>):
+    X, y = make_moons(n_samples=n_samples, noise=<span class="hljs-number">0.1</span>, random_state=<span class="hljs-number">42</span>)
+    <span class="hljs-keyword">return</span> X, y
+
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">run_logistic_regression_and_plot</span>(<span class="hljs-params">X, y, title=<span class="hljs-string">"Dataset"</span></span>):
+    <span class="hljs-string">"""Trains Logistic Regression and plots decision boundary."""</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"\n--- <span class="hljs-subst">{title}</span> ---"</span>)
+    
+    <span class="hljs-comment"># Scale features for better performance, especially important for non-linear cases</span>
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+    
+    <span class="hljs-comment"># Train a Logistic Regression model</span>
+    <span class="hljs-comment"># For non-linear boundaries, we expect logistic regression (linear classifier) to perform poorly</span>
+    <span class="hljs-comment"># on its own, but we still demonstrate its decision boundary.</span>
+    model = LogisticRegression(random_state=<span class="hljs-number">42</span>, solver=<span class="hljs-string">'liblinear'</span>) 
+    model.fit(X_scaled, y)
+    
+    <span class="hljs-comment"># Plot decision boundary</span>
+    plot_decision_boundary(X_scaled, y, model, title=<span class="hljs-string">f"Logistic Regression Decision Boundary on <span class="hljs-subst">{title}</span>"</span>)
+
+
+<span class="hljs-comment"># --- Main Execution --- </span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    <span class="hljs-comment"># 1. Linearly Separable Data</span>
+    X_linear, y_linear = generate_linear_data(n_samples=<span class="hljs-number">200</span>)
+    run_logistic_regression_and_plot(X_linear, y_linear, <span class="hljs-string">"Linearly Separable Data"</span>)
+
+    <span class="hljs-comment"># 2. Circularly Separable Data</span>
+    X_circular, y_circular = generate_circular_data(n_samples=<span class="hljs-number">200</span>)
+    run_logistic_regression_and_plot(X_circular, y_circular, <span class="hljs-string">"Circularly Separable Data"</span>)
+
+    <span class="hljs-comment"># 3. XOR Separable Data</span>
+    X_xor, y_xor = generate_xor_data(n_samples=<span class="hljs-number">200</span>)
+    run_logistic_regression_and_plot(X_xor, y_xor, <span class="hljs-string">"XOR Separable Data"</span>)
+
+    <span class="hljs-comment"># 4. Arbitrarily Separable Data (using make_moons)</span>
+    X_arbitrary, y_arbitrary = generate_arbitrary_data(n_samples=<span class="hljs-number">200</span>)
+    run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, <span class="hljs-string">"Arbitrary (Moons) Separable Data"</span>)
+</code></pre>
+<p>As you can see from the plots, Logistic Regression performs well on linearly separable data. However, for circularly, XOR, and moons datasets, the model attempts to draw a straight line, resulting in poor classification performance. This is because Logistic Regression inherently learns a linear decision boundary in the original feature space.</p>
+<p><img src="/images/blog/mastering-logistic-regression-tackling-non-linear-data-with/img2.png" alt=""></p>
+<h3 id="the-power-of-feature-transformation-polynomial-features"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-power-of-feature-transformation-polynomial-features"><span class="anchor-icon">#</span></a>The Power of Feature Transformation: Polynomial Features</h3>
+<h4 id="why-non-linear-transformation-isrequired"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-non-linear-transformation-isrequired"><span class="anchor-icon">#</span></a>Why Non-Linear Transformation is Required</h4>
+<p>The core limitation of Logistic Regression with non-linear data is its inability to learn complex, curved decision boundaries. To overcome this, we need to transform the data into a higher-dimensional space where it <em>becomes</em> linearly separable. This is where <strong>Polynomial Features</strong> come in.</p>
+<p><em><strong>PolynomialFeatures</strong></em> generates new features by raising existing features to a specified power and by creating interaction terms between features. For example, with two features <em><strong>x_1</strong></em> and <em><strong>x_2</strong></em> and a degree of <em><strong>2</strong></em>, the original features (<em><strong>x_1</strong></em>, <em><strong>x_2</strong></em>) are transformed into (<em><strong>1</strong></em>, <em><strong>x_1</strong></em>, <em><strong>x_2</strong></em>, <em><strong>x_1²</strong></em>, <em><strong>x_2²</strong></em>, <em><strong>x_1x_2</strong></em>). In this expanded feature space, a hyperplane (which is linear) can often separate classes that were non-linearly separable in the original 2D space.</p>
+<h4 id="why-it-is-still-a-valid-logistic-regression-problem"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-it-is-still-a-valid-logistic-regression-problem"><span class="anchor-icon">#</span></a>Why it is Still a Valid Logistic Regression Problem</h4>
+<p>Crucially, even after applying <code>PolynomialFeatures</code>, the problem remains a valid Logistic Regression problem. This is because:</p>
+<ul>
+<li><strong>Linearity in Transformed Space</strong>: The Logistic Regression model is still learning a <em>linear</em> relationship, but now it’s linear with respect to the <em>new, transformed polynomial features</em>, not the original features. The decision boundary might look curved or complex in the original 2D space, but it’s a simple hyperplane in the higher-dimensional polynomial feature space.</li>
+<li><strong>Model Form</strong>: The underlying mathematical form of the Logistic Regression model (a linear combination of features passed through a sigmoid function) remains unchanged. We are simply providing it with richer, more expressive input features.</li>
+</ul>
+<p>We modified our plotting and training functions to incorporate <code>PolynomialFeatures</code>:</p>
+<p><strong>Code for modified functions:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> PolynomialFeatures
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">plot_decision_boundary</span>(<span class="hljs-params">X, y, model, title=<span class="hljs-string">"Decision Boundary"</span>, poly_transformer=<span class="hljs-literal">None</span></span>):
+    <span class="hljs-string">"""Plots the decision boundary of a classifier."""</span>
+    x_min, x_max = X[:, <span class="hljs-number">0</span>].<span class="hljs-built_in">min</span>() - <span class="hljs-number">1</span>, X[:, <span class="hljs-number">0</span>].<span class="hljs-built_in">max</span>() + <span class="hljs-number">1</span>
+    y_min, y_max = X[:, <span class="hljs-number">1</span>].<span class="hljs-built_in">min</span>() - <span class="hljs-number">1</span>, X[:, <span class="hljs-number">1</span>].<span class="hljs-built_in">max</span>() + <span class="hljs-number">1</span>
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, <span class="hljs-number">0.02</span>),
+                         np.arange(y_min, y_max, <span class="hljs-number">0.02</span>))
+    
+    <span class="hljs-comment"># Prepare meshgrid for prediction</span>
+    meshgrid_data = np.c_[xx.ravel(), yy.ravel()]
+    
+    <span class="hljs-comment"># Apply polynomial features if a transformer is provided</span>
+    <span class="hljs-keyword">if</span> poly_transformer <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:
+        meshgrid_data_transformed = poly_transformer.transform(meshgrid_data)
+        Z = model.predict(meshgrid_data_transformed)
+    <span class="hljs-keyword">else</span>:
+        Z = model.predict(meshgrid_data)
+        
+    Z = Z.reshape(xx.shape)
+    plt.contourf(xx, yy, Z, alpha=<span class="hljs-number">0.8</span>, cmap=plt.cm.RdBu)
+    plt.scatter(X[:, <span class="hljs-number">0</span>], X[:, <span class="hljs-number">1</span>], c=y, cmap=plt.cm.RdBu, edgecolors=<span class="hljs-string">'k'</span>)
+    plt.title(title)
+    plt.xlabel(<span class="hljs-string">'Feature 1'</span>)
+    plt.ylabel(<span class="hljs-string">'Feature 2'</span>)
+    plt.show()
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">run_logistic_regression_and_plot</span>(<span class="hljs-params">X, y, title=<span class="hljs-string">"Dataset"</span>, apply_poly_features=<span class="hljs-literal">False</span>, degree=<span class="hljs-number">2</span></span>):
+    <span class="hljs-string">"""Trains Logistic Regression and plots decision boundary."""</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f"\n--- <span class="hljs-subst">{title}</span> ---"</span>)
+
+    <span class="hljs-comment"># Scale features</span>
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    poly_transformer = <span class="hljs-literal">None</span>
+    <span class="hljs-keyword">if</span> apply_poly_features:
+        poly_transformer = PolynomialFeatures(degree=degree, include_bias=<span class="hljs-literal">False</span>) <span class="hljs-comment"># include_bias=False to avoid duplicate constant term</span>
+        X_transformed = poly_transformer.fit_transform(X_scaled)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f"Applying Polynomial Features with degree=<span class="hljs-subst">{degree}</span>. Original features: <span class="hljs-subst">{X_scaled.shape[<span class="hljs-number">1</span>]}</span>, Transformed features: <span class="hljs-subst">{X_transformed.shape[<span class="hljs-number">1</span>]}</span>"</span>)
+        X_train_model = X_transformed
+    <span class="hljs-keyword">else</span>:
+        X_train_model = X_scaled
+
+    <span class="hljs-comment"># Train a Logistic Regression model</span>
+    model = LogisticRegression(random_state=<span class="hljs-number">42</span>, solver=<span class="hljs-string">'liblinear'</span>, max_iter=<span class="hljs-number">1000</span>) <span class="hljs-comment"># Increased max_iter for convergence with poly features</span>
+    model.fit(X_train_model, y)
+
+    <span class="hljs-comment"># Plot decision boundary</span>
+    plot_decision_boundary(X_scaled, y, model, 
+                           title=<span class="hljs-string">f"Logistic Regression Decision Boundary on <span class="hljs-subst">{title}</span> (PolyFeat=<span class="hljs-subst">{apply_poly_features}</span>, Degree=<span class="hljs-subst">{degree}</span>)"</span>, 
+                           poly_transformer=poly_transformer)
+</code></pre>
+<p>Let’s apply this to our non-linear datasets:</p>
+<p><strong>Code to run LR with Polynomial Features on non-linear data:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">'--- Running Logistic Regression with Polynomial Features ---'</span>)
+
+<span class="hljs-comment"># 2. Circularly Separable Data with Polynomial Features</span>
+run_logistic_regression_and_plot(X_circular, y_circular, <span class="hljs-string">"Circularly Separable Data"</span>, apply_poly_features=<span class="hljs-literal">True</span>, degree=<span class="hljs-number">2</span>)
+
+<span class="hljs-comment"># 3. XOR Separable Data with Polynomial Features</span>
+run_logistic_regression_and_plot(X_xor, y_xor, <span class="hljs-string">"XOR Separable Data"</span>, apply_poly_features=<span class="hljs-literal">True</span>, degree=<span class="hljs-number">2</span>)
+
+<span class="hljs-comment"># 4. Arbitrarily Separable Data (using make_moons) with Polynomial Features</span>
+run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, <span class="hljs-string">"Arbitrary (Moons) Separable Data"</span>, apply_poly_features=<span class="hljs-literal">True</span>, degree=<span class="hljs-number">2</span>)
+</code></pre>
+<p>You should now observe significantly better decision boundaries for the Circular, XOR, and Moons datasets, as the model can now capture their non-linear structures.</p>
+<p><img src="/images/blog/mastering-logistic-regression-tackling-non-linear-data-with/img3.png" alt=""></p>
+<h4 id="investigating-different-polynomial-degrees"><a class="heading-anchor" aria-hidden tabindex="-1" href="#investigating-different-polynomial-degrees"><span class="anchor-icon">#</span></a>Investigating Different Polynomial Degrees</h4>
+<p>We can still see that even after a polynomial transformation, the classifier is unable to classify the Moons dataset properly.</p>
+<p>The choice of polynomial degree is important. A higher degree can fit more complex patterns but also increases the risk of overfitting. Let’s explore how different degrees affect the ‘Moons’ dataset:</p>
+<p><strong>Code to investigate polynomial degrees:</strong></p>
+<pre><code class="hljs language-text"># Original (Degree 1 - linear)
+run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, "Arbitrary (Moons) Data - Degree 1", apply_poly_features=False)
+
+# Degree 2 (already run, but for comparison)
+run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, "Arbitrary (Moons) Data - Degree 2", apply_poly_features=True, degree=2)
+
+# Degree 3
+run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, "Arbitrary (Moons) Data - Degree 3", apply_poly_features=True, degree=3)
+
+# Degree 4
+run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, "Arbitrary (Moons) Data - Degree 4", apply_poly_features=True, degree=4)
+
+# Degree 5
+run_logistic_regression_and_plot(X_arbitrary, y_arbitrary, "Arbitrary (Moons) Data - Degree 5", apply_poly_features=True, degree=5)
+</code></pre>
+<p>Observe how a degree of 1 (linear) performs poorly, while higher degrees (e.g., degree 2 or 3) provide better separation. Very high degrees might show overly complex boundaries that fit the noise in the training data.</p>
+<p><img src="/images/blog/mastering-logistic-regression-tackling-non-linear-data-with/img4.png" alt=""></p>
+<h3 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h3>
+<p>Logistic Regression, although inherently a linear model, can be effectively extended to handle non-linear classification problems by employing feature transformation techniques, such as <code>***PolynomialFeatures***</code>. This process allows the model to learn complex decision boundaries in the original feature space by operating linearly in a higher-dimensional, transformed feature space. This approach demonstrates the flexibility and power of combining simple models with intelligent feature engineering.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/mastering-logistic-regression-tackling-non-linear-data-with-feature-transformation-1382d8834fc7">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Mastering Logistic Regression: Tackling Non-Linear Data with Feature Transformation","date":"$D2026-01-14T00:00:00.000Z","readingTime":7,"categories":["Machine Learning","Data Science"],"tags":["machine-learning","logistic-regression","feature-engineering","data-science"],"contentHtml":"$11","headings":[{"level":3,"id":"the-challenge-of-non-linear-data","text":"The Challenge of Non-Linear Data"},{"level":3,"id":"the-power-of-feature-transformation-polynomial-features","text":"The Power of Feature Transformation: Polynomial Features"},{"level":4,"id":"why-non-linear-transformation-isrequired","text":"Why Non-Linear Transformation is Required"},{"level":4,"id":"why-it-is-still-a-valid-logistic-regression-problem","text":"Why it is Still a Valid Logistic Regression Problem"},{"level":4,"id":"investigating-different-polynomial-degrees","text":"Investigating Different Polynomial Degrees"},{"level":3,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2026-01-06-keeping-your-mac-lean-a-guide-to-upgrading-and-cleaning-pyth","title":"Keeping Your Mac Lean: A Guide to Upgrading and Cleaning Python (2026 Edition)"},"nextPost":{"slug":"2026-01-29-why-gitignore-didn-t-work","title":"Why .gitignore Didn’t Work"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Mastering Logistic Regression: Tackling Non-Linear Data with Feature Transformation — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

@@ -1,0 +1,136 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2024-12-27-profiling-different-algorithms-using-the-built-in-timeit-mod",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2024-12-27-profiling-different-algorithms-using-the-built-in-timeit-mod","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2024-12-27-profiling-different-algorithms-using-the-built-in-timeit-mod","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","BJfjkrVFNn3OdZfm64Cyh",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2425,<hr>
+<p><img src="/images/blog/profiling-different-algorithms-using-the-built-in-timeit-mod/img1.jpeg" alt=""></p>
+<p>As a developer or data scientist, understanding the performance of your algorithms is crucial. Python’s <em>timeit</em> module is a powerful tool for measuring execution time, allowing you to compare different implementations and make informed decisions about which algorithm to use. In this blog post, we’ll explore how to use <em>timeit</em> to profile different algorithms, using sorting methods and random sampling as examples.</p>
+<ol>
+<li>Introduction to <em><strong>timeit</strong></em></li>
+</ol>
+<p>The <em><strong>timeit</strong></em> module provides a simple way to time small bits of Python code. It runs a statement multiple times and provides the total execution time. This approach helps to average out any small fluctuations in execution time due to system load or other factors.</p>
+<ol>
+<li>Basic Usage of <em><strong>timeit</strong></em></li>
+</ol>
+<p>Here’s a simple example of how to use <em><strong>timeit</strong></em>:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> timeit  
+<span class="hljs-comment"># Code to be timed </span>
+code_to_test = <span class="hljs-string">''' 
+sum([i2 for i in range(1000)]) 
+'''</span>  
+<span class="hljs-comment"># Run the code 10000 times and measure the total time </span>
+execution_time = timeit.timeit(code_to_test, number=<span class="hljs-number">10000</span>)  
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"Execution time: <span class="hljs-subst">{execution_time:<span class="hljs-number">.6</span>f}</span> seconds"</span>)
+</code></pre>
+<p>To see how we can use <em><strong>timeit</strong></em>, let us go through some examples.</p>
+<blockquote>
+<p>Profiling Sorting Algorithms</p>
+</blockquote>
+<p>Let’s compare three sorting algorithms: bubble sort, quick sort, and Python’s built-in sort. We’ll use <em><strong>timeit</strong></em> to measure their performance:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> timeit 
+<span class="hljs-keyword">import</span> random  
+<span class="hljs-comment"># Define the algorithms </span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">bubble_sort</span>(<span class="hljs-params">arr</span>):     
+    n = <span class="hljs-built_in">len</span>(arr)     
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):         
+        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, n-i-<span class="hljs-number">1</span>):             
+            <span class="hljs-keyword">if</span> arr[j] > arr[j+<span class="hljs-number">1</span>]:                 
+                arr[j], arr[j+<span class="hljs-number">1</span>] = arr[j+<span class="hljs-number">1</span>], arr[j]     
+    <span class="hljs-keyword">return</span> arr  
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">quick_sort</span>(<span class="hljs-params">arr</span>):     
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(arr) &#x3C;= <span class="hljs-number">1</span>:         
+        <span class="hljs-keyword">return</span> arr     
+    pivot = arr[<span class="hljs-built_in">len</span>(arr) // <span class="hljs-number">2</span>]     
+    left = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> arr <span class="hljs-keyword">if</span> x &#x3C; pivot]     
+    middle = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> arr <span class="hljs-keyword">if</span> x == pivot]     
+    right = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> arr <span class="hljs-keyword">if</span> x > pivot]     
+    <span class="hljs-keyword">return</span> quick_sort(left) + middle + quick_sort(right)  
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">python_sort</span>(<span class="hljs-params">arr</span>):     
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">sorted</span>(arr)  
+
+<span class="hljs-comment"># Setup: create a list of random numbers </span>
+setup_code = <span class="hljs-string">''' 
+    import random arr = [random.randint(1, 1000) for _ in range(1000)] 
+    '''</span>  
+
+<span class="hljs-comment"># Define the code to be timed for each algorithm </span>
+bubble_sort_code = <span class="hljs-string">'bubble_sort(arr.copy())'</span> 
+quick_sort_code = <span class="hljs-string">'quick_sort(arr.copy())'</span> 
+python_sort_code = <span class="hljs-string">'python_sort(arr.copy())'</span>  
+
+<span class="hljs-comment"># Run the timing tests </span>
+number = <span class="hljs-number">100</span>  
+
+<span class="hljs-comment"># number of times to run each test  </span>
+bubble_time = timeit.timeit(bubble_sort_code, setup=setup_code, <span class="hljs-built_in">globals</span>=<span class="hljs-built_in">globals</span>(), number=number) 
+quick_time = timeit.timeit(quick_sort_code, setup=setup_code, <span class="hljs-built_in">globals</span>=<span class="hljs-built_in">globals</span>(), number=number) 
+python_time = timeit.timeit(python_sort_code, setup=setup_code, <span class="hljs-built_in">globals</span>=<span class="hljs-built_in">globals</span>(), number=number)  
+
+<span class="hljs-comment"># Print results </span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"Bubble Sort time: <span class="hljs-subst">{bubble_time:<span class="hljs-number">.6</span>f}</span> seconds"</span>) 
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"Quick Sort time: <span class="hljs-subst">{quick_time:<span class="hljs-number">.6</span>f}</span> seconds"</span>) 
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f"Python's built-in sort time: <span class="hljs-subst">{python_time:<span class="hljs-number">.6</span>f}</span> seconds"</span>)
+</code></pre>
+<p>The output looks like this on a 64-bit Intel Core i7 CPU with 16GB RAM.</p>
+<pre><code class="hljs language-text">Bubble Sort time: 6.080904 seconds
+Quick Sort time: 0.140343 seconds
+Python’s built-in sort time: 0.006618 seconds
+</code></pre>
+<blockquote>
+<p>Profiling Random Sampling Methods</p>
+</blockquote>
+<p><a href="https://medium.com/the-owl/the-trifecta-of-random-sampling-comparing-built-in-random-numpy-and-pytorch-4a0db5fe1f32" title="https://medium.com/the-owl/the-trifecta-of-random-sampling-comparing-built-in-random-numpy-and-pytorch-4a0db5fe1f32"><strong>The Trifecta of Random Sampling: Comparing Built-in Random, NumPy, and PyTorch</strong><br>
+medium.com</a></p>
+<p>Now, let’s profile different random sampling methods using NumPy, PyTorch, and Python’s random library:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> timeit 
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+</code></pre>
+<p>The output looks like this on a desktop with an Intel Xeon CPU.</p>
+<pre><code class="hljs language-text">NumPy time: 0.146145 seconds
+PyTorch time (CPU): 0.056417 seconds
+Random library time: 0.331543 seconds
+</code></pre>
+<blockquote>
+<p>Tips for Effective Profiling</p>
+</blockquote>
+<ul>
+<li>Use the ‘<strong>setup</strong>’ parameter in <em><strong>timeit.timeit</strong></em>() to prepare any necessary data or imports.</li>
+<li>Use the ‘<strong>globals</strong>’ parameter if your functions are defined in the global scope.</li>
+<li>Adjust the ‘<strong>number</strong>’ parameter based on how long your algorithms take to run.</li>
+<li>Run your tests multiple times and average the results for more reliable measurements.</li>
+<li>Be aware of factors that can affect timing, such as system load and Python’s garbage collection.</li>
+</ul>
+<blockquote>
+<p>Interpreting the Results</p>
+</blockquote>
+<p>When interpreting the results, remember that the fastest algorithm isn’t always the best choice. Consider other factors such as:</p>
+<ul>
+<li><em>Space complexity</em></li>
+<li><em>Code readability and maintainability</em></li>
+<li><em>Specific use cases and data characteristics</em></li>
+<li><em>Scalability for larger datasets</em></li>
+</ul>
+<blockquote>
+<p>Conclusion</p>
+</blockquote>
+<p>Profiling your algorithms with <em><strong>timeit</strong></em> is a valuable skill for any Python developer. It allows you to make data-driven decisions about which algorithms to use in your projects. Remember, while timing is important, it’s just one aspect of algorithm selection. Always consider the broader context of your project when choosing between different implementations.</p>
+<p>By mastering the use of <em><strong>timeit</strong></em>, you’ll be better equipped to optimize your code and create more efficient Python programs. Happy profiling!</p>
+<hr>
+<p>Clap and Follow if you like this article.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/profiling-different-algorithms-using-the-built-in-timeit-module-in-python-c63ae2190ba9">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Profiling different algorithms using the built-in timeit module in Python","date":"$D2024-12-27T00:00:00.000Z","readingTime":4,"categories":["Python","Performance"],"tags":["python","profiling","performance","algorithms","benchmarking"],"contentHtml":"$11","headings":[],"prevPost":{"slug":"2024-12-19-plotting-continuously-updating-gradient-vectors-on-loss-land","title":"Plotting Continuously Updating Gradient Vectors on Loss Landscape in Matplotlib — Part 1"},"nextPost":{"slug":"2025-01-10-chess-part-0-introduction-to-chess-programming-basics","title":"Chess — Part 0: Introduction to Chess Programming Basics"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Profiling different algorithms using the built-in timeit module in Python — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

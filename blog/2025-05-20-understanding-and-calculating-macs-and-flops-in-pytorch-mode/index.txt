@@ -1,0 +1,122 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-05-20-understanding-and-calculating-macs-and-flops-in-pytorch-mode",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-05-20-understanding-and-calculating-macs-and-flops-in-pytorch-mode","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-05-20-understanding-and-calculating-macs-and-flops-in-pytorch-mode","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","3IfQwCSz70BSqAnEmzGlq",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2d59,<hr>
+<p><img src="/images/blog/understanding-and-calculating-macs-and-flops-in-pytorch-mode/img1.jpeg" alt=""></p>
+<p>As the complexity of deep learning models grows, understanding their computational demands becomes increasingly important. One key metric used to assess this is the number of <strong>FL</strong>oating <strong>P</strong>oint <strong>O</strong>perations per <strong>S</strong>econd (FLOPs). FLOPs provide an estimate of the computational cost of running a model, which can be crucial for optimizing performance, particularly when deploying models to resource-constrained environments. In this blog post, we’ll explore how to calculate FLOPs for a PyTorch model using the <em><code>****torchprofile****</code></em> and ‘<em><strong>calflops’</strong></em> libraries.</p>
+<h3 id="what-areflops"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-areflops"><span class="anchor-icon">#</span></a>What are FLOPs?</h3>
+<p>FLOPs represent the number of arithmetic operations required to execute a model. This includes operations like additions, multiplications, and other basic arithmetic computations. By understanding FLOPs, you can gain insights into the efficiency and performance of your model, enabling informed decisions about model optimization and deployment.</p>
+<h3 id="why-calculate-flops"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-calculate-flops"><span class="anchor-icon">#</span></a>Why Calculate FLOPs?</h3>
+<ol>
+<li><strong>Optimization</strong>: Knowing the FLOPs can guide you in optimizing your model for faster inference times.</li>
+<li><strong>Resource Allocation</strong>: Helps in determining the computational resources needed for model deployment.</li>
+<li><strong>Comparison</strong>: Allows you to compare different models or architectures in terms of computational complexity.</li>
+</ol>
+<h3 id="calculating-flops-with-torchprofile"><a class="heading-anchor" aria-hidden tabindex="-1" href="#calculating-flops-with-torchprofile"><span class="anchor-icon">#</span></a>Calculating FLOPs with <code>torchprofile</code></h3>
+<p>To calculate FLOPs in PyTorch, we can use the <em><code>****torchprofile****</code></em> library, which provides an easy-to-use interface for profiling PyTorch models. Here’s a step-by-step guide on how to do it.</p>
+<h3 id="step-1-install-torchprofile"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-1-install-torchprofile"><span class="anchor-icon">#</span></a>Step 1: Install <code>torchprofile</code></h3>
+<p>First, you’ll need to install the <em><code>torchprofile</code></em> library. This can be easily done using pip:</p>
+<pre><code class="hljs language-bash">pip install torchprofile
+</code></pre>
+<h3 id="step-2-define-yourmodel"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-2-define-yourmodel"><span class="anchor-icon">#</span></a>Step 2: Define Your Model</h3>
+<p>Ensure your model is defined as a subclass of <em><code>nn.Module</code></em> and has an implemented <em><code>forward</code></em> method. Here’s an example of a simple convolutional neural network:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch 
+<span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn  
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SimpleModel</span>(nn.Module):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">super</span>(SimpleModel, <span class="hljs-variable language_">self</span>).__init__()
+        <span class="hljs-variable language_">self</span>.conv1 = nn.Conv2d(<span class="hljs-number">3</span>, <span class="hljs-number">16</span>, kernel_size=<span class="hljs-number">3</span>, stride=<span class="hljs-number">1</span>, padding=<span class="hljs-number">1</span>)
+        <span class="hljs-variable language_">self</span>.conv2 = nn.Conv2d(<span class="hljs-number">16</span>, <span class="hljs-number">32</span>, kernel_size=<span class="hljs-number">3</span>, stride=<span class="hljs-number">1</span>, padding=<span class="hljs-number">1</span>)
+        <span class="hljs-variable language_">self</span>.fc1 = nn.Linear(<span class="hljs-number">32</span>  <span class="hljs-number">32</span>  <span class="hljs-number">32</span>, <span class="hljs-number">10</span>)
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, x</span>):
+        x = <span class="hljs-variable language_">self</span>.conv1(x)
+        x = <span class="hljs-variable language_">self</span>.conv2(x)
+        x = x.view(x.size(<span class="hljs-number">0</span>), -<span class="hljs-number">1</span>)
+        x = <span class="hljs-variable language_">self</span>.fc1(x)
+        <span class="hljs-keyword">return</span> x
+</code></pre>
+<h3 id="step-3-calculate-flops"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-3-calculate-flops"><span class="anchor-icon">#</span></a>Step 3: Calculate FLOPs</h3>
+<p>With your model defined, you can now use <em><code>torchprofile</code></em> to calculate FLOPs. Here’s how to do it:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torchprofile  
+
+<span class="hljs-comment"># Create an instance of the model </span>
+model = SimpleModel()  
+
+<span class="hljs-comment"># Create a dummy input tensor with the appropriate shape </span>
+input_tensor = torch.randn(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">32</span>)  
+
+<span class="hljs-comment"># Example for a 32x32 RGB image  </span>
+<span class="hljs-comment"># Use torchprofile to calculate FLOPs </span>
+macs = torchprofile.profile_macs(model, input_tensor)
+</code></pre>
+<h4 id="for-multipleinputs"><a class="heading-anchor" aria-hidden tabindex="-1" href="#for-multipleinputs"><span class="anchor-icon">#</span></a>For Multiple Inputs</h4>
+<p>Utilise the ‘<em>args</em>’ argument in the <em><strong>profile_macs</strong></em> function</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torchprofile  
+
+<span class="hljs-comment"># Create an instance of the model </span>
+model = SimpleModel()  
+
+<span class="hljs-comment"># Create a dummy input tensor with the appropriate shape </span>
+input_tensor = torch.randn(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">32</span>, <span class="hljs-number">32</span>)  
+
+<span class="hljs-comment"># Example for two32x32 RGB image input</span>
+<span class="hljs-comment"># Use torchprofile to calculate FLOPs </span>
+macs = torchprofile.profile_macs(model, args= (input_tensor, input_tensor))
+</code></pre>
+<h3 id="key-points"><a class="heading-anchor" aria-hidden tabindex="-1" href="#key-points"><span class="anchor-icon">#</span></a>Key Points:</h3>
+<ul>
+<li>Input Shape: Ensure the input tensor matches the expected input shape of your model. Typically, a batch size of 1 is used for MACs calculation.</li>
+<li>Multiple input is also supported through the <em>args</em> argument.</li>
+</ul>
+<h3 id="calculating-flops-with-calflops"><a class="heading-anchor" aria-hidden tabindex="-1" href="#calculating-flops-with-calflops"><span class="anchor-icon">#</span></a>Calculating FLOPS with ‘calflops’</h3>
+<p><em><code>calflops</code></em> is another library that can be used to calculate the number of floating-point operations (FLOPs) for PyTorch models. It provides a simple interface to estimate FLOPs and the number of parameters in a model.</p>
+<h3 id="step-1-installation"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-1-installation"><span class="anchor-icon">#</span></a>Step 1. Installation</h3>
+<p>First, you need to install the <em><code>calflops</code></em> library. As of my last update, it might not be available on PyPI directly, so you may need to install it from its repository if it’s hosted on platforms like GitHub. Here’s a general way to do it:</p>
+<pre><code class="hljs language-bash">pip install calflops
+</code></pre>
+<h3 id="step-2-definemodel"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-2-definemodel"><span class="anchor-icon">#</span></a>Step 2. Define Model</h3>
+<p>Already done above, so we will skip this step.</p>
+<h3 id="step-3-calculate-flops-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-3-calculate-flops-1"><span class="anchor-icon">#</span></a>Step 3: Calculate FLOPs</h3>
+<p>Calflops provides many features, among which calculating FLOPs of an HF model using an access token is the most interesting. However, we will leave that exploration to the user and focus on a simple model here, for introduction.</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> calflops
+batch_size = <span class="hljs-number">1</span>
+input_shape = (batch_size, <span class="hljs-number">3</span>, <span class="hljs-number">224</span>, <span class="hljs-number">224</span>)
+flops, macs, params = calflops.calculate_flops(model=model, 
+                                      input_shape=input_shape,
+                                      output_as_string=<span class="hljs-literal">True</span>,
+                                      output_precision=<span class="hljs-number">4</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Model FLOPs:%s   MACs:%s   Params:%s \n"</span> %(flops, macs, params))
+</code></pre>
+<p>There are also provisions for outputting a full report with detailed analysis in <em><strong>calflops</strong></em> library, which makes it better than <em><strong>torchprofile</strong></em>.</p>
+<pre><code class="hljs language-text"> — — — — — — — — — — — — — — — — — — — Calculate Flops Results — — — — — — — — — — — — — — — — — — -
+Notations:
+number of parameters (Params), number of multiply-accumulate operations(MACs),
+number of floating-point operations (FLOPs), floating-point operations per second (FLOPS),
+fwd FLOPs (model forward propagation FLOPs), bwd FLOPs (model backward propagation FLOPs),
+default model backpropagation takes 2.00 times as much computation as forward propagation.
+Total Training Params: 14.57 M 
+fwd MACs: 12.48 GMACs
+fwd FLOPs: 25.03 GFLOPS
+fwd+bwd MACs: 37.44 GMACs
+fwd+bwd FLOPs: 75.08 GFLOPS
+</code></pre>
+<p>Similar to torchprofile, if the model requires multiple inputs, it can be provided using <em><strong>args</strong></em> (<strong>list</strong>) or <em><strong>kwargs</strong></em> (<strong>dict</strong>) arguments.</p>
+<h3 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h3>
+<p>Calculating FLOPs is a valuable step in understanding the computational demands of your models. Whether you’re comparing different architectures or preparing a deployment model, knowing the FLOPs can provide critical insights into your model’s performance and efficiency.</p>
+<p>By integrating FLOPs calculation into your workflow, you can ensure that your models are not only accurate but also efficient, paving the way for successful deployment in real-world applications.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/understanding-and-calculating-flops-in-pytorch-models-c609cb83ac3a">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Understanding and Calculating MACs and FLOPs in PyTorch Models","date":"$D2025-05-20T00:00:00.000Z","readingTime":5,"categories":["Deep Learning","Model Efficiency"],"tags":["deep-learning","pytorch","model-profiling","flops","performance"],"contentHtml":"$11","headings":[{"level":3,"id":"what-areflops","text":"What are FLOPs?"},{"level":3,"id":"why-calculate-flops","text":"Why Calculate FLOPs?"},{"level":3,"id":"calculating-flops-with-torchprofile","text":"Calculating FLOPs with torchprofile"},{"level":3,"id":"step-1-install-torchprofile","text":"Step 1: Install torchprofile"},{"level":3,"id":"step-2-define-yourmodel","text":"Step 2: Define Your Model"},{"level":3,"id":"step-3-calculate-flops","text":"Step 3: Calculate FLOPs"},{"level":4,"id":"for-multipleinputs","text":"For Multiple Inputs"},{"level":3,"id":"key-points","text":"Key Points:"},{"level":3,"id":"calculating-flops-with-calflops","text":"Calculating FLOPS with ‘calflops’"},{"level":3,"id":"step-1-installation","text":"Step 1. Installation"},{"level":3,"id":"step-2-definemodel","text":"Step 2. Define Model"},{"level":3,"id":"step-3-calculate-flops-1","text":"Step 3: Calculate FLOPs"},{"level":3,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2025-05-12-compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-ma","title":"Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK"},"nextPost":{"slug":"2025-05-30-comprehensive-guide-to-overlaying-segmentation-masks-in-pyth","title":"Comprehensive Guide to Overlaying Segmentation Masks in Python"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Understanding and Calculating MACs and FLOPs in PyTorch Models — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

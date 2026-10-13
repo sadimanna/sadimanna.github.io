@@ -1,0 +1,98 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2021-07-30-plotting-grouped-bar-chart-in-matplotlib",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2021-07-30-plotting-grouped-bar-chart-in-matplotlib","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2021-07-30-plotting-grouped-bar-chart-in-matplotlib","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","nfUUFnWLHNYf89ag56iOW",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T129b,<hr>
+<p>In this article, we are going to learn how to draw grouped bar charts (a.k.a clustered bar charts or multi-series bar charts) in Python using the Matplotlib library. Without further delay, let’s jump straight into the code.</p>
+<blockquote>
+<p>The structuring of the code may differ on mobile and desktop! It is recommended to view in desktop mode when opened on mobile phones!</p>
+</blockquote>
+<h3 id="imports"><a class="heading-anchor" aria-hidden tabindex="-1" href="#imports"><span class="anchor-icon">#</span></a>Imports</h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> matplotlib <span class="hljs-keyword">import</span> colormaps
+<span class="hljs-keyword">import</span> math
+</code></pre>
+<p>Now, for the sake of this article, let us consider, we have three discrete labels, for which we need to visualize the value of some property. Let us consider, these three labels to be three football seasons, e.g. 2018–2019, 2019–2020, 2020–2021, and we are going to plot goals scored by some famous players over these three years.</p>
+<h3 id="data"><a class="heading-anchor" aria-hidden tabindex="-1" href="#data"><span class="anchor-icon">#</span></a>Data</h3>
+<pre><code class="hljs language-text">Players        2018–2019 2019–2020 2020–2021
+C. Ronaldo         21        31        29
+L. Messi           36        25        30
+Neymar Jr.         15        13         9
+R. Lewandowski     22        34        41
+K. Mbappe          33        18        27
+R. Lukaku          12        23        24
+K. Benzema         21        21        23
+</code></pre>
+<p>Compile this data into a DataFrame, or an array, according to your preference. Here, I am assuming that the name of the data frame is <em><strong>stats.</strong></em></p>
+<h3 id="variables"><a class="heading-anchor" aria-hidden tabindex="-1" href="#variables"><span class="anchor-icon">#</span></a>Variables</h3>
+<pre><code class="hljs language-text">w = 1.0
+num_yrs = len(stats.columns) — 1 #stats.shape[1] - 1
+num_plyrs = len(stats) #stats.shape[0]
+</code></pre>
+<h3 id="other-parameters"><a class="heading-anchor" aria-hidden tabindex="-1" href="#other-parameters"><span class="anchor-icon">#</span></a>Other parameters</h3>
+<pre><code class="hljs language-text">first_tick = int(math.ceil((num_plyrs*w/2))) 
+gap = num_plyrs*w + 1
+x = np.array([first_tick + i*gap for i in range(num_yrs)])
+</code></pre>
+<h3 id="choosing-colors"><a class="heading-anchor" aria-hidden tabindex="-1" href="#choosing-colors"><span class="anchor-icon">#</span></a>Choosing Colors</h3>
+<pre><code class="hljs language-text">colors = colormaps['inferno']
+</code></pre>
+<pre><code class="hljs language-text"># Deprecated
+# colors = plt.cm.get_cmap(‘inferno’,num_plyrs)
+</code></pre>
+<h3 id="plotting"><a class="heading-anchor" aria-hidden tabindex="-1" href="#plotting"><span class="anchor-icon">#</span></a>Plotting</h3>
+<pre><code class="hljs language-text">fig,ax = plt.subplots(1,1, figsize=(10,10))
+</code></pre>
+<pre><code class="hljs language-text">b = []
+for i in range(num_plyrs):
+    b.append(ax.bar(x - (i - num_plyrs/2 + 0.5)*w, 
+             stats.loc[i].values[1:], 
+             width=w, 
+             color=colors(i), 
+             align='center', 
+             edgecolor = 'black', 
+             linewidth = 1.0, 
+             alpha=0.5))
+</code></pre>
+<pre><code class="hljs language-text">ax.legend([b_ for b_ in b], 
+           stats['Players'].values.tolist(), 
+           ncol = 3, 
+           loc = 'best', 
+           framealpha = 0.1)
+           
+ax.set_ylabel('Goals')
+ax.set_xlabel('Players')
+ax.set_title('Goals scored by players')
+ax.set_xticks(x)
+ax.set_xticklabels(stats.columns.values[1:])
+</code></pre>
+<pre><code class="hljs language-text">for i in range(num_plyrs):
+    ax.bar_label(b[i], 
+                 padding = 3, 
+                 label_type='center', 
+                 rotation = 'vertical')
+</code></pre>
+<pre><code class="hljs language-text">plt.show()
+</code></pre>
+<h3 id="result"><a class="heading-anchor" aria-hidden tabindex="-1" href="#result"><span class="anchor-icon">#</span></a>Result</h3>
+<p><img src="/images/blog/plotting-grouped-bar-chart-in-matplotlib/img1.png" alt=""></p>
+<p>Result of the code</p>
+<hr>
+<p>Clap if you like this post! Comment your feedback, if any!!</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/plotting-grouped-bar-chart-in-matplotlib-7700e818344f">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Plotting Grouped Bar Chart in Matplotlib","date":"$D2021-07-30T00:00:00.000Z","readingTime":2,"categories":["Data Visualization","Python"],"tags":["python","matplotlib","data-visualization","data-science"],"contentHtml":"$11","headings":[{"level":3,"id":"imports","text":"Imports"},{"level":3,"id":"data","text":"Data"},{"level":3,"id":"variables","text":"Variables"},{"level":3,"id":"other-parameters","text":"Other parameters"},{"level":3,"id":"choosing-colors","text":"Choosing Colors"},{"level":3,"id":"plotting","text":"Plotting"},{"level":3,"id":"result","text":"Result"}],"prevPost":{"slug":"2021-06-30-simclr-in-pytorch","title":"SimCLR in PyTorch"},"nextPost":{"slug":"2021-07-31-gradcam-in-pytorch","title":"GradCAM in PyTorch"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Plotting Grouped Bar Chart in Matplotlib — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

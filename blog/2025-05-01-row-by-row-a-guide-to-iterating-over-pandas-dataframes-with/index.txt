@@ -1,0 +1,76 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-05-01-row-by-row-a-guide-to-iterating-over-pandas-dataframes-with",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-05-01-row-by-row-a-guide-to-iterating-over-pandas-dataframes-with","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-05-01-row-by-row-a-guide-to-iterating-over-pandas-dataframes-with","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","DtISOIuHiv4PZ-EnmBcxa",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T14a1,<hr>
+<p><img src="/images/blog/row-by-row-a-guide-to-iterating-over-pandas-dataframes-with/img1.jpeg" alt=""></p>
+<p>Generated using Grok</p>
+<p>Pandas DataFrames are a powerful tool for data analysis and manipulation. However, when working with large datasets, it’s often necessary to iterate over the rows of a DataFrame to perform specific operations. In this article, we’ll explore two common methods for iterating over Pandas DataFrames: <em><code>****iterrows()****</code></em> and <em><code>****loc[]****</code></em>. We’ll discuss each method's benefits and use cases, and provide examples to help you get started.</p>
+<h4 id="method-1-iterrows"><a class="heading-anchor" aria-hidden tabindex="-1" href="#method-1-iterrows"><span class="anchor-icon">#</span></a>Method 1: <em>iterrows()</em></h4>
+<p><em><strong>iterrows()</strong></em> is a built-in Pandas function that allows you to iterate over the rows of a DataFrame. This method returns an iterator that yields the index and the row values of the DataFrame. Here’s an example:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-comment"># create a sample DataFrame</span>
+df = pd.DataFrame({<span class="hljs-string">'A'</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-string">'B'</span>: [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]}) 
+<span class="hljs-comment"># iterate over rows using iterrows() </span>
+<span class="hljs-keyword">for</span> index, row <span class="hljs-keyword">in</span> df.iterrows():
+    <span class="hljs-built_in">print</span>(index, row)
+</code></pre>
+<p>This will output:</p>
+<pre><code class="hljs language-text">0    A    1
+     B    4 
+Name: 0, dtype: int64
+1    A    2 
+     B    5 
+Name: 1, dtype: int64 
+2    A    3 
+     B    6 
+Name: 2, dtype: int64
+</code></pre>
+<p><em><strong>iterrows()</strong></em> is a convenient method for iterating over DataFrames, especially when you need to access both the index and the row values.</p>
+<h4 id="method-2loc"><a class="heading-anchor" aria-hidden tabindex="-1" href="#method-2loc"><span class="anchor-icon">#</span></a>Method 2: <em>loc[]</em></h4>
+<p><em><strong>loc[]</strong></em> is a label-based indexing method that allows you to access specific rows and columns of a DataFrame. You can use <em><code>****loc[]****</code></em> to iterate over the rows of a DataFrame by specifying the row indices. Here’s an example:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd  
+<span class="hljs-comment"># create a sample DataFrame </span>
+df = pd.DataFrame({<span class="hljs-string">'A'</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-string">'B'</span>: [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]})  
+<span class="hljs-comment"># iterate over rows using loc[] </span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(df)):     
+    row = df.loc[i]
+    <span class="hljs-built_in">print</span>(row)
+</code></pre>
+<p>This will output:</p>
+<pre><code class="hljs language-text">A    1 
+B    4 
+Name: 0, dtype: int64 
+A    2 
+B    5 
+Name: 1, dtype: int64 
+A    3 
+B    6 
+Name: 2, dtype: int64
+</code></pre>
+<p><em><strong>loc[]</strong></em> is a flexible method that allows you to access specific rows and columns of a DataFrame. It’s especially useful when you need to perform operations on specific subsets of the data.</p>
+<h4 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h4>
+<p>In this article, we’ve explored two common methods for iterating over Pandas DataFrames: <em><code>****iterrows()****</code></em> and <em><code>****loc[]****</code></em>. Both methods have their benefits and use cases, and can be used to perform a wide range of operations on your data. Whether you’re working with small or large datasets, these methods can help you to efficiently iterate over your data and perform the operations you need.</p>
+<p>Which method to use?</p>
+<ul>
+<li>We can use <em><code>****iterrows()****</code></em> when we need to access both the index and the row values of the DataFrame.</li>
+<li>We can use <em><code>****loc[]****</code></em> when we need to access specific rows and columns of the DataFrame, or when we need to perform operations on specific subsets of the data.</li>
+</ul>
+<p>By mastering these two methods, you’ll be able to efficiently iterate over your Pandas DataFrames and perform the operations you need to extract insights from your data.</p>
+<hr>
+<p>Clap and Share if you find this article helpful.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/row-by-row-a-guide-to-iterating-over-pandas-dataframes-with-iterrows-and-loc-7541d16213cf">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Row by Row: A Guide to Iterating Over Pandas DataFrames with iterrows() and loc[]","date":"$D2025-05-01T00:00:00.000Z","readingTime":3,"categories":["Data Science","Python"],"tags":["python","pandas","data-science","data-manipulation"],"contentHtml":"$11","headings":[{"level":4,"id":"method-1-iterrows","text":"Method 1: iterrows()"},{"level":4,"id":"method-2loc","text":"Method 2: loc[]"},{"level":4,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2025-02-26-generative-models-diffusion-chapter-part-1-likelihood-and-sc","title":"Generative Models — Diffusion Chapter — Part 1—Likelihood and Score"},"nextPost":{"slug":"2025-05-12-compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-ma","title":"Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Row by Row: A Guide to Iterating Over Pandas DataFrames with iterrows() and loc[] — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

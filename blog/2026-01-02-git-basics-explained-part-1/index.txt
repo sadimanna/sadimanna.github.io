@@ -1,0 +1,270 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-01-02-git-basics-explained-part-1",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-01-02-git-basics-explained-part-1","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-01-02-git-basics-explained-part-1","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","7o5WD_J1e9mmzp6OceNhS",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T41fd,<hr>
+<p><img src="/images/blog/git-basics-explained-part-1/img1.jpeg" alt=""></p>
+<p>Version control is an essential skill for every developer, researcher, or data scientist. <strong>Git</strong> is the most widely used version control system, allowing you to track changes, collaborate safely, and manage project history efficiently.</p>
+<p>This article walks through <strong>core Git concepts and commands</strong>, explaining <strong>what each does</strong>, <strong>how it is used</strong>, <strong>real examples</strong>, <strong>common beginner mistakes</strong>, and <strong>best practices</strong>.</p>
+<hr>
+<h3 id="1-what-isgit"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-what-isgit"><span class="anchor-icon">#</span></a>1. What Is Git?</h3>
+<p><strong>Git</strong> is a <strong>distributed version control system</strong> that records changes to files over time. Each developer has a full copy of the repository, including its entire history.</p>
+<h3 id="why-gitmatters"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-gitmatters"><span class="anchor-icon">#</span></a>Why Git Matters</h3>
+<ul>
+<li>Tracks changes in code and documents</li>
+<li>Enables collaboration without overwriting work</li>
+<li>Allows rollback to previous versions</li>
+<li>Supports branching and experimentation</li>
+</ul>
+<hr>
+<h3 id="2-initializing-a-repository-gitinit"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-initializing-a-repository-gitinit"><span class="anchor-icon">#</span></a>2. Initializing a Repository (<code>git init</code>)</h3>
+<h3 id="what-itdoes"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Creates a new Git repository in your project directory.</p>
+<h3 id="example"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-text">mkdir my_project
+cd my_project
+git init
+</code></pre>
+<p>This creates a hidden <code>.git/</code> directory that stores all version control metadata.</p>
+<h3 id="common-mistakes"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Initializing Git <strong>inside another Git repository</strong></li>
+<li>Deleting the <code>.git</code> folder accidentally</li>
+</ul>
+<h3 id="best-practices"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Initialize Git <strong>once per project</strong></li>
+<li>Run <code>ls -a</code> to confirm <code>.git</code> exists</li>
+</ul>
+<hr>
+<h3 id="3-cloning-an-existing-repository-gitclone"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-cloning-an-existing-repository-gitclone"><span class="anchor-icon">#</span></a>3. Cloning an Existing Repository (<code>git clone</code>)</h3>
+<h3 id="what-itdoes-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-1"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Creates a local copy of a remote repository (e.g., from GitHub).</p>
+<h3 id="example-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-1"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/user/repo.git
+</code></pre>
+<h3 id="when-touse"><a class="heading-anchor" aria-hidden tabindex="-1" href="#when-touse"><span class="anchor-icon">#</span></a>When to Use</h3>
+<ul>
+<li>Starting work on an existing project</li>
+<li>Contributing to open-source repositories</li>
+</ul>
+<h3 id="common-mistakes-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-1"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Editing files <strong>before understanding the project structure</strong></li>
+<li>Cloning into an unintended directory</li>
+</ul>
+<h3 id="best-practices-1"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-1"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Read the <code>README.md</code> first</li>
+<li>Clone repositories in a dedicated <code>projects/</code> folder</li>
+</ul>
+<hr>
+<h3 id="4-checking-repository-status-gitstatus"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-checking-repository-status-gitstatus"><span class="anchor-icon">#</span></a>4. Checking Repository Status (<code>git status</code>)</h3>
+<h3 id="what-itdoes-2"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-2"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Shows the current state of the working directory and staging area.</p>
+<h3 id="example-2"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-2"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-bash">git status
+</code></pre>
+<h3 id="output-tellsyou"><a class="heading-anchor" aria-hidden tabindex="-1" href="#output-tellsyou"><span class="anchor-icon">#</span></a>Output Tells You</h3>
+<ul>
+<li>Modified files</li>
+<li>Staged files</li>
+<li>Untracked files</li>
+</ul>
+<h3 id="common-mistakes-2"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-2"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Forgetting to run <code>git status</code> before committing</li>
+</ul>
+<h3 id="best-practices-2"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-2"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Run <code>git status</code> <strong>frequently</strong></li>
+<li>Treat it as your “sanity check” command</li>
+</ul>
+<hr>
+<h3 id="5-tracking-files-gitadd"><a class="heading-anchor" aria-hidden tabindex="-1" href="#5-tracking-files-gitadd"><span class="anchor-icon">#</span></a>5. Tracking Files (<code>git add</code>)</h3>
+<h3 id="what-itdoes-3"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-3"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Moves changes from the <strong>working directory</strong> to the <strong>staging area</strong>.</p>
+<h3 id="examples"><a class="heading-anchor" aria-hidden tabindex="-1" href="#examples"><span class="anchor-icon">#</span></a>Examples</h3>
+<pre><code class="hljs language-bash">git add file.txt
+git add .
+</code></pre>
+<h3 id="common-mistakes-3"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-3"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Using <code>git add .</code> blindly</li>
+<li>Accidentally staging large or sensitive files</li>
+</ul>
+<h3 id="best-practices-3"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-3"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Stage files <strong>intentionally</strong></li>
+<li>Use:</li>
+</ul>
+<pre><code class="hljs language-bash">git add file1.py file2.py
+</code></pre>
+<hr>
+<h3 id="6-committing-changes-gitcommit"><a class="heading-anchor" aria-hidden tabindex="-1" href="#6-committing-changes-gitcommit"><span class="anchor-icon">#</span></a>6. Committing Changes (<code>git commit</code>)</h3>
+<h3 id="what-itdoes-4"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-4"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Records a snapshot of staged changes in the repository history.</p>
+<h3 id="example-3"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-3"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-bash">git commit -m <span class="hljs-string">"Add initial data preprocessing script"</span>
+</code></pre>
+<h3 id="common-mistakes-4"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-4"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Vague messages like <code>"update"</code> or <code>"fix"</code></li>
+<li>Committing too many unrelated changes at once</li>
+</ul>
+<h3 id="best-practices-4"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-4"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Write <strong>clear, descriptive commit messages</strong></li>
+<li>Follow a pattern:</li>
+</ul>
+<pre><code class="hljs language-text">Short summary (50 chars max)
+</code></pre>
+<pre><code class="hljs language-text">Optional detailed explanation
+</code></pre>
+<hr>
+<h3 id="7-viewing-history-gitlog"><a class="heading-anchor" aria-hidden tabindex="-1" href="#7-viewing-history-gitlog"><span class="anchor-icon">#</span></a>7. Viewing History (<code>git log</code>)</h3>
+<h3 id="what-itdoes-5"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-5"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Displays the commit history.</p>
+<h3 id="example-4"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-4"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">log</span> --oneline
+</code></pre>
+<h3 id="use-case"><a class="heading-anchor" aria-hidden tabindex="-1" href="#use-case"><span class="anchor-icon">#</span></a>Use Case</h3>
+<ul>
+<li>Understanding project evolution</li>
+<li>Debugging when a bug was introduced</li>
+</ul>
+<h3 id="common-mistakes-5"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-5"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Ignoring commit history completely</li>
+</ul>
+<h3 id="best-practices-5"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-5"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Use <code>--oneline</code> for readability</li>
+<li>Learn to search logs later with <code>--grep</code></li>
+</ul>
+<hr>
+<h3 id="8-ignoring-files-gitignore"><a class="heading-anchor" aria-hidden tabindex="-1" href="#8-ignoring-files-gitignore"><span class="anchor-icon">#</span></a>8. Ignoring Files (<code>.gitignore</code>)</h3>
+<h3 id="what-itdoes-6"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-6"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Prevents certain files from being tracked.</p>
+<h3 id="examplegitignore"><a class="heading-anchor" aria-hidden tabindex="-1" href="#examplegitignore"><span class="anchor-icon">#</span></a>Example <code>.gitignore</code></h3>
+<pre><code class="hljs language-text">__pycache__/
+*.log
+.env
+data/
+</code></pre>
+<h3 id="common-mistakes-6"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-6"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Adding <code>.gitignore</code> <strong>after</strong> committing files</li>
+<li>Forgetting to ignore large datasets</li>
+</ul>
+<h3 id="best-practices-6"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-6"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Create <code>.gitignore</code> <strong>early</strong></li>
+<li>Never commit secrets (API keys, passwords)</li>
+</ul>
+<hr>
+<h3 id="9-branching-git-branch-git-checkout-gitswitch"><a class="heading-anchor" aria-hidden tabindex="-1" href="#9-branching-git-branch-git-checkout-gitswitch"><span class="anchor-icon">#</span></a>9. Branching (<code>git branch</code>, <code>git checkout</code>, <code>git switch</code>)</h3>
+<h3 id="what-itdoes-7"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-7"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Branches allow parallel development.</p>
+<h3 id="example-5"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-5"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-bash">git branch feature-x
+git switch feature-x
+</code></pre>
+<h3 id="why-branchesmatter"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-branchesmatter"><span class="anchor-icon">#</span></a>Why Branches Matter</h3>
+<ul>
+<li>Isolate experiments</li>
+<li>Avoid breaking the main codebase</li>
+</ul>
+<h3 id="common-mistakes-7"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-7"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Doing all work on <code>main</code></li>
+<li>Forgetting which branch you are on</li>
+</ul>
+<h3 id="best-practices-7"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-7"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Keep <code>main</code> stable</li>
+<li>Use descriptive branch names:</li>
+</ul>
+<pre><code class="hljs language-text">feature/login-ui
+bugfix/memory-leak
+</code></pre>
+<hr>
+<h3 id="10-merging-branches-gitmerge"><a class="heading-anchor" aria-hidden tabindex="-1" href="#10-merging-branches-gitmerge"><span class="anchor-icon">#</span></a>10. Merging Branches (<code>git merge</code>)</h3>
+<h3 id="what-itdoes-8"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-itdoes-8"><span class="anchor-icon">#</span></a>What It Does</h3>
+<p>Combines changes from one branch into another.</p>
+<h3 id="example-6"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-6"><span class="anchor-icon">#</span></a>Example</h3>
+<pre><code class="hljs language-bash">git switch main
+git merge feature-x
+</code></pre>
+<h3 id="common-mistakes-8"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-8"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Merging without pulling latest changes</li>
+<li>Panic when conflicts appear</li>
+</ul>
+<h3 id="best-practices-8"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-8"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Commit before merging</li>
+<li>Resolve conflicts <strong>line by line</strong>, not blindly</li>
+</ul>
+<hr>
+<h3 id="11-working-with-remote-repositories-git-push-gitpull"><a class="heading-anchor" aria-hidden tabindex="-1" href="#11-working-with-remote-repositories-git-push-gitpull"><span class="anchor-icon">#</span></a>11. Working with Remote Repositories (<code>git push</code>, <code>git pull</code>)</h3>
+<h3 id="pushing-changes"><a class="heading-anchor" aria-hidden tabindex="-1" href="#pushing-changes"><span class="anchor-icon">#</span></a>Pushing Changes</h3>
+<pre><code class="hljs language-bash">git push origin main
+</code></pre>
+<h3 id="pulling-updates"><a class="heading-anchor" aria-hidden tabindex="-1" href="#pulling-updates"><span class="anchor-icon">#</span></a>Pulling Updates</h3>
+<pre><code class="hljs language-bash">git pull origin main
+</code></pre>
+<h3 id="common-mistakes-9"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-mistakes-9"><span class="anchor-icon">#</span></a>Common Mistakes</h3>
+<ul>
+<li>Forgetting to pull before pushing</li>
+<li>Force pushing (<code>--force</code>) without understanding consequences</li>
+</ul>
+<h3 id="best-practices-9"><a class="heading-anchor" aria-hidden tabindex="-1" href="#best-practices-9"><span class="anchor-icon">#</span></a>Best Practices</h3>
+<ul>
+<li>Pull frequently</li>
+<li>Avoid force push on shared branches</li>
+</ul>
+<hr>
+<h3 id="12-common-beginner-git-mistakes-summary"><a class="heading-anchor" aria-hidden tabindex="-1" href="#12-common-beginner-git-mistakes-summary"><span class="anchor-icon">#</span></a>12. Common Beginner Git Mistakes (Summary)</h3>
+<ul>
+<li>Forgetting to commit changes</li>
+<li>Writing poor commit messages</li>
+<li>Tracking unnecessary files</li>
+<li>Working directly on <code>main</code></li>
+<li>Ignoring merge conflicts</li>
+</ul>
+<hr>
+<h3 id="13-git-best-practices-for-beginners"><a class="heading-anchor" aria-hidden tabindex="-1" href="#13-git-best-practices-for-beginners"><span class="anchor-icon">#</span></a>13. Git Best Practices for Beginners</h3>
+<ul>
+<li>Commit early and often</li>
+<li>Keep commits small and focused</li>
+<li>Use <code>.gitignore</code></li>
+<li>Check <code>git status</code> regularly</li>
+<li>Learn Git incrementally — don’t rush</li>
+</ul>
+<hr>
+<h3 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h3>
+<p>Git is not just a tool — it is a <strong>workflow discipline</strong>. Mastering Git basics early will save you hours of debugging, collaboration issues, and lost work later.</p>
+<p>Once you are comfortable with these fundamentals, you can explore:</p>
+<ul>
+<li>Rebase</li>
+<li>Stashing</li>
+<li>Tags</li>
+<li>GitHub workflows and pull requests</li>
+</ul>
+<p><em><strong>Coming Soon in Part 2…</strong></em></p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/git-basics-explained-part-1-eea0bab9e1b4">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Git Basics Explained — Part 1","date":"$D2026-01-02T00:00:00.000Z","readingTime":5,"categories":["Git","Version Control"],"tags":["git","version-control","github","tutorial"],"contentHtml":"$11","headings":[{"level":3,"id":"1-what-isgit","text":"1. What Is Git?"},{"level":3,"id":"why-gitmatters","text":"Why Git Matters"},{"level":3,"id":"2-initializing-a-repository-gitinit","text":"2. Initializing a Repository (git init)"},{"level":3,"id":"what-itdoes","text":"What It Does"},{"level":3,"id":"example","text":"Example"},{"level":3,"id":"common-mistakes","text":"Common Mistakes"},{"level":3,"id":"best-practices","text":"Best Practices"},{"level":3,"id":"3-cloning-an-existing-repository-gitclone","text":"3. Cloning an Existing Repository (git clone)"},{"level":3,"id":"what-itdoes-1","text":"What It Does"},{"level":3,"id":"example-1","text":"Example"},{"level":3,"id":"when-touse","text":"When to Use"},{"level":3,"id":"common-mistakes-1","text":"Common Mistakes"},{"level":3,"id":"best-practices-1","text":"Best Practices"},{"level":3,"id":"4-checking-repository-status-gitstatus","text":"4. Checking Repository Status (git status)"},{"level":3,"id":"what-itdoes-2","text":"What It Does"},{"level":3,"id":"example-2","text":"Example"},{"level":3,"id":"output-tellsyou","text":"Output Tells You"},{"level":3,"id":"common-mistakes-2","text":"Common Mistakes"},{"level":3,"id":"best-practices-2","text":"Best Practices"},{"level":3,"id":"5-tracking-files-gitadd","text":"5. Tracking Files (git add)"},{"level":3,"id":"what-itdoes-3","text":"What It Does"},{"level":3,"id":"examples","text":"Examples"},{"level":3,"id":"common-mistakes-3","text":"Common Mistakes"},{"level":3,"id":"best-practices-3","text":"Best Practices"},{"level":3,"id":"6-committing-changes-gitcommit","text":"6. Committing Changes (git commit)"},{"level":3,"id":"what-itdoes-4","text":"What It Does"},{"level":3,"id":"example-3","text":"Example"},{"level":3,"id":"common-mistakes-4","text":"Common Mistakes"},{"level":3,"id":"best-practices-4","text":"Best Practices"},{"level":3,"id":"7-viewing-history-gitlog","text":"7. Viewing History (git log)"},{"level":3,"id":"what-itdoes-5","text":"What It Does"},{"level":3,"id":"example-4","text":"Example"},{"level":3,"id":"use-case","text":"Use Case"},{"level":3,"id":"common-mistakes-5","text":"Common Mistakes"},{"level":3,"id":"best-practices-5","text":"Best Practices"},{"level":3,"id":"8-ignoring-files-gitignore","text":"8. Ignoring Files (.gitignore)"},{"level":3,"id":"what-itdoes-6","text":"What It Does"},{"level":3,"id":"examplegitignore","text":"Example .gitignore"},{"level":3,"id":"common-mistakes-6","text":"Common Mistakes"},{"level":3,"id":"best-practices-6","text":"Best Practices"},{"level":3,"id":"9-branching-git-branch-git-checkout-gitswitch","text":"9. Branching (git branch, git checkout, git switch)"},{"level":3,"id":"what-itdoes-7","text":"What It Does"},{"level":3,"id":"example-5","text":"Example"},{"level":3,"id":"why-branchesmatter","text":"Why Branches Matter"},{"level":3,"id":"common-mistakes-7","text":"Common Mistakes"},{"level":3,"id":"best-practices-7","text":"Best Practices"},{"level":3,"id":"10-merging-branches-gitmerge","text":"10. Merging Branches (git merge)"},{"level":3,"id":"what-itdoes-8","text":"What It Does"},{"level":3,"id":"example-6","text":"Example"},{"level":3,"id":"common-mistakes-8","text":"Common Mistakes"},{"level":3,"id":"best-practices-8","text":"Best Practices"},{"level":3,"id":"11-working-with-remote-repositories-git-push-gitpull","text":"11. Working with Remote Repositories (git push, git pull)"},{"level":3,"id":"pushing-changes","text":"Pushing Changes"},{"level":3,"id":"pulling-updates","text":"Pulling Updates"},{"level":3,"id":"common-mistakes-9","text":"Common Mistakes"},{"level":3,"id":"best-practices-9","text":"Best Practices"},{"level":3,"id":"12-common-beginner-git-mistakes-summary","text":"12. Common Beginner Git Mistakes (Summary)"},{"level":3,"id":"13-git-best-practices-for-beginners","text":"13. Git Best Practices for Beginners"},{"level":3,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2025-12-31-writing-multi-line-commands-across-operating-systems","title":"Writing Multi-Line Commands Across Operating Systems"},"nextPost":{"slug":"2026-01-03-introducing-the-awesome-topics-blog-series","title":"🚀 Introducing the awesome-topics Blog Series"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Git Basics Explained — Part 1 — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

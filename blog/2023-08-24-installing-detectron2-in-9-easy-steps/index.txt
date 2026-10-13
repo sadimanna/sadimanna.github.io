@@ -1,0 +1,124 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2023-08-24-installing-detectron2-in-9-easy-steps",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2023-08-24-installing-detectron2-in-9-easy-steps","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2023-08-24-installing-detectron2-in-9-easy-steps","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","kPb3XdyCoWloZ4RESQ7i4",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T1cbf,<hr>
+<p><img src="/images/blog/installing-detectron2-in-9-easy-steps/img1.jpeg" alt=""></p>
+<p>Image generated using Bing</p>
+<p>When installing detectron2, we often face an error saying that there is a <em><strong>mismatch between the CUDA version with which PyTorch (say, 11.7) was compiled and the CUDA version available in the system (say, 12.1)</strong></em>.</p>
+<p><em><strong>A possible solution</strong></em> is to use a <strong>Docker</strong> container</p>
+<hr>
+<p>In this article, we will go through the steps to set up a <strong>Docker</strong> container inside the <strong>Windows Subsystem for Linux (WSL2)</strong> on <strong>Windows 11</strong>.</p>
+<h2 id="step-by-step-installation"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-by-step-installation"><span class="anchor-icon">#</span></a>Step-by-Step Installation</h2>
+<h3 id="step-1-install-wsl2-on-windows"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-1-install-wsl2-on-windows"><span class="anchor-icon">#</span></a>Step 1: Install WSL2 on Windows</h3>
+<p>Install <strong>WSL2</strong> on <strong>Windows</strong>Follow the steps given<a href="https://learn.microsoft.com/en-us/windows/wsl/install"><strong>here</strong></a><strong>.</strong></p>
+<h3 id="step-2-install-docker-desktop"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-2-install-docker-desktop"><span class="anchor-icon">#</span></a>Step 2: Install Docker Desktop</h3>
+<p>Install <strong>Docker Desktop</strong> on <strong>Windows</strong>Follow the steps given<a href="https://docs.docker.com/desktop/install/windows-install/"><strong>here</strong></a><strong>.</strong></p>
+<h3 id="step-3-pull-cuda-docker-image"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-3-pull-cuda-docker-image"><span class="anchor-icon">#</span></a>Step 3: Pull CUDA Docker Image</h3>
+<pre><code class="hljs language-bash">docker pull nvcr.io/nvidia/cuda:11.7.0-base-ubuntu22.04
+</code></pre>
+<h3 id="step-4-run-the-docker-container"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-4-run-the-docker-container"><span class="anchor-icon">#</span></a>Step 4: Run the Docker Container</h3>
+<pre><code class="hljs language-bash">docker run -it --gpus all nvcr.io/nvidia/cuda:11.7.0-base-ubuntu22.04
+</code></pre>
+<h3 id="step-5-update-and-upgrade-packages"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-5-update-and-upgrade-packages"><span class="anchor-icon">#</span></a>Step 5: Update and Upgrade Packages</h3>
+<pre><code class="hljs language-text">apt-get update &#x26;&#x26; apt-get upgrade
+</code></pre>
+<h3 id="step-6-install-python-3x"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-6-install-python-3x"><span class="anchor-icon">#</span></a>Step 6: Install Python 3.x</h3>
+<pre><code class="hljs language-bash">apt install python3
+</code></pre>
+<blockquote>
+<p>Seventh: Install pip because you will need it</p>
+</blockquote>
+<pre><code class="hljs language-bash">apt install python3-pip
+</code></pre>
+<blockquote>
+<p>Eight: Install the required libraries</p>
+</blockquote>
+<p>For <em><strong>opencv</strong></em> dependencies, run the following command first:</p>
+<pre><code class="hljs language-text">apt-get install ffmpeg libsm6 libxext6
+</code></pre>
+<p>otherwise, when importing <em><strong>detectron2,</strong></em> an <strong>ImportError</strong> like</p>
+<pre><code class="hljs language-text">ImportError: libGL.so.1: cannot open shared object file: No such file or directory
+</code></pre>
+<p>will occur. If you install <em><strong>libgl1</strong></em> after seeing this error, you will get</p>
+<pre><code class="hljs language-text">ImportError: libgthread-2.0.so.0: cannot open shared object file: No such file or directory
+</code></pre>
+<p>when you try to import <em><strong>detectron2</strong></em> again. I did not face any issues when installing <em><strong>opencv</strong></em>, but when importing <em><strong>detectron2</strong></em> later, the above errors occurred.</p>
+<p>To install the required libraries, run</p>
+<pre><code class="hljs language-text">python3 -m pip install numpy matplotlib scikit-learn scikit-image opencv-python opencv-contrib-python …
+</code></pre>
+<p>To install PyTorch, run</p>
+<pre><code class="hljs language-text">python3 -m pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+</code></pre>
+<blockquote>
+<p>Ninth: Install detectron2</p>
+</blockquote>
+<p>First, install <em><strong>git</strong></em></p>
+<pre><code class="hljs language-bash">apt install git
+</code></pre>
+<p>Then install detectron2</p>
+<pre><code class="hljs language-text">python3 -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+</code></pre>
+<blockquote>
+<p>Save this Container as an Image</p>
+</blockquote>
+<p>Run</p>
+<pre><code class="hljs language-bash">docker ps
+</code></pre>
+<p>to check the container ID. To commit the changes to the container, run</p>
+<pre><code class="hljs language-bash">docker commit [CONTAINED ID] [REPOSITORY[:TAG]]
+</code></pre>
+<p>In my case, the command was</p>
+<pre><code class="hljs language-bash">docker commit 870b62170e7e detectron2_cuda11.7.0-ubuntu22.04
+</code></pre>
+<blockquote>
+<p>Check the newly created Image by running</p>
+</blockquote>
+<pre><code class="hljs language-bash">docker images
+</code></pre>
+<blockquote>
+<p>Stop the running container and start the new image</p>
+</blockquote>
+<pre><code class="hljs language-bash">docker run -it --gpus all detectron2_cuda11.7.0-ubuntu22.04
+</code></pre>
+<p>There you go! Now the installed libraries won’t vanish every time you remove the container and can be used on other systems as well!</p>
+<p><strong>Additional Features</strong>:</p>
+<blockquote>
+<p>NVIDIA Driver</p>
+</blockquote>
+<p>Using</p>
+<pre><code class="hljs language-text">--gpus=all
+</code></pre>
+<p>is essential; otherwise, the following error will occur:</p>
+<pre><code class="hljs language-text">AssertionError: Found no NVIDIA driver on your system. 
+Please check that you have an NVIDIA GPU and 
+installed a driver from http://www.nvidia.com/Download/index.aspx
+</code></pre>
+<blockquote>
+<p>To access a directory on the host system from within the docker container use <strong>bind mounts</strong></p>
+</blockquote>
+<pre><code class="hljs language-bash">docker run -it --gpus all --mount <span class="hljs-built_in">type</span>=<span class="hljs-built_in">bind</span>,src=/path/to/directory,target=/path detectron2_cuda11.7.0-ubuntu22.04
+</code></pre>
+<p>Now, you can access all the files in the source directory on the host system.</p>
+<blockquote>
+<p>To enable the <em><strong>nvidia-smi</strong></em> tool in the container, enable the <em><strong>utility</strong></em> driver capability</p>
+</blockquote>
+<pre><code class="hljs language-bash">docker run -it --gpus <span class="hljs-string">'all,capabilities=compute,utility'</span> --mount <span class="hljs-built_in">type</span>=<span class="hljs-built_in">bind</span>,src=/path/to/directory,target=/path detectron2_cuda11.7.0-ubuntu22.04
+</code></pre>
+<hr>
+<p>Clap and share if you like this article. Subscribe for more articles like this.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/install-detectron2-73d9447d3652">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Installing detectron2 in 9 easy steps","date":"$D2023-08-24T00:00:00.000Z","readingTime":3,"categories":["Computer Vision","Developer Tools"],"tags":["detectron2","docker","wsl2","computer-vision","pytorch"],"contentHtml":"$11","headings":[{"level":2,"id":"step-by-step-installation","text":"Step-by-Step Installation"},{"level":3,"id":"step-1-install-wsl2-on-windows","text":"Step 1: Install WSL2 on Windows"},{"level":3,"id":"step-2-install-docker-desktop","text":"Step 2: Install Docker Desktop"},{"level":3,"id":"step-3-pull-cuda-docker-image","text":"Step 3: Pull CUDA Docker Image"},{"level":3,"id":"step-4-run-the-docker-container","text":"Step 4: Run the Docker Container"},{"level":3,"id":"step-5-update-and-upgrade-packages","text":"Step 5: Update and Upgrade Packages"},{"level":3,"id":"step-6-install-python-3x","text":"Step 6: Install Python 3.x"}],"prevPost":{"slug":"2023-06-09-an-elegant-way-to-split-a-dataset-into-train-validation-and","title":"An elegant way to split a Dataset into Train, Validation, and Test splits in Batch Script"},"nextPost":{"slug":"2023-08-28-the-art-of-loading-custom-objects-and-functions-in-keras","title":"The Art of Loading Custom Objects and Functions in Keras"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Installing detectron2 in 9 easy steps — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

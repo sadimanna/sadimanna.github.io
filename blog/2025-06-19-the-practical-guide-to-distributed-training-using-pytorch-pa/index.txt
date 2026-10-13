@@ -1,0 +1,207 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-06-19-the-practical-guide-to-distributed-training-using-pytorch-pa",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-06-19-the-practical-guide-to-distributed-training-using-pytorch-pa","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-06-19-the-practical-guide-to-distributed-training-using-pytorch-pa","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","pyKWwje5kWchKry7h-Uig",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T39ef,<hr>
+<p><img src="/images/blog/the-practical-guide-to-distributed-training-using-pytorch-pa/img1.jpeg" alt=""></p>
+<p>Distributed training is a critical technique for scaling machine learning models across multiple GPUs and nodes. In this article, we’ll focus on how to perform distributed training using PyTorch on multiple nodes with the help of <em><code>torchrun</code></em>. We’ll cover every step in detail, explain why each step is necessary, and discuss common errors users may encounter along with their solutions.</p>
+<blockquote>
+<p>Check out the previous articles in this series (if you need to)<br>
+<strong>Part 1</strong></p>
+</blockquote>
+<p><a href="https://medium.com/the-owl/the-complete-guide-to-distributeddataparallel-ddp-training-in-pytorch-14545cd21f9c" title="https://medium.com/the-owl/the-complete-guide-to-distributeddataparallel-ddp-training-in-pytorch-14545cd21f9c"><strong>The Practical Guide to Distributed Training using PyTorch — Part 1: On a Single Node using…</strong><br>
+<em>On a Single Node using torch.multi-processing</em>medium.com</a></p>
+<blockquote>
+<p>Part 2</p>
+</blockquote>
+<p><a href="https://medium.com/the-owl/the-practical-guide-to-distributed-training-using-pytorch-part-2-on-a-single-node-using-torchrun-9e794baa0410" title="https://medium.com/the-owl/the-practical-guide-to-distributed-training-using-pytorch-part-2-on-a-single-node-using-torchrun-9e794baa0410"><strong>The Practical Guide to Distributed Training using PyTorch — Part 2: On a Single Node using Torchrun</strong><br>
+<em>On a Single Node using torchrun</em>medium.com</a></p>
+<hr>
+<h3 id="table-ofcontents"><a class="heading-anchor" aria-hidden tabindex="-1" href="#table-ofcontents"><span class="anchor-icon">#</span></a>Table of Contents</h3>
+<ol>
+<li>Introduction to Distributed Training</li>
+<li>Setting Up Your Environment</li>
+</ol>
+<ul>
+<li>2.1. Hardware and Network Requirements</li>
+<li>2.2. Software Dependencies</li>
+</ul>
+<ol start="3">
+<li>
+<p>Understanding torchrun</p>
+</li>
+<li>
+<p>Step-by-Step Guide to Distributed Training</p>
+</li>
+</ol>
+<ul>
+<li>4.1. Writing the Training Script</li>
+<li>4.2. Configuring the Cluster</li>
+<li>4.3. Launching the Training Job with <em><code>torchrun</code></em></li>
+</ul>
+<ol start="5">
+<li>
+<p>Common Errors and Solutions</p>
+</li>
+<li>
+<p>Conclusion</p>
+</li>
+</ol>
+<hr>
+<h3 id="introduction-to-distributed-training"><a class="heading-anchor" aria-hidden tabindex="-1" href="#introduction-to-distributed-training"><span class="anchor-icon">#</span></a>Introduction to Distributed Training</h3>
+<p>Training deep learning models on large datasets can be computationally expensive and time-consuming. To address this, distributed training splits the workload across multiple GPUs or even multiple machines (nodes). This approach reduces training time significantly and allows you to train larger models that would otherwise not fit into the memory of a single GPU.</p>
+<p>In this article, we’ll focus on data parallelism, where the dataset is split across multiple devices, and each device computes gradients independently. These gradients are then synchronized across devices to update the model parameters.</p>
+<p>PyTorch provides several tools for distributed training, including <em><code>torch.distributed</code></em> and <em><code>torchrun</code></em>. The latter simplifies the process of launching distributed jobs across multiple nodes.</p>
+<hr>
+<h3 id="setting-up-your-environment"><a class="heading-anchor" aria-hidden tabindex="-1" href="#setting-up-your-environment"><span class="anchor-icon">#</span></a>Setting Up Your Environment</h3>
+<p>Before diving into distributed training, ensure your environment is properly configured.</p>
+<h3 id="21-hardware-and-network-requirements"><a class="heading-anchor" aria-hidden tabindex="-1" href="#21-hardware-and-network-requirements"><span class="anchor-icon">#</span></a>2.1. Hardware and Network Requirements</h3>
+<ul>
+<li>Multiple GPUs: Each node should have at least one GPU. Ideally, use GPUs with high bandwidth (e.g., NVIDIA A100).</li>
+<li>High-Speed Network: Use a low-latency, high-bandwidth network (e.g., InfiniBand or 10GbE) to minimize communication overhead between nodes.</li>
+<li>Shared File System: Ensure all nodes can access the same file system for storing datasets, checkpoints, and logs.</li>
+</ul>
+<h3 id="22-software-dependencies"><a class="heading-anchor" aria-hidden tabindex="-1" href="#22-software-dependencies"><span class="anchor-icon">#</span></a>2.2. Software Dependencies</h3>
+<ul>
+<li>PyTorch: Install the latest version of PyTorch with CUDA support:</li>
+</ul>
+<pre><code class="hljs language-bash">pip install torch torchvision torchaudio
+</code></pre>
+<ul>
+<li>NCCL: Install NVIDIA Collective Communications Library (NCCL) for efficient GPU-to-GPU communication.</li>
+<li>SSH Access: Ensure passwordless SSH is set up between nodes for seamless communication.</li>
+</ul>
+<hr>
+<h3 id="understanding-torchrun"><a class="heading-anchor" aria-hidden tabindex="-1" href="#understanding-torchrun"><span class="anchor-icon">#</span></a>Understanding <code>torchrun</code></h3>
+<p><em><code>torchrun</code></em> is a utility provided by PyTorch to simplify the process of launching distributed training jobs. It handles tasks like assigning ranks to processes, setting up the master address, and managing worker processes.</p>
+<p>Key features of <em><code>torchrun</code></em>:</p>
+<ul>
+<li>Automatically assigns ranks and world sizes.</li>
+<li>Supports both single-node and multi-node setups.</li>
+<li>Handles failures gracefully by restarting failed processes.</li>
+</ul>
+<hr>
+<h3 id="step-by-step-guide-to-distributed-training"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-by-step-guide-to-distributed-training"><span class="anchor-icon">#</span></a>Step-by-Step Guide to Distributed Training</h3>
+<h3 id="41-writing-the-trainingscript"><a class="heading-anchor" aria-hidden tabindex="-1" href="#41-writing-the-trainingscript"><span class="anchor-icon">#</span></a>4.1. Writing the Training Script</h3>
+<p>Start by writing a training script that supports distributed training. Below is an example:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> os 
+<span class="hljs-keyword">import</span> torch 
+<span class="hljs-keyword">import</span> torch.distributed <span class="hljs-keyword">as</span> dist 
+<span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+</code></pre>
+<h4 id="why-is-this-necessary"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-is-this-necessary"><span class="anchor-icon">#</span></a>Why Is This Necessary?</h4>
+<ul>
+<li>Process Group Initialization: The <em><code>dist.init\_process\_group</code></em> function initializes the communication backend (in this case, NCCL) and sets up the distributed environment.</li>
+<li>DistributedDataParallel (DDP): Wrapping the model with <em><code>DDP</code></em> ensures that each GPU trains on its subset of data while synchronizing gradients across GPUs.</li>
+<li>Master Process Logging: Only the master process (rank 0) prints logs to avoid redundant output.</li>
+</ul>
+<hr>
+<h3 id="42-configuring-thecluster"><a class="heading-anchor" aria-hidden tabindex="-1" href="#42-configuring-thecluster"><span class="anchor-icon">#</span></a>4.2. Configuring the Cluster</h3>
+<p>To run the script on multiple nodes, you need to configure the cluster:</p>
+<ol>
+<li>Assign IP Addresses: Choose one node as the master and note its IP address.</li>
+<li>Set Environment Variables:</li>
+</ol>
+<ul>
+<li><em><code>MASTER\_ADDR</code></em>: IP address of the master node.</li>
+<li><em><code>MASTER\_PORT</code></em>: Port for communication (default is 29500).</li>
+</ul>
+<p>For example, on the master node:</p>
+<pre><code class="hljs language-text">export MASTER_ADDR='192.168.0.1' 
+export MASTER_PORT=29500
+</code></pre>
+<p>On the worker node:</p>
+<pre><code class="hljs language-text">export MASTER_ADDR='192.168.0.1' 
+export MASTER_PORT=29500
+</code></pre>
+<hr>
+<h3 id="43-launching-the-training-job-with-torchrun"><a class="heading-anchor" aria-hidden tabindex="-1" href="#43-launching-the-training-job-with-torchrun"><span class="anchor-icon">#</span></a>4.3. Launching the Training Job with <code>torchrun</code></h3>
+<p>Use <em><code>torchrun</code></em> to launch the training job.</p>
+<p><strong>On the Master Node:</strong></p>
+<pre><code class="hljs language-text">torchrun \
+--nnodes=2 \
+--node_rank=0
+--nproc_per_node=4 \
+--rdzv_id=12345 \
+--rdzv_backend=c10d \
+--rdzv_endpoint=$MASTER_ADDR:$MASTER_PORT \
+train.py
+</code></pre>
+<p><strong>On the Worker Node:</strong></p>
+<pre><code class="hljs language-text">torchrun \
+--nnodes=2 \
+--node_rank=1
+--nproc_per_node=2 \
+--rdzv_id=12345 \
+--rdzv_backend=c10d \
+--rdzv_endpoint=$MASTER_ADDR:$MASTER_PORT \
+train.py
+</code></pre>
+<p>Parameters Explained:</p>
+<ul>
+<li><code>--nnodes</code>: Number of nodes in the cluster.</li>
+<li><code>— node_rank</code>: Unique identifier for the current node (0 for the master node, 1 for the worker node, etc.).</li>
+<li><code>— nproc_per_node</code>: Number of processes per node (usually equal to the number of GPUs per node).</li>
+<li><code>— rdzv_id</code>: Unique rendezvous ID for synchronization.</li>
+<li><code>— rdzv_backend</code>: Backend for rendezvous (e.g., <em><code>c10d</code></em>).</li>
+<li><code>— rdzv_endpoint</code>: Master node’s IP and port.</li>
+</ul>
+<h4 id="how-torchrun-works"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-torchrun-works"><span class="anchor-icon">#</span></a>How <code>torchrun</code> Works:</h4>
+<ul>
+<li><em><code>torchrun</code></em> automatically assigns a unique <em><code>RANK</code></em> to each process and calculates the <em><code>WORLD\_SIZE</code></em> based on the total number of processes (<em><code>nnodes \* nproc\_per\_node</code></em>).</li>
+<li>Each process retrieves its <em><code>RANK</code></em> and <em><code>WORLD\_SIZE</code></em> from the environment variables (<em><code>os.environ[“RANK”]</code></em> and <em><code>os.environ[“WORLD\_SIZE”]</code></em>).</li>
+</ul>
+<h3 id="handling-nodes-with-different-numbers-ofgpus"><a class="heading-anchor" aria-hidden tabindex="-1" href="#handling-nodes-with-different-numbers-ofgpus"><span class="anchor-icon">#</span></a>Handling Nodes with Different Numbers of GPUs</h3>
+<p>In distributed training, it’s common for nodes to have different numbers of GPUs. This is known as heterogeneous GPU setups. <em><code>torchrun</code></em> supports such configurations by allowing each node to specify its own <em><code> — nproc\_per\_node</code></em> value, which corresponds to the number of GPUs available on that node.</p>
+<h4 id="how-itworks"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-itworks"><span class="anchor-icon">#</span></a>How It Works:</h4>
+<ol>
+<li><strong>Node-Specific Configuration</strong>: Each node runs its own <em><code>torchrun</code></em> command with a unique <em><code> — nproc\_per\_node</code></em> value based on the number of GPUs it has. For example:</li>
+</ol>
+<ul>
+<li>Master node (4 GPUs): <em><code> — nproc\_per\_node=4</code></em></li>
+<li>Worker node (2 GPUs): <em><code> — nproc\_per\_node=2</code></em></li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Global Process Group</strong>: Despite the varying number of GPUs, <em><code>torchrun</code></em> automatically assigns a global rank (<em><code>RANK</code></em>) to each process across all nodes. The total number of processes (<em><code>WORLD\_SIZE</code></em>) is calculated as the sum of all <em><code> — nproc\_per\_node</code></em> values.</p>
+</li>
+<li>
+<p><strong>Load Balancing</strong>: PyTorch’s <em><code>DistributedDataParallel</code></em> (DDP) ensures that the workload is distributed evenly across all processes, regardless of the number of GPUs per node. Each process trains on its own GPU and synchronizes gradients with others.</p>
+</li>
+</ol>
+<hr>
+<h3 id="common-errors-and-solutions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#common-errors-and-solutions"><span class="anchor-icon">#</span></a>Common Errors and Solutions</h3>
+<h3 id="error-1-nccl_error-unhandled-cudaerror"><a class="heading-anchor" aria-hidden tabindex="-1" href="#error-1-nccl_error-unhandled-cudaerror"><span class="anchor-icon">#</span></a>Error 1: <code>NCCL\_ERROR: unhandled cuda error</code></h3>
+<p>Cause: Mismatched CUDA versions or NCCL library issues.</p>
+<p>Solution: Ensure all nodes use the same CUDA and NCCL versions. Reinstall NCCL if necessary.</p>
+<hr>
+<h3 id="error-2-runtimeerror-address-already-inuse"><a class="heading-anchor" aria-hidden tabindex="-1" href="#error-2-runtimeerror-address-already-inuse"><span class="anchor-icon">#</span></a>Error 2: <code>RuntimeError: Address already in use</code></h3>
+<p>Cause: Another process is using the specified <em><code>MASTER\_PORT</code></em>.</p>
+<p>Solution: Change the <em><code>MASTER\_PORT</code></em> to an unused value.</p>
+<hr>
+<h3 id="error-3-connectionrefusederror-errno-111-connection-refused"><a class="heading-anchor" aria-hidden tabindex="-1" href="#error-3-connectionrefusederror-errno-111-connection-refused"><span class="anchor-icon">#</span></a>Error 3: <code>ConnectionRefusedError: [Errno 111] Connection refused</code></h3>
+<p>Cause: Incorrect <em><code>MASTER\_ADDR</code></em> or firewall blocking the port.</p>
+<p>Solution: Verify the master node’s IP and ensure the port is open.</p>
+<hr>
+<h3 id="error-4-timeouterror-timed-out-initializing-processgroup"><a class="heading-anchor" aria-hidden tabindex="-1" href="#error-4-timeouterror-timed-out-initializing-processgroup"><span class="anchor-icon">#</span></a>Error 4: <code>TimeoutError: Timed out initializing process group</code></h3>
+<p>Cause: Slow network or unreachable nodes.</p>
+<p>Solution: Check network connectivity and increase the timeout using <em><code>init\_method</code></em>.</p>
+<hr>
+<h3 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h3>
+<p>Distributed training on multiple nodes using PyTorch and <em><code>torchrun</code></em> is a powerful way to scale your machine learning workflows. By following the steps outlined in this guide, you can efficiently distribute your training workload across multiple GPUs and nodes. Be mindful of potential errors and their solutions to ensure a smooth training process.</p>
+<p>Happy training!</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/the-practical-guide-to-distributed-training-using-pytorch-part-3-on-multiple-nodes-using-c07b6dcf4001">Medium</a>.</em></p>7:["$","$L10",null,{"title":"The Practical Guide to Distributed Training using PyTorch — Part 3: On Multiple Nodes using…","date":"$D2025-06-19T00:00:00.000Z","readingTime":7,"categories":["Distributed Training","PyTorch"],"tags":["deep-learning","pytorch","distributed-training","multi-node"],"contentHtml":"$11","headings":[{"level":3,"id":"table-ofcontents","text":"Table of Contents"},{"level":3,"id":"introduction-to-distributed-training","text":"Introduction to Distributed Training"},{"level":3,"id":"setting-up-your-environment","text":"Setting Up Your Environment"},{"level":3,"id":"21-hardware-and-network-requirements","text":"2.1. Hardware and Network Requirements"},{"level":3,"id":"22-software-dependencies","text":"2.2. Software Dependencies"},{"level":3,"id":"understanding-torchrun","text":"Understanding torchrun"},{"level":3,"id":"step-by-step-guide-to-distributed-training","text":"Step-by-Step Guide to Distributed Training"},{"level":3,"id":"41-writing-the-trainingscript","text":"4.1. Writing the Training Script"},{"level":4,"id":"why-is-this-necessary","text":"Why Is This Necessary?"},{"level":3,"id":"42-configuring-thecluster","text":"4.2. Configuring the Cluster"},{"level":3,"id":"43-launching-the-training-job-with-torchrun","text":"4.3. Launching the Training Job with torchrun"},{"level":4,"id":"how-torchrun-works","text":"How torchrun Works:"},{"level":3,"id":"handling-nodes-with-different-numbers-ofgpus","text":"Handling Nodes with Different Numbers of GPUs"},{"level":4,"id":"how-itworks","text":"How It Works:"},{"level":3,"id":"common-errors-and-solutions","text":"Common Errors and Solutions"},{"level":3,"id":"error-1-nccl_error-unhandled-cudaerror","text":"Error 1: NCCL\\_ERROR: unhandled cuda error"},{"level":3,"id":"error-2-runtimeerror-address-already-inuse","text":"Error 2: RuntimeError: Address already in use"},{"level":3,"id":"error-3-connectionrefusederror-errno-111-connection-refused","text":"Error 3: ConnectionRefusedError: [Errno 111] Connection refused"},{"level":3,"id":"error-4-timeouterror-timed-out-initializing-processgroup","text":"Error 4: TimeoutError: Timed out initializing process group"},{"level":3,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2025-06-09-the-practical-guide-to-distributed-training-using-pytorch-pa","title":"The Practical Guide to Distributed Training using PyTorch — Part 2: On a Single Node using Torchrun"},"nextPost":{"slug":"2025-06-26-the-practical-guide-to-distributed-training-using-pytorch-pa","title":"The Practical Guide to Distributed Training using PyTorch — Part 4: On Multiple Nodes using SLURM"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"The Practical Guide to Distributed Training using PyTorch — Part 3: On Multiple Nodes using… — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

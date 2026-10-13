@@ -1,0 +1,63 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2023-10-09-automating-ablation-studies-of-deep-learning-models-using-ba",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2023-10-09-automating-ablation-studies-of-deep-learning-models-using-ba","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2023-10-09-automating-ablation-studies-of-deep-learning-models-using-ba","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","X7hBN4RH0wthr1Ck6zPft",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:Ta2d,<hr>
+<p><img src="/images/blog/automating-ablation-studies-of-deep-learning-models-using-ba/img1.jpeg" alt=""></p>
+<p>In this article, we will look at a short example of how we can automate running ablation study experiments on our deep learning models using batch scripts in Windows.</p>
+<blockquote>
+<p>Step 1</p>
+</blockquote>
+<p>Create a <em><strong>.bat</strong></em> file in your editor</p>
+<blockquote>
+<p>Step 2: Identify the hyper-parameters you want to sweep over in your experiments</p>
+</blockquote>
+<p>For this article, let us consider the hyper-parameter to be λ. Also, we would like to see the effect of batch size for each λ value.</p>
+<pre><code class="hljs language-text">@echo off
+setlocal EnableDelayedExpansion
+set lambda=2 10 50 100
+set bs=128 256 512
+set /a exprun = 1
+for %%i in (%lambda%) do (
+    for %%j in (%bs%) do (
+        echo lambda=%%i/100
+        echo bs=%%j
+        set /a exprun=!exprun!+1
+        echo !exprun!
+        python train.py --lambda %%i --bs %%j --run !exprun!
+    )
+)
+endlocal
+</code></pre>
+<p>In the above code, we pass the arguments <em><strong>lambda</strong></em> and <em><strong>bs</strong></em> to the python file <em><strong>trian.py</strong></em> and also increment our experiment number counter <em><strong>exprun.</strong></em></p>
+<h4 id="for-loop"><a class="heading-anchor" aria-hidden tabindex="-1" href="#for-loop"><span class="anchor-icon">#</span></a>for loop</h4>
+<pre><code class="hljs language-text">for %%i in (%lambda%) do (
+...
+)
+</code></pre>
+<p>Iterates over the elements in the list <em><strong>lambda</strong></em></p>
+<h4 id="set"><a class="heading-anchor" aria-hidden tabindex="-1" href="#set"><span class="anchor-icon">#</span></a>set</h4>
+<pre><code class="hljs language-text">set /a exprun = 1
+</code></pre>
+<p>Sets the value <em><strong>1</strong></em> to the environment variable <em><strong>exprun.</strong></em></p>
+<p>Using <strong>/a</strong> sets <code>&#x3C;string></code> to a numerical expression that is evaluated.</p>
+<p><strong>setlocal</strong></p>
+<p>Detailed explanation can be found here <a href="https://ss64.com/nt/setlocal.html">https://ss64.com/nt/setlocal.html</a></p>
+<p>You can find more about Batch scripting here: <a href="https://en.wikibooks.org/wiki/Windows_Batch_Scripting">https://en.wikibooks.org/wiki/Windows_Batch_Scripting</a></p>
+<hr>
+<p>Clap, share and follow if you find this article helpful.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/automating-ablation-studies-of-deep-learning-models-using-batch-script-968981870329">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Automating Ablation Studies of Deep Learning Models using Batch Script","date":"$D2023-10-09T00:00:00.000Z","readingTime":2,"categories":["Deep Learning","Developer Tools"],"tags":["deep-learning","ablation-study","automation","batch-script"],"contentHtml":"$11","headings":[{"level":4,"id":"for-loop","text":"for loop"},{"level":4,"id":"set","text":"set"}],"prevPost":{"slug":"2023-10-06-does-this-occur-even-if-you-pull-the-nvidia-docker-image","title":"Does this occur even if you pull the nvidia docker image?"},"nextPost":{"slug":"2024-04-08-the-most-pytorch-way-to-extract-output-from-any-intermediate","title":"The most PyTorch way to extract output from any intermediate layer in a pre-trained model"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Automating Ablation Studies of Deep Learning Models using Batch Script — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

@@ -1,0 +1,119 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-07-23-how-slurm-assigns-gpus-to-your-jobs",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-07-23-how-slurm-assigns-gpus-to-your-jobs","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-07-23-how-slurm-assigns-gpus-to-your-jobs","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","9aA59osEacmn3kaKCqlQO",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2524,<hr>
+<p><img src="/images/blog/how-slurm-assigns-gpus-to-your-jobs/img1.jpeg" alt=""></p>
+<p>If you’re running machine learning or scientific workloads on a high-performance computing (HPC) cluster, you’ve probably encountered the <a href="https://slurm.schedmd.com/">Slurm workload manager</a>. One of Slurm’s most useful features is the ability to request GPUs for your job with a simple command-line option:</p>
+<pre><code class="hljs language-text">sbatch --gres=gpu:1 myscript.sh
+</code></pre>
+<p>But what actually happens behind the scenes when you ask for a GPU? How does Slurm decide which GPU you get? And how does your code know which one to use?</p>
+<p>Let’s break it down.</p>
+<hr>
+<h3 id="slurms-gpu-assignment-thebasics"><a class="heading-anchor" aria-hidden tabindex="-1" href="#slurms-gpu-assignment-thebasics"><span class="anchor-icon">#</span></a>Slurm’s GPU Assignment: The Basics</h3>
+<p>When you submit a job requesting a GPU, Slurm looks at the available GPUs on each node and selects one that isn’t already in use. By default, it picks the lowest-numbered free GPU (for example, GPU 0 if it’s available).</p>
+<p>Suppose your node has four GPUs (numbered 0 to 3), and GPUs 0 and 1 are busy. Slurm will assign your job to GPU 2.</p>
+<p>However, Slurm achieves this by setting the <code>CUDA_VISIBLE_DEVICES</code> environment variable so that your job sees only the allocated GPU(s), which may be numbered starting from 0 inside your job’s environment. The actual assignment behaviour can vary depending on the system's configuration and specific submission options.</p>
+<p>When <strong>Slurm</strong> assigns jobs to GPUs, it performs several checks to ensure resources are allocated properly and fairly. Here’s what happens:</p>
+<h3 id="1-resource-availability"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-resource-availability"><span class="anchor-icon">#</span></a>1. Resource Availability</h3>
+<ul>
+<li>Slurm checks each node for GPUs that are available (not currently allocated to running jobs).</li>
+<li>It considers the count and type of GPUs requested in your job’s <code>--gres</code> specification.</li>
+</ul>
+<h3 id="2-scheduling-policies"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-scheduling-policies"><span class="anchor-icon">#</span></a>2. Scheduling Policies</h3>
+<ul>
+<li>Slurm follows the scheduling policies set by the cluster administrator (such as priorities, fairshare, partition constraints, and job exclusivity).</li>
+<li>If you specify a particular partition or constraint (e.g., certain GPU models), Slurm filters nodes accordingly.</li>
+</ul>
+<h3 id="3-gpu-allocation"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-gpu-allocation"><span class="anchor-icon">#</span></a>3. GPU Allocation</h3>
+<ul>
+<li>For each node under consideration, Slurm examines which GPUs (by their GRES indices, usually corresponding to physical PCI bus numbers or system numbering) are currently free.</li>
+<li>If you request more than one GPU, Slurm checks for the requested quantity of contiguous or available GPUs.</li>
+</ul>
+<h3 id="4-concurrent-usage"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-concurrent-usage"><span class="anchor-icon">#</span></a>4. Concurrent Usage</h3>
+<ul>
+<li>Slurm ensures that a specific GPU is not assigned to multiple jobs simultaneously unless the cluster is configured to allow GPU sharing (rare).</li>
+</ul>
+<h3 id="5-constraints-andaffinity"><a class="heading-anchor" aria-hidden tabindex="-1" href="#5-constraints-andaffinity"><span class="anchor-icon">#</span></a>5. Constraints and Affinity</h3>
+<ul>
+<li>If you specify additional constraints (e.g., GPU type, memory, or node property), Slurm checks these against available nodes.</li>
+<li>If using advanced bindings (<code>--gpu-bind</code>), Slurm checks whether those specific bindings are available.</li>
+</ul>
+<h3 id="6-environment-preparation"><a class="heading-anchor" aria-hidden tabindex="-1" href="#6-environment-preparation"><span class="anchor-icon">#</span></a>6. Environment Preparation</h3>
+<ul>
+<li>Once allocation is determined, Slurm sets environment variables (most commonly <code>CUDA_VISIBLE_DEVICES</code>) in the job’s runtime environment so your code only "sees" the assigned GPU(s).</li>
+</ul>
+<h3 id="7-resource-accounting"><a class="heading-anchor" aria-hidden tabindex="-1" href="#7-resource-accounting"><span class="anchor-icon">#</span></a>7. Resource Accounting</h3>
+<ul>
+<li>Slurm updates its resource management records so that other jobs know which GPUs are now in use.</li>
+</ul>
+<hr>
+<h3 id="the-magic-of-cuda_visible_devices"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-magic-of-cuda_visible_devices"><span class="anchor-icon">#</span></a>The Magic of <code>CUDA\_VISIBLE\_DEVICES</code></h3>
+<p>Here’s where things get really helpful for users: Slurm automatically sets the <em><code>CUDA\_VISIBLE\_DEVICES</code></em> environment variable for your job. This variable tells CUDA-aware software (like PyTorch or TensorFlow) which GPU(s) it should “see.”</p>
+<p>Continuing our example, if you’re assigned GPU 2, Slurm sets:</p>
+<pre><code class="hljs language-text">CUDA_VISIBLE_DEVICES=2
+</code></pre>
+<p>Inside your job, when your code refers to “GPU 0,” it’s actually using the node’s GPU 2! This mapping helps keep jobs isolated from each other, so you don’t accidentally use someone else’s GPU.</p>
+<hr>
+<h3 id="can-you-choose-a-specificgpu"><a class="heading-anchor" aria-hidden tabindex="-1" href="#can-you-choose-a-specificgpu"><span class="anchor-icon">#</span></a>Can You Choose a Specific GPU?</h3>
+<p>By default, no — you get whatever GPU Slurm assigns. Some clusters support advanced options for more control, but in general, Slurm’s automatic assignment is designed to maximize resource utilization and keep things simple for users.</p>
+<h3 id="explanation"><a class="heading-anchor" aria-hidden tabindex="-1" href="#explanation"><span class="anchor-icon">#</span></a>Explanation:</h3>
+<h4 id="1-native-behaviour"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-native-behaviour"><span class="anchor-icon">#</span></a>1. Native Behaviour</h4>
+<ul>
+<li>With the usual <code>#SBATCH --gres=gpu:1</code>, Slurm allocates any available GPU(s) on the node.</li>
+<li>Slurm decides which GPUs to give based on scheduling and current usage, usually picking the lowest-numbered free GPU(s).</li>
+</ul>
+<h4 id="2-why-cant-you-select-a-specific-gpu-directly"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-why-cant-you-select-a-specific-gpu-directly"><span class="anchor-icon">#</span></a>2. Why Can’t You Select a Specific GPU Directly?</h4>
+<ul>
+<li>This keeps resource allocation fair and automated.</li>
+<li>Selecting a specific device (e.g., always GPU 2) could cause contention, fragmentation, or idle resources.</li>
+<li>Most clusters do <strong>not</strong> permit direct selection for users.</li>
+</ul>
+<h4 id="3-workarounds-options"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-workarounds-options"><span class="anchor-icon">#</span></a>3. Workarounds &#x26; Options</h4>
+<ul>
+<li><strong>Inside Your Job Script:</strong><br>
+You can try to target a specific GPU by setting</li>
+</ul>
+<pre><code class="hljs language-text">export CUDA_VISIBLE_DEVICES=2
+</code></pre>
+<ul>
+<li>However, this only works <strong>if</strong> Slurm actually assigned you that GPU. Otherwise, you might end up with no valid GPU or cause conflicts.</li>
+<li><strong>Advanced Slurm Configuration:</strong><br>
+On clusters with Slurm <strong>20.02 or newer,</strong> and if the administrator enables GPU binding, you can use:</li>
+</ul>
+<pre><code class="hljs language-text">#SBATCH --gpu-bind=map_gpu:2
+</code></pre>
+<ul>
+<li>But this depends on cluster configuration and may not be available.</li>
+<li><strong>Administrators:</strong><br>
+System admins <strong>can</strong> set up node features or GRES with custom mapping, but this is rarely given to regular users because it can lead to inefficient use of resources.</li>
+</ul>
+<hr>
+<h4 id="what-i-did-when-i-was-using-a-cluster-with-8-a100gpus"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-i-did-when-i-was-using-a-cluster-with-8-a100gpus"><span class="anchor-icon">#</span></a>What I did when I was using a cluster with 8 A100 GPUs</h4>
+<pre><code class="hljs language-text">CUDA_VISIBLE_DEVICES=2 sbatch my_script.sh
+</code></pre>
+<hr>
+<h3 id="key-takeaways"><a class="heading-anchor" aria-hidden tabindex="-1" href="#key-takeaways"><span class="anchor-icon">#</span></a>Key Takeaways</h3>
+<ul>
+<li>Slurm picks a free GPU for you when you request one.</li>
+<li>It sets <em><code>CUDA\_VISIBLE\_DEVICES</code></em> so your code only sees the GPU you’ve been assigned.</li>
+<li>You usually don’t need to worry about which physical GPU you get — just use GPU 0 in your code, and Slurm handles the mapping.</li>
+</ul>
+<p>So next time you submit a GPU job with Slurm, you can rest easy — your code is running on the GPU Slurm picked just for you, and <em><code>CUDA\_VISIBLE\_DEVICES</code></em> is making sure everything stays tidy and efficient behind the scenes.</p>
+<hr>
+<p><em>Happy computing!</em></p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/how-slurm-assigns-gpus-to-your-jobs-and-what-cuda-visible-devices-means-40037ef2356c">Medium</a>.</em></p>7:["$","$L10",null,{"title":"How Slurm Assigns GPUs to Your Jobs","date":"$D2025-07-23T00:00:00.000Z","readingTime":5,"categories":["High Performance Computing","GPU"],"tags":["slurm","hpc","gpu","cluster-computing"],"contentHtml":"$11","headings":[{"level":3,"id":"slurms-gpu-assignment-thebasics","text":"Slurm’s GPU Assignment: The Basics"},{"level":3,"id":"1-resource-availability","text":"1. Resource Availability"},{"level":3,"id":"2-scheduling-policies","text":"2. Scheduling Policies"},{"level":3,"id":"3-gpu-allocation","text":"3. GPU Allocation"},{"level":3,"id":"4-concurrent-usage","text":"4. Concurrent Usage"},{"level":3,"id":"5-constraints-andaffinity","text":"5. Constraints and Affinity"},{"level":3,"id":"6-environment-preparation","text":"6. Environment Preparation"},{"level":3,"id":"7-resource-accounting","text":"7. Resource Accounting"},{"level":3,"id":"the-magic-of-cuda_visible_devices","text":"The Magic of CUDA\\_VISIBLE\\_DEVICES"},{"level":3,"id":"can-you-choose-a-specificgpu","text":"Can You Choose a Specific GPU?"},{"level":3,"id":"explanation","text":"Explanation:"},{"level":4,"id":"1-native-behaviour","text":"1. Native Behaviour"},{"level":4,"id":"2-why-cant-you-select-a-specific-gpu-directly","text":"2. Why Can’t You Select a Specific GPU Directly?"},{"level":4,"id":"3-workarounds-options","text":"3. Workarounds &#x26; Options"},{"level":4,"id":"what-i-did-when-i-was-using-a-cluster-with-8-a100gpus","text":"What I did when I was using a cluster with 8 A100 GPUs"},{"level":3,"id":"key-takeaways","text":"Key Takeaways"}],"prevPost":{"slug":"2025-07-11-the-practical-guide-to-distributed-training-using-pytorch-pa","title":"The Practical Guide to Distributed Training using PyTorch — Part 5: Distributing Everything using…"},"nextPost":{"slug":"2025-07-28-the-importance-of-branching-in-git","title":"The Importance of Branching in Git"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"How Slurm Assigns GPUs to Your Jobs — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

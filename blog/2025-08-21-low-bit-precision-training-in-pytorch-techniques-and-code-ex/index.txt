@@ -1,0 +1,121 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-08-21-low-bit-precision-training-in-pytorch-techniques-and-code-ex",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-08-21-low-bit-precision-training-in-pytorch-techniques-and-code-ex","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-08-21-low-bit-precision-training-in-pytorch-techniques-and-code-ex","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","RasbImNEfVC6TZ30kqkQb",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2334,<hr>
+<p><img src="/images/blog/low-bit-precision-training-in-pytorch-techniques-and-code-ex/img1.jpeg" alt=""></p>
+<p>In the era of large-scale deep learning, efficient training is critical. <strong>Low-bit precision training</strong> — using fewer bits to represent weights, activations, and gradients — can dramatically speed up computation, reduce memory usage, and enable deployment to resource-constrained devices, all while preserving most model accuracy. In PyTorch, multiple methods for low-bit precision exist: built-in quantization workflows, mixed precision, and community libraries.</p>
+<p>Let’s walk through the most popular techniques, with clear explanations and ready-to-run code samples.</p>
+<hr>
+<h3 id="1-quantization-inpytorch"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-quantization-inpytorch"><span class="anchor-icon">#</span></a>1. Quantization in PyTorch</h3>
+<p>Quantization refers to converting high-precision numbers (often FP32) into lower-precision (e.g., INT8, INT4). PyTorch supports several workflows:</p>
+<h3 id="11-dynamic-quantization"><a class="heading-anchor" aria-hidden tabindex="-1" href="#11-dynamic-quantization"><span class="anchor-icon">#</span></a>1.1 Dynamic Quantization</h3>
+<p><strong>Dynamic quantization</strong> is simple and works best for models with large linear layers (e.g., transformers, LSTMs). The model weights are quantized post-training, while activations are quantized on-the-fly during inference.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Build or load a model.</li>
+<li>Apply <code>torch.quantization.quantize_dynamic()</code>.</li>
+<li>Use quantized model for inference.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+<span class="hljs-keyword">from</span> torch.quantization <span class="hljs-keyword">import</span> quantize_dynamic
+<span class="hljs-comment"># Build a simple LSTM-based model</span>
+model = nn.LSTM(input_size=<span class="hljs-number">10</span>, hidden_size=<span class="hljs-number">20</span>, num_layers=<span class="hljs-number">2</span>)
+<span class="hljs-comment"># Quantize model to INT8</span>
+quantized_model = quantize_dynamic(
+    model,  <span class="hljs-comment"># Model instance</span>
+    {nn.LSTM, nn.Linear},  <span class="hljs-comment"># Layers to quantize</span>
+    dtype=torch.qint8
+)
+<span class="hljs-comment"># Use as normal for inference</span>
+data = torch.randn(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">10</span>)  <span class="hljs-comment"># seq_len, batch, input_size</span>
+output, _ = quantized_model(data)
+<span class="hljs-built_in">print</span>(output.shape)  <span class="hljs-comment"># (5, 3, 20)</span>
+</code></pre>
+<p><strong>Pros:</strong> Zero code changes to your training pipeline<br>
+<strong>Cons:</strong> Only for inference; limited control over which layers are quantized.</p>
+<hr>
+<h3 id="12-static-quantization-post-training-quantization"><a class="heading-anchor" aria-hidden tabindex="-1" href="#12-static-quantization-post-training-quantization"><span class="anchor-icon">#</span></a>1.2 Static Quantization (Post-Training Quantization)</h3>
+<p><strong>Static quantization</strong> quantizes both weights and activations. It requires model calibration with sample data to collect quantization parameters.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Fuse layers (Conv+BN+ReLU for example)</li>
+<li>Prepare the model</li>
+<li>Calibrate the model with representative data</li>
+<li>Convert to a quantized model</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+</code></pre>
+<p><strong>Pros:</strong> Often higher accuracy than dynamic quantization<br>
+<strong>Cons:</strong> Calibration required; works mainly for inference</p>
+<hr>
+<h3 id="13-quantization-aware-trainingqat"><a class="heading-anchor" aria-hidden tabindex="-1" href="#13-quantization-aware-trainingqat"><span class="anchor-icon">#</span></a>1.3 Quantization-Aware Training (QAT)</h3>
+<p><strong>QAT</strong> simulates quantization during training, so the model can learn to compensate for quantization effects. This approach gives the best accuracy after quantization.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Prepare your model for QAT with <code>prepare_qat()</code></li>
+<li>Train your model (as usual, for a few epochs)</li>
+<li>Convert to a quantized model for deployment</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> torch.quantization <span class="hljs-keyword">import</span> prepare_qat, convert
+</code></pre>
+<p><strong>Pros:</strong> Best accuracy; robust to quantization noise<br>
+<strong>Cons:</strong> Requires more effort; model needs to be built with QAT support</p>
+<hr>
+<h3 id="2-mixed-precision-training-fp16bf16"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-mixed-precision-training-fp16bf16"><span class="anchor-icon">#</span></a>2. Mixed Precision Training (FP16/BF16)</h3>
+<p>“Mixed precision” relies on half-precision floating point arithmetic (FP16 or bfloat16) to speed up model training using GPU tensor cores. This is not integer quantization, but is often classified as “low-precision training”.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Use <code>torch.cuda.amp</code> for automatic mixed precision (AMP)</li>
+<li>Train as usual; PyTorch automatically handles precision casting</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">import</span> torch.nn <span class="hljs-keyword">as</span> nn
+</code></pre>
+<p><strong>Pros:</strong> Trains faster on supported hardware (NVIDIA GPUs); minimal code changes<br>
+<strong>Cons:</strong> Less memory savings than int8; does not work on CPUs</p>
+<hr>
+<h3 id="3-low-bit-libraries-8-bit-and-4-bit-traininginference"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-low-bit-libraries-8-bit-and-4-bit-traininginference"><span class="anchor-icon">#</span></a>3. Low-Bit Libraries: 8-Bit and 4-Bit Training/Inference</h3>
+<p>Some PyTorch extension libraries support even more aggressive quantization, down to 8 and 4 bits, and enable efficient training.</p>
+<h3 id="a-bitsandbytes-bnb--huggingface-accelerate"><a class="heading-anchor" aria-hidden tabindex="-1" href="#a-bitsandbytes-bnb--huggingface-accelerate"><span class="anchor-icon">#</span></a>a) BitsAndBytes (bnb) / HuggingFace Accelerate</h3>
+<p><a href="https://github.com/TimDettmers/bitsandbytes">BitsAndBytes</a> supports 8-bit and 4-bit quantized training for Transformers and other models.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="hljs language-text"># Install: pip install bitsandbytes
+</code></pre>
+<p><strong>Pros:</strong> Ultra-low memory footprint, good for deploying LLMs<br>
+<strong>Cons:</strong> Limited library support; requires special hardware/software</p>
+<hr>
+<h3 id="4-custom-quantization--researchcode"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-custom-quantization--researchcode"><span class="anchor-icon">#</span></a>4. Custom Quantization / Research Code</h3>
+<p>For 4-bit or lower training, you typically need to modify models or gradients, or use research libraries like <a href="https://github.com/Ladder-team/Ladder">Ladder</a> or implement custom quantization.</p>
+<p>A minimal custom 4-bit quantization example:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">quantize_to_4bit</span>(<span class="hljs-params">tensor</span>):
+    <span class="hljs-comment"># Fake quantization example: scales tensor to [0, 15], rounds, rescales</span>
+</code></pre>
+<p>Usually, these methods require custom layers and are for advanced use-cases.</p>
+<hr>
+<h3 id="summary-table"><a class="heading-anchor" aria-hidden tabindex="-1" href="#summary-table"><span class="anchor-icon">#</span></a>Summary Table</h3>
+<hr>
+<h3 id="conclusion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#conclusion"><span class="anchor-icon">#</span></a>Conclusion</h3>
+<p>Low-bit precision training is an essential tool for scaling deep learning while keeping resource usage in check. With PyTorch, you can take advantage of simple quantization workflows for deployment, powerful quantization-aware training for accuracy, and use advanced libraries for extreme memory savings.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/low-bit-precision-training-in-pytorch-techniques-and-code-examples-038902ceaaf9">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Low-Bit Precision Training in PyTorch: Techniques and Code Examples","date":"$D2025-08-21T00:00:00.000Z","readingTime":4,"categories":["Deep Learning","Model Efficiency"],"tags":["deep-learning","pytorch","quantization","mixed-precision","performance"],"contentHtml":"$11","headings":[{"level":3,"id":"1-quantization-inpytorch","text":"1. Quantization in PyTorch"},{"level":3,"id":"11-dynamic-quantization","text":"1.1 Dynamic Quantization"},{"level":3,"id":"12-static-quantization-post-training-quantization","text":"1.2 Static Quantization (Post-Training Quantization)"},{"level":3,"id":"13-quantization-aware-trainingqat","text":"1.3 Quantization-Aware Training (QAT)"},{"level":3,"id":"2-mixed-precision-training-fp16bf16","text":"2. Mixed Precision Training (FP16/BF16)"},{"level":3,"id":"3-low-bit-libraries-8-bit-and-4-bit-traininginference","text":"3. Low-Bit Libraries: 8-Bit and 4-Bit Training/Inference"},{"level":3,"id":"a-bitsandbytes-bnb--huggingface-accelerate","text":"a) BitsAndBytes (bnb) / HuggingFace Accelerate"},{"level":3,"id":"4-custom-quantization--researchcode","text":"4. Custom Quantization / Research Code"},{"level":3,"id":"summary-table","text":"Summary Table"},{"level":3,"id":"conclusion","text":"Conclusion"}],"prevPost":{"slug":"2025-08-07-how-to-split-a-centralized-dataset-for-federated-learning-si","title":"How to Split a Centralized Dataset for Federated Learning Simulation"},"nextPost":{"slug":"2025-08-29-generating-a-gantt-chart-in-latex","title":"Generating a Gantt Chart in LaTeX"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Low-Bit Precision Training in PyTorch: Techniques and Code Examples — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

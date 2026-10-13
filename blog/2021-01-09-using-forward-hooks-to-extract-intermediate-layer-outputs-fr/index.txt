@@ -1,0 +1,129 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2021-01-09-using-forward-hooks-to-extract-intermediate-layer-outputs-fr",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2021-01-09-using-forward-hooks-to-extract-intermediate-layer-outputs-fr","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2021-01-09-using-forward-hooks-to-extract-intermediate-layer-outputs-fr","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","M4c2mYU_aONZGvkV_6XiW",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2dbd,<hr>
+<p><img src="/images/blog/using-forward-hooks-to-extract-intermediate-layer-outputs-fr/img1.png" alt=""></p>
+<p>Here we are again with the fourth article in the “<strong>Feature Extraction</strong>” series. This article will describe another method (<strong>and possibly the best method</strong>) to extract features from an intermediate layer of a model in PyTorch. We have seen some methods in two of our previous articles (links are given below) which were quite different from this approach. These two methods do not use forward hooks but are based on inheriting the respective model classes and overriding some attributes and the forward function to obtain output from the desired layer. But these methods fail if we want to obtain the predictions also along with the output of an intermediate layer.</p>
+<p><a href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-c00589bda32b" title="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-c00589bda32b"><strong>Extracting Features from an Intermediate Layer of a Pretrained ResNet Model in PyTorch (Hard Way)</strong><br>
+*PyTorch is an open-source machine learning library developed by Facebook’s AI Research Lab and used for applications…*medium.com</a></p>
+<p><a href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-easy-way-62631c7fa8f6" title="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-easy-way-62631c7fa8f6"><strong>Extracting Features from an Intermediate Layer of a Pretrained ResNet Model in PyTorch (Easy way)</strong><br>
+*In the previous article, we looked at a method to extract features from an intermediate layer of a pre-trained model in…*medium.com</a></p>
+<p>Another article which describes a method for VGG-Net can be found below</p>
+<p><a href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-vgg-net-in-pytorch-43f801866a2e" title="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-vgg-net-in-pytorch-43f801866a2e"><strong>Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch</strong><br>
+*This article is the third one in the “Feature Extraction” series. The last two articles were about extracting features…*medium.com</a></p>
+<p>To avoid the issues associated with the above methods, it is better to use forward hooks to obtain output from intermediate layers. We can also use this (these) output(s) for calculating loss (and subsequently the gradients) with respect to the target output.</p>
+<hr>
+<p>Hooks are functions which we can register on a Module or a Tensor. Hooks are of two types: <strong>forward</strong> and <strong>backward</strong>. These hooks are mainly triggered by <strong>forward</strong> or <strong>backward</strong> pass.</p>
+<p>For the forward hook, the function is of the form</p>
+<pre><code class="hljs language-text">hook(module, input, output) -> None or modified output
+</code></pre>
+<p><em><strong>input</strong></em> is the input to the <em><strong>module</strong></em> and <em><strong>output</strong></em> is the output obtained after the input is passed through the <em><strong>module</strong></em>.</p>
+<p>For the backward hook, the function is of the form</p>
+<pre><code class="hljs language-text">hook(module, grad_input, grad_output) -> Tensor or None
+</code></pre>
+<p><em><strong>grad_input</strong></em> is the gradient of the <strong>input</strong> to the <em><strong>module</strong></em> and <em><strong>grad_output</strong></em> is the gradient of the <strong>output</strong> of the <strong>module</strong> with respect to the Loss. <em><strong>It does not give the gradients of the parameters with respect to the loss.</strong></em></p>
+<p>The <em><strong>forward</strong></em> hook is triggered every time after the method <strong>forward</strong> (of the <em>Pytorch AutoGrad Function</em> <strong>grad_fn</strong>) has computed an output. We can modify the output by returning the modified output from the hook. We can also modify the input in-place but it will not have an effect on the output as this hook is triggered after the computations in the <strong>forward</strong> (of the <em>Pytorch AutoGrad Function</em> <strong>grad_fn</strong>) method are complete.</p>
+<p>The <em><strong>backward</strong></em> hook will be called every time the gradients with respect to module inputs are computed (whenever <strong>backward( )</strong> of <em>Pytorch AutoGrad Function</em> <strong>grad_fn</strong> is called). <em><strong>grad_input</strong></em> and <em><strong>grad_output</strong></em> may be tuples if the module has multiple inputs or outputs. The hook should not modify its arguments, but it can optionally return a new gradient with respect to input that will be used in place of <em><strong>grad_input</strong></em> in subsequent computations.</p>
+<p>There is also another type of hook <em><strong>forward_pre_hook</strong></em> which is triggered before every time the <em><strong>forward</strong></em> method is invoked. The signature for the <em><strong>forward_pre_hook</strong></em> is of the form</p>
+<pre><code class="hljs language-text">hook(module, input) -> None or modified input
+</code></pre>
+<p>Using the <em><strong>forward_pre_hook</strong></em> the user can modify the input but returning the modified input value as a tuple or just a single modified value in the hook.</p>
+<hr>
+<p>For a more detailed discussion on the PyTorch AutoGrad Function and automatic differentiation, readers can refer to this <a href="https://blog.paperspace.com/pytorch-101-understanding-graphs-and-automatic-differentiation/">article</a>.</p>
+<hr>
+<h3 id="importing-required-libraries"><a class="heading-anchor" aria-hidden tabindex="-1" href="#importing-required-libraries"><span class="anchor-icon">#</span></a>Importing required libraries</h3>
+<h3 id="model-withhooks"><a class="heading-anchor" aria-hidden tabindex="-1" href="#model-withhooks"><span class="anchor-icon">#</span></a>Model with hooks</h3>
+<p>We create an instance of the model like this</p>
+<pre><code class="hljs language-text">model = NewModel(output_layers = [7,8]).to('cuda:0')
+</code></pre>
+<p>We store the output of the layers in an <strong>OrderedDict</strong> and the forward hooks in a list <em><strong>self.fhooks.</strong></em> We enumerate over the layers in the pre-trained model and if the index of the layer matches with the numbers we passed as argument to the model, then a <em><strong>forward hook</strong></em> is registered and the handle is appended to the list <em><strong>self.fhooks</strong></em>. The handles can later be used for removing the hooks from the model. The hook simply creates key-value pair in the <strong>OrderedDict</strong> <em><strong>self.selected_out,</strong></em> where the output of the layers is stored with a key corresponding to the name of the layer. However, instead of the layer names, the index of the layer can also be used as keys.</p>
+<p>The output obtained from the intermediate layers can also be used to calculate loss (provided there is a target/ground truth for that) and we can also back-propagate the gradients just by using</p>
+<pre><code class="hljs language-text">loss.backward()
+</code></pre>
+<h3 id="example"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example"><span class="anchor-icon">#</span></a>Example</h3>
+<blockquote>
+<p>Let, us create a random array with the same dimensions as ‘layer4’ (7th layer).</p>
+</blockquote>
+<pre><code class="hljs language-text">target_ft = torch.rand((2048,7,7), device = ‘cuda:0’)
+</code></pre>
+<blockquote>
+<p>Let, us take an input (any random natural image will do)</p>
+</blockquote>
+<pre><code class="hljs language-text">x = imageio.imread(‘image_path’)
+x = (x-128.0)/128.0
+x = resize(x,(224,224),preserve_range = True)
+x = np.repeat(np.expand_dims(x,0),8,0)
+x = torch.movedim(torch.Tensor(x),3,1)
+</code></pre>
+<blockquote>
+<p>Output</p>
+</blockquote>
+<pre><code class="hljs language-text">out, layerout = model(x.to(‘cuda:0’))
+</code></pre>
+<p>Now, <strong>layerout</strong> is an <strong>OrderedDict</strong>. We need to get the output from <em><strong>layer4</strong></em> from it. We can easily do that since the layer name is the key</p>
+<pre><code class="hljs language-text">layer4out = layerout[‘layer4’]
+</code></pre>
+<p>Let us create a <strong>dummy loss function</strong> first. Suppose, the <strong>loss</strong> is like this</p>
+<pre><code class="hljs language-text">loss = torch.sum((label-out)**2) + torch.sum(layer4out-target_ft)
+</code></pre>
+<blockquote>
+<p>Last step</p>
+</blockquote>
+<pre><code class="hljs language-text">loss.backward()
+</code></pre>
+<h3 id="what-if-we-want-to-modify-the-input-before-the-input-is-fed-to-themodule"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-if-we-want-to-modify-the-input-before-the-input-is-fed-to-themodule"><span class="anchor-icon">#</span></a>What if we want to modify the input before the input is fed to the module?</h3>
+<p>We can use <em><strong>forward_pre_hook.</strong></em></p>
+<p>Let us look at an example</p>
+<p>First, add this method to the <strong>NewModel</strong> class</p>
+<p>The function <strong>pre_hook</strong> can be modified as per requirements. Here, I am setting the input to an all-zero tensor. In addition to that, I have added two <strong>print</strong> statements before line 17 in the code for <strong>NewModel</strong> and also before line 3 in the code for the <strong>forward_pre_hook</strong> (above).</p>
+<pre><code class="hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">input</span>)
+</code></pre>
+<p>The print statement in the <strong>forward_pre_hook</strong> prints (as it is executed before the <strong>forward</strong> method of <strong>grad_fn</strong>)</p>
+<pre><code class="hljs language-text">tensor([[[[0.1342, 0.0525, 0.0210, …, 0.2578, 0.2857, 0.1806],      
+          [0.1682, 0.0721, 0.1772, …, 0.2345, 0.2021, 0.0656],
+          [0.1483, 0.1108, 0.0943, …, 0.1353, 0.1450, 0.0922],
+          …,
+          [0.0526, 0.0000, 0.0000, …, 0.2418, 0.1614, 0.0844], 
+          [0.1251, 0.1400, 0.0840, …, 0.1964, 0.1850, 0.0707], 
+          [0.0000, 0.0752, 0.1551, …, 0.1493, 0.0917, 0.0000]],
+</code></pre>
+<p>The print statement in the <strong>forward_hook</strong> prints</p>
+<pre><code class="hljs language-text">tensor([[[[0., 0., 0., …, 0., 0., 0.],
+          [0., 0., 0., …, 0., 0., 0.],
+          [0., 0., 0., …, 0., 0., 0.],
+          …,
+          [0., 0., 0., …, 0., 0., 0.],
+          [0., 0., 0., …, 0., 0., 0.],
+          [0., 0., 0., …, 0., 0., 0.]],
+</code></pre>
+<p>Also the output <strong>out</strong> has changed</p>
+<blockquote>
+<p>Before input modification</p>
+</blockquote>
+<pre><code class="hljs language-text">tensor([[-1.2440, -0.3849, -0.6822, …, -0.7914, 0.9842, 1.1522]],
+        device='cuda:0', grad_fn=&#x3C;SqueezeBackward0>))
+</code></pre>
+<blockquote>
+<p>After input modifcation</p>
+</blockquote>
+<pre><code class="hljs language-text">tensor([[-0.9874, -0.2133, -0.5294, …, -0.4161, 0.9420, 0.7546]],
+        device='cuda:0', grad_fn=&#x3C;SqueezeBackward0>))
+</code></pre>
+<hr>
+<p>Please clap if you like the article. Also give feedback, if any.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/using-forward-hooks-to-extract-intermediate-layer-outputs-from-a-pre-trained-model-in-pytorch-1ec17af78712">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in…","date":"$D2021-01-09T00:00:00.000Z","readingTime":6,"categories":["Deep Learning","PyTorch"],"tags":["deep-learning","pytorch","feature-extraction","hooks"],"contentHtml":"$11","headings":[{"level":3,"id":"importing-required-libraries","text":"Importing required libraries"},{"level":3,"id":"model-withhooks","text":"Model with hooks"},{"level":3,"id":"example","text":"Example"},{"level":3,"id":"what-if-we-want-to-modify-the-input-before-the-input-is-fed-to-themodule","text":"What if we want to modify the input before the input is fed to the module?"}],"prevPost":{"slug":"2021-01-07-extracting-features-from-an-intermediate-layer-of-a-pretrain","title":"Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch"},"nextPost":{"slug":"2021-06-21-statistical-learning-theory-part-4","title":"Statistical Learning Theory Part 4"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in… — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

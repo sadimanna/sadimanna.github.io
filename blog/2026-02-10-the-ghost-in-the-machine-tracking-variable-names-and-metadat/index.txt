@@ -1,0 +1,95 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-02-10-the-ghost-in-the-machine-tracking-variable-names-and-metadat",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-02-10-the-ghost-in-the-machine-tracking-variable-names-and-metadat","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-02-10-the-ghost-in-the-machine-tracking-variable-names-and-metadat","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","40XSfGrcgnJmiDtDaCIkU",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T1f1f,<h4 id="bypass-pytorchs-attribute-guards-use-stack-inspection-and-__setattr__-to-stamp-yaml-metadata-directly-onto-your-dynamic-model-instances"><a class="heading-anchor" aria-hidden tabindex="-1" href="#bypass-pytorchs-attribute-guards-use-stack-inspection-and-__setattr__-to-stamp-yaml-metadata-directly-onto-your-dynamic-model-instances"><span class="anchor-icon">#</span></a>Bypass PyTorch’s attribute guards: Use stack inspection and <strong>__setattr__</strong> to ‘stamp’ YAML metadata directly onto your dynamic model instances.</h4>
+<p><img src="/images/blog/the-ghost-in-the-machine-tracking-variable-names-and-metadat/img1.png" alt=""></p>
+<p>In Python, an object doesn’t know its own name. The interpreter my_model = L2Regularization() creates an object at a memory address, and it my_model is merely a pointer. But when you are parsing a complex YAML configuration with multiple regularizers, knowing which "key" created which "instance" becomes a debugging necessity.</p>
+<h4 id="here-is-the-deep-dive-into-how-to-retrieve-names-using-stack-inspection-and-how-to-force-metadata-into-the-pytorch-ecosystem"><a class="heading-anchor" aria-hidden tabindex="-1" href="#here-is-the-deep-dive-into-how-to-retrieve-names-using-stack-inspection-and-how-to-force-metadata-into-the-pytorch-ecosystem"><span class="anchor-icon">#</span></a>Here is the deep dive into how to retrieve names using stack inspection and how to force metadata into the PyTorch ecosystem.</h4>
+<h4 id="1-the-detective-approach-stack-inspection"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-the-detective-approach-stack-inspection"><span class="anchor-icon">#</span></a>1. The “Detective” Approach: Stack Inspection</h4>
+<p>If you want to find the name of a variable as it exists in your code, you have to look at the <strong>Execution Stack</strong>. Every time a function runs, Python creates a <strong>Frame</strong> containing two vital dictionaries:</p>
+<ul>
+<li><strong>f_locals</strong>: Variables defined inside the current function scope.</li>
+<li><strong>f_globals</strong>: Variables defined at the module (top) level.</li>
+</ul>
+<p>The “Sophisticated” Inspector</p>
+<p>To find an instance’s name, we must look at the <strong>Caller’s Frame</strong> (f_back). In the terminal (REPL), f_locals and f_globals are often identical because you are already at the top level.</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> inspect
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_var_name</span>(<span class="hljs-params">obj</span>):
+    <span class="hljs-comment"># Retrieve the frame of the code that called this function</span>
+    frame = inspect.currentframe().f_back
+    
+    <span class="hljs-comment"># If called from a terminal/REPL, f_back might be None</span>
+    <span class="hljs-keyword">if</span> frame <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:
+        frame = inspect.currentframe()
+    <span class="hljs-comment"># In the terminal, locals and globals are the same. </span>
+    <span class="hljs-comment"># In a script, we must check both to be thorough.</span>
+    search_space = {**frame.f_globals, **frame.f_locals}
+    
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">for</span> name, value <span class="hljs-keyword">in</span> search_space.items():
+            <span class="hljs-keyword">if</span> value <span class="hljs-keyword">is</span> obj:
+                <span class="hljs-keyword">return</span> name
+    <span class="hljs-keyword">finally</span>:
+        <span class="hljs-keyword">del</span> frame <span class="hljs-comment"># Crucial to prevent memory leaks (Reference Cycles)</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+</code></pre>
+<p><strong>The Catch:</strong> This only works if the object has a unique variable name. If your objects are inside a list (like [Reg(), Reg()]), they have no "name" in the namespace, and this method returns None.</p>
+<h4 id="2-the-stamping-approach-metadata-injection"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-the-stamping-approach-metadata-injection"><span class="anchor-icon">#</span></a>2. The “Stamping” Approach: Metadata Injection</h4>
+<p>When stack inspection fails (common in YAML-driven loops), you must <strong>inject</strong> the name into the object. However, doing this with torch.nn.Module is tricky.</p>
+<blockquote>
+<p><strong>Why</strong> <strong>setattr fails in PyTorch</strong></p>
+</blockquote>
+<p>PyTorch overrides the standard __setattr__. It expects every new attribute to be a Parameter or a Buffer. If you try to assign a raw string like instance.yaml_key = "l2_target", PyTorch’s internal logic sometimes intercepts this and—if the timing isn't perfect—throws an AttributeError.</p>
+<blockquote>
+<p><strong>The Surgical Bypass:</strong> <strong>object.__setattr__</strong></p>
+</blockquote>
+<p>To force a metadata “stamp” onto a PyTorch instance without triggering its internal guards, we call the method from the root of all Python objects:</p>
+<pre><code class="hljs language-text"># Bypass the L2Regularization/PyTorch __setattr__ entirely
+object.__setattr__(reg_instance, 'yaml_key', 'l2_regularization_target')
+
+# OR directly as
+reg_instance.__setattr__('yaml_key', 'l2_regularization_target')
+</code></pre>
+<p>This writes the key directly into the object’s__dict__, bypassing any "locked" logic or specialized PyTorch checks.</p>
+<h4 id="3-the-retrieval-paradox"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-the-retrieval-paradox"><span class="anchor-icon">#</span></a>3. The Retrieval Paradox</h4>
+<p>Even after a successful injection, you might encounter this error:</p>
+<blockquote>
+<p><em>AttributeError: 'L2Regularization' object has no attribute 'yaml_key'</em></p>
+</blockquote>
+<p>This is the ultimate PyTorch “Ghost.” Even though the data is in the object’s memory, PyTorch __getattr__ is programmed to look for tensors. If it doesn't see your attribute in its "<em><strong>authorized list</strong></em>", it claims it doesn't exist.</p>
+<blockquote>
+<p><strong>The Solution: Using****vars()</strong></p>
+</blockquote>
+<p>To read your “stamped” metadata, bypass the class getter and look at the raw dictionary:</p>
+<pre><code class="hljs language-text"># Don't do: reg.yaml_key (PyTorch might block this)
+# Do this:
+name = vars(reg).get('yaml_key')
+
+# Or using __dict__
+name = reg.__dict__.get('yaml_key')
+</code></pre>
+<p>vars(reg) or reg.__dict__ returns the underlying dictionary of the instance. Because we used __setattr__ to put the data there, vars() or __dict__is the only 100% reliable way to get it back out.</p>
+<h4 id="summary-for-the-sophisticated-developer"><a class="heading-anchor" aria-hidden tabindex="-1" href="#summary-for-the-sophisticated-developer"><span class="anchor-icon">#</span></a>Summary for the Sophisticated Developer</h4>
+<ol>
+<li><strong>For Variable Names:</strong> Use inspect to merge f_locals and f_globals from the caller's frame.</li>
+<li><strong>For YAML Keys:</strong> Use object.__setattr__ to "force-stamp" the instance during the loop.</li>
+<li><strong>For Retrieval:</strong> Use vars(obj) to peek behind the PyTorch curtain and avoid AttributeError.</li>
+</ol>
+<hr>
+<p><a href="https://medium.com/the-owl/the-ghost-in-the-machine-tracking-variable-names-and-metadata-in-pytorch-74d3231c780f">The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/the-ghost-in-the-machine-tracking-variable-names-and-metadata-in-pytorch-74d3231c780f">Medium</a>.</em></p>7:["$","$L10",null,{"title":"The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch","date":"$D2026-02-10T00:00:00.000Z","readingTime":4,"categories":["PyTorch","Deep Learning"],"tags":["deep-learning","pytorch","machine-learning","python-programming","python"],"contentHtml":"$11","headings":[{"level":4,"id":"bypass-pytorchs-attribute-guards-use-stack-inspection-and-__setattr__-to-stamp-yaml-metadata-directly-onto-your-dynamic-model-instances","text":"Bypass PyTorch’s attribute guards: Use stack inspection and __setattr__ to ‘stamp’ YAML metadata directly onto your dynamic model instances."},{"level":4,"id":"here-is-the-deep-dive-into-how-to-retrieve-names-using-stack-inspection-and-how-to-force-metadata-into-the-pytorch-ecosystem","text":"Here is the deep dive into how to retrieve names using stack inspection and how to force metadata into the PyTorch ecosystem."},{"level":4,"id":"1-the-detective-approach-stack-inspection","text":"1. The “Detective” Approach: Stack Inspection"},{"level":4,"id":"2-the-stamping-approach-metadata-injection","text":"2. The “Stamping” Approach: Metadata Injection"},{"level":4,"id":"3-the-retrieval-paradox","text":"3. The Retrieval Paradox"},{"level":4,"id":"summary-for-the-sophisticated-developer","text":"Summary for the Sophisticated Developer"}],"prevPost":{"slug":"2026-02-09-how-to-pull-changes-from-a-remote-git-repository","title":"How to Pull Changes from a Remote Git Repository"},"nextPost":{"slug":"2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings","title":"Cross-Dataset Label Mapping with Vision–Language Embeddings"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

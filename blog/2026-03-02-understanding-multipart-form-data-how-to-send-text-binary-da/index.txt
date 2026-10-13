@@ -1,0 +1,545 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-03-02-understanding-multipart-form-data-how-to-send-text-binary-da",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-03-02-understanding-multipart-form-data-how-to-send-text-binary-da","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-03-02-understanding-multipart-form-data-how-to-send-text-binary-da","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","2WZ5vXur-je3KTNw_USq8",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T70bb,<h4 id="using-a-local-medgemma-4b-server-as-a-workingexample"><a class="heading-anchor" aria-hidden tabindex="-1" href="#using-a-local-medgemma-4b-server-as-a-workingexample"><span class="anchor-icon">#</span></a>Using a Local MedGemma-4B Server as a Working Example</h4>
+<p><img src="/images/blog/understanding-multipart-form-data-how-to-send-text-binary-da/img1.png" alt=""></p>
+<p>When you start serving large language models locally — like <strong>MedGemma-4B</strong> running behind a FastAPI server — you quickly encounter something that most ML engineers haven’t had to think about before:</p>
+<blockquote>
+<p>HTTP body formats</p>
+</blockquote>
+<p>Everything works fine when you send JSON. But the moment you want to send both:</p>
+<ul>
+<li>A <em><strong>text prompt</strong></em></li>
+<li>An <em><strong>image</strong></em> (<strong>binary file</strong>)</li>
+</ul>
+<p>You need to understand <strong>multipart/form-data</strong>.</p>
+<blockquote>
+<p>This article explains:</p>
+</blockquote>
+<ul>
+<li>What <em><strong>multipart</strong></em> actually is</li>
+<li>Why it exists</li>
+<li>How HTTP encodes <strong>multiple fields</strong></li>
+<li>How to send <strong>text-only</strong> requests</li>
+<li>How to send <strong>text + binary</strong> in the same request</li>
+<li>How to <strong>manually construct multipart bodies with boundaries</strong></li>
+<li>How to design your API (single endpoint vs separate endpoints)</li>
+</ul>
+<p>We’ll use a local <em><strong>MedGemma-4B</strong></em> server as our example.</p>
+<h3 id="why-multipart-exists"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-multipart-exists"><span class="anchor-icon">#</span></a>Why Multipart Exists</h3>
+<blockquote>
+<p>Imagine we have a local server:</p>
+</blockquote>
+<pre><code class="hljs language-text">http://localhost:8000
+</code></pre>
+<blockquote>
+<p>And we want to call:</p>
+</blockquote>
+<pre><code class="hljs language-text">POST /chat
+</code></pre>
+<blockquote>
+<p>If we only send text, JSON works perfectly:</p>
+</blockquote>
+<pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Explain pneumonia"</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>But what if we want to send:</p>
+</blockquote>
+<ul>
+<li>A text message</li>
+<li>An image file</li>
+<li>Maybe more fields later</li>
+</ul>
+<p>JSON cannot directly contain raw binary data.</p>
+<p>Yes, you <em>could</em> <strong>base64</strong>-encode the image — but that:</p>
+<ul>
+<li>Increases size ~33%</li>
+<li>Adds processing overhead</li>
+<li>It is not ideal for large files</li>
+</ul>
+<p>So HTTP provides a different encoding format:</p>
+<blockquote>
+<p><em>multipart/form-data</em></p>
+</blockquote>
+<p>It literally means:</p>
+<blockquote>
+<p><em>The body is split into multiple independent parts.</em></p>
+</blockquote>
+<h3 id="-what-multipart-does"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-what-multipart-does"><span class="anchor-icon">#</span></a>🧠 What Multipart Does</h3>
+<p>multipart/form-data is simply:</p>
+<blockquote>
+<p><em>A way to embed raw binary inside an HTTP body safely.</em></p>
+</blockquote>
+<ul>
+<li>It does not encode the file.</li>
+<li>It does not convert it to <strong>base64</strong>.</li>
+<li>It does not transform it.</li>
+<li>It simply wraps it inside boundaries.</li>
+</ul>
+<h3 id="what-a-multipart-body-actually-lookslike"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-a-multipart-body-actually-lookslike"><span class="anchor-icon">#</span></a>What a Multipart Body Actually Looks Like</h3>
+<blockquote>
+<p>Here’s a real multipart request:</p>
+</blockquote>
+<pre><code class="hljs language-text">POST /chat HTTP/1.1
+Content-Type: multipart/form-data; boundary=----ABC123
+</code></pre>
+<blockquote>
+<p>Body:</p>
+</blockquote>
+<pre><code class="hljs language-text">------ABC123
+Content-Disposition: form-data; name="message"
+Explain pneumonia
+------ABC123
+Content-Disposition: form-data; name="image"; filename="xray.png"
+Content-Type: image/png
+&#x3C;RAW BINARY BYTES HERE>
+------ABC123--
+</code></pre>
+<blockquote>
+<p>Key points:</p>
+</blockquote>
+<ul>
+<li>The <strong>boundary</strong> separates parts.</li>
+<li>Each part has its own headers.</li>
+<li>Each part has its own content.</li>
+<li>The final boundary ends with --.</li>
+</ul>
+<p>That’s why it’s called <strong>multi-part</strong>.</p>
+<h3 id="multiple-endpoints-chat-and-chat_multimodal"><a class="heading-anchor" aria-hidden tabindex="-1" href="#multiple-endpoints-chat-and-chat_multimodal"><span class="anchor-icon">#</span></a>Multiple Endpoints (chat and chat_multimodal)</h3>
+<h4 id="example-setup-local-medgemmaserver"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example-setup-local-medgemmaserver"><span class="anchor-icon">#</span></a>Example Setup: Local MedGemma Server</h4>
+<blockquote>
+<p>Let’s assume we have two endpoints:</p>
+</blockquote>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI, UploadFile, File, Form
+<span class="hljs-keyword">from</span> fastapi.responses <span class="hljs-keyword">import</span> JSONResponse
+<span class="hljs-keyword">from</span> pydantic <span class="hljs-keyword">import</span> BaseModel
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> io
+<span class="hljs-keyword">import</span> base64
+
+app = FastAPI()
+
+<span class="hljs-comment"># ---------------------------------------------------------</span>
+<span class="hljs-comment"># JSON Schema for Text-Only Endpoint</span>
+<span class="hljs-comment"># ---------------------------------------------------------</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ChatRequest</span>(<span class="hljs-title class_ inherited__">BaseModel</span>):
+    message: <span class="hljs-built_in">str</span>
+    image: <span class="hljs-built_in">str</span> | <span class="hljs-literal">None</span> = <span class="hljs-literal">None</span>  <span class="hljs-comment"># optional base64 image</span>
+
+
+<span class="hljs-comment"># =========================================================</span>
+<span class="hljs-comment"># Endpoint 1 — JSON (Text Only)</span>
+<span class="hljs-comment"># =========================================================</span>
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat</span>(<span class="hljs-params">req: ChatRequest</span>):
+
+    message = req.message
+    image_bytes = <span class="hljs-literal">None</span>
+    pil_image = <span class="hljs-literal">None</span>
+
+    <span class="hljs-comment"># If base64 image is provided</span>
+    <span class="hljs-keyword">if</span> req.image:
+        image_bytes = base64.b64decode(req.image)
+        pil_image = Image.<span class="hljs-built_in">open</span>(io.BytesIO(image_bytes)).convert(<span class="hljs-string">"RGB"</span>)
+
+    <span class="hljs-keyword">return</span> JSONResponse({
+        <span class="hljs-string">"endpoint"</span>: <span class="hljs-string">"chat (JSON)"</span>,
+        <span class="hljs-string">"received_message"</span>: message,
+        <span class="hljs-string">"image_present"</span>: image_bytes <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>,
+        <span class="hljs-string">"image_size_bytes"</span>: <span class="hljs-built_in">len</span>(image_bytes) <span class="hljs-keyword">if</span> image_bytes <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>
+    })
+
+
+<span class="hljs-comment"># =========================================================</span>
+<span class="hljs-comment"># Endpoint 2 — Multipart (Text + Binary)</span>
+<span class="hljs-comment"># =========================================================</span>
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat_multimodal"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat_multimodal</span>(<span class="hljs-params">
+    message: <span class="hljs-built_in">str</span> = Form(<span class="hljs-params">...</span>),
+    image: UploadFile = File(<span class="hljs-params"><span class="hljs-literal">None</span></span>)
+</span>):
+
+    image_bytes = <span class="hljs-literal">None</span>
+    pil_image = <span class="hljs-literal">None</span>
+
+    <span class="hljs-keyword">if</span> image:
+        <span class="hljs-comment"># Read raw binary from HTTP body</span>
+        image_bytes = <span class="hljs-keyword">await</span> image.read()
+
+        <span class="hljs-comment"># Convert to PIL image</span>
+        pil_image = Image.<span class="hljs-built_in">open</span>(io.BytesIO(image_bytes)).convert(<span class="hljs-string">"RGB"</span>)
+
+    <span class="hljs-keyword">return</span> JSONResponse({
+        <span class="hljs-string">"endpoint"</span>: <span class="hljs-string">"chat_multimodal (multipart)"</span>,
+        <span class="hljs-string">"received_message"</span>: message,
+        <span class="hljs-string">"image_present"</span>: image_bytes <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>,
+        <span class="hljs-string">"image_size_bytes"</span>: <span class="hljs-built_in">len</span>(image_bytes) <span class="hljs-keyword">if</span> image_bytes <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>,
+        <span class="hljs-string">"filename"</span>: image.filename <span class="hljs-keyword">if</span> image <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>
+    })
+</code></pre>
+<p>Now let’s see how to call each.</p>
+<h3 id="case-1text-onlyjson"><a class="heading-anchor" aria-hidden tabindex="-1" href="#case-1text-onlyjson"><span class="anchor-icon">#</span></a>Case 1 — Text Only (JSON)</h3>
+<blockquote>
+<p>Endpoint:</p>
+</blockquote>
+<pre><code class="hljs language-text">POST /chat
+</code></pre>
+<h3 id="using-curl"><a class="heading-anchor" aria-hidden tabindex="-1" href="#using-curl"><span class="anchor-icon">#</span></a>Using curl</h3>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat \
+-H <span class="hljs-string">"Content-Type: application/json"</span> \
+-d <span class="hljs-string">'{"message":"Explain pneumonia"}'</span>
+</code></pre>
+<p>This works because:</p>
+<ul>
+<li>FastAPI expects JSON</li>
+<li>Content-Type matches</li>
+<li>Body contains a valid JSON object</li>
+</ul>
+<h3 id="case-2text-only-multipart"><a class="heading-anchor" aria-hidden tabindex="-1" href="#case-2text-only-multipart"><span class="anchor-icon">#</span></a>Case 2 — Text Only (Multipart)</h3>
+<p>You <em>can</em> also send text-only using multipart:</p>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat_multimodal \
+-F <span class="hljs-string">"message=Explain pneumonia"</span>
+</code></pre>
+<blockquote>
+<p>Why does this work?</p>
+</blockquote>
+<p>Because -F tells curl:</p>
+<ul>
+<li>Build a multipart body</li>
+<li>Generate boundary automatically</li>
+<li>Insert proper headers</li>
+</ul>
+<p>Never manually set Content-Type when using -F.</p>
+<p>Curl does it for you.</p>
+<h3 id="case-3text--image-multipart-automatic"><a class="heading-anchor" aria-hidden tabindex="-1" href="#case-3text--image-multipart-automatic"><span class="anchor-icon">#</span></a>Case 3 — Text + Image (Multipart, Automatic)</h3>
+<p>This is the standard way:</p>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat_multimodal \
+-F <span class="hljs-string">"message=Describe this image"</span> \
+-F <span class="hljs-string">"image=@xray.png"</span>
+</code></pre>
+<h4 id="the--tellscurl"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the--tellscurl"><span class="anchor-icon">#</span></a>The ‘@’ tells curl:</h4>
+<blockquote>
+<p><em>Read file as binary and insert into multipart body.</em></p>
+</blockquote>
+<p><em><strong>CURL</strong></em> constructs:</p>
+<ul>
+<li>Boundary</li>
+<li>Content-Disposition</li>
+<li>Content-Type for file</li>
+<li>Binary transfer</li>
+</ul>
+<p>And also does</p>
+<ul>
+<li>Reads file</li>
+<li>Streams bytes</li>
+</ul>
+<blockquote>
+<p>You do not need to worry about formatting.</p>
+</blockquote>
+<h3 id="case-4manually-constructing-multipart-educational"><a class="heading-anchor" aria-hidden tabindex="-1" href="#case-4manually-constructing-multipart-educational"><span class="anchor-icon">#</span></a>Case 4 — Manually Constructing Multipart (Educational)</h3>
+<p>Now let’s do it the hard way. Suppose we want full control and manually set:</p>
+<pre><code class="hljs language-text">Content-Type: multipart/form-data
+</code></pre>
+<p>We must include a boundary:</p>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat_multimodal \
+-H <span class="hljs-string">"Content-Type: multipart/form-data; boundary=----XYZ"</span> \
+--data-binary $<span class="hljs-string">'------XYZ\r\nContent-Disposition: form-data; name="message"\r\n\r\nExplain pneumonia\r\n------XYZ--\r\n'</span>
+</code></pre>
+<p>Important:</p>
+<ul>
+<li>\r\n is required</li>
+<li>The <strong>Boundary</strong> must match the <strong>header</strong></li>
+<li>The final boundary must end with --</li>
+</ul>
+<p>If you forget the boundary, you get:</p>
+<pre><code class="hljs language-text">Missing boundary in multipart.
+</code></pre>
+<p>That’s because the server doesn’t know how to split parts.</p>
+<h3 id="manual-text--image-multipart"><a class="heading-anchor" aria-hidden tabindex="-1" href="#manual-text--image-multipart"><span class="anchor-icon">#</span></a>Manual Text + Image Multipart</h3>
+<p>To send an image manually, create a file body.txt:</p>
+<pre><code class="hljs language-text">------XYZ
+Content-Disposition: form-data; name="message"
+Describe this image
+------XYZ
+Content-Disposition: form-data; name="image"; filename="xray.png"
+Content-Type: image/png
+&#x3C;RAW BINARY BYTES HERE>
+------XYZ--
+</code></pre>
+<p>Then:</p>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat_multimodal \
+-H <span class="hljs-string">"Content-Type: multipart/form-data; boundary=----XYZ"</span> \
+--data-binary @body.txt
+</code></pre>
+<p>This works, but it’s tedious. That’s why -F exists.</p>
+<h3 id="single-unified-endpoint-json--multipart"><a class="heading-anchor" aria-hidden tabindex="-1" href="#single-unified-endpoint-json--multipart"><span class="anchor-icon">#</span></a>Single Unified Endpoint (JSON + Multipart)</h3>
+<p>Instead of separate endpoints, you can inspect Content-Type:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> fastapi <span class="hljs-keyword">import</span> FastAPI, Request
+<span class="hljs-keyword">from</span> fastapi.responses <span class="hljs-keyword">import</span> JSONResponse
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> io
+<span class="hljs-keyword">import</span> base64
+
+app = FastAPI()
+
+<span class="hljs-meta">@app.post(<span class="hljs-params"><span class="hljs-string">"/chat"</span></span>)</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">chat</span>(<span class="hljs-params">request: Request</span>):
+
+    content_type = request.headers.get(<span class="hljs-string">"content-type"</span>, <span class="hljs-string">""</span>)
+
+    message = <span class="hljs-literal">None</span>
+    image_bytes = <span class="hljs-literal">None</span>
+    pil_image = <span class="hljs-literal">None</span>
+
+    <span class="hljs-comment"># --------------------------------------------------</span>
+    <span class="hljs-comment"># Case 1: JSON (Text Only)</span>
+    <span class="hljs-comment"># --------------------------------------------------</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-string">"application/json"</span> <span class="hljs-keyword">in</span> content_type:
+        body = <span class="hljs-keyword">await</span> request.json()
+        message = body.get(<span class="hljs-string">"message"</span>)
+
+        <span class="hljs-comment"># Optional: JSON may contain base64 image</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-string">"image"</span> <span class="hljs-keyword">in</span> body:
+            image_bytes = base64.b64decode(body[<span class="hljs-string">"image"</span>])
+            pil_image = Image.<span class="hljs-built_in">open</span>(io.BytesIO(image_bytes)).convert(<span class="hljs-string">"RGB"</span>)
+
+    <span class="hljs-comment"># --------------------------------------------------</span>
+    <span class="hljs-comment"># Case 2: Multipart (Text + Binary Image)</span>
+    <span class="hljs-comment"># --------------------------------------------------</span>
+    <span class="hljs-keyword">elif</span> <span class="hljs-string">"multipart/form-data"</span> <span class="hljs-keyword">in</span> content_type:
+        form = <span class="hljs-keyword">await</span> request.form()
+
+        message = form.get(<span class="hljs-string">"message"</span>)
+
+        file = form.get(<span class="hljs-string">"image"</span>)
+
+        <span class="hljs-keyword">if</span> file:
+            <span class="hljs-comment"># Read raw binary bytes</span>
+            image_bytes = <span class="hljs-keyword">await</span> file.read()
+
+            <span class="hljs-comment"># Convert binary → PIL</span>
+            pil_image = Image.<span class="hljs-built_in">open</span>(io.BytesIO(image_bytes)).convert(<span class="hljs-string">"RGB"</span>)
+
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> JSONResponse(
+            {<span class="hljs-string">"error"</span>: <span class="hljs-string">"Unsupported Content-Type"</span>},
+            status_code=<span class="hljs-number">415</span>
+        )
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> message:
+        <span class="hljs-keyword">return</span> JSONResponse(
+            {<span class="hljs-string">"error"</span>: <span class="hljs-string">"Message is required"</span>},
+            status_code=<span class="hljs-number">400</span>
+        )
+
+    <span class="hljs-comment"># --------------------------------------------------</span>
+    <span class="hljs-comment"># Debug: Show what we received</span>
+    <span class="hljs-comment"># --------------------------------------------------</span>
+    response_data = {
+        <span class="hljs-string">"received_message"</span>: message,
+        <span class="hljs-string">"image_present"</span>: image_bytes <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>,
+        <span class="hljs-string">"image_size_bytes"</span>: <span class="hljs-built_in">len</span>(image_bytes) <span class="hljs-keyword">if</span> image_bytes <span class="hljs-keyword">else</span> <span class="hljs-literal">None</span>
+    }
+
+    <span class="hljs-keyword">return</span> JSONResponse(response_data)
+</code></pre>
+<p>Now both work:</p>
+<blockquote>
+<p>JSON:</p>
+</blockquote>
+<pre><code class="hljs language-bash">curl -H <span class="hljs-string">"Content-Type: application/json"</span> \
+-d <span class="hljs-string">'{"message":"Explain pneumonia"}'</span>
+</code></pre>
+<blockquote>
+<p>Multipart:</p>
+</blockquote>
+<pre><code class="hljs language-bash">curl -F <span class="hljs-string">"message=Explain pneumonia"</span>
+</code></pre>
+<h3 id="curl-extras"><a class="heading-anchor" aria-hidden tabindex="-1" href="#curl-extras"><span class="anchor-icon">#</span></a>curl EXTRAS</h3>
+<h3 id="-1️⃣-curl-automatically-switches-topost"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-1️⃣-curl-automatically-switches-topost"><span class="anchor-icon">#</span></a>🧠 1️⃣ curl Automatically Switches to POST</h3>
+<p>If you write:</p>
+<pre><code class="hljs language-bash">curl -H <span class="hljs-string">"Content-Type: application/json"</span> \
+-d <span class="hljs-string">'{"message":"Explain pneumonia"}'</span> \
+http://localhost:8000/chat
+</code></pre>
+<p>You did <strong>not</strong> specify -X POST.</p>
+<p>But -d (or --data) implicitly means:</p>
+<blockquote>
+<p><em>Send a POST request.</em></p>
+</blockquote>
+<p>So curl internally transforms that into:</p>
+<pre><code class="hljs language-text">POST /chat HTTP/1.1
+</code></pre>
+<p>Same with -F:</p>
+<pre><code class="hljs language-bash">curl -F <span class="hljs-string">"message=Explain pneumonia"</span> \
+http://localhost:8000/chat
+</code></pre>
+<p>Using -F also automatically sets:</p>
+<pre><code class="hljs language-text">POST
+Content-Type: multipart/form-data
+</code></pre>
+<p>So -X POST is optional.</p>
+<h3 id="-2️⃣-when-do-you-need--xpost"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-2️⃣-when-do-you-need--xpost"><span class="anchor-icon">#</span></a>🧠 2️⃣ When Do You Need -X POST?</h3>
+<p>You need -X POST when:</p>
+<ul>
+<li>You are NOT using -d</li>
+<li>You are NOT using -F</li>
+<li>You are manually constructing the body</li>
+</ul>
+<p>Example:</p>
+<pre><code class="hljs language-bash">curl -X POST http://localhost:8000/chat
+</code></pre>
+<p>Without -X, curl defaults to:</p>
+<pre><code class="hljs language-text">GET
+</code></pre>
+<h3 id="why-production-apis-often-separate-endpoints"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-production-apis-often-separate-endpoints"><span class="anchor-icon">#</span></a>Why Production APIs Often Separate Endpoints</h3>
+<p>In real systems:</p>
+<ul>
+<li>/chat → JSON</li>
+<li>/chat_multimodal → multipart</li>
+</ul>
+<h3 id="why"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why"><span class="anchor-icon">#</span></a><strong>Why?</strong></h3>
+<p>Because:</p>
+<ul>
+<li>Clear contract</li>
+<li>Easier documentation</li>
+<li>Better validation</li>
+<li>Cleaner OpenAPI schema</li>
+</ul>
+<p>But for learning and flexibility, a unified endpoint is perfectly fine.</p>
+<h3 id="multipart-vs-json-vs-urlencoded"><a class="heading-anchor" aria-hidden tabindex="-1" href="#multipart-vs-json-vs-urlencoded"><span class="anchor-icon">#</span></a>Multipart vs JSON vs URL Encoded</h3>
+<pre><code class="hljs language-text">|          Format       | Supports Files|Human Readable | Typical Use |
+| — — — — — — — — — — — | — — — — — — — | — — — — — — — | — — — — — — |
+| JSON                  | ❌            | ✅             | APIs        |
+| x-www-form-urlencoded | ❌            | Yes           | Simple forms |
+| multipart/form-data   | ✅            | No            | File uploads |
+</code></pre>
+<blockquote>
+<p>When serving MedGemma locally:</p>
+</blockquote>
+<ul>
+<li>JSON is perfect for pure chat</li>
+<li>Multipart is required for multimodal input</li>
+<li>The server must parse boundary-separated parts</li>
+<li>The client must construct the body correctly</li>
+</ul>
+<blockquote>
+<p>Understanding multipart means you now understand:</p>
+</blockquote>
+<ul>
+<li>HTTP body encoding</li>
+<li>File upload protocols</li>
+<li>How FastAPI parses form data</li>
+<li>How frontend and backend communicate</li>
+</ul>
+<h3 id="-what-actually-happens-end-to-end"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-what-actually-happens-end-to-end"><span class="anchor-icon">#</span></a>🧠 What Actually Happens End-to-End</h3>
+<h3 id="1️⃣-client-curl-browser"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1️⃣-client-curl-browser"><span class="anchor-icon">#</span></a>1️⃣ Client (curl / browser)</h3>
+<pre><code class="hljs language-bash">curl -F <span class="hljs-string">"message=Describe this"</span> \
+     -F <span class="hljs-string">"image=@xray.png"</span> \
+     http://localhost:8000/chat
+</code></pre>
+<blockquote>
+<p>What does Curl do:</p>
+</blockquote>
+<ul>
+<li>Reads file in binary mode</li>
+<li>Streams raw bytes</li>
+<li>Wraps them in multipart boundaries</li>
+<li>Sends to the server</li>
+</ul>
+<p><em><strong>No base64 involved.</strong></em></p>
+<h3 id="2️⃣-fastapi-receivesit"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2️⃣-fastapi-receivesit"><span class="anchor-icon">#</span></a>2️⃣ FastAPI Receives It</h3>
+<blockquote>
+<p>Your endpoint:</p>
+</blockquote>
+<pre><code class="hljs language-text">image: UploadFile = File(...)
+</code></pre>
+<blockquote>
+<p>What FastAPI does:</p>
+</blockquote>
+<ul>
+<li>Parses boundary</li>
+<li>Extracts file section</li>
+<li>Stores it temporarily</li>
+<li>Wraps it as UploadFile</li>
+</ul>
+<blockquote>
+<p>Then:</p>
+</blockquote>
+<pre><code class="hljs language-text">image_bytes = await image.read()
+</code></pre>
+<blockquote>
+<p>Now you have:</p>
+</blockquote>
+<pre><code class="hljs language-text">bytes
+</code></pre>
+<p>Raw binary data in memory.</p>
+<h3 id="-now-you-decide-what-to-do-withit"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-now-you-decide-what-to-do-withit"><span class="anchor-icon">#</span></a>🧩 Now You Decide What To Do With It</h3>
+<p>From raw bytes, you can:</p>
+<h3 id="-option-aconvert-to-pil-image-most-common-for-visionmodels"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-option-aconvert-to-pil-image-most-common-for-visionmodels"><span class="anchor-icon">#</span></a>✅ Option A — Convert to PIL Image (Most Common for Vision Models)</h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> io
+image_bytes = <span class="hljs-keyword">await</span> image.read()
+pil_image = Image.<span class="hljs-built_in">open</span>(io.BytesIO(image_bytes)).convert(<span class="hljs-string">"RGB"</span>)
+</code></pre>
+<p>Now you can pass it directly to:</p>
+<ul>
+<li>processor(images=pil_image, ...)</li>
+<li>torchvision transforms</li>
+<li>NumPy conversion</li>
+</ul>
+<p>This is ideal for MedGemma multimodal inference.</p>
+<h3 id="-option-bconvert-to-base64-if-required"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-option-bconvert-to-base64-if-required"><span class="anchor-icon">#</span></a>✅ Option B — Convert to Base64 (If Required)</h3>
+<p>Only needed if:</p>
+<ul>
+<li>You want to send an image forward in JSON</li>
+<li>You store it in the database as text</li>
+<li>You call another API that expects base64</li>
+</ul>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> base64
+encoded = base64.b64encode(image_bytes).decode(<span class="hljs-string">"utf-8"</span>)
+</code></pre>
+<p>Now you have:</p>
+<pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"image"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"iVBORw0KGgoAAAANSUhEUgAA..."</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<p>But remember:</p>
+<ul>
+<li>Base64 increases size ~33%</li>
+<li>Slower</li>
+<li>Not needed for local inference</li>
+</ul>
+<h3 id="final-takeaway"><a class="heading-anchor" aria-hidden tabindex="-1" href="#final-takeaway"><span class="anchor-icon">#</span></a>Final Takeaway</h3>
+<p>multipart/form-data is called “multi-part” because:</p>
+<blockquote>
+<p>The HTTP body is physically split into multiple independently described parts using boundaries.</p>
+</blockquote>
+<p>It allows:</p>
+<ul>
+<li>Text fields</li>
+<li>Binary files</li>
+<li>Multiple values</li>
+<li>Metadata per field</li>
+</ul>
+<p>Without <strong>base64</strong> hacks.</p>
+<hr>
+<p><a href="https://medium.com/the-owl/understanding-multipart-form-data-how-to-send-text-binary-data-in-http-requests-14e7eef8e947">Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/understanding-multipart-form-data-how-to-send-text-binary-data-in-http-requests-14e7eef8e947">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests","date":"$D2026-03-02T00:00:00.000Z","readingTime":9,"categories":["Web Development","Developer Tools"],"tags":["llm","https","fastapi","llama-cpp","multipart-form-data"],"contentHtml":"$11","headings":[{"level":4,"id":"using-a-local-medgemma-4b-server-as-a-workingexample","text":"Using a Local MedGemma-4B Server as a Working Example"},{"level":3,"id":"why-multipart-exists","text":"Why Multipart Exists"},{"level":3,"id":"-what-multipart-does","text":"🧠 What Multipart Does"},{"level":3,"id":"what-a-multipart-body-actually-lookslike","text":"What a Multipart Body Actually Looks Like"},{"level":3,"id":"multiple-endpoints-chat-and-chat_multimodal","text":"Multiple Endpoints (chat and chat_multimodal)"},{"level":4,"id":"example-setup-local-medgemmaserver","text":"Example Setup: Local MedGemma Server"},{"level":3,"id":"case-1text-onlyjson","text":"Case 1 — Text Only (JSON)"},{"level":3,"id":"using-curl","text":"Using curl"},{"level":3,"id":"case-2text-only-multipart","text":"Case 2 — Text Only (Multipart)"},{"level":3,"id":"case-3text--image-multipart-automatic","text":"Case 3 — Text + Image (Multipart, Automatic)"},{"level":4,"id":"the--tellscurl","text":"The ‘@’ tells curl:"},{"level":3,"id":"case-4manually-constructing-multipart-educational","text":"Case 4 — Manually Constructing Multipart (Educational)"},{"level":3,"id":"manual-text--image-multipart","text":"Manual Text + Image Multipart"},{"level":3,"id":"single-unified-endpoint-json--multipart","text":"Single Unified Endpoint (JSON + Multipart)"},{"level":3,"id":"curl-extras","text":"curl EXTRAS"},{"level":3,"id":"-1️⃣-curl-automatically-switches-topost","text":"🧠 1️⃣ curl Automatically Switches to POST"},{"level":3,"id":"-2️⃣-when-do-you-need--xpost","text":"🧠 2️⃣ When Do You Need -X POST?"},{"level":3,"id":"why-production-apis-often-separate-endpoints","text":"Why Production APIs Often Separate Endpoints"},{"level":3,"id":"why","text":"Why?"},{"level":3,"id":"multipart-vs-json-vs-urlencoded","text":"Multipart vs JSON vs URL Encoded"},{"level":3,"id":"-what-actually-happens-end-to-end","text":"🧠 What Actually Happens End-to-End"},{"level":3,"id":"1️⃣-client-curl-browser","text":"1️⃣ Client (curl / browser)"},{"level":3,"id":"2️⃣-fastapi-receivesit","text":"2️⃣ FastAPI Receives It"},{"level":3,"id":"-now-you-decide-what-to-do-withit","text":"🧩 Now You Decide What To Do With It"},{"level":3,"id":"-option-aconvert-to-pil-image-most-common-for-visionmodels","text":"✅ Option A — Convert to PIL Image (Most Common for Vision Models)"},{"level":3,"id":"-option-bconvert-to-base64-if-required","text":"✅ Option B — Convert to Base64 (If Required)"},{"level":3,"id":"final-takeaway","text":"Final Takeaway"}],"prevPost":{"slug":"2026-02-28-hosting-your-own-llm-server","title":"Hosting Your Own LLM Server"},"nextPost":{"slug":"2026-03-17-updating-your-local-branch-from-a-specific-remote-branch-in","title":"Updating your Local Branch from a Specific Remote Branch in Git"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

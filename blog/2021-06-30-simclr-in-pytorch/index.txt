@@ -1,0 +1,120 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2021-06-30-simclr-in-pytorch",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2021-06-30-simclr-in-pytorch","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2021-06-30-simclr-in-pytorch","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","JefPN0-oktEdIzB33PzCb",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2f40,<hr>
+<p>SimCLR or Simple Framework for Contrastive Learning of Visual Representations is a State-of-the-art Self-supervised Representation Learning Framework.</p>
+<h4 id="the-simclr-paper-presents-several-contributions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-simclr-paper-presents-several-contributions"><span class="anchor-icon">#</span></a>The SimCLR <a href="https://arxiv.org/pdf/2002.05709.pdf">paper</a> presents several contributions:</h4>
+<ol>
+<li>Unsupervised representation learning benefits from stronger augmentations.</li>
+<li>Introducing a trainable MLP after the base encoder improves the quality of the learned representations.</li>
+<li>Representation learning with contrastive cross-entropy loss benefits from normalized embeddings and an appropriately adjusted temperature parameter.</li>
+<li>Contrastive learning benefits from larger batch sizes and longer training compared to its supervised counterpart. Like supervised learning, contrastive learning benefits from deeper and wider networks.</li>
+</ol>
+<h4 id="the-framework-consists-of-fourparts"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-framework-consists-of-fourparts"><span class="anchor-icon">#</span></a>The framework consists of four parts:</h4>
+<ol>
+<li>A <em><strong>stochastic data augmentation module</strong></em> that transforms any given data example randomly resulting in two correlated views of the same example. This pair is considered to be a positive pair. The authors apply three simple augmentations: <em><strong>Random Cropping</strong></em> followed by <em><strong>Resize</strong></em> back to the original size, <em><strong>Random Color Distortions</strong></em> and <em><strong>Random Gaussian Blur</strong></em>.</li>
+<li>A <strong><em>base encoder f</em>(.)</strong> that extracts representation vectors from augmented data examples.</li>
+<li>A <strong><em>small neural network projection head g</em>(.)</strong> that maps representations to space where contrastive loss is applied.</li>
+<li>A <em><strong>Contrastive Loss</strong></em> <em><strong>function</strong></em> defined for a contrastive prediction task.</li>
+</ol>
+<p><img src="/images/blog/simclr-in-pytorch/img1.png" alt=""></p>
+<p>The SimCLR framework. Source: Paper</p>
+<p>The contrastive loss function is defined as:</p>
+<p><img src="/images/blog/simclr-in-pytorch/img2.png" alt=""></p>
+<p>Source: paper</p>
+<hr>
+<h4 id="some-points-to-benoted"><a class="heading-anchor" aria-hidden tabindex="-1" href="#some-points-to-benoted"><span class="anchor-icon">#</span></a>Some points to be noted:</h4>
+<ul>
+<li>In the original paper, the authors used multiple GPUs and large batch sizes to obtain state-of-the-art performance. Also, the authors used ImageNet dataset consisting of over 1 million images.</li>
+<li>However, because of the unavailability of such high-spec hardware with the author of this article, the implementation presented here is going to be run only on one GPU and with a batch size of only <strong>128</strong>. Also, we will be using the <strong>CIFAR10</strong> dataset. The authors of the original paper also ran the <strong>SimCLR</strong> on <strong>CIFAR10</strong>, so it will be possible to compare the performance of our implementation with theirs.</li>
+<li>The optimizer that we are going to be using is <strong>LARS,</strong> with a learning rate of <strong>0.2</strong>. The learning rate schedule is also going to be the same as mentioned in the paper, i.e. a <strong>linear warmup</strong> for <strong>10</strong> epochs and then a cosine decay schedule. Readers can take the liberty to change the optimizer as per their requirements.</li>
+<li>The code has been run for <strong>100</strong> epochs on <strong>Tesla V100 GPU</strong> on <strong>Google Colab Pro</strong>. The time taken for each epoch of pretraining is <strong>3.5 mins</strong> approx. On <strong>Tesla P100 GPU</strong> it takes about <strong>4.5 mins</strong> approx for each epoch.</li>
+<li>The augmentations applied are <em>random horizontal flipping</em>, <em>random cropping and resizing</em>, and <em>color distortion</em>.</li>
+</ul>
+<hr>
+<h4 id="import-libraries"><a class="heading-anchor" aria-hidden tabindex="-1" href="#import-libraries"><span class="anchor-icon">#</span></a>Import Libraries</h4>
+<h4 id="set-seed-for-reproducibility"><a class="heading-anchor" aria-hidden tabindex="-1" href="#set-seed-for-reproducibility"><span class="anchor-icon">#</span></a>Set Seed for reproducibility</h4>
+<h4 id="download-cifar10dataset"><a class="heading-anchor" aria-hidden tabindex="-1" href="#download-cifar10dataset"><span class="anchor-icon">#</span></a>Download CIFAR10 Dataset</h4>
+<h4 id="building-dataloader"><a class="heading-anchor" aria-hidden tabindex="-1" href="#building-dataloader"><span class="anchor-icon">#</span></a>Building DataLoader</h4>
+<blockquote>
+<p>Reading the Dataset</p>
+</blockquote>
+<p>Let, the training and validation split be 80:20. Without many complications, let us consider the ‘<em><strong>batch-5</strong></em>’ of the <strong>CIFAR10</strong> dataset as the validation set and the rest as the training set. We also calculate the channel-wise mean and standard deviation of the pixel values on the training split.</p>
+<pre><code class="hljs language-text">trimages = images[:40000]
+valimages = images[40000:]
+trlabels = labels[:40000]
+vallabels = labels[40000:]
+</code></pre>
+<pre><code class="hljs language-text">MEAN = np.mean(trimages/255.0,axis=(0,2,3),keepdims=True)
+STD = np.std(trimages/255.0,axis=(0,2,3),keepdims=True)
+</code></pre>
+<pre><code class="hljs language-python"><span class="hljs-built_in">print</span>(MEAN)
+<span class="hljs-meta">>>> </span>[[[[<span class="hljs-number">0.49145363</span>]]    [[<span class="hljs-number">0.48206213</span>]]    [[<span class="hljs-number">0.44622512</span>]]]]
+</code></pre>
+<pre><code class="hljs language-python"><span class="hljs-built_in">print</span>(STD)
+<span class="hljs-meta">>>> </span>[[[[<span class="hljs-number">0.24716829</span>]]    [[<span class="hljs-number">0.24370658</span>]]    [[<span class="hljs-number">0.26169213</span>]]]]
+</code></pre>
+<blockquote>
+<p>DataGenerator</p>
+</blockquote>
+<blockquote>
+<p>DataLoader</p>
+</blockquote>
+<p>In the above code snippets, you change anything according to your needs. A sample of a single batch of inputs is shown below.</p>
+<p><img src="/images/blog/simclr-in-pytorch/img9.jpeg" alt=""><img src="/images/blog/simclr-in-pytorch/img10.jpeg" alt=""></p>
+<p>However, there is another easy method shown in the Pytorch tutorials which can be used to make the DataLoaders.</p>
+<h4 id="model"><a class="heading-anchor" aria-hidden tabindex="-1" href="#model"><span class="anchor-icon">#</span></a>Model</h4>
+<ul>
+<li>The Identity module gives output what it takes as input.</li>
+<li>The LinearLayer module gives a single Linear layer followed by an optional BatchNormalization layer.</li>
+<li>The ProjectionHead module gives a linear or non-linear projection head according to the argument passed.</li>
+<li>The PreModel module gives the model to be used for pre-training, i.e. the <strong>base encoder f(.)</strong> with an <strong>MLP g(.)</strong> on top of it. The class PreModel uses <strong>ResNet50</strong>. However, this can be modified according to your need and can even be made customizable with some little extra work.</li>
+</ul>
+<hr>
+<h4 id="loss-function"><a class="heading-anchor" aria-hidden tabindex="-1" href="#loss-function"><span class="anchor-icon">#</span></a>Loss Function</h4>
+<p>The Loss function code has been taken from this <a href="https://github.com/Spijkervet/SimCLR">repo</a> (<a href="https://github.com/Spijkervet">Spijkervet</a>/<a href="https://github.com/Spijkervet/SimCLR">SimCLR</a>) and modified slightly. People working on multiple GPUs can refer to the repo for additional help.</p>
+<h4 id="optimizer"><a class="heading-anchor" aria-hidden tabindex="-1" href="#optimizer"><span class="anchor-icon">#</span></a>Optimizer</h4>
+<p>The LARS optimizer implementation is also taken from <a href="https://github.com/Spijkervet">Spijkervet</a>/<a href="https://github.com/Spijkervet/SimCLR">SimCLR</a>. However, some issues which were raised on the repo has been fixed in the code below. This implementation is also similar to the Tensorflow implementation in <a href="https://github.com/google-research">google-research</a>/<a href="https://github.com/google-research/simclr">simclr</a>.</p>
+<blockquote>
+<p>Optimizer, Scheduler and Loss function declaration</p>
+</blockquote>
+<h4 id="some-extra-functions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#some-extra-functions"><span class="anchor-icon">#</span></a>Some extra functions</h4>
+<h3 id="training"><a class="heading-anchor" aria-hidden tabindex="-1" href="#training"><span class="anchor-icon">#</span></a>Training</h3>
+<h4 id="pretraining-result"><a class="heading-anchor" aria-hidden tabindex="-1" href="#pretraining-result"><span class="anchor-icon">#</span></a>Pretraining Result</h4>
+<p>Plotting the features after dimensionality reduction using TSNE after 100 epochs of pretraining looks like the plot shown below.</p>
+<p><img src="/images/blog/simclr-in-pytorch/img18.png" alt=""></p>
+<p>Loss curve</p>
+<p><img src="/images/blog/simclr-in-pytorch/img19.png" alt=""></p>
+<p>TSNE-fied features from the output of the base encoder after 100 epochs of training.</p>
+<hr>
+<h3 id="create-downstream-model"><a class="heading-anchor" aria-hidden tabindex="-1" href="#create-downstream-model"><span class="anchor-icon">#</span></a>Create Downstream model</h3>
+<p>In the code snippet below it is shown that the parameters of the pre-trained model are frozen. This is the case in Linear Evaluation. However, if anyone wants to finetune the whole model, then change <code>p.requires_grad = False</code> to <code>p.requires_grad = True</code>.</p>
+<p>Also, it can be seen that the projector is discarded in the downstream task here.</p>
+<h4 id="datagenerator-for-the-downstream-task"><a class="heading-anchor" aria-hidden tabindex="-1" href="#datagenerator-for-the-downstream-task"><span class="anchor-icon">#</span></a>DataGenerator for the Downstream task</h4>
+<p>In the downstream task, no augmentation except RandomResizedCrop has been used. Also, you can just use the DataLoader as shown in the PyTorch CIFAR10 tutorial. <a href="https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html">Link</a></p>
+<h4 id="some-more-declarations"><a class="heading-anchor" aria-hidden tabindex="-1" href="#some-more-declarations"><span class="anchor-icon">#</span></a>Some more declarations</h4>
+<h3 id="downstream-training"><a class="heading-anchor" aria-hidden tabindex="-1" href="#downstream-training"><span class="anchor-icon">#</span></a>Downstream Training</h3>
+<h4 id="downstream-trainingresults"><a class="heading-anchor" aria-hidden tabindex="-1" href="#downstream-trainingresults"><span class="anchor-icon">#</span></a>Downstream Training Results</h4>
+<p><img src="/images/blog/simclr-in-pytorch/img24.png" alt=""><img src="/images/blog/simclr-in-pytorch/img25.png" alt=""></p>
+<p>(a) Loss (b) Training Accuracy</p>
+<h3 id="downstream-inference"><a class="heading-anchor" aria-hidden tabindex="-1" href="#downstream-inference"><span class="anchor-icon">#</span></a>Downstream Inference</h3>
+<p>The pre-trained model achieved approx 85% by linear evaluation in the downstream classification task. The authors of the original SimCLR paper achieved around 84% by linear evaluation on CIFAR10. However, the ResNet encoder used in this implementation was not trained from scratch. Rather, the weights were initialized to ImageNet trained weights. The performance may differ if one uses randomly initialized weights.</p>
+<p>The Jupyter Notebook can found <a href="https://github.com/sadimanna/simclr_pytorch">here</a>.</p>
+<hr>
+<p>Please give the article a clap if you like it!!</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/simclr-in-pytorch-5f290cb11dd7">Medium</a>.</em></p>7:["$","$L10",null,{"title":"SimCLR in PyTorch","date":"$D2021-06-30T00:00:00.000Z","readingTime":6,"categories":["Self-Supervised Learning","Deep Learning"],"tags":["deep-learning","pytorch","self-supervised-learning","simclr","computer-vision"],"contentHtml":"$11","headings":[{"level":4,"id":"the-simclr-paper-presents-several-contributions","text":"The SimCLR paper presents several contributions:"},{"level":4,"id":"the-framework-consists-of-fourparts","text":"The framework consists of four parts:"},{"level":4,"id":"some-points-to-benoted","text":"Some points to be noted:"},{"level":4,"id":"import-libraries","text":"Import Libraries"},{"level":4,"id":"set-seed-for-reproducibility","text":"Set Seed for reproducibility"},{"level":4,"id":"download-cifar10dataset","text":"Download CIFAR10 Dataset"},{"level":4,"id":"building-dataloader","text":"Building DataLoader"},{"level":4,"id":"model","text":"Model"},{"level":4,"id":"loss-function","text":"Loss Function"},{"level":4,"id":"optimizer","text":"Optimizer"},{"level":4,"id":"some-extra-functions","text":"Some extra functions"},{"level":3,"id":"training","text":"Training"},{"level":4,"id":"pretraining-result","text":"Pretraining Result"},{"level":3,"id":"create-downstream-model","text":"Create Downstream model"},{"level":4,"id":"datagenerator-for-the-downstream-task","text":"DataGenerator for the Downstream task"},{"level":4,"id":"some-more-declarations","text":"Some more declarations"},{"level":3,"id":"downstream-training","text":"Downstream Training"},{"level":4,"id":"downstream-trainingresults","text":"Downstream Training Results"},{"level":3,"id":"downstream-inference","text":"Downstream Inference"}],"prevPost":{"slug":"2021-06-21-statistical-learning-theory-part-4","title":"Statistical Learning Theory Part 4"},"nextPost":{"slug":"2021-07-30-plotting-grouped-bar-chart-in-matplotlib","title":"Plotting Grouped Bar Chart in Matplotlib"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"SimCLR in PyTorch — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

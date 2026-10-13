@@ -1,0 +1,135 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2022-08-25-how-to-get-model-summary-in-pytorch",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2022-08-25-how-to-get-model-summary-in-pytorch","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2022-08-25-how-to-get-model-summary-in-pytorch","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","99rP83W7p5oWJcgwLU4_r",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2ac7,<hr>
+<p><img src="/images/blog/how-to-get-model-summary-in-pytorch/img1.png" alt=""></p>
+<p>Unlike <strong>Keras</strong>, there is no method in <strong>PyTorch</strong> <em><strong>nn.Module</strong></em> class to calculate the number of trainable and non-trainable parameters in a model and show the model summary layer-wise. Studying several posts on Stack Overflow, I have figured out three ways to do that. In this post, I am going to summarize those three methods I know of to calculate the number of trainable and non-trainable parameters in a PyTorch model.</p>
+<h3 id="1-manually"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-manually"><span class="anchor-icon">#</span></a>1. Manually</h3>
+<p>There does exist a simple method using <strong><em>numel</em>(Ref:</strong> <a href="https://stackoverflow.com/questions/49201236/check-the-total-number-of-parameters-in-a-pytorch-model"><strong>Stack Overflow</strong></a>)</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> prettytable <span class="hljs-keyword">import</span> PrettyTable
+</code></pre>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">count_parameters</span>(<span class="hljs-params">model</span>):
+    table = PrettyTable([“Modules”, “Parameters”])
+    total_params = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> name, parameter <span class="hljs-keyword">in</span> model.named_parameters():
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> parameter.requires_grad: <span class="hljs-keyword">continue</span>
+        params = parameter.numel()
+        table.add_row([name, params])
+        total_params+=params
+    <span class="hljs-built_in">print</span>(table)
+    <span class="hljs-built_in">print</span>(f”Total Trainable Params: {total_params}”)
+    <span class="hljs-keyword">return</span> total_params
+</code></pre>
+<p>For ResNet18, the above function outputs the number of parameters like this</p>
+<pre><code class="hljs language-text">+------------------------------+------------+ 
+|           Modules            | Parameters | 
++------------------------------+------------+ 
+|         conv1.weight         |    9408    | 
+|          bn1.weight          |     64     | 
+|           bn1.bias           |     64     | 
+|    layer1.0.conv1.weight     |   36864    | 
+|     layer1.0.bn1.weight      |     64     | 
+|      layer1.0.bn1.bias       |     64     |
+.
+.
+.
+|          fc.weight           |   512000   | 
+|           fc.bias            |    1000    | 
++------------------------------+------------+ 
+Total Trainable Params: 11689512
+</code></pre>
+<p>So, the output is in a parameter-wise manner, and we can see the <strong>trainable</strong> parameters for each parameter that exists in the model.</p>
+<h3 id="2-using-torchsummary"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-using-torchsummary"><span class="anchor-icon">#</span></a>2. Using torchsummary</h3>
+<p>Now, there exists one library called <em><strong>torchsummary</strong></em>,which can be used to print out the trainable and non-trainable parameters in a Keras-like manner for PyTorch models. It is very user-friendly with minimal syntax. The current version is <strong>1.5.1</strong> and it is installed by default when installing the torch library.<br>
+It is available <a href="https://pypi.org/project/torch-summary/"><strong>here</strong></a><strong>.</strong></p>
+<p>You can install it using</p>
+<pre><code class="hljs language-text">python -m pip install torchsummary
+</code></pre>
+<p>if not already installed.</p>
+<h4 id="import"><a class="heading-anchor" aria-hidden tabindex="-1" href="#import"><span class="anchor-icon">#</span></a>Import</h4>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> torchsummary <span class="hljs-keyword">import</span> summary
+</code></pre>
+<p>Suppose the model you are using is a simple ResNet18 model</p>
+<pre><code class="hljs language-text">model = torchvision.models.resnet18().cuda()
+</code></pre>
+<p>Then, the model summary is obtained by</p>
+<pre><code class="hljs language-text">summary(model, input_size = (3, 64, 64), batch_size = -1)
+</code></pre>
+<p>There is another argument ‘<em><strong>device</strong></em>’ which is set to ‘<strong>cuda</strong>’ by default.</p>
+<p>The output will look like this</p>
+<pre><code class="hljs language-text">— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — Layer (type)               Output Shape                  Param # ================================================================ Conv2d-1               [-1, 64, 112, 112]                  9,408 
+BatchNorm2d-2          [-1, 64, 112, 112]                    128 
+ReLU-3                 [-1, 64, 112, 112]                      0 
+MaxPool2d-4              [-1, 64, 56, 56]                      0 
+Conv2d-5                 [-1, 64, 56, 56]                 36,864
+.
+.
+.
+AdaptiveAvgPool2d-67      [-1, 512, 1, 1]                      0            Linear-68                      [-1, 1000]                513,000 ================================================================ Total params: 11,689,512 
+Trainable params: 11,689,512 
+Non-trainable params: 0 
+---------------------------------------------------------------- Input size (MB): 0.57 
+Forward/backward pass size (MB): 62.79 
+Params size (MB): 44.59 
+Estimated Total Size (MB): 107.96 
+----------------------------------------------------------------
+</code></pre>
+<p>Now, if your model looks something like this where the base model has several branches and each takes a different input,</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Model</span>(torch.nn.Module):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):
+        <span class="hljs-built_in">super</span>().__init__()
+        <span class="hljs-variable language_">self</span>.resnet1 = torchvision.models.resnet18().cuda()
+        <span class="hljs-variable language_">self</span>.resnet2 = torchvision.models.resnet18().cuda()
+        <span class="hljs-variable language_">self</span>.resnet3 = torchvision.models.resnet18().cuda()
+    
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">forward</span>(<span class="hljs-params">self, *x</span>):
+        out1 = <span class="hljs-variable language_">self</span>.resnet1(x[<span class="hljs-number">0</span>])
+        out2 = <span class="hljs-variable language_">self</span>.resnet2(x[<span class="hljs-number">1</span>])
+        out3 = <span class="hljs-variable language_">self</span>.resnet3(x[<span class="hljs-number">2</span>])
+        out = torch.cat([out1, out2, out3], dim = <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">return</span> out
+</code></pre>
+<p>That is the input to your model is a list of tensors, then to obtain the model summary,</p>
+<pre><code class="hljs language-text">summary(Model().cuda(), input_size = [(3, 64, 64)]*3)
+</code></pre>
+<p>The output will be similar to the previous one but will be a bit confusing since the <em><strong>torchsummary</strong></em> library squeezes the summary of each constituent ResNet module into one single summary file without any proper distinguishable boundary between the summaries of two consecutive modules.</p>
+<h3 id="3-using-torchinfo"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-using-torchinfo"><span class="anchor-icon">#</span></a>3. Using torchinfo</h3>
+<blockquote>
+<p>previously torch-summary</p>
+</blockquote>
+<p>It may look like it is the same library as the previous one. But it is not. In fact, it is the best of all three methods I am showing here, in my opinion. The current version is <strong>1.7.0.</strong> It is available <a href="https://pypi.org/project/torchinfo/"><strong>here</strong></a>.</p>
+<p>You can install it using</p>
+<pre><code class="hljs language-text">python -m pip install torchinfo
+</code></pre>
+<p>This library also has a function named <em><strong>summary.</strong></em> But it comes with many more options and that is what makes it better. The arguments are <strong>model</strong> (<em>nn.module</em>), <strong>input_size</strong> (<em>Sequence of Sizes</em>), <strong>input_data</strong> (<em>Sequence of Tensors</em>), <strong>batch_dim</strong> (<em>int</em>), <strong>cache_forward_pass</strong> (<em>bool</em>), <strong>col_names</strong> (<em>Iterable</em>[<em>str</em>]), <strong>col_width</strong> (<em>int</em>), <strong>depth</strong> (<em>int</em>), <strong>device</strong> (<em>torch.Device</em>), <strong>dtypes</strong> (<em>List</em>[<em>torch.dtype</em>]), <strong>mode</strong> (<em>str</em>), <strong>row_settings</strong> (<em>Iterable</em>[<em>str</em>]), <strong>verbose</strong> (<em>int</em>) and <strong>**kwargs</strong>.</p>
+<p>Using <em><strong>torchinfo.summary</strong></em> we can get a lot of information by giving currently supported options from (“<em>input_size</em>”, “<em>output_size</em>”, “<em>num_params</em>”, “<em>kernel_size</em>”, “<em>mult_adds</em>”, “<em>trainable</em>” ) as input for the argument <strong>col_names.</strong></p>
+<p>If we run the following line of code</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torchinfo
+</code></pre>
+<pre><code class="hljs language-text">torchinfo.summary(model, (3, 224, 224), batch_dim = 0, col_names = (“input_size”, “output_size”, “num_params”, “kernel_size”, “mult_adds”), verbose = 0)
+</code></pre>
+<p>Change the <strong>verbose</strong> to 1 if not using Jupyter Notebook or Google Colab.</p>
+<p>The output of the above code snippet looks like this</p>
+<p>A stark difference is observed when we print the summary of <strong>Model</strong> using <em><strong>torchinfo.summary</strong></em>*.* The following line of code</p>
+<pre><code class="hljs language-text">torchinfo.summary(Model().cuda(), [(3, 64, 64)]*3, batch_dim = 0, col_names = (“input_size”, “output_size”, “num_params”, “kernel_size”, “mult_adds”), verbose = 0)
+</code></pre>
+<p>yields the following output</p>
+<p>The default of the <strong>depth</strong> argument is 3 in <em><strong>torchinfo.summary</strong></em>. We can see that the constituent ResNet modules are easily distinguishable and the constituent modules are presented in a hierarchical fashion. This is what makes this library better for these types of models in my opinion.</p>
+<hr>
+<p>Clap and share if you like this post. Follow for more posts like this.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/how-to-get-model-summary-in-pytorch-57db7824d1e3">Medium</a>.</em></p>7:["$","$L10",null,{"title":"How to get Model Summary in PyTorch","date":"$D2022-08-25T00:00:00.000Z","readingTime":5,"categories":["Deep Learning","PyTorch"],"tags":["deep-learning","pytorch","model-summary","torchinfo"],"contentHtml":"$11","headings":[{"level":3,"id":"1-manually","text":"1. Manually"},{"level":3,"id":"2-using-torchsummary","text":"2. Using torchsummary"},{"level":4,"id":"import","text":"Import"},{"level":3,"id":"3-using-torchinfo","text":"3. Using torchinfo"}],"prevPost":{"slug":"2022-03-21-how-to-plot-multiple-2d-series-in-3d-waterfall-plot-in-matpl","title":"How to plot multiple 2D Series in 3D (Waterfall plot) in Matplotlib"},"nextPost":{"slug":"2022-10-21-quick-tips-2-try-plotting-an-all-1s-2d-array-in-matplotlib","title":"Quick Tips #2: Try Plotting an All 1s 2D Array in Matplotlib"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"How to get Model Summary in PyTorch — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

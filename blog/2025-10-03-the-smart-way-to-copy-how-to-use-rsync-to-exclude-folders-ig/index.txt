@@ -1,0 +1,97 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-10-03-the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-10-03-the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-10-03-the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","vt-fYnqIXxXcCT0RFw2bZ",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T2255,<hr>
+<p><img src="/images/blog/the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig/img1.jpeg" alt=""></p>
+<p>For those who regularly manage backups, migrate data, or need to move a large number of files, the <code>rsync</code> command is an indispensable tool. Unlike a simple <code>scp</code> command, <code>rsync</code> is built for efficiency and flexibility. With a few simple flags, you can precisely control which files are copied, which are ignored, and which are updated.</p>
+<p>This guide will show you how to use <code>rsync</code> to handle two common scenarios:</p>
+<ol>
+<li>Excluding specific folders from a copy operation.</li>
+<li>Avoiding the overwriting of existing files in the destination.</li>
+<li>Updating existing files in the destination.</li>
+</ol>
+<h3 id="excluding-specific-directories"><a class="heading-anchor" aria-hidden tabindex="-1" href="#excluding-specific-directories"><span class="anchor-icon">#</span></a>Excluding specific directories</h3>
+<p>Let’s say you’re backing up your website directory but want to skip large, unnecessary folders like cached files or git repositories. <code>rsync</code> makes this simple with the <code>--exclude</code> flag.</p>
+<p><strong>The scenario:</strong><br>
+You want to copy everything from <code>~/my_website/</code> to a backup location, <code>~/backups/</code>, but you want to skip the <code>node_modules/</code> and <code>.git/</code> directories.</p>
+<p><strong>The command:</strong></p>
+<pre><code class="hljs language-text">rsync -av --exclude 'node_modules/' --exclude '.git/' ~/my_website/ ~/backups/
+</code></pre>
+<p><strong>Breaking it down:</strong></p>
+<ul>
+<li><code>-a</code>: Activates "archive mode." This is a standard option that ensures a recursive copy while preserving permissions, ownership, and timestamps.</li>
+<li><code>-v</code>: Stands for "verbose," which gives you a clear output of what <code>rsync</code> is doing.</li>
+<li><code>--exclude 'directory_to_exclude/'</code>: The key to ignoring a specific folder. The trailing slash <code>/</code> is important here, as it ensures that only directories with that name are excluded, not files.</li>
+<li><code>~/my_website/</code>: The source directory. The trailing <code>/</code> on the source path tells <code>rsync</code> to copy the <em>contents</em> of the directory, not the directory itself.</li>
+<li><code>~/backups/</code>: The destination directory.</li>
+</ul>
+<p><strong>For multiple or complex exclusions</strong>, you can create a file (e.g., <code>exclude_list.txt</code>) and use the <code>--exclude-from</code> flag instead.</p>
+<h3 id="ignoring-existingfiles"><a class="heading-anchor" aria-hidden tabindex="-1" href="#ignoring-existingfiles"><span class="anchor-icon">#</span></a>Ignoring existing files</h3>
+<p>Another common task is adding new files to a destination without overwriting any files that are already there. This is especially useful for an interrupted transfer or when you just want to append to a collection.</p>
+<p><strong>The scenario:</strong><br>
+You have a set of photos in a source folder, but you’ve already copied some of them to the destination. You want to add any new photos without touching the existing ones.</p>
+<p><strong>The command:</strong></p>
+<pre><code class="hljs language-text">rsync -av --ignore-existing ~/new_photos/ ~/all_photos/
+</code></pre>
+<p><strong>How it works:</strong></p>
+<ul>
+<li><code>--ignore-existing</code>: This flag tells <code>rsync</code> to skip any file that already exists in the destination directory. This is a more direct approach than <code>--update</code> (which only skips files if the destination's modification time is newer), making it perfect for your needs.</li>
+</ul>
+<h4 id="putting-it-alltogether"><a class="heading-anchor" aria-hidden tabindex="-1" href="#putting-it-alltogether"><span class="anchor-icon">#</span></a>Putting it all together</h4>
+<p>You can combine these powerful features into a single command for maximum efficiency.</p>
+<p><strong>The scenario:</strong><br>
+Copy all new website files to your backup directory, skipping unnecessary build files and leaving existing backups untouched.</p>
+<p><strong>The combined command:</strong></p>
+<pre><code class="hljs language-text">rsync -av --exclude 'node_modules/' --exclude 'cache/' --ignore-existing ~/my_website/ ~/backups/
+</code></pre>
+<p>By mastering these <code>rsync</code> flags, you can perform highly specific and efficient file transfers, saving time and avoiding manual cleanup.</p>
+<h3 id="updating-existing-files-in-the-destination"><a class="heading-anchor" aria-hidden tabindex="-1" href="#updating-existing-files-in-the-destination"><span class="anchor-icon">#</span></a>Updating existing files in the destination.</h3>
+<p>The <code>-u</code> or <code>--update</code> flag in <code>rsync</code> ensures that it will not overwrite any files in the destination directory that are newer than their corresponding source files. It is used to protect newer data at the destination from being accidentally replaced by older versions from the source.</p>
+<p>Here’s a breakdown of how it works:</p>
+<ul>
+<li><strong>Standard</strong> <code>rsync</code> <strong>behavior:</strong> By default, <code>rsync</code> decides which files to update by comparing the last-modified time and size. If a file in the destination is older or has a different size than the source file, it is updated.</li>
+<li><code>rsync</code> <strong>with</strong> <code>-u</code><strong>:</strong> With the <code>--update</code> flag, <code>rsync</code> adds another condition. It will only update a file if the source file has a <em>more recent</em> modification time. If the destination file has a newer or identical timestamp, the file is skipped.</li>
+</ul>
+<h4 id="when-to-use-u"><a class="heading-anchor" aria-hidden tabindex="-1" href="#when-to-use-u"><span class="anchor-icon">#</span></a>When to use <code>-u</code></h4>
+<p>The <code>--update</code> flag is useful in several scenarios:</p>
+<ul>
+<li><strong>Preventing downgrades:</strong> If you have manually edited a file on a remote server and then later run a sync operation from your local machine, the <code>-u</code> flag prevents the older local version from overwriting your newer remote changes.</li>
+<li><strong>Multi-directional syncs:</strong> When syncing files between multiple locations, <code>--update</code> helps prevent unintentional rollbacks of recent edits.</li>
+<li><strong>Resuming failed transfers:</strong> While <code>rsync</code> has other mechanisms for resuming transfers (like <code>-P</code>), combining it with <code>-u</code> can ensure that you only transfer files that are actually new or more recent, skipping anything that was already partially or fully copied with a newer timestamp.</li>
+</ul>
+<h4 id="example"><a class="heading-anchor" aria-hidden tabindex="-1" href="#example"><span class="anchor-icon">#</span></a>Example</h4>
+<p>Imagine a <code>source</code> directory and a <code>destination</code> directory.</p>
+<p><strong>Directory contents:</strong></p>
+<pre><code class="hljs language-text">source/
+└── file.txt  (last modified: 10:00 AM)
+
+destination/
+</code></pre>
+<p><strong>With the standard</strong> <code>-a</code> <strong>(archive) flag,</strong> <code>rsync</code> <strong>would run like this:</strong></p>
+<pre><code class="hljs language-text">rsync -av source/ destination/
+</code></pre>
+<p>In this case, <code>rsync</code> sees that the destination <code>file.txt</code> has a newer timestamp and would <strong>skip</strong> the file, as this is the default behavior when the destination is newer. However, adding the <code>-u</code> flag makes this behavior explicit.</p>
+<p><strong>With the</strong> <code>-u</code> <strong>flag,</strong> <code>rsync</code> <strong>makes this explicit:</strong></p>
+<pre><code class="hljs language-text">rsync -auv source/ destination/
+</code></pre>
+<p>This command will perform the same action, ensuring that files on the destination that are newer are not overwritten.</p>
+<p><strong>Contrast with</strong> <code>--ignore-existing</code><strong>:</strong><br>
+The <code>--ignore-existing</code> flag is different from <code>-u</code>. <code>--ignore-existing</code> will never overwrite an existing file at the destination, regardless of its modification time. It only copies files that do not exist at all in the destination. The <code>-u</code> flag is more flexible and still allows for updates, but only when the source file is newer.</p>
+<hr>
+<p>Clap and share if you found this post useful.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ignore-or-update-existing-files-132730f78881">Medium</a>.</em></p>7:["$","$L10",null,{"title":"The Smart Way to Copy: How to Use rsync to Exclude Folders, Ignore or Update Existing Files","date":"$D2025-10-03T00:00:00.000Z","readingTime":5,"categories":["Linux","Developer Tools"],"tags":["linux","rsync","bash","file-management"],"contentHtml":"$11","headings":[{"level":3,"id":"excluding-specific-directories","text":"Excluding specific directories"},{"level":3,"id":"ignoring-existingfiles","text":"Ignoring existing files"},{"level":4,"id":"putting-it-alltogether","text":"Putting it all together"},{"level":3,"id":"updating-existing-files-in-the-destination","text":"Updating existing files in the destination."},{"level":4,"id":"when-to-use-u","text":"When to use -u"},{"level":4,"id":"example","text":"Example"}],"prevPost":{"slug":"2025-08-29-generating-a-gantt-chart-in-latex","title":"Generating a Gantt Chart in LaTeX"},"nextPost":{"slug":"2025-12-22-deploying-a-next-js-static-site-to-github-pages","title":"Deploying a Next.js Static Site to GitHub Pages"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"The Smart Way to Copy: How to Use rsync to Exclude Folders, Ignore or Update Existing Files — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

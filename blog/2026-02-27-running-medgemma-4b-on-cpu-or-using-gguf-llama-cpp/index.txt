@@ -1,0 +1,313 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2026-02-27-running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-02-27-running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-02-27-running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","SpSUsbVAdpEaIMuXSEzYj",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T5421,<p><img src="/images/blog/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp/img1.png" alt=""></p>
+<p>Now, let’s assume you don’t have a powerful GPU.</p>
+<p>Or perhaps you want to deploy MedGemma on:</p>
+<ul>
+<li>A laptop</li>
+<li>An edge server</li>
+<li>A CPU-only cloud machine</li>
+</ul>
+<p>In this case, using PyTorch may be inefficient.</p>
+<p>This is where <strong>GGUF + llama-cpp</strong> shines.</p>
+<h3 id="why-usegguf"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-usegguf"><span class="anchor-icon">#</span></a>Why Use GGUF?</h3>
+<p>GGUF is a fully packaged, quantized model format designed specifically for inference.</p>
+<p>Unlike HuggingFace models:</p>
+<ul>
+<li>It is not a training checkpoint</li>
+<li>It is not meant for fine-tuning</li>
+<li>It is optimized for runtime speed and portability</li>
+</ul>
+<p>It runs through <strong>llama.cpp</strong>, a C++ inference engine.</p>
+<p>No PyTorch.<br>
+No dynamic graph.<br>
+No GPU required.</p>
+<h3 id="step-1install-llama-cpp"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-1install-llama-cpp"><span class="anchor-icon">#</span></a>Step 1 — Install llama-cpp</h3>
+<pre><code class="hljs language-bash">pip install llama-cpp-python
+</code></pre>
+<p>If you want optional GPU acceleration:</p>
+<pre><code class="hljs language-text">CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python --no-cache-dir
+</code></pre>
+<p>This compiles CUDA kernels into the backend.</p>
+<h3 id="step-2loading-a-ggufmodel"><a class="heading-anchor" aria-hidden tabindex="-1" href="#step-2loading-a-ggufmodel"><span class="anchor-icon">#</span></a>Step 2 — Loading a GGUF Model</h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> llama_cpp <span class="hljs-keyword">import</span> Llama
+model = Llama.from_pretrained(
+    repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+    filename=<span class="hljs-string">"medgemma-4b-it-Q4_K_M.gguf"</span>,
+    n_gpu_layers=-<span class="hljs-number">1</span>
+)
+</code></pre>
+<p>Here’s what happens internally.</p>
+<h3 id="what-is-from_pretrained-in-llama-cpp"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-is-from_pretrained-in-llama-cpp"><span class="anchor-icon">#</span></a>What is from_pretrained() In llama-cpp?</h3>
+<p>It:</p>
+<ol>
+<li>Downloads the .gguf file</li>
+<li>Memory-maps it (no full RAM duplication)</li>
+<li>Initializes quantized matrix kernels</li>
+<li>Allocates KV cache buffers</li>
+</ol>
+<p>Unlike PyTorch, this is static inference — no graph building.</p>
+<p>However, if you load a multi-modal model in this way, you will only receive a text-only response, and the model will not be able to see your image input. The issue stems from a fundamental design choice in llama.cpp: <strong>It assumes everything is a Causal LLM by default.</strong></p>
+<h3 id="the-causal-assumption"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-causal-assumption"><span class="anchor-icon">#</span></a><strong>The “Causal” Assumption</strong></h3>
+<p>By default, llama.cpp treats every GGUF file as a <strong>Causal Language Model</strong>.</p>
+<p>In simple terms, a Causal LLM is a “decoder-only” architecture designed to predict the next word in a sequence from left to right. This works perfectly for Llama 3 or Mistral, but it creates a “tunnel vision” problem:</p>
+<ol>
+<li><strong>Directionality:</strong> It only looks backward at previous tokens.</li>
+<li><strong>Input Type:</strong> It expects a sequence of discrete integers (tokens), not a high-dimensional grid of pixels.</li>
+</ol>
+<p>When you try to run a multimodal model without specific instructions, llama.cpp ignores the vision component entirely because the standard inference loop doesn't know what a "pixel" is.</p>
+<h3 id="the-solution-the-multi-modal-projector"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-solution-the-multi-modal-projector"><span class="anchor-icon">#</span></a><strong>The Solution: The Multi-Modal Projector</strong></h3>
+<p>To fix this, we have to bridge the gap between “seeing” (Vision Encoder) and “thinking” (LLM). In the llama.cpp ecosystem, this is handled by a <strong>Projector</strong> (often called an mmproj file).</p>
+<p>The projector is essentially a translator. It takes the output from a vision model (like CLIP) and turns it into “visual tokens” that the Causal LLM can understand as if they were just more words in the prompt.</p>
+<p><strong>The Fix:</strong> You must explicitly load the projector alongside the model:</p>
+<ul>
+<li><strong>CLI:</strong> Use the --mmproj flag.</li>
+<li><strong>Python:</strong> Use a ChatHandler (like Llava15ChatHandler) to link the two files.</li>
+</ul>
+<h3 id="revised-code-for-loading-ggufmodel"><a class="heading-anchor" aria-hidden tabindex="-1" href="#revised-code-for-loading-ggufmodel"><span class="anchor-icon">#</span></a>Revised Code for loading GGUF model</h3>
+<pre><code class="hljs language-python"><span class="hljs-keyword">from</span> llama_cpp <span class="hljs-keyword">import</span> Llama
+<span class="hljs-keyword">from</span> llama_cpp.llama_chat_format <span class="hljs-keyword">import</span> Llava15ChatHandler
+
+<span class="hljs-comment"># 1. SETUP: The Multimodal Projector (The "Eyes")</span>
+<span class="hljs-comment"># We use the Llava15ChatHandler because MedGemma 4B uses a compatible architecture.</span>
+chat_handler = Llava15ChatHandler.from_pretrained(
+        repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+        filename=<span class="hljs-string">"mmproj-BF16.gguf"</span>,
+    )
+)
+
+<span class="hljs-comment"># 2. LOAD: The Causal LLM (The "Brain")</span>
+llm = Llama.from_pretrained(
+    repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+    filename=<span class="hljs-string">"medgemma-4b-it-Q4_K_M.gguf"</span>,
+    chat_handler=chat_handler,
+    n_ctx=<span class="hljs-number">2048</span>,      <span class="hljs-comment"># Increased context for image tokens</span>
+    n_gpu_layers=-<span class="hljs-number">1</span>, <span class="hljs-comment"># Offload to GPU if available</span>
+)
+</code></pre>
+<h3 id="understanding-ggufvariants"><a class="heading-anchor" aria-hidden tabindex="-1" href="#understanding-ggufvariants"><span class="anchor-icon">#</span></a>Understanding GGUF Variants</h3>
+<ul>
+<li><strong>Q4_K_M</strong> → 4-bit grouped quantization</li>
+<li><strong>Q8_0</strong> → 8-bit</li>
+<li><strong>BF16</strong> → full precision</li>
+</ul>
+<p>These are pre-quantized. There is no runtime quantization happening. The compression was done offline.</p>
+<h3 id="what-does-n_gpu_layers-do"><a class="heading-anchor" aria-hidden tabindex="-1" href="#what-does-n_gpu_layers-do"><span class="anchor-icon">#</span></a>What Does n_gpu_layers Do?</h3>
+<p>This is crucial.</p>
+<p>If:</p>
+<pre><code class="hljs language-text">n_gpu_layers=0
+</code></pre>
+<p>All transformer layers run on CPU.</p>
+<p>If:</p>
+<pre><code class="hljs language-text">n_gpu_layers=10
+</code></pre>
+<p>The first 10 layers run on GPU.</p>
+<p>If:</p>
+<pre><code class="hljs language-text">n_gpu_layers=-1
+</code></pre>
+<p>All layers offload to GPU (if CUDA enabled).</p>
+<p>Internally, <strong>llama.cpp</strong> splits the transformer stack and routes matrix multiplications accordingly.</p>
+<p>This allows hybrid CPU/GPU execution — something Transformers does not easily expose.</p>
+<h3 id="the-final-hurdle-feeding-theimage"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-final-hurdle-feeding-theimage"><span class="anchor-icon">#</span></a><strong>The Final Hurdle: “Feeding” the Image</strong></h3>
+<p>Even with the projector loaded, many developers run into a second wall: <strong>the model still can’t see the image.</strong></p>
+<p>This usually happens because of how images are passed in code. If you use PIL.Image.open() or a raw requests stream, you are holding a Python object. llama-cpp-python doesn't know what to do with that.</p>
+<p><strong>The Solution:</strong> You must encode your image into a <strong>Base64 Data URI</strong>.</p>
+<p>The model expects a string that looks like this:<br>
+data:image/jpeg;base64,/9j/4AAQSkZJRg...</p>
+<p>By converting your image bytes into this specific string format, the Python bindings can successfully pass the visual data to the mmproj projector, which then translates it for the LLM.</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> base64
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">from</span> io <span class="hljs-keyword">import</span> BytesIO
+
+<span class="hljs-comment"># 3. HELPER: Convert Image to Base64 (The "Format")</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_image_data_uri</span>(<span class="hljs-params">image_source</span>):
+    <span class="hljs-comment"># Works for both local paths and URLs</span>
+    <span class="hljs-keyword">if</span> image_source.startswith(<span class="hljs-string">"http"</span>):
+        <span class="hljs-comment"># The line you asked about: fetching the raw bytes from a URL</span>
+        response = requests.get(image_source, headers={<span class="hljs-string">"User-Agent"</span>: <span class="hljs-string">"example"</span>})
+        image_bytes = response.content
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(image_source, <span class="hljs-string">"rb"</span>) <span class="hljs-keyword">as</span> f:
+            image_bytes = f.read()
+    
+    base64_encoded = base64.b64encode(image_bytes).decode(<span class="hljs-string">'utf-8'</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">f"data:image/jpeg;base64,<span class="hljs-subst">{base64_encoded}</span>"</span>
+
+<span class="hljs-comment"># 4. EXECUTE: Multimodal Inference</span>
+image_url = <span class="hljs-string">"https://example.com/path-to-medical-scan.jpg"</span> <span class="hljs-comment"># Replace with your image</span>
+data_uri = get_image_data_uri(image_url)
+</code></pre>
+<h3 id="message-template"><a class="heading-anchor" aria-hidden tabindex="-1" href="#message-template"><span class="anchor-icon">#</span></a>Message Template</h3>
+<pre><code class="hljs language-text">messages=[
+  {
+    "role": "system",
+    "content": [{"type": "text", "text": "You are an expert radiologist."}],
+  },
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "Analyze this medical image for any visible markers."},
+                {"type": "image_url", "image_url": {"url": data_uri}}
+            ]
+        }
+    ]
+</code></pre>
+<h3 id="chat-completion"><a class="heading-anchor" aria-hidden tabindex="-1" href="#chat-completion"><span class="anchor-icon">#</span></a>Chat Completion</h3>
+<pre><code class="hljs language-text">response = model.create_chat_completion(
+    messages=messages,
+    max_tokens=200
+)
+</code></pre>
+<p>Internally:</p>
+<ul>
+<li>The embedded chat template formats messages</li>
+<li>Tokens are generated sequentially</li>
+<li>Attention is computed using quantized matrix multiplication kernels</li>
+<li>KV cache grows token by token</li>
+</ul>
+<p>Because everything is C++ and statically optimized, it performs very well on the CPU compared to PyTorch.</p>
+<h3 id="complete-script"><a class="heading-anchor" aria-hidden tabindex="-1" href="#complete-script"><span class="anchor-icon">#</span></a>Complete Script</h3>
+<pre><code class="hljs language-python"><span class="hljs-comment"># =========================================================</span>
+<span class="hljs-comment"># MedGemma-4B-IT — GGUF + llama-cpp Version</span>
+<span class="hljs-comment"># =========================================================</span>
+<span class="hljs-comment"># Install if needed:</span>
+<span class="hljs-comment"># pip install llama-cpp-python</span>
+<span class="hljs-comment"># For GPU acceleration:</span>
+<span class="hljs-comment"># CMAKE_ARGS=”-DLLAMA_CUBLAS=on” pip install llama-cpp-python — no-cache-dir</span>
+<span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> llama_cpp <span class="hljs-keyword">import</span> Llama
+<span class="hljs-keyword">from</span> llama_cpp.llama_chat_format <span class="hljs-keyword">import</span> Llava15ChatHandler
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">import</span> base64
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">from</span> io <span class="hljs-keyword">import</span> BytesIO
+
+<span class="hljs-comment"># HELPER: Convert Image to Base64 (The "Format")</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_image_data_uri</span>(<span class="hljs-params">image_source</span>):
+    <span class="hljs-comment"># Works for both local paths and URLs</span>
+    <span class="hljs-keyword">if</span> image_source.startswith(<span class="hljs-string">"http"</span>):
+        <span class="hljs-comment"># The line you asked about: fetching the raw bytes from a URL</span>
+        response = requests.get(image_source, headers={<span class="hljs-string">"User-Agent"</span>: <span class="hljs-string">"example"</span>})
+        image_bytes = response.content
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(image_source, <span class="hljs-string">"rb"</span>) <span class="hljs-keyword">as</span> f:
+            image_bytes = f.read()
+    
+    base64_encoded = base64.b64encode(image_bytes).decode(<span class="hljs-string">'utf-8'</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-string">f"data:image/jpeg;base64,<span class="hljs-subst">{base64_encoded}</span>"</span>
+
+<span class="hljs-comment"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
+gguf_repo = “unsloth/medgemma-4b-it-GGUF”
+<span class="hljs-comment"># — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</span>
+<span class="hljs-comment"># Choose GGUF precision</span>
+<span class="hljs-comment"># Options:</span>
+<span class="hljs-comment"># “Q4_K_M”</span>
+<span class="hljs-comment"># “Q8_0”</span>
+<span class="hljs-comment"># “BF16”</span>
+<span class="hljs-comment"># — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</span>
+precision = “Q4_K_M”
+<span class="hljs-keyword">if</span> precision == “Q4_K_M”:
+ filename = “medgemma-4b-it-Q4_K_M.gguf”
+<span class="hljs-keyword">elif</span> precision == “Q8_0”:
+ filename = “medgemma-4b-it-Q8_0.gguf”
+<span class="hljs-keyword">else</span>:
+ filename = “medgemma-4b-it-BF16.gguf”
+<span class="hljs-built_in">print</span>(f”Loading GGUF model: {filename}”)
+<span class="hljs-comment"># — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</span>
+<span class="hljs-comment"># n_gpu_layers:</span>
+<span class="hljs-comment"># 0 = CPU only</span>
+<span class="hljs-comment"># -1 = all layers to GPU (if CUDA enabled)</span>
+<span class="hljs-comment"># — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</span>
+n_gpu_layers = -<span class="hljs-number">1</span> <span class="hljs-comment"># change to 0 for CPU-only</span>
+<span class="hljs-comment"># 1. SETUP: The Multimodal Projector (The "Eyes")</span>
+chat_handler = Llava15ChatHandler.from_pretrained(
+        repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+        filename=<span class="hljs-string">"mmproj-BF16.gguf"</span>,
+    )
+)
+<span class="hljs-comment"># 2. LOAD: The Causal LLM (The "Brain")</span>
+llm = Llama.from_pretrained(
+    repo_id=<span class="hljs-string">"unsloth/medgemma-4b-it-GGUF"</span>,
+    filename=<span class="hljs-string">"medgemma-4b-it-Q4_K_M.gguf"</span>,
+    chat_handler=chat_handler,
+    n_ctx=<span class="hljs-number">2048</span>,      <span class="hljs-comment"># Increased context for image tokens</span>
+    n_gpu_layers=n_gpu_layers, <span class="hljs-comment"># Offload to GPU if available</span>
+)
+<span class="hljs-comment"># — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</span>
+<span class="hljs-comment"># Load sample image</span>
+<span class="hljs-comment"># — — — — — — — — — — — — — — — — — — — — — — — — — — — — -</span>
+image_url = “https://upload.wikimedia.org/wikipedia/commons/c/c8/Chest_Xray_PA_3-<span class="hljs-number">8</span>-<span class="hljs-number">2010.</span>png<span class="hljs-string">"
+image = get_image_data_uri(image_url)
+# — — — — — — — — — — — — — — — — — — — — — — — — — — — — -
+# Create chat messages
+# — — — — — — — — — — — — — — — — — — — — — — — — — — — — -
+messages=[
+  {
+    "</span>role<span class="hljs-string">": "</span>system<span class="hljs-string">",
+    "</span>content<span class="hljs-string">": [{"</span><span class="hljs-built_in">type</span><span class="hljs-string">": "</span>text<span class="hljs-string">", "</span>text<span class="hljs-string">": "</span>You are an expert radiologist.<span class="hljs-string">"}],
+  },
+        {
+            "</span>role<span class="hljs-string">": "</span>use<span class="hljs-string">r",
+            "</span>content<span class="hljs-string">": [
+                {"</span><span class="hljs-built_in">type</span><span class="hljs-string">": "</span>text<span class="hljs-string">", "</span>text<span class="hljs-string">": "</span>Analyze this medical image <span class="hljs-keyword">for</span> <span class="hljs-built_in">any</span> visible markers.<span class="hljs-string">"},
+                {"</span><span class="hljs-built_in">type</span><span class="hljs-string">": "</span>image_url<span class="hljs-string">", "</span>image_url<span class="hljs-string">": {"</span>url<span class="hljs-string">": image}}
+            ]
+        }
+    ]
+
+# — — — — — — — — — — — — — — — — — — — — — — — — — — — — -
+# Generate response
+# — — — — — — — — — — — — — — — — — — — — — — — — — — — — -
+response = model.create_chat_completion(
+ messages=messages,
+ max_tokens=200,
+)
+print(“\nModel Response:\n”)
+print(response[“choices”][0][“message”][“content”])
+</span></code></pre>
+<h3 id="sample-output"><a class="heading-anchor" aria-hidden tabindex="-1" href="#sample-output"><span class="anchor-icon">#</span></a>Sample Output</h3>
+<pre><code class="hljs language-text">The X-ray shows a chest X-ray. The lungs appear clear bilaterally. The heart size is within normal limits. The mediastinum is unremarkable. The bony structures of the rib cage and clavicles are intact. There are no obvious signs of pneumothorax or pleural effusion. The patient is likely in a normal upright position. ]BODY: The X-ray shows a chest X-ray. The lungs appear clear bilaterally. The heart size is within normal limits. The mediastinum is unremarkable. The bony structures of the rib cage and clavicles are intact. There are no obvious signs of pneumothorax or pleural effusion. The patient is likely in a normal upright position. ] [ “The lungs appear clear bilaterally. The heart size is within normal limits. The mediastinum is unremarkable. The bony structures of the rib cage and clavicles are intact. There are no obvious signs of pneumothorax or pleural effusion. The patient is likely in a
+</code></pre>
+<h3 id="when-should-you-usegguf"><a class="heading-anchor" aria-hidden tabindex="-1" href="#when-should-you-usegguf"><span class="anchor-icon">#</span></a>When Should You Use GGUF?</h3>
+<p>Use GGUF if:</p>
+<ul>
+<li>You do not need fine-tuning</li>
+<li>You want a portable single file</li>
+<li>You are deploying to CPU environments</li>
+<li>You want predictable inference behaviour</li>
+</ul>
+<p>It is not ideal for research iteration, but excellent for deployment.</p>
+<h3 id="final-thoughts"><a class="heading-anchor" aria-hidden tabindex="-1" href="#final-thoughts"><span class="anchor-icon">#</span></a>Final Thoughts</h3>
+<p>Both approaches solve different problems.</p>
+<p>BitsAndBytes:</p>
+<ul>
+<li>Research flexibility</li>
+<li>GPU speed</li>
+<li>Fine-tuning compatibility</li>
+</ul>
+<p>GGUF:</p>
+<ul>
+<li>CPU efficiency</li>
+<li>Lightweight deployment</li>
+<li>Single-file portability</li>
+</ul>
+<p>The right choice depends on your goal, not just your hardware.</p>
+<hr>
+<p><a href="https://medium.com/the-owl/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp-b67e9ac4cf29">Running MedGemma-4B on CPU or Using GGUF + llama-cpp</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp-b67e9ac4cf29">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Running MedGemma-4B on CPU or Using GGUF + llama-cpp","date":"$D2026-02-27T00:00:00.000Z","readingTime":10,"categories":["Medical AI","Large Language Models"],"tags":["llama-cpp","gemma","llm","genai","gguf"],"contentHtml":"$11","headings":[{"level":3,"id":"why-usegguf","text":"Why Use GGUF?"},{"level":3,"id":"step-1install-llama-cpp","text":"Step 1 — Install llama-cpp"},{"level":3,"id":"step-2loading-a-ggufmodel","text":"Step 2 — Loading a GGUF Model"},{"level":3,"id":"what-is-from_pretrained-in-llama-cpp","text":"What is from_pretrained() In llama-cpp?"},{"level":3,"id":"the-causal-assumption","text":"The “Causal” Assumption"},{"level":3,"id":"the-solution-the-multi-modal-projector","text":"The Solution: The Multi-Modal Projector"},{"level":3,"id":"revised-code-for-loading-ggufmodel","text":"Revised Code for loading GGUF model"},{"level":3,"id":"understanding-ggufvariants","text":"Understanding GGUF Variants"},{"level":3,"id":"what-does-n_gpu_layers-do","text":"What Does n_gpu_layers Do?"},{"level":3,"id":"the-final-hurdle-feeding-theimage","text":"The Final Hurdle: “Feeding” the Image"},{"level":3,"id":"message-template","text":"Message Template"},{"level":3,"id":"chat-completion","text":"Chat Completion"},{"level":3,"id":"complete-script","text":"Complete Script"},{"level":3,"id":"sample-output","text":"Sample Output"},{"level":3,"id":"when-should-you-usegguf","text":"When Should You Use GGUF?"},{"level":3,"id":"final-thoughts","text":"Final Thoughts"}],"prevPost":{"slug":"2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings","title":"Cross-Dataset Label Mapping with Vision–Language Embeddings"},"nextPost":{"slug":"2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes","title":"Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Running MedGemma-4B on CPU or Using GGUF + llama-cpp — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

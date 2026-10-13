@@ -1,0 +1,110 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2024-12-19-plotting-continuously-updating-gradient-vectors-on-loss-land",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2024-12-19-plotting-continuously-updating-gradient-vectors-on-loss-land","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2024-12-19-plotting-continuously-updating-gradient-vectors-on-loss-land","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","VtqQYifsvNA_XayT3EqUq",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T1a55,<hr>
+<p><img src="/images/blog/plotting-continuously-updating-gradient-vectors-on-loss-land/img1.jpeg" alt=""></p>
+<p>Gradients on a Landscape. Generated using Bing Image Creator.</p>
+<h2 id="mathematical-formulation-of-gradient-vectors"><a class="heading-anchor" aria-hidden tabindex="-1" href="#mathematical-formulation-of-gradient-vectors"><span class="anchor-icon">#</span></a>Mathematical Formulation of Gradient Vectors</h2>
+<p>In deep learning, <strong>it is important to visualize the processes that happen beneath the multiple layers of abstraction to fully grasp the complex nature of the optimization in the non-convex loss landscape</strong>. In my attempt at such an endeavour, the approach that I often use is to visualize the million-dimensional parameter space in terms of a 3D space with 2 independent dimensions representing two parameters of the model and the dependent dimension representing the loss. <em>However, plotting the loss landscape can be a tough job as it is not possible to evaluate the loss surface for all points in the million-dimensional parameter space.</em></p>
+<p>In this article, we will learn to plot gradient vectors in the 2D plane. As the gradients are just vectors, we can represent them using a magnitude (<em><strong>lg</strong></em>) and an angle.</p>
+<p><img src="/images/blog/plotting-continuously-updating-gradient-vectors-on-loss-land/img2.png" alt=""></p>
+<p>Magnitude and angle with each axis</p>
+<p>Based on the above equation, we can calculate the new position,</p>
+<p><img src="/images/blog/plotting-continuously-updating-gradient-vectors-on-loss-land/img3.png" alt=""></p>
+<p>New position of the parameter along x-axis</p>
+<p><img src="/images/blog/plotting-continuously-updating-gradient-vectors-on-loss-land/img4.png" alt=""></p>
+<p>New position of the parameter along y-axis</p>
+<p>So, at each step of plotting, we need to plot a line from the point in the parameter space at time <em><strong>t</strong></em> to the point at time <em><strong>t+1</strong></em>. While we can calculate the length of the gradient easily, the gradient vectors make an angle with each dimensional axis. Suppose, we take the 2 parameters with the largest gradient magnitudes along their respective axes.</p>
+<h2 id="python-implementation-with-matplotlib"><a class="heading-anchor" aria-hidden tabindex="-1" href="#python-implementation-with-matplotlib"><span class="anchor-icon">#</span></a>Python Implementation with Matplotlib</h2>
+<p>The ultimate goal is to visualize the continuous change in the parameter values in the same plot. So, let’s take a look at the code:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> time
+</code></pre>
+<pre><code class="hljs language-text">if __name__=='__main__':
+    x = np.array([0])
+    y = np.array([0])
+    ####### Matplotlib Interactive mode 
+    plt.ion()
+    ########### Sub plots ############
+    figure, ax = plt.subplots(figsize=(10, 8))
+    line1, = ax.plot(x, y)
+    ############ Title ###############
+    plt.title(“Vectors”, fontsize=20)
+    # setting x-axis label and y-axis label
+    plt.xlabel(r”$w_1$”)
+    plt.ylabel(r”$w_2$”)
+    ###### Append new values and plotting
+    for _ in range(50):
+        # creating new Y values
+        length = np.random.random()
+        angle = np.pi*(2*np.random.random()-1)
+        x_t = x[-1] + length*np.cos(angle)
+        y_t = y[-1] + length*np.sin(angle)
+        x = np.append(x, x_t)
+        y = np.append(y, y_t)
+        # updating data values
+        line1.set_xdata(x)
+        line1.set_ydata(y)
+        plt.xlim([x.min()-1, x.max()+1])
+        plt.ylim([y.min()-1, y.max()+1])
+        # drawing updated values
+        figure.canvas.draw()
+        # This will run the GUI event loop until all 
+        # UI events currently waiting have been processed
+        figure.canvas.flush_events()
+        ####### time delay
+        time.sleep(0.1)
+    plt.ioff()
+    plt.show()
+    plt.savefig('./vectors.png')
+</code></pre>
+<p>This code takes a random length of the gradient, and we use the equations above to calculate <em><strong>gx</strong></em> and <em><strong>gy</strong></em>. However, in a real experimental run, we would have the values of <em><strong>gx</strong></em> and <em><strong>gy</strong></em>.</p>
+<h2 id="interactive-window-configuration--troubleshooting"><a class="heading-anchor" aria-hidden tabindex="-1" href="#interactive-window-configuration--troubleshooting"><span class="anchor-icon">#</span></a>Interactive Window Configuration &#x26; Troubleshooting</h2>
+<p>However, this step may throw the error</p>
+<blockquote>
+<p>“<em><strong>UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown plt.show()</strong></em>”.</p>
+</blockquote>
+<p>This will require installing PyQt5.</p>
+<pre><code class="hljs language-text">python3 -m pip install PyQt5
+</code></pre>
+<p>After this step, another error may still occur, that is,</p>
+<blockquote>
+<p><em><strong>qt.qpa.plugin: Could not find the Qt platform plugin “wayland” in “”</strong></em>.</p>
+</blockquote>
+<p>This can be solved by installing <strong>qtwayland5,</strong> using</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">sudo</span> apt install qtwayland5
+</code></pre>
+<p>followed by setting the environment variable <strong>QT_QPA_PLATFORM</strong> to <strong>xcb</strong>, using the command</p>
+<pre><code class="hljs language-text">export QT_QPA_PLATFORM=xcb
+</code></pre>
+<p>To keep the plot from closing, it is important to add the following lines at the end</p>
+<pre><code class="hljs language-text">plt.ioff()
+plt.show()
+</code></pre>
+<hr>
+<h2 id="visualization-results"><a class="heading-anchor" aria-hidden tabindex="-1" href="#visualization-results"><span class="anchor-icon">#</span></a>Visualization Results</h2>
+<p>Finally, we show how the plot looks like</p>
+<p><img src="/images/blog/plotting-continuously-updating-gradient-vectors-on-loss-land/img5.png" alt=""></p>
+<p>Vector plot in matplotlib</p>
+<hr>
+<p>The above plot shows how the gradient evolves over multiple training timesteps and can provide insight about the training process.</p>
+<p>In the next part, we will learn to plot the loss landscape contour along with the vectors.</p>
+<hr>
+<p>Clap, Share and Follow if you like this article and find it helpful.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/plotting-continuously-updating-gradient-vectors-on-loss-landscape-in-matplotlib-part-1-32cf86d8b141">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Plotting Continuously Updating Gradient Vectors on Loss Landscape in Matplotlib — Part 1","date":"$D2024-12-19T00:00:00.000Z","readingTime":4,"categories":["Data Visualization","Optimization"],"tags":["python","matplotlib","optimization","deep-learning","data-visualization"],"contentHtml":"$11","headings":[{"level":2,"id":"mathematical-formulation-of-gradient-vectors","text":"Mathematical Formulation of Gradient Vectors"},{"level":2,"id":"python-implementation-with-matplotlib","text":"Python Implementation with Matplotlib"},{"level":2,"id":"interactive-window-configuration--troubleshooting","text":"Interactive Window Configuration &#x26; Troubleshooting"},{"level":2,"id":"visualization-results","text":"Visualization Results"}],"prevPost":{"slug":"2024-12-05-how-to-log-metrics-and-data-at-different-lines-in-the-code-b","title":"How to log metrics and data at different lines in the code but at the same time-step using Wandb"},"nextPost":{"slug":"2024-12-27-profiling-different-algorithms-using-the-built-in-timeit-mod","title":"Profiling different algorithms using the built-in timeit module in Python"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Plotting Continuously Updating Gradient Vectors on Loss Landscape in Matplotlib — Part 1 — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

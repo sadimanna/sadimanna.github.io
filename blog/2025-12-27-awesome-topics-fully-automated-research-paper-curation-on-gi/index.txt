@@ -1,0 +1,198 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2025-12-27-awesome-topics-fully-automated-research-paper-curation-on-gi",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2025-12-27-awesome-topics-fully-automated-research-paper-curation-on-gi","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-12-27-awesome-topics-fully-automated-research-paper-curation-on-gi","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","pGzXBT44BLuv41ieKYGWp",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T33f4,<hr>
+<p><img src="/images/blog/awesome-topics-fully-automated-research-paper-curation-on-gi/img1.jpeg" alt=""></p>
+<p>This article explains how the system works end-to-end, focusing on the role of each directory and how data flows through the pipeline.</p>
+<hr>
+<h3 id="project-objective"><a class="heading-anchor" aria-hidden tabindex="-1" href="#project-objective"><span class="anchor-icon">#</span></a>Project Objective</h3>
+<p>The goal of <em>awesome-topics</em> is to:</p>
+<ul>
+<li>Automatically discover newly published research papers</li>
+<li>Organize them by <strong>topic → venue → year</strong></li>
+<li>Store results in a structured, version-controlled format</li>
+<li>Generate clean, navigable Markdown pages</li>
+<li>Publish updates automatically via GitHub Pages</li>
+</ul>
+<p>Once configured, the repository continuously maintains a public research index at:</p>
+<pre><code class="hljs language-text">https://&#x3C;user-name>.github.io/awesome-topics
+</code></pre>
+<hr>
+<p>The code for this article can be found here:</p>
+<p><a href="https://github.com/sadimanna/awesome-topics" title="https://github.com/sadimanna/awesome-topics"><strong>GitHub - sadimanna/awesome-topics: Comprehensive and timely academic papers on federated learning…</strong><br>
+*Comprehensive and timely academic papers on federated learning, machine unlearning and other related topics. - GitHub …*github.com</a></p>
+<p>Read the rest of the article to understand how the code works, and create your own list of research papers.</p>
+<hr>
+<h3 id="high-level-pipelineoverview"><a class="heading-anchor" aria-hidden tabindex="-1" href="#high-level-pipelineoverview"><span class="anchor-icon">#</span></a>High-Level Pipeline Overview</h3>
+<p>The project follows a clear, multi-stage pipeline:</p>
+<ol>
+<li><strong>Topic configuration</strong> defines <em>what</em> to search for</li>
+<li><strong>DBLP querying logic</strong> discovers new papers</li>
+<li><strong>Structured YAML storage</strong> persists paper metadata</li>
+<li><strong>Markdown generation scripts</strong> create topic pages</li>
+<li><strong>GitHub Actions</strong> runs the pipeline and deploys updates</li>
+</ol>
+<p>Each stage is cleanly separated, which makes the system robust, extensible, and easy to debug.</p>
+<p><img src="/images/blog/awesome-topics-fully-automated-research-paper-curation-on-gi/img2.png" alt=""></p>
+<p>Data Flow Diagram</p>
+<hr>
+<h3 id="repository-structure-and-responsibilities"><a class="heading-anchor" aria-hidden tabindex="-1" href="#repository-structure-and-responsibilities"><span class="anchor-icon">#</span></a>Repository Structure and Responsibilities</h3>
+<pre><code class="hljs language-text">awesome-topics/
+│
+</code></pre>
+<p>Each directory plays a specific role in the automation pipeline.</p>
+<p><img src="/images/blog/awesome-topics-fully-automated-research-paper-curation-on-gi/img3.png" alt=""></p>
+<p>System Architecture Diagram</p>
+<hr>
+<h3 id="1-topic-configuration-_configs"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-topic-configuration-_configs"><span class="anchor-icon">#</span></a>1. Topic Configuration (<code>_configs/</code>)</h3>
+<p>The <code>_configs/</code> directory defines <strong>what research topics are tracked</strong> and <strong>how papers are searched</strong>.</p>
+<p>Each configuration file specifies:</p>
+<ul>
+<li>Topic identifier (slug)</li>
+<li>Search keywords</li>
+<li>Venue filters (e.g., NeurIPS, ICML, ICLR, CVPR, IJCAI)</li>
+<li>DBLP query parameters</li>
+</ul>
+<h3 id="design-rationale"><a class="heading-anchor" aria-hidden tabindex="-1" href="#design-rationale"><span class="anchor-icon">#</span></a>Design Rationale</h3>
+<p>This configuration-driven design allows:</p>
+<ul>
+<li>Adding new topics without modifying the source code</li>
+<li>Independent control over search behaviour per topic</li>
+<li>Easy scaling to dozens of research areas</li>
+</ul>
+<p>In practice, adding a new topic simply requires creating a new configuration file.</p>
+<hr>
+<h3 id="2-paper-discovery-via-dblpsrc"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-paper-discovery-via-dblpsrc"><span class="anchor-icon">#</span></a>2. Paper Discovery via DBLP (<code>src/</code>)</h3>
+<p>The <code>src/</code> directory contains all logic related to <strong>searching DBLP and collecting paper metadata</strong>.</p>
+<h3 id="responsibilities"><a class="heading-anchor" aria-hidden tabindex="-1" href="#responsibilities"><span class="anchor-icon">#</span></a>Responsibilities</h3>
+<ul>
+<li>Construct DBLP queries using <code>_configs/</code></li>
+<li>Fetch publication data via DBLP APIs</li>
+<li>Parse and normalize responses</li>
+<li>Detect newly added papers</li>
+<li>Avoid duplicates across runs</li>
+</ul>
+<p>The output of this stage is <strong>structured paper metadata</strong>, not Markdown.</p>
+<hr>
+<h3 id="3-structured-paper-storage_data"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-structured-paper-storage_data"><span class="anchor-icon">#</span></a>3. Structured Paper Storage (<code>_data/</code>)</h3>
+<p>All discovered papers are stored in <strong>YAML files</strong> inside the <code>_data/</code> directory.</p>
+<p>Each YAML file corresponds to a topic and contains:</p>
+<ul>
+<li>Topic metadata</li>
+<li>Venue-wise paper lists</li>
+<li>Year-wise grouping</li>
+<li>Stable markers for incremental updates</li>
+</ul>
+<h3 id="why-yaml"><a class="heading-anchor" aria-hidden tabindex="-1" href="#why-yaml"><span class="anchor-icon">#</span></a>Why YAML?</h3>
+<p>Using YAML as an intermediate representation provides:</p>
+<ul>
+<li>Clear separation between data and presentation</li>
+<li>Deterministic, idempotent updates</li>
+<li>Easy version control and inspection</li>
+<li>Reusability for future analytics or visualization</li>
+</ul>
+<p>This layer acts as the <strong>single source of truth</strong> for the project.</p>
+<hr>
+<h3 id="4-markdown-page-generation-scripts"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-markdown-page-generation-scripts"><span class="anchor-icon">#</span></a>4. Markdown Page Generation (<code>scripts/</code>)</h3>
+<p>The <code>scripts/</code> directory is responsible for <strong>transforming structured YAML data into Markdown pages</strong>.</p>
+<h3 id="key-responsibilities"><a class="heading-anchor" aria-hidden tabindex="-1" href="#key-responsibilities"><span class="anchor-icon">#</span></a>Key Responsibilities</h3>
+<ul>
+<li>Read topic-wise YAML files from <code>_data/</code></li>
+<li>Generate Markdown files for each topic</li>
+<li>Create collapsible sections for venues and years</li>
+<li>Insert anchors and table-of-contents links</li>
+<li>Ensure consistent formatting across topics</li>
+</ul>
+<h4 id="importantly"><a class="heading-anchor" aria-hidden tabindex="-1" href="#importantly"><span class="anchor-icon">#</span></a>Importantly:</h4>
+<blockquote>
+<p><em><strong>The Markdown files in</strong></em> <code>docs/</code> <em><strong>are not edited directly.</strong></em> <em>They are</em> <em><strong>fully generated and updated by scripts</strong></em> <em>based on the YAML data.</em></p>
+</blockquote>
+<p>This ensures that presentation logic is fully automated and reproducible.</p>
+<hr>
+<h3 id="5-github-pages-contentdocs"><a class="heading-anchor" aria-hidden tabindex="-1" href="#5-github-pages-contentdocs"><span class="anchor-icon">#</span></a>5. GitHub Pages Content (<code>docs/</code>)</h3>
+<p>The <code>docs/</code> directory contains the <strong>rendered output</strong> that GitHub Pages serves.</p>
+<h3 id="docs_topics"><a class="heading-anchor" aria-hidden tabindex="-1" href="#docs_topics"><span class="anchor-icon">#</span></a><code>docs/_topics/</code></h3>
+<ul>
+<li>Contains topic-wise Markdown pages</li>
+<li>Each page is generated from YAML via scripts</li>
+<li>URLs map cleanly to topic names</li>
+</ul>
+<h3 id="docsindexmd"><a class="heading-anchor" aria-hidden tabindex="-1" href="#docsindexmd"><span class="anchor-icon">#</span></a><code>docs/index.md</code></h3>
+<ul>
+<li>Acts as the landing page</li>
+<li>Automatically updated to include new topics</li>
+<li>Links to all topic-wise pages</li>
+<li>Lastly, it is to be noted that the <em><strong>index.md</strong></em> file is generated from the <strong>README.md</strong> file, and the user can edit it manually to include any extra information the user wants to display. For example, I have listed the conference venues and journal names from which I have searched the listed papers.</li>
+</ul>
+<p>GitHub Pages renders this directory directly, making the site live after every successful automation run.</p>
+<hr>
+<h3 id="6-full-automation-with-githubactions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#6-full-automation-with-githubactions"><span class="anchor-icon">#</span></a>6. Full Automation with GitHub Actions</h3>
+<p>The pipeline is orchestrated using <strong>GitHub Actions</strong> defined in <code>.github/workflows/</code>.</p>
+<h3 id="workflow-execution"><a class="heading-anchor" aria-hidden tabindex="-1" href="#workflow-execution"><span class="anchor-icon">#</span></a>Workflow Execution</h3>
+<p>On a scheduled trigger or manual dispatch:</p>
+<ol>
+<li>The repository is checked out</li>
+<li>DBLP search scripts in <code>src/</code> are executed</li>
+<li>YAML files in <code>_data/</code> are updated if new papers are found</li>
+<li>Markdown generation scripts in <code>scripts/</code> regenerate topic pages</li>
+<li>Changes are committed only if updates exist</li>
+<li>GitHub Pages redeploys automatically</li>
+</ol>
+<p>This results in a <strong>self-updating research website</strong>.</p>
+<p><img src="/images/blog/awesome-topics-fully-automated-research-paper-curation-on-gi/img4.png" alt=""></p>
+<p>Conceptual Functional Call Level Diagram (May not exactly match the function calls)</p>
+<hr>
+<h3 id="incremental-updates-and-deduplication"><a class="heading-anchor" aria-hidden tabindex="-1" href="#incremental-updates-and-deduplication"><span class="anchor-icon">#</span></a>Incremental Updates and Deduplication</h3>
+<p>To ensure stability across runs:</p>
+<ul>
+<li>Previously recorded papers are never duplicated</li>
+<li>New papers are appended in the correct venue/year section</li>
+<li>Existing anchors and page structure remain unchanged</li>
+</ul>
+<p>This makes the system safe to run daily.</p>
+<hr>
+<h3 id="design-philosophy"><a class="heading-anchor" aria-hidden tabindex="-1" href="#design-philosophy"><span class="anchor-icon">#</span></a>Design Philosophy</h3>
+<p>The project follows a few key principles:</p>
+<ul>
+<li><strong>Data first</strong>: YAML is the authoritative layer</li>
+<li><strong>Code-driven presentation</strong>: Markdown is generated, never edited</li>
+<li><strong>Configuration over hardcoding</strong></li>
+<li><strong>Reproducibility and transparency</strong></li>
+</ul>
+<p>This architecture mirrors best practices used in large-scale data pipelines.</p>
+<hr>
+<h3 id="who-is-thisfor"><a class="heading-anchor" aria-hidden tabindex="-1" href="#who-is-thisfor"><span class="anchor-icon">#</span></a>Who Is This For?</h3>
+<ul>
+<li>Researchers maintaining public paper lists</li>
+<li>Labs curating structured reading resources</li>
+<li>Survey authors tracking literature growth</li>
+<li>Students organizing research topics systematically</li>
+</ul>
+<p>The system scales naturally as research interests expand.</p>
+<hr>
+<h4 id="learn-how-to-add-newtopics"><a class="heading-anchor" aria-hidden tabindex="-1" href="#learn-how-to-add-newtopics"><span class="anchor-icon">#</span></a>Learn How to Add New Topics</h4>
+<p><a href="https://medium.com/the-owl/awesome-topics-fully-automated-research-paper-curation-on-github-pages-part-2-cf41e2631702" title="https://medium.com/the-owl/awesome-topics-fully-automated-research-paper-curation-on-github-pages-part-2-cf41e2631702"><strong>awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 2</strong><br>
+*How to Add a New Topic (Step-by-Step)*medium.com</a></p>
+<hr>
+<h3 id="closing-remarks"><a class="heading-anchor" aria-hidden tabindex="-1" href="#closing-remarks"><span class="anchor-icon">#</span></a>Closing Remarks</h3>
+<p><em>awesome-topics</em> turns research paper curation into a <strong>fully automated, reproducible pipeline</strong> by cleanly separating configuration, data collection, storage, and presentation. Once set up, it requires no maintenance — yet continuously reflects the evolving research landscape.</p>
+<p>By combining DBLP queries, structured YAML storage, script-driven Markdown generation, and GitHub Actions automation, the project demonstrates a practical and scalable approach to research curation.</p>
+<hr>
+<h3 id="disclaimer"><a class="heading-anchor" aria-hidden tabindex="-1" href="#disclaimer"><span class="anchor-icon">#</span></a>Disclaimer</h3>
+<p>This repository combined code from two repositories, forked from <a href="https://github.com/youngfish42/FL-paper-update-tracker">FL-paper-update-tracker</a> and <a href="https://github.com/youngfish42/Awesome-FL">Awesome-FL</a>.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/awesome-topics-fully-automated-research-paper-curation-on-github-pages-part-1-4098f4222d66">Medium</a>.</em></p>7:["$","$L10",null,{"title":"awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 1","date":"$D2025-12-27T00:00:00.000Z","readingTime":6,"categories":["Automation","Research"],"tags":["github-actions","automation","research","awesome-topics"],"contentHtml":"$11","headings":[{"level":3,"id":"project-objective","text":"Project Objective"},{"level":3,"id":"high-level-pipelineoverview","text":"High-Level Pipeline Overview"},{"level":3,"id":"repository-structure-and-responsibilities","text":"Repository Structure and Responsibilities"},{"level":3,"id":"1-topic-configuration-_configs","text":"1. Topic Configuration (_configs/)"},{"level":3,"id":"design-rationale","text":"Design Rationale"},{"level":3,"id":"2-paper-discovery-via-dblpsrc","text":"2. Paper Discovery via DBLP (src/)"},{"level":3,"id":"responsibilities","text":"Responsibilities"},{"level":3,"id":"3-structured-paper-storage_data","text":"3. Structured Paper Storage (_data/)"},{"level":3,"id":"why-yaml","text":"Why YAML?"},{"level":3,"id":"4-markdown-page-generation-scripts","text":"4. Markdown Page Generation (scripts/)"},{"level":3,"id":"key-responsibilities","text":"Key Responsibilities"},{"level":4,"id":"importantly","text":"Importantly:"},{"level":3,"id":"5-github-pages-contentdocs","text":"5. GitHub Pages Content (docs/)"},{"level":3,"id":"docs_topics","text":"docs/_topics/"},{"level":3,"id":"docsindexmd","text":"docs/index.md"},{"level":3,"id":"6-full-automation-with-githubactions","text":"6. Full Automation with GitHub Actions"},{"level":3,"id":"workflow-execution","text":"Workflow Execution"},{"level":3,"id":"incremental-updates-and-deduplication","text":"Incremental Updates and Deduplication"},{"level":3,"id":"design-philosophy","text":"Design Philosophy"},{"level":3,"id":"who-is-thisfor","text":"Who Is This For?"},{"level":4,"id":"learn-how-to-add-newtopics","text":"Learn How to Add New Topics"},{"level":3,"id":"closing-remarks","text":"Closing Remarks"},{"level":3,"id":"disclaimer","text":"Disclaimer"}],"prevPost":{"slug":"2025-12-22-deploying-a-next-js-static-site-to-github-pages","title":"Deploying a Next.js Static Site to GitHub Pages"},"nextPost":{"slug":"2025-12-28-awesome-topics-fully-automated-research-paper-curation-on-gi","title":"awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 4"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 1 — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

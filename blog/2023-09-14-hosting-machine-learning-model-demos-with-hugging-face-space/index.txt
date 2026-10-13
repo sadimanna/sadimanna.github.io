@@ -1,0 +1,240 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/6085b926cadcdd03.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"XNeWzUyPUwwwuZVjQJjxB","p":"","c":["","blog","2023-09-14-hosting-machine-learning-model-demos-with-hugging-face-space",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2023-09-14-hosting-machine-learning-model-demos-with-hugging-face-space","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6085b926cadcdd03.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2023-09-14-hosting-machine-learning-model-demos-with-hugging-face-space","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","_PtKfh01y5hhH6Z-t9qgP",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T4644,<hr>
+<p><img src="/images/blog/hosting-machine-learning-model-demos-with-hugging-face-space/img1.png" alt=""></p>
+<p>This article will describe the steps required to set up a demo for a machine / deep learning model on Hugging Face Spaces using Streamlit. The article is divided into the following parts:</p>
+<ol>
+<li>Introduction to the components</li>
+<li>How to access the camera on the user's device from the Hugging Face Space environment.</li>
+<li>How to set up the demo on HF Spaces</li>
+<li>Issues with the STUN server in the Streamlit app and possible solutions.</li>
+<li>How to manage Spaces using GitHub workflows and related issues.</li>
+</ol>
+<h3 id="introduction-to-the-components"><a class="heading-anchor" aria-hidden tabindex="-1" href="#introduction-to-the-components"><span class="anchor-icon">#</span></a>Introduction to the components</h3>
+<blockquote>
+<p>What is Hugging Face Spaces?</p>
+</blockquote>
+<p><strong>Hugging Face</strong> provides an amazing tool to create and host your machine learning demos. The feature that provides this is <em><strong>Hugging Face Spaces</strong></em>. One can go to <a href="https://huggingface.co/spaces">https://huggingface.co/spaces</a> and find several hosted ML demos built by people from all over the world.</p>
+<p><a href="https://huggingface.co/spaces" title="https://huggingface.co/spaces"><strong>Spaces - Hugging Face</strong><br>
+<em>Discover amazing ML apps made by the community</em>huggingface.co</a></p>
+<p>To create a new <strong>Space</strong>, click on the “<strong>Create new Space</strong>” button on the top right corner of the page. Space is similar to a GitHub repository, and the interface is also very similar to GitHub.</p>
+<blockquote>
+<p>Steps:</p>
+</blockquote>
+<ol>
+<li>Enter a <strong>name</strong> for your <strong>repository</strong> and select the <strong>license</strong> you want your demo to have.</li>
+<li>Then select the library you want to use for the <strong>Space SDK</strong>. The input, output, and interface of the demo will be done using the chosen library. For this article, I will be using <em><strong>Streamlit</strong></em>.</li>
+<li>The next step is to choose the <strong>hardware</strong> you want your demo to run on. This can be changed later in the settings of your Space. The default is <br>
+“<strong>CPU basic · 2 vCPU · 16 GB · FREE”</strong>. You can switch to different hardware at any time in your <strong>Space</strong> settings.</li>
+<li>Finally, choose the privacy setting for your space.</li>
+</ol>
+<blockquote>
+<p>What is Streamlit?</p>
+</blockquote>
+<p><em><strong>Streamlit</strong></em> provides a faster way to build and share data apps. <em><strong>Streamlit</strong></em> turns data scripts into shareable web apps in minutes. You can find out more about it here: <a href="https://streamlit.io/">https://streamlit.io/</a></p>
+<p><a href="https://streamlit.io/" title="https://streamlit.io/"><strong>Streamlit * A faster way to build and share data apps</strong><br>
+*Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful web apps in…*streamlit.io</a></p>
+<p>On your local machine, you can install <em><strong>Streamlit</strong></em> using the following command:</p>
+<pre><code class="hljs language-bash">pip install streamlit
+</code></pre>
+<p>In the Hugging Face Spaces environment, <em><strong>Streamlit</strong></em> comes pre-installed.</p>
+<hr>
+<h3 id="how-to-access-the-camera-on-the-users-device-from-the-hugging-face-spaces-environment"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-to-access-the-camera-on-the-users-device-from-the-hugging-face-spaces-environment"><span class="anchor-icon">#</span></a>How to access the camera on the user’s device from the Hugging Face Spaces environment</h3>
+<blockquote>
+<p>How do I access the camera?</p>
+</blockquote>
+<p>If you want to show a demo on real-time data using the webcam on your laptop or even the camera on your mobile, you need to install the <em><strong>streamlit-webrtc</strong></em> library.</p>
+<p><a href="https://github.com/whitphx/streamlit-webrtc" title="https://github.com/whitphx/streamlit-webrtc"><strong>GitHub - whitphx/streamlit-webrtc: Real-time video and audio streams over the network, with…</strong><br>
+*Real-time video and audio streams over the network, with Streamlit. - GitHub - whitphx/streamlit-webrtc: Real-time…*github.com</a></p>
+<p>The <em><strong>streamlit-webrtc</strong></em> library is built for handling real-time video and audio over the network using <em><strong>Streamlit</strong></em>*.* It can be installed using the following command:</p>
+<pre><code class="hljs language-bash">pip install streamlit-webrtc
+</code></pre>
+<p>A few examples on using <em><strong>Streamlit</strong></em> and <em><strong>streamlit-webrtc</strong></em> for different applications are also available in this GitHub repository</p>
+<p><a href="https://github.com/whitphx/streamlit-webrtc-example" title="https://github.com/whitphx/streamlit-webrtc-example"><strong>GitHub - whitphx/streamlit-webrtc-example: Real time video and audio processing examples with…</strong><br>
+*Real time video and audio processing examples with Streamlit and streamlit-webrtc - GitHub …*github.com</a></p>
+<hr>
+<h3 id="how-to-set-up-the-demo-on-hfspaces"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-to-set-up-the-demo-on-hfspaces"><span class="anchor-icon">#</span></a>How to set up the demo on HF Spaces</h3>
+<blockquote>
+<p>What to do next to setup the demo?</p>
+</blockquote>
+<p>Let's take a look at the steps to set up the demo, listed below</p>
+<blockquote>
+<p>Set metadata</p>
+</blockquote>
+<p>First of all, we need to set the metadata in the <strong>README.md</strong> file.</p>
+<p>In my demo, I used the following lines</p>
+<pre><code class="hljs language-text">---
+title: Object Detection MobileNetSSD Demo
+emoji: 📷
+colorFrom: red
+colorTo: purple
+sdk: streamlit
+</code></pre>
+<p>On my profile, it shows like this</p>
+<p><img src="/images/blog/hosting-machine-learning-model-demos-with-hugging-face-space/img2.png" alt=""></p>
+<blockquote>
+<p>Create a <em><strong>requirements.txt</strong></em> file.</p>
+</blockquote>
+<p>In the <em><strong>requirements.txt</strong></em> file, add the libraries that must be installed in the environment. For example, in my demo, I had the following in my <em><strong>requirements.txt</strong></em> file:</p>
+<pre><code class="hljs language-text">numpy
+opencv-python-headless==4.8.0.76
+streamlit_webrtc==0.47.0
+pydub==0.25.1
+twilio~=8.5.0
+</code></pre>
+<blockquote>
+<p>Create a <em><strong>packages.txt</strong></em> file</p>
+</blockquote>
+<p>In the <em><strong>packages.txt</strong></em> file, add the following line:</p>
+<pre><code class="hljs language-text">ffmpeg
+</code></pre>
+<blockquote>
+<p>Create a <em><strong>runtime.txt</strong></em> file</p>
+</blockquote>
+<p>You can also create a <em><strong>runtime.txt</strong></em> file containing the Python version on which you want to run your code. However, these depend on the compatibility with other libraries being used. The <em><strong>runtime.txt</strong></em> file should contain the following line:</p>
+<pre><code class="hljs language-text">python-3.8.7
+</code></pre>
+<blockquote>
+<p>Create an <em><strong>app.py</strong></em> file</p>
+</blockquote>
+<p>The <em><strong>app.py</strong></em> file will contain all the working code, which will control everything from taking input to showing the outputs using <em><strong>Streamlit</strong></em>. Of course, you can have other supporting files for your model. However, when the app is launched, you see the output of the following command:</p>
+<pre><code class="hljs language-text">streamlit run app.py
+</code></pre>
+<p>For running your app on your local machine, you can use the same command.</p>
+<ul>
+<li>Try copying one of the example demos from</li>
+</ul>
+<p><a href="https://github.com/whitphx/streamlit-webrtc-example/tree/main/pages" title="https://github.com/whitphx/streamlit-webrtc-example/tree/main/pages"><strong>streamlit-webrtc-example/pages at main · whitphx/streamlit-webrtc-example</strong><br>
+*Real time video and audio processing examples with Streamlit and streamlit-webrtc - streamlit-webrtc-example/pages at…*github.com</a></p>
+<p>to your <em><strong>app.py</strong></em> and commit.</p>
+<p>As soon as you commit, it will start building the container. You can see the logs by clicking the “<em><strong>Logs</strong></em>” button in the top panel. You can see the libraries being installed and also track if any errors occur during the build or the app's execution.</p>
+<p>Once the status changes from “<em>Building</em>” to “<em>Running</em>”, click on the “<em><strong>App</strong></em>” tab on the top panel. Here, you can see the interface of your app as per your instructions or code.</p>
+<blockquote>
+<p>For hosting you own demo</p>
+</blockquote>
+<p>To host your own demo, commit all the required files (supporting files containing the model definition and helper functions) to the repository and make the necessary changes to the <em><strong>app.py</strong></em> file. Before committing, you also need to change the <em><strong>requirements.txt</strong></em>, <em><strong>packages.txt,</strong></em> and <em><strong>runtime.txt</strong></em> files.</p>
+<ul>
+<li>For example, if you need a specific version of <em><strong>Torch</strong></em> or <em><strong>Cuda</strong></em> runtime, add the following lines:</li>
+</ul>
+<pre><code class="hljs language-text">torch==1.13.1+cu117 
+torchvision==0.14.1+cu117
+</code></pre>
+<ul>
+<li>If you are only using the free CPU tier, you won’t need Cuda. In that case, add the following lines (as per <a href="https://pytorch.org/get-started/previous-versions/">https://pytorch.org/get-started/previous-versions/</a>)</li>
+</ul>
+<pre><code class="hljs language-text">torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+torchaudio==0.13.1 
+--extra-index-url https://download.pytorch.org/whl/cpu
+</code></pre>
+<ul>
+<li>If you need to commit large model files (> 10 MB), be sure to use <em><strong>git lfs.</strong></em></li>
+</ul>
+<hr>
+<h3 id="issues-with-the-stun-server-in-the-streamlit-app-and-possible-solutions"><a class="heading-anchor" aria-hidden tabindex="-1" href="#issues-with-the-stun-server-in-the-streamlit-app-and-possible-solutions"><span class="anchor-icon">#</span></a>Issues with the STUN server in the Streamlit app and possible solutions</h3>
+<blockquote>
+<p>With every application comes an Issue</p>
+</blockquote>
+<p>The <em><strong>streamlit-webrtc</strong></em> uses <strong>Twilio STUN/TURN</strong> servers. If the credentials are not set, it falls to the free <strong>STUN</strong> servers provided by Google. However, the free <strong>STUN</strong> servers provided by Google are not always stable or working.</p>
+<p>To use a <strong>Twilio STUN/TURN</strong> server, create an account on Twilio. Twilio provides free <strong>STUN</strong> servers and paid <strong>TURN</strong> servers. Twilio also provides an initial credit of about <strong>$15.50</strong>.</p>
+<ol>
+<li>Go to <strong>Settings</strong> of your HF Space</li>
+<li>Scroll down to “<strong>Variables and Secrets</strong>”</li>
+<li>Click on “<strong>New secret</strong>”</li>
+<li>Type in “<strong>TWILIO_ACCOUNT_SID</strong>” in the <strong>Name</strong> textbox. In the <strong>VALUE</strong> textbox, paste the <em><strong>Account SID</strong></em> from your <strong>Twilio ></strong> <strong>Accounts > <em>API Keys &#x26; Tokens</em></strong> tab.</li>
+<li>Click on “<strong>New secret</strong>” again</li>
+<li>Type in “<strong>TWILIO_AUTH_TOKEN</strong>” in the <strong>Name</strong> textbox. In the <strong>VALUE</strong> textbox, paste the <em><strong>Auth Token</strong></em> from your <strong>Twilio > Accounts ></strong> <em><strong>API Keys &#x26; Tokens</strong></em> tab.</li>
+</ol>
+<p>The container will start rebuilding. You can see your usage summary in <strong>Twilio ></strong> <strong>Billing > Usage Summary.</strong> To continue using the <strong>TURN</strong> server after the given credit runs out, you need to buy <strong>TURN</strong> server access from <strong>Twilio</strong>.</p>
+<hr>
+<h3 id="how-to-manage-spaces-using-github-workflows-and-relatedissues"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-to-manage-spaces-using-github-workflows-and-relatedissues"><span class="anchor-icon">#</span></a>How to manage Spaces using GitHub workflows and related issues</h3>
+<blockquote>
+<p>Managing HF Spaces using GitHub workflows</p>
+</blockquote>
+<p>You can also manage your Spaces from <strong>GitHub</strong> using <strong>GitHub Actions</strong>. Good documentation is provided here</p>
+<p><a href="https://huggingface.co/docs/hub/spaces-github-actions" title="https://huggingface.co/docs/hub/spaces-github-actions"><strong>Managing Spaces with Github Actions</strong><br>
+*We're on a journey to advance and democratize artificial intelligence through open source and open science.*huggingface.co</a></p>
+<blockquote>
+<p>Steps</p>
+</blockquote>
+<ol>
+<li>Create a repository on <strong>GitHub</strong> and name it anything you want. Subsequently, create an <strong><em>empty</em> Space</strong> in <strong>Hugging Face Spaces</strong>.</li>
+<li>Add your <strong>Spaces</strong> app as an additional remote to your existing Git repository</li>
+</ol>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/GIT_USERNAME/REPO_NAME
+<span class="hljs-built_in">cd</span> REPO_NAME
+</code></pre>
+<p>This is done to set up your GitHub repository and Spaces app together.</p>
+<ol start="3">
+<li>Then force push to sync everything for the first time:</li>
+</ol>
+<pre><code class="hljs language-bash">git push --force space main
+</code></pre>
+<ol start="4">
+<li>
+<p>Create a GitHub Secret ( <strong>REPO > Settings > Secrets and variables > Actions</strong> ) with your <code>HF_TOKEN</code>. You can find your <strong>Hugging Face API</strong> token under <strong>Access Tokens</strong> on your Hugging Face profile (If you don’t already have one, create a new token).</p>
+</li>
+<li>
+<p>Configure a <strong>GitHub</strong> workflow and add the contents (<em>also given below</em>) in</p>
+</li>
+</ol>
+<p><a href="https://huggingface.co/docs/hub/spaces-github-actions" title="https://huggingface.co/docs/hub/spaces-github-actions"><strong>Managing Spaces with Github Actions</strong><br>
+*We're on a journey to advance and democratize artificial intelligence through open source and open science.*huggingface.co</a></p>
+<p>to the workflow file. Replace <code>HF_USERNAME</code> with your username and <code>SPACE_NAME</code> with your Space name.</p>
+<pre><code class="hljs language-text">name: Sync to Hugging Face hub
+on:
+</code></pre>
+<p>You can add the second workflow given in the above link to check for large files.</p>
+<blockquote>
+<p>Steps after editing the files</p>
+</blockquote>
+<p>Note that, at this stage the Spaces repository is empty. After adding the required files run the following commands:</p>
+<pre><code class="hljs language-bash">git add .
+git commit -m “commit message”
+git push origin main
+</code></pre>
+<p>You can see the changes made to the files in the GitHub repository being updated in the Hugging Face Spaces repository too.</p>
+<blockquote>
+<p>Problems with large files</p>
+</blockquote>
+<p>When trying to upload large model files (> 10MB), you need to use Git LFS. However, there is a limit to the bandwidth and storage in a free tier.</p>
+<p>For uploading large files, before adding and committing, you need to run the following commands in order:</p>
+<pre><code class="hljs language-bash">git lfs install
+git lfs track *.[ext]
+git add *.[ext]
+git commit -m <span class="hljs-string">"Added large model file"</span>
+git push origin main
+</code></pre>
+<p>Exceeding the limits can cause syncing errors between Space and your GitHub repo.</p>
+<hr>
+<p>A sample <strong>HF Spaces</strong> demo of a MobileNet SSD Object Detection is hosted here</p>
+<p><a href="https://huggingface.co/spaces/sadimanna/object-detection-mobilenetssd" title="https://huggingface.co/spaces/sadimanna/object-detection-mobilenetssd"><strong>Object Detection MobileNetSSD Demo - a Hugging Face Space by sadimanna</strong><br>
+<em>Discover amazing ML apps made by the community</em>huggingface.co</a></p>
+<p>The corresponding <strong>GitHub</strong> repository is</p>
+<p><a href="https://github.com/sadimanna/object-detection-mobilenetssd" title="https://github.com/sadimanna/object-detection-mobilenetssd"><strong>GitHub - sadimanna/object-detection-mobilenetssd: HuggingFace Demo using Streamlit</strong><br>
+*HuggingFace Demo using Streamlit. Contribute to sadimanna/object-detection-mobilenetssd development by creating an…*github.com</a></p>
+<p>To embed your space on any website click the button indicated by the red rectangle in the picture below</p>
+<p><img src="/images/blog/hosting-machine-learning-model-demos-with-hugging-face-space/img3.png" alt=""></p>
+<p>Then click “<em><strong>Embed this space</strong></em>” from the drop-down menu. You can use the <strong>Iframe</strong> script or the <strong>Direct URL</strong> in your website.</p>
+<p>The above HF Spaces demo is embedded below (click to open in a new window)</p>
+<p><a href="https://sadimanna-object-detection-mobilenetssd.hf.space" title="https://sadimanna-object-detection-mobilenetssd.hf.space"><strong>Hugging Face - The AI community building the future.</strong><br>
+*We're on a journey to advance and democratize artificial intelligence through open source and open science.*sadimanna-object-detection-mobilenetssd.hf.space</a></p>
+<hr>
+<p>Clap and share if you like this article. Follow for more.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/@mannasiladittya/hosting-model-demos-with-hugging-face-spaces-and-streamlit-ea0db5f2dd54">Medium</a>.</em></p>7:["$","$L10",null,{"title":"Hosting Machine Learning Model Demos with Hugging Face Spaces and Streamlit","date":"$D2023-09-14T00:00:00.000Z","readingTime":10,"categories":["Machine Learning","Deployment"],"tags":["machine-learning","huggingface","streamlit","deployment","demo"],"contentHtml":"$11","headings":[{"level":3,"id":"introduction-to-the-components","text":"Introduction to the components"},{"level":3,"id":"how-to-access-the-camera-on-the-users-device-from-the-hugging-face-spaces-environment","text":"How to access the camera on the user’s device from the Hugging Face Spaces environment"},{"level":3,"id":"how-to-set-up-the-demo-on-hfspaces","text":"How to set up the demo on HF Spaces"},{"level":3,"id":"issues-with-the-stun-server-in-the-streamlit-app-and-possible-solutions","text":"Issues with the STUN server in the Streamlit app and possible solutions"},{"level":3,"id":"how-to-manage-spaces-using-github-workflows-and-relatedissues","text":"How to manage Spaces using GitHub workflows and related issues"}],"prevPost":{"slug":"2023-09-01-guide-to-fine-tuning-a-pre-trained-model-for-object-detectio","title":"Guide to fine-tuning a Pre-trained model for Object Detection tasks with Faster RCNN using…"},"nextPost":{"slug":"2023-09-27-changing-the-python-version-on-google-colab","title":"Changing the Python version on Google Colab"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"Hosting Machine Learning Model Demos with Hugging Face Spaces and Streamlit — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]
