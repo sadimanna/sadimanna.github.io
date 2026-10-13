@@ -4,41 +4,630 @@
         <title>Dr. Siladittya Manna — Technical Blog</title>
         <link>https://sadimanna.github.io/blog/</link>
         <description>Technical blog on federated learning, self-supervised learning, medical AI, and trustworthy machine learning.</description>
-        <lastBuildDate>Sun, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2026 Dr. Siladittya Manna</copyright>
         <item>
-            <title><![CDATA[Hosting Your Own LLM Server]]></title>
-            <link>https://sadimanna.github.io/blog/hostllmserver/</link>
-            <guid isPermaLink="false">https://sadimanna.github.io/blog/hostllmserver/</guid>
-            <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Sending Text and Files to a Local Model Using FastAPI and llama-server]]></description>
+            <title><![CDATA[Prove that 2^n + 1 is divisible by 3 for all odd integers n >= 1]]></title>
+            <link>https://sadimanna.github.io/blog/2026-04-07-prove-that-2-n-1-is-divisible-by-3-for-all-odd-integers-n-1/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-04-07-prove-that-2-n-1-is-divisible-by-3-for-all-odd-integers-n-1/</guid>
+            <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
             <author>Dr. Siladittya Manna</author>
-            <category>LLM</category>
-            <category>GGUF</category>
-            <category>LLama Cpp</category>
+        </item>
+        <item>
+            <title><![CDATA[Updating your Local Branch from a Specific Remote Branch in Git]]></title>
+            <link>https://sadimanna.github.io/blog/2026-03-17-updating-your-local-branch-from-a-specific-remote-branch-in/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-03-17-updating-your-local-branch-from-a-specific-remote-branch-in/</guid>
+            <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Understanding multipart/form-data: How to Send Text + Binary Data in HTTP Requests]]></title>
+            <link>https://sadimanna.github.io/blog/2026-03-02-understanding-multipart-form-data-how-to-send-text-binary-da/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-03-02-understanding-multipart-form-data-how-to-send-text-binary-da/</guid>
+            <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Hosting Your Own LLM Server]]></title>
+            <link>https://sadimanna.github.io/blog/2026-02-28-hosting-your-own-llm-server/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-02-28-hosting-your-own-llm-server/</guid>
+            <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes]]></title>
+            <link>https://sadimanna.github.io/blog/2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes/</guid>
+            <pubDate>Fri, 27 Feb 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Running MedGemma-4B on CPU or Using GGUF + llama-cpp]]></title>
+            <link>https://sadimanna.github.io/blog/2026-02-27-running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-02-27-running-medgemma-4b-on-cpu-or-using-gguf-llama-cpp/</guid>
+            <pubDate>Fri, 27 Feb 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Cross-Dataset Label Mapping with Vision–Language Embeddings]]></title>
+            <link>https://sadimanna.github.io/blog/2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-02-25-cross-dataset-label-mapping-with-vision-language-embeddings/</guid>
+            <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2026-02-10-the-ghost-in-the-machine-tracking-variable-names-and-metadat/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-02-10-the-ghost-in-the-machine-tracking-variable-names-and-metadat/</guid>
+            <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to Pull Changes from a Remote Git Repository]]></title>
+            <link>https://sadimanna.github.io/blog/2026-02-09-how-to-pull-changes-from-a-remote-git-repository/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-02-09-how-to-pull-changes-from-a-remote-git-repository/</guid>
+            <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to Remove Large Files from Git History]]></title>
+            <link>https://sadimanna.github.io/blog/2026-01-29-how-to-remove-large-files-from-git-history/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-01-29-how-to-remove-large-files-from-git-history/</guid>
+            <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Why .gitignore Didn’t Work]]></title>
+            <link>https://sadimanna.github.io/blog/2026-01-29-why-gitignore-didn-t-work/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-01-29-why-gitignore-didn-t-work/</guid>
+            <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Mastering Logistic Regression: Tackling Non-Linear Data with Feature Transformation]]></title>
+            <link>https://sadimanna.github.io/blog/2026-01-14-mastering-logistic-regression-tackling-non-linear-data-with/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-01-14-mastering-logistic-regression-tackling-non-linear-data-with/</guid>
+            <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Keeping Your Mac Lean: A Guide to Upgrading and Cleaning Python (2026 Edition)]]></title>
+            <link>https://sadimanna.github.io/blog/2026-01-06-keeping-your-mac-lean-a-guide-to-upgrading-and-cleaning-pyth/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-01-06-keeping-your-mac-lean-a-guide-to-upgrading-and-cleaning-pyth/</guid>
+            <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[🚀 Introducing the awesome-topics Blog Series]]></title>
+            <link>https://sadimanna.github.io/blog/2026-01-03-introducing-the-awesome-topics-blog-series/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-01-03-introducing-the-awesome-topics-blog-series/</guid>
+            <pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Git Basics Explained — Part 1]]></title>
+            <link>https://sadimanna.github.io/blog/2026-01-02-git-basics-explained-part-1/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-01-02-git-basics-explained-part-1/</guid>
+            <pubDate>Fri, 02 Jan 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Writing Multi-Line Commands Across Operating Systems]]></title>
+            <link>https://sadimanna.github.io/blog/2025-12-31-writing-multi-line-commands-across-operating-systems/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-12-31-writing-multi-line-commands-across-operating-systems/</guid>
+            <pubDate>Wed, 31 Dec 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 5]]></title>
+            <link>https://sadimanna.github.io/blog/2025-12-29-awesome-topics-fully-automated-research-paper-curation-on-gi/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-12-29-awesome-topics-fully-automated-research-paper-curation-on-gi/</guid>
+            <pubDate>Mon, 29 Dec 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 4]]></title>
+            <link>https://sadimanna.github.io/blog/2025-12-28-awesome-topics-fully-automated-research-paper-curation-on-gi/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-12-28-awesome-topics-fully-automated-research-paper-curation-on-gi/</guid>
+            <pubDate>Sun, 28 Dec 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[awesome-topics: Fully Automated Research Paper Curation on GitHub Pages — Part 1]]></title>
+            <link>https://sadimanna.github.io/blog/2025-12-27-awesome-topics-fully-automated-research-paper-curation-on-gi/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-12-27-awesome-topics-fully-automated-research-paper-curation-on-gi/</guid>
+            <pubDate>Sat, 27 Dec 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Deploying a Next.js Static Site to GitHub Pages]]></title>
+            <link>https://sadimanna.github.io/blog/2025-12-22-deploying-a-next-js-static-site-to-github-pages/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-12-22-deploying-a-next-js-static-site-to-github-pages/</guid>
+            <pubDate>Mon, 22 Dec 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Smart Way to Copy: How to Use rsync to Exclude Folders, Ignore or Update Existing Files]]></title>
+            <link>https://sadimanna.github.io/blog/2025-10-03-the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-10-03-the-smart-way-to-copy-how-to-use-rsync-to-exclude-folders-ig/</guid>
+            <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Generating a Gantt Chart in LaTeX]]></title>
+            <link>https://sadimanna.github.io/blog/2025-08-29-generating-a-gantt-chart-in-latex/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-08-29-generating-a-gantt-chart-in-latex/</guid>
+            <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Low-Bit Precision Training in PyTorch: Techniques and Code Examples]]></title>
+            <link>https://sadimanna.github.io/blog/2025-08-21-low-bit-precision-training-in-pytorch-techniques-and-code-ex/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-08-21-low-bit-precision-training-in-pytorch-techniques-and-code-ex/</guid>
+            <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to Split a Centralized Dataset for Federated Learning Simulation]]></title>
+            <link>https://sadimanna.github.io/blog/2025-08-07-how-to-split-a-centralized-dataset-for-federated-learning-si/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-08-07-how-to-split-a-centralized-dataset-for-federated-learning-si/</guid>
+            <pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Instantly Supercharge Your IDE with GitHub MCP & GitMCP: Real-Time Docs & Code for Your AI…]]></title>
+            <link>https://sadimanna.github.io/blog/2025-08-05-instantly-supercharge-your-ide-with-github-mcp-gitmcp-real-t/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-08-05-instantly-supercharge-your-ide-with-github-mcp-gitmcp-real-t/</guid>
+            <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Unlocking the Power of `%%shell` in Google Colab]]></title>
+            <link>https://sadimanna.github.io/blog/2025-08-01-unlocking-the-power-of-shell-in-google-colab/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-08-01-unlocking-the-power-of-shell-in-google-colab/</guid>
+            <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Pushing Changes to a New Private Repository: A Step-by-Step Guide]]></title>
+            <link>https://sadimanna.github.io/blog/2025-07-28-pushing-changes-to-a-new-private-repository-a-step-by-step-g/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-07-28-pushing-changes-to-a-new-private-repository-a-step-by-step-g/</guid>
+            <pubDate>Mon, 28 Jul 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Importance of Branching in Git]]></title>
+            <link>https://sadimanna.github.io/blog/2025-07-28-the-importance-of-branching-in-git/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-07-28-the-importance-of-branching-in-git/</guid>
+            <pubDate>Mon, 28 Jul 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How Slurm Assigns GPUs to Your Jobs]]></title>
+            <link>https://sadimanna.github.io/blog/2025-07-23-how-slurm-assigns-gpus-to-your-jobs/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-07-23-how-slurm-assigns-gpus-to-your-jobs/</guid>
+            <pubDate>Wed, 23 Jul 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 5: Distributing Everything using…]]></title>
+            <link>https://sadimanna.github.io/blog/2025-07-11-the-practical-guide-to-distributed-training-using-pytorch-pa/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-07-11-the-practical-guide-to-distributed-training-using-pytorch-pa/</guid>
+            <pubDate>Fri, 11 Jul 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 4: On Multiple Nodes using SLURM]]></title>
+            <link>https://sadimanna.github.io/blog/2025-06-26-the-practical-guide-to-distributed-training-using-pytorch-pa/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-06-26-the-practical-guide-to-distributed-training-using-pytorch-pa/</guid>
+            <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 3: On Multiple Nodes using…]]></title>
+            <link>https://sadimanna.github.io/blog/2025-06-19-the-practical-guide-to-distributed-training-using-pytorch-pa/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-06-19-the-practical-guide-to-distributed-training-using-pytorch-pa/</guid>
+            <pubDate>Thu, 19 Jun 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 2: On a Single Node using Torchrun]]></title>
+            <link>https://sadimanna.github.io/blog/2025-06-09-the-practical-guide-to-distributed-training-using-pytorch-pa/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-06-09-the-practical-guide-to-distributed-training-using-pytorch-pa/</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Practical Guide to Distributed Training using PyTorch — Part 1: On a Single Node using torch.mul]]></title>
+            <link>https://sadimanna.github.io/blog/2025-06-08-the-practical-guide-to-distributed-training-using-pytorch-pa/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-06-08-the-practical-guide-to-distributed-training-using-pytorch-pa/</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Comprehensive Guide to Overlaying Segmentation Masks in Python]]></title>
+            <link>https://sadimanna.github.io/blog/2025-05-30-comprehensive-guide-to-overlaying-segmentation-masks-in-pyth/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-05-30-comprehensive-guide-to-overlaying-segmentation-masks-in-pyth/</guid>
+            <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Understanding and Calculating MACs and FLOPs in PyTorch Models]]></title>
+            <link>https://sadimanna.github.io/blog/2025-05-20-understanding-and-calculating-macs-and-flops-in-pytorch-mode/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-05-20-understanding-and-calculating-macs-and-flops-in-pytorch-mode/</guid>
+            <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK]]></title>
+            <link>https://sadimanna.github.io/blog/2025-05-12-compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-ma/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-05-12-compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-ma/</guid>
+            <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Row by Row: A Guide to Iterating Over Pandas DataFrames with iterrows() and loc[]]]></title>
+            <link>https://sadimanna.github.io/blog/2025-05-01-row-by-row-a-guide-to-iterating-over-pandas-dataframes-with/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-05-01-row-by-row-a-guide-to-iterating-over-pandas-dataframes-with/</guid>
+            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Generative Models — Diffusion Chapter — Part 1—Likelihood and Score]]></title>
+            <link>https://sadimanna.github.io/blog/2025-02-26-generative-models-diffusion-chapter-part-1-likelihood-and-sc/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-02-26-generative-models-diffusion-chapter-part-1-likelihood-and-sc/</guid>
+            <pubDate>Wed, 26 Feb 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Neural Networks — Part 0: A Journey Through Neural Network Architecture]]></title>
+            <link>https://sadimanna.github.io/blog/2025-02-14-neural-networks-part-0-a-journey-through-neural-network-arch/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-02-14-neural-networks-part-0-a-journey-through-neural-network-arch/</guid>
+            <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Chess — Part 1: Establishing Communication Between Chess Engine and GUI]]></title>
+            <link>https://sadimanna.github.io/blog/2025-01-16-chess-part-1-establishing-communication-between-chess-engine/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-01-16-chess-part-1-establishing-communication-between-chess-engine/</guid>
+            <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Chess — Part 0: Introduction to Chess Programming Basics]]></title>
+            <link>https://sadimanna.github.io/blog/2025-01-10-chess-part-0-introduction-to-chess-programming-basics/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2025-01-10-chess-part-0-introduction-to-chess-programming-basics/</guid>
+            <pubDate>Fri, 10 Jan 2025 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Profiling different algorithms using the built-in timeit module in Python]]></title>
+            <link>https://sadimanna.github.io/blog/2024-12-27-profiling-different-algorithms-using-the-built-in-timeit-mod/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-12-27-profiling-different-algorithms-using-the-built-in-timeit-mod/</guid>
+            <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Plotting Continuously Updating Gradient Vectors on Loss Landscape in Matplotlib — Part 1]]></title>
+            <link>https://sadimanna.github.io/blog/2024-12-19-plotting-continuously-updating-gradient-vectors-on-loss-land/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-12-19-plotting-continuously-updating-gradient-vectors-on-loss-land/</guid>
+            <pubDate>Thu, 19 Dec 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to log metrics and data at different lines in the code but at the same time-step using Wandb]]></title>
+            <link>https://sadimanna.github.io/blog/2024-12-05-how-to-log-metrics-and-data-at-different-lines-in-the-code-b/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-12-05-how-to-log-metrics-and-data-at-different-lines-in-the-code-b/</guid>
+            <pubDate>Thu, 05 Dec 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Managing Your Machine Learning Workflow with Weights & Biases Artifacts]]></title>
+            <link>https://sadimanna.github.io/blog/2024-11-22-managing-your-machine-learning-workflow-with-weights-biases/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-11-22-managing-your-machine-learning-workflow-with-weights-biases/</guid>
+            <pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Sending Weights & Biases Alerts to WhatsApp Using Twilio]]></title>
+            <link>https://sadimanna.github.io/blog/2024-11-20-sending-weights-biases-alerts-to-whatsapp-using-twilio/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-11-20-sending-weights-biases-alerts-to-whatsapp-using-twilio/</guid>
+            <pubDate>Wed, 20 Nov 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
         </item>
         <item>
             <title><![CDATA[Understanding Federated Learning: Privacy-Preserving Distributed Training]]></title>
             <link>https://sadimanna.github.io/blog/understanding-federated-learning/</link>
             <guid isPermaLink="false">https://sadimanna.github.io/blog/understanding-federated-learning/</guid>
             <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[A comprehensive guide to Federated Learning — how it enables collaborative model training without sharing raw data, its mathematical foundations, and practical implementation with PyTorch.]]></description>
             <author>Dr. Siladittya Manna</author>
             <category>Machine Learning</category>
             <category>Federated Learning</category>
+        </item>
+        <item>
+            <title><![CDATA[Research Roundtable [Day 1][Paper 1]— BERT: Bidirectional Encoder Representations from Transformers]]></title>
+            <link>https://sadimanna.github.io/blog/2024-08-28-research-roundtable-day-1-paper-1-bert-bidirectional-encoder/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-08-28-research-roundtable-day-1-paper-1-bert-bidirectional-encoder/</guid>
+            <pubDate>Wed, 28 Aug 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Research Roundtable [Day 1][Paper 2] — Big Self-Supervised Models are Strong Semi-Supervised…]]></title>
+            <link>https://sadimanna.github.io/blog/2024-08-28-research-roundtable-day-1-paper-2-big-self-supervised-models/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-08-28-research-roundtable-day-1-paper-2-big-self-supervised-models/</guid>
+            <pubDate>Wed, 28 Aug 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to save both ‘logs’ and ‘print’ statement outputs in the same file using Python?]]></title>
+            <link>https://sadimanna.github.io/blog/2024-04-11-how-to-save-both-logs-and-print-statement-outputs-in-the-sam/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-04-11-how-to-save-both-logs-and-print-statement-outputs-in-the-sam/</guid>
+            <pubDate>Thu, 11 Apr 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The most PyTorch way to extract output from any intermediate layer in a pre-trained model]]></title>
+            <link>https://sadimanna.github.io/blog/2024-04-08-the-most-pytorch-way-to-extract-output-from-any-intermediate/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2024-04-08-the-most-pytorch-way-to-extract-output-from-any-intermediate/</guid>
+            <pubDate>Mon, 08 Apr 2024 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Automating Ablation Studies of Deep Learning Models using Batch Script]]></title>
+            <link>https://sadimanna.github.io/blog/2023-10-09-automating-ablation-studies-of-deep-learning-models-using-ba/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-10-09-automating-ablation-studies-of-deep-learning-models-using-ba/</guid>
+            <pubDate>Mon, 09 Oct 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Does this occur even if you pull the nvidia docker image?]]></title>
+            <link>https://sadimanna.github.io/blog/2023-10-06-does-this-occur-even-if-you-pull-the-nvidia-docker-image/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-10-06-does-this-occur-even-if-you-pull-the-nvidia-docker-image/</guid>
+            <pubDate>Fri, 06 Oct 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Changing the Python version on Google Colab]]></title>
+            <link>https://sadimanna.github.io/blog/2023-09-27-changing-the-python-version-on-google-colab/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-09-27-changing-the-python-version-on-google-colab/</guid>
+            <pubDate>Wed, 27 Sep 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Hosting Machine Learning Model Demos with Hugging Face Spaces and Streamlit]]></title>
+            <link>https://sadimanna.github.io/blog/2023-09-14-hosting-machine-learning-model-demos-with-hugging-face-space/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-09-14-hosting-machine-learning-model-demos-with-hugging-face-space/</guid>
+            <pubDate>Thu, 14 Sep 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Guide to fine-tuning a Pre-trained model for Object Detection tasks with Faster RCNN using…]]></title>
+            <link>https://sadimanna.github.io/blog/2023-09-01-guide-to-fine-tuning-a-pre-trained-model-for-object-detectio/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-09-01-guide-to-fine-tuning-a-pre-trained-model-for-object-detectio/</guid>
+            <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[The Art of Loading Custom Objects and Functions in Keras]]></title>
+            <link>https://sadimanna.github.io/blog/2023-08-28-the-art-of-loading-custom-objects-and-functions-in-keras/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-08-28-the-art-of-loading-custom-objects-and-functions-in-keras/</guid>
+            <pubDate>Mon, 28 Aug 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Installing detectron2 in 9 easy steps]]></title>
+            <link>https://sadimanna.github.io/blog/2023-08-24-installing-detectron2-in-9-easy-steps/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-08-24-installing-detectron2-in-9-easy-steps/</guid>
+            <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[An elegant way to split a Dataset into Train, Validation, and Test splits in Batch Script]]></title>
+            <link>https://sadimanna.github.io/blog/2023-06-09-an-elegant-way-to-split-a-dataset-into-train-validation-and/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-06-09-an-elegant-way-to-split-a-dataset-into-train-validation-and/</guid>
+            <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to run Shell scripts in Windows]]></title>
+            <link>https://sadimanna.github.io/blog/2023-01-31-how-to-run-shell-scripts-in-windows/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2023-01-31-how-to-run-shell-scripts-in-windows/</guid>
+            <pubDate>Tue, 31 Jan 2023 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[QR Factorization: Gram-Schmidt Algorithm]]></title>
+            <link>https://sadimanna.github.io/blog/2022-11-25-qr-factorization-gram-schmidt-algorithm/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2022-11-25-qr-factorization-gram-schmidt-algorithm/</guid>
+            <pubDate>Fri, 25 Nov 2022 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Quick Tips #2: Try Plotting an All 1s 2D Array in Matplotlib]]></title>
+            <link>https://sadimanna.github.io/blog/2022-10-21-quick-tips-2-try-plotting-an-all-1s-2d-array-in-matplotlib/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2022-10-21-quick-tips-2-try-plotting-an-all-1s-2d-array-in-matplotlib/</guid>
+            <pubDate>Fri, 21 Oct 2022 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to get Model Summary in PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2022-08-25-how-to-get-model-summary-in-pytorch/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2022-08-25-how-to-get-model-summary-in-pytorch/</guid>
+            <pubDate>Thu, 25 Aug 2022 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[How to plot multiple 2D Series in 3D (Waterfall plot) in Matplotlib]]></title>
+            <link>https://sadimanna.github.io/blog/2022-03-21-how-to-plot-multiple-2d-series-in-3d-waterfall-plot-in-matpl/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2022-03-21-how-to-plot-multiple-2d-series-in-3d-waterfall-plot-in-matpl/</guid>
+            <pubDate>Mon, 21 Mar 2022 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Quick Tips #1: How to obtain environment information using PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2022-01-25-quick-tips-1-how-to-obtain-environment-information-using-pyt/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2022-01-25-quick-tips-1-how-to-obtain-environment-information-using-pyt/</guid>
+            <pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Installing PyTorch XLA in Google Colab without errors!!]]></title>
+            <link>https://sadimanna.github.io/blog/2021-09-11-installing-pytorch-xla-in-google-colab-without-errors/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-09-11-installing-pytorch-xla-in-google-colab-without-errors/</guid>
+            <pubDate>Sat, 11 Sep 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Creating a TF Dataset using a Data Generator]]></title>
+            <link>https://sadimanna.github.io/blog/2021-08-21-creating-a-tf-dataset-using-a-data-generator/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-08-21-creating-a-tf-dataset-using-a-data-generator/</guid>
+            <pubDate>Sat, 21 Aug 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Plotting Stacked Bar Chart in Python using Matplotlib]]></title>
+            <link>https://sadimanna.github.io/blog/2021-08-01-plotting-stacked-bar-chart-in-python-using-matplotlib/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-08-01-plotting-stacked-bar-chart-in-python-using-matplotlib/</guid>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[GradCAM in PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2021-07-31-gradcam-in-pytorch/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-07-31-gradcam-in-pytorch/</guid>
+            <pubDate>Sat, 31 Jul 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Plotting Grouped Bar Chart in Matplotlib]]></title>
+            <link>https://sadimanna.github.io/blog/2021-07-30-plotting-grouped-bar-chart-in-matplotlib/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-07-30-plotting-grouped-bar-chart-in-matplotlib/</guid>
+            <pubDate>Fri, 30 Jul 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[SimCLR in PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2021-06-30-simclr-in-pytorch/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-06-30-simclr-in-pytorch/</guid>
+            <pubDate>Wed, 30 Jun 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Statistical Learning Theory Part 4]]></title>
+            <link>https://sadimanna.github.io/blog/2021-06-21-statistical-learning-theory-part-4/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-06-21-statistical-learning-theory-part-4/</guid>
+            <pubDate>Mon, 21 Jun 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Using forward_hooks to Extract Intermediate Layer Outputs from a Pre-trained ResNet Model in…]]></title>
+            <link>https://sadimanna.github.io/blog/2021-01-09-using-forward-hooks-to-extract-intermediate-layer-outputs-fr/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-01-09-using-forward-hooks-to-extract-intermediate-layer-outputs-fr/</guid>
+            <pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2021-01-07-extracting-features-from-an-intermediate-layer-of-a-pretrain/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2021-01-07-extracting-features-from-an-intermediate-layer-of-a-pretrain/</guid>
+            <pubDate>Thu, 07 Jan 2021 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Extracting Features from an Intermediate Layer of a Pretrained ResNet Model in PyTorch (Hard Way)]]></title>
+            <link>https://sadimanna.github.io/blog/2020-12-20-extracting-features-from-an-intermediate-layer-of-a-pretrain/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-12-20-extracting-features-from-an-intermediate-layer-of-a-pretrain/</guid>
+            <pubDate>Sun, 20 Dec 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Solving Integer Partitioning Problem using Python]]></title>
+            <link>https://sadimanna.github.io/blog/2020-09-08-solving-integer-partitioning-problem-using-python/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-09-08-solving-integer-partitioning-problem-using-python/</guid>
+            <pubDate>Tue, 08 Sep 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Magnifying Dense regions in Matplotlib plots]]></title>
+            <link>https://sadimanna.github.io/blog/2020-08-01-magnifying-dense-regions-in-matplotlib-plots/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-08-01-magnifying-dense-regions-in-matplotlib-plots/</guid>
+            <pubDate>Sat, 01 Aug 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Imbalanced Multilabel Scene Classification using Keras]]></title>
+            <link>https://sadimanna.github.io/blog/2020-07-29-imbalanced-multilabel-scene-classification-using-keras/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-07-29-imbalanced-multilabel-scene-classification-using-keras/</guid>
+            <pubDate>Wed, 29 Jul 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Keras vs PyTorch]]></title>
+            <link>https://sadimanna.github.io/blog/2020-07-24-keras-vs-pytorch/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-07-24-keras-vs-pytorch/</guid>
+            <pubDate>Fri, 24 Jul 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
         </item>
         <item>
             <title><![CDATA[Self-Supervised Learning in Medical Imaging: From Pretext Tasks to Foundation Models]]></title>
             <link>https://sadimanna.github.io/blog/self-supervised-learning-medical-imaging/</link>
             <guid isPermaLink="false">https://sadimanna.github.io/blog/self-supervised-learning-medical-imaging/</guid>
             <pubDate>Fri, 10 Jul 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Exploring how self-supervised learning techniques are revolutionizing medical image analysis — from contrastive pretraining to vision-language foundation models for radiology and pathology.]]></description>
             <author>Dr. Siladittya Manna</author>
             <category>Medical AI</category>
             <category>Self-Supervised Learning</category>
+        </item>
+        <item>
+            <title><![CDATA[Statistical Learning Theory Part 1]]></title>
+            <link>https://sadimanna.github.io/blog/2020-06-25-statistical-learning-theory-part-1/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-06-25-statistical-learning-theory-part-1/</guid>
+            <pubDate>Thu, 25 Jun 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Evaluation Metrics Part 1]]></title>
+            <link>https://sadimanna.github.io/blog/2020-06-20-evaluation-metrics-part-1/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-06-20-evaluation-metrics-part-1/</guid>
+            <pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Welcome to The Owl Newsletters]]></title>
+            <link>https://sadimanna.github.io/blog/2020-06-06-welcome-to-the-owl-newsletters/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-06-06-welcome-to-the-owl-newsletters/</guid>
+            <pubDate>Sat, 06 Jun 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Using Telegram bot to receive Deep Learning model training updates on your mobile device]]></title>
+            <link>https://sadimanna.github.io/blog/2020-04-11-using-telegram-bot-to-receive-deep-learning-model-training-u/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-04-11-using-telegram-bot-to-receive-deep-learning-model-training-u/</guid>
+            <pubDate>Sat, 11 Apr 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[K-Fold Cross Validation for Deep Learning using Keras]]></title>
+            <link>https://sadimanna.github.io/blog/2020-03-20-k-fold-cross-validation-for-deep-learning-using-keras/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2020-03-20-k-fold-cross-validation-for-deep-learning-using-keras/</guid>
+            <pubDate>Fri, 20 Mar 2020 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Building Inception-Resnet-V2 in Keras from scratch]]></title>
+            <link>https://sadimanna.github.io/blog/2019-04-10-building-inception-resnet-v2-in-keras-from-scratch/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2019-04-10-building-inception-resnet-v2-in-keras-from-scratch/</guid>
+            <pubDate>Wed, 10 Apr 2019 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+        </item>
+        <item>
+            <title><![CDATA[Converting MNIST dataset for Handwritten digit recognition in IDX Format to Python Numpy Array]]></title>
+            <link>https://sadimanna.github.io/blog/2018-02-22-converting-mnist-dataset-for-handwritten-digit-recognition-i/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2018-02-22-converting-mnist-dataset-for-handwritten-digit-recognition-i/</guid>
+            <pubDate>Thu, 22 Feb 2018 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
         </item>
     </channel>
 </rss>

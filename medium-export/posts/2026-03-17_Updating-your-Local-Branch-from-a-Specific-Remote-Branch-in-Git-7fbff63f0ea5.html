@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Updating your Local Branch from a Specific Remote Branch in Git</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Updating your Local Branch from a Specific Remote Branch in Git</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Whether you’re collaborating on a feature or just keeping your work in sync, pulling changes to a non-main branch is a daily task for most…
+</section>
+<section data-field="body" class="e-content">
+<section name="f5f3" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6805" id="6805" class="graf graf--h3 graf--leading graf--title">Updating your Local Branch from a Specific Remote Branch in Git</h3><figure name="1368" id="1368" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*3nn3sj3weXgIgC6rU5NkOw.png" data-width="1536" data-height="1024" src="https://cdn-images-1.medium.com/max/800/1*3nn3sj3weXgIgC6rU5NkOw.png"></figure><p name="e7a0" id="e7a0" class="graf graf--p graf-after--figure">Whether you’re collaborating on a feature or just keeping your work in sync, pulling changes to a non-main branch is a daily task for most developers. Here is how to do it cleanly.</p><h3 name="7c9b" id="7c9b" class="graf graf--h3 graf-after--p">The Standard Approach</h3><p name="747b" id="747b" class="graf graf--p graf-after--h3">If you are already working on your local branch (let’s call it <code class="markup--code markup--p-code">feature-login</code>), You can pull changes directly from the remote version of that branch.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="6627" id="6627" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-comment"># 1. Switch to your feature branch</span><br />git checkout feature-login<br /><br /><span class="hljs-comment"># 2. Pull changes from the remote &#x27;origin&#x27; into your current branch</span><br />git pull origin feature-login</span></pre><p name="c2d0" id="c2d0" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">What happens behind the scenes?</strong><br>The <code class="markup--code markup--p-code">git pull</code> command is actually a combination of two actions:</p><ol class="postList"><li name="dcb4" id="dcb4" class="graf graf--li graf-after--p"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">git fetch</strong></code>: It downloads the new data from the remote repository.</li><li name="352b" id="352b" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">git merge</strong></code>: It immediately tries to combine those changes into your local files.</li></ol><h3 name="3fab" id="3fab" class="graf graf--h3 graf-after--li">The Cleanest Method: Rebase</h3><p name="c1be" id="c1be" class="graf graf--p graf-after--h3">If you have local commits that haven’t been pushed yet, a standard pull creates a “<strong class="markup--strong markup--p-strong">merge commit</strong>.” To keep your history linear and easy to read, use the <strong class="markup--strong markup--p-strong">rebase</strong> flag.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="9289" id="9289" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-comment"># Pull and replay your local work on top of the incoming changes</span><br />git pull --rebase origin feature-login</span></pre><h3 name="ac26" id="ac26" class="graf graf--h3 graf-after--pre">The Pro Workflow: Step-by-Step</h3><p name="da82" id="da82" class="graf graf--p graf-after--h3">If you want total control and want to see what’s coming before you merge it, follow this three-step flow:</p><p name="7920" id="7920" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">1. Update your local “view” of the remote</strong></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="sql" name="bf18" id="bf18" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">git <span class="hljs-keyword">fetch</span> origin</span></pre><p name="31b1" id="31b1" class="graf graf--p graf-after--pre">This updates <code class="markup--code markup--p-code">origin/feature-login</code> in your local database, but doesn&#39;t touch your code yet.</p><p name="de32" id="de32" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">2. Compare the differences</strong></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="7d47" id="7d47" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">git <span class="hljs-built_in">log</span> HEAD..origin/feature-login --oneline</span></pre><p name="beaf" id="beaf" class="graf graf--p graf-after--pre">This shows you exactly which commits are on the server that you don’t have yet.</p><p name="4c15" id="4c15" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">3. Bring the changes in</strong></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="f253" id="f253" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">git merge origin/feature-login</span></pre><p name="1978" id="1978" class="graf graf--p graf-after--pre">Common Gotchas</p><ul class="postList"><li name="8b3b" id="8b3b" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Merge Conflicts:</strong> If you and a teammate edited the same line, Git will pause. You’ll need to open the files, pick the correct code, and run <code class="markup--code markup--li-code">git commit</code> to finish.</li><li name="4bc9" id="4bc9" class="graf graf--li graf-after--li graf--trailing"><strong class="markup--strong markup--li-strong">Wrong Branch:</strong> Always run <code class="markup--code markup--li-code">git branch</code> before pulling to ensure you aren&#39;t accidentally pulling feature code into your <code class="markup--code markup--li-code">main</code> branch.</li></ul></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/7fbff63f0ea5"><time class="dt-published" datetime="2026-03-17T17:08:23.859Z">March 17, 2026</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/updating-a-specific-local-branch-from-remote-in-git-7fbff63f0ea5" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

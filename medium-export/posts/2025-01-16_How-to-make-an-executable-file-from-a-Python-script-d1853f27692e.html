@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>How to make an executable file from a Python script</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">How to make an executable file from a Python script</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+To create a binary executable from Python script, you’ll need to use a tool that can package your Python code into a standalone executable.
+</section>
+<section data-field="body" class="e-content">
+<section name="1ddb" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="bc63" id="bc63" class="graf graf--h3 graf--leading graf--title">How to make an executable file from a Python script</h3><figure name="13ed" id="13ed" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*iujL_nKlceZepNi_bSd5Fw.jpeg" data-width="410" data-height="410" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*iujL_nKlceZepNi_bSd5Fw.jpeg"></figure><p name="b515" id="b515" class="graf graf--p graf-after--figure">To create a binary executable from Python script, you’ll need to use a tool that can package your Python code into a standalone executable.</p><p name="45f5" id="45f5" class="graf graf--p graf-after--p">Here are a few popular options:</p><h4 name="4f9b" id="4f9b" class="graf graf--h4 graf-after--p">1. PyInstaller</h4><p name="c17a" id="c17a" class="graf graf--p graf-after--h4">PyInstaller is a popular tool for converting Python scripts into standalone executables. Here’s a basic example of how to use PyInstaller:</p><p name="3305" id="3305" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Installation</em></strong></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="aa03" id="aa03" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">pip install pyinstaller</span></pre><p name="6acb" id="6acb" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Usage</em></strong><br>Navigate to your project directory and run:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="f12b" id="f12b" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">pyinstaller --onefile dummyce.<span class="hljs-property">py</span></span></pre><p name="5b00" id="5b00" class="graf graf--p graf-after--pre">This will create a standalone executable in a `<strong class="markup--strong markup--p-strong">dist</strong>` directory.</p><h4 name="cf9b" id="cf9b" class="graf graf--h4 graf-after--p">2. cx_Freeze</h4><p name="9a62" id="9a62" class="graf graf--p graf-after--h4">cx_Freeze is another tool for freezing Python scripts into executables. Here’s a basic example:</p><p name="5e35" id="5e35" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Installation</em></strong></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="85a1" id="85a1" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">pip install cx_Freeze</span></pre><p name="a7b6" id="a7b6" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Usage</em></strong><br>Create a `setup.py` file with the following content:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="d2fa" id="d2fa" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">from</span> cx_Freeze <span class="hljs-keyword">import</span> setup, <span class="hljs-title class_">Executable</span></span></pre><pre name="72fe" id="72fe" class="graf graf--pre graf-after--pre">setup(<br> name=”Your Chess Engine”,<br> version=”1.0&quot;,<br> description=”Your chess engine description”,<br> executables=[Executable(“dummyce.py”)]<br>)</pre><p name="fb04" id="fb04" class="graf graf--p graf-after--pre">Then, run:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="42a1" id="42a1" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">python setup.<span class="hljs-property">py</span> build</span></pre><p name="1d44" id="1d44" class="graf graf--p graf-after--pre">This will create a standalone executable in a `<strong class="markup--strong markup--p-strong">build</strong>` directory.</p><h4 name="8b5c" id="8b5c" class="graf graf--h4 graf-after--p">3. Py2Exe</h4><p name="7eea" id="7eea" class="graf graf--p graf-after--h4">Py2Exe is a tool for converting Python scripts into Windows executables. Here’s a basic example:</p><p name="e813" id="e813" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Installation</em></strong></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="dbfa" id="dbfa" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">pip install py2exe</span></pre><p name="0a80" id="0a80" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Usage</em></strong><br>Create a `setup.py` file with the following content:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="62ff" id="62ff" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">from</span> distutils.<span class="hljs-property">core</span> <span class="hljs-keyword">import</span> setup<br /><span class="hljs-keyword">import</span> py2exe<br /><br /><span class="hljs-title function_">setup</span>(<br /> <span class="hljs-variable language_">console</span>=[‘dummyce.<span class="hljs-property">py</span>’]<br />)</span></pre><p name="d05d" id="d05d" class="graf graf--p graf-after--pre">Then, run:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="3dcf" id="3dcf" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">python setup.<span class="hljs-property">py</span> py2exe</span></pre><p name="5c18" id="5c18" class="graf graf--p graf-after--pre">This will create a standalone executable in a `<strong class="markup--strong markup--p-strong">dist</strong>` directory.</p><p name="4ccc" id="4ccc" class="graf graf--p graf-after--p graf--trailing">The reader is free to choose any tool. However, it should be noted that while <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">pyinstaller</em></strong> is supported on <strong class="markup--strong markup--p-strong">Windows</strong>, <strong class="markup--strong markup--p-strong">Linux</strong> and <strong class="markup--strong markup--p-strong">MacOS</strong>, and <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">cx_Freeze</em></strong> also creates <strong class="markup--strong markup--p-strong">cross-platform</strong> executables, <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">py2exe</em></strong> works only on <strong class="markup--strong markup--p-strong">Windows</strong>.</p></div></div></section><section name="2909" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="414a" id="414a" class="graf graf--p graf--leading graf--trailing">Clap, Share and Follow if you liked this article. Feedback is appreciated!</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/d1853f27692e"><time class="dt-published" datetime="2025-01-16T14:50:11.145Z">January 16, 2025</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/how-to-make-an-executable-file-from-a-python-script-d1853f27692e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

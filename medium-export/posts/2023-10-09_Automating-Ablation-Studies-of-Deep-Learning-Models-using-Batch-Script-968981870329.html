@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Automating Ablation Studies of Deep Learning Models using Batch Script</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Automating Ablation Studies of Deep Learning Models using Batch Script</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+In this article, we will look at a short example of how we can automate running ablation study experiments on our deep learning models…
+</section>
+<section data-field="body" class="e-content">
+<section name="5a28" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8032" id="8032" class="graf graf--h3 graf--leading graf--title">Automating Ablation Studies of Deep Learning Models using Batch Script</h3><figure name="d818" id="d818" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*jvk0_V_Bqji2RoXc56ivpQ.jpeg" data-width="512" data-height="512" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*jvk0_V_Bqji2RoXc56ivpQ.jpeg"></figure><p name="c2be" id="c2be" class="graf graf--p graf-after--figure">In this article, we will look at a short example of how we can automate running ablation study experiments on our deep learning models using batch scripts in Windows.</p><blockquote name="e827" id="e827" class="graf graf--blockquote graf-after--p">Step 1</blockquote><p name="85ba" id="85ba" class="graf graf--p graf-after--blockquote">Create a <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">.bat</em></strong> file in your editor</p><blockquote name="5e9c" id="5e9c" class="graf graf--blockquote graf-after--p">Step 2: Identify the hyper-parameters you want to sweep over in your experiments</blockquote><p name="b489" id="b489" class="graf graf--p graf-after--blockquote">For this article, let us consider the hyper-parameter to be λ. Also, we would like to see the effect of batch size for each λ value.</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="188d" id="188d" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">@<span class="hljs-built_in">echo</span> off<br />setlocal EnableDelayedExpansion<br /><span class="hljs-built_in">set</span> lambda=2 10 50 100<br /><span class="hljs-built_in">set</span> bs=128 256 512<br /><span class="hljs-built_in">set</span> /a exprun = 1<br /><span class="hljs-keyword">for</span> %%i <span class="hljs-keyword">in</span> (%lambda%) <span class="hljs-keyword">do</span> (<br />    <span class="hljs-keyword">for</span> %%j <span class="hljs-keyword">in</span> (%bs%) <span class="hljs-keyword">do</span> (<br />        <span class="hljs-built_in">echo</span> lambda=%%i/100<br />        <span class="hljs-built_in">echo</span> bs=%%j<br />        <span class="hljs-built_in">set</span> /a exprun=!exprun!+1<br />        <span class="hljs-built_in">echo</span> !exprun!<br />        python train.py --lambda %%i --bs %%j --run !exprun!<br />    )<br />)<br />endlocal</span></pre><p name="ce24" id="ce24" class="graf graf--p graf-after--pre">In the above code, we pass the arguments <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">lambda</em></strong> and <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">bs</em></strong> to the python file <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">trian.py</em></strong> and also increment our experiment number counter <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">exprun.</em></strong></p><h4 name="a475" id="a475" class="graf graf--h4 graf-after--p">for loop</h4><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="bash" name="98e8" id="98e8" class="graf graf--pre graf-after--h4 graf--preV2"><span class="pre--content"><span class="hljs-keyword">for</span> %%i <span class="hljs-keyword">in</span> (%lambda%) <span class="hljs-keyword">do</span> (<br />...<br />)</span></pre><p name="a3e2" id="a3e2" class="graf graf--p graf-after--pre">Iterates over the elements in the list <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">lambda</em></strong></p><h4 name="757d" id="757d" class="graf graf--h4 graf-after--p">set</h4><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="bash" name="07d8" id="07d8" class="graf graf--pre graf-after--h4 graf--preV2"><span class="pre--content"><span class="hljs-built_in">set</span> /a exprun = 1</span></pre><p name="194b" id="194b" class="graf graf--p graf-after--pre">Sets the value <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">1</em></strong> to the environment variable <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">exprun.</em></strong></p><p name="359d" id="359d" class="graf graf--p graf-after--p">Using <strong class="markup--strong markup--p-strong">/a</strong> sets <code class="markup--code markup--p-code">&lt;string&gt;</code> to a numerical expression that is evaluated.</p><p name="48c9" id="48c9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">setlocal</strong></p><p name="bce7" id="bce7" class="graf graf--p graf-after--p">Detailed explanation can be found here <a href="https://ss64.com/nt/setlocal.html" data-href="https://ss64.com/nt/setlocal.html" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://ss64.com/nt/setlocal.html</a></p><p name="2779" id="2779" class="graf graf--p graf-after--p graf--trailing">You can find more about Batch scripting here: <a href="https://en.wikibooks.org/wiki/Windows_Batch_Scripting" data-href="https://en.wikibooks.org/wiki/Windows_Batch_Scripting" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://en.wikibooks.org/wiki/Windows_Batch_Scripting</a></p></div></div></section><section name="46f2" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="aca6" id="aca6" class="graf graf--p graf--leading graf--trailing">Clap, share and follow if you find this article helpful.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/968981870329"><time class="dt-published" datetime="2023-10-09T11:28:49.923Z">October 9, 2023</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/automating-ablation-studies-of-deep-learning-models-using-batch-script-968981870329" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

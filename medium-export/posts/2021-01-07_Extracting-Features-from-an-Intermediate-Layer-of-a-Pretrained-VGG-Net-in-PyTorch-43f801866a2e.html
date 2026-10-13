@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This article is the third one in the “Feature Extraction” series. The last two articles were about extracting features from intermediate…
+</section>
+<section data-field="body" class="e-content">
+<section name="e529" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="733d" id="733d" class="graf graf--h3 graf--leading graf--title">Extracting Features from an Intermediate Layer of a Pretrained VGG-Net in PyTorch</h3><figure name="82bd" id="82bd" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*vpfxAAHNZYyk-BSq_jBU7Q.png" data-width="906" data-height="231" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*vpfxAAHNZYyk-BSq_jBU7Q.png"><figcaption class="imageCaption">256 feature maps of dimension 56X56 taken as an output from the 4th layer in VGG-11</figcaption></figure><p name="593a" id="593a" class="graf graf--p graf-after--figure">This article is the third one in the “Feature Extraction” series. The last two articles (Part 1: <a href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-c00589bda32b" data-href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-c00589bda32b" class="markup--anchor markup--p-anchor" target="_blank">Hard</a> and Part 2: <a href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-easy-way-62631c7fa8f6" data-href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-easy-way-62631c7fa8f6" class="markup--anchor markup--p-anchor" target="_blank">Easy</a>) were about extracting features from intermediate layers in <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">ResNet</em></strong> in <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">PyTorch</em></strong>. In this article, we are going to see how to extract features from an intermediate layer from a <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">VGG Net</em></strong>. As I mentioned in the previous article, one may need to look at the <a href="https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py" data-href="https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">source code</a> first to have an idea about what to import and which functions to modify.</p><h3 name="9145" id="9145" class="graf graf--h3 graf-after--p">Library Imports</h3><figure name="0fc5" id="0fc5" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/sadimanna/c4455b0d16d9200d368eed38b3d833fd.js.js"></script></figure><h3 name="c04b" id="c04b" class="graf graf--h3 graf-after--figure">Importing VGG and other required functions</h3><pre name="711f" id="711f" class="graf graf--pre graf-after--h3">from torchvision.models.vgg import *<br>from torchvision.models.vgg import model_urls, cfgs</pre><p name="dccd" id="dccd" class="graf graf--p graf--startsWithSingleQuote graf-after--pre">‘<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">__all__</em></strong>’ does not contain <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">model_urls</em></strong> and <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">cfgs</em></strong> dictionaries, so those two dictionaries have been imported separately. Otherwise, one can create them in the working file also.</p><pre name="044a" id="044a" class="graf graf--pre graf-after--p">cfgs: Dict[str, List[Union[str, int]]] = { </pre><pre name="983e" id="983e" class="graf graf--pre graf--startsWithSingleQuote graf-after--pre">‘A’: [64,‘M’,128,‘M’,256,256,‘M’,512,512,‘M’,512,512,‘M’],<br> <br>‘B’: [64,64,‘M’,128,128,‘M’,256,256,‘M’,512,512,&#39;M’,512,512,‘M’], </pre><pre name="e237" id="e237" class="graf graf--pre graf--startsWithSingleQuote graf-after--pre">‘D’: [64,64,‘M’,128,128,‘M’,256,256,256,‘M’,512,512,512,‘M’,512,512,512,‘M’], </pre><pre name="eecc" id="eecc" class="graf graf--pre graf--startsWithSingleQuote graf-after--pre">‘E’: [64,64,‘M’,128,128,‘M’,256,256,256,256,‘M’,512,512,512,512,‘M’,512, 512,512,512,‘M’],}</pre><h3 name="cf35" id="cf35" class="graf graf--h3 graf-after--pre">Create a new VGG class</h3><p name="0f46" id="0f46" class="graf graf--p graf-after--h3">We will create a new VGG class which will give us the output from the layer we want. We can do this in two ways. We can create a subclass of VGG and override the forward method of the VGG class like we did for <a href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-easy-way-62631c7fa8f6" data-href="https://medium.com/the-owl/extracting-features-from-an-intermediate-layer-of-a-pretrained-model-in-pytorch-easy-way-62631c7fa8f6" class="markup--anchor markup--p-anchor" target="_blank">ResNet</a> or we can just create another class without inheriting the VGG class.</p><figure name="bec0" id="bec0" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/0b759f10daba8ca08b3166ff2a62eceb.js.js"></script></figure><h3 name="7b5b" id="7b5b" class="graf graf--h3 graf-after--figure">Main Module</h3><p name="d99c" id="d99c" class="graf graf--p graf-after--h3">We create another class in which we can pass information about which model we want to use as the backbone and which layer we want to take the output from, and accordingly, a model ‘<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">self.vgg</em></strong>’ will be created. Also, we can add other layers according to our need (like LSTM or ConvLSTM) to the new VGG model. Also, care must be taken that the dictionary <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">kwargs </em></strong>is initialized and there is a key ‘<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">init_weights</em></strong>’ in it otherwise we can get a <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">KeyError </em></strong>if<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em"> </em></strong>we set <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">pretrained</em></strong> <strong class="markup--strong markup--p-strong">=</strong> <strong class="markup--strong markup--p-strong">False.</strong></p><figure name="c740" id="c740" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/d27dcbd9851bbf2776c48c0e7cced796.js.js"></script></figure><p name="0f68" id="0f68" class="graf graf--p graf-after--figure">The <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">make_layers</em></strong> method returns an <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">nn.Sequential</em></strong> object with layers up to the layer we want the output from. The <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">_vgg </em></strong>method creates an instance of the modified VGG model (<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">newVGG</em></strong>) and then initializes the layers with pre-trained weights.</p><p name="2b4c" id="2b4c" class="graf graf--p graf-after--p">So, how do we initialize the model in this case? The method <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">load_state_dict</em></strong> offers an option whether to strictly enforce that the keys in <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">state_dict</em></strong> match the keys returned by this module’s method <strong class="markup--strong markup--p-strong">torch.nn.Module.state_dict</strong> function. We set <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">strict</em></strong> to <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">False</em></strong> to avoid getting error for the missing keys in the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">state_dict</em></strong> of the model.</p><p name="24fd" id="24fd" class="graf graf--p graf-after--p">To obtain the new models we just have to write the following lines</p><pre name="beba" id="beba" class="graf graf--pre graf-after--p">model = NewModel(&#39;vgg13&#39;, True, 7, num_trainable_layers = 2)</pre><pre name="77a5" id="77a5" class="graf graf--pre graf-after--pre">model = model.to(&#39;cuda:0&#39;)</pre><p name="dbf0" id="dbf0" class="graf graf--p graf-after--pre">This will give us a VGG-13 model which will give us output from the 7th layer and also if we train this model only the last 2 convolutional layers will be fine-tuned. We can also fine-tune all the layers just by setting</p><pre name="4580" id="4580" class="graf graf--pre graf-after--p">num_trainable_layer = -1</pre><h3 name="1bff" id="1bff" class="graf graf--h3 graf-after--pre">Obtaining the output</h3><pre name="b9f8" id="b9f8" class="graf graf--pre graf-after--h3 graf--trailing">out = model(x)<br>out = out.cpu().data.numpy()</pre></div></div></section><section name="d961" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="888e" id="888e" class="graf graf--p graf--leading graf--trailing">Please clap if you like this post. Any sort of feedback is welcome!</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/43f801866a2e"><time class="dt-published" datetime="2021-01-07T03:56:04.825Z">January 7, 2021</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/extracting-features-from-an-intermediate-layer-of-a-pretrained-vgg-net-in-pytorch-43f801866a2e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

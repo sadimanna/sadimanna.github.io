@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Bypass PyTorch’s attribute guards: Use stack inspection and __setattr__ to ‘stamp’ YAML metadata directly onto your dynamic model…
+</section>
+<section data-field="body" class="e-content">
+<section name="028d" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="53f2" id="53f2" class="graf graf--h3 graf--leading graf--title">The “Ghost in the Machine”: Tracking Variable Names and Metadata in PyTorch</h3><h4 name="97c6" id="97c6" class="graf graf--h4 graf-after--h3 graf--subtitle">Bypass PyTorch’s attribute guards: Use stack inspection and <strong class="markup--strong markup--h4-strong">__setattr__</strong> to ‘stamp’ YAML metadata directly onto your dynamic model instances.</h4><figure name="7d28" id="7d28" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*5kT-xP-3aE5suesNNfTduQ.png" data-width="1024" data-height="1024" src="https://cdn-images-1.medium.com/max/800/1*5kT-xP-3aE5suesNNfTduQ.png"></figure><p name="8372" id="8372" class="graf graf--p graf-after--figure">In Python, an object doesn’t know its own name. The interpreter <code class="markup--code markup--p-code">my_model = L2Regularization()</code> creates an object at a memory address, and it <code class="markup--code markup--p-code">my_model</code> is merely a pointer. But when you are parsing a complex YAML configuration with multiple regularizers, knowing which &quot;key&quot; created which &quot;instance&quot; becomes a debugging necessity.</p><h4 name="32ba" id="32ba" class="graf graf--h4 graf-after--p">Here is the deep dive into how to retrieve names using stack inspection and how to force metadata into the PyTorch ecosystem.</h4><h4 name="fbd0" id="fbd0" class="graf graf--h4 graf-after--h4">1. The “Detective” Approach: Stack Inspection</h4><p name="0add" id="0add" class="graf graf--p graf-after--h4">If you want to find the name of a variable as it exists in your code, you have to look at the <strong class="markup--strong markup--p-strong">Execution Stack</strong>. Every time a function runs, Python creates a <strong class="markup--strong markup--p-strong">Frame</strong> containing two vital dictionaries:</p><ul class="postList"><li name="aaf9" id="aaf9" class="graf graf--li graf-after--p"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">f_locals</strong></code>: Variables defined inside the current function scope.</li><li name="6ca3" id="6ca3" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong">f_globals</strong></code>: Variables defined at the module (top) level.</li></ul><p name="b214" id="b214" class="graf graf--p graf-after--li">The “Sophisticated” Inspector</p><p name="ded9" id="ded9" class="graf graf--p graf-after--p">To find an instance’s name, we must look at the <strong class="markup--strong markup--p-strong">Caller’s Frame</strong> (<code class="markup--code markup--p-code">f_back</code>). In the terminal (REPL), <code class="markup--code markup--p-code">f_locals</code> and <code class="markup--code markup--p-code">f_globals</code> are often identical because you are already at the top level.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="python" name="375a" id="375a" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">import</span> inspect<br /><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_var_name</span>(<span class="hljs-params">obj</span>):<br />    <span class="hljs-comment"># Retrieve the frame of the code that called this function</span><br />    frame = inspect.currentframe().f_back<br />    <br />    <span class="hljs-comment"># If called from a terminal/REPL, f_back might be None</span><br />    <span class="hljs-keyword">if</span> frame <span class="hljs-keyword">is</span> <span class="hljs-literal">None</span>:<br />        frame = inspect.currentframe()<br />    <span class="hljs-comment"># In the terminal, locals and globals are the same. </span><br />    <span class="hljs-comment"># In a script, we must check both to be thorough.</span><br />    search_space = {**frame.f_globals, **frame.f_locals}<br />    <br />    <span class="hljs-keyword">try</span>:<br />        <span class="hljs-keyword">for</span> name, value <span class="hljs-keyword">in</span> search_space.items():<br />            <span class="hljs-keyword">if</span> value <span class="hljs-keyword">is</span> obj:<br />                <span class="hljs-keyword">return</span> name<br />    <span class="hljs-keyword">finally</span>:<br />        <span class="hljs-keyword">del</span> frame <span class="hljs-comment"># Crucial to prevent memory leaks (Reference Cycles)</span><br />    <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span></span></pre><p name="298d" id="298d" class="graf graf--p graf-after--pre"><strong class="markup--strong markup--p-strong">The Catch:</strong> This only works if the object has a unique variable name. If your objects are inside a list (like <code class="markup--code markup--p-code">[Reg(), Reg()]</code>), they have no &quot;name&quot; in the namespace, and this method returns <code class="markup--code markup--p-code">None</code>.</p><h4 name="9bd5" id="9bd5" class="graf graf--h4 graf-after--p">2. The “Stamping” Approach: Metadata Injection</h4><p name="1249" id="1249" class="graf graf--p graf-after--h4">When stack inspection fails (common in YAML-driven loops), you must <strong class="markup--strong markup--p-strong">inject</strong> the name into the object. However, doing this with <code class="markup--code markup--p-code">torch.nn.Module</code> is tricky.</p><blockquote name="e181" id="e181" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">Why </strong><code class="markup--code markup--blockquote-code"><strong class="markup--strong markup--blockquote-strong">setattr</strong></code><strong class="markup--strong markup--blockquote-strong"> fails in PyTorch</strong></blockquote><p name="1ff5" id="1ff5" class="graf graf--p graf-after--blockquote">PyTorch overrides the standard <code class="markup--code markup--p-code">__setattr__</code>. It expects every new attribute to be a <code class="markup--code markup--p-code">Parameter</code> or a <code class="markup--code markup--p-code">Buffer</code>. If you try to assign a raw string like <code class="markup--code markup--p-code">instance.yaml_key = &quot;l2_target&quot;</code>, PyTorch’s internal logic sometimes intercepts this and—if the timing isn&#39;t perfect—throws an <code class="markup--code markup--p-code">AttributeError</code>.</p><blockquote name="ddb5" id="ddb5" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">The Surgical Bypass: </strong><code class="markup--code markup--blockquote-code"><strong class="markup--strong markup--blockquote-strong">object.__setattr__</strong></code></blockquote><p name="39a3" id="39a3" class="graf graf--p graf-after--blockquote">To force a metadata “stamp” onto a PyTorch instance without triggering its internal guards, we call the method from the root of all Python objects:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="csharp" name="f800" id="f800" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-meta"># Bypass the L2Regularization/PyTorch __setattr__ entirely</span><br /><span class="hljs-built_in">object</span>.__setattr__(reg_instance, <span class="hljs-string">&#x27;yaml_key&#x27;</span>, <span class="hljs-string">&#x27;l2_regularization_target&#x27;</span>)<br /><br /><span class="hljs-meta"># OR directly as</span><br />reg_instance.__setattr__(<span class="hljs-string">&#x27;yaml_key&#x27;</span>, <span class="hljs-string">&#x27;l2_regularization_target&#x27;</span>)</span></pre><p name="6514" id="6514" class="graf graf--p graf-after--pre">This writes the key directly into the object’s<code class="markup--code markup--p-code">__dict__</code>, bypassing any &quot;locked&quot; logic or specialized PyTorch checks.</p><h4 name="d93c" id="d93c" class="graf graf--h4 graf-after--p">3. The Retrieval Paradox</h4><p name="6f91" id="6f91" class="graf graf--p graf-after--h4">Even after a successful injection, you might encounter this error:</p><blockquote name="f269" id="f269" class="graf graf--blockquote graf-after--p"><code class="markup--code markup--blockquote-code"><em class="markup--em markup--blockquote-em">AttributeError: &#39;L2Regularization&#39; object has no attribute &#39;yaml_key&#39;</em></code></blockquote><p name="157a" id="157a" class="graf graf--p graf-after--blockquote">This is the ultimate PyTorch “Ghost.” Even though the data is in the object’s memory, PyTorch <code class="markup--code markup--p-code">__getattr__</code> is programmed to look for tensors. If it doesn&#39;t see your attribute in its &quot;<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">authorized list</em></strong>&quot;, it claims it doesn&#39;t exist.</p><blockquote name="c2a8" id="c2a8" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">The Solution: Using </strong><code class="markup--code markup--blockquote-code"><strong class="markup--strong markup--blockquote-strong">vars()</strong></code></blockquote><p name="33e6" id="33e6" class="graf graf--p graf-after--blockquote">To read your “stamped” metadata, bypass the class getter and look at the raw dictionary:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="ini" name="e01d" id="e01d" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-comment"># Don&#x27;t do: reg.yaml_key (PyTorch might block this)</span><br /><span class="hljs-comment"># Do this:</span><br /><span class="hljs-attr">name</span> = vars(reg).get(<span class="hljs-string">&#x27;yaml_key&#x27;</span>)<br /><br /><span class="hljs-comment"># Or using __dict__</span><br /><span class="hljs-attr">name</span> = reg.__dict__.get(<span class="hljs-string">&#x27;yaml_key&#x27;</span>)</span></pre><p name="82db" id="82db" class="graf graf--p graf-after--pre"><code class="markup--code markup--p-code">vars(reg)</code> or <code class="markup--code markup--p-code">reg.__dict__</code> returns the underlying dictionary of the instance. Because we used <code class="markup--code markup--p-code">__setattr__</code> to put the data there, <code class="markup--code markup--p-code">vars()</code> or <code class="markup--code markup--p-code">__dict__</code>is the only 100% reliable way to get it back out.</p><h4 name="8fa8" id="8fa8" class="graf graf--h4 graf-after--p">Summary for the Sophisticated Developer</h4><ol class="postList"><li name="a2e6" id="a2e6" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">For Variable Names:</strong> Use <code class="markup--code markup--li-code">inspect</code> to merge <code class="markup--code markup--li-code">f_locals</code> and <code class="markup--code markup--li-code">f_globals</code> from the caller&#39;s frame.</li><li name="3082" id="3082" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">For YAML Keys:</strong> Use <code class="markup--code markup--li-code">object.__setattr__</code> to &quot;force-stamp&quot; the instance during the loop.</li><li name="0555" id="0555" class="graf graf--li graf-after--li graf--trailing"><strong class="markup--strong markup--li-strong">For Retrieval:</strong> Use <code class="markup--code markup--li-code">vars(obj)</code> to peek behind the PyTorch curtain and avoid <code class="markup--code markup--li-code">AttributeError</code>.</li></ol></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/74d3231c780f"><time class="dt-published" datetime="2026-02-10T18:37:56.657Z">February 10, 2026</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/the-ghost-in-the-machine-tracking-variable-names-and-metadata-in-pytorch-74d3231c780f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

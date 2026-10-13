@@ -37,16 +37,28 @@ function computeReadingTime(content: string): number {
 
 function extractHeadings(html: string): { id: string; text: string; level: number }[] {
   const headings: { id: string; text: string; level: number }[] = [];
-  const regex = /<h([2-3])\s+id="([^"]*)"[^>]*>(.*?)<\/h[2-3]>/gi;
+  const regex = /<h([1-4])\b([^>]*)>(.*?)<\/h\1>/gi;
   let match;
   while ((match = regex.exec(html)) !== null) {
-    // Strip any HTML tags from heading text (e.g., autolink anchors)
-    const text = match[3].replace(/<[^>]*>/g, '').trim();
-    headings.push({
-      level: parseInt(match[1], 10),
-      id: match[2],
-      text,
-    });
+    const level = parseInt(match[1], 10);
+    const attrs = match[2];
+    const idMatch = attrs.match(/\bid="([^"]*)"/i);
+    const id = idMatch ? idMatch[1] : '';
+
+    // Strip anchor icons, HTML tags, and leading '#' characters
+    let text = match[3]
+      .replace(/<span\s+class="anchor-icon"[^>]*>.*?<\/span>/gi, '')
+      .replace(/<[^>]*>/g, '')
+      .trim();
+    text = text.replace(/^#\s*/, '').trim();
+
+    if (id && text) {
+      headings.push({
+        level,
+        id,
+        text,
+      });
+    }
   }
   return headings;
 }

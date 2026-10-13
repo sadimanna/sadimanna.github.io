@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Generative Models — Diffusion Chapter — Part 2— Langevin Equation and Relation to Fokker-Planck…</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Generative Models — Diffusion Chapter — Part 2— Langevin Equation and Relation to Fokker-Planck…</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Background for Diffusion Models (Continued)
+</section>
+<section data-field="body" class="e-content">
+<section name="09d0" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="b763" id="b763" class="graf graf--h3 graf--leading graf--title">Generative Models — Diffusion Chapter — Part 2— Langevin Equation and Relation to Fokker-Planck Equation</h3><h4 name="a21a" id="a21a" class="graf graf--h4 graf-after--h3 graf--subtitle">Background for Diffusion Models (Continued)</h4><figure name="788d" id="788d" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*PRv9ud_17ajEKEvJbwJaYw.jpeg" data-width="512" data-height="512" src="https://cdn-images-1.medium.com/max/800/1*PRv9ud_17ajEKEvJbwJaYw.jpeg"></figure><p name="307f" id="307f" class="graf graf--p graf-after--figure">Before going into a full-fledged discussion on Diffusion models, it will be useful to understand the two equations which will prove to be very useful in describing the functioning of the Diffusion models. These are: the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Langevin</em></strong> Equation and <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Fokker-Planck</em></strong> Equation. </p><h3 name="89c4" id="89c4" class="graf graf--h3 graf-after--p">Fokker-Planck Equation</h3><blockquote name="c902" id="c902" class="graf graf--blockquote graf-after--h3">Stochastic Process</blockquote><p name="f212" id="f212" class="graf graf--p graf-after--blockquote">A stochastic process is a family of random variables <strong class="markup--strong markup--p-strong">x</strong>_<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">t</em></strong> indexed by time <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">t. </em></strong>Alternatively, it is a probability distribution over a space of paths, where a path describes the evolution of a random variable x_t over time. Thus, it. is a space- and time-dependent process.</p><blockquote name="4dc7" id="4dc7" class="graf graf--blockquote graf-after--p">Markov Process</blockquote><p name="017d" id="017d" class="graf graf--p graf-after--blockquote">A <em class="markup--em markup--p-em">stochastic</em> process is said to have the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Markov</em></strong> property if the value that the random variable <strong class="markup--strong markup--p-strong">x</strong> at time step <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">t+1</em></strong> depends only on the current time step <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">t </em></strong>and not on all the previous values. Mathematically, it can be written as,</p><figure name="2498" id="2498" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*gOmQiM60LzcK1DZYx6FGxQ.png" data-width="749" data-height="40" src="https://cdn-images-1.medium.com/max/800/1*gOmQiM60LzcK1DZYx6FGxQ.png"><figcaption class="imageCaption">Equation 1</figcaption></figure><p name="cb7b" id="cb7b" class="graf graf--p graf-after--figure">for all <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">t </em></strong>&gt; <strong class="markup--strong markup--p-strong">0 </strong>and ‘<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">i</em></strong>’ takes value from the state space<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em"> S.</em></strong></p><p name="c1e9" id="c1e9" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">A</span> <em class="markup--em markup--p-em">stochastic</em> process with the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Markov</em></strong> property is called the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Markov</em></strong> process.</p><p name="089c" id="089c" class="graf graf--p graf-after--p">From this point onwards, we will consider all processes in our discussion to be Markov processes.</p><blockquote name="1acc" id="1acc" class="graf graf--blockquote graf-after--p">Master Equation</blockquote><p name="d8b3" id="d8b3" class="graf graf--p graf--empty graf-after--blockquote"><br></p><p name="4db9" id="4db9" class="graf graf--p graf--empty graf-after--p"><br></p><blockquote name="9a75" id="9a75" class="graf graf--blockquote graf-after--p">Kramers-Moyal Expansion</blockquote><p name="ebc8" id="ebc8" class="graf graf--p graf--empty graf-after--blockquote"><br></p><h3 name="6fa1" id="6fa1" class="graf graf--h3 graf-after--p">Langevin Equation</h3><p name="50ef" id="50ef" class="graf graf--p graf--empty graf-after--h3"><br></p><blockquote name="3843" id="3843" class="graf graf--blockquote graf-after--p">Wiener Process</blockquote><p name="d9fc" id="d9fc" class="graf graf--p graf--empty graf-after--blockquote"><br></p><blockquote name="a269" id="a269" class="graf graf--blockquote graf-after--p">Stochastic Differential Equation</blockquote><p name="11a5" id="11a5" class="graf graf--p graf--empty graf-after--blockquote"><br></p><blockquote name="d2ef" id="d2ef" class="graf graf--blockquote graf-after--p">Connection to Fokker-Planck Equation</blockquote><p name="9153" id="9153" class="graf graf--p graf--empty graf-after--blockquote"><br></p><p name="c843" id="c843" class="graf graf--p graf--empty graf-after--p graf--trailing"><br></p></div></div></section><section name="29f8" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h4 name="155b" id="155b" class="graf graf--h4 graf--leading">REFERENCES</h4><p name="c28a" id="c28a" class="graf graf--p graf-after--h4">[1] Daniel Walter, “FOKKER-PLANCK AND LANGEVIN EQUATION”, Statistical Physics Seminar, 2021, <a href="https://www.thphys.uni-heidelberg.de/~wolschin/statsem21_6s.pdf" data-href="https://www.thphys.uni-heidelberg.de/~wolschin/statsem21_6s.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Institut für Theoretische Physik der Universität Heidelberg</a>.</p><p name="624a" id="624a" class="graf graf--p graf--empty graf-after--p graf--trailing"><br></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/1a4f673ab7bc">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

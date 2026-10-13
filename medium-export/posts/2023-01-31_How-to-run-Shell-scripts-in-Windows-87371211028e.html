@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>How to run Shell scripts in Windows</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">How to run Shell scripts in Windows</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Training machine learning or deep learning models can be automated by using shell scripts in Linux-based PCs. Can we run the same shell…
+</section>
+<section data-field="body" class="e-content">
+<section name="79db" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="67b4" id="67b4" class="graf graf--h3 graf--leading graf--title">How to run Shell scripts in Windows</h3><figure name="f79f" id="f79f" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*N9CowvufOutKyy7Ox5CnOg.jpeg" data-width="3840" data-height="2160" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*N9CowvufOutKyy7Ox5CnOg.jpeg"><figcaption class="imageCaption"><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.reddit.com%2Fr%2Flinuxmasterrace%2Fcomments%2Fiihl28%2Ftux_peeping_into_windows_wallpaper%2F&amp;psig=AOvVaw3SEHe4dt-tCB4Zx9Gqpoz9&amp;ust=1675266248877000&amp;source=images&amp;cd=vfe&amp;ved=0CBAQjRxqFwoTCLDgsZ-T8vwCFQAAAAAdAAAAABAE" data-href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.reddit.com%2Fr%2Flinuxmasterrace%2Fcomments%2Fiihl28%2Ftux_peeping_into_windows_wallpaper%2F&amp;psig=AOvVaw3SEHe4dt-tCB4Zx9Gqpoz9&amp;ust=1675266248877000&amp;source=images&amp;cd=vfe&amp;ved=0CBAQjRxqFwoTCLDgsZ-T8vwCFQAAAAAdAAAAABAE" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Source</a></figcaption></figure><h4 name="ac4a" id="ac4a" class="graf graf--h4 graf-after--figure">Training machine learning or deep learning models can be automated by using shell scripts in Linux-based PCs. Can we run the same shell scripts on Windows without changing a line of code?</h4><blockquote name="0787" id="0787" class="graf graf--pullquote graf-after--h4">YES, we can. But that will require a bit of work.</blockquote><blockquote name="b732" id="b732" class="graf graf--blockquote graf-after--pullquote">1. Using bash on Windows to run Shell scripts</blockquote><p name="acc1" id="acc1" class="graf graf--p graf-after--blockquote">Installing Cygwin, MinGW, or Git Bash on Windows and adding the path where it is installed to the Environment variables will allow us to run “.sh” files on Windows from Command Prompt.</p><blockquote name="d388" id="d388" class="graf graf--blockquote graf-after--p">2. Converting “.sh” file to “.bat” file</blockquote><p name="c155" id="c155" class="graf graf--p graf--startsWithDoubleQuote graf-after--blockquote">“<strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">.bat</em></strong>” extensions are used for batch scripts, which are also used to automate tasks on Windows. Commands for Shell scripting and Batch scripting are not exactly the same, but commands from shell scripts can be converted for like-to-like commands in batch scripts.</p><p name="2f97" id="2f97" class="graf graf--p graf-after--p">A simple converter can be found here: <a href="https://daniel-sc.github.io/bash-shell-to-bat-converter/" data-href="https://daniel-sc.github.io/bash-shell-to-bat-converter/" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://daniel-sc.github.io/bash-shell-to-bat-converter/</a></p><p name="f777" id="f777" class="graf graf--p graf-after--p">However, this tool does not support converting loop conversion from shell to batch. Any user can do so by studying the tutorials given below:</p><ol class="postList"><li name="e4f2" id="e4f2" class="graf graf--li graf-after--p"><a href="https://www.section.io/engineering-education/dive-into-batch-scripting-language/" data-href="https://www.section.io/engineering-education/dive-into-batch-scripting-language/" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.section.io/engineering-education/dive-into-batch-scripting-language/</a></li><li name="c180" id="c180" class="graf graf--li graf-after--li"><a href="https://en.wikibooks.org/wiki/Windows_Batch_Scripting" data-href="https://en.wikibooks.org/wiki/Windows_Batch_Scripting" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://en.wikibooks.org/wiki/Windows_Batch_Scripting</a></li><li name="be7f" id="be7f" class="graf graf--li graf-after--li"><a href="https://www.youtube.com/playlist?list=PL8WTXLSrtyWrQ5Tl50zkTeRc3bATyHRbX" data-href="https://www.youtube.com/playlist?list=PL8WTXLSrtyWrQ5Tl50zkTeRc3bATyHRbX" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.youtube.com/playlist?list=PL8WTXLSrtyWrQ5Tl50zkTeRc3bATyHRbX</a></li><li name="4314" id="4314" class="graf graf--li graf-after--li"><a href="https://www.youtube.com/playlist?list=PL69BE3BF7D0BB69C4" data-href="https://www.youtube.com/playlist?list=PL69BE3BF7D0BB69C4" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.youtube.com/playlist?list=PL69BE3BF7D0BB69C4</a></li></ol><p name="982a" id="982a" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Tutorials for Shell scripting</strong>:</p><ol class="postList"><li name="54fe" id="54fe" class="graf graf--li graf-after--p"><a href="https://www.shellscript.sh/" data-href="https://www.shellscript.sh/" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.shellscript.sh/</a></li><li name="f77a" id="f77a" class="graf graf--li graf-after--li"><a href="https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_" data-href="https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_</a></li><li name="e47f" id="e47f" class="graf graf--li graf-after--li"><a href="https://www.youtube.com/playlist?list=PL7B7FA4E693D8E790" data-href="https://www.youtube.com/playlist?list=PL7B7FA4E693D8E790" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.youtube.com/playlist?list=PL7B7FA4E693D8E790</a></li><li name="f4f8" id="f4f8" class="graf graf--li graf-after--li graf--trailing"><a href="https://www.youtube.com/playlist?list=PLBf0hzazHTGMJzHon4YXGscxUvsFpxrZT" data-href="https://www.youtube.com/playlist?list=PLBf0hzazHTGMJzHon4YXGscxUvsFpxrZT" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://www.youtube.com/playlist?list=PLBf0hzazHTGMJzHon4YXGscxUvsFpxrZT</a></li></ol></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/87371211028e"><time class="dt-published" datetime="2023-01-31T15:46:28.799Z">January 31, 2023</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/how-to-run-shell-scripts-in-windows-87371211028e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

@@ -59,7 +59,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
         {headings.map((heading) => (
           <li
             key={heading.id}
-            className={`blog-toc-item ${heading.level === 3 ? 'blog-toc-item-nested' : ''}`}
+            className={`blog-toc-item ${heading.level >= 3 ? 'blog-toc-item-nested' : ''}`}
           >
             <a
               href={`#${heading.id}`}

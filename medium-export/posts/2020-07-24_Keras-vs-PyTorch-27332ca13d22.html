@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Keras vs PyTorch</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Keras vs PyTorch</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Which one is better?
+</section>
+<section data-field="body" class="e-content">
+<section name="7fa5" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="e3e8" id="e3e8" class="graf graf--h3 graf--leading graf--title">Keras vs PyTorch</h3><h4 name="0c0c" id="0c0c" class="graf graf--h4 graf-after--h3 graf--subtitle">Which one is better?</h4><figure name="372a" id="372a" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*m1NRL0ek1okS83wMR9VKsQ.png" data-width="582" data-height="322" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*m1NRL0ek1okS83wMR9VKsQ.png"></figure><p name="1f13" id="1f13" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Keras</strong> and <strong class="markup--strong markup--p-strong">PyTorch</strong> are both very good libraries for Machine Learning. One cannot be said to be better than the other. Both have their respective advantages ad disadvantages. In this post, we are going to see two different ways to do the same classification task, the <strong class="markup--strong markup--p-strong">Keras</strong> way and the <strong class="markup--strong markup--p-strong">PyTorch</strong> way.</p><p name="ef51" id="ef51" class="graf graf--p graf-after--p">The dataset that we will be using is the <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">Concrete Crack Detecction Dataset. </em></strong>The dataset is available <a href="https://data.mendeley.com/datasets/5y9wdsg2zt/2" data-href="https://data.mendeley.com/datasets/5y9wdsg2zt/2" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here</a> or can be downloaded just by clicking this <a href="https://md-datasets-public-files-prod.s3.eu-west-1.amazonaws.com/b60351e5-29e8-49a6-a83f-1e275aea6622" data-href="https://md-datasets-public-files-prod.s3.eu-west-1.amazonaws.com/b60351e5-29e8-49a6-a83f-1e275aea6622" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">link</a>.</p><p name="af32" id="af32" class="graf graf--p graf-after--p">Let’s download and unzip the dataset first</p><figure name="92c8" id="92c8" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/f6ea947c7211a0ee37f3154289153895.js.js"></script></figure><blockquote name="d312" id="d312" class="graf graf--blockquote graf-after--figure">Import the common libraries and declare the path variables</blockquote><figure name="9202" id="9202" class="graf graf--figure graf--iframe graf-after--blockquote"><script src="https://gist.github.com/sadimanna/61f920c2330d387f2281d14b08d24cf4.js.js"></script></figure><blockquote name="6634" id="6634" class="graf graf--blockquote graf-after--figure">Data Preparation</blockquote><p name="1d3f" id="1d3f" class="graf graf--p graf-after--blockquote">In this section we will create a <strong class="markup--strong markup--p-strong">Data Loader</strong> in <strong class="markup--strong markup--p-strong">PyTorch</strong> and a <strong class="markup--strong markup--p-strong">Data Generator</strong> in <strong class="markup--strong markup--p-strong">Keras</strong>. Both essentially serve the same purpose. To ensure that each batch contains the same number of positive and negative samples we will arrange the labels in the pattern 1 0 1 0 1 0 . . ., that is each batch will contain a positive and negative sample alternatively.</p><blockquote name="83b6" id="83b6" class="graf graf--blockquote graf-after--p">First we will look into the PyTorch way of constructing a Data Loader.</blockquote><figure name="3842" id="3842" class="graf graf--figure graf--iframe graf-after--blockquote"><script src="https://gist.github.com/sadimanna/94429d87268e6363dfb36b8428507add.js.js"></script></figure><blockquote name="774a" id="774a" class="graf graf--blockquote graf-after--figure">Next, we will look into the Data Generator in Keras.</blockquote><figure name="8ad8" id="8ad8" class="graf graf--figure graf--iframe graf-after--blockquote"><script src="https://gist.github.com/sadimanna/65abe78267f2b2ea031888ac411d9e5b.js.js"></script></figure><p name="9974" id="9974" class="graf graf--p graf-after--figure">We can also build a custom Data Generator in Keras, which is similar in structure to the Dataset class in PyTorch.</p><figure name="3e61" id="3e61" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/59e0568cd426e4abcf1942c779355cb6.js.js"></script></figure><p name="b28b" id="b28b" class="graf graf--p graf-after--figure">Unlike PyTorch, we don’t need a separate Data Loader like object in Keras. The above custom Data Generator <code class="markup--code markup--p-code">DataGeneratorKeras</code> can be viewed as <code class="markup--code markup--p-code">DataLoader(DatasetPyTorch())</code>.</p><p name="c1ea" id="c1ea" class="graf graf--p graf-after--p">Before proceeding further, it should be mentioned that the above Data Loader (or Generator) are tailored for the dataset we are using. For other datasets, we have to modify the code in <code class="markup--code markup--p-code">__init__()</code> part according to our need.</p><p name="d1db" id="d1db" class="graf graf--p graf-after--p">The images in the dataset can be split into training and validation set before passing them to the Data Generator (or Loader) by creating a dataframe <code class="markup--code markup--p-code">filenames_df</code> with the filenames of the files stored in <code class="markup--code markup--p-code">all_files</code> and then using <code class="markup--code markup--p-code">train_test_split</code> from <code class="markup--code markup--p-code">scikit-learn</code> to obtain the splits. We will obtain two dataframes, one for training set (<code class="markup--code markup--p-code">train_df</code>) and the other for validation set (<code class="markup--code markup--p-code">validation_df</code>). These dataframes can then be used to sample training and validation images in each epoch, within the respective data generators. An advantage of using dataframe is that the training set can be shuffled after each epoch, when using the custom approach.</p><p name="96e0" id="96e0" class="graf graf--p graf-after--p">As shown in the above code examples, we are dividing the dataset (filenames stored in <code class="markup--code markup--p-code">all_files</code>) into training and validation sets in 75:25 ratio. We can also create a dataframe (say, <code class="markup--code markup--p-code">train_df</code> from the filenames in <code class="markup--code markup--p-code">self.all_files</code> when <code class="markup--code markup--p-code">train = True</code>, and <code class="markup--code markup--p-code">valid_df</code> when <code class="markup--code markup--p-code">train=False</code>) to store the filenames and labels in the training set and similarly for the validation set. This too will enable us to shuffle the training set after each epoch.</p><p name="9b74" id="9b74" class="graf graf--p graf-after--p">Another thing to note here, since we are using ResNet50 model in this post, we have used the <code class="markup--code markup--p-code">preprocess_input</code> function in Keras and similarly Normalized the inputs in PyTorch. In case of using any other model, it is advisable to check what preprocessing was applied to the inputs while training the model in the original paper.</p><p name="215f" id="215f" class="graf graf--p graf-after--p">Next, we will train a pre-trained ResNet50 model on our dataset in Keras.</p><p name="eccf" id="eccf" class="graf graf--p graf-after--p">Let’s see how to build a model in <strong class="markup--strong markup--p-strong">Keras, </strong>using a pre-trained ResNet50 model as the base model. We will also train the model using Adam optimizer.</p><figure name="e0fd" id="e0fd" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/e65d6f0a13dadf4b21e29bd5ad102bb8.js.js"></script></figure><p name="3f3e" id="3f3e" class="graf graf--p graf-after--figure">If we want to fine tune the model, we can set <code class="markup--code markup--p-code">fine_tuning = True</code>. In our case, we will keep <code class="markup--code markup--p-code">fine_tuning = False</code>. Since, we are posing this problem as a 2-class classification problem, we will be using Categorical Cross Entropy loss. However, we can also use Binary Cross Entropy loss, with sigmoid activation in the last layer.</p><p name="b43f" id="b43f" class="graf graf--p graf-after--p">The above code yielded a training accuracy of 98% after training for only 1 epoch.</p><blockquote name="894b" id="894b" class="graf graf--blockquote graf-after--p">Next, we will be replicating the above experiment with PyTorch.</blockquote><figure name="e7d2" id="e7d2" class="graf graf--figure graf--iframe graf-after--blockquote"><script src="https://gist.github.com/sadimanna/b570d9510e63f3b5a2fac433d3a26d86.js.js"></script></figure><p name="9329" id="9329" class="graf graf--p graf-after--figure">In the PyTorch approach, we use a ResNet18 model. In Pytorch, we don’t need to explicitly specify whether a softmax or a sigmoid needs to applied. The library decides that on it own depending on the Loss function used. With this model we obtained a validation accuracy of 96% after 2 epochs.</p><p name="11bd" id="11bd" class="graf graf--p graf-after--p">Training a model in Keras may look simpler, but when you will need a custom training loop, then the <code class="markup--code markup--p-code">tf.GradientTape()</code> comes into the picture. Let’s see an example with a custom training loop.</p><figure name="ffc0" id="ffc0" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/fd6abb345e6b691c14777ed36f6935b8.js.js"></script></figure><p name="a3f1" id="a3f1" class="graf graf--p graf-after--figure">If we look at the custom training loop of Keras, we can see that, the training loop of PyTorch and Keras bear resemblance to each other. Both follow the same steps : <em class="markup--em markup--p-em">Predict the output, Calculate the Loss, Compute the gradients, Update the weights</em>. Only difference is that in PyTorch, the phase of operation, training or validation needs to be specified but using <code class="markup--code markup--p-code">model.train()</code> and <code class="markup--code markup--p-code">model.eval()</code>, which is not explicitly needed in Keras, when using custom training loop.</p><p name="db92" id="db92" class="graf graf--p graf-after--p">We can say that there is not much difference between the ways the two libraries are used, like the API for the layers or the Data Loader/ Generators. However, PyTorch operations bear a lot of similarity with NumPy, which makes it more Pythonic, intuitive to use and also easy to debug. Keras (tf.Keras) also has its own advantages, like portability, ease of model deployment, and of course, TensorBoard.</p><p name="e340" id="e340" class="graf graf--p graf-after--p graf--trailing">As said earlier, both have their own advantages and disadvantages, and one cannot be ruled out or claimed to be better than the other. It depends on the person using it and the purpose it is being used for.</p></div></div></section><section name="f01e" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="a7ea" id="a7ea" class="graf graf--p graf--leading graf--trailing">Please clap if you found it useful for you or feel that it will be of help to others.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/27332ca13d22"><time class="dt-published" datetime="2020-07-24T02:31:05.654Z">July 24, 2020</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/keras-vs-pytorch-27332ca13d22" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

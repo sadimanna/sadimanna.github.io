@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+In medical imaging, handling large datasets efficiently is crucial for storage and processing purposes. Neuroimaging Informatics…
+</section>
+<section data-field="body" class="e-content">
+<section name="2109" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="9b16" id="9b16" class="graf graf--h3 graf--leading graf--title">Compressing .nii Files to .nii.gz: A Guide to Efficient Data Management with NiBabel and SimpleITK</h3><figure name="7f9b" id="7f9b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*2Z-yLdL-yY8M3vtksY47yQ.jpeg" data-width="410" data-height="410" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*2Z-yLdL-yY8M3vtksY47yQ.jpeg"></figure><p name="37b5" id="37b5" class="graf graf--p graf-after--figure">In medical imaging, handling large datasets efficiently is crucial for storage and processing purposes. Neuroimaging Informatics Technology Initiative (NIfTI) files, commonly used for storing MRI data, can be quite large. Compressing these files into <em class="markup--em markup--p-em">`.nii.gz`</em> format saves disk space and facilitates faster data transfers and processing. In this blog, we’ll explore how to use two popular Python libraries — <strong class="markup--strong markup--p-strong">NiBabel</strong> and <strong class="markup--strong markup--p-strong">SimpleITK </strong>— to compress <em class="markup--em markup--p-em">`.nii`</em> files, achieving size reductions up to tenfold.</p><p name="d5b9" id="d5b9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Motivation:</strong> These methods are particularly useful when handling large datasets like BraTS. Specifically speaking, I noticed a discrepancy in the dataset size between BraTS2020 and BraTS2021 datasets downloaded from different sources. While my particular application required using the T1CE planes of the BraTS2020 dataset, the total size occupied by the 369 T1CE scans was about 10 GB, and the whole dataset, including all four planes, FLAIR, T1, T1CE, and T2, amounted to more than 30 GB. But I noticed that the whole BraTS2021 dataset, with about 1500 scans, only occupied about 10 GB of space on the disk.</p><p name="0f98" id="0f98" class="graf graf--p graf-after--p">Upon careful inspection, I came to observe that I had completely skipped noticing that the two datasets that I had downloaded did not have the same file extension, but both were read by SimpleITK or NiBabel without any errors. While the BraTS2020 dataset files had <em class="markup--em markup--p-em">.nii </em>file extension, the BraTS2021 dataset files had <em class="markup--em markup--p-em">.nii.gz</em> which explained the discrepancy in size.</p><p name="6b8e" id="6b8e" class="graf graf--p graf-after--p">If having a more compressed file did not cause any issues in the pipeline, why not convert the BraTS2020 dataset into <em class="markup--em markup--p-em">.nii.gz</em> format, which would enable me to transfer the whole dataset more efficiently. After converting the BraTS2020 dataset files from .nii to .nii.gz, the dataset size reduced to 3.2 GB from about 30 GB (almost 10 times).</p><h4 name="aeb1" id="aeb1" class="graf graf--h4 graf-after--p">Why Compress NIfTI Files?</h4><p name="a0d9" id="a0d9" class="graf graf--p graf-after--h4">Compressing <em class="markup--em markup--p-em">`.nii`</em> files to <em class="markup--em markup--p-em">`.nii.gz`</em> format offers several advantages:</p><ul class="postList"><li name="4cd6" id="4cd6" class="graf graf--li graf-after--p">Reduced Storage Space: The compressed format significantly reduces file size, conserving disk space.</li><li name="ba5e" id="ba5e" class="graf graf--li graf-after--li">Enhanced Performance: Smaller files are quicker to read and write, improving data processing speed.</li><li name="6fc3" id="6fc3" class="graf graf--li graf-after--li">Ease of Sharing: Reduced file sizes make it easier to share datasets with collaborators.</li></ul><h4 name="1088" id="1088" class="graf graf--h4 graf-after--li">Using NiBabel for Compression</h4><p name="2f33" id="2f33" class="graf graf--p graf-after--h4">NiBabel is a powerful library for reading and writing NIfTI files. Here’s how you can use it to compress <em class="markup--em markup--p-em">`.nii`</em> files:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="caa4" id="caa4" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">import</span> nibabel <span class="hljs-keyword">as</span> nib<br /><br />def <span class="hljs-title function_">compress_nii_to_niigz</span>(input_file, output_file):<br />    # <span class="hljs-title class_">Load</span> the .<span class="hljs-property">nii</span> file using <span class="hljs-title class_">NiBabel</span> <br />    nii_image = nib.<span class="hljs-title function_">load</span>(input_file)<br />    # <span class="hljs-title class_">Save</span> the image <span class="hljs-keyword">in</span> .<span class="hljs-property">nii</span>.<span class="hljs-property">gz</span> format <br />    output_file = input_file.<span class="hljs-title function_">replace</span>(<span class="hljs-string">&#x27;.nii&#x27;</span>, <span class="hljs-string">&#x27;.nii.gz&#x27;</span>)<br />    nib.<span class="hljs-title function_">save</span>(nii_image, output_file)<br />    <span class="hljs-title function_">print</span>(f<span class="hljs-string">&quot;Compressed {input_file} to {output_file}&quot;</span>)<br /><br /># <span class="hljs-title class_">Example</span> usage <br /><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br />    <span class="hljs-title function_">compress_nii_to_niigz</span>(<span class="hljs-string">&#x27;/path/to/example.nii&#x27;</span>)</span></pre><h4 name="a445" id="a445" class="graf graf--h4 graf-after--pre">Using SimpleITK for Compression</h4><p name="9dbf" id="9dbf" class="graf graf--p graf-after--h4">SimpleITK, a simplified layer built on top of the Insight Segmentation and Registration Toolkit (ITK), also provides tools for handling NIfTI files:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="4822" id="4822" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">import</span> <span class="hljs-title class_">SimpleITK</span> <span class="hljs-keyword">as</span> sitk<br /><br />def <span class="hljs-title function_">compress_nii_to_niigz_sitk</span>(input_file, output_file):<br />    # <span class="hljs-title class_">Read</span> the .<span class="hljs-property">nii</span> file using <span class="hljs-title class_">SimpleITK</span> <br />    image = sitk.<span class="hljs-title class_">ReadImage</span>(input_file) <br />    # <span class="hljs-title class_">Write</span> the image <span class="hljs-keyword">in</span> .<span class="hljs-property">nii</span>.<span class="hljs-property">gz</span> format <br />    output_file = input_file.<span class="hljs-title function_">replace</span>(<span class="hljs-string">&#x27;.nii&#x27;</span>, <span class="hljs-string">&#x27;.nii.gz&#x27;</span>)<br />    sitk.<span class="hljs-title class_">WriteImage</span>(image, output_file) <br />    <span class="hljs-title function_">print</span>(f<span class="hljs-string">&quot;Compressed {input_file} to {output_file}&quot;</span>) <br /><br /># <span class="hljs-title class_">Example</span> usage <br /><span class="hljs-keyword">if</span> __name__==<span class="hljs-string">&#x27;__main__&#x27;</span>:<br />    <span class="hljs-title function_">compress_nii_to_niigz_sitk</span>(<span class="hljs-string">&#x27;example.nii&#x27;</span>)</span></pre><h4 name="5d46" id="5d46" class="graf graf--h4 graf-after--pre">Conclusion</h4><p name="4a9d" id="4a9d" class="graf graf--p graf-after--h4 graf--trailing">Both <strong class="markup--strong markup--p-strong">NiBabel</strong> and <strong class="markup--strong markup--p-strong">SimpleITK</strong> offer straightforward methods to compress <em class="markup--em markup--p-em">`.nii`</em> files into <em class="markup--em markup--p-em">`.nii.gz`</em> format, achieving significant reductions in file size. Whether you’re managing large neuroimaging datasets or simply looking to optimise your data storage, these tools provide efficient solutions to streamline your workflow. By adopting compressed formats, you can enhance your data handling capabilities, making it easier to store, process, and share valuable medical imaging data.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/ec11711de856"><time class="dt-published" datetime="2025-05-12T18:02:55.743Z">May 12, 2025</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/compressing-nii-files-to-nii-gz-a-guide-to-efficient-data-management-with-nibabel-and-simpleitk-ec11711de856" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

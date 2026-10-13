@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Weighted Binary Cross-Entropy Loss in Keras</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Weighted Binary Cross-Entropy Loss in Keras</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+While there are several implementations to calculate weighted binary and cross-entropy losses widely available on the web, in this article…
+</section>
+<section data-field="body" class="e-content">
+<section name="59f2" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="f139" id="f139" class="graf graf--h3 graf--leading graf--title">Weighted Binary Cross-Entropy Loss in Keras</h3><figure name="9918" id="9918" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*Old00V9cg_rH5e0TA53UYg.jpeg" data-width="512" data-height="512" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*Old00V9cg_rH5e0TA53UYg.jpeg"></figure><p name="a743" id="a743" class="graf graf--p graf-after--figure">While there are several implementations to calculate weighted binary and cross-entropy losses widely available on the web, in this article we present a structured way of calculating these losses during training.</p><p name="34ea" id="34ea" class="graf graf--p graf-after--p">For a similar implementation of weighted categorical cross-entropy loss look here.</p><div name="bbc7" id="bbc7" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://medium.com/the-owl/weighted-categorical-cross-entropy-loss-in-keras-edaee1df44ee" data-href="https://medium.com/the-owl/weighted-categorical-cross-entropy-loss-in-keras-edaee1df44ee" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/the-owl/weighted-categorical-cross-entropy-loss-in-keras-edaee1df44ee"><strong class="markup--strong markup--mixtapeEmbed-strong">Weighted Categorical Cross-Entropy loss in Keras</strong><br><em class="markup--em markup--mixtapeEmbed-em">In this article, we will be looking at the implementation of the Weighted Categorical Cross-Entropy loss.</em>medium.com</a><a href="https://medium.com/the-owl/weighted-categorical-cross-entropy-loss-in-keras-edaee1df44ee" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="ea85239bdc0dafb9aa497eae9f5048c2" data-thumbnail-img-id="1*j9_WzxRj9p2GWuWbC2txKQ.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*j9_WzxRj9p2GWuWbC2txKQ.jpeg);"></a></div><p name="ddb4" id="ddb4" class="graf graf--p graf-after--mixtapeEmbed">First, we will take a look at the mathematical formulas</p><blockquote name="d190" id="d190" class="graf graf--blockquote graf-after--p">Weighted Binary Cross-Entropy Loss</blockquote><figure name="eb4c" id="eb4c" class="graf graf--figure graf-after--blockquote"><img class="graf-image" data-image-id="1*YAz_PqO_Kn9tFHebswFY-g.jpeg" data-width="828" data-height="50" src="https://cdn-images-1.medium.com/max/800/1*YAz_PqO_Kn9tFHebswFY-g.jpeg"></figure><p name="945d" id="945d" class="graf graf--p graf-after--figure">Now, we will proceed step by step through the implementations. We will start with Weighted Binary Cross-Entropy.</p><p name="5a11" id="5a11" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">Disclaimer</em>: All the codes in the articles mentioned above and in this article were done in <strong class="markup--strong markup--p-strong">TFv2.12</strong> and <strong class="markup--strong markup--p-strong">Keras-2.12.0 </strong>in a Kaggle Notebook environment. Updated frameworks may behave differently.</p><blockquote name="1f80" id="1f80" class="graf graf--blockquote graf-after--p">Import Required Libraries</blockquote><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="python" name="18d5" id="18d5" class="graf graf--pre graf-after--blockquote graf--preV2"><span class="pre--content"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf<br /><span class="hljs-keyword">from</span> keras.saving <span class="hljs-keyword">import</span> saving_lib<br /><span class="hljs-keyword">import</span> tensorflow.keras <span class="hljs-keyword">as</span> keras</span></pre><blockquote name="7f87" id="7f87" class="graf graf--blockquote graf-after--pre">Defining the class</blockquote><p name="258e" id="258e" class="graf graf--p graf-after--blockquote">To implement the weighted version of the loss, we will follow the source code of the vanilla versions and make minor changes, to avoid any chance of instability in the loss calculation.</p><p name="a721" id="a721" class="graf graf--p graf-after--p">To instantiate the loss object, we will provide 3 arguments: <em class="markup--em markup--p-em">weights</em>, <em class="markup--em markup--p-em">label_smoothing, </em>and<em class="markup--em markup--p-em"> axis</em>. We will not use the <em class="markup--em markup--p-em">from_logits </em>argument in this implementation, as we assume that we will apply <em class="markup--em markup--p-em">sigmoid</em> or <em class="markup--em markup--p-em">softmax</em> to the <em class="markup--em markup--p-em">logits</em> before giving them as input to the loss functions.</p><p name="d314" id="d314" class="graf graf--p graf-after--p">The class consists of 2 primary methods, <em class="markup--em markup--p-em">__init__ </em>and<em class="markup--em markup--p-em"> __call__. </em>In addition to that, we will use another function <em class="markup--em markup--p-em">weighted_binary_crossentropy </em>for the final calculation of the loss.</p><p name="edc5" id="edc5" class="graf graf--p graf-after--p">In addition to calculating the loss using this custom loss function, it is also essential that this custom object can be saved and loaded later for inference. We will use the decorator mentioned below</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="less" name="85bd" id="85bd" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"> <span class="hljs-variable">@keras</span>.saving.<span class="hljs-built_in">register_keras_serializable</span>(name=<span class="hljs-string">&quot;WeightedBinaryCrossentropy&quot;</span>)</span></pre><p name="6f24" id="6f24" class="graf graf--p graf-after--pre">before the function <em class="markup--em markup--p-em">weighted_binary_crossentropy</em> and the class <em class="markup--em markup--p-em">WeightedBinaryCrossentropy</em>. Quoting from the Tensorflow documentation,</p><blockquote name="1277" id="1277" class="graf graf--pullquote graf-after--p"><strong class="markup--strong markup--pullquote-strong"><em class="markup--em markup--pullquote-em">This is the preferred method, as custom object registration greatly simplifies saving and loading code. Adding the </em></strong><code class="markup--code markup--pullquote-code"><a href="https://www.tensorflow.org/api_docs/python/tf/keras/saving/register_keras_serializable" data-href="https://www.tensorflow.org/api_docs/python/tf/keras/saving/register_keras_serializable" class="markup--anchor markup--pullquote-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--pullquote-strong">@keras.saving.register_keras_serializable</strong></a></code><strong class="markup--strong markup--pullquote-strong"><em class="markup--em markup--pullquote-em"> decorator to the class definition of a custom object registers the object globally in a master list, allowing Keras to recognize the object when loading the model.</em></strong></blockquote><p name="f0e3" id="f0e3" class="graf graf--p graf-after--pullquote">Furthermore, we also need to add the methods <em class="markup--em markup--p-em">get_config</em> and <em class="markup--em markup--p-em">from_config </em>to the class <em class="markup--em markup--p-em">WeightedBinaryCrossentropy </em>to enable the instantiation of the object from the deserialized configuration at the time of loading the model.</p><p name="ec1c" id="ec1c" class="graf graf--p graf-after--p">Before using the above decorator for the class or function definitions, we need to use the following line of code to ensure that the custom objects are cleared if we rerun the function or class definitions without restarting the kernel or just want to clear the previously registered definitions.</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="python" name="bc14" id="bc14" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">tf.keras.saving.get_custom_objects().clear()</span></pre><p name="048f" id="048f" class="graf graf--p graf-after--pre">Let us first look at the <em class="markup--em markup--p-em">weighted_binary_crossentropy</em> function</p><figure name="2b3a" id="2b3a" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/19117a47dda74ebcf08929598063ae4a.js.js"></script></figure><p name="b493" id="b493" class="graf graf--p graf-after--figure">Watch how the values are clipped to ensure numerical stability. The argument <em class="markup--em markup--p-em">weights</em> are the class weights.</p><p name="fb10" id="fb10" class="graf graf--p graf-after--p">Now, let us have a look at the Weighted Binary Cross-Entropy loss object</p><figure name="a147" id="a147" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/sadimanna/5ffcda35463dc1e1b521bb9497d973a7.js.js"></script></figure><p name="5732" id="5732" class="graf graf--p graf-after--figure">The <em class="markup--em markup--p-em">get_method</em> and <em class="markup--em markup--p-em">from_method </em>are used during saving the model and reconstructing the loss when loading the model.</p><p name="1f45" id="1f45" class="graf graf--p graf-after--p">To instantiate this loss, we have to do the following:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="ini" name="5c9c" id="5c9c" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-attr">wbce</span> = WeightedBinaryCrossentropy(weights = [<span class="hljs-number">1.5</span>, <span class="hljs-number">1.0</span>])</span></pre><p name="e675" id="e675" class="graf graf--p graf-after--pre">When called using the following code</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="scss" name="3167" id="3167" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-built_in">wbce</span>(targets,outputs)</span></pre><p name="284f" id="284f" class="graf graf--p graf-after--pre">We get the weighted binary cross-entropy loss averaged over the samples in a batch.</p><p name="7f6b" id="7f6b" class="graf graf--p graf-after--p">When saving the model compiled with this loss, no error will be shown. However, during loading the model in a completely different script or notebook, we need to define the object and functions before loading the model. More details about loading custom objects are available in the article given below.</p><div name="dd96" id="dd96" class="graf graf--mixtapeEmbed graf-after--p graf--trailing"><a href="https://medium.com/the-owl/the-art-of-loading-custom-objects-and-functions-in-keras-6fdea8ed52b9" data-href="https://medium.com/the-owl/the-art-of-loading-custom-objects-and-functions-in-keras-6fdea8ed52b9" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/the-owl/the-art-of-loading-custom-objects-and-functions-in-keras-6fdea8ed52b9"><strong class="markup--strong markup--mixtapeEmbed-strong">The Art of Loading Custom Objects and Functions in Keras</strong><br><em class="markup--em markup--mixtapeEmbed-em">in the simplest possible way</em>medium.com</a><a href="https://medium.com/the-owl/the-art-of-loading-custom-objects-and-functions-in-keras-6fdea8ed52b9" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="56e92a6737e1af8db1ea7b8d0a8d94ea" data-thumbnail-img-id="1*ZKda5ii3YE_J4T5T_n7SFQ.jpeg" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/1*ZKda5ii3YE_J4T5T_n7SFQ.jpeg);"></a></div></div></div></section><section name="5438" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="1d67" id="1d67" class="graf graf--p graf--leading graf--trailing">Clap and share if you liked the article. Follow for more.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@mannasiladittya" class="p-author h-card">Siladittya Manna</a> on <a href="https://medium.com/p/e3553e28b8db"><time class="dt-published" datetime="2023-08-28T12:07:28.641Z">August 28, 2023</time></a>.</p><p><a href="https://medium.com/@mannasiladittya/weighted-binary-cross-entropy-losses-in-keras-e3553e28b8db" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 13, 2026.</p></footer></article></body></html>

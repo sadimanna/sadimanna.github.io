@@ -1,0 +1,36 @@
+# Save as .github/workflows/sync-medium.yml in your sadimanna.github.io repo
+name: Sync Medium posts
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:         # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install feedparser markdownify requests beautifulsoup4
+
+      - name: Pull new Medium posts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # avoids GitHub API rate limits when fetching gists
+          MEDIUM_USER: mannasiladittya
+          OUT_DIR: _posts          # change to match where your blog pages live
+        run: python sync_medium.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Sync new Medium posts" && git push)
