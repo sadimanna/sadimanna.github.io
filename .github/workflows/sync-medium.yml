@@ -2,7 +2,8 @@ name: Sync Medium posts
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    # Run once every Sunday at midnight UTC (weekly)
+    - cron: "0 0 * * 0"
   workflow_dispatch:         # lets you run it manually from the Actions tab
 
 permissions:
