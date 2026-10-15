@@ -74,17 +74,6 @@ const ongoingProjects = [
   {
     id: "peft-inversion",
     title: "Gradient Inversion Attacks on Parameter-Efficient Federated Learning",
-    status: "Under Review",
-    affiliation: "Indian Institute of Science, Bangalore",
-    collaborators: "Ritik Kumar Badiya, Ashmit Sinha, Prof. Anirban Chakraborty",
-    description:
-      "Investigating client data leakage in parameter-efficient fine-tuning (PEFT) adapters during federated learning. We formulate optimization-based gradient inversion attacks that reconstruct private client data from adapter parameter updates.",
-    topics: ["Federated Learning", "AI Security", "Gradient Inversion", "PEFT Adapters"],
-    badgeStyle: "border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300",
-  },
-  {
-    id: "fl-vulnerabilities",
-    title: "Vulnerability Assessment in Federated Learning",
     status: "Ongoing",
     affiliation: "Indian Institute of Science, Bangalore",
     collaborators: "Ritik Badiya, Ashmit Sinha, Rushikesh Gaikar, Aditi Prabakaran, Yashwanth Mandula, Prof. Anirban Chakraborty",
@@ -103,17 +92,6 @@ const ongoingProjects = [
       "Investigating the role of projector in self-supervised contrastive learning and finding the critical reasons behind dimensional collapse.",
     topics: ["Self-Supervised Learning", "Contrastive Learning", "Representation Learning", "Dimensional Collapse"],
     badgeStyle: "border-purple-200 bg-purple-50 text-purple-800 dark:border-purple-900/60 dark:bg-purple-950/40 dark:text-purple-300",
-  },
-  {
-    id: "fertility-ai",
-    title: "Semi-Supervised Sperm Motility Classification on VISEM-Tracking",
-    status: "Under Review",
-    affiliation: "IIT BHU, INRIA Sophia-Antipolic, LUT University, Sweden",
-    collaborators: "Suyash Kumar, Dr. Rajkumar Saini",
-    description:
-      "A semi-supervised kinematic classification framework adhering to WHO guidelines for fertility diagnostics and domain-adapted sperm motility tracking.",
-    topics: ["Medical AI", "Kinematics", "Fertility Science"],
-    badgeStyle: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-900/60 dark:bg-teal-950/40 dark:text-teal-300",
   },
   {
     id: "daod",
@@ -191,10 +169,10 @@ const teamMembers = [
 // Experience & Education Timeline Data
 const timelineData = [
   {
-    title: "Post-Doctoral Fellow (ANRF Fellow)",
+    title: "Post-Doctoral Fellow (ANRF)",
     organization: "Indian Institute of Science",
     location: "Bangalore, India",
-    period: "August 2026 - Present",
+    period: "September 2026 - Present",
     description: "Investigating privacy vulnerabilities in parameter-efficient fine-tuning (PEFT) adapters and distributed multimodal architectures.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
@@ -204,7 +182,7 @@ const timelineData = [
     title: "Post-Doctoral Research Associate",
     organization: "Indian Institute of Science",
     location: "Bangalore, India",
-    period: "November 2025 - July 2026",
+    period: "November 2025 - September 2026",
     description: "Research on vulnerabilities in Transformer-based federated learning and distributed optimization frameworks.",
     supervisor: "Prof. Anirban Chakraborty",
     type: "work",
@@ -298,6 +276,14 @@ const staticTopicBibliographies = [
 // 3-5 high-impact Latest News items
 const latestAnnouncements = [
   {
+    date: "October 2026",
+    category: "Paper Accepted",
+    title: "Breaking the Privacy Promise: Gradient Inversion Attacks on Federated Low-Rank Adapted Vision Transformers",
+    description:
+      "Congratulations to Ritik, Ashmit, Yashwanth and Prof. Anirban Chakraborty, for their paper being accepted at the Winter Conference on Applications of Computer Vision 2027 (WACV 2027).",
+    link: "#publications",
+  },
+  {
     date: "July 2026",
     category: "Fellowship Award",
     title: "ANRF National Post-Doctoral Fellowship (2026–2028)",
@@ -311,7 +297,7 @@ const latestAnnouncements = [
     title: "Reliability-Aware Spatio-Temporal Maps for Heart Rate Monitoring (ICIP 2026)",
     description:
       "Co-authored with Arpan Bairagi, Rakesh Dey, and Prof. Umapada Pal (ISI Kolkata). Accepted and to be presented at IEEE International Conference on Image Processing (ICIP 2026).",
-    link: "#ongoing-projects",
+    link: "#publications",
   },
   {
     date: "2026",
@@ -328,21 +314,65 @@ const latestAnnouncements = [
     description:
       "Published in Springer Nature Computer Science. Co-authored with Suresh Das, Prasun Sanki, Subhayan Mondal, Dr. Saumik Bhattacharya, and Dr. Sayantari Ghosh.",
     link: "https://link.springer.com/article/10.1007/s42979-025-04641-7",
-  },
-  {
-    date: "Jun 2025",
-    category: "Journal Article",
-    title: "Decorrelation-based Self-Supervised Visual Representation Learning for Writer Identification",
-    description:
-      "Published in ACM Transactions on Asian and Low-Resource Language Information Processing (TALIP) with Shree Mitra and Arkadip Maitra.",
-    link: "https://dl.acm.org/doi/10.1145/3746062",
-  },
+  }
 ]
 
 // Peer-reviewed and accepted publications
 const publications = [
   {
-    id: 103,
+    id: 20,
+    title: "Bridging the Applicator Gap with Data-Doping: Dual-Domain Learning for Precise Bladder Segmentation in CT-Guided Brachytherapy",
+    authors: "S Das, S Manna, S Ghosh",
+    journal: "",
+    year: 2026,
+    citations: 0,
+    doi: "",
+    abstract:
+      "This study highlights the value of integrating anatomically similar but distribution shifted datasets to overcome data scarcity and enhance deep learning based segmentation for brachytherapy treatment planning.",
+    type: "preprint",
+    link: "https://arxiv.org/abs/2601.20302",
+  },
+  {
+    id: 19,
+    title: "On the Role of the Projector in Contrastive Self-Supervised Learning: Last-Layer Rank Dynamics Drive Representation Quality",
+    authors: "S Manna, P Mandal, U Pal, S Bhattacharya",
+    journal: "",
+    year: 2026,
+    citations: 0,
+    doi: "",
+    abstract:
+      "Our method improves Top-1 accuracy by more than 1% on SimCLR on the ImageNet100 dataset and consistently outperforms baseline SimCLR variants on CIFAR datasets, supporting our interpretation of the projector's role.",
+    type: "preprint",
+    link: "https://arxiv.org/abs/2609.26334",
+  },
+  {
+    id: 18,
+    title: "Multiorgan Segmentation in Magnetic Resonance Images for Gynecological Brachytherapy Using Residuals in Residual Dense Block",
+    authors: "S Das, P Sanki, S Manna, S Mondal, S Bhattacharya, S Ghosh",
+    journal: "Journal of Medical Physics",
+    year: 2026,
+    citations: 0,
+    doi: "10.4103/jmp.jmp_35_26",
+    abstract:
+      "RU-Net offers a robust solution for multiorgan segmentation in gynecological BT.",
+    type: "journal",
+    link: "https://www.ovid.com/jnls/jomp/fulltext/10.4103/jmp.jmp_35_26~multiorgan-segmentation-in-magnetic-resonance-images-for",
+  },
+  {
+    id: 17,
+    title: "Breaking the Privacy Promise: Gradient Inversion Attacks on Federated Low-Rank Adapted Vision Transformers",
+    authors: "R Badiya, S Manna, A Sinha, M Yashwanth, A Chakraborty",
+    journal: "Winter Conference on Applications of Computer Vision (WACV 2027)",
+    year: 2027,
+    citations: 0,
+    doi: "",
+    abstract:
+      "We investigate the sparsely explored domain of the risk of private data leakage in LoRA-adapted Vision Transformers (ViTs), where low-rank updates weaken the gradient signal available to an honest-but-curious server.",
+    type: "conference",
+    link: "#",
+  },
+  {
+    id: 15,
     title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
     authors: "A Bairagi, S Manna, R Dey, U Pal",
     journal: "IEEE International Conference on Image Processing (ICIP 2026)",
@@ -355,16 +385,16 @@ const publications = [
     link: "#",
   },
   {
-    id: 104,
+    id: 16,
     title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
     authors: "S Kumar, A Singh, S Manna, R Saini",
     journal: "The First Workshop on AI in Fertility Science (2026)",
     year: 2026,
     citations: 0,
-    doi: "",
+    doi: "10.5617/nmi.13362",
     abstract:
       "A semi-supervised framework leveraging WHO kinematic criteria and domain adaptation for accurate sperm motility tracking and clinical fertility classification.",
-    type: "conference",
+    type: "workshop",
     link: "https://www.bioailab.org/ai4fertility",
   },
   {
@@ -561,8 +591,12 @@ const publicationMetadata: Record<
     bibtex?: string
   }
 > = {
-  103: { category: "Conference", topics: ["Medical AI", "Representation Learning"], featured: true },
-  104: { category: "Conference", topics: ["Medical AI", "Self-Supervised Learning"] },
+  20: { category: "Preprint", topics: ["Medical AI", "Deep Learning"] },
+  19: { category: "Preprint", topics: ["Self-Supervised Learning"] },
+  17: { category: "Conference", topics: ["Medical AI", "Federated Learning"], featured: true },
+  18: { category: "Conference", topics: ["Medical AI", "Deep Learning"] },
+  15: { category: "Conference", topics: ["Medical AI", "Representation Learning"], featured: true },
+  16: { category: "Workshop", topics: ["Medical AI", "Self-Supervised Learning"] },
   1: { category: "Conference", topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
   2: { category: "Conference", topics: ["Self-Supervised Learning", "Representation Learning"], featured: true },
   3: { category: "Journal", topics: ["Self-Supervised Learning", "Medical AI", "Representation Learning"], featured: true },

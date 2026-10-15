@@ -3,15 +3,15 @@ import citationData from "@/lib/data/citations.json"
 export const profileStats = [
   {
     label: "Publications",
-    value: "13",
+    value: "15",
   },
   {
     label: "Journal Papers",
-    value: "07",
+    value: "08",
   },
   {
     label: "Conference Papers",
-    value: "05",
+    value: "06",
   },
   {
     label: "Workshop Papers",
@@ -19,11 +19,11 @@ export const profileStats = [
   },
   {
     label: "Pre-print Papers",
-    value: "03",
+    value: "05",
   },
   {
     label: "Citations",
-    value: String(citationData.totalCitations || 246),
+    value: String(citationData.totalCitations || 240),
   },
   {
     label: "h-index",
