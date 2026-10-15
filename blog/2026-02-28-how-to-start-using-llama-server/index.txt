@@ -1,0 +1,152 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-b7ccc141a8955052.js"],""]
+4:I[99304,["177","static/chunks/app/layout-b7ccc141a8955052.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/20ec5175be9bd341.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"xMEM0edtZt7hHiWyjz_Mb","p":"","c":["","blog","2026-02-28-how-to-start-using-llama-server",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-02-28-how-to-start-using-llama-server","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/20ec5175be9bd341.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-02-28-how-to-start-using-llama-server","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","EcSIdVb5xXleydRpzESXh",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[22101,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-ded285b9c80127b0.js"],"BlogPostClient"]
+11:T25e9,<h4 id="you-must-build-llamacpp-first"><a class="heading-anchor" aria-hidden tabindex="-1" href="#you-must-build-llamacpp-first"><span class="anchor-icon">#</span></a>You Must Build llama.cpp first</h4>
+<p><img src="/images/blog/how-to-start-using-llama-server/img1.png" alt=""></p>
+<p>If you try to run:</p>
+<pre><code class="hljs language-bash">./llama-server -m medgemma-4b-it-Q4_K_M.gguf --port 8000
+</code></pre>
+<p>And you see:</p>
+<pre><code class="hljs language-bash">./llama-server: No such file or directory
+</code></pre>
+<p>That does <strong>not</strong> mean the model is missing.</p>
+<p>It means:</p>
+<blockquote>
+<p><em>You have not built</em> <em>llama.cpp.</em></p>
+</blockquote>
+<p>Unlike the Python package llama-cpp-python, the llama-server executable is <strong>not pre-installed</strong> anywhere. It is part of the C++ repository and must be compiled.</p>
+<h3 id="-why-this-step-isrequired"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-why-this-step-isrequired"><span class="anchor-icon">#</span></a>🧠 Why This Step Is Required</h3>
+<p>There are two different components that people often confuse:</p>
+<pre><code class="hljs language-javascript">|      <span class="hljs-title class_">Component</span>    |     <span class="hljs-title class_">How</span> <span class="hljs-title class_">It</span>’s <span class="hljs-title class_">Installed</span>    |    <span class="hljs-title class_">What</span> <span class="hljs-title class_">It</span> <span class="hljs-title class_">Provides</span>   |  
+| — — — — — — — — — | — — — — — — — — — — — — — | — — — — — — — — — — — |  
+| <span class="hljs-string">`llama-cpp-python`</span>| <span class="hljs-string">`pip install`</span>             | <span class="hljs-title class_">Python</span> bindings       |  
+| <span class="hljs-string">`llama.cpp`</span> (C++) | <span class="hljs-title class_">Must</span> be built <span class="hljs-keyword">from</span> source | <span class="hljs-string">`llama-server`</span> binary |
+</code></pre>
+<p>If you only installed:</p>
+<pre><code class="hljs">pip install llama-cpp-python
+</code></pre>
+<p>You do <strong>not</strong> get:</p>
+<pre><code class="hljs">llama-server
+</code></pre>
+<p>That executable only exists after building the C++ project.</p>
+<h3 id="-building-llamacpp-fromscratch"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-building-llamacpp-fromscratch"><span class="anchor-icon">#</span></a>🏗 Building llama.cpp from Scratch</h3>
+<p>Below are the correct steps for Linux / macOS (including Colab).</p>
+<h3 id="1️⃣-clone-the-repository"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1️⃣-clone-the-repository"><span class="anchor-icon">#</span></a>1️⃣ Clone the Repository</h3>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/ggml-org/llama.cpp  
+<span class="hljs-built_in">cd</span> llama.cpp
+</code></pre>
+<p>This downloads the source code.</p>
+<h3 id="2️⃣-configure-thebuild"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2️⃣-configure-thebuild"><span class="anchor-icon">#</span></a>2️⃣ Configure the Build</h3>
+<p>If you want Hugging Face auto-download support (--hf-repo, --hf-file), you must enable CURL:</p>
+<pre><code class="hljs language-ini">cmake -B build <span class="hljs-attr">-DGGML_CURL</span>=<span class="hljs-literal">ON</span>
+</code></pre>
+<p>If you want CUDA support (on GPU machines):</p>
+<pre><code class="hljs language-ini">cmake -B build <span class="hljs-attr">-DGGML_CUDA</span>=<span class="hljs-literal">ON</span> -DGGML_CURL=<span class="hljs-literal">ON</span>
+</code></pre>
+<p>For Apple Silicon with Metal:</p>
+<pre><code class="hljs language-ini">cmake -B build <span class="hljs-attr">-DGGML_METAL</span>=<span class="hljs-literal">ON</span> -DGGML_CURL=<span class="hljs-literal">ON</span>
+</code></pre>
+<h3 id="3️⃣-compile-theproject"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3️⃣-compile-theproject"><span class="anchor-icon">#</span></a>3️⃣ Compile the Project</h3>
+<pre><code class="hljs language-css">cmake <span class="hljs-attr">--build</span> build <span class="hljs-attr">--config</span> Release
+</code></pre>
+<p>After this completes, the binary will exist at:</p>
+<pre><code class="hljs language-bash">build/bin/llama-server
+</code></pre>
+<p>Not in the root folder.</p>
+<h3 id="-running-llama-server"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-running-llama-server"><span class="anchor-icon">#</span></a>🚀 Running llama-server</h3>
+<p>Now you can run:</p>
+<pre><code class="hljs language-python">./build/<span class="hljs-built_in">bin</span>/llama-server \  
+  --hf-repo unsloth/medgemma-4b-it-GGUF \  
+  --hf-file medgemma-4b-it-Q4_K_M.gguf \  
+  --port <span class="hljs-number">8000</span>  
+  
+<span class="hljs-comment"># Alternative way to run multimodal models  </span>
+<span class="hljs-comment"># Automatically downloads mmproj model,   </span>
+<span class="hljs-comment"># by default chooses Q4_K_M, or the first one if it is not present  </span>
+./build/<span class="hljs-built_in">bin</span>/llama-server \  
+  -hf unsloth/medgemma-4b-it-GGUF \  
+  --port <span class="hljs-number">8000</span>
+</code></pre>
+<p>Or if models are local:</p>
+<pre><code class="hljs language-bash">./build/bin/llama-server \  
+  -m ./models/medgemma-4b-it-Q4_K_M.gguf \  
+  --mmproj ./models/mmproj-BF16.gguf \  
+  --port 8000
+</code></pre>
+<h3 id="-why-the-binary-is-in-buildbin"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-why-the-binary-is-in-buildbin"><span class="anchor-icon">#</span></a>📁 Why the Binary Is in build/bin/</h3>
+<p>llama.cpp uses CMake.<br>
+CMake places compiled artefacts inside a build directory to:</p>
+<ul>
+<li>Separate source from compiled files</li>
+<li>Allow multiple build configurations</li>
+<li>Avoid polluting the repo</li>
+</ul>
+<p>That’s why:</p>
+<pre><code class="hljs language-bash">./llama-server
+</code></pre>
+<p>doesn’t work. You must use:</p>
+<pre><code class="hljs language-bash">./build/bin/llama-server
+</code></pre>
+<h3 id="-verifying-thebuild"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-verifying-thebuild"><span class="anchor-icon">#</span></a>🔎 Verifying the Build</h3>
+<p>To confirm it worked:</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">ls</span> build/bin
+</code></pre>
+<p>You should see:</p>
+<pre><code class="hljs language-python-repl">llama-server  
+llama-cli  
+quantize  
+<span class="hljs-meta prompt_">...</span>
+</code></pre>
+<p>If you don’t see llama-server, the build did not succeed.</p>
+<h3 id="-how-to-make-llama-server-callableglobally"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-how-to-make-llama-server-callableglobally"><span class="anchor-icon">#</span></a>✅ How To Make llama-server Callable Globally</h3>
+<h3 id="option-1add-topath"><a class="heading-anchor" aria-hidden tabindex="-1" href="#option-1add-topath"><span class="anchor-icon">#</span></a>Option 1 — Add to PATH</h3>
+<pre><code class="hljs language-ruby">export <span class="hljs-variable constant_">PATH</span>=<span class="hljs-variable">$PATH</span><span class="hljs-symbol">:/full/path/to/llama</span>.cpp/build/bin
+</code></pre>
+<p>Now you can run:</p>
+<pre><code class="hljs">llama-server
+</code></pre>
+<h3 id="option-2create-asymlink"><a class="heading-anchor" aria-hidden tabindex="-1" href="#option-2create-asymlink"><span class="anchor-icon">#</span></a>Option 2 — Create a Symlink</h3>
+<pre><code class="hljs language-swift">sudo ln <span class="hljs-operator">-</span>s <span class="hljs-regexp">/full/</span>path<span class="hljs-regexp">/to/</span>llama.cpp<span class="hljs-regexp">/build/</span>bin<span class="hljs-regexp">/llama-server /</span>usr<span class="hljs-regexp">/local/</span>bin<span class="hljs-operator">/</span>llama<span class="hljs-operator">-</span>server
+</code></pre>
+<p>Now it behaves like a system command.</p>
+<h3 id="-important-enabling-hugging-facedownload"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-important-enabling-hugging-facedownload"><span class="anchor-icon">#</span></a>🔐 Important: Enabling Hugging Face Download</h3>
+<p>If you want to use:</p>
+<pre><code class="hljs language-diff"><span class="hljs-deletion">--hf-repo  </span>
+<span class="hljs-deletion">--hf-file  </span>
+  
+# or  
+  
+<span class="hljs-deletion">-hf</span>
+</code></pre>
+<p>You must compile with:</p>
+<pre><code class="hljs language-ini"><span class="hljs-attr">-DGGML_CURL</span>=<span class="hljs-literal">ON</span>
+</code></pre>
+<p>Otherwise, the flags will exist, but downloading will fail.</p>
+<h3 id="-finaltakeaway"><a class="heading-anchor" aria-hidden tabindex="-1" href="#-finaltakeaway"><span class="anchor-icon">#</span></a>🧠 Final Takeaway</h3>
+<p>llama-server is not a pip tool.</p>
+<p>It is a compiled C++ executable.</p>
+<p>Before using it, you must:</p>
+<ol>
+<li>Clone llama.cpp</li>
+<li>Configure CMake</li>
+<li>Build the project</li>
+<li>Run the binary from build/bin/</li>
+</ol>
+<hr>
+<p><a href="https://medium.com/the-owl/%EF%B8%8F-how-to-start-using-llama-server-92aa6f81edc8">⚙️ How to Start Using llama-server</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/%EF%B8%8F-how-to-start-using-llama-server-92aa6f81edc8">Medium</a>.</em></p>7:["$","$L10",null,{"title":"⚙️ How to Start Using llama-server","date":"$D2026-02-28T00:00:00.000Z","readingTime":3,"categories":["Large Language Models","Deployment"],"tags":["llm","gguf","hugging-face","llama-server","llama-cpp"],"contentHtml":"$11","headings":[{"level":4,"id":"you-must-build-llamacpp-first","text":"You Must Build llama.cpp first"},{"level":3,"id":"-why-this-step-isrequired","text":"🧠 Why This Step Is Required"},{"level":3,"id":"-building-llamacpp-fromscratch","text":"🏗 Building llama.cpp from Scratch"},{"level":3,"id":"1️⃣-clone-the-repository","text":"1️⃣ Clone the Repository"},{"level":3,"id":"2️⃣-configure-thebuild","text":"2️⃣ Configure the Build"},{"level":3,"id":"3️⃣-compile-theproject","text":"3️⃣ Compile the Project"},{"level":3,"id":"-running-llama-server","text":"🚀 Running llama-server"},{"level":3,"id":"-why-the-binary-is-in-buildbin","text":"📁 Why the Binary Is in build/bin/"},{"level":3,"id":"-verifying-thebuild","text":"🔎 Verifying the Build"},{"level":3,"id":"-how-to-make-llama-server-callableglobally","text":"✅ How To Make llama-server Callable Globally"},{"level":3,"id":"option-1add-topath","text":"Option 1 — Add to PATH"},{"level":3,"id":"option-2create-asymlink","text":"Option 2 — Create a Symlink"},{"level":3,"id":"-important-enabling-hugging-facedownload","text":"🔐 Important: Enabling Hugging Face Download"},{"level":3,"id":"-finaltakeaway","text":"🧠 Final Takeaway"}],"prevPost":{"slug":"2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes","title":"Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes"},"nextPost":{"slug":"2026-02-28-hosting-your-own-llm-server","title":"Hosting Your Own LLM Server"}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"⚙️ How to Start Using llama-server — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

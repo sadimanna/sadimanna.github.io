@@ -61,6 +61,18 @@
         <category label="Deployment"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[⚙️ How to Start Using llama-server]]></title>
+        <id>https://sadimanna.github.io/blog/2026-02-28-how-to-start-using-llama-server/</id>
+        <link href="https://sadimanna.github.io/blog/2026-02-28-how-to-start-using-llama-server/"/>
+        <updated>2026-02-28T00:00:00.000Z</updated>
+        <author>
+            <name>Dr. Siladittya Manna</name>
+            <uri>https://sadimanna.github.io/</uri>
+        </author>
+        <category label="Large Language Models"/>
+        <category label="Deployment"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Running MedGemma-4B on a Small GPU (<16GB) Using BitsAndBytes]]></title>
         <id>https://sadimanna.github.io/blog/2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes/</id>
         <link href="https://sadimanna.github.io/blog/2026-02-27-running-medgemma-4b-on-a-small-gpu-16gb-using-bitsandbytes/"/>
