@@ -4,7 +4,7 @@
 //   node scripts/scaffold-paper-pages.mjs           # create missing pages only
 //   node scripts/scaffold-paper-pages.mjs --force   # overwrite existing pages
 //
-// Pages are written to public/papers/paper_<id>/index.html and share the
+// Pages are written to public/papers/<slug>/index.html and share the
 // template's CSS/JS from public/papers/static/. Existing pages are never
 // touched unless --force is passed, so it is safe to re-run after adding a paper.
 
@@ -76,7 +76,7 @@ function bibtex(pub) {
   }
   fields.push(`  year={${pub.year}}`)
   if (pub.doi) fields.push(`  doi={${pub.doi}}`)
-  fields.push(`  url={${SITE_URL}/papers/paper_${pub.id}/}`)
+  fields.push(`  url={${SITE_URL}/papers/${pub.slug}/}`)
   return `@${kind}{${key},\n${fields.join(",\n")}\n}`
 }
 
@@ -126,7 +126,7 @@ function moreWorks(pub, all) {
     .sort((a, b) => b.year - a.year)
     .slice(0, 6)
     .map(
-      (p) => `        <a href="../paper_${p.id}/" class="work-item">
+      (p) => `        <a href="../${p.slug}/" class="work-item">
           <div class="work-info">
             <h5>${esc(p.title)}</h5>
             <span class="work-venue">${esc(venue(p))} ${p.year}</span>
@@ -141,7 +141,7 @@ function renderPage(pub, all) {
   const title = esc(pub.title)
   const authors = esc(pub.authors)
   const description = esc(pub.abstract)
-  const url = `${SITE_URL}/papers/paper_${pub.id}/`
+  const url = `${SITE_URL}/papers/${pub.slug}/`
   const ld = {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
@@ -427,11 +427,14 @@ ${linkButtons(pub)}
 }
 
 const publications = loadPublications().filter((p) => p.type !== "thesis")
+for (const p of publications) {
+  if (!p.slug) throw new Error(`Publication ${p.id} ("${p.title}") needs a \`slug\` (used as its folder name in public/papers/)`)
+}
 let created = 0
 let skipped = 0
 
 for (const pub of publications) {
-  const dir = path.join(OUT_DIR, `paper_${pub.id}`)
+  const dir = path.join(OUT_DIR, pub.slug)
   const file = path.join(dir, "index.html")
   if (fs.existsSync(file) && !force) {
     skipped++
@@ -445,7 +448,7 @@ for (const pub of publications) {
   }
   fs.writeFileSync(file, renderPage(pub, publications))
   created++
-  console.log(`created public/papers/paper_${pub.id}/index.html`)
+  console.log(`created public/papers/${pub.slug}/index.html`)
 }
 
 console.log(`\n${created} created, ${skipped} already existed (use --force to overwrite).`)

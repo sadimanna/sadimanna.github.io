@@ -321,6 +321,7 @@ const latestAnnouncements = [
 const publications = [
   {
     id: 20,
+    slug: "datadoping",
     title: "Bridging the Applicator Gap with Data-Doping: Dual-Domain Learning for Precise Bladder Segmentation in CT-Guided Brachytherapy",
     authors: "S Das, S Manna, S Ghosh",
     journal: "",
@@ -334,6 +335,7 @@ const publications = [
   },
   {
     id: 19,
+    slug: "projector-rank",
     title: "On the Role of the Projector in Contrastive Self-Supervised Learning: Last-Layer Rank Dynamics Drive Representation Quality",
     authors: "S Manna, P Mandal, U Pal, S Bhattacharya",
     journal: "",
@@ -347,6 +349,7 @@ const publications = [
   },
   {
     id: 18,
+    slug: "rrdb-multiorgan",
     title: "Multiorgan Segmentation in Magnetic Resonance Images for Gynecological Brachytherapy Using Residuals in Residual Dense Block",
     authors: "S Das, P Sanki, S Manna, S Mondal, S Bhattacharya, S Ghosh",
     journal: "Journal of Medical Physics",
@@ -360,6 +363,7 @@ const publications = [
   },
   {
     id: 17,
+    slug: "fedlora-gia",
     title: "Breaking the Privacy Promise: Gradient Inversion Attacks on Federated Low-Rank Adapted Vision Transformers",
     authors: "R Badiya, S Manna, A Sinha, M Yashwanth, A Chakraborty",
     journal: "Winter Conference on Applications of Computer Vision (WACV 2027)",
@@ -373,6 +377,7 @@ const publications = [
   },
   {
     id: 15,
+    slug: "rw-mstmap",
     title: "Reliability-Aware Weighted Multi-Scale Spatio-Temporal Maps for Heart Rate Monitoring",
     authors: "A Bairagi, S Manna, R Dey, U Pal",
     journal: "IEEE International Conference on Image Processing (ICIP 2026)",
@@ -386,6 +391,7 @@ const publications = [
   },
   {
     id: 16,
+    slug: "semisup-motility",
     title: "Semi-Supervised Sperm Motility Classification Using WHO Kinematic Features and Domain-Adapted Detection on VISEM-Tracking",
     authors: "S Kumar, A Singh, S Manna, R Saini",
     journal: "The First Workshop on AI in Fertility Science (2026)",
@@ -399,6 +405,7 @@ const publications = [
   },
   {
     id: 8,
+    slug: "dyst-ssl",
     title: "Dynamically Scaled Temperature in Self-Supervised Contrastive Learning",
     authors: "S Manna, S Chattopadhyay, R Dey, U Pal, S Bhattacharya",
     journal: "IEEE Transactions on Artificial Intelligence",
@@ -412,6 +419,7 @@ const publications = [
   },
   {
     id: 11,
+    slug: "decorr-writerid",
     title: "Decorrelation-Based Self-Supervised Visual Representation Learning for Writer Identification",
     authors: "A Maitra, S Mitra, S Manna, S Bhattacharya, U Pal",
     journal: "ACM Transactions on Asian and Low-Resource Language Information Processing",
@@ -425,6 +433,7 @@ const publications = [
   },
   {
     id: 14,
+    slug: "rdb-applicator",
     title: "Residual Dense Blocks for Extreme Foreground Imbalance in Brachytherapy Applicator Segmentation",
     authors: "S Das, P Sanki, S Manna, S Mondal, S Bhattacharya, S Ghosh",
     journal: "Springer Nature Computer Science",
@@ -438,6 +447,7 @@ const publications = [
   },
   {
     id: 12,
+    slug: "ssl-med-survey",
     title: "Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey",
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "Transactions on Machine Learning Research (TMLR)",
@@ -451,6 +461,7 @@ const publications = [
   },
   {
     id: 10,
+    slug: "cwpss",
     title: "Correlation Weighted Prototype-based Self-Supervised One-Shot Segmentation of Medical Images",
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "27th International Conference on Pattern Recognition (ICPR 2024)",
@@ -464,6 +475,7 @@ const publications = [
   },
   {
     id: 4,
+    slug: "knee-ssl",
     title: "Self-supervised representation learning for knee injury diagnosis from magnetic resonance data",
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "IEEE Transactions on Artificial Intelligence",
@@ -477,6 +489,7 @@ const publications = [
   },
   {
     id: 6,
+    slug: "selfdocseg",
     title: "Selfdocseg: A self-supervised vision-based approach towards document segmentation",
     authors: "S Maity, S Biswas, S Manna, A Banerjee, J Llados, S Bhattacharya, U Pal",
     journal: "International Conference on Document Analysis and Recognition (ICDAR)",
@@ -490,6 +503,7 @@ const publications = [
   },
   {
     id: 1,
+    slug: "surds",
     title: "Surds: Self-supervised attention-guided reconstruction and dual triplet loss for writer independent offline signature verification",
     authors: "S Chattopadhyay, S Manna, S Bhattacharya, U Pal",
     journal: "26th International Conference on Pattern Recognition (ICPR 2022)",
@@ -503,6 +517,7 @@ const publications = [
   },
   {
     id: 2,
+    slug: "swis",
     title: "SWIS: Self-Supervised Representation Learning for Writer Independent Offline Signature Verification",
     authors: "S Manna, S Chattopadhyay, S Bhattacharya, U Pal",
     journal: "IEEE International Conference on Image Processing (ICIP 2022)",
@@ -516,6 +531,7 @@ const publications = [
   },
   {
     id: 3,
+    slug: "acl-ssl",
     title: "Self-supervised representation learning for detection of ACL tear injury in knee MR videos",
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "Pattern Recognition Letters",
@@ -529,6 +545,7 @@ const publications = [
   },
   {
     id: 5,
+    slug: "plsm",
     title: "PLSM: A Parallelized Liquid State Machine for Unintentional Action Detection",
     authors: "S Manna, D Das, S Bhattacharya, U Pal, S Chanda",
     journal: "IEEE Transactions on Emerging Topics in Computing",
@@ -542,6 +559,7 @@ const publications = [
   },
   {
     id: 7,
+    slug: "interpretive-ssl",
     title: "Interpretive self-supervised pre-training: boosting performance on visual medical data",
     authors: "S Manna, S Bhattacharya, U Pal",
     journal: "Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP)",
@@ -555,6 +573,7 @@ const publications = [
   },
   {
     id: 9,
+    slug: "mio",
     title: "MIO: Mutual Information Optimization using Self-Supervised Binary Contrastive Learning",
     authors: "S Manna, U Pal, S Bhattacharya",
     journal: "arXiv preprint arXiv:2111.12664v2",
@@ -1215,7 +1234,7 @@ export default function Portfolio() {
                     {pub.type !== "thesis" && (
                       <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
                         {/* Static template page in public/papers/, not a Next.js route */}
-                        <a href={`/papers/paper_${pub.id}/index.html`}>
+                        <a href={`/papers/${pub.slug}/index.html`}>
                           Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
                         </a>
                       </Button>
