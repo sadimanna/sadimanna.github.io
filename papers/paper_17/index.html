@@ -40,8 +40,9 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 section{padding:48px 0;border-top:1px solid var(--line)}
 section.alt{background:var(--bg-alt)}
 h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(28px,4.6vw,44px);line-height:1.18;margin:0 0 20px;letter-spacing:-.01em}
-h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:28px;margin:0 0 18px}
-h3{font-size:17px;font-weight:600;margin:28px 0 10px}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:28px;margin:0 0 18px;text-align:center;padding-bottom:8px}
+h2::after,h3::after{content:"";display:block;width:52px;height:3px;background:var(--bad);margin:8px auto 0}
+h3{font-size:17px;font-weight:600;margin:28px 0 10px;text-align:center;padding-bottom:6px}
 p{margin:0 0 14px}
 .muted{color:var(--muted)}
 .center{text-align:center}
@@ -53,18 +54,27 @@ header{padding:64px 0 40px;text-align:center}
 .authors a,.authors span{color:var(--fg)}
 .affil{color:var(--muted);margin:0 0 4px}
 .email{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--muted)}
-.links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--btn);color:var(--btn-fg);padding:9px 18px;border-radius:999px;font-weight:500;font-size:15px}
-.btn:hover{text-decoration:none;opacity:.85}
-.btn.disabled{opacity:.4;pointer-events:none}
-.btn svg{width:17px;height:17px;fill:currentColor}
+.publication-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+.link-block{display:inline-flex}
+.publication-links .button{display:inline-flex;align-items:center;gap:8px;background:var(--btn);color:var(--btn-fg);padding:9px 18px;border-radius:999px;font-weight:500;font-size:15px}
+.publication-links .button:hover{text-decoration:none;opacity:.85}
+.publication-links .button.disabled{opacity:.4;pointer-events:none}
+.publication-links .icon{display:inline-flex;align-items:center}
+.publication-links .icon img{width:17px;height:17px;display:block;filter:invert(1)}
+.publication-links svg{width:17px;height:17px;fill:currentColor}
+.publication-links svg path[fill="none"],
+.publication-links svg ellipse{fill:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .publication-links .icon img{filter:none}
+}
+:root[data-theme="dark"] .publication-links .icon img{filter:none}
 
 /* Figures */
-figure{margin:0 0 24px}
+figure{max-width:750px;margin:0 auto 24px}
 .fig{background:var(--fig-bg);border:1px solid var(--line);border-radius:10px;padding:14px}
 .fig img{display:block;width:100%;height:auto;margin:0 auto}
 figcaption{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.55}
-.tldr{font-size:19px;line-height:1.55;border-left:4px solid var(--accent);padding:6px 0 6px 18px;margin:28px 0 0}
+.tldr{font-size:16px;line-height:1.55;border-left:4px solid var(--accent);padding:6px 0 6px 18px;margin:28px 0 0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media (max-width:720px){.two{grid-template-columns:1fr}}
 
@@ -95,15 +105,15 @@ table.imgs td.gap{width:10px}
 .tab{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:7px 14px;border-radius:999px;font:inherit;font-size:14px;cursor:pointer}
 .tab[aria-selected="true"]{background:var(--btn);color:var(--btn-fg);border-color:var(--btn)}
 .panel{display:none} .panel.active{display:block}
-.panel-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 10px}
+.panel-card{max-width:750px;margin-left:auto;margin-right:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 10px}
 
 /* Tables */
-.tbl-scroll{overflow-x:auto}
-table.res{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums;background:var(--card)}
-table.res th,table.res td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl-scroll{max-width:750px;margin-left:auto;margin-right:auto;overflow-x:visible}
+table.res{border-collapse:collapse;width:100%;font-size:11px;font-variant-numeric:tabular-nums;background:var(--card)}
+table.res th,table.res td{padding:6px 4px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
 table.res thead th{font-weight:600;border-bottom:2px solid var(--fg)}
 table.res td:first-child,table.res th:first-child{text-align:left}
-table.res .sd{color:var(--muted);font-size:12px}
+table.res .sd{color:var(--muted);font-size:10px}
 .up{color:var(--good);font-weight:600} .down{color:var(--bad);font-weight:600}
 .best{font-weight:700}
 .tbl-cap{font-size:14px;color:var(--muted);margin:10px 0 28px}
@@ -125,37 +135,53 @@ footer{padding:32px 0 48px;border-top:1px solid var(--line);font-size:13px;color
 
 <header class="wrap">
   <!-- TODO: change to "WACV 2027" once the paper is accepted -->
-  <div class="venue">arXiv Preprint</div>
+  <div class="venue">WACV 2027</div>
   <h1>Breaking the Privacy Promise: Gradient Inversion Attacks on Federated Low-Rank Adapted Vision Transformers</h1>
   <!-- TODO: replace href="#" with each author's homepage -->
   <p class="authors">
-    <a href="#">Ritik K. Badiya</a>
-    <a href="#">Siladittya Manna</a>
-    <a href="#">Ashmit Sinha</a>
-    <a href="#">Yashwanth Mandula</a>
-    <a href="#">Anirban Chakraborty</a>
+    <a href="https://www.linkedin.com/in/ritik-kumar-badiya-6428661b4/">Ritik K. Badiya</a>
+    <a href="https://sadimanna.github.io/">Siladittya Manna</a>
+    <a href="https://www.linkedin.com/in/ashmit-sinha-623a20225/">Ashmit Sinha</a>
+    <a href="https://www.linkedin.com/in/yashwanth-mandula-aba700a5/">Yashwanth Mandula</a>
+    <a href="https://www.linkedin.com/in/anirban-chakraborty-629a1833/">Anirban Chakraborty</a>
   </p>
   <p class="affil">Indian Institute of Science, Bengaluru, India</p>
   <p class="email">{ritikbadiya, yashwanthm, siladittyam, anirban}@iisc.ac.in</p>
 
-  <div class="links">
-    <a class="btn" href="static/pdf/paper.pdf" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9z"/></svg>Paper</a>
+  <div class="publication-links">
+    <span class="link-block">
+      <a class="external-link button is-normal is-rounded is-dark" href="static/pdf/paper.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="icon"><img src="static/icons/pdf-document.svg" alt="" aria-hidden="true"></span>
+        <span>Paper</span>
+      </a>
+    </span>
     <!-- TODO: add arXiv ID -->
-    <a class="btn disabled" href="#" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M4 4h4l4 7 4-7h4l-6 10v6h-4v-6z"/></svg>arXiv</a>
+    <span class="link-block">
+      <a class="external-link button is-normal is-rounded is-dark disabled" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+        <span class="icon"><img src="static/icons/Arxiv.svg" alt="" aria-hidden="true"></span>
+        <span>arXiv</span>
+      </a>
+    </span>
     <!-- TODO: add GitHub repo URL -->
-    <a class="btn disabled" href="#" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>Code (coming soon)</a>
-    <a class="btn" href="#bibtex">
-      <svg viewBox="0 0 24 24"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>BibTeX</a>
+    <span class="link-block">
+      <a class="external-link button is-normal is-rounded is-dark disabled" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+        <span class="icon"><img src="static/icons/Github.svg" alt="" aria-hidden="true"></span>
+        <span>Code (coming soon)</span>
+      </a>
+    </span>
+    <span class="link-block">
+      <a class="external-link button is-normal is-rounded is-dark" href="#bibtex">
+        <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg></span>
+        <span>BibTeX</span>
+      </a>
+    </span>
   </div>
 </header>
 
 <!-- Teaser -->
 <div class="wrap" style="padding-bottom:48px">
-  <figure>
-    <div class="fig" style="max-width:720px;margin:0 auto"><img src="static/img/concept2.png" alt="Several initializations converge to different reconstructions with nearly identical gradients"></div>
+  <figure style="margin-top:24px">
+    <div class="fig" style="max-width:700px;margin:0 auto"><img src="static/img/concept2.png" alt="Several initializations converge to different reconstructions with nearly identical gradients"></div>
     <figcaption><b>Duplicate solutions in gradient inversion.</b> The gradient-matching objective has many local minima, so different images can produce nearly identical gradients to the private sample. All initializations and reconstructions shown are real samples from our experiments.</figcaption>
   </figure>
   <p class="tldr"><b>TL;DR</b> Federated LoRA fine-tuning of ViTs shares only low-rank gradients, but it doesn't stop data leakage. Making positional embeddings trainable in every transformer block gives an honest-but-curious server layer-wise spatial anchors. Combined with a generative prior, these anchors recover private images with high fidelity.</p>
@@ -182,7 +208,7 @@ footer{padding:32px 0 48px;border-top:1px solid var(--line);font-size:13px;color
       <li><b>Less information.</b> LoRA updates only a small low-rank subset of parameters, which shrinks the intrinsic dimension of the shared gradients. The observed gradient then no longer uniquely determines the private input.</li>
       <li><b>No spatial cues.</b> Positional embeddings are frozen and self-attention mixes all tokens, so LoRA gradients don't tie back to specific patch locations. Spatially misaligned, distorted or noisy inputs can satisfy the same gradient constraints. This produces <i>duplicate</i> (twin-data) reconstructions.</li>
     </ul>
-    <figure style="margin-top:24px">
+    <figure style="max-width:750px;margin:24px auto 24px">
       <div class="fig"><img src="static/img/intrinsic_dimension_comparison.png" alt="Intrinsic dimensionality of gradients, full fine-tuning vs LoRA"></div>
       <figcaption>Intrinsic dimensionality of gradients from full fine-tuning compared with LoRA-adapted ViT-Small. Fewer trainable parameters means a lower-dimensional gradient manifold.</figcaption>
     </figure>
@@ -194,21 +220,21 @@ footer{padding:32px 0 48px;border-top:1px solid var(--line);font-size:13px;color
 
 <section class="alt" id="method">
   <div class="wrap">
-    <h2>Method: spatial anchoring</h2>
+    <h2>Method: Spatial Anchoring</h2>
     <p>The server prescribes a ViT in which a <b>trainable positional embedding</b> $p_l$ is added to the input of every transformer encoder layer (except the first), alongside the LoRA adapters. This doesn't change the clients' local training procedure. The architecture also improves task performance and robustness, which gives clients a genuine reason to adopt it. The overhead is small: GFLOPs increase by only 0.016% for ViT-Small.</p>
     <div class="eq">$$x_{l+1} = \tilde{x}_l + \operatorname{MLP}\!\big(\operatorname{LN}'(\tilde{x}_l)\big),\qquad \tilde{x}_l = \operatorname{MHSA}\!\big(\operatorname{LN}(x_l + p_l)\big) + (x_l + p_l)$$</div>
     <p>The gradients of $p_l$ now carry explicit, layer-wise spatial information. The attacker builds on the generative GIA framework GIAS. It optimizes a latent code $z$ and then the generator $G_\omega$ so that the gradients of the candidate image $\hat{x} = G_\omega(z)$ match the client's gradients, for both the LoRA/classifier parameters and the positional embeddings:</p>
     <div class="eq">$$\mathcal{L}_{\text{match}} = d_{\cos}\!\big(\nabla_{\theta'^S}\ell(\hat{y},y),\, g_{\theta'}\big) + d_{\cos}\!\big(\nabla_{\theta^S_{\text{PE}}}\ell(\hat{y},y),\, g_{\text{PE}}\big),\qquad \min_{z,\,G_\omega}\ \mathcal{L}_{\text{match}} + \lambda_{\text{reg}} R_{\text{base}}(z, G_\omega)$$</div>
-    <div class="two" style="margin-top:20px">
-      <figure>
-        <div class="fig"><img src="static/img/wacv_highlevel.png" alt="High-level overview of the generative GIA framework"></div>
-        <figcaption>High-level overview of the generative gradient-inversion framework. $g^C$ and $g^S$ are the client and server gradients.</figcaption>
-      </figure>
-      <figure>
-        <div class="fig"><img src="static/img/wacv2027_schematic.png" alt="Detailed schematic of the proposed attack with layer-wise trainable positional embeddings"></div>
-        <figcaption>Detailed schematic. Step 1 updates $z$ and step 2 updates $G_\omega$. Gradients of the trainable positional embeddings (PE) act as spatial anchors.</figcaption>
-      </figure>
-    </div>
+    <figure style="max-width:750px;margin:20px auto 24px">
+      <div class="fig"><img src="static/img/wacv_highlevel.png" alt="High-level overview of the generative GIA framework"></div>
+      <figcaption>High-level overview of the generative gradient-inversion framework. $g^C$ and $g^S$ are the client and server gradients.</figcaption>
+    </figure>
+    <!--
+    <figure>
+      <div class="fig"><img src="static/img/wacv2027_schematic.png" alt="Detailed schematic of the proposed attack with layer-wise trainable positional embeddings"></div>
+      <figcaption>Detailed schematic. Step 1 updates $z$ and step 2 updates $G_\omega$. Gradients of the trainable positional embeddings (PE) act as spatial anchors.</figcaption>
+    </figure>
+    -->
     <h3>Contributions</h3>
     <ul class="contrib">
       <li>We show that LoRA-induced parameter sparsity increases the non-identifiability of gradient inversion by reducing the information available to the attacker.</li>
@@ -317,13 +343,15 @@ footer{padding:32px 0 48px;border-top:1px solid var(--line);font-size:13px;color
     <!-- TODO: replace with the arXiv / WACV entry once available -->
     <div class="bib">
       <button class="copy" id="copyBib">Copy</button>
-<pre id="bibText">@article{badiya2026breaking,
-  title   = {Breaking the Privacy Promise: Gradient Inversion Attacks on
-             Federated Low-Rank Adapted Vision Transformers},
-  author  = {Badiya, Ritik K. and Manna, Siladittya and Sinha, Ashmit and
-             Mandula, Yashwanth and Chakraborty, Anirban},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
+<pre id="bibText">@InProceedings{Badiya_2027_WACV,
+    author    = {Badiya, Ritik K. and Manna, Siladittya and Sinha, Ashmit and
+                 Mandula, Yashwanth and Chakraborty, Anirban},
+    title     = {Breaking the Privacy Promise: Gradient Inversion Attacks on
+                 Federated Low-Rank Adapted Vision Transformers},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {},
+    year      = {2027},
+    pages     = {}
 }</pre>
     </div>
   </div>
