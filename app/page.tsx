@@ -1212,11 +1212,14 @@ export default function Portfolio() {
                         </Link>
                       </Button>
                     )}
-                    <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
-                      <Link href={`/papers/paper_${pub.id}`}>
-                        Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
-                      </Link>
-                    </Button>
+                    {pub.type !== "thesis" && (
+                      <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
+                        {/* Static template page in public/papers/, not a Next.js route */}
+                        <a href={`/papers/paper_${pub.id}/index.html`}>
+                          Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -1685,7 +1688,7 @@ export default function Portfolio() {
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">AI Projects</h3>
                 </div>
                 <Button asChild variant="outline" size="sm" className="text-xs">
-                  <Link href="/papers">
+                  <Link href="https://github.com/sadimanna?tab=repositories" target="_blank" rel="noopener noreferrer">
                     All Projects <ChevronRight className="ml-1 h-3.5 w-3.5" />
                   </Link>
                 </Button>

@@ -163,6 +163,24 @@ A common fallback is copying `out/index.html` to `out/404.html` after export:
 cp out/index.html out/404.html
 ```
 
+## Paper Project Pages
+
+Each publication (except the thesis) has a static project page built from the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template):
+
+- `public/papers/paper_<id>/index.html` — one page per paper (`<id>` is the `id` in the `publications` array in `app/page.tsx`); served at `https://sadimanna.github.io/papers/paper_<id>/`
+- `public/papers/paper_<id>/static/{images,videos,pdfs}/` — that paper's own figures, videos and PDFs (referenced as `static/...` from its page)
+- `public/papers/static/` — template CSS/JS shared by all pages (referenced as `../static/...`)
+
+Pages are plain HTML: edit them directly and look for `TODO` comments (full abstract, affiliations, code link, figures, video, poster). Next.js copies `public/` into `out/` unchanged, so `npm run deploy` publishes them as-is.
+
+To add a page for a new paper, add it to `publications` in `app/page.tsx`, then run:
+
+```bash
+node scripts/scaffold-paper-pages.mjs
+```
+
+It only creates pages that don't exist yet, so your edits are never overwritten (`--force` regenerates everything).
+
 ## Custom Domain
 
 If you use a custom domain, add a `CNAME` file to `out/` before deployment or configure the domain in GitHub Pages settings.
