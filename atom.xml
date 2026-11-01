@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sadimanna.github.io</id>
     <title>Dr. Siladittya Manna — Technical Blog</title>
-    <updated>2026-10-29T00:00:00.000Z</updated>
+    <updated>2026-04-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Dr. Siladittya Manna</name>
@@ -12,39 +12,6 @@
     <link rel="self" href="https://sadimanna.github.io/atom.xml"/>
     <subtitle>Technical blog on federated learning, self-supervised learning, medical AI, and trustworthy machine learning.</subtitle>
     <rights>© 2026 Dr. Siladittya Manna</rights>
-    <entry>
-        <title type="html"><![CDATA[No-Reference Image Quality Assessment: What These Methods Can (and Cannot) Tell Us]]></title>
-        <id>https://sadimanna.github.io/blog/2026-10-29-no-reference-image-quality-assessment-what-these-methods-can/</id>
-        <link href="https://sadimanna.github.io/blog/2026-10-29-no-reference-image-quality-assessment-what-these-methods-can/"/>
-        <updated>2026-10-29T00:00:00.000Z</updated>
-        <author>
-            <name>Dr. Siladittya Manna</name>
-            <uri>https://sadimanna.github.io/</uri>
-        </author>
-        <category label="Deep Learning"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reducing Tokenization Premiums for Low-Resource Languages: A Technical Deep Dive]]></title>
-        <id>https://sadimanna.github.io/blog/2026-10-29-reducing-tokenization-premiums-for-low-resource-languages-a/</id>
-        <link href="https://sadimanna.github.io/blog/2026-10-29-reducing-tokenization-premiums-for-low-resource-languages-a/"/>
-        <updated>2026-10-29T00:00:00.000Z</updated>
-        <author>
-            <name>Dr. Siladittya Manna</name>
-            <uri>https://sadimanna.github.io/</uri>
-        </author>
-        <category label="Large Language Models"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building a Terminal-First Task Manager: Introducing todo-cli]]></title>
-        <id>https://sadimanna.github.io/blog/2026-10-25-building-a-terminal-first-task-manager-introducing-todo-cli/</id>
-        <link href="https://sadimanna.github.io/blog/2026-10-25-building-a-terminal-first-task-manager-introducing-todo-cli/"/>
-        <updated>2026-10-25T00:00:00.000Z</updated>
-        <author>
-            <name>Dr. Siladittya Manna</name>
-            <uri>https://sadimanna.github.io/</uri>
-        </author>
-        <category label="Developer Tools"/>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Prove that 2^n + 1 is divisible by 3 for all odd integers n >= 1]]></title>
         <id>https://sadimanna.github.io/blog/2026-04-07-prove-that-2-n-1-is-divisible-by-3-for-all-odd-integers-n-1/</id>
