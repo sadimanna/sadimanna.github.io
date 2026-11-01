@@ -4,18 +4,18 @@ import { TutorialsSection } from "./TutorialsSection";
 
 export function AcademicServiceSection() {
   return (
-    <section id="academic-service" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Academic Service & Leadership</h2>
-          <p className="text-lg text-gray-600">
-            Contributing to the scientific community through various roles and initiatives
-          </p>
+    <section id="academic-service" className="section section--well">
+      <div className="wrap">
+        <div className="head-split">
+          <h2>Academic Service &amp; Leadership</h2>
+          <p>Contributing to the scientific community through various roles and initiatives</p>
         </div>
 
-        <EditorialActivities />
-        <TeachingMentorshipSection />
-        <TutorialsSection />
+        <div className="service">
+          <EditorialActivities />
+          <TeachingMentorshipSection />
+          <TutorialsSection />
+        </div>
       </div>
     </section>
   );

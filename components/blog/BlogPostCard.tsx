@@ -44,7 +44,7 @@ export function BlogPostCard({
           )}
 
           {/* Title */}
-          <h2 className="blog-card-title">{title}</h2>
+          <h3 className="blog-card-title">{title}</h3>
 
           {/* Meta */}
           <div className="blog-card-meta">
@@ -78,7 +78,6 @@ export function BlogPostCard({
           {/* Read More */}
           <div className="blog-card-readmore">
             <span>Read article</span>
-            <ArrowRight className="blog-card-readmore-icon" />
           </div>
         </div>
       </article>

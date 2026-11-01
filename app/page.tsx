@@ -3,42 +3,13 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { profileStats, publicationMetrics } from "@/lib/profile-stats"
-import {
-  ExternalLink,
-  Calendar,
-  ChevronRight,
-  BookOpen,
-  Users,
-  GraduationCap,
-  Briefcase,
-  Github,
-  Mail,
-  Network,
-  Layers,
-  Stethoscope,
-  ShieldCheck,
-  Lightbulb,
-  Target,
-  Globe,
-  Rocket,
-  Award,
-  Sparkles,
-  MapPin,
-  CheckCircle2,
-  Library,
-  ArrowRight,
-  FlaskConical,
-  Clock,
-  User,
-} from "lucide-react"
+import { profileStats } from "@/lib/profile-stats"
+import { Network, Layers, Stethoscope, ShieldCheck, Globe, Rocket } from "lucide-react"
 import { AcademicServiceSection } from "@/components/academic-service/AcademicServiceSection"
 import { CitationsChart } from "@/components/CitationsChart"
 import { CollaborationMap } from "@/components/CollaborationMap"
 import { ThemeToggle } from "@/components/theme-toggle"
+import "./home.css"
 
 // Unified Primary Research Areas
 const primaryResearchKeywords = [
@@ -80,7 +51,6 @@ const ongoingProjects = [
     description:
       "Evaluating attack surfaces in federated learning.",
     topics: ["Federated Learning", "AI Security", "Gradient Inversion", "PEFT Adapters"],
-    badgeStyle: "border-blue-200 bg-blue-50 text-blue-800 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300",
   },
   {
     id: "domain-adaptive-seg",
@@ -91,7 +61,6 @@ const ongoingProjects = [
     description:
       "Investigating the role of projector in self-supervised contrastive learning and finding the critical reasons behind dimensional collapse.",
     topics: ["Self-Supervised Learning", "Contrastive Learning", "Representation Learning", "Dimensional Collapse"],
-    badgeStyle: "border-purple-200 bg-purple-50 text-purple-800 dark:border-purple-900/60 dark:bg-purple-950/40 dark:text-purple-300",
   },
   {
     id: "daod",
@@ -102,7 +71,6 @@ const ongoingProjects = [
     description:
       "Developing domain-adaptive object detection methods for visually similar objects by exploiting domain-invariant features and cross-domain alignment strategies.",
     topics: ["Domain Adaptation", "Object Detection", "Cross-Domain Generalization", "Visually Similar Objects"],
-    badgeStyle: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-900/60 dark:bg-teal-950/40 dark:text-teal-300",
   },
   {
     id: "llm-lowres",
@@ -113,7 +81,6 @@ const ongoingProjects = [
     description:
       "Adapting Large Language Models for low-resource Indian languages through data-centric approaches and parameter-efficient fine-tuning strategies.",
     topics: ["LLM", "Low-Resource Language", "Parameter-Efficient Fine-Tuning"],
-    badgeStyle: "border-teal-200 bg-teal-50 text-teal-800 dark:border-teal-900/60 dark:bg-teal-950/40 dark:text-teal-300",
   },
 ]
 
@@ -755,6 +722,7 @@ const mediumArticles = [
 export default function Portfolio() {
   const [selectedPublicationType, setSelectedPublicationType] = useState("All")
   const [selectedPublicationTopic, setSelectedPublicationTopic] = useState("All")
+  const [showAllPublications, setShowAllPublications] = useState(false)
 
   const publicationCards = publications
     .map((pub) => {
@@ -775,1072 +743,591 @@ export default function Portfolio() {
     .filter((pub) => selectedPublicationTopic === "All" || pub.topics.includes(selectedPublicationTopic))
     .sort((a, b) => b.year - a.year)
 
-  return (
-    <div className="min-h-screen bg-slate-50/50 text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100 font-sans">
-      {/* Sticky Academic Header */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white dark:border-slate-800/80 dark:bg-slate-950">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-          <Link
-            href="#profile"
-            className="flex items-center gap-2 font-semibold text-slate-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
-          >
-            <span>Dr. Siladittya Manna</span>
-            <span className="hidden text-xs text-slate-400 sm:inline">| IISc Bangalore</span>
-          </Link>
+  const PUBLICATIONS_SHOWN = 6
+  const filtersActive = selectedPublicationType !== "All" || selectedPublicationTopic !== "All"
+  const collapsed = !showAllPublications && !filtersActive
 
-          <nav className="flex items-center gap-1 sm:gap-2">
-            <Link
-              href="#about"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 md:inline-block"
-            >
-              About
-            </Link>
-            <Link
-              href="#news"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
-            >
-              News
-            </Link>
-            <Link
-              href="#publications"
-              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
-            >
-              Publications
-            </Link>
-            <Link
-              href="#ongoing-projects"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
-            >
-              Projects
-            </Link>
-            <Link
-              href="#team"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
-            >
-              Team
-            </Link>
-            <Link
-              href="#research"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 md:inline-block"
-            >
-              Research
-            </Link>
-            <Link
-              href="#awards"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 lg:inline-block"
-            >
-              Awards
-            </Link>
-            <Link
-              href="#journey"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 lg:inline-block"
-            >
-              Journey
-            </Link>
-            <Link
-              href="#academic-service"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
-            >
-              Service
-            </Link>
-            <Link
-              href="#contact"
-              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/blog"
-              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 sm:inline-block"
-            >
-              Blog
-            </Link>
-            <div className="ml-2 pl-2 border-l border-slate-200 dark:border-slate-800">
-              <ThemeToggle />
-            </div>
-          </nav>
+  const bigStats = ["Publications", "Citations", "h-index", "Collaborators"]
+  const statsBig = profileStats.filter((s) => bigStats.includes(s.label))
+  const statsSmall = profileStats.filter((s) => !bigStats.includes(s.label))
+
+  return (
+    <div className="hm">
+      <a className="skip" href="#main">Skip to content</a>
+
+      {/* Masthead */}
+      <header className="mast">
+        <div className="wrap mast__bar">
+          <span className="mast__place label">Indian Institute of Science, Bangalore</span>
+          <Link href="#profile" className="mast__mark" aria-label="Dr. Siladittya Manna, back to top">
+            Siladittya Manna
+          </Link>
+          <div className="mast__end">
+            <a href="#contact">Contact</a>
+            <ThemeToggle />
+          </div>
         </div>
+        <nav className="mast__links" aria-label="Sections">
+          <ul className="wrap">
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#ongoing-projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#academic-service">Service</a></li>
+            <li><Link href="/blog">Blog</Link></li>
+          </ul>
+        </nav>
       </header>
 
-      {/* 1. HERO SECTION */}
-      <section id="profile" className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-12 lg:grid-cols-[1fr_320px]">
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/60 dark:text-blue-300 mb-5">
-                Post-Doctoral Fellow (ANRF Fellow), Indian Institute of Science
+      <main id="main">
+        {/* 1. Hero: Banner */}
+        <section id="profile" className="hero">
+          <div className="wrap grid">
+            <div className="hero__text">
+              <div className="hero__name">
+                <h1>Dr. Siladittya Manna</h1>
+                <p className="hero__byline label">Post-Doctoral Fellow (ANRF Fellow), Indian Institute of Science</p>
               </div>
-
-              <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
-                Dr. Siladittya Manna
-              </h1>
-
-              {/* Single sentence headline */}
-              <p className="mt-5 text-lg leading-relaxed text-slate-700 dark:text-slate-300 sm:text-xl max-w-3xl">
+              <p className="hero__lead">
                 I investigate vulnerabilities in PEFT-based federated learning frameworks and develop trustworthy distributed AI systems.
               </p>
-
-              {/* Restrained 5 action buttons */}
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Button asChild size="default" className="bg-blue-600 hover:bg-blue-700 text-white shadow-sm">
-                  <Link href="#publications">
-                    <BookOpen className="mr-2 h-4 w-4" />
-                    View Publications
-                  </Link>
-                </Button>
-                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
-                  <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Download CV
-                  </Link>
-                </Button>
-                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
-                  <Link href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-                    <GraduationCap className="mr-2 h-4 w-4" />
-                    Google Scholar
-                  </Link>
-                </Button>
-                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
-                  <Link href="https://github.com/sadimanna" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </Link>
-                </Button>
-                <Button asChild size="default" variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:hover:bg-slate-800">
-                  <Link href="#contact">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Contact
-                  </Link>
-                </Button>
+              <div className="hero__actions">
+                <a className="btn" href="#publications">View Publications</a>
+                <a className="btn-line" href="/CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
               </div>
-
-              {/* Profile stats */}
-              <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-                {profileStats.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 text-center shadow-xs dark:border-slate-800 dark:bg-slate-900/60"
-                  >
-                    <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">{stat.value}</div>
-                    <div className="mt-1 text-xs font-medium text-slate-500 dark:text-slate-400">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Venue counters (temporarily commented out per request)
-              <div className="mt-4 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-                {publicationMetrics.map((metric) => (
-                  <div
-                    key={metric.label}
-                    className={`flex flex-col items-center justify-center rounded-xl border px-3 py-3 shadow-sm transition-colors ${metric.theme === "indigo"
-                      ? "border-indigo-100 bg-indigo-50/50 hover:bg-indigo-50"
-                      : "border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50"
-                      }`}
-                  >
-                    <span className={`text-xl font-bold ${metric.theme === "indigo" ? "text-indigo-700" : "text-emerald-700"}`}>
-                      {metric.value}
-                    </span>
-                    <span
-                      className={`mt-0.5 text-center text-xs font-semibold ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"}`}
-                    >
-                      {metric.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              */}
-            </div>
-
-            {/* Profile Avatar */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="relative h-64 w-64 sm:h-72 sm:w-72 overflow-hidden rounded-2xl border-2 border-slate-200 shadow-md dark:border-slate-800">
-                  <Image
-                    src="/profilepic2.jpg"
-                    alt="Dr. Siladittya Manna"
-                    fill
-                    priority
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-3 -right-3 rounded-xl border border-slate-200 bg-white p-2.5 shadow-md dark:border-slate-800 dark:bg-slate-900">
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    IISc Bangalore
-                  </div>
-                </div>
+              <div className="links">
+                <a href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a href="https://github.com/sadimanna" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#contact">Contact</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. SHORT BIO & RESEARCH TRAJECTORY */}
-      <section id="about" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">About Me</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-          </div>
-
-          {/* Research Trajectory Banner: Connecting SSL/Medical AI -> FL -> Security */}
-          <div className="mb-10 rounded-2xl border border-blue-200 bg-blue-50/80 p-6 dark:border-blue-900/60 dark:bg-blue-950/40">
-            <div className="flex items-start gap-4">
-              <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white shadow-xs">
-                <Sparkles className="h-5 w-5" />
+            <figure className="hero__photo">
+              <div className="portrait">
+                <Image src="/profilepic2.jpg" alt="Dr. Siladittya Manna" width={2229} height={2228} priority sizes="(min-width: 60rem) 30vw, 22rem" />
               </div>
-              <div className="flex-1">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-bold text-blue-700 dark:text-blue-300">
-                    Research Trajectory
-                  </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">
-                    (How the pieces connect)
-                  </span>
-                </div>
-                <p className="mt-2 text-sm leading-relaxed text-slate-800 dark:text-slate-200 sm:text-base">
-                  <span className="font-semibold text-blue-700 dark:text-blue-400">Foundation (Ph.D. at ISI Kolkata):</span> Self-supervised representation learning and label-efficient medical image analysis ➔{" "}
-                  <span className="font-semibold text-indigo-700 dark:text-indigo-400">Distributed Expansion (HKBU & IISc):</span> Federated learning across decentralized medical data with non-IID heterogeneity ➔{" "}
-                  <span className="font-semibold text-purple-700 dark:text-purple-400">Current Frontier (Postdoc at IISc):</span> AI security, gradient inversion attacks, and privacy vulnerabilities in parameter-efficient fine-tuning (PEFT) adapters.
-                </p>
-              </div>
-            </div>
+              <figcaption>IISc Bangalore</figcaption>
+            </figure>
           </div>
+        </section>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-7 dark:border-slate-800 dark:bg-slate-800/40">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Who I Am</h3>
-              <p className="leading-relaxed text-slate-700 dark:text-slate-300 text-sm sm:text-base">
-                I am an ANRF Postdoctoral Fellow at the Indian Institute of Science (IISc), Bangalore, working in the Department of Computational and Data Sciences with Prof. Anirban Chakraborty. Prior to IISc, I was a Senior Research Assistant at Hong Kong Baptist University with Prof. Yiu-Ming Cheung, and completed my Ph.D. in Computer Science at the Indian Statistical Institute (ISI), Kolkata, under the supervision of Prof. Umapada Pal.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {primaryResearchKeywords.map((kw) => (
-                  <Badge key={kw} variant="secondary" className="bg-white text-slate-700 border border-slate-200 dark:bg-slate-850 dark:text-slate-300 dark:border-slate-700">
-                    {kw}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-7 dark:border-slate-800 dark:bg-slate-800/40">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Research Vision</h3>
-              <p className="leading-relaxed text-slate-700 dark:text-slate-300 text-sm sm:text-base">
-                My overarching goal is to build privacy-preserving, adversarial-resilient distributed AI systems. When healthcare providers or autonomous agents collaborate across institutions, sharing parameters must not compromise proprietary data. I investigate how parameter-efficient adapters (PEFT) and foundation models can be secured against inversion attacks, poisoning, and information leakage without sacrificing convergence speed.
-              </p>
-              <p className="mt-3 text-xs italic text-slate-500 dark:text-slate-400">
-                “Building trustworthy machine learning systems that learn collaboratively while preserving privacy, security, and sample efficiency.”
-              </p>
-            </div>
-          </div>
-
-          {/* Prospective Students Note */}
-          <div className="mt-8 rounded-xl border border-slate-200 bg-white p-5 shadow-xs dark:border-slate-800 dark:bg-slate-900/90">
-            <div className="flex items-start gap-3">
-              <Users className="mt-0.5 h-5 w-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
-              <div>
-                <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                  Prospective Students & Research Collaborations
-                </h4>
-                <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  I actively mentor undergraduate and graduate students in federated learning, gradient inversion attacks, and self-supervised medical computer vision. If you have strong programming skills in PyTorch, solid mathematical grounding, and a keen interest in trustworthy AI, feel free to reach out with your CV and research statement.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. NEWS (3-5 items) */}
-      <section id="news" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <div className="mb-10 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Latest News</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-          </div>
-
-          <div className="space-y-4">
-            {latestAnnouncements.map((news, idx) => (
-              <div
-                key={idx}
-                className="group relative rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs transition duration-200 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-700"
-              >
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
-                  <div className="flex items-center gap-2">
-                    <Badge variant="outline" className="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900 dark:bg-blue-950 dark:text-blue-300 text-xs">
-                      {news.category}
-                    </Badge>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 flex items-center">
-                      <Calendar className="mr-1 h-3 w-3" />
-                      {news.date}
-                    </span>
-                  </div>
-                  {news.link && news.link !== "#" && (
-                    <Link
-                      href={news.link}
-                      target={news.link.startsWith("http") ? "_blank" : undefined}
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-                    >
-                      Read more <ChevronRight className="ml-0.5 h-3 w-3" />
-                    </Link>
-                  )}
-                </div>
-                <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
-                  {news.title}
-                </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                  {news.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. SELECTED PUBLICATIONS (Scrollable list, peer-reviewed/accepted only) */}
-      <section id="publications" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Selected Publications</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Peer-reviewed journal articles, conference proceedings, survey papers, and doctoral research in Self-Supervised Learning and Medical AI.
-            </p>
-          </div>
-
-          {/* Filter Controls */}
-          <div className="mb-6 rounded-xl border border-slate-200/80 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-850/60">
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-              <div>
-                <div className="mb-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
-                  Filter by Type
-                </div>
-                <div className="flex flex-wrap gap-1.5">
-                  {publicationTypeFilters.map((filter) => (
-                    <Button
-                      key={filter}
-                      type="button"
-                      variant={selectedPublicationType === filter ? "default" : "outline"}
-                      size="sm"
-                      className={`h-7 text-xs ${selectedPublicationType === filter
-                        ? "bg-blue-600 hover:bg-blue-700 text-white"
-                        : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
-                        }`}
-                      onClick={() => setSelectedPublicationType(filter)}
-                    >
-                      {filter}
-                    </Button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <div className="mb-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
-                  Filter by Research Area
-                </div>
-                <div className="flex flex-wrap gap-1.5">
-                  {publicationTopicFilters.map((filter) => (
-                    <Button
-                      key={filter}
-                      type="button"
-                      variant={selectedPublicationTopic === filter ? "default" : "outline"}
-                      size="sm"
-                      className={`h-7 text-xs ${selectedPublicationTopic === filter
-                        ? "bg-blue-600 hover:bg-blue-700 text-white"
-                        : "bg-white hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700"
-                        }`}
-                      onClick={() => setSelectedPublicationTopic(filter)}
-                    >
-                      {filter}
-                    </Button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-            <span>Showing {publicationCards.length} publication{publicationCards.length === 1 ? "" : "s"}</span>
-            <span className="hidden sm:inline">Scroll within box to view all publications ↓</span>
-          </div>
-
-          {/* Scrollable Publications Container */}
-          <div className="max-h-[580px] overflow-y-auto pr-2 sm:pr-3 space-y-4 scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-750 scrollbar-track-transparent">
-            {publicationCards.map((pub) => (
-              <Card
-                key={pub.id}
-                className="border border-slate-200/80 bg-white transition duration-200 hover:shadow-xs dark:border-slate-800 dark:bg-slate-900/80"
-              >
-                <CardHeader className="pb-3">
-                  <div className="mb-2 flex flex-wrap items-center gap-2">
-                    <Badge variant="secondary" className="text-xs">
-                      {pub.category}
-                    </Badge>
-
-                    {pub.featured && (
-                      <Badge className="bg-blue-600 text-white text-xs">Featured</Badge>
-                    )}
-
-                    {pub.topics.map((topic) => (
-                      <Badge
-                        key={topic}
-                        variant="outline"
-                        className="bg-white/80 dark:bg-slate-800 text-xs border-slate-200 dark:border-slate-700"
-                      >
-                        {topic}
-                      </Badge>
-                    ))}
-                  </div>
-
-                  <CardTitle className="text-lg font-bold leading-snug text-slate-900 dark:text-white">
-                    {pub.title}
-                  </CardTitle>
-
-                  <CardDescription className="mt-1.5 text-xs text-slate-600 dark:text-slate-400">
-                    <span className="font-medium text-slate-800 dark:text-slate-200">{pub.authors}</span>
-                    <br />
-                    <span className="italic">{pub.journal}</span>, {pub.year}
-                  </CardDescription>
-                </CardHeader>
-
-                <CardContent className="pt-0">
-                  <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-2 mb-3">
-                    {pub.abstract}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {pub.link && pub.link !== "#" && (
-                      <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
-                        <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-1 h-3.5 w-3.5" />
-                          Paper
-                        </Link>
-                      </Button>
-                    )}
-                    {pub.code && (
-                      <Button asChild size="sm" variant="outline" className="h-7 text-xs bg-white dark:bg-slate-800">
-                        <Link href={pub.code} target="_blank" rel="noopener noreferrer">
-                          Code
-                        </Link>
-                      </Button>
-                    )}
-                    {pub.type !== "thesis" && (
-                      <Button asChild size="sm" variant="ghost" className="h-7 text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400">
-                        {/* Static template page in public/papers/, not a Next.js route */}
-                        <a href={`/papers/${pub.slug}/index.html`}>
-                          Project Page <ChevronRight className="ml-0.5 h-3 w-3" />
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-
-            {publicationCards.length === 0 && (
-              <div className="rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700">
-                No publications found for the selected type and research area filters.
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. ONGOING PROJECTS (Scrollable list of active projects) */}
-      <section id="ongoing-projects" className="border-t border-slate-200/80 bg-slate-50/60 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-              Ongoing Projects
-            </h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Active research investigations, manuscripts under review, and ongoing collaborative studies across Federated Learning security and medical AI.
-            </p>
-          </div>
-
-          <div className="mb-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-            <span>Showing {ongoingProjects.length} active investigations</span>
-            <span className="hidden sm:inline">Scroll within box to view all projects ↓</span>
-          </div>
-
-          {/* Scrollable Ongoing Projects Container */}
-          <div className="max-h-[580px] overflow-y-auto pr-2 sm:pr-3 space-y-4 scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-750 scrollbar-track-transparent">
-            {ongoingProjects.map((proj) => (
-              <div
-                key={proj.id}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
-              >
-                <div>
-                  <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                    <span className={`inline-flex items-center gap-1 rounded-md px-2.5 py-0.5 text-xs font-bold border ${proj.badgeStyle}`}>
-                      <Clock className="h-3 w-3" />
-                      {proj.status}
-                    </span>
-                    <span className="text-[0.7rem] text-slate-500 dark:text-slate-400 font-medium">
-                      {proj.affiliation}
-                    </span>
-                  </div>
-
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white leading-snug">
-                    {proj.title}
-                  </h3>
-
-                  <div className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-                    <span className="font-semibold text-slate-700 dark:text-slate-300">Collaborators: </span>
-                    {proj.collaborators}
-                  </div>
-
-                  <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {proj.description}
-                  </p>
-                </div>
-
-                <div className="mt-5 border-t border-slate-100 pt-3 dark:border-slate-800">
-                  <div className="flex flex-wrap gap-1.5">
-                    {proj.topics.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-xs font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. TEAM (Horizontal scrollable list for people at current affiliation IISc) */}
-      <section id="team" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-              Team
-            </h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Colleagues, researchers, and students I am currently collaborating with at the Indian Institute of Science (IISc), Bangalore.
-            </p>
-          </div>
-
-          {/* Horizontal scrollable team container */}
-          <div className="relative">
-            <div className="flex gap-4 overflow-x-auto pb-4 pt-1 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-750 scrollbar-track-transparent">
-              {teamMembers.map((member) => (
-                <div
-                  key={member.id}
-                  className="w-72 shrink-0 snap-start flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-slate-50/50 p-5 shadow-xs transition duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-white hover:shadow-sm dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-700 dark:hover:bg-slate-900"
-                >
-                  <div className="flex flex-col items-center text-center">
-                    {/* Profile Picture Placeholder */}
-                    <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800 flex items-center justify-center text-slate-400 dark:text-slate-500 shadow-inner mb-4">
-                      {member.image ? (
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          fill
-                          className="object-cover"
-                        />
-                      ) : (
-                        <User className="h-9 w-9 text-slate-400 dark:text-slate-500" />
-                      )}
-                    </div>
-
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white leading-tight">
-                      {member.name}
-                    </h3>
-
-                    <p className="mt-1 text-xs font-semibold text-blue-600 dark:text-blue-400">
-                      {member.role}
-                    </p>
-
-                    <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                      {member.affiliation}
-                    </p>
-
-                    <div className="mt-3 rounded-lg border border-slate-200/60 bg-white px-2.5 py-1.5 text-[0.7rem] text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 w-full line-clamp-2">
-                      <span className="font-semibold text-slate-700 dark:text-slate-200">Focus: </span>
-                      {member.focus}
-                    </div>
-                  </div>
-
-                  <div className="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-800 flex justify-center">
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="sm"
-                      className="h-7 text-xs bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700"
-                    >
-                      <Link
-                        href={member.profileUrl}
-                        target={member.profileUrl.startsWith("http") ? "_blank" : undefined}
-                        rel="noopener noreferrer"
-                      >
-                        Profile Link <ExternalLink className="ml-1 h-3 w-3" />
-                      </Link>
-                    </Button>
-                  </div>
+        {/* Figures reversed out on the ink band */}
+        <section className="band" aria-label="Publication and citation figures">
+          <div className="wrap">
+            <div className="figures">
+              {statsBig.map((stat) => (
+                <div key={stat.label}>
+                  <b>{stat.value}</b>
+                  <span>{stat.label}</span>
                 </div>
               ))}
             </div>
-
-            <div className="mt-3 flex items-center justify-center gap-1 text-xs text-slate-400">
-              <span>← Scroll horizontally to explore team members →</span>
+            <div className="figures figures--small">
+              {statsSmall.map((stat) => (
+                <div key={stat.label}>
+                  <b>{stat.value}</b>
+                  <span>{stat.label}</span>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* 7. RESEARCH AREAS (Consolidated pillars, folded methodologies, unified tags) */}
-      <section id="research" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Research Areas</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Integrated research domains bridging distributed optimization, threat analysis, representation learning, and medical AI.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {researchPillars.map((area) => (
-              <div
-                key={area.title}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition duration-200 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-850"
-              >
-                <div>
-                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
-                    <area.icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">{area.title}</h3>
-                  <p className="mt-2.5 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-                    {area.description}
-                  </p>
-                </div>
-
-                <div className="mt-5 border-t border-slate-100 pt-3 dark:border-slate-800">
-                  <div className="flex flex-wrap gap-1.5">
-                    {area.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-xs font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Research Questions & Long-Term Goals */}
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-6 shadow-xs dark:border-slate-800 dark:bg-slate-850/60">
-              <div className="mb-4 flex items-center gap-2.5">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
-                  <Lightbulb className="h-5 w-5" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white">Current Research Questions</h3>
-              </div>
-              <ul className="space-y-3">
-                {coreResearchQuestions.map((q, idx) => (
-                  <li key={idx} className="flex gap-2.5 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                    <span className="font-bold text-blue-600 dark:text-blue-400 mt-0.5">{idx + 1}.</span>
-                    <span>{q}</span>
-                  </li>
+        {/* 2. About: the Long Document, set in two columns */}
+        <section id="about" className="section">
+          <div className="wrap grid">
+            <div className="head">
+              <h2>About Me</h2>
+              <blockquote className="pull">
+                “Building trustworthy machine learning systems that learn collaboratively while preserving privacy, security, and sample efficiency.”
+              </blockquote>
+              <ul className="topics" aria-label="Research keywords">
+                {primaryResearchKeywords.map((kw) => (
+                  <li key={kw}>{kw}</li>
                 ))}
               </ul>
             </div>
-
-            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-6 shadow-xs dark:border-slate-800 dark:bg-slate-850/60">
-              <div className="mb-4 flex items-center gap-2.5">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400">
-                  <Target className="h-5 w-5" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white">Long-Term Research Goals</h3>
+            <div className="body about">
+              <div className="prose">
+                <h3 className="runin">Who I Am</h3>
+                <span>
+                  I am an ANRF Postdoctoral Fellow at the Indian Institute of Science (IISc), Bangalore, working in the Department of Computational and Data Sciences with Prof. Anirban Chakraborty. Prior to IISc, I was a Senior Research Assistant at Hong Kong Baptist University with Prof. Yiu-Ming Cheung, and completed my Ph.D. in Computer Science at the Indian Statistical Institute (ISI), Kolkata, under the supervision of Prof. Umapada Pal.
+                </span>
               </div>
-              <ul className="space-y-3">
-                {longTermGoals.map((goal, idx) => (
-                  <li key={idx} className="flex gap-2.5 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
-                    <div>
-                      <span className="font-semibold text-slate-900 dark:text-white">{goal.title}: </span>
-                      {goal.text}
+              <div className="prose">
+                <h3 className="runin">Research Vision</h3>
+                <span>
+                  My overarching goal is to build privacy-preserving, adversarial-resilient distributed AI systems. When healthcare providers or autonomous agents collaborate across institutions, sharing parameters must not compromise proprietary data. I investigate how parameter-efficient adapters (PEFT) and foundation models can be secured against inversion attacks, poisoning, and information leakage without sacrificing convergence speed.
+                </span>
+              </div>
+              <div className="prose about__trajectory">
+                <h3 className="runin">
+                  Research Trajectory <span className="muted">(How the pieces connect)</span>
+                </h3>
+                <ol className="trajectory">
+                  <li><strong>Foundation (Ph.D. at ISI Kolkata)</strong><span>Self-supervised representation learning and label-efficient medical image analysis.</span></li>
+                  <li><strong>Distributed Expansion (HKBU &amp; IISc)</strong><span>Federated learning across decentralized medical data with non-IID heterogeneity.</span></li>
+                  <li><strong>Current Frontier (Postdoc at IISc)</strong><span>AI security, gradient inversion attacks, and privacy vulnerabilities in parameter-efficient fine-tuning (PEFT) adapters.</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. News */}
+        <section id="news" className="section section--gap">
+          <div className="wrap grid">
+            <div className="head">
+              <h2>Latest News</h2>
+            </div>
+            <div className="body">
+              <ul className="rows rows--news">
+                {latestAnnouncements.map((news, idx) => (
+                  <li key={idx}>
+                    <div className="rows__meta">
+                      <time>{news.date}</time>
+                      <span>{news.category}</span>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 8. AWARDS & FUNDING (ANRF Fellowship has its own dedicated section) */}
-      <section id="awards" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Awards & Funding</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-          </div>
-
-          <div className="rounded-2xl border-2 border-blue-500/30 bg-blue-50/60 p-8 shadow-sm dark:border-blue-900/60 dark:bg-slate-900">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
-              <div className="flex items-start gap-4">
-                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-md">
-                  <Award className="h-7 w-7" />
-                </div>
-                <div>
-                  <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-800 dark:bg-blue-950 dark:text-blue-300 mb-2">
-                    Premier National Fellowship, 2026 to 2028
-                  </div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-                    ANRF National Post-Doctoral Fellowship (N-PDF)
-                  </h3>
-                  <p className="mt-1 text-sm font-medium text-slate-600 dark:text-slate-300">
-                    Anusandhan National Research Foundation (ANRF), Department of Science & Technology, Government of India
-                  </p>
-                </div>
-              </div>
-
-              <Badge variant="outline" className="self-start border-blue-300 bg-white px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-800 dark:bg-slate-800 dark:text-blue-300">
-                Active Award
-              </Badge>
-            </div>
-
-            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3 border-t border-slate-200/80 pt-6 dark:border-slate-800">
-              <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
-                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Host Institute</div>
-                <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Indian Institute of Science (IISc), Bangalore</div>
-              </div>
-              <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
-                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Faculty Mentor</div>
-                <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Prof. Anirban Chakraborty (Dept. of CDS)</div>
-              </div>
-              <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
-                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Research Focus</div>
-                <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Security & Privacy in PEFT-based Federated Learning</div>
-              </div>
-            </div>
-
-            <p className="mt-4 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-              The ANRF National Post-Doctoral Fellowship is one of the highest individual postdoctoral honors in India, awarded through rigorous national peer-review to support independent, early-career researchers conducting high-impact scientific inquiry.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. EXPERIENCE & EDUCATION (Visual Timeline with Logos) */}
-      <section id="journey" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <div className="mb-12 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Journey & Experience</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-          </div>
-
-          <div className="relative border-l-2 border-blue-200 dark:border-blue-900 ml-4 sm:ml-6 pl-6 sm:pl-8 space-y-8">
-            {timelineData.map((item, idx) => {
-              const isCurrent = item.period.includes("Present")
-              return (
-                <div key={idx} className="relative group">
-                  {/* Timeline Node */}
-                  <div className={`absolute -left-[31px] sm:-left-[39px] top-1.5 flex h-7 w-7 items-center justify-center rounded-full border-2 bg-white shadow-xs dark:bg-slate-900 ${isCurrent
-                    ? "border-blue-600 ring-4 ring-blue-100 dark:ring-blue-950"
-                    : "border-slate-300 dark:border-slate-700"
-                    }`}>
-                    {item.type === "work" ? (
-                      <Briefcase className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
-                    ) : (
-                      <GraduationCap className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-                    )}
-                  </div>
-
-                  {/* Card */}
-                  <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-xs transition duration-200 hover:shadow-sm dark:border-slate-800 dark:bg-slate-850">
-                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-                      <div className="flex items-start gap-3.5">
-                        {item.logo && (
-                          <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-white p-1 shadow-xs dark:border-slate-800 dark:bg-slate-800">
-                            <Image
-                              src={item.logo}
-                              alt={item.organization}
-                              fill
-                              className="object-contain p-1"
-                            />
-                          </div>
-                        )}
-                        <div>
-                          <h3 className="text-base font-bold text-slate-900 dark:text-white leading-tight">
-                            {item.title}
-                          </h3>
-                          <div className="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-300">
-                            {item.organization}, {item.location}
-                          </div>
-                          {item.supervisor && (
-                            <div className="mt-1 text-xs italic text-slate-500 dark:text-slate-400">
-                              Advisor: {item.supervisor}
-                            </div>
-                          )}
+                    <div className="rows__main">
+                      <h3>{news.title}</h3>
+                      <p>{news.description}</p>
+                      {news.link && news.link !== "#" && (
+                        <div className="links">
+                          <a
+                            href={news.link}
+                            target={news.link.startsWith("http") ? "_blank" : undefined}
+                            rel="noopener noreferrer"
+                          >
+                            Read more
+                          </a>
                         </div>
-                      </div>
-
-                      <Badge
-                        variant="secondary"
-                        className={`self-start text-[0.7rem] ${isCurrent
-                          ? "bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 font-bold"
-                          : ""
-                          }`}
-                      >
-                        {item.period}
-                      </Badge>
+                      )}
                     </div>
-
-                    <p className="mt-3 text-xs leading-relaxed text-slate-600 dark:text-slate-300 border-t border-slate-100 pt-2.5 dark:border-slate-800">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              )
-            })}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* 10. CITATIONS & GLOBAL COLLABORATIONS */}
-      <section id="impact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Impact & Global Network</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Automated citation metrics synced with Google Scholar, coupled with an active collaborative network across France, Germany, Sweden, Hong Kong, and India.
+        {/* 4. Publications index */}
+        <section id="publications" className="section">
+          <div className="wrap">
+            <div className="head-split">
+              <h2>Selected Publications</h2>
+              <p>
+                Peer-reviewed journal articles, conference proceedings, survey papers, and doctoral research in Self-Supervised Learning and Medical AI.
+              </p>
+            </div>
+
+            <div className="filters">
+              <fieldset>
+                <legend>Filter by Type</legend>
+                <div className="seg">
+                  {publicationTypeFilters.map((filter) => (
+                    <button
+                      key={filter}
+                      type="button"
+                      aria-pressed={selectedPublicationType === filter}
+                      onClick={() => setSelectedPublicationType(filter)}
+                    >
+                      {filter}
+                    </button>
+                  ))}
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Filter by Research Area</legend>
+                <div className="seg">
+                  {publicationTopicFilters.map((filter) => (
+                    <button
+                      key={filter}
+                      type="button"
+                      aria-pressed={selectedPublicationTopic === filter}
+                      onClick={() => setSelectedPublicationTopic(filter)}
+                    >
+                      {filter}
+                    </button>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+
+            <p className="count" role="status">
+              Showing {publicationCards.length} publication{publicationCards.length === 1 ? "" : "s"}
             </p>
-          </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <CitationsChart />
-            <CollaborationMap />
-          </div>
-        </div>
-      </section>
-
-      {/* 11. ACADEMIC SERVICE & LEADERSHIP */}
-      <div id="academic-service">
-        <AcademicServiceSection />
-      </div>
-
-      {/* 12. CURATED RESEARCH TOPICS */}
-      <section id="reading-lists" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-              Curated Research Reading Lists
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-              Carefully curated, active reading lists and literature repositories tracking the latest advances across key subfields. These static bibliographies serve as comprehensive entry points for researchers and students.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {staticTopicBibliographies.map((topic) => (
-              <Link
-                key={topic.name}
-                href={topic.url}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200/80 bg-slate-50/50 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-white hover:shadow-xs dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-600 dark:hover:bg-slate-800"
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-semibold text-xs text-blue-600 dark:text-blue-400 group-hover:underline">
-                      {topic.name}
-                    </span>
-                    <ArrowRight className="h-3.5 w-3.5 text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-blue-600" />
+            <ol className="pubs" id="publication-list">
+              {publicationCards.map((pub, idx) => (
+                <li key={pub.id} hidden={collapsed && idx >= PUBLICATIONS_SHOWN}>
+                  <div className="pubs__year">{pub.year}</div>
+                  <div className="pubs__main">
+                    <h3>{pub.title}</h3>
+                    <p className="pubs__authors">{pub.authors}</p>
+                    <p className="pubs__abstract">{pub.abstract}</p>
+                    <ul className="topics" aria-label="Topics">
+                      {pub.topics.map((topic) => (
+                        <li key={topic}>{topic}</li>
+                      ))}
+                    </ul>
                   </div>
-                  <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-                    {topic.description}
-                  </p>
-                </div>
-                <div className="mt-3 text-xs font-medium text-slate-400">
-                  Explore Reading List →
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 13. AI PROJECTS & TECHNICAL BLOG */}
-      <section id="projects-blog" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            {/* AI Projects */}
-            <div>
-              <div className="mb-6 flex items-center justify-between">
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">AI Projects</h3>
-                </div>
-                <Button asChild variant="outline" size="sm" className="text-xs">
-                  <Link href="https://github.com/sadimanna?tab=repositories" target="_blank" rel="noopener noreferrer">
-                    All Projects <ChevronRight className="ml-1 h-3.5 w-3.5" />
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="space-y-4">
-                {aiApplications.map((app) => (
-                  <div
-                    key={app.id}
-                    className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-xs dark:border-slate-800 dark:bg-slate-900"
-                  >
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-bold text-sm text-slate-900 dark:text-white">{app.title}</h4>
-                      <Badge variant="outline" className="text-xs border-emerald-300 bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-                        {app.status}
-                      </Badge>
-                    </div>
-                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                      {app.description}
+                  <div className="pubs__side">
+                    {pub.journal && <p className="pubs__venue">{pub.journal}</p>}
+                    <p className="pubs__kind label">
+                      {pub.category}
+                      {pub.featured && <>, <span className="pubs__featured">Featured</span></>}
                     </p>
-                    <div className="mt-3 flex items-center justify-between">
-                      <div className="flex flex-wrap gap-1">
-                        {app.tags.map((t) => (
-                          <span key={t} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
-                            {t}
-                          </span>
-                        ))}
-                      </div>
-                      {app.link && app.link !== "#" && (
-                        <Link
-                          href={app.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center"
-                        >
-                          View <ExternalLink className="ml-1 h-3 w-3" />
-                        </Link>
+                    <div className="links">
+                      {pub.link && pub.link !== "#" && (
+                        <a href={pub.link} target="_blank" rel="noopener noreferrer">Paper</a>
+                      )}
+                      {pub.code && (
+                        <a href={pub.code} target="_blank" rel="noopener noreferrer">Code</a>
+                      )}
+                      {pub.type !== "thesis" && (
+                        /* Static template page in public/papers/, not a Next.js route */
+                        <a href={`/papers/${pub.slug}/index.html`}>Project Page</a>
                       )}
                     </div>
                   </div>
-                ))}
+                </li>
+              ))}
+            </ol>
+
+            {publicationCards.length === 0 && (
+              <p className="empty">No publications found for the selected type and research area filters.</p>
+            )}
+
+            {!filtersActive && publicationCards.length > PUBLICATIONS_SHOWN && (
+              <div className="pubs__more">
+                <button
+                  type="button"
+                  className="btn-line"
+                  aria-expanded={showAllPublications}
+                  aria-controls="publication-list"
+                  onClick={() => setShowAllPublications((v) => !v)}
+                >
+                  {showAllPublications ? "Show fewer" : `Show all ${publicationCards.length} publications`}
+                </button>
               </div>
+            )}
+          </div>
+        </section>
+
+        {/* 5. Research areas, questions and goals */}
+        <section id="research" className="section">
+          <div className="wrap">
+            <div className="head-split">
+              <h2>Research Areas</h2>
+              <p>
+                Integrated research domains bridging distributed optimization, threat analysis, representation learning, and medical AI.
+              </p>
             </div>
 
-            {/* Technical Blog */}
-            <div>
-              <div className="mb-6 flex items-center justify-between">
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Blog: The Owl</h3>
-                </div>
-                <Button asChild variant="outline" size="sm" className="text-xs">
-                  <Link href="/blog">
-                    Read Blog <ChevronRight className="ml-1 h-3.5 w-3.5" />
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="space-y-4">
-                {mediumArticles.map((art) => (
-                  <div
-                    key={art.id}
-                    className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-xs dark:border-slate-800 dark:bg-slate-900"
-                  >
-                    <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
-                      <span>{art.publishDate}</span>
-                      <span>{art.readTime}</span>
-                    </div>
-                    <h4 className="font-bold text-sm text-slate-900 dark:text-white leading-snug">
-                      {art.title}
-                    </h4>
-                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-300 line-clamp-2">
-                      {art.excerpt}
-                    </p>
-                    <div className="mt-2.5">
-                      <Link
-                        href={art.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 inline-flex items-center"
-                      >
-                        Read on Medium <ExternalLink className="ml-1 h-3 w-3" />
-                      </Link>
-                    </div>
+            <ul className="rows rows--news rows--pairs">
+              {researchPillars.map((area) => (
+                <li key={area.title}>
+                  <div className="rows__title">
+                    <h3>{area.title}</h3>
                   </div>
+                  <div className="rows__main">
+                    <p>{area.description}</p>
+                    <ul className="topics" aria-label={`${area.title} topics`}>
+                      {area.tags.map((tag) => (
+                        <li key={tag}>{tag}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <div className="pair">
+              <div>
+                <h3>Current Research Questions</h3>
+                <ol className="questions">
+                  {coreResearchQuestions.map((q, idx) => (
+                    <li key={idx}>{q}</li>
+                  ))}
+                </ol>
+              </div>
+              <div>
+                <h3>Long-Term Research Goals</h3>
+                <dl className="goals">
+                  {longTermGoals.map((goal) => (
+                    <div key={goal.title}>
+                      <dt>{goal.title}</dt>
+                      <dd>{goal.text}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Ongoing projects and the team */}
+        <section id="ongoing-projects" className="section section--gap-l">
+          <div className="wrap">
+            <div className="head-split">
+              <h2>Ongoing Projects</h2>
+              <p>
+                Active research investigations, manuscripts under review, and ongoing collaborative studies across Federated Learning security and medical AI.
+              </p>
+            </div>
+            <ul className="rows rows--news rows--pairs">
+              {ongoingProjects.map((proj) => (
+                <li key={proj.id}>
+                  <div className="rows__title">
+                    <h3>{proj.title}</h3>
+                  </div>
+                  <div className="rows__main">
+                    <p className="label">
+                      {proj.status}, {proj.affiliation}
+                    </p>
+                    <p>{proj.description}</p>
+                    <p className="muted">
+                      <span className="label">Collaborators: </span>
+                      {proj.collaborators}
+                    </p>
+                    <ul className="topics" aria-label={`${proj.title} topics`}>
+                      {proj.topics.map((t) => (
+                        <li key={t}>{t}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <div id="team" className="sub">
+              <div className="head-split">
+                <h2>Team</h2>
+                <p>
+                  Colleagues, researchers, and students I am currently collaborating with at the Indian Institute of Science (IISc), Bangalore.
+                </p>
+              </div>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Affiliation</th>
+                    <th scope="col">Focus</th>
+                    <th scope="col">Profile</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {teamMembers.map((member) => (
+                    <tr key={member.id}>
+                      <td>{member.name}</td>
+                      <td data-th="Role">{member.role}</td>
+                      <td data-th="Affiliation">{member.affiliation}</td>
+                      <td data-th="Focus">{member.focus}</td>
+                      <td>
+                        <a
+                          href={member.profileUrl}
+                          target={member.profileUrl.startsWith("http") ? "_blank" : undefined}
+                          rel="noopener noreferrer"
+                        >
+                          Profile Link
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. Awards and the journey */}
+        <section id="awards" className="section section--gap">
+          <div className="wrap">
+            <h2 className="sub-head">Awards &amp; Funding</h2>
+            <div className="award" style={{ marginTop: "var(--space-xl)" }}>
+              <div className="award__head">
+                <h3>ANRF National Post-Doctoral Fellowship (N-PDF)</h3>
+                <p>Anusandhan National Research Foundation (ANRF), Department of Science &amp; Technology, Government of India</p>
+              </div>
+              <dl className="award__facts">
+                <div>
+                  <dt>Premier National Fellowship</dt>
+                  <dd>2026 to 2028, Active Award</dd>
+                </div>
+                <div>
+                  <dt>Host Institute</dt>
+                  <dd>Indian Institute of Science (IISc), Bangalore</dd>
+                </div>
+                <div>
+                  <dt>Faculty Mentor</dt>
+                  <dd>Prof. Anirban Chakraborty (Dept. of CDS)</dd>
+                </div>
+                <div>
+                  <dt>Research Focus</dt>
+                  <dd>Security &amp; Privacy in PEFT-based Federated Learning</dd>
+                </div>
+              </dl>
+              <p className="award__note">
+                The ANRF National Post-Doctoral Fellowship is one of the highest individual postdoctoral honors in India, awarded through rigorous national peer-review to support independent, early-career researchers conducting high-impact scientific inquiry.
+              </p>
+            </div>
+
+            <div id="journey" className="sub">
+              <h2>Journey &amp; Experience</h2>
+              <ul className="rows journey">
+                {timelineData.map((item, idx) => (
+                  <li key={idx}>
+                    <div className="rows__meta">
+                      <time>{item.period}</time>
+                      <span>{item.type === "work" ? "Work" : "Education"}</span>
+                    </div>
+                    <div className="rows__main">
+                      <h3>{item.title}</h3>
+                      <p className="label">
+                        {item.organization}, {item.location}
+                      </p>
+                      {item.supervisor && <p className="muted">Advisor: {item.supervisor}</p>}
+                      <p>{item.description}</p>
+                    </div>
+                    {item.logo && (
+                      <div className="rows__logo">
+                        <img className="logo" src={item.logo} alt={item.organization} width={48} height={48} loading="lazy" />
+                      </div>
+                    )}
+                  </li>
                 ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 8. Impact: citations and collaborators */}
+        <section id="impact" className="section section--gap">
+          <div className="wrap">
+            <div className="head-split">
+              <h2>Impact &amp; Global Network</h2>
+              <p>
+                Automated citation metrics synced with Google Scholar, coupled with an active collaborative network across France, Germany, Sweden, Hong Kong, and India.
+              </p>
+            </div>
+            <div className="impact">
+              <div className="impact__chart">
+                <CitationsChart />
+              </div>
+              <div className="impact__partners">
+                <CollaborationMap />
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* 14. CONTACT SECTION */}
-      <section id="contact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <div className="mb-10 text-center">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Contact</h2>
-            <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
-            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
-              I am open to academic discussions, guest talks, and joint research collaborations.
-            </p>
-          </div>
+        {/* 9. Academic service */}
+        <AcademicServiceSection />
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 dark:border-slate-800 dark:bg-slate-850">
-              <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3">
-                <MapPin className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                Affiliation & Office
-              </h3>
-              <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                <strong className="text-slate-900 dark:text-white">Visual Computing Lab</strong><br />
-                Department of Computational and Data Sciences (CDS)<br />
-                Indian Institute of Science (IISc)<br />
-                CV Raman Rd, Bengaluru, Karnataka 560012, India
+        {/* 10. Reading lists, AI projects and the blog */}
+        <section id="projects-blog" className="section section--gap">
+          <div className="wrap">
+            <div id="reading-lists" className="reading">
+              <h2>Curated Research Reading Lists</h2>
+              <p className="muted">
+                Carefully curated, active reading lists and literature repositories tracking the latest advances across key subfields. These static bibliographies serve as comprehensive entry points for researchers and students.
               </p>
+              <ul className="index index--two">
+                {staticTopicBibliographies.map((topic) => (
+                  <li key={topic.name}>
+                    <Link className="title" href={topic.url}>{topic.name}</Link>
+                    <p>{topic.description}</p>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <div className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 dark:border-slate-800 dark:bg-slate-850">
-              <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3">
-                <Mail className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                Email Correspondence
-              </h3>
-              <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                Primary:{" "}
-                <Link href="mailto:siladittyam@iisc.ac.in" className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
-                  siladittyam@iisc.ac.in
-                </Link>
-                <br />
-                Alternate:{" "}
-                <Link href="mailto:siladittya.manna@gmail.com" className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
-                  siladittya.manna@gmail.com
-                </Link>
-              </p>
-              <div className="mt-4">
-                <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white text-xs">
-                  <Link href="mailto:siladittyam@iisc.ac.in">
-                    <Mail className="mr-1.5 h-3.5 w-3.5" /> Send an Email
-                  </Link>
-                </Button>
+            <div className="duo">
+            <div>
+              <h2>AI Projects</h2>
+              <ul className="index">
+                {aiApplications.map((app) => (
+                  <li key={app.id}>
+                    {app.link && app.link !== "#" ? (
+                      <a className="title" href={app.link} target="_blank" rel="noopener noreferrer">{app.title}</a>
+                    ) : (
+                      <h3 className="title">{app.title}</h3>
+                    )}
+                    <p className="label">{app.status}</p>
+                    <p>{app.description}</p>
+                    <ul className="topics" aria-label={`${app.title} tags`}>
+                      {app.tags.map((t) => (
+                        <li key={t}>{t}</li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+              <div className="links more">
+                <a href="https://github.com/sadimanna?tab=repositories" target="_blank" rel="noopener noreferrer">All Projects</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* 15. FOOTER (with Dark Mode toggle and Last Updated date) */}
-      <footer className="border-t border-slate-200 bg-slate-900 text-white py-10 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div>
-            © 2026 Dr. Siladittya Manna, Visual Computing Lab, IISc Bangalore
-          </div>
-
-          <div className="flex items-center gap-4">
-            <span className="font-medium text-slate-300">Last updated: October 2026</span>
-            <div className="border-l border-slate-700 pl-4">
-              <ThemeToggle />
+            <div>
+              <h2>Blog: The Owl</h2>
+              <ul className="index">
+                {mediumArticles.map((art) => (
+                  <li key={art.id}>
+                    <a className="title" href={art.url} target="_blank" rel="noopener noreferrer">{art.title}</a>
+                    <p className="label">
+                      <time dateTime={art.publishDate}>{art.publishDate}</time>, {art.readTime}
+                    </p>
+                    <p>{art.excerpt}</p>
+                  </li>
+                ))}
+              </ul>
+              <div className="links more">
+                <Link href="/blog">Read Blog</Link>
+              </div>
             </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Contact and the mast footer */}
+      <footer className="foot">
+        <div className="wrap">
+          <section id="contact" className="grid">
+            <div className="contact__lead">
+              <h2>Contact</h2>
+              <p>I am open to academic discussions, guest talks, and joint research collaborations.</p>
+            </div>
+            <div className="contact__cols">
+              <div>
+                <h3>Affiliation &amp; Office</h3>
+                <address>
+                  <strong>Visual Computing Lab</strong><br />
+                  Department of Computational and Data Sciences (CDS)<br />
+                  Indian Institute of Science (IISc)<br />
+                  CV Raman Rd, Bengaluru, Karnataka 560012, India
+                </address>
+              </div>
+              <div>
+                <h3>Email Correspondence</h3>
+                <p>
+                  Primary: <a href="mailto:siladittyam@iisc.ac.in">siladittyam@iisc.ac.in</a>
+                  <br />
+                  Alternate: <a href="mailto:siladittya.manna@gmail.com">siladittya.manna@gmail.com</a>
+                </p>
+                <a className="btn-line" href="mailto:siladittyam@iisc.ac.in">Send an Email</a>
+              </div>
+            </div>
+          </section>
+          <p className="foot__mark" aria-hidden="true">Siladittya Manna</p>
+          <div className="foot__line">
+            <span>© 2026 Dr. Siladittya Manna, Visual Computing Lab, IISc Bangalore</span>
+            <span>Last updated: October 2026</span>
+            <ThemeToggle />
           </div>
         </div>
       </footer>

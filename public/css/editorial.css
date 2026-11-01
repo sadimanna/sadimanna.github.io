@@ -1,0 +1,60 @@
+/* Hallmark · system: Editorial tokens (deal 3/3), shared by the homepage, the blog and the paper project pages · modes: light+dark · v2.0.0 */
+/* Linked as /css/editorial.css by app/layout.tsx and by every public/papers page. */
+
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-body: 1.125rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-poster: clamp(3rem, 8vw + 0.25rem, 8.5rem);
+  --text-section: clamp(2.25rem, 2.5vw + 1.25rem, 3.75rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 88px; --section-gap: 104px; --section-gap-l: 120px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300;
+
+  --color-paper: oklch(97% 0.007 86); --color-paper-2: oklch(94% 0.010 86); --color-paper-3: oklch(91% 0.012 84);
+  --color-ink: oklch(16% 0.012 280); --color-ink-2: oklch(29% 0.011 280); --color-muted: oklch(48% 0.010 75);
+  --color-rule: oklch(85% 0.009 85); --color-rule-2: oklch(64% 0.010 80);
+  --color-accent: oklch(49% 0.130 152); --color-accent-ink: oklch(98% 0.005 88); --color-focus: oklch(52% 0.135 152);
+  --color-band: oklch(16% 0.012 280); --color-band-ink: oklch(97% 0.007 86); --color-band-muted: oklch(78% 0.008 86); --color-band-rule: oklch(34% 0.012 280);
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif; --font-body: "Source Serif 4", ui-serif, Georgia, serif; --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --color-plate: oklch(98% 0.005 88);
+  --radius-card: 0; --rule-hair: 1px; --rule-heavy: 4px;
+  --tracking-display: -0.012em; --display-weight: 800;
+}
+
+/* Code blocks and syntax colours (blog) */
+:root {
+  --color-code-bg: oklch(22% 0.012 280); --color-code-fg: oklch(92% 0.008 280); --color-code-ink: oklch(45% 0.140 152);
+  --color-hl-comment: oklch(62% 0.015 260); --color-hl-keyword: oklch(72% 0.120 320); --color-hl-string: oklch(76% 0.110 140);
+  --color-hl-number: oklch(74% 0.110 60); --color-hl-title: oklch(74% 0.110 240); --color-hl-type: oklch(82% 0.110 85);
+}
+
+/* Dark: re-derived, never inverted. Next.js pages get data-theme from next-themes; static pages from paper.js or the system. */
+:root[data-theme="dark"] {
+  --color-paper: oklch(17% 0.010 86); --color-paper-2: oklch(20% 0.011 86); --color-paper-3: oklch(23% 0.012 84);
+  --color-ink: oklch(95% 0.008 280); --color-ink-2: oklch(86% 0.009 280); --color-muted: oklch(70% 0.010 75);
+  --color-rule: oklch(31% 0.010 85); --color-rule-2: oklch(46% 0.010 80);
+  --color-accent: oklch(70% 0.110 152); --color-accent-ink: oklch(17% 0.010 86); --color-focus: oklch(72% 0.115 152);
+  --color-band: oklch(92% 0.008 86); --color-band-ink: oklch(17% 0.010 280); --color-band-muted: oklch(38% 0.010 280); --color-band-rule: oklch(78% 0.009 85);
+  --color-code-ink: oklch(74% 0.110 152);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+  --color-paper: oklch(17% 0.010 86); --color-paper-2: oklch(20% 0.011 86); --color-paper-3: oklch(23% 0.012 84);
+  --color-ink: oklch(95% 0.008 280); --color-ink-2: oklch(86% 0.009 280); --color-muted: oklch(70% 0.010 75);
+  --color-rule: oklch(31% 0.010 85); --color-rule-2: oklch(46% 0.010 80);
+  --color-accent: oklch(70% 0.110 152); --color-accent-ink: oklch(17% 0.010 86); --color-focus: oklch(72% 0.115 152);
+  --color-band: oklch(92% 0.008 86); --color-band-ink: oklch(17% 0.010 280); --color-band-muted: oklch(38% 0.010 280); --color-band-rule: oklch(78% 0.009 85);
+    --color-code-ink: oklch(74% 0.110 152);
+  }
+}
+
+/* Responsive steps: gutters, gaps and section spacing shrink with the screen */
+@media (max-width: 60rem) {
+  :root { --gutter: 24px; --section-gap-s: 64px; --section-gap: 80px; --section-gap-l: 96px; }
+}
+@media (max-width: 40rem) {
+  :root { --gutter: 16px; --section-gap-s: 48px; --section-gap: 56px; --section-gap-l: 72px; --gap-columns: 16px; --text-body: 1.0625rem; }
+}

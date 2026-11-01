@@ -63,6 +63,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
           >
             <a
               href={`#${heading.id}`}
+              title={heading.text}
               className={`blog-toc-link ${activeId === heading.id ? 'blog-toc-link-active' : ''}`}
               onClick={(e) => {
                 e.preventDefault()

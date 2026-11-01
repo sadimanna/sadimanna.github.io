@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import 'katex/dist/katex.min.css'
 import 'highlight.js/styles/github-dark-dimmed.css'
+import '../blog.css'
 
 export const metadata: Metadata = {
   title: 'Blog — Dr. Siladittya Manna',

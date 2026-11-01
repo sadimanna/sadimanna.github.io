@@ -84,13 +84,12 @@ export function BlogPostClient({
   return (
     <>
       {/* Reading progress bar */}
-      <div className="blog-progress-bar" style={{ width: `${progress}%` }} />
+      <div className="blog-progress-bar" style={{ transform: `scaleX(${progress / 100})` }} aria-hidden="true" />
 
       <div className="blog-post-page">
         {/* Navigation */}
         <nav className="blog-nav">
           <Link href="/blog/" className="blog-nav-back">
-            <ChevronLeft className="w-4 h-4" />
             <span>All Posts</span>
           </Link>
           <button onClick={handleShare} className="blog-nav-share" aria-label="Share post">

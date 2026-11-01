@@ -11,14 +11,13 @@ import {
   CartesianGrid,
 } from "recharts"
 import citationData from "@/lib/data/citations.json"
-import { ExternalLink, TrendingUp, Award, BookCheck } from "lucide-react"
-import Link from "next/link"
 
 interface YearlyData {
   year: string
   citations: number
 }
 
+// Colours come from the homepage tokens in app/home.css (.chart rules), not from props.
 export function CitationsChart() {
   const [isMounted, setIsMounted] = useState(false)
 
@@ -33,93 +32,43 @@ export function CitationsChart() {
   const lastUpdated = citationData.lastUpdated || "October 2026"
 
   return (
-    <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900/80">
-      <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center pb-6 border-b border-slate-100 dark:border-slate-800">
+    <div className="chart">
+      <div className="chart__head">
+        <h3>Citations per Year</h3>
+        <p className="label">Auto-synced from Google Scholar</p>
+      </div>
+
+      <dl className="chart__figures">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-semibold text-blue-700 dark:bg-blue-950/60 dark:text-blue-300">
-              <TrendingUp className="h-3.5 w-3.5" />
-              Impact Trajectory
-            </span>
-            <span className="text-xs text-slate-500 dark:text-slate-400">
-              Auto-synced from Google Scholar
-            </span>
-          </div>
-          <h3 className="mt-2 text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
-            Citations per Year
-          </h3>
+          <dt>Total Citations</dt>
+          <dd>{totalCitations}</dd>
         </div>
-
-        <Link
-          href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-        >
-          View Google Scholar Profile
-          <ExternalLink className="h-3.5 w-3.5" />
-        </Link>
-      </div>
-
-      {/* Metrics Row */}
-      <div className="grid grid-cols-3 gap-3 my-6">
-        <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-3 text-center dark:border-slate-800 dark:bg-slate-800/40">
-          <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
-            {totalCitations}
-          </div>
-          <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
-            Total Citations
-          </div>
+        <div>
+          <dt>h-index</dt>
+          <dd>{hIndex}</dd>
         </div>
-
-        <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-3 text-center dark:border-slate-800 dark:bg-slate-800/40">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 sm:text-3xl">
-            {hIndex}
-          </div>
-          <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
-            h-index
-          </div>
+        <div>
+          <dt>i10-index</dt>
+          <dd>{i10Index}</dd>
         </div>
+      </dl>
 
-        <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-3 text-center dark:border-slate-800 dark:bg-slate-800/40">
-          <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
-            {i10Index}
-          </div>
-          <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
-            i10-index
-          </div>
-        </div>
-      </div>
-
-      {/* Bar Chart */}
-      <div className="h-64 w-full">
+      <figure className="chart__plot" aria-label={`Citations per year, ${yearly.map((y) => `${y.year}: ${y.citations}`).join(", ")}`}>
         {isMounted ? (
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={yearly} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-              <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" opacity={0.6} />
-              <XAxis
-                dataKey="year"
-                tickLine={false}
-                axisLine={false}
-                tick={{ fontSize: 12, fill: "#64748b" }}
-              />
-              <YAxis
-                tickLine={false}
-                axisLine={false}
-                tick={{ fontSize: 12, fill: "#64748b" }}
-                allowDecimals={false}
-              />
+            <BarChart data={yearly} margin={{ top: 8, right: 0, left: -20, bottom: 0 }}>
+              <CartesianGrid vertical={false} />
+              <XAxis dataKey="year" tickLine={false} axisLine={false} tick={{ fontSize: 13 }} />
+              <YAxis tickLine={false} axisLine={false} tick={{ fontSize: 13 }} allowDecimals={false} />
               <Tooltip
-                cursor={{ fill: "rgba(59, 130, 246, 0.08)" }}
+                cursor={{ className: "chart__cursor" }}
                 content={({ active, payload }) => {
                   if (active && payload && payload.length) {
                     return (
-                      <div className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs shadow-md dark:border-slate-700 dark:bg-slate-800">
-                        <p className="font-semibold text-slate-800 dark:text-slate-200">
-                          Year: {payload[0].payload.year}
-                        </p>
-                        <p className="font-bold text-blue-600 dark:text-blue-400">
-                          {payload[0].value} citations
+                      <div className="chart__tip">
+                        <p>Year: {payload[0].payload.year}</p>
+                        <p>
+                          <b>{payload[0].value}</b> citations
                         </p>
                       </div>
                     )
@@ -127,24 +76,22 @@ export function CitationsChart() {
                   return null
                 }}
               />
-              <Bar
-                dataKey="citations"
-                fill="#2563eb"
-                radius={[6, 6, 0, 0]}
-                maxBarSize={48}
-              />
+              <Bar dataKey="citations" maxBarSize={48} isAnimationActive={false} />
             </BarChart>
           </ResponsiveContainer>
         ) : (
-          <div className="flex h-full items-center justify-center text-xs text-slate-400">
-            Loading chart…
-          </div>
+          <p className="chart__loading label">Loading chart…</p>
         )}
-      </div>
+      </figure>
 
-      <div className="mt-4 flex items-center justify-between text-[0.75rem] text-slate-500 dark:text-slate-400">
+      <div className="chart__foot label">
         <span>Updated automatically via GitHub Actions</span>
         <span>As of {lastUpdated}</span>
+      </div>
+      <div className="links">
+        <a href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+          View Google Scholar Profile
+        </a>
       </div>
     </div>
   )

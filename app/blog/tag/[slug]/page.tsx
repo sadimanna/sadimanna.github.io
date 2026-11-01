@@ -37,7 +37,6 @@ export default async function TagPage({ params }: PageProps) {
     <div className="blog-page">
       <nav className="blog-nav">
         <Link href="/blog/" className="blog-nav-back">
-          <ArrowLeft className="w-4 h-4" />
           <span>All Posts</span>
         </Link>
       </nav>
@@ -52,7 +51,9 @@ export default async function TagPage({ params }: PageProps) {
         </p>
       </header>
 
-      <div className="blog-grid" style={{ maxWidth: '56rem', margin: '0 auto', padding: '0 1.5rem 4rem' }}>
+      <div className="blog-archive-list">
+        <h2 className="blog-visually-hidden">Articles</h2>
+        <div className="blog-grid">
         {posts.map((post) => (
           <BlogPostCard
             key={post.slug}
@@ -65,6 +66,7 @@ export default async function TagPage({ params }: PageProps) {
             tags={post.tags}
           />
         ))}
+        </div>
       </div>
     </div>
   )

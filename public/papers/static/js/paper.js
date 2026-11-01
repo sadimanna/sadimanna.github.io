@@ -1,7 +1,8 @@
 // Shared behaviour for paper project pages: theme toggle and BibTeX copy.
+// The theme is stored under the same key next-themes uses on the rest of the site.
 (function(){
-  var root = document.documentElement, key = 'pp-theme';
-  try { var t = localStorage.getItem(key); if (t) root.setAttribute('data-theme', t); } catch(e){}
+  var root = document.documentElement, key = 'theme';
+  try { var t = localStorage.getItem(key); if (t === 'light' || t === 'dark') root.setAttribute('data-theme', t); } catch(e){}
   var toggle = document.getElementById('themeToggle');
   if (toggle) toggle.addEventListener('click', function(){
     var cur = root.getAttribute('data-theme') ||

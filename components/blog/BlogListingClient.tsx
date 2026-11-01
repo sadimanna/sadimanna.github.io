@@ -56,25 +56,18 @@ export function BlogListingClient({ posts, categories, tags }: BlogListingClient
       {/* Navigation */}
       <nav className="blog-nav">
         <Link href="/" className="blog-nav-back">
-          <ArrowLeft className="w-4 h-4" />
           <span>Portfolio</span>
         </Link>
         <a href="/rss.xml" className="blog-nav-rss" aria-label="RSS Feed" target="_blank" rel="noopener noreferrer">
-          <Rss className="w-4 h-4" />
           <span>RSS</span>
         </a>
       </nav>
 
       {/* Hero */}
       <header className="blog-hero">
-        <div className="blog-hero-glow" />
         <div className="blog-hero-content">
           <div className="blog-hero-icon">
-            <img
-              src="/theowl.png"
-              alt="Blog"
-              className="w-12 h-12 object-contain"
-            />
+            <img src="/theowl.png" alt="The Owl blog mark" width={72} height={72} />
           </div>
           <h1 className="blog-hero-title">The Owl</h1>
           <p className="blog-hero-subtitle">
@@ -101,7 +94,8 @@ export function BlogListingClient({ posts, categories, tags }: BlogListingClient
       {/* Main content area */}
       <div className="blog-main">
         {/* Post Grid */}
-        <section className="blog-grid-section">
+        <section className="blog-grid-section" aria-labelledby="blog-articles">
+          <h2 id="blog-articles" className="blog-visually-hidden">Articles</h2>
           {filteredPosts.length > 0 ? (
             <div className="blog-grid">
               {filteredPosts.map((post) => (
