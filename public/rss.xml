@@ -4,11 +4,35 @@
         <title>Dr. Siladittya Manna — Technical Blog</title>
         <link>https://sadimanna.github.io/blog/</link>
         <description>Technical blog on federated learning, self-supervised learning, medical AI, and trustworthy machine learning.</description>
-        <lastBuildDate>Tue, 07 Apr 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2026 Dr. Siladittya Manna</copyright>
+        <item>
+            <title><![CDATA[No-Reference Image Quality Assessment: What These Methods Can (and Cannot) Tell Us]]></title>
+            <link>https://sadimanna.github.io/blog/2026-10-29-no-reference-image-quality-assessment-what-these-methods-can/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-10-29-no-reference-image-quality-assessment-what-these-methods-can/</guid>
+            <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+            <category>Deep Learning</category>
+        </item>
+        <item>
+            <title><![CDATA[Reducing Tokenization Premiums for Low-Resource Languages: A Technical Deep Dive]]></title>
+            <link>https://sadimanna.github.io/blog/2026-10-29-reducing-tokenization-premiums-for-low-resource-languages-a/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-10-29-reducing-tokenization-premiums-for-low-resource-languages-a/</guid>
+            <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+            <category>Large Language Models</category>
+        </item>
+        <item>
+            <title><![CDATA[Building a Terminal-First Task Manager: Introducing todo-cli]]></title>
+            <link>https://sadimanna.github.io/blog/2026-10-25-building-a-terminal-first-task-manager-introducing-todo-cli/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-10-25-building-a-terminal-first-task-manager-introducing-todo-cli/</guid>
+            <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+            <category>Developer Tools</category>
+        </item>
         <item>
             <title><![CDATA[Prove that 2^n + 1 is divisible by 3 for all odd integers n >= 1]]></title>
             <link>https://sadimanna.github.io/blog/2026-04-07-prove-that-2-n-1-is-divisible-by-3-for-all-odd-integers-n-1/</link>
