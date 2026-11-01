@@ -11,6 +11,11 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			// In-between slate steps used by page.tsx (dark:bg-slate-850 etc.); Tailwind has no default for them
+  			slate: {
+  				'750': '#283548',
+  				'850': '#172033'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

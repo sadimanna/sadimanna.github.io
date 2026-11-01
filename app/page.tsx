@@ -286,7 +286,7 @@ const latestAnnouncements = [
   {
     date: "July 2026",
     category: "Fellowship Award",
-    title: "ANRF National Post-Doctoral Fellowship (2026–2028)",
+    title: "ANRF National Post-Doctoral Fellowship (2026 to 2028)",
     description:
       "Awarded the prestigious ANRF National Post-Doctoral Fellowship by the Anusandhan National Research Foundation (DST, Govt. of India). Hosted at the Department of CDS, IISc Bangalore, under the mentorship of Prof. Anirban Chakraborty.",
     link: "#awards",
@@ -778,13 +778,12 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-slate-50/50 text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100 font-sans">
       {/* Sticky Academic Header */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/90">
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white dark:border-slate-800/80 dark:bg-slate-950">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <Link
             href="#profile"
             className="flex items-center gap-2 font-semibold text-slate-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
           >
-            <span className="h-2 w-2 rounded-full bg-blue-600" />
             <span>Dr. Siladittya Manna</span>
             <span className="hidden text-xs text-slate-400 sm:inline">| IISc Bangalore</span>
           </Link>
@@ -810,13 +809,13 @@ export default function Portfolio() {
             </Link>
             <Link
               href="#ongoing-projects"
-              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
             >
               Projects
             </Link>
             <Link
               href="#team"
-              className="rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+              className="hidden rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 sm:inline-block"
             >
               Team
             </Link>
@@ -869,8 +868,7 @@ export default function Portfolio() {
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_320px]">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/60 dark:text-blue-300 mb-5">
-                <span className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
-                Post-Doctoral Fellow (ANRF Fellow) • Indian Institute of Science
+                Post-Doctoral Fellow (ANRF Fellow), Indian Institute of Science
               </div>
 
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
@@ -924,7 +922,7 @@ export default function Portfolio() {
                     className="rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 text-center shadow-xs dark:border-slate-800 dark:bg-slate-900/60"
                   >
                     <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">{stat.value}</div>
-                    <div className="mt-1 text-[0.7rem] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                    <div className="mt-1 text-xs font-medium text-slate-500 dark:text-slate-400">
                       {stat.label}
                     </div>
                   </div>
@@ -945,7 +943,7 @@ export default function Portfolio() {
                       {metric.value}
                     </span>
                     <span
-                      className={`mt-0.5 text-center text-[0.65rem] font-semibold uppercase tracking-wider ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"}`}
+                      className={`mt-0.5 text-center text-xs font-semibold ${metric.theme === "indigo" ? "text-indigo-600" : "text-emerald-600"}`}
                     >
                       {metric.label}
                     </span>
@@ -969,7 +967,6 @@ export default function Portfolio() {
                 </div>
                 <div className="absolute -bottom-3 -right-3 rounded-xl border border-slate-200 bg-white p-2.5 shadow-md dark:border-slate-800 dark:bg-slate-900">
                   <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                     IISc Bangalore
                   </div>
                 </div>
@@ -983,20 +980,19 @@ export default function Portfolio() {
       <section id="about" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Academic Background</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">About Me</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
           </div>
 
           {/* Research Trajectory Banner: Connecting SSL/Medical AI -> FL -> Security */}
-          <div className="mb-10 rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-50/90 via-indigo-50/60 to-blue-50/90 p-6 dark:border-blue-900/60 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-blue-950/40">
+          <div className="mb-10 rounded-2xl border border-blue-200 bg-blue-50/80 p-6 dark:border-blue-900/60 dark:bg-blue-950/40">
             <div className="flex items-start gap-4">
               <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white shadow-xs">
                 <Sparkles className="h-5 w-5" />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                  <span className="text-xs font-bold text-blue-700 dark:text-blue-300">
                     Research Trajectory
                   </span>
                   <span className="text-xs text-slate-500 dark:text-slate-400">
@@ -1059,7 +1055,6 @@ export default function Portfolio() {
       <section id="news" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Recent Updates</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Latest News</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
           </div>
@@ -1068,7 +1063,7 @@ export default function Portfolio() {
             {latestAnnouncements.map((news, idx) => (
               <div
                 key={idx}
-                className="group relative rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs transition-all duration-200 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-700"
+                className="group relative rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs transition duration-200 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:hover:border-blue-700"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
                   <div className="flex items-center gap-2">
@@ -1107,7 +1102,6 @@ export default function Portfolio() {
       <section id="publications" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Scholarly Output</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Selected Publications</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
@@ -1119,7 +1113,7 @@ export default function Portfolio() {
           <div className="mb-6 rounded-xl border border-slate-200/80 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-850/60">
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
               <div>
-                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                <div className="mb-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
                   Filter by Type
                 </div>
                 <div className="flex flex-wrap gap-1.5">
@@ -1142,7 +1136,7 @@ export default function Portfolio() {
               </div>
 
               <div>
-                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                <div className="mb-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
                   Filter by Research Area
                 </div>
                 <div className="flex flex-wrap gap-1.5">
@@ -1176,7 +1170,7 @@ export default function Portfolio() {
             {publicationCards.map((pub) => (
               <Card
                 key={pub.id}
-                className="border border-slate-200/80 bg-white transition-all duration-200 hover:shadow-xs dark:border-slate-800 dark:bg-slate-900/80"
+                className="border border-slate-200/80 bg-white transition duration-200 hover:shadow-xs dark:border-slate-800 dark:bg-slate-900/80"
               >
                 <CardHeader className="pb-3">
                   <div className="mb-2 flex flex-wrap items-center gap-2">
@@ -1206,7 +1200,7 @@ export default function Portfolio() {
                   <CardDescription className="mt-1.5 text-xs text-slate-600 dark:text-slate-400">
                     <span className="font-medium text-slate-800 dark:text-slate-200">{pub.authors}</span>
                     <br />
-                    <span className="italic">{pub.journal}</span> • {pub.year}
+                    <span className="italic">{pub.journal}</span>, {pub.year}
                   </CardDescription>
                 </CardHeader>
 
@@ -1257,10 +1251,6 @@ export default function Portfolio() {
       <section id="ongoing-projects" className="border-t border-slate-200/80 bg-slate-50/60 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
-              <FlaskConical className="h-3.5 w-3.5" />
-              Active Research & Pre-Prints
-            </div>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
               Ongoing Projects
             </h2>
@@ -1280,7 +1270,7 @@ export default function Portfolio() {
             {ongoingProjects.map((proj) => (
               <div
                 key={proj.id}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-900"
               >
                 <div>
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -1312,7 +1302,7 @@ export default function Portfolio() {
                     {proj.topics.map((t) => (
                       <span
                         key={t}
-                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[0.65rem] font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-xs font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
                       >
                         {t}
                       </span>
@@ -1329,10 +1319,6 @@ export default function Portfolio() {
       <section id="team" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
-              <Users className="h-3.5 w-3.5" />
-              IISc Research Group & Collaborators
-            </div>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
               Team
             </h2>
@@ -1348,7 +1334,7 @@ export default function Portfolio() {
               {teamMembers.map((member) => (
                 <div
                   key={member.id}
-                  className="w-72 shrink-0 snap-start flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-slate-50/50 p-5 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-white hover:shadow-sm dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-700 dark:hover:bg-slate-900"
+                  className="w-72 shrink-0 snap-start flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-slate-50/50 p-5 shadow-xs transition duration-200 hover:-translate-y-1 hover:border-blue-300 hover:bg-white hover:shadow-sm dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-700 dark:hover:bg-slate-900"
                 >
                   <div className="flex flex-col items-center text-center">
                     {/* Profile Picture Placeholder */}
@@ -1414,7 +1400,6 @@ export default function Portfolio() {
       <section id="research" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Core Pillars</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Research Areas</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
@@ -1426,7 +1411,7 @@ export default function Portfolio() {
             {researchPillars.map((area) => (
               <div
                 key={area.title}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-850"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition duration-200 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-850"
               >
                 <div>
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
@@ -1443,7 +1428,7 @@ export default function Portfolio() {
                     {area.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[0.65rem] font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                        className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-xs font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
                       >
                         {tag}
                       </span>
@@ -1500,12 +1485,11 @@ export default function Portfolio() {
       <section id="awards" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Honors & Grants</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Awards & Funding</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
           </div>
 
-          <div className="rounded-2xl border-2 border-blue-500/30 bg-gradient-to-br from-blue-50/80 via-white to-indigo-50/60 p-8 shadow-sm dark:border-blue-900/60 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950/40">
+          <div className="rounded-2xl border-2 border-blue-500/30 bg-blue-50/60 p-8 shadow-sm dark:border-blue-900/60 dark:bg-slate-900">
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-md">
@@ -1513,7 +1497,7 @@ export default function Portfolio() {
                 </div>
                 <div>
                   <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-800 dark:bg-blue-950 dark:text-blue-300 mb-2">
-                    Premier National Fellowship • 2026 – 2028
+                    Premier National Fellowship, 2026 to 2028
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                     ANRF National Post-Doctoral Fellowship (N-PDF)
@@ -1531,15 +1515,15 @@ export default function Portfolio() {
 
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3 border-t border-slate-200/80 pt-6 dark:border-slate-800">
               <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
-                <div className="text-[0.7rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Host Institute</div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Host Institute</div>
                 <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Indian Institute of Science (IISc), Bangalore</div>
               </div>
               <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
-                <div className="text-[0.7rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Faculty Mentor</div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Faculty Mentor</div>
                 <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Prof. Anirban Chakraborty (Dept. of CDS)</div>
               </div>
               <div className="rounded-xl border border-slate-200/80 bg-white/80 p-3.5 dark:border-slate-800 dark:bg-slate-800/50">
-                <div className="text-[0.7rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Research Focus</div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Research Focus</div>
                 <div className="mt-1 text-sm font-bold text-slate-900 dark:text-white">Security & Privacy in PEFT-based Federated Learning</div>
               </div>
             </div>
@@ -1555,7 +1539,6 @@ export default function Portfolio() {
       <section id="journey" className="border-t border-slate-200/80 bg-slate-50/50 px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Academic Milestones</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Journey & Experience</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
           </div>
@@ -1578,7 +1561,7 @@ export default function Portfolio() {
                   </div>
 
                   {/* Card */}
-                  <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-xs transition-all duration-200 hover:shadow-sm dark:border-slate-800 dark:bg-slate-850">
+                  <div className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-xs transition duration-200 hover:shadow-sm dark:border-slate-800 dark:bg-slate-850">
                     <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                       <div className="flex items-start gap-3.5">
                         {item.logo && (
@@ -1596,7 +1579,7 @@ export default function Portfolio() {
                             {item.title}
                           </h3>
                           <div className="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-300">
-                            {item.organization} • {item.location}
+                            {item.organization}, {item.location}
                           </div>
                           {item.supervisor && (
                             <div className="mt-1 text-xs italic text-slate-500 dark:text-slate-400">
@@ -1632,7 +1615,6 @@ export default function Portfolio() {
       <section id="impact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Scholarly Reach</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Impact & Global Network</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
@@ -1656,10 +1638,6 @@ export default function Portfolio() {
       <section id="reading-lists" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-950 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300 mb-3">
-              <Library className="h-3.5 w-3.5" />
-              Open Research Bibliographies
-            </div>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
               Curated Research Reading Lists
             </h2>
@@ -1673,7 +1651,7 @@ export default function Portfolio() {
               <Link
                 key={topic.name}
                 href={topic.url}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200/80 bg-slate-50/50 p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-white hover:shadow-xs dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-600 dark:hover:bg-slate-800"
+                className="group flex flex-col justify-between rounded-xl border border-slate-200/80 bg-slate-50/50 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-white hover:shadow-xs dark:border-slate-800 dark:bg-slate-850 dark:hover:border-blue-600 dark:hover:bg-slate-800"
               >
                 <div>
                   <div className="flex items-center justify-between">
@@ -1686,7 +1664,7 @@ export default function Portfolio() {
                     {topic.description}
                   </p>
                 </div>
-                <div className="mt-3 text-[0.65rem] font-medium text-slate-400">
+                <div className="mt-3 text-xs font-medium text-slate-400">
                   Explore Reading List →
                 </div>
               </Link>
@@ -1703,7 +1681,6 @@ export default function Portfolio() {
             <div>
               <div className="mb-6 flex items-center justify-between">
                 <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">Software & Prototypes</span>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">AI Projects</h3>
                 </div>
                 <Button asChild variant="outline" size="sm" className="text-xs">
@@ -1721,7 +1698,7 @@ export default function Portfolio() {
                   >
                     <div className="flex items-center justify-between">
                       <h4 className="font-bold text-sm text-slate-900 dark:text-white">{app.title}</h4>
-                      <Badge variant="outline" className="text-[0.65rem] border-emerald-300 bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                      <Badge variant="outline" className="text-xs border-emerald-300 bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
                         {app.status}
                       </Badge>
                     </div>
@@ -1731,7 +1708,7 @@ export default function Portfolio() {
                     <div className="mt-3 flex items-center justify-between">
                       <div className="flex flex-wrap gap-1">
                         {app.tags.map((t) => (
-                          <span key={t} className="rounded bg-slate-100 px-1.5 py-0.5 text-[0.65rem] text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+                          <span key={t} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
                             {t}
                           </span>
                         ))}
@@ -1756,7 +1733,6 @@ export default function Portfolio() {
             <div>
               <div className="mb-6 flex items-center justify-between">
                 <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">Technical Writing</span>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Blog: The Owl</h3>
                 </div>
                 <Button asChild variant="outline" size="sm" className="text-xs">
@@ -1804,7 +1780,6 @@ export default function Portfolio() {
       <section id="contact" className="border-t border-slate-200/80 bg-white px-4 py-16 dark:border-slate-800 dark:bg-slate-900 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="mb-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-400">Get in Touch</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Contact</h2>
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-blue-600" />
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
@@ -1858,7 +1833,7 @@ export default function Portfolio() {
       <footer className="border-t border-slate-200 bg-slate-900 text-white py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
-            © 2026 Dr. Siladittya Manna • Visual Computing Lab, IISc Bangalore
+            © 2026 Dr. Siladittya Manna, Visual Computing Lab, IISc Bangalore
           </div>
 
           <div className="flex items-center gap-4">

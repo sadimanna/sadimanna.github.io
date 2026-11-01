@@ -68,7 +68,7 @@ export function TableOfContents({ sections }: TableOfContentsProps) {
 
   return (
     <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 hidden xl:block">
-      <div className={`bg-transparent backdrop-blur-sm rounded-lg shadow-lg border border-gray-200/50 transition-all duration-300 ${
+      <div className={`bg-transparent backdrop-blur-sm rounded-lg shadow-lg border border-gray-200/50 transition duration-300 ${
         isCollapsed ? "p-2 w-12" : "p-3 w-48"
       }`}>
         {/* Toggle Button */}
@@ -94,7 +94,7 @@ export function TableOfContents({ sections }: TableOfContentsProps) {
                 variant="ghost"
                 size="sm"
                 onClick={() => scrollToSection(section.id)}
-                className={`w-full justify-start text-left h-auto py-1 px-2 text-xs transition-all duration-300 bg-transparent hover:bg-gray-50/30 ${
+                className={`w-full justify-start text-left h-auto py-1 px-2 text-xs transition duration-300 bg-transparent hover:bg-gray-50/30 ${
                   activeSection === section.id
                     ? "text-blue-700 font-medium transform scale-110 translate-x-3 text-sm py-2 px-3"
                     : "text-gray-500 hover:text-gray-700"
@@ -102,7 +102,7 @@ export function TableOfContents({ sections }: TableOfContentsProps) {
               >
                 <div className="flex items-center gap-2 w-full">
                   <ChevronRight 
-                    className={`transition-all duration-300 ${
+                    className={`transition duration-300 ${
                       activeSection === section.id 
                         ? "w-4 h-4 text-blue-600" 
                         : "w-3 h-3 text-gray-400"

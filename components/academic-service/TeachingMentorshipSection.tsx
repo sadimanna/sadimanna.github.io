@@ -14,14 +14,13 @@ export function TeachingMentorshipSection() {
         {/* Teaching Assistant Column */}
         <div className="bg-gray-50 border rounded-2xl p-6 shadow-sm flex flex-col h-full">
           <h4 className="text-lg font-semibold text-purple-700 mb-5 flex items-center gap-2">
-            <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
             Teaching Assistant
           </h4>
           <div className="space-y-6 flex-1 max-h-[300px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
             <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h5 className="font-bold text-gray-900 mb-1">Introduction to Data Science (M. Tech. (CDS) 1st Year)</h5>
               <div className="text-sm font-medium text-gray-600 mb-1">Indian Institute of Science, Bangalore</div>
-              <div className="text-xs text-gray-500 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2026-27</div>
+              <div className="text-xs text-gray-600 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2026-27</div>
               <ul className="text-sm text-gray-700 space-y-1.5 pl-4 list-disc marker:text-purple-400">
                 <li>Probability</li>
                 <li>Statistics</li>
@@ -32,7 +31,7 @@ export function TeachingMentorshipSection() {
             <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h5 className="font-bold text-gray-900 mb-1">Artificial Intelligence and Machine Learning (M.Tech (CS))</h5>
               <div className="text-sm font-medium text-gray-600 mb-1">Indian Statistical Institute, Kolkata</div>
-              <div className="text-xs text-gray-500 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2018-19</div>
+              <div className="text-xs text-gray-600 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2018-19</div>
               <ul className="text-sm text-gray-700 space-y-1.5 pl-4 list-disc marker:text-purple-400">
                 <li>Object Detection</li>
                 <li>Segmentation</li>
@@ -44,7 +43,7 @@ export function TeachingMentorshipSection() {
             <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <h5 className="font-bold text-gray-900 mb-1">Introduction to Machine Learning (M.Tech (ETCE))</h5>
               <div className="text-sm font-medium text-gray-600 mb-1">Indian Institute of Engineering Science and Technology, Shibpur</div>
-              <div className="text-xs text-gray-500 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2018-19</div>
+              <div className="text-xs text-gray-600 mb-3 bg-gray-100 inline-block px-2 py-0.5 rounded">2018-19</div>
               <ul className="text-sm text-gray-700 space-y-1.5 pl-4 list-disc marker:text-purple-400">
                 <li>Machine Learning Algorithms</li>
                 <li>Tutorial Sessions for First Semester Students</li>
@@ -56,7 +55,6 @@ export function TeachingMentorshipSection() {
         {/* Mentorship Column */}
         <div className="bg-gray-50 border rounded-2xl p-6 shadow-sm flex flex-col h-full">
           <h4 className="text-lg font-semibold text-purple-700 mb-5 flex items-center gap-2">
-            <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
             Mentorship
           </h4>
           <div className="space-y-4 flex-1 max-h-[300px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">

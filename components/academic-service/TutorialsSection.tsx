@@ -15,14 +15,14 @@ export function TutorialsSection() {
 
       <div className="flex flex-col gap-5 max-h-[300px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
         {tutorials.map((tutorial) => (
-          <Card key={tutorial.id} className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <Card key={tutorial.id} className="border border-gray-200 bg-white text-gray-900 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex flex-col md:flex-row md:items-start p-6 gap-6">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
                     {tutorial.date}
                   </Badge>
-                  <span className="text-sm font-medium text-gray-500">{tutorial.venue}</span>
+                  <span className="text-sm font-medium text-gray-600">{tutorial.venue}</span>
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">{tutorial.title}</h4>
                 <p className="text-sm text-gray-700 leading-relaxed">{tutorial.description}</p>

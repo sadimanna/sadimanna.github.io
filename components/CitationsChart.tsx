@@ -54,7 +54,7 @@ export function CitationsChart() {
           href="https://scholar.google.com/citations?user=6V9sqi0AAAAJ&hl=en"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+          className="inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
         >
           View Google Scholar Profile
           <ExternalLink className="h-3.5 w-3.5" />
@@ -67,7 +67,7 @@ export function CitationsChart() {
           <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
             {totalCitations}
           </div>
-          <div className="text-[0.7rem] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
             Total Citations
           </div>
         </div>
@@ -76,7 +76,7 @@ export function CitationsChart() {
           <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 sm:text-3xl">
             {hIndex}
           </div>
-          <div className="text-[0.7rem] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
             h-index
           </div>
         </div>
@@ -85,7 +85,7 @@ export function CitationsChart() {
           <div className="text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">
             {i10Index}
           </div>
-          <div className="text-[0.7rem] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
             i10-index
           </div>
         </div>
@@ -137,12 +137,12 @@ export function CitationsChart() {
           </ResponsiveContainer>
         ) : (
           <div className="flex h-full items-center justify-center text-xs text-slate-400">
-            Loading chart...
+            Loading chart…
           </div>
         )}
       </div>
 
-      <div className="mt-4 flex items-center justify-between text-[0.75rem] text-slate-400 dark:text-slate-500">
+      <div className="mt-4 flex items-center justify-between text-[0.75rem] text-slate-500 dark:text-slate-400">
         <span>Updated automatically via GitHub Actions</span>
         <span>As of {lastUpdated}</span>
       </div>

@@ -82,9 +82,7 @@ export function BlogListingClient({ posts, categories, tags }: BlogListingClient
           </p>
           <div className="blog-hero-stats">
             <span>{posts.length} articles</span>
-            <span className="blog-hero-dot">·</span>
             <span>{categories.length} categories</span>
-            <span className="blog-hero-dot">·</span>
             <span>{tags.length} tags</span>
           </div>
         </div>
