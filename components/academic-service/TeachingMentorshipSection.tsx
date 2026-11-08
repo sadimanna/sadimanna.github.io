@@ -28,10 +28,9 @@ export function TeachingMentorshipSection() {
       <h3>2. Teaching &amp; Mentorship</h3>
       <div className="service__cols">
         <div>
-          <h4 className="label">Teaching Assistant</h4>
-          <ul className="index">
+          <Rail label="Teaching assistant" heading={<h4 className="label">Teaching Assistant</h4>} visible={1} interval={6000} className="rail--plain">
             {teaching.map((t) => (
-              <li key={t.course}>
+              <li key={t.course} className="card">
                 <p className="partners__inst">{t.course}</p>
                 <p className="label">
                   {t.institution}, <time>{t.year}</time>
@@ -43,7 +42,7 @@ export function TeachingMentorshipSection() {
                 </ul>
               </li>
             ))}
-          </ul>
+          </Rail>
         </div>
         <div>
           <Rail label="Mentorship" heading={<h4 className="label">Mentorship</h4>} visible={2} interval={6500} className="rail--plain">

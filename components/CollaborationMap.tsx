@@ -1,5 +1,7 @@
 "use client"
 
+import { Rail } from "@/components/Rail"
+
 
 interface Partner {
   id: string
@@ -161,28 +163,26 @@ export function CollaborationMap() {
         </svg>
         <figcaption>Collaborators by location, linked to the current host at IISc Bangalore.</figcaption>
       </figure>
-      <div className="partners__groups">
-      {groups.map((region) => (
-        <div key={region} className="partners__group">
-          <h4 className="label">{region}</h4>
-          <ul className="index">
+      <div className="partners__groups partners__groups--rails">
+        {groups.map((region) => (
+          <Rail
+            key={region}
+            label={`${region} collaborators`}
+            heading={<h4 className="label">{region}</h4>}
+            visible={2}
+            interval={5000}
+            className="rail--plain"
+          >
             {partners
               .filter((p) => p.region === region)
               .map((p) => (
-                <li key={p.id}>
-                  <p className="partners__inst">
-                    {p.institution}
-                    <span className="label">, {p.location}</span>
-                  </p>
-                  <p>
-                    {p.collaborator}: {p.focus}
-                  </p>
-                  <p className="label">{p.role}</p>
+                <li key={p.id} className="card" title={`${p.focus}. ${p.role}`}>
+                  <p className="partners__inst">{p.institution}</p>
+                  <p className="label">{p.collaborator}</p>
                 </li>
               ))}
-          </ul>
-        </div>
-      ))}
+          </Rail>
+        ))}
       </div>
     </div>
   )

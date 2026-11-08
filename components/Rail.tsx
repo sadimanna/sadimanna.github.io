@@ -10,6 +10,8 @@ type RailProps = {
   heading?: ReactNode
   /** Number of cards visible at full width (steps down on small screens in CSS) */
   visible?: number
+  /** Rows of cards; with 2 rows the cards fill column by column */
+  rows?: number
   /** Auto-advance interval in ms */
   interval?: number
   className?: string
@@ -21,7 +23,7 @@ type RailProps = {
  * Auto-advance pauses on hover, keyboard focus, touch, when off-screen, when the
  * user presses pause, and never starts under prefers-reduced-motion.
  */
-export function Rail({ label, heading, visible = 3, interval = 6000, className = "", children }: RailProps) {
+export function Rail({ label, heading, visible = 3, rows = 1, interval = 6000, className = "", children }: RailProps) {
   const track = useRef<HTMLUListElement>(null)
   const [paused, setPaused] = useState(false)
   const [hold, setHold] = useState(false)
@@ -87,7 +89,7 @@ export function Rail({ label, heading, visible = 3, interval = 6000, className =
       onBlur={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setHold(false)
       }}
-      style={{ "--rail-n": visible } as CSSProperties}
+      style={{ "--rail-n": visible, "--rail-rows": rows } as CSSProperties}
     >
       <div className="rail__bar">
         {heading}

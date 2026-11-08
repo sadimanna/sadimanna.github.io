@@ -1124,36 +1124,27 @@ export default function Portfolio() {
                   Colleagues, researchers, and students I am currently collaborating with at the Indian Institute of Science (IISc), Bangalore.
                 </p>
               </div>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Affiliation</th>
-                    <th scope="col">Focus</th>
-                    <th scope="col">Profile</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {teamMembers.map((member) => (
-                    <tr key={member.id}>
-                      <td>{member.name}</td>
-                      <td data-th="Role">{member.role}</td>
-                      <td data-th="Affiliation">{member.affiliation}</td>
-                      <td data-th="Focus">{member.focus}</td>
-                      <td>
-                        <a
-                          href={member.profileUrl}
-                          target={member.profileUrl.startsWith("http") ? "_blank" : undefined}
-                          rel="noopener noreferrer"
-                        >
-                          {member.profileUrl.includes("linkedin.com") ? "LinkedIn" : "Profile"}
-                        </a>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <Rail label="Team" visible={3} interval={6000}>
+                {teamMembers.map((member) => (
+                  <li key={member.id} className="card">
+                    <div className="card__meta">
+                      <span className="card__status">{member.role}</span>
+                    </div>
+                    <h3>{member.name}</h3>
+                    <p className="label">{member.affiliation}</p>
+                    <p>{member.focus}</p>
+                    <div className="links card__foot">
+                      <a
+                        href={member.profileUrl}
+                        target={member.profileUrl.startsWith("http") ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                      >
+                        {member.profileUrl.includes("linkedin.com") ? "LinkedIn" : "Profile"}
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </Rail>
             </div>
           </div>
         </section>
@@ -1257,17 +1248,23 @@ export default function Portfolio() {
 
             <div className="duo">
             <div id="software">
-              <h2>Software &amp; AI Tools</h2>
-              <ul className="index index--grid">
+              <Rail
+                label="Software and AI tools"
+                heading={<h2>Software &amp; AI Tools</h2>}
+                visible={2}
+                rows={2}
+                interval={6000}
+                className="rail--bare index"
+              >
                 {aiApplications.map((app) => (
-                  <li key={app.id}>
+                  <li key={app.id} className="card">
                     {app.link && app.link !== "#" ? (
                       <a className="title" href={app.link} target="_blank" rel="noopener noreferrer">{app.title}</a>
                     ) : (
                       <h3 className="title">{app.title}</h3>
                     )}
                     <p className="label">{app.status}</p>
-                    <p>{app.description}</p>
+                    <p className="card__clamp">{app.description}</p>
                     <ul className="topics" aria-label={`${app.title} tags`}>
                       {app.tags.map((t) => (
                         <li key={t}>{t}</li>
@@ -1280,7 +1277,7 @@ export default function Portfolio() {
                     )}
                   </li>
                 ))}
-              </ul>
+              </Rail>
               <div className="links more">
                 <a href="https://github.com/sadimanna?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories on GitHub</a>
               </div>
