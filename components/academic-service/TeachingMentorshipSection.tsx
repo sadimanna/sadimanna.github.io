@@ -1,4 +1,5 @@
 import { students } from "@/lib/data/students";
+import { Rail } from "@/components/Rail";
 
 const teaching = [
   {
@@ -45,10 +46,9 @@ export function TeachingMentorshipSection() {
           </ul>
         </div>
         <div>
-          <h4 className="label">Mentorship</h4>
-          <ul className="index cols-2">
+          <Rail label="Mentorship" heading={<h4 className="label">Mentorship</h4>} visible={2} interval={6500} className="rail--plain">
             {students.map((student) => (
-              <li key={student.id}>
+              <li key={student.id} className="card">
                 <p className="partners__inst">{student.name}</p>
                 <p className="label">
                   {student.institution}, {student.status}
@@ -61,7 +61,7 @@ export function TeachingMentorshipSection() {
                 </ul>
               </li>
             ))}
-          </ul>
+          </Rail>
         </div>
       </div>
     </div>

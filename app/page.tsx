@@ -9,6 +9,7 @@ import { AcademicServiceSection } from "@/components/academic-service/AcademicSe
 import { CitationsChart } from "@/components/CitationsChart"
 import { CollaborationMap } from "@/components/CollaborationMap"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { Rail } from "@/components/Rail"
 import "./home.css"
 
 // Unified Primary Research Areas
@@ -661,12 +662,36 @@ const longTermGoals = [
   },
 ]
 
-// AI Projects & Applications (lower section)
-const aiApplications = [
+// Software & AI tools (lower section). Desktop apps first: they ship as installers.
+const aiApplications: {
+  id: number
+  title: string
+  description: string
+  status: string
+  tags: string[]
+  link: string
+  extra?: { label: string; href: string }
+}[] = [
+  {
+    id: 4,
+    title: "BYOTeX.AI",
+    description: "Local LaTeX workspace where any AI (Anthropic, OpenAI, Gemini, OpenRouter or a local model) proposes edits as line-by-line diffs you accept or reject. Real Crossref/arXiv citations, SyncTeX preview.",
+    status: "Desktop app, open source",
+    tags: ["LaTeX", "LLM", "Writing Tools"],
+    link: "https://github.com/sadimanna/byotex-ai",
+  },
+  {
+    id: 5,
+    title: "FFmpeg Studio",
+    description: "Cross-platform Tauri + React front end for FFmpeg: conversion, trimming, deterministic video-to-frame dataset extraction, FPS/sample-rate standardization and an ffprobe inspector. Runs offline.",
+    status: "Desktop app, macOS / Windows / Linux",
+    tags: ["FFmpeg", "Tauri", "Datasets"],
+    link: "https://github.com/sadimanna/mediaconverter",
+    extra: { label: "Download", href: "https://github.com/sadimanna/mediaconverter/releases/latest" },
+  },
   {
     id: 1,
     title: "Research Paper Summarizer",
-    subtitle: "AI-powered document understanding",
     description: "Multi-modal document analysis leveraging VLM-based OCR and Gemma models for structured academic summarization.",
     status: "Active",
     tags: ["LLM", "VLM", "Document Understanding"],
@@ -675,7 +700,6 @@ const aiApplications = [
   {
     id: 2,
     title: "Scholarly Articles Discovery Interface",
-    subtitle: "Automated literature tracking & curation",
     description: "System that aggregates newly published literature, filters topic relevance, and synthesizes annotated bibliographies.",
     status: "Active",
     tags: ["NLP", "Academic Search", "Bibliometrics"],
@@ -684,7 +708,6 @@ const aiApplications = [
   {
     id: 3,
     title: "Medical Image Viewer & Foundation Backend",
-    subtitle: "Web-native clinical imaging suite",
     description: "In-browser viewer supporting DICOM and NIfTI formats, integrated with foundation model backends for exploratory segmentation.",
     status: "In Progress",
     tags: ["Medical Image", "DICOM", "Segmentation"],
@@ -778,6 +801,7 @@ export default function Portfolio() {
             <li><a href="#awards">Awards</a></li>
             <li><a href="#journey">Journey</a></li>
             <li><a href="#academic-service">Service</a></li>
+            <li><a href="#software">Software</a></li>
             <li><Link href="/blog">Blog</Link></li>
           </ul>
         </nav>
@@ -790,7 +814,7 @@ export default function Portfolio() {
             <div className="hero__text">
               <div className="hero__name">
                 <h1>Dr. Siladittya Manna</h1>
-                <p className="hero__byline label">Post-Doctoral Fellow (ANRF Fellow), Indian Institute of Science</p>
+                <p className="hero__byline label">ANRF National Post-Doctoral Fellow, Indian Institute of Science</p>
               </div>
               <p className="hero__lead">
                 I investigate vulnerabilities in PEFT-based federated learning frameworks and develop trustworthy distributed AI systems.
@@ -878,38 +902,31 @@ export default function Portfolio() {
         </section>
 
         {/* 3. News */}
-        <section id="news" className="section section--gap">
-          <div className="wrap grid">
-            <div className="head">
-              <h2>Latest News</h2>
-            </div>
-            <div className="body">
-              <ul className="rows rows--news">
-                {latestAnnouncements.map((news, idx) => (
-                  <li key={idx}>
-                    <div className="rows__meta">
-                      <time>{news.date}</time>
-                      <span>{news.category}</span>
+        <section id="news" className="section">
+          <div className="wrap">
+            <Rail label="Latest news" heading={<h2>Latest News</h2>} visible={3}>
+              {latestAnnouncements.map((news, idx) => (
+                <li key={idx} className="card">
+                  <div className="card__meta">
+                    <time>{news.date}</time>
+                    <span>{news.category}</span>
+                  </div>
+                  <h3>{news.title}</h3>
+                  <p className="card__clamp">{news.description}</p>
+                  {news.link && news.link !== "#" && (
+                    <div className="links card__foot">
+                      <a
+                        href={news.link}
+                        target={news.link.startsWith("http") ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                      >
+                        Read more
+                      </a>
                     </div>
-                    <div className="rows__main">
-                      <h3>{news.title}</h3>
-                      <p>{news.description}</p>
-                      {news.link && news.link !== "#" && (
-                        <div className="links">
-                          <a
-                            href={news.link}
-                            target={news.link.startsWith("http") ? "_blank" : undefined}
-                            rel="noopener noreferrer"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      )}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                  )}
+                </li>
+              ))}
+            </Rail>
           </div>
         </section>
 
@@ -1070,7 +1087,7 @@ export default function Portfolio() {
         </section>
 
         {/* 6. Ongoing projects and the team */}
-        <section id="ongoing-projects" className="section section--gap-l">
+        <section id="ongoing-projects" className="section">
           <div className="wrap">
             <div className="head-split">
               <h2>Ongoing Projects</h2>
@@ -1078,30 +1095,27 @@ export default function Portfolio() {
                 Active research investigations, manuscripts under review, and ongoing collaborative studies across Federated Learning security and medical AI.
               </p>
             </div>
-            <ul className="rows rows--news rows--pairs">
+            <Rail label="Ongoing projects" visible={3} interval={7000}>
               {ongoingProjects.map((proj) => (
-                <li key={proj.id}>
-                  <div className="rows__title">
-                    <h3>{proj.title}</h3>
+                <li key={proj.id} className="card">
+                  <div className="card__meta">
+                    <span className="card__status">{proj.status}</span>
+                    <span>{proj.affiliation}</span>
                   </div>
-                  <div className="rows__main">
-                    <p className="label">
-                      {proj.status}, {proj.affiliation}
-                    </p>
-                    <p>{proj.description}</p>
-                    <p className="muted">
-                      <span className="label">Collaborators: </span>
-                      {proj.collaborators}
-                    </p>
-                    <ul className="topics" aria-label={`${proj.title} topics`}>
-                      {proj.topics.map((t) => (
-                        <li key={t}>{t}</li>
-                      ))}
-                    </ul>
-                  </div>
+                  <h3>{proj.title}</h3>
+                  <p>{proj.description}</p>
+                  <p className="muted card__small">
+                    <span className="label">With </span>
+                    {proj.collaborators}
+                  </p>
+                  <ul className="topics card__foot" aria-label={`${proj.title} topics`}>
+                    {proj.topics.map((t) => (
+                      <li key={t}>{t}</li>
+                    ))}
+                  </ul>
                 </li>
               ))}
-            </ul>
+            </Rail>
 
             <div id="team" className="sub">
               <div className="head-split">
@@ -1133,7 +1147,7 @@ export default function Portfolio() {
                           target={member.profileUrl.startsWith("http") ? "_blank" : undefined}
                           rel="noopener noreferrer"
                         >
-                          Profile Link
+                          {member.profileUrl.includes("linkedin.com") ? "LinkedIn" : "Profile"}
                         </a>
                       </td>
                     </tr>
@@ -1148,7 +1162,7 @@ export default function Portfolio() {
         <section id="awards" className="section section--gap">
           <div className="wrap">
             <h2 className="sub-head">Awards &amp; Funding</h2>
-            <div className="award" style={{ marginTop: "var(--space-xl)" }}>
+            <div className="award">
               <div className="award__head">
                 <h3>ANRF National Post-Doctoral Fellowship (N-PDF)</h3>
                 <p>Anusandhan National Research Foundation (ANRF), Department of Science &amp; Technology, Government of India</p>
@@ -1177,30 +1191,25 @@ export default function Portfolio() {
             </div>
 
             <div id="journey" className="sub">
-              <h2>Journey &amp; Experience</h2>
-              <ul className="rows journey">
+              <Rail label="Journey and experience" heading={<h2>Journey &amp; Experience</h2>} visible={3} interval={7000}>
                 {timelineData.map((item, idx) => (
-                  <li key={idx}>
-                    <div className="rows__meta">
+                  <li key={idx} className="card">
+                    <div className="card__meta">
                       <time>{item.period}</time>
                       <span>{item.type === "work" ? "Work" : "Education"}</span>
+                      {item.logo && (
+                        <img className="logo" src={item.logo} alt="" width={40} height={40} loading="lazy" />
+                      )}
                     </div>
-                    <div className="rows__main">
-                      <h3>{item.title}</h3>
-                      <p className="label">
-                        {item.organization}, {item.location}
-                      </p>
-                      {item.supervisor && <p className="muted">Advisor: {item.supervisor}</p>}
-                      <p>{item.description}</p>
-                    </div>
-                    {item.logo && (
-                      <div className="rows__logo">
-                        <img className="logo" src={item.logo} alt={item.organization} width={48} height={48} loading="lazy" />
-                      </div>
-                    )}
+                    <h3>{item.title}</h3>
+                    <p className="label">
+                      {item.organization}, {item.location}
+                    </p>
+                    <p>{item.description}</p>
+                    {item.supervisor && <p className="muted card__small card__foot">Advisor: {item.supervisor}</p>}
                   </li>
                 ))}
-              </ul>
+              </Rail>
             </div>
           </div>
         </section>
@@ -1247,9 +1256,9 @@ export default function Portfolio() {
             </div>
 
             <div className="duo">
-            <div>
-              <h2>AI Projects</h2>
-              <ul className="index">
+            <div id="software">
+              <h2>Software &amp; AI Tools</h2>
+              <ul className="index index--grid">
                 {aiApplications.map((app) => (
                   <li key={app.id}>
                     {app.link && app.link !== "#" ? (
@@ -1264,11 +1273,16 @@ export default function Portfolio() {
                         <li key={t}>{t}</li>
                       ))}
                     </ul>
+                    {app.extra && (
+                      <div className="links">
+                        <a href={app.extra.href} target="_blank" rel="noopener noreferrer">{app.extra.label}</a>
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>
               <div className="links more">
-                <a href="https://github.com/sadimanna?tab=repositories" target="_blank" rel="noopener noreferrer">All Projects</a>
+                <a href="https://github.com/sadimanna?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories on GitHub</a>
               </div>
             </div>
 
