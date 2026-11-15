@@ -1,0 +1,263 @@
+1:"$Sreact.fragment"
+3:I[69243,["177","static/chunks/app/layout-2c96b82b121ded75.js"],""]
+4:I[99304,["177","static/chunks/app/layout-2c96b82b121ded75.js"],"ThemeProvider"]
+5:I[87555,[],""]
+6:I[31295,[],""]
+8:I[59665,[],"OutletBoundary"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/css/119c2d09367d6df0.css","style"]
+:HL["/_next/static/css/e092ce1f840871aa.css","style"]
+:HL["/_next/static/css/eedecbd2552abace.css","style"]
+2:T88a,{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sadimanna.github.io/#person","name":"Dr. Siladittya Manna","givenName":"Siladittya","familyName":"Manna","honorificPrefix":"Dr.","url":"https://sadimanna.github.io","jobTitle":"Post-Doctoral Fellow (ANRF Fellow)","image":"https://sadimanna.github.io/profilepic2.jpg","worksFor":{"@type":"CollegeOrUniversity","name":"Indian Institute of Science (IISc)","url":"https://www.iisc.ac.in","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"}},"alumnusOf":[{"@type":"CollegeOrUniversity","name":"Indian Statistical Institute (ISI)","url":"https://www.isical.ac.in"},{"@type":"CollegeOrUniversity","name":"Indian Institute of Engineering Science and Technology (IIEST), Shibpur","url":"https://www.iiest.ac.in"}],"sameAs":["https://github.com/sadimanna","https://scholar.google.com/citations?user=6V9sqi0AAAAJ","https://digitalcommons.isical.ac.in/doctoral-theses/619/"],"knowsAbout":["Federated Learning","PEFT and Parameter-Efficient Fine-Tuning","Gradient Inversion Attacks","AI Security and Privacy","Self-Supervised Learning","Medical Image Analysis"],"award":["ANRF National Post-Doctoral Fellowship (2026-2028)"]},{"@type":"ScholarlyArticle","headline":"Dynamically Scaled Temperature in Self-Supervised Contrastive Learning","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2025","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10820841"},{"@type":"ScholarlyArticle","headline":"Self-Supervised Visual Representation Learning for Medical Image Analysis: A Comprehensive Survey","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2024","publisher":"Transactions on Machine Learning Research","url":"https://openreview.net/forum?id=3Wg1oErMcJ"},{"@type":"ScholarlyArticle","headline":"Self-supervised representation learning for knee injury diagnosis from magnetic resonance data","author":{"@id":"https://sadimanna.github.io/#person"},"datePublished":"2023","publisher":"IEEE Transactions on Artificial Intelligence","url":"https://ieeexplore.ieee.org/document/10197577"}]}0:{"P":null,"b":"wp6I0dIfdoT5AlbXpN7jO","p":"","c":["","blog","2026-11-09-vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2026-11-09-vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/119c2d09367d6df0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/css/editorial.css"}],["$","link",null,{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L3",null,{"src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\": \"bcc4c417df7b43349f96566c9ea98f39\"}","strategy":"afterInteractive"}]]}],["$","body",null,{"className":"min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-900 dark:selection:text-blue-100","children":["$","$L4",null,{"attribute":["class","data-theme"],"defaultTheme":"system","enableSystem":true,"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col items-center justify-center min-h-screen","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"404 - Page Not Found"}],["$","p",null,{"className":"text-lg text-gray-600","children":"Sorry, the page you are looking for does not exist."}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e092ce1f840871aa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/eedecbd2552abace.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2026-11-09-vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and","d"],["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7","$undefined",null,["$","$L8",null,{"children":["$L9","$La",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","njTPGqUhdHyugh3Optq24",{"children":[["$","$Lb",null,{"children":"$Lc"}],null]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:I[72025,["95","static/chunks/95-a29c10e43c263a95.js","953","static/chunks/app/blog/%5Bslug%5D/page-a9350a8c8b1d4714.js"],"BlogPostClient"]
+11:T76f5,<h4 id="how-it-works-how-to-use-each-tool-and-which-ffmpeg-commands-run-behind-everybutton"><a class="heading-anchor" aria-hidden tabindex="-1" href="#how-it-works-how-to-use-each-tool-and-which-ffmpeg-commands-run-behind-everybutton"><span class="anchor-icon">#</span></a><em>How it works, how to use each tool, and which FFmpeg commands run behind every button.</em></h4>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img1.png" alt=""></p>
+<p>FFmpeg can do almost anything with audio, video and images. The hard part is remembering the flags. Was it -ss before or after -i? Which -crf is "good enough" for x265? How do you turn a folder of PNGs into a video without the frames coming out in the wrong order?</p>
+<p>I built VizWright to stop looking these up. It’s an open-source desktop app for macOS, Windows and Linux. It wraps FFmpeg and ffprobe in a clean interface with a job queue, live progress and logs. It also handles a use case most FFmpeg GUIs skip: preparing media datasets for machine learning. That means deterministic frame extraction with manifests, batch normalisation of FPS or sample rate, and dataset-level statistics.</p>
+<p>This article covers:</p>
+<ol>
+<li>The architecture: how a click in a React UI becomes an FFmpeg process run from Rust</li>
+<li>How to install and run it</li>
+<li>A walkthrough of each tool, with the exact FFmpeg/ffprobe commands and backend code behind it</li>
+</ol>
+<p>Source code: <a href="https://github.com/sadimanna/mediaconverter">github.com/sadimanna/mediaconverter</a></p>
+<h3 id="1-the-architecture-in-onepicture"><a class="heading-anchor" aria-hidden tabindex="-1" href="#1-the-architecture-in-onepicture"><span class="anchor-icon">#</span></a>1. The architecture in one picture</h3>
+<p>VizWright is a Tauri v2 application. Tauri renders the UI in the operating system’s own webview (WebKit on macOS and Linux, WebView2 on Windows). The UI talks to a small native Rust backend. Electron ships a whole Chromium; Tauri doesn’t, so the installers stay small, and the app starts fast.</p>
+<pre><code class="hljs language-scss">┌──────────────────────────────┐        <span class="hljs-built_in">invoke</span>("run_ffmpeg_with_progress", { args })  
+│  React <span class="hljs-number">18</span> + TypeScript UI    │ ───────────────────────────────────────────────┐  
+│  (Vite, Tailwind CSS)        │                                                ▼  
+│                              │                                  ┌───────────────────────────┐  
+│  <span class="hljs-selector-tag">Video</span> · <span class="hljs-selector-tag">Image</span> · Dataset     │                                  │  Rust backend (Tauri)     │  
+│  Standardize · Inspector     │                                  │  <span class="hljs-attribute">src</span>-tauri/<span class="hljs-attribute">src</span>/ffmpeg<span class="hljs-selector-class">.rs</span>  │  
+│  Queue · Settings            │                                  │                           │  
+│                              │   events: ffmpeg-progress        │  std::process::Command    │  
+│  listens with @tauri-apps/api│ ◀──────── ffmpeg-log ─────────── │   ├─ ffmpeg  (spawned)    │  
+│                              │           ffmpeg-exit            │   └─ ffprobe (probing)    │  
+└──────────────────────────────┘           dataset-progress …     └───────────────────────────┘
+</code></pre>
+<p>Three design choices shape the rest of the app:</p>
+<ol>
+<li>
+<p>The frontend builds the command; the backend runs it. Each tool in React assembles an argument array, such as["-i", input, "-c:v", "libx265", …, output], and sends it to a Rust command through Tauri's invoke. Rust passes the array straight to std::process::Command. No shell is involved, so a filename with spaces, quotes or ; is just a filename. Nothing needs escaping, and there's no shell injection.</p>
+</li>
+<li>
+<p>Progress comes from FFmpeg itself. Before spawning FFmpeg, the backend appends -progress pipe:1 -nostats (and prepends -hide_banner). FFmpeg then writes machine-readable key=value lines to stdout:</p>
+</li>
+</ol>
+<pre><code class="hljs language-ini"><span class="hljs-attr">out_time_ms</span>=<span class="hljs-number">4520000</span>  
+<span class="hljs-attr">fps</span>=<span class="hljs-number">212.4</span>  
+<span class="hljs-attr">speed</span>=<span class="hljs-number">7.08</span>x  
+<span class="hljs-attr">progress</span>=continue
+</code></pre>
+<p>A small parser in progress.rs collects these keys. On every progress= line, it emits a snapshot. The backend first asks ffprobe for the input's duration:</p>
+<pre><code class="hljs language-lua">ffprobe -v <span class="hljs-built_in">error</span> -show_entries <span class="hljs-built_in">format</span>=duration -of default=noprint_wrappers=<span class="hljs-number">1</span>:nokey=<span class="hljs-number">1</span> <span class="hljs-built_in">input</span>.mp4
+</code></pre>
+<p>so it can turn out_time_ms into a percentage. Each FFmpeg process gets three background threads: one reads stdout for progress, one reads stderr for logs, and one waits for the exit code. They push ffmpeg-progress, ffmpeg-log and ffmpeg-exit events to the UI.</p>
+<ol start="3">
+<li>Jobs can be cancelled. Each spawned process goes into aJobRegistry, a HashMap&#x3C;job_id, Arc&#x3C;Mutex<Child>>> held as Tauri-managed state. The job ID is a UUID v4. Cancelling a job looks up the child process and calls kill().</li>
+</ol>
+<h3 id="the-rust-cratesused"><a class="heading-anchor" aria-hidden tabindex="-1" href="#the-rust-cratesused"><span class="anchor-icon">#</span></a>The Rust crates used</h3>
+<p><a href="https://medium.com/media/6091b2f031b6ebf1b593e8eb00f58cf1/href">https://medium.com/media/6091b2f031b6ebf1b593e8eb00f58cf1/href</a></p>
+<h3 id="finding-ffmpeg"><a class="heading-anchor" aria-hidden tabindex="-1" href="#finding-ffmpeg"><span class="anchor-icon">#</span></a>Finding FFmpeg</h3>
+<p>The app doesn’t bundle FFmpeg; you install it once yourself. A GUI app launched from the macOS Dock gets a minimal PATH that doesn't include Homebrew's folders. To handle that, resolve_binary() checks PATH first, then /opt/homebrew/bin, /usr/local/bin, /opt/local/bin, /usr/bin, /snap/bin and the Linuxbrew prefix. The result is cached in a OnceLock. At startup, the backend runs ffmpeg -version and emits an ffmpeg-check event, and the sidebar footer shows the version it found (here, <em>FFmpeg 8.0.1</em>).</p>
+<h3 id="2-installing-andrunning"><a class="heading-anchor" aria-hidden tabindex="-1" href="#2-installing-andrunning"><span class="anchor-icon">#</span></a>2. Installing and running</h3>
+<p>Step 1: Install FFmpeg (it must provide both ffmpeg and ffprobe):</p>
+<pre><code class="hljs language-bash">brew install ffmpeg              <span class="hljs-comment"># macOS  </span>
+<span class="hljs-built_in">sudo</span> apt-get install -y ffmpeg   <span class="hljs-comment"># Debian / Ubuntu  </span>
+winget install Gyan.FFmpeg       <span class="hljs-comment"># Windows</span>
+</code></pre>
+<p>Step 2: Get the app. Download an installer for your OS from the <a href="https://github.com/sadimanna/mediaconverter/releases/latest">GitHub Releases page</a>. GitHub Actions builds them from each tagged commit. The installers aren’t code-signed, so macOS and Windows may warn you the first time you open the app.</p>
+<p>Step 3 (optional): Build from source. You need Node 20+ and Rust; the repo pins Rust 1.93.1 in rust-toolchain.toml, so rustup picks the right version automatically.</p>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/sadimanna/mediaconverter.git  
+<span class="hljs-built_in">cd</span> mediaconverter  
+npm ci  
+npx tauri dev      <span class="hljs-comment"># run with live reload  </span>
+npx tauri build    <span class="hljs-comment"># produce native installers</span>
+</code></pre>
+<p>Step 4: Learn the layout. The left rail groups the tools into Convert (Video, Image), Datasets (Dataset Extraction, Standardization, Inspector) and App (Queue, Settings). Every tool follows the same pattern:</p>
+<blockquote>
+<p><em>Pick input → choose options → pick an output →</em> Add Job <em>→ watch it in the Queue.</em></p>
+</blockquote>
+<p>You can pick inputs with Browse (a native file dialogue) or drag files into the dashed drop zone.</p>
+<h3 id="3-the-tools-one-byone"><a class="heading-anchor" aria-hidden tabindex="-1" href="#3-the-tools-one-byone"><span class="anchor-icon">#</span></a>3. The tools, one by one</h3>
+<h3 id="31-video"><a class="heading-anchor" aria-hidden tabindex="-1" href="#31-video"><span class="anchor-icon">#</span></a>3.1 Video</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img2.png" alt=""></p>
+<p>The Video tab has six panels. Each one builds an argument array and sends it to the run_ffmpeg_with_progress Rust command. The last panel is the exception and uses its own command.</p>
+<p>Convert or Remux</p>
+<ol>
+<li>Drop or browse to a source video.</li>
+<li>Choose Mode: <em>Convert</em> (re-encode) or <em>Remux</em> (copy streams into a new container).</li>
+<li>Pick the output Format (MP4, MKV, WebM, AVI, MOV) and a Preset. The preset list only shows presets that are valid for the chosen format.</li>
+<li>Pick an output path, then click Add Job.</li>
+</ol>
+<p>Presets live in presets.jsonwhich holds 27 video presets: H.264, H.265, AV1 (SVT-AV1), VP8/VP9, MPEG-2/4, ProRes, DNxHD and MJPEG, each paired with a matching audio codec. Each preset is just a list of FFmpeg arguments, so adding your own (NVENC or VideoToolbox, say) means editing JSON. Here's the exact command the app ran for the screenshot above:</p>
+<pre><code class="hljs language-r">ffmpeg <span class="hljs-operator">-</span>i clip_720p30.mp4 <span class="hljs-operator">-</span><span class="hljs-built_in">c</span><span class="hljs-operator">:</span>v libx265 <span class="hljs-operator">-</span>preset medium <span class="hljs-operator">-</span>crf <span class="hljs-number">22</span> <span class="hljs-operator">-</span><span class="hljs-built_in">c</span><span class="hljs-operator">:</span>a aac <span class="hljs-operator">-</span>b<span class="hljs-operator">:</span>a <span class="hljs-number">192</span>k clip_720p30_h265.mp4  
+<span class="hljs-comment"># Remux mode instead:  </span>
+ffmpeg <span class="hljs-operator">-</span>i input.mkv <span class="hljs-operator">-</span><span class="hljs-built_in">c</span> copy output.mp4
+</code></pre>
+<p>Trim Video. Enter a start time and an optional end time in HH:MM:SS. The app uses input seeking with stream copy, so trimming is close to instant and doesn't re-encode. Because no frames are re-encoded, cuts land on the nearest keyframes.</p>
+<pre><code class="hljs language-go">ffmpeg -ss <span class="hljs-number">00</span>:<span class="hljs-number">00</span>:<span class="hljs-number">05</span> -to <span class="hljs-number">00</span>:<span class="hljs-number">00</span>:<span class="hljs-number">20</span> -i input.mp4 -c <span class="hljs-built_in">copy</span> trimmed.mp4
+</code></pre>
+<p>Extract Audio. Choose MP3, WAV, AAC or FLAC; these are the audio_extract presets. Each preset drops the video stream and encodes the audio, for example:</p>
+<pre><code class="hljs language-less"><span class="hljs-selector-tag">ffmpeg</span> <span class="hljs-selector-tag">-i</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-class">.mp4</span> <span class="hljs-selector-tag">-vn</span> <span class="hljs-selector-tag">-c</span>:<span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">libmp3lame</span> <span class="hljs-selector-tag">-q</span>:<span class="hljs-selector-tag">a</span> <span class="hljs-number">2</span> <span class="hljs-selector-tag">audio</span><span class="hljs-selector-class">.mp3</span>
+</code></pre>
+<p>Merge Audio + Video. Pick a video file and a separate audio file. The video stream is copied untouched, the audio is encoded to AAC, and -shortest cuts the output at whichever input ends first.</p>
+<pre><code class="hljs language-css">ffmpeg -<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-class">.mp4</span> -<span class="hljs-selector-tag">i</span> voiceover<span class="hljs-selector-class">.wav</span> -c:v copy -c:a aac -b:a <span class="hljs-number">192</span>k -shortest merged.mp4
+</code></pre>
+<p>GIF to Video. This uses the same preset system as Convert, filtered by output format:</p>
+<pre><code class="hljs language-css">ffmpeg -<span class="hljs-selector-tag">i</span> <span class="hljs-attribute">animation</span><span class="hljs-selector-class">.gif</span> -c:v libx264 -preset ultrafast -crf <span class="hljs-number">28</span> -c:a aac -b:a <span class="hljs-number">128</span>k animation.mp4
+</code></pre>
+<p>Images to Video. Select many images, set a frame rate, and optionally tick <em>Sort by filename</em> so the frames go in the right order. This panel calls its own Rust command, run_ffmpeg_image_sequence. It writes the image list to a temporary FFmpeg <em>concat</em> file (ffmpeg_concat_<uuid>.txt in the OS temp folder), escaping quotes and backslashes, and runs:</p>
+<pre><code class="hljs language-css">ffmpeg -f concat -safe <span class="hljs-number">0</span> -<span class="hljs-selector-tag">i</span> /tmp/ffmpeg_concat_&#x3C;uuid><span class="hljs-selector-class">.txt</span> -<span class="hljs-attribute">r</span> <span class="hljs-number">30</span> &#x3C;preset args> sequence<span class="hljs-selector-class">.mp4</span>
+</code></pre>
+<p>An image list has no duration for ffprobe to read, so the backend works one out as <em>number of images ÷ frame rate</em> and uses that for the progress bar.</p>
+<h3 id="32-image"><a class="heading-anchor" aria-hidden tabindex="-1" href="#32-image"><span class="anchor-icon">#</span></a>3.2 Image</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img3.png" alt=""></p>
+<p>The Image tab uses FFmpeg’s image encoders and filters. It has three panels:</p>
+<ol>
+<li>Convert Image: one file to PNG, JPEG or WebP, with a Quality slider and a Grayscale toggle.</li>
+<li>Batch Convert: many files into an output folder. Each file keeps its name and gets the new extension.</li>
+<li>Resize: set a width, a height, or both. The aspect ratio is always preserved.</li>
+</ol>
+<p>The quality slider (0–100) maps onto each encoder’s own scale:</p>
+<p><a href="https://medium.com/media/050a8fdeb290639da1aa87e7287a541e/href">https://medium.com/media/050a8fdeb290639da1aa87e7287a541e/href</a></p>
+<p>The filters are built as a single -vf chain:</p>
+<pre><code class="hljs language-graphql"><span class="hljs-comment"># Resize to fit inside 1280x720, keeping aspect ratio, and convert to grayscale  </span>
+ffmpeg -i photo.jpg -vf <span class="hljs-string">"scale=1280:720:force_original_aspect_ratio=decrease,format=gray"</span> -<span class="hljs-symbol">q</span><span class="hljs-punctuation">:</span>v <span class="hljs-number">8</span> photo_small.jpg  
+<span class="hljs-comment"># Only a width given → height follows the aspect ratio  </span>
+ffmpeg -i photo.png -vf <span class="hljs-string">"scale=800:-1"</span> photo_800.png
+</code></pre>
+<p>Batch Convert doesn’t run a single long command. It adds one queue job per image, so each file gets its own progress, log and success or failure status.</p>
+<h3 id="33-dataset-extraction-video--frames-reproducibly"><a class="heading-anchor" aria-hidden tabindex="-1" href="#33-dataset-extraction-video--frames-reproducibly"><span class="anchor-icon">#</span></a>3.3 Dataset Extraction: video → frames, reproducibly</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img4.png" alt=""></p>
+<p>This is the main reason the app exists. To train a vision model on video, you need frames, and you need to be able to say exactly which frames came from where.</p>
+<p>Steps</p>
+<ol>
+<li>Choose Input Type: a single video, or a folder. For a folder, only its top level is scanned for .mp4, .mkv, .mov, .avi and .webm files.</li>
+<li>Choose an existing Output folder, or type a path for a new one.</li>
+<li>Choose a Sampling Mode:</li>
+</ol>
+<ul>
+<li>Fixed FPS: N frames per second</li>
+<li>Every Nth Frame</li>
+<li>Uniform Random K: K frames chosen at random, with a seed</li>
+</ul>
+<ol>
+<li>Check the expected frame count. When you pick a video, the UI calls the probe_video command, which runs ffprobe for width, height, average frame rate, frame count and duration, and computes the estimate. In the screenshot, a 12-second clip at 2 fps gives 24.</li>
+<li>Click Add Job.</li>
+</ol>
+<p>What the backend does (run_dataset_extraction, on its own thread):</p>
+<p>Each sampling mode becomes a filter expression, with showinfo appended:</p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># Fixed FPS  </span>
+ffmpeg -i clip.mp4 -vf <span class="hljs-string">"fps=2,showinfo"</span> -vsync 0 -c:v png out/clip/clip_%06d.png  
+<span class="hljs-comment"># Every 10th frame  </span>
+-vf <span class="hljs-string">"select='not(mod(n\,10))',showinfo"</span>  
+<span class="hljs-comment"># Uniform random K=4, seed=42 → e.g.  </span>
+-vf <span class="hljs-string">"select='eq(n\,37)+eq(n\,112)+eq(n\,205)+eq(n\,301)',showinfo"</span>
+</code></pre>
+<p>For random mode, the backend first needs the total frame count. It tries three sources in order: the stream’snb_frames, then duration × avg_frame_rate, and if both fail, it counts frames with ffprobe -count_frames. It then shuffles the frame indices with a seededrand::rngs::StdRng, takes the first K and sorts them. The same seed always selects the same frames, so a dataset can be rebuilt exactly.</p>
+<p>The showinfo filter prints a line to stderr for each frame it outputs. The log thread parses n:, pts_time: and s: (resolution) from those lines, so each saved PNG can be matched to its timestamp in the source video. The backend writes all of this out as CSV:</p>
+<pre><code class="hljs">frames/  
+├─ global_manifest.csv  
+└─ clip_720p30/  
+├─ manifest.csv  
+├─ clip_720p30_000001.png  
+├─ clip_720p30_000002.png  
+└─ …
+</code></pre>
+<p>These are the first rows from the run in the screenshot (source path shortened):</p>
+<pre><code class="hljs language-bash">source_video,video_id,frame_index,timestamp,relative_output_path  
+…/clip_720p30.mp4,clip_720p30,1,0.0,clip_720p30/clip_720p30_000001.png  
+…/clip_720p30.mp4,clip_720p30,2,0.5,clip_720p30/clip_720p30_000002.png  
+…/clip_720p30.mp4,clip_720p30,3,1.0,clip_720p30/clip_720p30_000003.png
+</code></pre>
+<p>Other details:</p>
+<ul>
+<li>Video IDs come from the file name, with every non-alphanumeric character replaced by_, so folder names are always safe.</li>
+<li>Failures don’t stop the batch. Errors are appended to errors.log in the output folder, and the job moves on to the next video. The final status reports how many videos failed.</li>
+<li>Two-level progress. A dataset-progress event carries both per-video progress and overall progress, which is (completed + current fraction) / total.</li>
+</ul>
+<h3 id="34-multimodal-standardization"><a class="heading-anchor" aria-hidden tabindex="-1" href="#34-multimodal-standardization"><span class="anchor-icon">#</span></a>3.4 Multimodal Standardization</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img5.png" alt=""></p>
+<p>Mixed datasets often contain videos at 24, 25, 29.97 and 60 fps, and audio at 44.1 kHz stereo next to 48 kHz mono. Standardization normalises a whole batch to one target.</p>
+<h4 id="steps"><a class="heading-anchor" aria-hidden tabindex="-1" href="#steps"><span class="anchor-icon">#</span></a>Steps</h4>
+<ol>
+<li>Pick a Preset: <em>Speech ML (16 kHz mono)</em>, <em>Video ML (30 fps H.264)</em> or <em>Custom</em>.</li>
+<li>Pick a Mode: <em>Video</em> or <em>Audio</em>.</li>
+<li>Add input files and choose an output folder.</li>
+<li>Set the options:</li>
+</ol>
+<ul>
+<li>Video: target FPS, codec (H.264, H.265, SVT-AV1, MPEG-4), container, and optional frame interpolation</li>
+<li>Audio: sample rate, channels (1 or 2), WAV or FLAC</li>
+</ul>
+<ol>
+<li>Click Add Job. Outputs are named <name>_std.<ext>.</li>
+</ol>
+<h4 id="backend-run_standardization_batch"><a class="heading-anchor" aria-hidden tabindex="-1" href="#backend-run_standardization_batch"><span class="anchor-icon">#</span></a>Backend (run_standardization_batch):</h4>
+<p>Before running anything, validate_video_target() checks the codec and container against a compatibility table. For example, WebM only accepts SVT-AV1 here, and AVI rejects AV1. Invalid combinations fail with a clear message instead of an obscure FFmpeg error. The commands are:</p>
+<pre><code class="hljs language-less"># <span class="hljs-selector-tag">Video</span> <span class="hljs-selector-tag">mode</span>  
+<span class="hljs-selector-tag">ffmpeg</span> <span class="hljs-selector-tag">-y</span> <span class="hljs-selector-tag">-i</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-class">.mov</span> <span class="hljs-selector-tag">-r</span> <span class="hljs-number">30</span> <span class="hljs-selector-tag">-c</span>:<span class="hljs-selector-tag">v</span> <span class="hljs-selector-tag">libx264</span> <span class="hljs-selector-tag">-pix_fmt</span> <span class="hljs-selector-tag">yuv420p</span> <span class="hljs-selector-tag">-c</span>:<span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">copy</span> <span class="hljs-selector-tag">input_std</span><span class="hljs-selector-class">.mp4</span>  
+# … <span class="hljs-selector-tag">with</span> "<span class="hljs-selector-tag">Interpolate</span> <span class="hljs-selector-tag">frames</span>" <span class="hljs-selector-tag">ticked</span>, <span class="hljs-selector-tag">motion-interpolated</span> <span class="hljs-selector-tag">instead</span> <span class="hljs-selector-tag">of</span> <span class="hljs-selector-tag">duplicated</span>/<span class="hljs-selector-tag">dropped</span>:  
+<span class="hljs-selector-tag">ffmpeg</span> <span class="hljs-selector-tag">-y</span> <span class="hljs-selector-tag">-i</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-class">.mov</span> <span class="hljs-selector-tag">-r</span> <span class="hljs-number">30</span> <span class="hljs-selector-tag">-c</span>:<span class="hljs-selector-tag">v</span> <span class="hljs-selector-tag">libx264</span> <span class="hljs-selector-tag">-pix_fmt</span> <span class="hljs-selector-tag">yuv420p</span> <span class="hljs-selector-tag">-c</span>:<span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">copy</span> <span class="hljs-selector-tag">-vf</span> <span class="hljs-selector-tag">minterpolate</span>=<span class="hljs-selector-tag">fps</span>=<span class="hljs-number">30</span> <span class="hljs-selector-tag">input_std</span><span class="hljs-selector-class">.mp4</span>  
+# <span class="hljs-selector-tag">Audio</span> <span class="hljs-selector-tag">mode</span> (Speech ML preset)  
+<span class="hljs-selector-tag">ffmpeg</span> <span class="hljs-selector-tag">-y</span> <span class="hljs-selector-tag">-i</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-class">.mp4</span> <span class="hljs-selector-tag">-vn</span> <span class="hljs-selector-tag">-ar</span> <span class="hljs-number">16000</span> <span class="hljs-selector-tag">-ac</span> <span class="hljs-number">1</span> <span class="hljs-selector-tag">-c</span>:<span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">pcm_s16le</span> <span class="hljs-selector-tag">input_std</span><span class="hljs-selector-class">.wav</span>
+</code></pre>
+<p>After each file, the backend probes the output again (resolution, duration) and computes its SHA-256 with the sha2 crate. When the batch finishes, it writes a dataset_summary.json that records, for every file, the source path, output path, the settings used, the measured resolution and duration, and the checksum. You can check later that a file is the one that was produced, and you can see the settings that produced it. The Queue has a button to save a copy of this summary anywhere you like.</p>
+<h3 id="35-media-inspector"><a class="heading-anchor" aria-hidden tabindex="-1" href="#35-media-inspector"><span class="anchor-icon">#</span></a>3.5 Media Inspector</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img6.png" alt=""></p>
+<p>Before cleaning a dataset, you need to know what’s in it. The Inspector scans one folder and answers “what have I actually got?”</p>
+<p>Steps</p>
+<ol>
+<li>Browse to a folder. The <em>Detected files</em> count updates right away, using a scan_media_folder call that classifies files by extension.</li>
+<li>Click Run Inspector.</li>
+<li>Read the Summary and the Per-file Info table. Click Save dataset_summary.csv to export them.</li>
+</ol>
+<p>Backend (inspect_media): for each file, it runs a single ffprobe call with JSON output:</p>
+<pre><code class="hljs language-ini">ffprobe -v error \  
+-show_entries <span class="hljs-attr">stream</span>=codec_name,codec_type,width,height,avg_frame_rate,sample_rate \  
+-show_entries <span class="hljs-attr">format</span>=duration -of json file.mp4
+</code></pre>
+<p>From the result, it takes the first video stream (codec, resolution, frame rate) and the first audio stream (sample rate). Frame rates like 30000/1001 arrive as fractions and are parsed into decimal numbers. build_inspector_stats(). Then it aggregates the entries:</p>
+<ul>
+<li>total, video and image counts</li>
+<li>min/mean / max duration</li>
+<li>resolution distribution and FPS distribution, rounded to 3 decimals</li>
+</ul>
+<p>The screenshot is a real run on four test files: three clips (720p30, 1080p25, 480p24) and one PNG. One quirk is visible: ffprobe reports a still image’s avg_frame_rate as 25, so the PNG adds to the <em>25.000</em> count. The CSV export is written by a small write_text_file command.</p>
+<h3 id="36-the-jobqueue"><a class="heading-anchor" aria-hidden tabindex="-1" href="#36-the-jobqueue"><span class="anchor-icon">#</span></a>3.6 The Job Queue</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img7.png" alt=""></p>
+<p>Every <em>Add Job</em> click lands here. The queue:</p>
+<ul>
+<li>runs jobs one at a time. A React effect starts the next queued job once nothing isrunning, so several heavy encodes never compete for the CPU.</li>
+<li>shows each job’s Command Preview, the exact ffmpeg … line it will run. This is a good way to learn FFmpeg flags.</li>
+<li>Shows live progress. For dataset jobs, it shows per-video and overall progress separately.</li>
+<li>Has a collapsible FFmpeg Logs pane fed by the stderr thread, so you can see FFmpeg’s own error message when a job fails.</li>
+<li>Lets you cancel a running job (the registry calls Child::kill()) or remove a queued one.</li>
+<li>offers Save manifest and Save summary buttons for dataset and standardization jobs. These copy the generated file to a location you choose, using the copy_file command.</li>
+</ul>
+<p>The running job also appears in a compact progress widget in the sidebar, so you can keep working in other tabs.</p>
+<h3 id="37-settings-andthemes"><a class="heading-anchor" aria-hidden tabindex="-1" href="#37-settings-andthemes"><span class="anchor-icon">#</span></a>3.7 Settings and themes</h3>
+<p><img src="/images/blog/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/img8.png" alt=""></p>
+<p>Settings shows the FFmpeg status and the full version string from ffmpeg -version. It also has a window colour picker with six themes: Dark, Blue, Pink, Green, Chrome yellow and White. The choice is saved locally and applied as CSS design tokens, so the whole UI changes at once:</p>
+<h3 id="4-summary-which-backend-doeswhat"><a class="heading-anchor" aria-hidden tabindex="-1" href="#4-summary-which-backend-doeswhat"><span class="anchor-icon">#</span></a>4. Summary: which backend does what</h3>
+<p><a href="https://medium.com/media/d844e0722ea1cc2aecaa8763da61de74/href">https://medium.com/media/d844e0722ea1cc2aecaa8763da61de74/href</a></p>
+<h3 id="5-whatsnext"><a class="heading-anchor" aria-hidden tabindex="-1" href="#5-whatsnext"><span class="anchor-icon">#</span></a>5. What’s next</h3>
+<p>The codebase is set up to grow:</p>
+<ul>
+<li>Hardware encoding: add h264_nvenc, hevc_videotoolbox or *_qsv presets to presets.json. No code changes needed.</li>
+<li>New sampling strategies: scene-change sampling (select='gt(scene,0.4)') would be one more branch in build_dataset_filter().</li>
+<li>More inspector fields: bit depth, pixel format and channel layout are one extra -show_entries away.</li>
+</ul>
+<p>If you deal with video datasets, or you’re tired of looking up FFmpeg flags, try it out. Issues and PRs are welcome: 👉 <a href="https://github.com/sadimanna/mediaconverter">github.com/sadimanna/mediaconverter</a></p>
+<p><em>VizWright is an independent open-source project and is not affiliated with the FFmpeg project. FFmpeg is a trademark of Fabrice Bellard.</em></p>
+<hr>
+<p><a href="https://medium.com/the-owl/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and-react-677935d71976">VizWright: A Desktop GUI for FFmpeg, Built with Tauri, Rust and React</a> was originally published in <a href="https://medium.com/the-owl">The Owl</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>
+<hr>
+<p><em>Originally published on <a href="https://medium.com/the-owl/vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and-react-677935d71976">Medium</a>.</em></p>7:["$","$L10",null,{"title":"VizWright: A Desktop GUI for FFmpeg, Built with Tauri, Rust and React","date":"$D2026-11-09T00:00:00.000Z","readingTime":14,"categories":["Rust"],"tags":["rust","data-science","tauri","react","ffmpeg"],"contentHtml":"$11","headings":[{"level":4,"id":"how-it-works-how-to-use-each-tool-and-which-ffmpeg-commands-run-behind-everybutton","text":"How it works, how to use each tool, and which FFmpeg commands run behind every button."},{"level":3,"id":"1-the-architecture-in-onepicture","text":"1. The architecture in one picture"},{"level":3,"id":"the-rust-cratesused","text":"The Rust crates used"},{"level":3,"id":"finding-ffmpeg","text":"Finding FFmpeg"},{"level":3,"id":"2-installing-andrunning","text":"2. Installing and running"},{"level":3,"id":"3-the-tools-one-byone","text":"3. The tools, one by one"},{"level":3,"id":"31-video","text":"3.1 Video"},{"level":3,"id":"32-image","text":"3.2 Image"},{"level":3,"id":"33-dataset-extraction-video--frames-reproducibly","text":"3.3 Dataset Extraction: video → frames, reproducibly"},{"level":3,"id":"34-multimodal-standardization","text":"3.4 Multimodal Standardization"},{"level":4,"id":"steps","text":"Steps"},{"level":4,"id":"backend-run_standardization_batch","text":"Backend (run_standardization_batch):"},{"level":3,"id":"35-media-inspector","text":"3.5 Media Inspector"},{"level":3,"id":"36-the-jobqueue","text":"3.6 The Job Queue"},{"level":3,"id":"37-settings-andthemes","text":"3.7 Settings and themes"},{"level":3,"id":"4-summary-which-backend-doeswhat","text":"4. Summary: which backend does what"},{"level":3,"id":"5-whatsnext","text":"5. What’s next"}],"prevPost":{"slug":"2026-11-07-bring-your-own-ai-to-latex-meet-byotexai","title":"Bring Your Own AI to LaTeX: Meet BYOTeX.AI"},"nextPost":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+9:null
+a:null
+e:[["$","title","0",{"children":"VizWright: A Desktop GUI for FFmpeg, Built with Tauri, Rust and React — Dr. Siladittya Manna"}],["$","link","1",{"rel":"author","href":"https://sadimanna.github.io"}],["$","meta","2",{"name":"author","content":"Dr. Siladittya Manna"}],["$","meta","3",{"name":"keywords","content":"Siladittya Manna,Federated Learning,PEFT Vulnerabilities,Gradient Inversion Attacks,AI Security,Privacy-Preserving AI,Self-Supervised Learning,Medical Image Analysis,Indian Institute of Science,IISc Bangalore,Indian Statistical Institute,ANRF Fellow"}],["$","meta","4",{"name":"creator","content":"Dr. Siladittya Manna"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","7",{"rel":"canonical","href":"https://sadimanna.github.io/"}],["$","meta","8",{"property":"og:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","9",{"property":"og:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","10",{"property":"og:url","content":"https://sadimanna.github.io/"}],["$","meta","11",{"property":"og:site_name","content":"Dr. Siladittya Manna - Academic Portfolio"}],["$","meta","12",{"property":"og:locale","content":"en_US"}],["$","meta","13",{"property":"og:image","content":"https://sadimanna.github.io/profilepic2.jpg"}],["$","meta","14",{"property":"og:image:width","content":"800"}],["$","meta","15",{"property":"og:image:height","content":"800"}],["$","meta","16",{"property":"og:image:alt","content":"Dr. Siladittya Manna - Postdoctoral Fellow at IISc Bangalore"}],["$","meta","17",{"property":"og:type","content":"profile"}],["$","meta","18",{"property":"profile:first_name","content":"Siladittya"}],["$","meta","19",{"property":"profile:last_name","content":"Manna"}],["$","meta","20",{"property":"profile:username","content":"sadimanna"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:creator","content":"@sadimanna"}],["$","meta","23",{"name":"twitter:title","content":"Dr. Siladittya Manna | Federated Learning, AI Security & Representation Learning"}],["$","meta","24",{"name":"twitter:description","content":"Postdoctoral Fellow at IISc Bangalore researching vulnerabilities in PEFT-based federated learning, gradient inversion attacks, and self-supervised representation learning."}],["$","meta","25",{"name":"twitter:image","content":"https://sadimanna.github.io/profilepic2.jpg"}]]

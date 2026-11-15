@@ -4,11 +4,19 @@
         <title>Dr. Siladittya Manna — Technical Blog</title>
         <link>https://sadimanna.github.io/blog/</link>
         <description>Technical blog on federated learning, self-supervised learning, medical AI, and trustworthy machine learning.</description>
-        <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>© 2026 Dr. Siladittya Manna</copyright>
+        <item>
+            <title><![CDATA[VizWright: A Desktop GUI for FFmpeg, Built with Tauri, Rust and React]]></title>
+            <link>https://sadimanna.github.io/blog/2026-11-09-vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/</link>
+            <guid isPermaLink="false">https://sadimanna.github.io/blog/2026-11-09-vizwright-a-desktop-gui-for-ffmpeg-built-with-tauri-rust-and/</guid>
+            <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+            <author>Dr. Siladittya Manna</author>
+            <category>Rust</category>
+        </item>
         <item>
             <title><![CDATA[Bring Your Own AI to LaTeX: Meet BYOTeX.AI]]></title>
             <link>https://sadimanna.github.io/blog/2026-11-07-bring-your-own-ai-to-latex-meet-byotexai/</link>
